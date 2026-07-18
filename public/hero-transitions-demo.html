@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obayashi - Traditional Shoji Gate & 3D Glassmorphic Map</title>
+  <style>
+    :root {
+      --primary-red: #c1272d;
+      --gold-accent: #c17f24;
+      --dark-night: #05070f;
+      --sky-glow: #0e1329;
+      --glass-bg: rgba(10, 15, 30, 0.65);
+      --glass-border: rgba(255, 255, 255, 0.12);
+      --wood-color: #261613;
+      --paper-color: #faf6f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--dark-night);
+      color: #ffffff;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Core container */
+    .cinematic-hero {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(circle at 50% 40%, var(--sky-glow) 0%, var(--dark-night) 75%);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Traditional silhouette framework */
+    .traditional-bg-frame {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 5;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* SVG overlay for natural framing (cherry blossom branches, temple roof silhouette) */
+    .silhouette-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      opacity: 0.85;
+      pointer-events: none;
+    }
+
+    /* Sakura Petals Particle Engine */
+    .sakura-canvas {
+      position: absolute;
+      inset: 0;
+      z-index: 58;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .petal {
+      position: absolute;
+      background: linear-gradient(135deg, #ff85a2, #ff5c8a);
+      border-radius: 150% 0 150% 150%;
+      opacity: 0.85;
+      transform-style: preserve-3d;
+      animation: fallAndSway linear infinite;
+    }
+
+    @keyframes fallAndSway {
+      0% {
+        transform: translate3d(0, -20px, 0) rotate(0deg) rotateY(0deg);
+      }
+      50% {
+        transform: translate3d(80px, 50vh, 50px) rotate(180deg) rotateY(180deg);
+      }
+      100% {
+        transform: translate3d(180px, 105vh, 100px) rotate(360deg) rotateY(360deg);
+      }
+    }
+
+    /* ---------------------------------------------------- */
+    /* TRADITIONAL SHOJI DOOR STRUCTURE                     */
+    /* ---------------------------------------------------- */
+    .shoji-gate-container {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      z-index: 50;
+      pointer-events: none;
+      transition: visibility 2.2s;
+    }
+
+    .shoji-gate-container.open {
+      visibility: hidden;
+    }
+
+    .shoji-door {
+      width: 50vw;
+      height: 100vh;
+      background-color: var(--paper-color);
+      border: 24px solid var(--wood-color);
+      position: relative;
+      pointer-events: auto;
+      transition: transform 1.8s cubic-bezier(0.77, 0, 0.175, 1);
+      box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Shoji lattice grid pattern */
+    .shoji-door::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(to right, var(--wood-color) 4px, transparent 4px),
+        linear-gradient(to bottom, var(--wood-color) 4px, transparent 4px);
+      background-size: 80px 120px;
+      opacity: 0.95;
+    }
+
+    /* Left door slides Left */
+    .shoji-door.left-door {
+      transform: translateX(0);
+      border-right: 12px solid var(--wood-color);
+    }
+    .open .left-door {
+      transform: translateX(-100%);
+    }
+
+    /* Right door slides Right */
+    .shoji-door.right-door {
+      transform: translateX(0);
+      border-left: 12px solid var(--wood-color);
+    }
+    .open .right-door {
+      transform: translateX(100%);
+    }
+
+    /* Traditional Gold Handle Pulls */
+    .door-handle {
+      position: absolute;
+      width: 50px;
+      height: 100px;
+      background: linear-gradient(135deg, #d4af37, #aa7c11);
+      border: 3px solid #6e5008;
+      border-radius: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left-door .door-handle {
+      right: 20px;
+    }
+    .right-door .door-handle {
+      left: 20px;
+    }
+
+    .handle-inset {
+      width: 20px;
+      height: 70px;
+      background: #4a3608;
+      border-radius: 4px;
+      box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    /* ---------------------------------------------------- */
+    /* 3D MAP & POPUPS CONFIGURATION                       */
+    /* ---------------------------------------------------- */
+    .map-viewport {
+      position: absolute;
+      inset: 0;
+      perspective: 1600px;
+      perspective-origin: 50% 35%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 20;
+      pointer-events: none;
+    }
+
+    .map-plate {
+      position: relative;
+      width: 700px;
+      height: 700px;
+      transform-style: preserve-3d;
+      transform: rotateX(60deg) rotateZ(-22deg) translateZ(-150px) scale(0.65);
+      opacity: 0;
+      transition: transform 2.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 2.0s ease-out;
+      pointer-events: auto;
+    }
+
+    .open .map-plate {
+      transform: rotateX(46deg) rotateZ(-12deg) translateZ(-20px) scale(0.95);
+      opacity: 1;
+    }
+
+    /* 3D Japan Map Image Plate */
+    .map-image-layer {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 40px 100px rgba(0,0,0,0.7), 0 0 0 1px var(--glass-border);
+      pointer-events: none;
+    }
+
+    .map-image-layer img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      filter: grayscale(0.85) invert(0.9) contrast(1.1) brightness(1.05);
+    }
+
+    /* Glassmorphism gradient wash over map */
+    .map-glass-wash {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+      mix-blend-mode: overlay;
+      backdrop-filter: blur(2px);
+      z-index: 2;
+    }
+
+    .map-crimson-tint {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(193, 39, 45, 0.15);
+      mix-blend-mode: multiply;
+      z-index: 3;
+    }
+
+    /* Blueprint grid */
+    .map-grid-layer {
+      position: absolute;
+      inset: 0;
+      opacity: 0.15;
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+      background-size: 25px 25px;
+      z-index: 4;
+    }
+
+    /* Hide map preprinted sidebars */
+    .map-mask-right {
+      position: absolute;
+      top: 0; right: 0; bottom: 0;
+      width: 32%;
+      background: var(--dark-night);
+      z-index: 5;
+    }
+    .map-mask-top {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 18%;
+      background: var(--dark-night);
+      z-index: 5;
+    }
+
+    /* ---------------------------------------------------- */
+    /* 3D FLOATING PROJECT POPUPS (CALIBRATED COORDINATES)  */
+    /* ---------------------------------------------------- */
+    .popup-anchor {
+      position: absolute;
+      transform-style: preserve-3d;
+      z-index: 10;
+      opacity: 0;
+      transform: translate3d(0, 0, -20px) scale(0.6);
+      transition: transform 1.2s cubic-bezier(0.34, 1.6, 0.64, 1), opacity 0.8s ease-out;
+    }
+
+    /* Delay animations to match map entrance */
+    .open .popup-anchor.pop-1 { transform: translate3d(0, 0, 0) scale(1); opacity: 1; transition-delay: 1.5s; }
+    .open .popup-anchor.pop-2 { transform: translate3d(0, 0, 0) scale(1); opacity: 1; transition-delay: 1.9s; }
+    .open .popup-anchor.pop-3 { transform: translate3d(0, 0, 0) scale(1); opacity: 1; transition-delay: 2.3s; }
+
+    /* Calibrated coordinates relative to the 700x700 map box */
+    .popup-anchor.hokkaido { left: 52.5%; top: 20.5%; }
+    .popup-anchor.tokyo { left: 55.8%; top: 49.0%; }
+    .popup-anchor.osaka { left: 37.2%; top: 60.0%; }
+
+    /* Map Glowing Pulse Pin */
+    .map-pin {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background: radial-gradient(circle, #ff5566 0%, var(--primary-red) 70%);
+      border: 3px solid #fff;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 15px rgba(255, 85, 102, 0.8);
+      z-index: 2;
+    }
+
+    .pin-ripple {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      border: 2px solid var(--primary-red);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: ripple 2.2s infinite ease-out;
+      pointer-events: none;
+    }
+
+    @keyframes ripple {
+      0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.9; }
+      100% { transform: translate(-50%, -50%) scale(2.8); opacity: 0; }
+    }
+
+    /* Vertical Connector Glow Line (up to card) */
+    .connector-line {
+      position: absolute;
+      width: 2px;
+      height: 90px;
+      background: linear-gradient(to top, var(--primary-red), rgba(255,255,255,0.7));
+      left: 0;
+      bottom: 8px;
+      transform-origin: bottom;
+      transform: translate(-50%, 0);
+      box-shadow: 0 0 8px rgba(193, 39, 45, 0.6);
+    }
+
+    /* Upright Standing 3D Card */
+    .glass-card-3d {
+      position: absolute;
+      bottom: 98px; /* sits on top of the connector line */
+      left: 0;
+      transform: translate(-50%, 0) rotateZ(12deg) rotateX(-46deg) translateZ(30px);
+      width: 220px;
+      background: var(--glass-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      padding: 8px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+      color: #fff;
+    }
+
+    .card-thumb {
+      width: 100%;
+      height: 100px;
+      border-radius: 8px;
+      object-fit: cover;
+      margin-bottom: 8px;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .card-tag {
+      display: inline-block;
+      font-size: 0.58rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background-color: var(--primary-red);
+      padding: 2px 7px;
+      border-radius: 20px;
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-size: 0.8rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 2px;
+      letter-spacing: -0.01em;
+    }
+
+    .card-loc {
+      font-size: 0.68rem;
+      color: rgba(255,255,255,0.6);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    /* ---------------------------------------------------- */
+    /* CINEMATIC INTERACTIVE HUDS                           */
+    /* ---------------------------------------------------- */
+    .cinematic-hud {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px;
+    }
+
+    .hud-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .hud-brand {
+      pointer-events: auto;
+    }
+
+    .hud-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+
+    .logo-seal {
+      width: 24px;
+      height: 24px;
+      background-color: var(--primary-red);
+      transform: rotate(45deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 10px rgba(193, 39, 45, 0.4);
+    }
+
+    .logo-seal-text {
+      color: #fff;
+      font-size: 0.55rem;
+      font-weight: 900;
+      transform: rotate(-45deg);
+    }
+
+    .hud-brand h1 {
+      font-size: 1.2rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hud-desc {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.5);
+      margin-top: 4px;
+      max-width: 220px;
+      line-height: 1.4;
+    }
+
+    .hud-status-box {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 0.72rem;
+      color: rgba(255, 255, 255, 0.85);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      backdrop-filter: blur(10px);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #00ff66;
+      box-shadow: 0 0 8px #00ff66;
+    }
+
+    /* Core Action Button (Trigger) */
+    .center-action-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 60;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      pointer-events: auto;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .center-action-wrapper.fade-out {
+      opacity: 0;
+      pointer-events: none;
+      transform: translate(-50%, -50%) scale(0.85);
+    }
+
+    .open-gate-btn {
+      background: var(--primary-red);
+      color: #fff;
+      border: none;
+      padding: 18px 45px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 8px 30px rgba(193, 39, 45, 0.5);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border: 2px solid rgba(255,255,255,0.25);
+    }
+
+    .open-gate-btn:hover {
+      transform: scale(1.08) translateY(-3px);
+      box-shadow: 0 12px 40px rgba(193, 39, 45, 0.7);
+      background-color: #e32d34;
+    }
+
+    .btn-subtitle {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.05em;
+    }
+
+    /* Reset button at bottom */
+    .hud-bottom {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      pointer-events: auto;
+    }
+
+    .reset-btn {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      color: rgba(255,255,255,0.8);
+      padding: 10px 24px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      transition: all 0.3s;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(20px);
+      backdrop-filter: blur(8px);
+    }
+
+    .reset-btn.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .reset-btn:hover {
+      background: var(--primary-red);
+      color: #fff;
+      border-color: var(--primary-red);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cinematic-hero">
+    
+    <!-- Canvas for Floating Pink Cherry Blossoms -->
+    <div class="sakura-canvas" id="sakura-container"></div>
+
+    <!-- Silhouette Framing Layer (Branches & Temple Silhouette) -->
+    <svg class="silhouette-svg" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="trunk-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#040509" />
+          <stop offset="100%" stop-color="#120c15" />
+        </linearGradient>
+      </defs>
+      <!-- Silhouetted cherry blossom tree on Left -->
+      <path d="M 0,1000 C 80,850 120,600 80,450 C 60,350 15,220 0,150 L 0,0 C 150,0 200,80 250,50 C 300,20 400,10 450,80 C 400,120 300,100 250,150 C 200,200 280,280 200,320 C 120,360 140,500 120,650 C 100,750 90,850 0,1000 Z" fill="url(#trunk-grad)" />
+      <!-- Silhouetted cherry blossom tree on Right -->
+      <path d="M 1000,1000 C 920,850 880,600 920,450 C 940,350 985,220 1000,150 L 1000,0 C 850,0 800,80 750,50 C 700,20 600,10 550,80 C 600,120 700,100 750,150 C 800,200 720,280 800,320 C 880,360 860,500 880,650 C 900,750 910,850 1000,1000 Z" fill="url(#trunk-grad)" />
+      <!-- Top hanging branch details -->
+      <path d="M 0,0 C 120,80 340,30 450,120 C 380,180 280,110 180,150 C 80,190 20,280 0,220 Z" fill="url(#trunk-grad)" />
+      <path d="M 1000,0 C 880,80 660,30 550,120 C 620,180 720,110 820,150 C 920,190 980,220 1000,220 Z" fill="url(#trunk-grad)" />
+    </svg>
+
+    <!-- Center Gate Action Button (Initial) -->
+    <div class="center-action-wrapper" id="action-wrapper">
+      <button class="open-gate-btn" onclick="openShojiGate()">Open Shoji Gate</button>
+      <span class="btn-subtitle">Enter the Cinematic 3D Map Experience</span>
+    </div>
+
+    <!-- ---------------------------------------------------- -->
+    /* TRADITIONAL SHOJI DOORS                              */
+    <!-- ---------------------------------------------------- */
+    <div class="shoji-gate-container" id="gate-container">
+      <div class="shoji-door left-door">
+        <div class="door-handle">
+          <div class="handle-inset"></div>
+        </div>
+      </div>
+      <div class="shoji-door right-door">
+        <div class="door-handle">
+          <div class="handle-inset"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------- -->
+    /* 3D FLOATING JAPAN MAP                                */
+    <!-- ---------------------------------------------------- */
+    <div class="map-viewport">
+      <div class="map-plate" id="map-plate">
+        
+        <!-- Base Map Plate -->
+        <div class="map-image-layer">
+          <img src="/images/japan_3d_map.png" alt="3D Japan Map">
+          <div class="map-glass-wash"></div>
+          <div class="map-crimson-tint"></div>
+          <div class="map-grid-layer"></div>
+          <div class="map-mask-right"></div>
+          <div class="map-mask-top"></div>
+        </div>
+
+        <!-- Popups 3D Layer -->
+        <!-- 1. Hokkaido (Rokka no Mori) -->
+        <div class="popup-anchor hokkaido pop-1">
+          <div class="map-pin"></div>
+          <div class="pin-ripple"></div>
+          <div class="connector-line"></div>
+          <div class="glass-card-3d">
+            <img src="/images/rokka_mori.png" class="card-thumb" alt="Rokka no Mori">
+            <span class="card-tag" style="background-color: #6d28d9;">Education / Art</span>
+            <h4 class="card-title">Rokka no Mori Pavilions</h4>
+            <div class="card-loc">📍 Hokkaido, Japan</div>
+          </div>
+        </div>
+
+        <!-- 2. Tokyo (Azabudai Hills / Sustainable Hub) -->
+        <div class="popup-anchor tokyo pop-2">
+          <div class="map-pin"></div>
+          <div class="pin-ripple"></div>
+          <div class="connector-line"></div>
+          <div class="glass-card-3d">
+            <img src="/images/ones_tower.png" class="card-thumb" alt="Azabudai Hills">
+            <span class="card-tag" style="background-color: #0B3D6B;">Offices / Sustainable</span>
+            <h4 class="card-title">O-NES Sustainable Hub</h4>
+            <div class="card-loc">📍 Tokyo Metropolis</div>
+          </div>
+        </div>
+
+        <!-- 3. Osaka (Jamuna Bridge / Civil Infra) -->
+        <div class="popup-anchor osaka pop-3">
+          <div class="map-pin"></div>
+          <div class="pin-ripple"></div>
+          <div class="connector-line"></div>
+          <div class="glass-card-3d">
+            <img src="/images/jamuna_bridge.png" class="card-thumb" alt="Bridge Construction">
+            <span class="card-tag" style="background-color: #146b3a;">Civil Infra</span>
+            <h4 class="card-title">National Impress Network</h4>
+            <div class="card-loc">📍 Osaka Bay Area</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------- -->
+    /* HUD INFORMATION OVERLAYS                             */
+    <!-- ---------------------------------------------------- */
+    <div class="cinematic-hud">
+      <div class="hud-top">
+        <div class="hud-brand">
+          <div class="hud-logo">
+            <div class="logo-seal">
+              <span class="logo-seal-text">大林</span>
+            </div>
+            <h1>Obayashi Corp.</h1>
+          </div>
+          <p class="hud-desc">Integrating traditional Japanese design elements with future structural engineering.</p>
+        </div>
+        <div class="hud-status-box">
+          <div class="status-dot"></div>
+          <span>3D SIMULATOR ACTIVE</span>
+        </div>
+      </div>
+
+      <div class="hud-bottom">
+        <button class="reset-btn" id="reset-button" onclick="resetShojiGate()">Close Gate & Replay</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Sakura Particle Engine
+    const sakuraContainer = document.getElementById('sakura-container');
+    const petalCount = 45;
+
+    function initSakura() {
+      for (let i = 0; i < petalCount; i++) {
+        createPetal(true);
+      }
+    }
+
+    function createPetal(randomInit = false) {
+      const petal = document.createElement('div');
+      petal.classList.add('petal');
+      
+      const sizeW = Math.random() * 8 + 6;
+      const sizeH = Math.random() * 10 + 8;
+      
+      petal.style.width = sizeW + 'px';
+      petal.style.height = sizeH + 'px';
+      petal.style.left = Math.random() * 100 + 'vw';
+      
+      // Animations configurations
+      const duration = Math.random() * 7 + 6;
+      const delay = randomInit ? -(Math.random() * duration) : 0;
+      
+      petal.style.animationDuration = duration + 's';
+      petal.style.animationDelay = delay + 's';
+      
+      // Random rotation sway
+      const tiltX = Math.random() * 20 + 10;
+      petal.style.transform = `rotate(${Math.random() * 360}deg) rotateX(${tiltX}deg)`;
+
+      // Clean up when animation finishes
+      petal.addEventListener('animationiteration', () => {
+        petal.style.left = Math.random() * 100 + 'vw';
+      });
+
+      sakuraContainer.appendChild(petal);
+    }
+
+    // Interactive Gate Actions
+    const gateContainer = document.getElementById('gate-container');
+    const actionWrapper = document.getElementById('action-wrapper');
+    const mapPlate = document.getElementById('map-plate');
+    const resetBtn = document.getElementById('reset-button');
+
+    function openShojiGate() {
+      // 1. Fade out the center trigger button
+      actionWrapper.classList.add('fade-out');
+
+      // 2. Open the Shoji sliding doors
+      setTimeout(() => {
+        gateContainer.classList.add('open');
+      }, 300);
+
+      // 3. Zoom and tilt the 3D map
+      setTimeout(() => {
+        mapPlate.classList.add('active');
+      }, 1000);
+
+      // 4. Reveal the Reset/Replay button
+      setTimeout(() => {
+        resetBtn.classList.add('visible');
+      }, 3500);
+    }
+
+    function resetShojiGate() {
+      // Close the map popups first
+      mapPlate.classList.remove('active');
+      resetBtn.classList.remove('visible');
+
+      // Close the sliding doors
+      setTimeout(() => {
+        gateContainer.classList.remove('open');
+      }, 800);
+
+      // Bring back the central button
+      setTimeout(() => {
+        actionWrapper.classList.remove('fade-out');
+      }, 2000);
+    }
+
+    // Launch Sakura Engine
+    initSakura();
+  </script>
+</body>
+</html>

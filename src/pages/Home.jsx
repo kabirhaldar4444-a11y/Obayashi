@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, HardHat, Building, Wind, Zap, Briefcase, ChevronRight, Compass } from 'lucide-react';
 import HeroSlider from '../components/HeroSlider';
-import NewsSection from '../components/NewsSection';
 import PickupSlider from '../components/PickupSlider';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/worksContent';
@@ -34,9 +33,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-
-      {/* 3. News Feed Section */}
-      <NewsSection />
 
       {/* 4. Pickup Recommendation Section */}
       <PickupSlider />

@@ -7,14 +7,18 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "brain:export": "node scripts/migrate-brain.js --export",
+    "brain:import": "node scripts/migrate-brain.js --import"
   },
   "dependencies": {
     "framer-motion": "^12.42.2",
+    "gsap": "^3.15.0",
     "lucide-react": "^1.23.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router-dom": "^7.18.1",
+    "three": "^0.185.1",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
