@@ -11,6 +11,8 @@ export default function ProjectCard({ project }) {
             src={`/images/${project.id}.jpg`}
             alt={project.title}
             className="project-card-img"
+            loading="lazy"
+            decoding="async"
             onError={(e) => {
               // Map categories to custom fallback images
               const fallbacks = {

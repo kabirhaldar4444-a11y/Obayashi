@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+/* Google Fonts are loaded via <link> in index.html for non-blocking performance */
 @import "tailwindcss";
 
 :root {
@@ -44,10 +44,10 @@
   --shadow-gold: 0 8px 32px rgba(193,127,36,0.18);
   --shadow-blue: 0 8px 32px rgba(11,61,107,0.15);
   
-  /* Transitions */
-  --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  /* Transitions — use specific properties, NOT "all" ("all" forces full style recalc) */
+  --transition-smooth: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition-fast: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
   /* Radii */
   --radius-sm: 6px;
@@ -56,7 +56,7 @@
   --radius-xl: 24px;
   --radius-full: 9999px;
   
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth — intentionally removed; it adds ~16ms jank on every scroll event */
 }
 
 /* Global Reset & Body Styles */
@@ -254,9 +254,9 @@ h1, h2, h3, h4, h5, h6 {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
   border-bottom: 1px solid rgba(0,0,0,0.07);
   height: 72px;
   display: flex;
@@ -3845,6 +3845,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   font-family: var(--font-sans);
+  /* Isolate this section's paints from the rest of the page */
+  contain: paint layout;
 }
 
 /* ── Backdrop layers ── */
@@ -3855,10 +3857,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hs-bg-img {
   position: absolute;
-  inset: -5%;
+  inset: 0;
   background-size: cover;
   background-position: center;
-  filter: brightness(0.28) saturate(1.4);
+  /* Use opacity instead of filter for performance — filter triggers a new compositor layer */
+  opacity: 0.32;
+  will-change: opacity;
 }
 .hs-vignette {
   position: absolute;
@@ -3879,18 +3883,29 @@ h1, h2, h3, h4, h5, h6 {
   inset: 0;
   z-index: 1;
   pointer-events: none;
+  contain: paint;
 }
 .hs-particle {
   position: absolute;
   border-radius: 50%;
   background: rgba(255,255,255,0.5);
   animation: hs-float linear infinite;
+  contain: strict;
+  will-change: transform, opacity;
 }
 @keyframes hs-float {
   0%   { transform: translateY(0) translateX(0) scale(1); opacity: 0; }
   10%  { opacity: 0.6; }
   90%  { opacity: 0.3; }
   100% { transform: translateY(-120px) translateX(var(--drift,20px)) scale(0.4); opacity: 0; }
+}
+
+/* Respect reduced motion — disable all slider animations */
+@media (prefers-reduced-motion: reduce) {
+  .hs-particle { animation: none !important; opacity: 0 !important; }
+  .hs-progress-fill { transition: none !important; animation: none !important; }
+  .hs-copy-pill-dot { animation: none !important; }
+  .hs-brand-pulse { animation: none !important; }
 }
 
 /* ── Ambient grid lines ── */
@@ -4416,4 +4431,92 @@ h1, h2, h3, h4, h5, h6 {
   .hs-card { width: 200px; height: 270px; }
   .hs-copy-meta-strip { display: none; }
   .hs-nav { display: none; }
+}
+
+/* ══════════════════════════════════════════
+   PROJECT DETAIL CUSTOM STYLES
+   ══════════════════════════════════════════ */
+.project-detail-grid-bg {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(17, 24, 39, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 24, 39, 0.02) 1px, transparent 1px);
+}
+
+.project-detail-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  border: 1px solid rgba(229, 231, 235, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+}
+
+.project-detail-glass-dark {
+  background: rgba(17, 24, 39, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+.project-detail-card-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-detail-card-glow::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(135deg, rgba(193, 127, 36, 0.15) 0%, transparent 50%, rgba(11, 61, 107, 0.1) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.project-detail-card-glow:hover::before {
+  opacity: 1;
+  background: linear-gradient(135deg, #C17F24 0%, transparent 40%, #0B3D6B 100%);
+}
+
+.glow-beacon {
+  position: relative;
+}
+
+.glow-beacon::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.4;
+  will-change: transform, opacity;
+  animation: pulse-beacon 2.5s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+@keyframes pulse-beacon {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+.japanese-quote-panel {
+  position: relative;
+  background: radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 1) 0%, rgba(247, 248, 250, 0.7) 100%);
+  border: 1px solid rgba(229, 231, 235, 0.8);
+  box-shadow: inset 0 0 20px rgba(17, 24, 39, 0.01), 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.japanese-quote-panel::before {
+  content: '';
+  position: absolute;
+  top: 12px; left: 12px; right: 12px; bottom: 12px;
+  border: 1px dashed rgba(229, 231, 235, 0.5);
+  pointer-events: none;
+  border-radius: 12px;
 }

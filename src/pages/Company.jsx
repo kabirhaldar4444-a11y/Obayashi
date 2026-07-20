@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Shield, Users, Landmark, FileText, ChevronRight, Award } from 'lucide-react';
 import { companyOverview, ceoMessage, philosophy, historyMilestones, groupNetwork, publications } from '../data/companyContent';
 

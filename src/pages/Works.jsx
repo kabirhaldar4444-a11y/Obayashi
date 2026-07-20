@@ -54,6 +54,8 @@ const ProjectCardMemo = React.memo(({ project, onOpenPopup, index }) => {
           src={`/images/${project.id}.jpg`}
           alt={project.title}
           className="w-full h-full object-cover"
+          loading="lazy"
+          decoding="async"
           style={{ transition: 'transform 0.7s cubic-bezier(0.25,0.8,0.25,1)' }}
           onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.07)'; }}
           onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)'; }}

@@ -6,10 +6,12 @@ import PickupSlider from '../components/PickupSlider';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/worksContent';
 
+/* Inline style for below-fold sections — defers paint/layout until visible */
+const deferStyle = { contentVisibility: 'auto', containIntrinsicSize: '0 500px' };
+
 export default function Home() {
   // Take first 3 projects for the home page featured grid
   const featuredProjects = projects.slice(0, 3);
-
 
   const homeBusinesses = [
     { id: "building_construction", title: "Building Construction", icon: <Building size={24} />, desc: "High-performance office towers, smart industrial facilities, and sustainable mass timber spaces." },
@@ -38,7 +40,7 @@ export default function Home() {
       <PickupSlider />
 
       {/* 5. Core Business Segments Preview */}
-      <section className="home-business-section section-padding light-bg-section">
+      <section className="home-business-section section-padding light-bg-section" style={deferStyle}>
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">BUSINESS SEGMENTS</h2>
@@ -71,7 +73,7 @@ export default function Home() {
       </section>
 
       {/* 6. Featured Projects Grid */}
-      <section className="home-projects-section section-padding">
+      <section className="home-projects-section section-padding" style={deferStyle}>
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">FEATURED PROJECTS</h2>
@@ -94,7 +96,7 @@ export default function Home() {
       </section>
 
       {/* 7. Visual Link Portals */}
-      <section className="home-portals-section">
+      <section className="home-portals-section" style={deferStyle}>
         <div className="portal-block portal-company" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.65)), url(/images/ones_tower.png)` }}>
           <div className="portal-block-content">
             <h3 className="portal-block-title">Company Profile</h3>
@@ -132,7 +134,7 @@ export default function Home() {
       </section>
 
       {/* 8. Special Corporate Microsites */}
-      <section className="home-specials-section section-padding light-bg-section">
+      <section className="home-specials-section section-padding light-bg-section" style={deferStyle}>
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">SPECIAL CONTENTS</h2>

@@ -126,15 +126,20 @@ function cardStyle(slot) {
   };
 }
 
-const PARTICLES = Array.from({ length: 22 }, (_, i) => ({
+const PARTICLES = Array.from({ length: 10 }, (_, i) => ({
   id: i,
-  x: (i * 4.7 + Math.sin(i * 1.3) * 18 + 10),
-  y: (i * 4.3 + Math.cos(i * 0.9) * 22 + 5),
+  x: (i * 9.5 + Math.sin(i * 1.3) * 18 + 5),
+  y: (i * 9.0 + Math.cos(i * 0.9) * 22 + 5),
   size: (i % 3) * 0.9 + 0.6,
-  dur: 10 + (i % 7) * 2.1,
-  delay: (i % 5) * 1.6,
+  dur: 12 + (i % 5) * 2.5,
+  delay: (i % 4) * 2.0,
   drift: (i % 2 === 0 ? 1 : -1) * (15 + (i % 4) * 8),
 }));
+
+/* Prefers-reduced-motion check */
+const prefersReducedMotion = () =>
+  typeof window !== 'undefined' &&
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* ─── Japanese TTS helper ─── */
 function speakJapanese(text) {
@@ -162,6 +167,7 @@ export default function HeroSlider() {
   const goTo = useCallback((idx) => setActive(idx), []);
 
   useEffect(() => {
+    if (prefersReducedMotion()) return;
     timerRef.current = setInterval(() => go(1), AUTOPLAY_MS);
     return () => clearInterval(timerRef.current);
   }, [go]);
@@ -169,7 +175,9 @@ export default function HeroSlider() {
   const resetTimer = useCallback((fn) => {
     clearInterval(timerRef.current);
     fn();
-    timerRef.current = setInterval(() => go(1), AUTOPLAY_MS);
+    if (!prefersReducedMotion()) {
+      timerRef.current = setInterval(() => go(1), AUTOPLAY_MS);
+    }
   }, [go]);
 
   useEffect(() => {

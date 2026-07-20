@@ -56,7 +56,7 @@ export default function PickupSlider() {
               <div key={item.id} className="pickup-slide-card">
                 <div className="pickup-card-inner">
                   <div className="pickup-card-img-wrapper">
-                    <img src={item.image} alt={item.title} className="pickup-card-img" />
+                    <img src={item.image} alt={item.title} className="pickup-card-img" loading="lazy" decoding="async" />
                   </div>
                   <div className="pickup-card-body">
                     <h3 className="pickup-card-title">{item.title}</h3>

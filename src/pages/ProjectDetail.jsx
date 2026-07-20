@@ -1,753 +1,695 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  ArrowLeft, MapPin, Calendar, Briefcase, DollarSign, 
-  Award, Layers, Cpu, ShieldAlert, CheckCircle2, 
-  Compass, Activity, ArrowRight, ShieldCheck, Info,
-  ExternalLink, Building2, Hammer, Ruler, CheckCircle
+import { motion } from 'framer-motion';
+import {
+  ArrowLeft, Calendar, Building2, Ruler, 
+  CheckCircle, Compass, DollarSign,
+  ArrowRight, Award, ShieldAlert, Cpu
 } from 'lucide-react';
 import { projects } from '../data/worksContent';
 import { detailedProjectContent } from '../data/projectDetails';
 import MiniJapanMap from '../components/MiniJapanMap';
 
-// Reusable slugifier matching popup card
-const slugify = (text) => {
-  return text
-    .toString()
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[^\w\-]+/g, '')
-    .replace(/\-\-+/g, '-')
-    .replace(/^-+/, '')
-    .replace(/-+$/, '');
-};
-
-// Traditional Japanese Wave (Seigaiha) pattern component
-const WavePattern = () => (
-  <div 
-    className="absolute inset-0 pointer-events-none opacity-[0.02] z-0"
-    style={{
-      backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='30' viewBox='0 0 60 30'%3E%3Cpath d='M15 0a30 30 0 1 1-30 30 30 30 0 0 1 30-30zm0 5a25 25 0 1 1-25 25 25 25 0 0 1 25-25zm0 5a20 20 0 1 1-20 20 20 20 0 0 1 20-20zm0 5a15 15 0 1 1-15 15 15 15 0 0 1 15-15zm0 5a10 10 0 1 1-10 10 10 10 0 0 1 10-10zm0 5a5 5 0 1 1-5 5 5 5 0 0 1 5-5z' fill='%23111827' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E")`,
-      backgroundSize: '60px 30px'
-    }}
-  />
-);
-
-// Faint Fuji Silhouette SVG at the bottom of the hero
-const FujiSilhouette = () => (
-  <svg 
-    className="absolute bottom-0 right-[5%] w-[420px] h-[160px] pointer-events-none opacity-[0.03] z-0"
-    viewBox="0 0 350 150" 
-    fill="none" 
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path 
-      d="M0 150 L110 90 L160 50 L175 48 L190 50 L240 90 L350 150 Z" 
-      fill="#111827" 
-    />
-    <path 
-      d="M160 50 L175 48 L190 50 L200 65 L175 70 L150 65 Z" 
-      fill="#FFFFFF" 
-    />
-  </svg>
-);
-
-// Faint rising sun decorative background circle
-const RisingSun = () => (
-  <div 
-    className="absolute top-[12%] left-[8%] w-[200px] h-[200px] rounded-full bg-[#C8102E]/[0.015] border border-[#C8102E]/[0.025] pointer-events-none z-0"
-  />
-);
-
-// Hanko red stamp component (Takumi style)
-const HankoStamp = ({ char = "匠" }) => (
-  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-dashed border-[#C8102E] text-[#C8102E] font-serif font-black text-lg select-none rotate-6 shadow-sm shadow-[#C8102E]/10 bg-white">
-    <div className="w-10 h-10 rounded-full border border-solid border-[#C8102E] flex items-center justify-center">
-      {char}
-    </div>
-  </div>
-);
-
-// Divider styled after traditional Japanese screens
-const TraditionalDivider = () => (
-  <div className="flex items-center justify-center gap-4 my-16 opacity-30 select-none">
-    <div className="h-[1px] w-24 bg-gradient-to-r from-transparent to-[#111827]"></div>
-    <div className="w-2 h-2 rotate-45 border border-[#111827] bg-white"></div>
-    <div className="h-[1px] w-24 bg-gradient-to-l from-transparent to-[#111827]"></div>
-  </div>
-);
+const slugify = (t) => t.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-').replace(/^-+/, '').replace(/-+$/, '');
 
 export default function ProjectDetail() {
   const params = useParams();
   const paramVal = params.slug || params.id;
   const navigate = useNavigate();
-  const [activeImage, setActiveImage] = useState(null);
 
-  // Scroll to top on mount / project change
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }, [paramVal]);
 
-  // Find project by slug or ID
   const project = projects.find(p => slugify(p.title) === paramVal || p.id === paramVal);
 
   if (!project) {
     return (
-      <div className="min-h-screen bg-[#F7F8FA] flex flex-col items-center justify-center text-slate-800 p-4">
-        <h2 className="text-xl font-bold mb-4 font-sans tracking-tight">Project Case Study Not Found</h2>
-        <p className="text-slate-500 mb-6 text-sm">The requested project details could not be retrieved.</p>
+      <div className="min-h-screen bg-[#f8f9fa] flex flex-col items-center justify-center text-zinc-600 p-12">
+        <span className="text-5xl mb-4">🏗</span>
+        <h1 className="text-xl font-bold text-zinc-900 uppercase tracking-wider">Project Not Found</h1>
+        <p className="text-sm text-zinc-500 mt-2 text-center max-w-xs">
+          The requested project documentation could not be retrieved.
+        </p>
         <button 
           onClick={() => navigate('/works')} 
-          className="px-5 py-2.5 bg-[#111827] hover:bg-[#C8102E] text-white rounded-md font-bold cursor-pointer transition-colors shadow-md text-xs uppercase tracking-widest"
+          className="mt-6 px-6 py-2.5 bg-zinc-900 text-white hover:bg-zinc-800 rounded-lg text-xs uppercase tracking-widest font-bold transition-all"
         >
-          Back to Directory
+          ← Directory
         </button>
       </div>
     );
   }
 
-  // Load detailed unique data mapping
-  const detailsData = detailedProjectContent[project.id] || {
-    kanjiName: "プロジェクト詳細情報",
-    romajiName: "Purojekuto Shōsai Jōhō",
-    prefecture: "Japan",
-    city: "Regional Development",
-    tokyoDistance: "N/A",
-    airport: "International Hub",
-    locationStory: "Strategically located to support urban density improvements and build infrastructure trust.",
-    coordinates: "35.6762° N, 139.6503° E",
+  // Load detailed project specifications with dynamic default fallbacks
+  const details = detailedProjectContent[project.id] || {
+    kanjiName: 'プロジェクト詳細情報', 
+    romajiName: 'Purojekuto Shōsai Jōhō',
+    prefecture: 'Japan', 
+    city: 'Regional Development', 
+    tokyoDistance: 'N/A',
+    airport: 'International Hub',
+    locationStory: 'Strategically located to support urban density improvements and build infrastructure trust.',
+    coordinates: '35.6762° N, 139.6503° E',
     challenges: [
-      "Integrating modern structural frameworks within high-density zones without disrupting active operations.",
-      "Ensuring strict compliance with local seismic guidelines and sustainable material acquisition under strict timelines."
+      'Integrating modern structural frameworks within high-density zones.', 
+      'Ensuring compliance with strict local seismic safety guidelines.'
     ],
     solutions: [
-      "Leveraged Building Information Modeling (BIM) for precise load-path mapping and interference checks.",
-      "Implemented low-carbon precast concrete and optimized steel connections to streamline logistics and on-site assembly."
-    ],
-    timeline: [
-      { phase: "Planning & Feasibility", date: "Q1 " + (parseInt(project.completionYear) - 2), desc: "Comprehensive structural and geological evaluations." },
-      { phase: "Excavation & Foundations", date: "Q3 " + (parseInt(project.completionYear) - 2), desc: "Deep foundation work with seismic pile driving." },
-      { phase: "Superstructure Assembly", date: "Q2 " + (parseInt(project.completionYear) - 1), desc: "Hoisting of high-strength structural steel columns." },
-      { phase: "Interior Fitting & Commissioning", date: "Q3 " + project.completionYear, desc: "Installation of HVAC systems, smart sensors, and LEED certification audits." },
-      { phase: "Handover & Integration", date: project.completion, desc: "Final testing and keys transferred to the client." }
+      'Leveraged Building Information Modeling (BIM) for precise coordination.', 
+      'Implemented low-carbon precast concrete modules.'
     ],
     specs: {
-      "Structure": "Composite Steel Frame Structure",
-      "Foundation": "Concrete bored pile shoring columns",
-      "Steel Used": "Thermo-mechanical control steel",
-      "Concrete Grade": "High strength concrete (38 N/mm²)",
-      "Building Height": "Height details undisclosed",
-      "Site Area": "12,000 m²",
-      "Parking Capacity": "Vehicles capacity not specified",
-      "Seismic Resistance": "Grade 1 (Excellent)",
-      "Energy Rating": "BELS 5-Star Compliant",
-      "Green Certification": "CASBEE A-Class",
-      "Construction Method": "Standard Prefabricated Modules"
-    },
-    culturalInsight: {
-      title: "匠",
-      meaning: "Embodying precision civil engineering values built on the legacy of classical carpentry tools.",
-      quote: "「継続は力なり」",
-      quoteTranslation: "Persistence becomes strength."
+      'Structure': 'Composite Steel Frame', 
+      'Foundation': 'Concrete bored pile columns',
+      'Steel Used': 'Thermo-mechanical control steel', 
+      'Concrete Grade': 'High strength 38 N/mm²',
+      'Building Height': 'Undisclosed', 
+      'Site Area': '12,000 m²',
+      'Seismic Resistance': 'Grade 1 (Excellent)', 
+      'Energy Rating': 'BELS 5-Star',
+      'Green Certification': 'CASBEE A-Class'
     }
   };
 
-  const client = project.details?.find(d => d.label.toLowerCase() === "client")?.value || "Private Developer";
-  const budget = project.details?.find(d => d.label.toLowerCase() === "budget")?.value || "Undisclosed";
-  const sector = project.details?.find(d => d.label.toLowerCase() === "sector")?.value || "Infrastructure";
-  const subSector = project.details?.find(d => d.label.toLowerCase() === "sub-sector")?.value || "Construction";
+  const budget = project.details?.find(d => d.label.toLowerCase() === 'budget')?.value || 'N/A';
+  const client = project.details?.find(d => d.label.toLowerCase() === 'client')?.value || 'N/A';
+  const imgSrc = `/images/${project.id}.jpg`;
 
-  const relatedProjects = projects.filter(p => p.id !== project.id).slice(0, 3);
+  // Grab the next project in sequence for transition portal link
+  const currentIndex = projects.findIndex(p => p.id === project.id);
+  const nextProject = projects[(currentIndex + 1) % projects.length];
 
-  // Compile quick specs grid items dynamically
-  const quickInfoItems = [
-    { label: "Project Status", value: "Completed", icon: <CheckCircle size={15} /> },
-    { label: "Location", value: project.location, icon: <MapPin size={15} /> },
-    { label: "Completion Year", value: project.completionYear, icon: <Calendar size={15} /> },
-    { label: "Client", value: client, icon: <Briefcase size={15} /> },
-    { label: "Site Area", value: detailsData.specs["Site Area"] || "Undisclosed", icon: <Ruler size={15} /> },
-    { label: "Project Budget", value: budget, icon: <DollarSign size={15} /> },
-    { label: "Construction Type", value: project.designType, icon: <Hammer size={15} /> },
-    { label: "Building Height", value: detailsData.specs["Building Height"] || "Undisclosed", icon: <Building2 size={15} /> }
-  ].filter(item => item.value && item.value !== "Undisclosed" && item.value !== "N/A");
+  // Visual categorization badge styling
+  const categoryPills = {
+    'Civil Infra': 'bg-sky-50 border-sky-100 text-sky-700',
+    'Offices': 'bg-amber-50 border-amber-100 text-amber-800',
+    'Energy': 'bg-emerald-50 border-emerald-100 text-emerald-800',
+    'Education': 'bg-violet-50 border-violet-100 text-violet-800',
+    'Recreation': 'bg-rose-50 border-rose-100 text-rose-800',
+  };
+  const pillStyle = categoryPills[project.category] || 'bg-zinc-50 border-zinc-100 text-zinc-800';
 
-  // Related Blueprint Images array for gallery masonry mock
-  const blueprints = [
-    { src: `/images/${project.id}.jpg`, caption: "Superstructure Outer Facade Elevation" },
-    { src: `/images/category_${project.category === "Civil Infra" ? "civil" : project.category.toLowerCase().replace(/\s+/g, '_')}.png`, caption: "Site Plan and Subsurface Excavation Cross-Section" },
-    { src: "/images/rokka_mori.png", caption: "Materials Logistics and Environmental Green Roof Design" }
-  ];
+  // Deduplicate summary and description overlap
+  const cleanDescription = project.description || '';
+  const cleanSummary = project.summary || '';
+  const isDuplicate = cleanSummary && (cleanDescription.includes(cleanSummary) || cleanSummary.includes(cleanDescription));
+  const paragraphs = cleanDescription.split('\n\n').map(p => p.trim()).filter(Boolean);
 
-  // Engineering Highlights Mapping
-  const engineeringHighlights = [
-    { title: "Earthquake Resilient", desc: `Equipped with advanced ${detailsData.specs["Seismic Resistance"] || "seismic dampers"} ensuring structural protection against earthquakes.`, icon: <Activity size={18} /> },
-    { title: "Carbon Neutral Focus", desc: `Utilizes ${detailsData.specs["Concrete Grade"] || "eco-certified"} composite foundations to lower net emissions.`, icon: <Cpu size={18} /> },
-    { title: "Smart Lifecycle BIM", desc: "Designed, tested, and assembled using Building Information Modeling tools to optimize maintenance.", icon: <Layers size={18} /> },
-    { title: "Disaster Preparedness", desc: "Reinforced structural foundations engineered to secure operations during local water and wind hazards.", icon: <ShieldCheck size={18} /> }
-  ];
+  const allCards = [...paragraphs];
+  const hasSummaryCard = !isDuplicate && cleanSummary;
+  if (hasSummaryCard) {
+    allCards.push(cleanSummary);
+  }
+
+  const [activePara, setActivePara] = React.useState(0);
+  const scrollContainerRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (!scrollContainerRef.current) return;
+      const rect = scrollContainerRef.current.getBoundingClientRect();
+      const startOffset = 120;
+      const scrolled = startOffset - rect.top;
+      const totalScrollable = rect.height - window.innerHeight + startOffset;
+      
+      if (scrolled >= 0 && totalScrollable > 0) {
+        const percentage = scrolled / totalScrollable;
+        const index = Math.floor(percentage * allCards.length);
+        const safeIndex = Math.max(0, Math.min(allCards.length - 1, index));
+        setActivePara(safeIndex);
+      } else if (scrolled < 0) {
+        setActivePara(0);
+      } else {
+        setActivePara(allCards.length - 1);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [allCards.length]);
+
+  const fallbackImg = {
+    'Civil Infra': '/images/category_civil.png',
+    'Offices': '/images/category_offices.png',
+    'Energy': '/images/category_energy.png',
+    'Education': '/images/category_education.png',
+    'Recreation': '/images/category_recreation.png',
+  };
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.6 }}
-      className="min-h-screen bg-white text-[#111827] font-sans antialiased selection:bg-[#C8102E]/10"
-    >
+    <div className="bg-[#f8f9fa] text-zinc-800 min-h-screen antialiased select-none font-sans pb-32">
       
-      {/* ── 1. HERO SECTION ── */}
-      <section className="relative w-full min-h-[550px] max-h-[700px] py-20 bg-white border-b border-[#E6E8EC] overflow-hidden flex items-center">
-        {/* Traditional Japanese motifs background layout */}
-        <WavePattern />
-        <RisingSun />
-        <FujiSilhouette />
+      {/* ─── HEADER / BREADCRUMBS ─── */}
+      <div 
+        style={{
+          maxWidth: '1200px',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          paddingLeft: '24px',
+          paddingRight: '24px',
+          paddingTop: '48px',
+          paddingBottom: '24px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'between',
+          borderBottom: '1px solid rgba(228, 228, 231, 0.6)'
+        }}
+        className="justify-between"
+      >
+        <Link 
+          to="/works" 
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '10px',
+            fontSize: '13px',
+            fontWeight: '700',
+            color: '#71717a',
+            textDecoration: 'none',
+            transition: 'color 0.2s ease'
+          }}
+          className="hover:text-zinc-900"
+        >
+          <ArrowLeft size={15} />
+          <span>Works Directory</span>
+        </Link>
+        <nav 
+          style={{
+            fontSize: '11px',
+            fontFamily: 'monospace',
+            textTransform: 'uppercase',
+            letterSpacing: '0.2em',
+            color: '#a1a1aa',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px'
+          }}
+          className="hidden sm:flex"
+        >
+          <span>Works</span>
+          <span>/</span>
+          <span>{project.category}</span>
+          <span>/</span>
+          <span style={{ color: '#52525b', fontWeight: 'bold' }}>{project.title}</span>
+        </nav>
+      </div>
 
-        {/* Back Button Floating */}
-        <div className="absolute top-8 left-6 md:left-12 z-20">
-          <button 
-            onClick={() => navigate('/works')}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white hover:bg-[#C8102E] hover:text-white border border-[#E6E8EC] hover:border-[#C8102E] text-[#111827] font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-sm cursor-pointer group"
+      <div style={{ maxWidth: '1200px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: '24px', paddingRight: '24px' }}>
+        
+        {/* ─── HEADER TITLE BLOCK ─── */}
+        <div style={{ marginTop: '48px', marginBottom: '40px' }}>
+          <span 
+            className={pillStyle}
+            style={{
+              display: 'inline-block',
+              padding: '6px 14px',
+              fontSize: '10px',
+              fontWeight: '800',
+              textTransform: 'uppercase',
+              letterSpacing: '0.15em',
+              borderRadius: '999px',
+              border: '1px solid rgba(228, 228, 231, 0.8)'
+            }}
           >
-            <ArrowLeft size={13} className="transform group-hover:-translate-x-1 transition-transform" />
-            <span>Back to Directory</span>
-          </button>
-        </div>
-
-        <div className="container mx-auto px-6 md:px-12 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            {/* Left Column: Typography Details */}
-            <div className="lg:col-span-7 space-y-6">
-              
-              {/* Category Badge */}
-              <span className="inline-flex items-center text-[10px] font-extrabold uppercase tracking-[0.25em] text-[#C8102E] border-b border-[#C8102E]/40 pb-1">
-                {project.category}
-              </span>
-
-              {/* Title Block */}
-              <div className="space-y-2">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#111827] leading-none">
-                  {project.title}
-                </h1>
-                
-                {/* Kanji Name & Romaji Pronunciation */}
-                <div className="flex flex-wrap items-center gap-2.5 pt-1.5 border-t border-slate-100 mt-2">
-                  <span className="text-base font-medium text-slate-800 tracking-wider font-sans">
-                    {detailsData.kanjiName}
-                  </span>
-                  <span className="text-xs font-mono italic text-slate-500 font-normal">
-                    ({detailsData.romajiName})
-                  </span>
-                </div>
-              </div>
-
-              {/* Specific Project Narrative Paragraph */}
-              <p className="text-[#6B7280] leading-relaxed text-base font-light font-sans max-w-xl">
-                {project.summary}
-              </p>
-            </div>
-
-            {/* Right Column: Floating Luxury Image Card */}
-            <div className="lg:col-span-5 flex justify-center">
-              <motion.div 
-                whileHover={{ scale: 1.03 }}
-                transition={{ type: "spring", stiffness: 200, damping: 20 }}
-                className="w-full max-w-[420px] aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl bg-[#F7F8FA] border border-[#E6E8EC]"
-              >
-                <img 
-                  src={`/images/${project.id}.jpg`} 
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const fallbacks = {
-                      "Offices": "/images/category_offices.png",
-                      "Civil Infra": "/images/category_civil.png",
-                      "Energy": "/images/category_energy.png",
-                      "Education": "/images/category_education.png",
-                      "Recreation": "/images/category_recreation.png"
-                    };
-                    e.target.src = fallbacks[project.category] || "/images/category_civil.png";
-                    e.target.onerror = null;
-                  }}
-                />
-              </motion.div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── 2. PROJECT QUICK INFORMATION CARD GRID ── */}
-      <section className="bg-[#F7F8FA] py-16 border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
+            {project.category}
+          </span>
           
-          <div className="text-center md:text-left mb-10">
-            <h2 className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#6B7280]">Project Parameters</h2>
-            <p className="text-2xl font-black text-[#111827] mt-1">Core Specifications</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {quickInfoItems.map((item, idx) => (
-              <motion.div 
-                key={idx}
-                whileHover={{ y: -4 }}
-                transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                className="bg-white border border-[#E6E8EC] rounded-2xl p-6 shadow-sm transition-shadow hover:shadow-md flex items-start gap-4"
-              >
-                <div className="p-3 bg-[#F7F8FA] rounded-xl text-[#1E3A8A] border border-[#E6E8EC] flex-shrink-0">
-                  {item.icon}
-                </div>
-                <div className="space-y-1">
-                  <span className="block text-[10px] font-bold uppercase tracking-wider text-[#6B7280]">
-                    {item.label}
-                  </span>
-                  <span className="block text-sm font-extrabold text-[#111827]">
-                    {item.value}
-                  </span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* ── 3. PROJECT LOCATION SECTION ── */}
-      <section className="py-20 bg-white border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
+          <h1 
+            style={{
+              fontSize: 'clamp(28px, 5vw, 48px)',
+              fontWeight: '900',
+              color: '#09090b',
+              letterSpacing: '-0.02em',
+              lineHeight: '1.25',
+              marginTop: '20px',
+              marginBottom: '10px'
+            }}
+          >
+            {project.title}
+          </h1>
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-            
-            {/* Left panel: Japan interactive coordinate map */}
-            <div className="lg:col-span-7 bg-[#F7F8FA] border border-[#E6E8EC] rounded-3xl p-8 flex flex-col justify-between">
-              <div>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E] block mb-2">GIS Tracking Map</span>
-                <h3 className="text-xl font-bold text-[#111827] mb-6">Geographical Footprint</h3>
-              </div>
-
-              {/* Map frame */}
-              <div className="h-64 w-full relative rounded-2xl overflow-hidden border border-[#E6E8EC] bg-white">
-                <MiniJapanMap location={project.location} />
-              </div>
-
-              {/* Map parameters table */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 pt-6 border-t border-[#E6E8EC] font-mono text-[11px] text-[#6B7280]">
-                <div>
-                  <span className="block text-[9px] uppercase tracking-wider text-slate-400">Prefecture</span>
-                  <span className="font-bold text-[#111827]">{detailsData.prefecture}</span>
-                </div>
-                <div>
-                  <span className="block text-[9px] uppercase tracking-wider text-slate-400">City / District</span>
-                  <span className="font-bold text-[#111827] truncate block">{detailsData.city}</span>
-                </div>
-                <div>
-                  <span className="block text-[9px] uppercase tracking-wider text-slate-400">GPS Pin</span>
-                  <span className="font-bold text-[#1E3A8A] block truncate">{detailsData.coordinates}</span>
-                </div>
-                <div>
-                  <span className="block text-[9px] uppercase tracking-wider text-slate-400">Nearest Hub</span>
-                  <span className="font-bold text-[#111827] block truncate">{detailsData.airport}</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right panel: Strategic Location Story */}
-            <div className="lg:col-span-5 flex flex-col justify-center space-y-6">
-              <span className="inline-flex items-center text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#C8102E] border-b border-[#C8102E]/30 pb-1 self-start">
-                Location Strategy
-              </span>
-              <h3 className="text-3xl font-extrabold text-[#111827] tracking-tight leading-tight">
-                Regional Significance & Connectivity
-              </h3>
-              <p className="text-[#6B7280] leading-relaxed text-sm font-light">
-                {detailsData.locationStory}
-              </p>
-              <div className="bg-[#F7F8FA] border border-[#E6E8EC] rounded-2xl p-5 text-xs text-[#6B7280] flex items-center gap-3">
-                <Info size={16} className="text-[#1E3A8A] flex-shrink-0" />
-                <span>Active site coordinate pin resides approximately <strong>{detailsData.tokyoDistance}</strong> from Central Tokyo base.</span>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* ── 4. PROJECT OVERVIEW & 850PX READING LAYOUT ── */}
-      <section className="py-20 bg-[#F7F8FA] border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
-          
-          <article className="max-w-[850px] mx-auto space-y-12">
-            
-            {/* Title header */}
-            <div className="text-center space-y-2">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E]">Detailed Analysis</span>
-              <h2 className="text-3xl font-black text-[#111827] tracking-tight">Engineering Overview & Highlights</h2>
-              <div className="w-12 h-[2px] bg-[#C8102E] mx-auto mt-4"></div>
-            </div>
-
-            {/* Core Text sections */}
-            <div className="bg-white border border-[#E6E8EC] rounded-3xl p-8 md:p-12 shadow-sm space-y-10">
-              
-              <div className="space-y-4">
-                <h3 className="text-lg font-extrabold text-[#111827] flex items-center gap-2.5">
-                  <span className="w-1 h-4 bg-[#C8102E] inline-block"></span>
-                  Overview & Objective
-                </h3>
-                <p className="text-sm text-[#6B7280] leading-relaxed font-light">
-                  {project.description}
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-lg font-extrabold text-[#111827] flex items-center gap-2.5">
-                  <span className="w-1 h-4 bg-[#C8102E] inline-block"></span>
-                  Engineering Challenges
-                </h3>
-                <ul className="space-y-4">
-                  {detailsData.challenges.map((challenge, idx) => (
-                    <li key={idx} className="text-sm text-[#6B7280] leading-relaxed flex items-start gap-3">
-                      <span className="font-bold text-[#C8102E] pt-0.5">•</span>
-                      <span className="font-light">{challenge}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-lg font-extrabold text-[#111827] flex items-center gap-2.5">
-                  <span className="w-1 h-4 bg-[#C8102E] inline-block"></span>
-                  Innovative Solutions
-                </h3>
-                <ul className="space-y-4">
-                  {detailsData.solutions.map((sol, idx) => (
-                    <li key={idx} className="text-sm text-[#6B7280] leading-relaxed flex items-start gap-3">
-                      <span className="font-bold text-[#1E3A8A] pt-0.5">•</span>
-                      <span className="font-light">{sol}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-            </div>
-
-          </article>
-
-        </div>
-      </section>
-
-      {/* ── 5. PROJECT TIMELINE SECTION ── */}
-      <section className="py-20 bg-white border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
-          
-          <div className="text-center mb-16">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E]">Project Lifecycle</span>
-            <h2 className="text-3xl font-black text-[#111827] tracking-tight mt-1">Development Milestones</h2>
-          </div>
-
-          <div className="max-w-3xl mx-auto relative border-l-2 border-[#E6E8EC] ml-6 pl-8 space-y-12 py-2">
-            {detailsData.timeline.map((event, idx) => (
-              <div key={idx} className="relative group">
-                
-                {/* Timeline node circle */}
-                <div className="absolute -left-[41px] top-1.5 w-6 h-6 rounded-full bg-white border-2 border-[#E6E8EC] group-hover:border-[#C8102E] flex items-center justify-center transition-colors duration-300 shadow-sm">
-                  <div className="w-2 h-2 rounded-full bg-[#E6E8EC] group-hover:bg-[#C8102E] transition-colors duration-300"></div>
-                </div>
-
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
-                  <div className="flex items-center gap-3">
-                    <span className="text-[9px] font-mono font-bold text-[#6B7280] bg-[#F7F8FA] border border-[#E6E8EC] px-2 py-0.5 rounded">
-                      PHASE 0{idx + 1}
-                    </span>
-                    <h4 className="font-extrabold text-[#111827] text-base group-hover:text-[#C8102E] transition-colors">
-                      {event.phase}
-                    </h4>
-                  </div>
-                  <span className="text-[10px] font-bold text-[#C8102E] font-mono bg-[#C8102E]/5 border border-[#C8102E]/15 px-2.5 py-1 rounded">
-                    {event.date}
-                  </span>
-                </div>
-                <p className="text-xs text-[#6B7280] leading-relaxed font-light">
-                  {event.desc}
-                </p>
-
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* ── 6. PROJECT GALLERY MASONRY ── */}
-      <section className="py-20 bg-[#F7F8FA] border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
-          
-          <div className="text-center mb-12">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E]">Visual Showcase</span>
-            <h2 className="text-3xl font-black text-[#111827] tracking-tight mt-1">Image & Blueprint Gallery</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {blueprints.map((img, idx) => (
-              <div 
-                key={idx}
-                onClick={() => setActiveImage(img)}
-                className="group relative cursor-pointer overflow-hidden rounded-[24px] border border-[#E6E8EC] bg-white shadow-sm hover:shadow-lg transition-all duration-300"
-              >
-                <div className="aspect-[4/3] w-full overflow-hidden relative">
-                  <img 
-                    src={img.src} 
-                    alt={img.caption}
-                    className="w-full h-full object-cover transform group-hover:scale-103 transition-transform duration-500"
-                    onError={(e) => {
-                      e.target.src = "/images/category_civil.png";
-                      e.target.onerror = null;
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-slate-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <span className="px-3.5 py-2 bg-white text-xs font-bold text-[#111827] rounded shadow-md border border-[#E6E8EC] uppercase tracking-wider">
-                      Zoom Diagram
-                    </span>
-                  </div>
-                </div>
-                <div className="p-4 border-t border-[#E6E8EC]">
-                  <p className="text-xs text-[#6B7280] font-medium font-sans flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 bg-[#C8102E] rounded-full"></span>
-                    {img.caption}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* Lightbox Portal Overlay */}
-      <AnimatePresence>
-        {activeImage && (
           <div 
-            onClick={() => setActiveImage(null)}
-            className="fixed inset-0 z-[5000] bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-6"
+            style={{
+              fontSize: '15px',
+              color: '#71717a',
+              fontFamily: 'Georgia, serif',
+              display: 'flex',
+              flexWrap: 'wrap',
+              alignItems: 'center',
+              gap: '12px',
+              marginTop: '12px'
+            }}
           >
-            <div className="max-w-3xl w-full bg-white border border-[#E6E8EC] rounded-[24px] overflow-hidden shadow-2xl relative" onClick={e => e.stopPropagation()}>
-              <button 
-                onClick={() => setActiveImage(null)}
-                className="absolute top-4 right-4 p-2 bg-[#F7F8FA] border border-[#E6E8EC] rounded-full text-slate-600 hover:text-black cursor-pointer transition-colors"
+            <span style={{ fontWeight: 'bold', color: '#3f3f46' }}>{details.kanjiName}</span>
+            <span style={{ fontSize: '12px', fontFamily: 'monospace', color: '#a1a1aa' }}>({details.romajiName})</span>
+          </div>
+        </div>
+
+        {/* ─── PRIMARY VISUAL HERO FRAME ─── */}
+        <motion.div 
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          style={{
+            width: '100%',
+            aspectRatio: '16 / 7',
+            borderRadius: '24px',
+            overflow: 'hidden',
+            border: '1px solid #e4e4e7',
+            boxShadow: '0 8px 30px rgba(0,0,0,0.06)',
+            marginBottom: '64px',
+            backgroundColor: '#f4f4f5'
+          }}
+          className="relative group"
+        >
+          <img 
+            src={imgSrc} 
+            alt={project.title}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              transition: 'transform 4s cubic-bezier(0.16, 1, 0.3, 1)'
+            }}
+            className="group-hover:scale-102"
+            onError={(e) => {
+              e.target.src = fallbackImg[project.category] || '/images/category_civil.png';
+              e.target.onerror = null;
+            }}
+          />
+        </motion.div>
+
+        {/* ─── TWO-COLUMN CONTENT GRID ─── */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start" style={{ marginBottom: '64px' }}>
+          
+          {/* Metadata Ledger Card (Left Column) */}
+          <div className="lg:col-span-4 w-full">
+            <div 
+              style={{
+                backgroundColor: '#ffffff',
+                border: '1px solid #e4e4e7',
+                borderRadius: '24px',
+                padding: '32px',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.03)'
+              }}
+            >
+              <h3 
+                style={{
+                  fontSize: '11px',
+                  fontWeight: '800',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.2em',
+                  color: '#09090b',
+                  marginBottom: '28px',
+                  paddingBottom: '16px',
+                  borderBottom: '1px solid #f4f4f5',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px'
+                }}
               >
-                <X size={16} />
-              </button>
-              <img src={activeImage.src} alt={activeImage.caption} className="w-full max-h-[500px] object-contain bg-[#F7F8FA]" />
-              <div className="p-4 bg-white border-t border-[#E6E8EC]">
-                <p className="text-xs font-bold text-[#111827]">{activeImage.caption}</p>
+                <Award size={15} style={{ color: '#71717a' }} />
+                <span>Project Facts</span>
+              </h3>
+              
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                {[
+                  { label: 'Client / Sponsor', value: client },
+                  { label: 'Completion Date', value: project.completion },
+                  { label: 'Budget Allocation', value: budget },
+                  { label: 'Contract Type', value: project.designType },
+                  { label: 'Site Location', value: project.location }
+                ].map((item, i) => (
+                  <div key={i} style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                    <span style={{ fontSize: '9px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#a1a1aa', fontWeight: 'bold' }}>
+                      {item.label}
+                    </span>
+                    <span style={{ fontSize: '14px', color: '#18181b', fontWeight: '800', lineHeight: '1.4' }}>
+                      {item.value}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-        )}
-      </AnimatePresence>
 
-      {/* ── 7. PROJECT SPECIFICATIONS TABLE (Apple Documentation style) ── */}
-      <section className="py-20 bg-white border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
-          
-          <div className="max-w-3xl mx-auto">
+          {/* Detailed Editorial Narrative (Right Column) ─── */}
+          <div className="lg:col-span-8 flex flex-col justify-start">
+            <span style={{ fontSize: '10px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#a1a1aa', display: 'block', marginBottom: '24px', fontWeight: 'bold' }}>
+              Project Narrative
+            </span>
             
-            <div className="text-center md:text-left mb-10">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E]">Technical parameters</span>
-              <h2 className="text-2xl font-black text-[#111827] mt-1">Detailed Specifications Sheet</h2>
-            </div>
+            {/* Scrollable Track Container */}
+            <div 
+              ref={scrollContainerRef}
+              style={{ 
+                position: 'relative', 
+                height: `${allCards.length * 60}vh`, 
+                width: '100%' 
+              }}
+            >
+              {/* Pinned Sticky Space */}
+              <div 
+                style={{ 
+                  position: 'sticky', 
+                  top: '120px', 
+                  width: '100%', 
+                  minHeight: '360px', 
+                  perspective: '2000px', 
+                  transformStyle: 'preserve-3d' 
+                }}
+              >
+                {allCards.map((p, i) => {
+                  const isActive = i === activePara;
+                  const isPast = i < activePara;
+                  const isSummary = hasSummaryCard && i === allCards.length - 1;
 
-            <div className="bg-white border border-[#E6E8EC] rounded-3xl overflow-hidden shadow-sm">
-              <table className="w-full text-left border-collapse text-sm">
-                <thead>
-                  <tr className="bg-[#F7F8FA] border-b border-[#E6E8EC] text-[10px] font-bold uppercase tracking-wider text-[#6B7280]">
-                    <th className="p-4 pl-6">Technical Field</th>
-                    <th className="p-4 pr-6">Design Integration Value</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {Object.entries(detailsData.specs).map(([key, val], idx) => (
-                    <tr 
-                      key={idx}
-                      className="border-b border-[#E6E8EC] last:border-0 hover:bg-[#F7F8FA]/60 transition-colors"
+                  // Dynamic 3D transform metrics
+                  let rotateX = 0;
+                  let opacity = 0;
+                  let scale = 1;
+                  let y = 0;
+                  let zIndex = 1;
+
+                  if (isActive) {
+                    rotateX = 0;
+                    opacity = 1;
+                    scale = 1;
+                    y = 0;
+                    zIndex = 10;
+                  } else if (isPast) {
+                    rotateX = -90; // Flip completely flat upwards
+                    opacity = 0;
+                    scale = 0.95;
+                    y = -60;
+                    zIndex = 1;
+                  } else {
+                    rotateX = 90; // Folded flat downwards
+                    opacity = 0;
+                    scale = 0.95;
+                    y = 60;
+                    zIndex = 1;
+                  }
+
+                  return (
+                    <motion.div
+                      key={i}
+                      animate={{ 
+                        rotateX, 
+                        opacity, 
+                        scale, 
+                        y,
+                        zIndex
+                      }}
+                      transition={{ 
+                        duration: 0.65, 
+                        ease: [0.16, 1, 0.3, 1] 
+                      }}
+                      style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        transformOrigin: isPast ? 'top center' : 'bottom center',
+                        backgroundColor: isSummary ? '#f8fafc' : '#ffffff',
+                        border: isSummary ? '1px dashed #cbd5e1' : '1px solid #e4e4e7',
+                        borderRadius: '24px',
+                        padding: '48px 56px',
+                        boxShadow: '0 20px 40px rgba(9, 9, 11, 0.03), 0 1px 3px rgba(9, 9, 11, 0.01)',
+                        transformStyle: 'preserve-3d',
+                        backfaceVisibility: 'hidden',
+                        minHeight: '280px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center'
+                      }}
+                      className="hover:shadow-lg transition-shadow duration-300"
                     >
-                      <td className="p-4 pl-6 font-bold text-[#1E3A8A] text-xs">{key}</td>
-                      <td className="p-4 pr-6 text-[#6B7280] font-light text-xs">{val}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                      {/* Spiral binder rings overlay (only for standard narrative cards) */}
+                      {!isSummary && (
+                        <div style={{ position: 'absolute', top: '-1px', left: '10%', right: '10%', height: '3px', display: 'flex', justifyContent: 'space-between', zIndex: 20 }}>
+                          {[...Array(6)].map((_, rIdx) => (
+                            <div 
+                              key={rIdx} 
+                              style={{
+                                width: '12px',
+                                height: '24px',
+                                backgroundColor: '#e4e4e7',
+                                border: '1px solid #cbd5e1',
+                                borderRadius: '4px',
+                                marginTop: '-12px',
+                                boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.1)'
+                              }}
+                            />
+                          ))}
+                        </div>
+                      )}
 
+                      {isSummary && (
+                        <span style={{ fontSize: '9px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#64748b', fontWeight: 'bold', display: 'block', marginBottom: '14px', borderBottom: '1px dashed #cbd5e1', paddingBottom: '8px' }}>
+                          Executive Summary
+                        </span>
+                      )}
+
+                      <p 
+                        style={{
+                          fontSize: '16px',
+                          color: isSummary ? '#64748b' : '#3f3f46',
+                          lineHeight: '2.0',
+                          fontWeight: '300',
+                          textAlign: 'justify',
+                          margin: 0
+                        }}
+                      >
+                        {p}
+                      </p>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
 
         </div>
-      </section>
 
-      {/* ── 8. JAPANESE CULTURAL SECTION ── */}
-      <section className="py-24 bg-[#F7F8FA] border-b border-[#E6E8EC] relative">
-        {/* Faint wave backdrop layout */}
-        <WavePattern />
-        
-        <div className="container mx-auto px-6 md:px-12 relative z-10">
-          <div className="max-w-2xl mx-auto text-center space-y-8">
-            
-            {/* Hanko stamp circular indicator */}
-            <HankoStamp char={detailsData.culturalInsight.title} />
-
-            <div className="space-y-4">
-              <span className="block text-[10px] font-bold uppercase tracking-[0.3em] text-[#C8102E]">
-                Traditional Craftsmanship Insights
-              </span>
-              
-              <h3 className="text-3xl font-extrabold text-[#111827] tracking-tight">
-                {detailsData.culturalInsight.quote}
-              </h3>
-              
-              <p className="text-xs font-mono text-slate-500 italic">
-                {detailsData.culturalInsight.quoteTranslation}
-              </p>
-            </div>
-
-            <div className="max-w-lg mx-auto bg-white border border-[#E6E8EC] rounded-2xl p-6 shadow-sm">
-              <p className="text-xs text-[#6B7280] leading-relaxed font-light font-sans">
-                {detailsData.culturalInsight.meaning}
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── 9. ENGINEERING HIGHLIGHTS ── */}
-      <section className="py-20 bg-white border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
+        {/* ─── CHALLENGES & APPLIED SOLUTIONS ─── */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8" style={{ marginBottom: '64px' }}>
           
-          <div className="text-center mb-16">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E]">Technical Materiality</span>
-            <h2 className="text-3xl font-black text-[#111827] tracking-tight mt-1">Core Structural Merits</h2>
+          {/* Engineering Challenges Card */}
+          <div 
+            style={{
+              backgroundColor: '#ffffff',
+              borderLeft: '4px solid #f59e0b',
+              borderTop: '1px solid #e4e4e7',
+              borderRight: '1px solid #e4e4e7',
+              borderBottom: '1px solid #e4e4e7',
+              borderRadius: '0 24px 24px 0',
+              padding: '36px',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.03)'
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
+              <ShieldAlert size={16} style={{ color: '#d97706' }} />
+              <h4 style={{ fontSize: '11px', fontWeight: '950', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#b45309' }}>
+                Engineering Challenges
+              </h4>
+            </div>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+              {details.challenges.map((c, i) => (
+                <li key={i} style={{ fontSize: '14px', color: '#4b5563', lineHeight: '1.7', display: 'flex', alignItems: 'start', gap: '12px' }}>
+                  <span style={{ color: '#f59e0b', fontWeight: 'bold', fontSize: '14px', selectNone: 'true', marginTop: '1px' }}>•</span>
+                  <span>{c}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {engineeringHighlights.map((item, idx) => (
-              <motion.div 
-                key={idx}
-                whileHover={{ y: -4 }}
-                className="bg-white border border-[#E6E8EC] rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
-              >
-                <div className="w-10 h-10 rounded-xl bg-[#F7F8FA] border border-[#E6E8EC] text-[#C8102E] flex items-center justify-center mb-5">
-                  {item.icon}
-                </div>
-                <h4 className="font-extrabold text-[#111827] text-sm mb-2">{item.title}</h4>
-                <p className="text-xs text-[#6B7280] leading-relaxed font-light">{item.desc}</p>
-              </motion.div>
-            ))}
+          {/* Engineering Solutions Card */}
+          <div 
+            style={{
+              backgroundColor: '#ffffff',
+              borderLeft: '4px solid #10b981',
+              borderTop: '1px solid #e4e4e7',
+              borderRight: '1px solid #e4e4e7',
+              borderBottom: '1px solid #e4e4e7',
+              borderRadius: '0 24px 24px 0',
+              padding: '36px',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.03)'
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
+              <CheckCircle size={16} style={{ color: '#059669' }} />
+              <h4 style={{ fontSize: '11px', fontWeight: '950', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#047857' }}>
+                Applied Solutions
+              </h4>
+            </div>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+              {details.solutions.map((s, i) => (
+                <li key={i} style={{ fontSize: '14px', color: '#4b5563', lineHeight: '1.7', display: 'flex', alignItems: 'start', gap: '12px' }}>
+                  <span style={{ color: '#10b981', fontWeight: 'bold', fontSize: '14px', selectNone: 'true', marginTop: '1px' }}>•</span>
+                  <span>{s}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
         </div>
-      </section>
 
-      {/* ── 10. RELATED PROJECTS ── */}
-      <section className="py-20 bg-[#F7F8FA] border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
+        {/* ─── GEOGRAPHY & JAPAN MAP INTERACTION ─── */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center" style={{ marginBottom: '80px' }}>
           
-          <div className="flex items-end justify-between mb-12">
+          {/* Geographic Narrative */}
+          <div className="lg:col-span-6 flex flex-col gap-6">
             <div>
-              <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E]">Related Portfolios</span>
-              <h2 className="text-3xl font-black text-[#111827] tracking-tight mt-1">Similar Structural Case Studies</h2>
+              <span style={{ fontSize: '10px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#a1a1aa', display: 'block', marginBottom: '8px' }}>
+                Geographic Context
+              </span>
+              <h3 style={{ fontSize: '24px', fontWeight: '900', color: '#09090b' }}>
+                Regional Development
+              </h3>
             </div>
-            <Link to="/works" className="hidden md:flex items-center gap-1.5 text-xs font-bold text-[#C8102E] hover:text-[#C8102E]/80 transition-colors uppercase tracking-widest">
-              Explore Directory <ArrowRight size={13} />
-            </Link>
+            <p style={{ fontSize: '15px', color: '#4b5563', lineHeight: '1.85', fontWeight: '300' }}>
+              {details.locationStory}
+            </p>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', borderTop: '1px solid rgba(228, 228, 231, 0.8)', paddingTop: '24px', marginTop: '8px' }}>
+              <div>
+                <span style={{ fontSize: '9px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#a1a1aa', display: 'block' }}>
+                  Site Coordinates
+                </span>
+                <span style={{ fontSize: '14px', fontWeight: '800', color: '#27272a', display: 'block', marginTop: '6px' }}>
+                  {details.coordinates}
+                </span>
+              </div>
+              {details.tokyoDistance !== 'N/A' && (
+                <div>
+                  <span style={{ fontSize: '9px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#a1a1aa', display: 'block' }}>
+                    Tokyo Distance
+                  </span>
+                  <span style={{ fontSize: '14px', fontWeight: '800', color: '#27272a', display: 'block', marginTop: '6px' }}>
+                    {details.tokyoDistance}
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {relatedProjects.map((p) => (
-              <Link 
-                key={p.id}
-                to={`/projects/${slugify(p.title)}`}
-                className="bg-white border border-[#E6E8EC] hover:border-[#C8102E]/30 hover:shadow-xl rounded-2xl overflow-hidden group hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
-              >
-                <div className="h-44 w-full overflow-hidden relative">
-                  <img 
-                    src={`/images/${p.id}.jpg`} 
-                    alt={p.title}
-                    className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
-                    onError={(e) => {
-                      const fallbacks = {
-                        "Offices": "/images/category_offices.png",
-                        "Civil Infra": "/images/category_civil.png",
-                        "Energy": "/images/category_energy.png",
-                        "Education": "/images/category_education.png",
-                        "Recreation": "/images/category_recreation.png"
-                      };
-                      e.target.src = fallbacks[p.category] || "/images/category_civil.png";
-                      e.target.onerror = null;
-                    }}
-                  />
-                  <div className="absolute top-4 left-4 px-2.5 py-0.5 text-[8px] font-extrabold tracking-widest uppercase bg-white text-[#C8102E] rounded border border-[#E6E8EC]">
-                    {p.category}
-                  </div>
-                </div>
-                <div className="p-5 flex flex-col flex-grow">
-                  <h4 className="font-extrabold text-[#111827] group-hover:text-[#C8102E] line-clamp-1 transition-colors text-sm mb-3">
-                    {p.title}
-                  </h4>
-                  <div className="flex items-center gap-1.5 text-xs text-[#6B7280] mt-auto pt-4 border-t border-[#E6E8EC]">
-                    <MapPin size={11} className="text-[#C8102E]" />
-                    <span>{p.location}</span>
-                  </div>
-                </div>
-              </Link>
-            ))}
+          {/* Interactive Mini Japan Map frame */}
+          <div className="lg:col-span-6 flex justify-center">
+            <div 
+              style={{
+                aspectRatio: '1 / 1',
+                height: '320px',
+                width: '100%',
+                maxWidth: '320px',
+                borderRadius: '24px',
+                border: '1px solid #e4e4e7',
+                overflow: 'hidden',
+                backgroundColor: '#ffffff',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.03)',
+                position: 'relative'
+              }}
+            >
+              <MiniJapanMap location={project.location} />
+            </div>
           </div>
 
         </div>
-      </section>
 
-      {/* ── 11. CTA SECTION ── */}
-      <section className="py-24 bg-white border-b border-[#E6E8EC] relative">
-        <WavePattern />
-        
-        <div className="container mx-auto px-6 md:px-12 relative z-10 text-center space-y-6">
-          <h2 className="text-3xl font-black text-[#111827] tracking-tight">
-            Interested in Similar Projects?
-          </h2>
-          <p className="text-sm text-[#6B7280] leading-relaxed max-w-md mx-auto font-light">
-            Obayashi handles complex structural builds and green utility grids globally. Connect with our engineering directors.
-          </p>
+        {/* ─── TECHNICAL SPECIFICATIONS TABLE ─── */}
+        <div style={{ marginBottom: '80px' }}>
+          <div style={{ marginBottom: '24px' }}>
+            <span style={{ fontSize: '10px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#a1a1aa', display: 'block', marginBottom: '8px' }}>
+              Detailed Reference
+            </span>
+            <h3 style={{ fontSize: '24px', fontWeight: '900', color: '#09090b', display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <Cpu size={18} style={{ color: '#71717a' }} />
+              <span>Engineering Specifications</span>
+            </h3>
+          </div>
 
-          <div className="flex items-center justify-center gap-4 pt-4">
-            <Link 
-              to="/works" 
-              className="px-6 py-3 bg-[#111827] hover:bg-[#C8102E] text-white rounded-md text-xs font-bold uppercase tracking-widest transition-colors shadow-md flex items-center gap-2"
-            >
-              <span>Explore Works</span>
-              <ArrowRight size={13} />
-            </Link>
-            <Link 
-              to="/contact" 
-              className="px-6 py-3 bg-white hover:bg-[#F7F8FA] text-[#111827] rounded-md text-xs font-bold uppercase tracking-widest border border-[#E6E8EC] transition-colors"
-            >
-              Contact Us
-            </Link>
+          <div 
+            style={{
+              backgroundColor: '#ffffff',
+              border: '1px solid #e4e4e7',
+              borderRadius: '24px',
+              padding: '40px',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.03)'
+            }}
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-2">
+              {Object.entries(details.specs).map(([key, val], idx) => (
+                <div 
+                  key={idx} 
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    gap: '24px',
+                    paddingTop: '18px',
+                    paddingBottom: '18px',
+                    borderBottom: '1px solid #f4f4f5'
+                  }}
+                >
+                  <span style={{ fontSize: '13px', color: '#71717a', fontWeight: '600' }}>{key}</span>
+                  <span style={{ fontSize: '13px', color: '#18181b', fontWeight: '800', textAlign: 'right', lineHeight: '1.4' }}>{val}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
-        {/* Traditional screen screen divider line */}
-        <TraditionalDivider />
-      </section>
+        {/* ─── DIRECT NEXT PROJECT TRANSITION BUTTON ─── */}
+        <div style={{ marginTop: '96px', paddingTop: '32px', borderTop: '1px solid rgba(228, 228, 231, 0.8)' }}>
+          <span style={{ fontSize: '10px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#a1a1aa', display: 'block', marginBottom: '16px', textAlign: 'center' }}>
+            Browse Next Work
+          </span>
+          <Link
+            to={`/works/${nextProject.id}`}
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              backgroundColor: '#09090b',
+              color: '#ffffff',
+              borderRadius: '24px',
+              padding: '40px',
+              transition: 'all 0.3s ease',
+              textDecoration: 'none',
+              boxShadow: '0 8px 30px rgba(0,0,0,0.1)'
+            }}
+            className="group hover:scale-[1.01]"
+          >
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', maxWidth: '80%' }}>
+              <span style={{ fontSize: '8px', fontFamily: 'monospace', color: '#71717a', textTransform: 'uppercase', letterSpacing: '0.2em' }}>
+                NEXT DOSSIER
+              </span>
+              <span style={{ fontSize: '18px', fontWeight: '800', transition: 'color 0.2s' }} className="group-hover:text-white truncate">
+                {nextProject.title}
+              </span>
+            </div>
+            <div 
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '48px',
+                height: '48px',
+                borderRadius: '50%',
+                backgroundColor: '#27272a',
+                border: '1px solid #3f3f46',
+                transition: 'all 0.3s'
+              }}
+              className="group-hover:bg-zinc-800 flex-shrink-0"
+            >
+              <ArrowRight size={16} />
+            </div>
+          </Link>
+        </div>
 
-      {/* ── 12. PAGE FOOTER DECORATION ── */}
-      <footer className="py-12 bg-white relative">
-        {/* Subtle geometric red accent line */}
-        <div className="w-12 h-[3px] bg-[#C8102E] mx-auto mb-4 rounded-full"></div>
-        <p className="text-[10px] font-mono text-[#6B7280] text-center tracking-widest uppercase">
-          Precision • Trust • Craftsmanship
-        </p>
-      </footer>
+      </div>
 
-    </motion.div>
+    </div>
   );
 }

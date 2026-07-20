@@ -1,689 +1,760 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  ArrowLeft, MapPin, Calendar, Briefcase, DollarSign, 
-  Award, Layers, Cpu, ShieldAlert, CheckCircle2, 
-  Compass, Activity, ArrowRight, ShieldCheck, Info,
-  X, ChevronRight, Building2, Hammer, Ruler, CheckCircle
+import { motion, AnimatePresence, useInView, useScroll, useTransform } from 'framer-motion';
+import {
+  ArrowLeft, MapPin, Calendar, Briefcase, DollarSign,
+  Layers, Activity, ArrowRight, ShieldCheck, Info,
+  X, Building2, Hammer, Ruler, CheckCircle, ChevronRight,
+  Maximize2, Globe, TrendingUp, Zap, ArrowUpRight, Play
 } from 'lucide-react';
 import { projects } from '../data/worksContent';
 import { detailedProjectContent } from '../data/projectDetails';
 import MiniJapanMap from '../components/MiniJapanMap';
 
-// Reusable slugifier matching popup card
-const slugify = (text) => {
-  return text
-    .toString()
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[^\w\-]+/g, '')
-    .replace(/\-\-+/g, '-')
-    .replace(/^-+/, '')
-    .replace(/-+$/, '');
+/* ─── Slugifier ──────────────────────────────────────── */
+const slugify = (t) => t.toString().toLowerCase().replace(/\s+/g,'-').replace(/[^\w-]+/g,'').replace(/--+/g,'-').replace(/^-+/,'').replace(/-+$/,'');
+
+/* ─── Category tokens ────────────────────────────────── */
+const catTokens = {
+  'Civil Infra': { pill: 'bg-sky-400/15 text-sky-300 border-sky-400/30', accent: '#38bdf8' },
+  'Offices':     { pill: 'bg-amber-400/15 text-amber-300 border-amber-400/30', accent: '#fbbf24' },
+  'Energy':      { pill: 'bg-emerald-400/15 text-emerald-300 border-emerald-400/30', accent: '#34d399' },
+  'Education':   { pill: 'bg-violet-400/15 text-violet-300 border-violet-400/30', accent: '#a78bfa' },
+  'Recreation':  { pill: 'bg-rose-400/15 text-rose-300 border-rose-400/30', accent: '#fb7185' },
 };
 
-// Traditional Japanese Wave (Seigaiha) pattern component
-const WavePattern = () => (
-  <div 
-    className="absolute inset-0 pointer-events-none opacity-[0.02] z-0"
-    style={{
-      backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='30' viewBox='0 0 60 30'%3E%3Cpath d='M15 0a30 30 0 1 1-30 30 30 30 0 0 1 30-30zm0 5a25 25 0 1 1-25 25 25 25 0 0 1 25-25zm0 5a20 20 0 1 1-20 20 20 20 0 0 1 20-20zm0 5a15 15 0 1 1-15 15 15 15 0 0 1 15-15zm0 5a10 10 0 1 1-10 10 10 10 0 0 1 10-10zm0 5a5 5 0 1 1-5 5 5 5 0 0 1 5-5z' fill='%23111827' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E")`,
-      backgroundSize: '60px 30px'
-    }}
-  />
-);
+const fallbackImg = {
+  'Civil Infra': '/images/category_civil.png', 'Offices': '/images/category_offices.png',
+  'Energy': '/images/category_energy.png', 'Education': '/images/category_education.png',
+  'Recreation': '/images/category_recreation.png',
+};
 
-// Faint Fuji Silhouette SVG at the bottom of the hero
-const FujiSilhouette = () => (
-  <svg 
-    className="absolute bottom-0 right-[5%] w-[420px] h-[160px] pointer-events-none opacity-[0.03] z-0"
-    viewBox="0 0 350 150" 
-    fill="none" 
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path 
-      d="M0 150 L110 90 L160 50 L175 48 L190 50 L240 90 L350 150 Z" 
-      fill="#111827" 
-    />
-    <path 
-      d="M160 50 L175 48 L190 50 L200 65 L175 70 L150 65 Z" 
-      fill="#FFFFFF" 
-    />
-  </svg>
-);
-
-// Faint rising sun decorative background circle
-const RisingSun = () => (
-  <div 
-    className="absolute top-[12%] left-[8%] w-[200px] h-[200px] rounded-full bg-[#C8102E]/[0.015] border border-[#C8102E]/[0.025] pointer-events-none z-0"
-  />
-);
-
-// Hanko red stamp component (Takumi style)
-const HankoStamp = ({ char = "匠" }) => (
-  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-dashed border-[#C8102E] text-[#C8102E] font-serif font-black text-lg select-none rotate-6 shadow-sm shadow-[#C8102E]/10 bg-white">
-    <div className="w-10 h-10 rounded-full border border-solid border-[#C8102E] flex items-center justify-center">
-      {char}
-    </div>
-  </div>
-);
-
-// Divider styled after traditional Japanese screens
-const TraditionalDivider = () => (
-  <div className="flex items-center justify-center gap-4 my-16 opacity-30 select-none">
-    <div className="h-[1px] w-24 bg-gradient-to-r from-transparent to-[#111827]"></div>
-    <div className="w-2 h-2 rotate-45 border border-[#111827] bg-white"></div>
-    <div className="h-[1px] w-24 bg-gradient-to-l from-transparent to-[#111827]"></div>
-  </div>
-);
-
-// Advanced features mapping to show real tech specifications for each category
-const getTechSpecifications = (category, title) => {
-  if (category === "Civil Infra" || title.includes("Metro") || title.includes("Rail")) {
-    return {
-      safetyLevel: "Class-A Civil Risk Mitigated",
-      certifications: ["ISO 9001 (Quality)", "ISO 14001 (Environmental)"],
-      coreTech: "Earth Pressure Balance (EPB) Shield TBM, Real-time telemetry monitoring",
-      sustainability: "Low-carbon concrete mix, 85% construction waste recycled on site"
-    };
-  } else if (category === "Offices" || title.includes("Hills") || title.includes("Redevelopment")) {
-    return {
-      safetyLevel: "Grade-S Seismic Absorption",
-      certifications: ["LEED Gold / Platinum Target", "CASBEE Class-S (Japan)"],
-      coreTech: "Active Mass Dampers (AMD), High-performance Oil Dampers, BIM Level 2",
-      sustainability: "District Heating & Cooling (DHC), Double-skin insulating curtain walls"
-    };
-  } else if (category === "Energy" || title.includes("Wind") || title.includes("Solar")) {
-    return {
-      safetyLevel: "Class-S Grid Resilience Rating",
-      certifications: ["FIT Standard compliant", "EIA Certified (Japan)"],
-      coreTech: "Superconducting transmission grid sync, SEV jack-up system integration",
-      sustainability: "100% renewable generation offset, Double bubble acoustic sea curtains"
-    };
-  }
-  return {
-    safetyLevel: "High Performance Structural Rating",
-    certifications: ["JIS Standard Compliant", "ISO 9001 Certified"],
-    coreTech: "3D BIM Lifecycle coordination, prefabricated structural panels",
-    sustainability: "High thermal insulation materials, sustainable local logging timber"
+/* ─── Scroll-triggered reveal ────────────────────────── */
+function Reveal({ children, delay = 0, direction = 'up', className = '' }) {
+  const ref = useRef(null);
+  const visible = useInView(ref, { once: true, margin: '-60px' });
+  const variants = {
+    up:    { hidden: { opacity: 0, y: 48 }, visible: { opacity: 1, y: 0 } },
+    left:  { hidden: { opacity: 0, x: -48 }, visible: { opacity: 1, x: 0 } },
+    right: { hidden: { opacity: 0, x: 48 },  visible: { opacity: 1, x: 0 } },
+    scale: { hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1 } },
   };
-};
+  return (
+    <motion.div ref={ref}
+      variants={variants[direction]}
+      initial="hidden"
+      animate={visible ? 'visible' : 'hidden'}
+      transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
+/* ─── Stagger grid ───────────────────────────────────── */
+function StaggerGrid({ children, className = '' }) {
+  const ref = useRef(null);
+  const visible = useInView(ref, { once: true, margin: '-40px' });
+  return (
+    <motion.div ref={ref}
+      initial="hidden"
+      animate={visible ? 'visible' : 'hidden'}
+      variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.08 } } }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
+const StaggerItem = ({ children, className = '' }) => (
+  <motion.div
+    variants={{ hidden: { opacity: 0, y: 32 }, visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.22,1,0.36,1] } } }}
+    className={className}
+  >
+    {children}
+  </motion.div>
+);
+
+/* ─── Stat Counter ───────────────────────────────────── */
+function StatNumber({ value, label, accent }) {
+  const ref = useRef(null);
+  const visible = useInView(ref, { once: true });
+  return (
+    <motion.div ref={ref} initial={{ opacity: 0, y: 24 }} animate={visible ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.7, ease: [0.22,1,0.36,1] }}
+      className="flex flex-col gap-1"
+    >
+      <span className="text-5xl md:text-6xl font-black leading-none tracking-tight text-white"
+        style={{ fontFeatureSettings: '"tnum"' }}>
+        {value}
+      </span>
+      <span className="text-xs uppercase tracking-[0.2em] font-bold mt-1" style={{ color: accent + 'bb' }}>
+        {label}
+      </span>
+      <div className="w-8 h-[2px] rounded-full mt-2" style={{ background: accent }} />
+    </motion.div>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════
+   MAIN COMPONENT
+═══════════════════════════════════════════════════════ */
 export default function WorkDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [activeImage, setActiveImage] = useState(null);
+  const [lightbox, setLightbox] = useState(null);
+  const heroRef = useRef(null);
+  const { scrollY } = useScroll();
+  const heroOpacity = useTransform(scrollY, [0, 500], [1, 0]);
+  const heroY = useTransform(scrollY, [0, 500], [0, 120]);
 
-  // Scroll to top on mount
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [id]);
+  useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, [id]);
 
-  // Find project by ID or slug
   const project = projects.find(p => p.id === id || slugify(p.title) === id);
 
-  if (!project) {
-    return (
-      <div className="min-h-screen bg-[#F7F8FA] flex flex-col items-center justify-center text-slate-800 p-4">
-        <h2 className="text-xl font-bold mb-4 font-sans tracking-tight">Project Case Study Not Found</h2>
-        <p className="text-slate-500 mb-6 text-sm">The requested project details could not be retrieved.</p>
-        <button 
-          onClick={() => navigate('/works')} 
-          className="px-5 py-2.5 bg-[#111827] hover:bg-[#C8102E] text-white rounded-md font-bold cursor-pointer transition-colors shadow-md text-xs uppercase tracking-widest"
-        >
-          Back to Directory
-        </button>
-      </div>
-    );
-  }
+  if (!project) return (
+    <div className="min-h-screen bg-[#080c14] flex flex-col items-center justify-center text-white gap-6 p-8">
+      <span className="text-6xl">🏗</span>
+      <h1 className="text-2xl font-black tracking-tight">Project Not Found</h1>
+      <button onClick={() => navigate('/works')} className="px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-full text-xs uppercase tracking-widest font-bold cursor-pointer transition-all">
+        ← Back to Works
+      </button>
+    </div>
+  );
 
-  // Load detailed unique data mapping
-  const detailsData = detailedProjectContent[project.id] || {
-    kanjiName: "プロジェクト詳細情報",
-    romajiName: "Purojekuto Shōsai Jōhō",
-    prefecture: "Japan",
-    city: "Regional Development",
-    tokyoDistance: "N/A",
-    airport: "International Hub",
-    locationStory: "Strategically located to support urban density improvements and build infrastructure trust.",
-    coordinates: "35.6762° N, 139.6503° E",
-    challenges: [
-      "Integrating modern structural frameworks within high-density zones without disrupting active operations.",
-      "Ensuring strict compliance with local seismic guidelines and sustainable material acquisition under strict timelines."
-    ],
-    solutions: [
-      "Leveraged Building Information Modeling (BIM) for precise load-path mapping and interference checks.",
-      "Implemented low-carbon precast concrete and optimized steel connections to streamline logistics and on-site assembly."
-    ],
+  const details = detailedProjectContent[project.id] || {
+    kanjiName: 'プロジェクト詳細情報', romajiName: 'Purojekuto Shōsai Jōhō',
+    prefecture: 'Japan', city: 'Regional Development', tokyoDistance: 'N/A',
+    airport: 'International Hub',
+    locationStory: 'Strategically located to support urban density improvements and build infrastructure trust.',
+    coordinates: '35.6762° N, 139.6503° E',
+    challenges: ['Integrating modern structural frameworks within high-density zones.', 'Ensuring strict compliance with local seismic guidelines.'],
+    solutions: ['Leveraged Building Information Modeling (BIM) for precise coordination.', 'Implemented low-carbon precast concrete solutions.'],
     timeline: [
-      { phase: "Planning & Feasibility", date: "Q1 " + (parseInt(project.completionYear) - 2), desc: "Comprehensive structural and geological evaluations." },
-      { phase: "Excavation & Foundations", date: "Q3 " + (parseInt(project.completionYear) - 2), desc: "Deep foundation work with seismic pile driving." },
-      { phase: "Superstructure Assembly", date: "Q2 " + (parseInt(project.completionYear) - 1), desc: "Hoisting of high-strength structural steel columns." },
-      { phase: "Interior Fitting & Commissioning", date: "Q3 " + project.completionYear, desc: "Installation of HVAC systems, smart sensors, and LEED certification audits." },
-      { phase: "Handover & Integration", date: project.completion, desc: "Final testing and keys transferred to the client." }
+      { phase: 'Planning & Feasibility', date: 'Q1 ' + (parseInt(project.completionYear)-2), desc: 'Comprehensive structural and geological evaluations.' },
+      { phase: 'Excavation & Foundations', date: 'Q3 ' + (parseInt(project.completionYear)-2), desc: 'Deep foundation work with seismic pile driving.' },
+      { phase: 'Superstructure Assembly', date: 'Q2 ' + (parseInt(project.completionYear)-1), desc: 'Hoisting of high-strength structural steel columns.' },
+      { phase: 'Interior Fitting & Commissioning', date: 'Q3 ' + project.completionYear, desc: 'HVAC systems, smart sensors, and LEED certification.' },
+      { phase: 'Handover & Integration', date: project.completion, desc: 'Final testing and transfer to client.' },
     ],
     specs: {
-      "Structure": "Composite Steel Frame Structure",
-      "Foundation": "Concrete bored pile shoring columns",
-      "Steel Used": "Thermo-mechanical control steel",
-      "Concrete Grade": "High strength concrete (38 N/mm²)",
-      "Building Height": "Height details undisclosed",
-      "Site Area": "12,000 m²",
-      "Parking Capacity": "Vehicles capacity not specified",
-      "Seismic Resistance": "Grade 1 (Excellent)",
-      "Energy Rating": "BELS 5-Star Compliant",
-      "Green Certification": "CASBEE A-Class",
-      "Construction Method": "Standard Prefabricated Modules"
+      'Structure': 'Composite Steel Frame', 'Foundation': 'Concrete bored pile columns',
+      'Steel Used': 'Thermo-mechanical control steel', 'Concrete Grade': 'High strength 38 N/mm²',
+      'Building Height': 'Undisclosed', 'Site Area': '12,000 m²',
+      'Seismic Resistance': 'Grade 1 (Excellent)', 'Energy Rating': 'BELS 5-Star',
+      'Green Certification': 'CASBEE A-Class', 'Construction Method': 'Prefabricated Modules'
     },
-    culturalInsight: {
-      title: "匠",
-      meaning: "Embodying precision civil engineering values built on the legacy of classical carpentry tools.",
-      quote: "「継続は力なり」",
-      quoteTranslation: "Persistence becomes strength."
-    }
+    culturalInsight: { title: '匠', meaning: 'Precision civil engineering built on the legacy of classical craftsmanship.', quote: '「継続は力なり」', quoteTranslation: 'Persistence becomes strength.' }
   };
 
-  const client = project.details?.find(d => d.label.toLowerCase() === "client")?.value || "Private Developer";
-  const budget = project.details?.find(d => d.label.toLowerCase() === "budget")?.value || "Undisclosed";
-  const sector = project.details?.find(d => d.label.toLowerCase() === "sector")?.value || "Infrastructure";
-  const subSector = project.details?.find(d => d.label.toLowerCase() === "sub-sector")?.value || "Construction";
+  const cat = catTokens[project.category] || catTokens['Civil Infra'];
+  const budget = project.details?.find(d => d.label.toLowerCase() === 'budget')?.value || null;
+  const client = project.details?.find(d => d.label.toLowerCase() === 'client')?.value || null;
+  const imgSrc = `/images/${project.id}.jpg`;
+  const fallback = fallbackImg[project.category] || '/images/category_civil.png';
 
-  const techSpecs = getTechSpecifications(project.category, project.title);
+  const heroStats = [
+    budget && { value: budget, label: 'Project Value' },
+    details.specs['Building Height'] && details.specs['Building Height'] !== 'Undisclosed' && { value: details.specs['Building Height'], label: 'Structure Height' },
+    details.specs['Site Area'] && { value: details.specs['Site Area'], label: 'Total Site Area' },
+    { value: project.completionYear, label: 'Year Completed' },
+  ].filter(Boolean).slice(0, 4);
 
-  // Compile quick specs grid items dynamically
-  const quickInfoItems = [
-    { label: "Project Status", value: "Completed", icon: <CheckCircle size={15} /> },
-    { label: "Location", value: project.location, icon: <MapPin size={15} /> },
-    { label: "Completion Year", value: project.completionYear, icon: <Calendar size={15} /> },
-    { label: "Client", value: client, icon: <Briefcase size={15} /> },
-    { label: "Site Area", value: detailsData.specs["Site Area"] || "Undisclosed", icon: <Ruler size={15} /> },
-    { label: "Project Budget", value: budget, icon: <DollarSign size={15} /> },
-    { label: "Construction Type", value: project.designType, icon: <Hammer size={15} /> },
-    { label: "Building Height", value: detailsData.specs["Building Height"] || "Undisclosed", icon: <Building2 size={15} /> }
-  ].filter(item => item.value && item.value !== "Undisclosed" && item.value !== "N/A");
-
-  // Related Blueprint Images array for gallery masonry mock
-  const blueprints = [
-    { src: `/images/${project.id}.jpg`, caption: "Superstructure Outer Facade Elevation" },
-    { src: `/images/category_${project.category === "Civil Infra" ? "civil" : project.category.toLowerCase().replace(/\s+/g, '_')}.png`, caption: "Site Plan and Subsurface Excavation Cross-Section" },
-    { src: "/images/rokka_mori.png", caption: "Materials Logistics and Environmental Green Roof Design" }
-  ];
-
-  // Engineering Highlights Mapping
-  const engineeringHighlights = [
-    { title: "Earthquake Resilient", desc: `Equipped with advanced ${detailsData.specs["Seismic Resistance"] || "seismic dampers"} ensuring structural protection against earthquakes.`, icon: <Activity size={18} /> },
-    { title: "Carbon Neutral Focus", desc: `Utilizes ${detailsData.specs["Concrete Grade"] || "eco-certified"} composite foundations to lower net emissions.`, icon: <Cpu size={18} /> },
-    { title: "Smart Lifecycle BIM", desc: "Designed, tested, and assembled using Building Information Modeling tools to optimize maintenance.", icon: <Layers size={18} /> },
-    { title: "Disaster Preparedness", desc: "Reinforced structural foundations engineered to secure operations during local water and wind hazards.", icon: <ShieldCheck size={18} /> }
-  ];
+  const relatedProjects = projects.filter(p => p.id !== project.id && p.category === project.category).slice(0,3);
+  if (relatedProjects.length < 3) relatedProjects.push(...projects.filter(p => p.id !== project.id && !relatedProjects.find(r => r.id === p.id)).slice(0, 3 - relatedProjects.length));
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-      className="min-h-screen bg-white text-[#111827] font-sans antialiased selection:bg-[#C8102E]/10"
-    >
-      {/* Breadcrumb Row */}
-      <div className="bg-white border-b border-[#E6E8EC] py-3.5 relative z-10">
-        <div className="container mx-auto px-6 md:px-12 flex items-center gap-2 text-xs text-slate-500 font-medium">
-          <Link to="/" className="hover:text-[#C8102E] transition-colors">Home</Link>
-          <ChevronRight size={12} className="text-slate-350" />
-          <Link to="/works" className="hover:text-[#C8102E] transition-colors">Projects</Link>
-          <ChevronRight size={12} className="text-slate-350" />
-          <span className="text-slate-800 font-bold truncate">{project.title}</span>
-        </div>
-      </div>
+    <div className="bg-[#080c14] text-white min-h-screen antialiased">
 
-      {/* ── 1. HERO SECTION ── */}
-      <section className="relative w-full min-h-[550px] max-h-[700px] py-20 bg-white border-b border-[#E6E8EC] overflow-hidden flex items-center">
-        {/* Traditional Japanese motifs background layout */}
-        <WavePattern />
-        <RisingSun />
-        <FujiSilhouette />
+      {/* ══════════════════════════════════════════════════
+          HERO — Full bleed cinematic
+      ══════════════════════════════════════════════════ */}
+      <section ref={heroRef} className="relative w-full min-h-screen flex flex-col justify-end overflow-hidden">
 
-        <div className="container mx-auto px-6 md:px-12 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            {/* Left Column: Typography Details */}
-            <div className="lg:col-span-7 space-y-6">
-              
-              {/* Category Badge */}
-              <span className="inline-flex items-center text-[10px] font-extrabold uppercase tracking-[0.25em] text-[#C8102E] border-b border-[#C8102E]/40 pb-1">
-                {project.category}
-              </span>
+        {/* Full bleed background image with parallax */}
+        <motion.div style={{ y: heroY }} className="absolute inset-0 z-0">
+          <img src={imgSrc} alt={project.title}
+            className="w-full h-full object-cover scale-110"
+            onError={e => { e.target.src = fallback; e.target.onerror = null; }}
+          />
+          {/* Multi-layer overlays */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#080c14] via-[#080c14]/70 to-[#080c14]/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#080c14]/60 via-transparent to-transparent" />
+        </motion.div>
 
-              {/* Title Block */}
-              <div className="space-y-2">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#111827] leading-none">
-                  {project.title}
-                </h1>
-                
-                {/* Kanji Name & Romaji Pronunciation */}
-                <div className="flex flex-wrap items-center gap-2.5 pt-1.5 border-t border-slate-100 mt-2">
-                  <span className="text-base font-medium text-slate-800 tracking-wider font-sans">
-                    {detailsData.kanjiName}
-                  </span>
-                  <span className="text-xs font-mono italic text-slate-500 font-normal">
-                    ({detailsData.romajiName})
-                  </span>
-                </div>
-              </div>
-
-              {/* Specific Project Narrative Paragraph */}
-              <p className="text-[#6B7280] leading-relaxed text-base font-light font-sans max-w-xl">
-                {project.summary}
-              </p>
-            </div>
-
-            {/* Right Column: Floating Luxury Image Card */}
-            <div className="lg:col-span-5 flex justify-center">
-              <motion.div 
-                whileHover={{ scale: 1.03 }}
-                transition={{ type: "spring", stiffness: 200, damping: 20 }}
-                className="w-full max-w-[420px] aspect-[4/3] rounded-[24px] overflow-hidden shadow-2xl bg-[#F7F8FA] border border-[#E6E8EC]"
-              >
-                <img 
-                  src={`/images/${project.id}.jpg`} 
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const fallbacks = {
-                      "Offices": "/images/category_offices.png",
-                      "Civil Infra": "/images/category_civil.png",
-                      "Energy": "/images/category_energy.png",
-                      "Education": "/images/category_education.png",
-                      "Recreation": "/images/category_recreation.png"
-                    };
-                    e.target.src = fallbacks[project.category] || "/images/category_civil.png";
-                    e.target.onerror = null;
-                  }}
-                />
-              </motion.div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── 2. PROJECT QUICK INFORMATION CARD GRID ── */}
-      <section className="bg-[#F7F8FA] py-16 border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
-          
-          <div className="text-center md:text-left mb-10">
-            <h2 className="text-xs font-extrabold uppercase tracking-[0.2em] text-[#6B7280]">Project Parameters</h2>
-            <p className="text-2xl font-black text-[#111827] mt-1">Core Specifications</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {quickInfoItems.map((item, idx) => (
-              <motion.div 
-                key={idx}
-                whileHover={{ y: -4 }}
-                transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                className="bg-white border border-[#E6E8EC] rounded-2xl p-6 shadow-sm transition-shadow hover:shadow-md flex items-start gap-4"
-              >
-                <div className="p-3 bg-[#F7F8FA] rounded-xl text-[#1E3A8A] border border-[#E6E8EC] flex-shrink-0">
-                  {item.icon}
-                </div>
-                <div className="space-y-1">
-                  <span className="block text-[10px] font-bold uppercase tracking-wider text-[#6B7280]">
-                    {item.label}
-                  </span>
-                  <span className="block text-sm font-extrabold text-[#111827]">
-                    {item.value}
-                  </span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* ── 3. PROJECT LOCATION SECTION ── */}
-      <section className="py-20 bg-white border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
-            
-            {/* Left panel: Japan interactive coordinate map */}
-            <div className="lg:col-span-7 bg-[#F7F8FA] border border-[#E6E8EC] rounded-3xl p-8 flex flex-col justify-between">
-              <div>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E] block mb-2">GIS Tracking Map</span>
-                <h3 className="text-xl font-bold text-[#111827] mb-6">Geographical Footprint</h3>
-              </div>
-
-              {/* Map frame */}
-              <div className="h-64 w-full relative rounded-2xl overflow-hidden border border-[#E6E8EC] bg-white">
-                <MiniJapanMap location={project.location} />
-              </div>
-
-              {/* Map parameters table */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 pt-6 border-t border-[#E6E8EC] font-mono text-[11px] text-[#6B7280]">
-                <div>
-                  <span className="block text-[9px] uppercase tracking-wider text-slate-400">Prefecture</span>
-                  <span className="font-bold text-[#111827]">{detailsData.prefecture}</span>
-                </div>
-                <div>
-                  <span className="block text-[9px] uppercase tracking-wider text-slate-400">City / District</span>
-                  <span className="font-bold text-[#111827] truncate block">{detailsData.city}</span>
-                </div>
-                <div>
-                  <span className="block text-[9px] uppercase tracking-wider text-slate-400">GPS Pin</span>
-                  <span className="font-bold text-[#1E3A8A] block truncate">{detailsData.coordinates}</span>
-                </div>
-                <div>
-                  <span className="block text-[9px] uppercase tracking-wider text-slate-400">Nearest Hub</span>
-                  <span className="font-bold text-[#111827] block truncate">{detailsData.airport}</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Right panel: Strategic Location Story */}
-            <div className="lg:col-span-5 flex flex-col justify-center space-y-6">
-              <span className="inline-flex items-center text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#C8102E] border-b border-[#C8102E]/30 pb-1 self-start">
-                Location Strategy
-              </span>
-              <h3 className="text-3xl font-extrabold text-[#111827] tracking-tight leading-tight">
-                Regional Significance & Connectivity
-              </h3>
-              <p className="text-[#6B7280] leading-relaxed text-sm font-light">
-                {detailsData.locationStory}
-              </p>
-              <div className="bg-[#F7F8FA] border border-[#E6E8EC] rounded-2xl p-5 text-xs text-[#6B7280] flex items-center gap-3">
-                <Info size={16} className="text-[#1E3A8A] flex-shrink-0" />
-                <span>Active site coordinate pin resides approximately <strong>{detailsData.tokyoDistance}</strong> from Central Tokyo base.</span>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* ── 4. PROJECT OVERVIEW & 850PX READING LAYOUT ── */}
-      <section className="py-20 bg-[#F7F8FA] border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
-          
-          <article className="max-w-[850px] mx-auto space-y-12">
-            
-            {/* Title header */}
-            <div className="text-center space-y-2">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E]">Detailed Analysis</span>
-              <h2 className="text-3xl font-black text-[#111827] tracking-tight">Engineering Overview & Highlights</h2>
-              <div className="w-12 h-[2px] bg-[#C8102E] mx-auto mt-4"></div>
-            </div>
-
-            {/* Core Text sections */}
-            <div className="bg-white border border-[#E6E8EC] rounded-3xl p-8 md:p-12 shadow-sm space-y-10">
-              
-              <div className="space-y-4">
-                <h3 className="text-lg font-extrabold text-[#111827] flex items-center gap-2.5">
-                  <span className="w-1 h-4 bg-[#C8102E] inline-block"></span>
-                  Overview & Objective
-                </h3>
-                <p className="text-sm text-[#6B7280] leading-relaxed font-light">
-                  {project.description}
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-lg font-extrabold text-[#111827] flex items-center gap-2.5">
-                  <span className="w-1 h-4 bg-[#C8102E] inline-block"></span>
-                  Engineering Challenges
-                </h3>
-                <ul className="space-y-4">
-                  {detailsData.challenges.map((challenge, idx) => (
-                    <li key={idx} className="text-sm text-[#6B7280] leading-relaxed flex items-start gap-3">
-                      <span className="font-bold text-[#C8102E] pt-0.5">•</span>
-                      <span className="font-light">{challenge}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-lg font-extrabold text-[#111827] flex items-center gap-2.5">
-                  <span className="w-1 h-4 bg-[#C8102E] inline-block"></span>
-                  Innovative Solutions
-                </h3>
-                <ul className="space-y-4">
-                  {detailsData.solutions.map((sol, idx) => (
-                    <li key={idx} className="text-sm text-[#6B7280] leading-relaxed flex items-start gap-3">
-                      <span className="font-bold text-[#1E3A8A] pt-0.5">•</span>
-                      <span className="font-light">{sol}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-            </div>
-
-          </article>
-
-        </div>
-      </section>
-
-      {/* ── 5. PROJECT TIMELINE SECTION ── */}
-      <section className="py-20 bg-white border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
-          
-          <div className="text-center mb-16">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E]">Project Lifecycle</span>
-            <h2 className="text-3xl font-black text-[#111827] tracking-tight mt-1">Development Milestones</h2>
-          </div>
-
-          <div className="max-w-3xl mx-auto relative border-l-2 border-[#E6E8EC] ml-6 pl-8 space-y-12 py-2">
-            {detailsData.timeline.map((event, idx) => (
-              <div key={idx} className="relative group">
-                
-                {/* Timeline node circle */}
-                <div className="absolute -left-[41px] top-1.5 w-6 h-6 rounded-full bg-white border-2 border-[#E6E8EC] group-hover:border-[#C8102E] flex items-center justify-center transition-colors duration-300 shadow-sm">
-                  <div className="w-2 h-2 rounded-full bg-[#E6E8EC] group-hover:bg-[#C8102E] transition-colors duration-300"></div>
-                </div>
-
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
-                  <div className="flex items-center gap-3">
-                    <span className="text-[9px] font-mono font-bold text-[#6B7280] bg-[#F7F8FA] border border-[#E6E8EC] px-2 py-0.5 rounded">
-                      PHASE 0{idx + 1}
-                    </span>
-                    <h4 className="font-extrabold text-[#111827] text-base group-hover:text-[#C8102E] transition-colors">
-                      {event.phase}
-                    </h4>
-                  </div>
-                  <span className="text-[10px] font-bold text-[#C8102E] font-mono bg-[#C8102E]/5 border border-[#C8102E]/15 px-2.5 py-1 rounded">
-                    {event.date}
-                  </span>
-                </div>
-                <p className="text-xs text-[#6B7280] leading-relaxed font-light">
-                  {event.desc}
-                </p>
-
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* ── 6. PROJECT GALLERY MASONRY ── */}
-      <section className="py-20 bg-[#F7F8FA] border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
-          
-          <div className="text-center mb-12">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E]">Visual Showcase</span>
-            <h2 className="text-3xl font-black text-[#111827] tracking-tight mt-1">Image & Blueprint Gallery</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {blueprints.map((img, idx) => (
-              <div 
-                key={idx}
-                onClick={() => setActiveImage(img)}
-                className="group relative cursor-pointer overflow-hidden rounded-[24px] border border-[#E6E8EC] bg-white shadow-sm hover:shadow-lg transition-all duration-300"
-              >
-                <div className="aspect-[4/3] w-full overflow-hidden relative">
-                  <img 
-                    src={img.src} 
-                    alt={img.caption}
-                    className="w-full h-full object-cover transform group-hover:scale-103 transition-transform duration-500"
-                    onError={(e) => {
-                      e.target.src = "/images/category_civil.png";
-                      e.target.onerror = null;
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-slate-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <span className="px-3.5 py-2 bg-white text-xs font-bold text-[#111827] rounded shadow-md border border-[#E6E8EC] uppercase tracking-wider">
-                      Zoom Diagram
-                    </span>
-                  </div>
-                </div>
-                <div className="p-4 border-t border-[#E6E8EC]">
-                  <p className="text-xs text-[#6B7280] font-medium font-sans flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 bg-[#C8102E] rounded-full"></span>
-                    {img.caption}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* Lightbox Portal Overlay */}
-      <AnimatePresence>
-        {activeImage && (
-          <div 
-            onClick={() => setActiveImage(null)}
-            className="fixed inset-0 z-[5000] bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-6"
+        {/* Back button */}
+        <div className="absolute top-8 left-8 z-30">
+          <motion.button onClick={() => navigate('/works')}
+            initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 0.1 }}
+            whileHover={{ x: -4 }}
+            className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white/80 hover:text-white text-[11px] uppercase tracking-widest font-bold cursor-pointer transition-all duration-300"
           >
-            <div className="max-w-3xl w-full bg-white border border-[#E6E8EC] rounded-[24px] overflow-hidden shadow-2xl relative" onClick={e => e.stopPropagation()}>
-              <button 
-                onClick={() => setActiveImage(null)}
-                className="absolute top-4 right-4 p-2 bg-[#F7F8FA] border border-[#E6E8EC] rounded-full text-slate-600 hover:text-black cursor-pointer transition-colors"
-              >
-                <X size={16} />
-              </button>
-              <img src={activeImage.src} alt={activeImage.caption} className="w-full max-h-[500px] object-contain bg-[#F7F8FA]" />
-              <div className="p-4 bg-white border-t border-[#E6E8EC]">
-                <p className="text-xs font-bold text-[#111827]">{activeImage.caption}</p>
+            <ArrowLeft size={12} /> Back to Works
+          </motion.button>
+        </div>
+
+        {/* Hero content */}
+        <motion.div style={{ opacity: heroOpacity }} className="relative z-20 px-8 md:px-16 pb-16 pt-32 max-w-7xl mx-auto w-full">
+
+          {/* Category + year */}
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
+            className="flex flex-wrap items-center gap-3 mb-6">
+            <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[10px] font-extrabold uppercase tracking-[0.2em] border backdrop-blur-sm ${cat.pill}`}>
+              <span className="w-1.5 h-1.5 rounded-full" style={{ background: cat.accent }} />
+              {project.category}
+            </span>
+            <span className="text-white/40 text-xs font-mono">
+              {project.designType} · {project.completionYear}
+            </span>
+          </motion.div>
+
+          {/* Title */}
+          <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.3, ease: [0.22,1,0.36,1] }}
+            className="text-5xl md:text-7xl xl:text-8xl font-black tracking-[-0.03em] leading-[0.95] text-white max-w-5xl mb-4"
+          >
+            {project.title}
+          </motion.h1>
+
+          {/* Kanji subtitle */}
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}
+            className="flex items-baseline gap-3 mb-10">
+            <span className="text-lg font-medium text-white/50">{details.kanjiName}</span>
+            <span className="text-xs font-mono italic text-white/30">({details.romajiName})</span>
+          </motion.div>
+
+          {/* Stats bar */}
+          {heroStats.length > 0 && (
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7, duration: 0.7 }}
+              className="grid grid-cols-2 md:grid-cols-4 gap-10 pt-10 border-t border-white/10"
+            >
+              {heroStats.map((s, i) => (
+                <StatNumber key={i} value={s.value} label={s.label} accent={cat.accent} />
+              ))}
+            </motion.div>
+          )}
+        </motion.div>
+
+        {/* Scroll indicator */}
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}
+          className="absolute bottom-8 right-8 z-20 flex flex-col items-center gap-2">
+          <div className="w-px h-12 bg-gradient-to-b from-white/40 to-transparent" />
+          <span className="text-[9px] text-white/30 uppercase tracking-[0.3em] font-bold rotate-90 mt-4 origin-center">Scroll</span>
+        </motion.div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════
+          PROJECT OVERVIEW — Dark editorial
+      ══════════════════════════════════════════════════ */}
+      <section className="py-32 px-8 md:px-16 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+
+          <Reveal direction="left" className="lg:col-span-4">
+            <span className="block text-[10px] font-extrabold uppercase tracking-[0.4em] mb-4" style={{ color: cat.accent }}>
+              Project Overview
+            </span>
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-[1.05] text-white mb-8">
+              About This<br />Development
+            </h2>
+            <div className="w-12 h-[2px] rounded-full mb-8" style={{ background: cat.accent }} />
+
+            {/* Meta list */}
+            <div className="space-y-5">
+              {[
+                { icon: <MapPin size={14} />, label: 'Location', value: project.location },
+                { icon: <Calendar size={14} />, label: 'Completion', value: project.completion },
+                { icon: <Hammer size={14} />, label: 'Type', value: project.designType },
+                client && { icon: <Briefcase size={14} />, label: 'Client', value: client },
+              ].filter(Boolean).map((item, i) => (
+                <div key={i} className="flex items-center gap-3 group">
+                  <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 border border-white/10 bg-white/5 text-white/40 group-hover:border-white/20 group-hover:text-white/70 transition-all duration-200">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <span className="block text-[9px] text-white/30 font-bold uppercase tracking-widest">{item.label}</span>
+                    <span className="block text-sm text-white/80 font-semibold">{item.value}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+
+          <Reveal direction="right" delay={0.15} className="lg:col-span-8">
+            <p className="text-xl md:text-2xl text-white/60 leading-relaxed font-light mb-10">
+              {project.description}
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Challenges */}
+              <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-6">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-7 h-7 rounded-lg bg-amber-400/10 border border-amber-400/20 flex items-center justify-center">
+                    <TrendingUp size={13} className="text-amber-400" />
+                  </div>
+                  <span className="text-xs font-bold uppercase tracking-widest text-white/50">Challenges</span>
+                </div>
+                <ul className="space-y-3">
+                  {details.challenges.map((c, i) => (
+                    <li key={i} className="flex gap-3 text-sm text-white/50 leading-relaxed">
+                      <span className="flex-shrink-0 w-5 h-5 rounded-full border border-amber-400/30 bg-amber-400/5 flex items-center justify-center text-[9px] font-black text-amber-400 mt-0.5">{i+1}</span>
+                      <span>{c}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Solutions */}
+              <div className="rounded-2xl border border-white/8 bg-white/[0.03] p-6">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-7 h-7 rounded-lg bg-emerald-400/10 border border-emerald-400/20 flex items-center justify-center">
+                    <CheckCircle size={13} className="text-emerald-400" />
+                  </div>
+                  <span className="text-xs font-bold uppercase tracking-widest text-white/50">Solutions</span>
+                </div>
+                <ul className="space-y-3">
+                  {details.solutions.map((s, i) => (
+                    <li key={i} className="flex gap-3 text-sm text-white/50 leading-relaxed">
+                      <CheckCircle size={14} className="text-emerald-400 flex-shrink-0 mt-0.5" />
+                      <span>{s}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════
+          TIMELINE — Horizontal scroll feel
+      ══════════════════════════════════════════════════ */}
+      <section className="py-24 border-y border-white/8 bg-white/[0.015]">
+        <div className="px-8 md:px-16 max-w-7xl mx-auto">
+          <Reveal>
+            <span className="block text-[10px] font-extrabold uppercase tracking-[0.4em] mb-3" style={{ color: cat.accent }}>
+              Project Lifecycle
+            </span>
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-16">
+              Development Timeline
+            </h2>
+          </Reveal>
+
+          <div className="relative">
+            {/* Spine line */}
+            <div className="absolute left-5 top-6 bottom-6 w-px bg-gradient-to-b from-white/20 via-white/10 to-transparent hidden md:block" />
+
+            <div className="space-y-0">
+              {details.timeline.map((event, idx) => {
+                const isLast = idx === details.timeline.length - 1;
+                return (
+                  <Reveal key={idx} delay={idx * 0.07}>
+                    <div className="flex gap-8 group md:pl-0">
+                      {/* Timeline node */}
+                      <div className="flex-shrink-0 flex flex-col items-center relative hidden md:flex" style={{ width: '40px' }}>
+                        <motion.div
+                          whileHover={{ scale: 1.4 }}
+                          className="w-10 h-10 rounded-full flex items-center justify-center border-2 transition-all duration-300 z-10 bg-[#080c14]"
+                          style={{ borderColor: 'rgba(255,255,255,0.15)' }}
+                          onMouseEnter={e => e.currentTarget.style.borderColor = cat.accent}
+                          onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'}
+                        >
+                          <div className="w-3 h-3 rounded-full bg-white/20 transition-all duration-300 group-hover:scale-125"
+                            style={{ }} />
+                        </motion.div>
+                      </div>
+
+                      {/* Content card */}
+                      <div className={`flex-1 ${isLast ? 'pb-0' : 'pb-6'}`}>
+                        <motion.div
+                          whileHover={{ x: 4 }}
+                          transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                          className="rounded-2xl border border-white/8 bg-white/[0.03] hover:bg-white/[0.05] hover:border-white/15 p-6 transition-all duration-300 cursor-default"
+                        >
+                          <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
+                            <div className="flex items-center gap-3">
+                              <span className="text-[9px] font-mono font-bold bg-white/5 border border-white/10 px-2 py-1 rounded text-white/30">
+                                {String(idx + 1).padStart(2, '0')}
+                              </span>
+                              <h4 className="font-black text-white text-sm md:text-base group-hover:text-white transition-colors">
+                                {event.phase}
+                              </h4>
+                            </div>
+                            <span className="text-[10px] font-mono font-bold px-3 py-1 rounded-full border text-xs"
+                              style={{ color: cat.accent, borderColor: cat.accent + '33', background: cat.accent + '10' }}>
+                              {event.date}
+                            </span>
+                          </div>
+                          <p className="text-sm text-white/40 leading-relaxed">{event.desc}</p>
+                        </motion.div>
+                      </div>
+                    </div>
+                  </Reveal>
+                );
+              })}
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════
+          SPECS — Full width dark table
+      ══════════════════════════════════════════════════ */}
+      <section className="py-32 px-8 md:px-16 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+          <Reveal direction="left" className="lg:col-span-4">
+            <span className="block text-[10px] font-extrabold uppercase tracking-[0.4em] mb-3" style={{ color: cat.accent }}>
+              Technical Data
+            </span>
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-6">
+              Specifications
+            </h2>
+            <div className="w-12 h-[2px] rounded-full mb-8" style={{ background: cat.accent }} />
+            <p className="text-white/40 text-sm leading-relaxed">
+              Detailed engineering parameters and material specifications for this project.
+            </p>
+
+            {/* Engineering highlights */}
+            <div className="mt-10 grid grid-cols-2 gap-3">
+              {[
+                { icon: <Activity size={16} />, label: 'Seismic Grade', value: details.specs['Seismic Resistance'] || 'Grade 1', color: 'from-red-500/10 to-orange-500/10', border: 'border-red-500/20', text: 'text-red-400' },
+                { icon: <Zap size={16} />,      label: 'Energy Rating', value: details.specs['Energy Rating'] || 'BELS 5-Star', color: 'from-emerald-500/10 to-teal-500/10', border: 'border-emerald-500/20', text: 'text-emerald-400' },
+                { icon: <ShieldCheck size={16} />, label: 'Certification', value: details.specs['Green Certification'] || 'CASBEE A', color: 'from-blue-500/10 to-indigo-500/10', border: 'border-blue-500/20', text: 'text-blue-400' },
+                { icon: <Layers size={16} />,   label: 'Build Method', value: details.specs['Construction Method'] || 'Modular', color: 'from-purple-500/10 to-violet-500/10', border: 'border-purple-500/20', text: 'text-purple-400' },
+              ].map((card, i) => (
+                <Reveal key={i} delay={i * 0.05} scale>
+                  <div className={`rounded-xl border p-4 bg-gradient-to-br ${card.color} ${card.border} flex flex-col gap-2`}>
+                    <div className={`${card.text}`}>{card.icon}</div>
+                    <span className="text-[9px] text-white/30 uppercase tracking-widest font-bold">{card.label}</span>
+                    <span className="text-xs text-white/70 font-bold leading-tight">{card.value}</span>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </Reveal>
+
+          <Reveal direction="right" delay={0.1} className="lg:col-span-8">
+            <div className="rounded-2xl overflow-hidden border border-white/10">
+              <div className="px-6 py-4 border-b border-white/10"
+                style={{ background: `linear-gradient(135deg, ${cat.accent}18, transparent)` }}>
+                <div className="grid grid-cols-2 text-[9px] font-bold uppercase tracking-[0.25em] text-white/30">
+                  <span>Parameter</span>
+                  <span>Specification</span>
+                </div>
+              </div>
+              <div className="divide-y divide-white/5">
+                {Object.entries(details.specs).map(([key, val], idx) => (
+                  <motion.div key={idx}
+                    initial={{ opacity: 0, x: -16 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.03, duration: 0.45 }}
+                    whileHover={{ backgroundColor: 'rgba(255,255,255,0.03)' }}
+                    className="grid grid-cols-2 gap-4 px-6 py-4 transition-colors duration-200 cursor-default"
+                  >
+                    <span className="text-sm font-bold text-white/40">{key}</span>
+                    <span className="text-sm text-white/70">{val}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════
+          GALLERY — Immersive image showcase
+      ══════════════════════════════════════════════════ */}
+      <section className="py-24 border-t border-white/8">
+        <div className="px-8 md:px-16 max-w-7xl mx-auto mb-12">
+          <Reveal>
+            <span className="block text-[10px] font-extrabold uppercase tracking-[0.4em] mb-3" style={{ color: cat.accent }}>
+              Visual Documentation
+            </span>
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white">
+              Site Gallery
+            </h2>
+          </Reveal>
+        </div>
+
+        <StaggerGrid className="px-8 md:px-16 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { src: imgSrc, caption: 'Facade Elevation & Exterior', label: '01' },
+            { src: fallbackImg[project.category] || fallback, caption: 'Site Overview & Infrastructure', label: '02' },
+            { src: '/images/rokka_mori.png', caption: 'Environmental Integration', label: '03' },
+          ].map((img, idx) => (
+            <StaggerItem key={idx}>
+              <motion.div onClick={() => setLightbox(img)}
+                whileHover={{ scale: 1.02 }} transition={{ type: 'spring', stiffness: 250, damping: 22 }}
+                className="group relative cursor-pointer rounded-2xl overflow-hidden border border-white/10 aspect-[4/3]"
+              >
+                <img src={img.src} alt={img.caption} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                  onError={e => { e.target.src = fallback; e.target.onerror = null; }} />
+
+                {/* Dark overlay on hover */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#080c14]/80 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-400" />
+
+                {/* Label */}
+                <div className="absolute top-4 left-4 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm border border-white/20 flex items-center justify-center">
+                  <span className="text-[10px] font-black text-white">{img.label}</span>
+                </div>
+
+                {/* Expand icon */}
+                <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/0 group-hover:bg-white/10 border border-white/0 group-hover:border-white/20 flex items-center justify-center transition-all duration-300">
+                  <Maximize2 size={13} className="text-white/0 group-hover:text-white transition-colors duration-300" />
+                </div>
+
+                {/* Caption */}
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <p className="text-xs text-white font-bold">{img.caption}</p>
+                </div>
+              </motion.div>
+            </StaggerItem>
+          ))}
+        </StaggerGrid>
+      </section>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {lightbox && (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+            onClick={() => setLightbox(null)}
+            className="fixed inset-0 z-[9000] bg-black/95 backdrop-blur-2xl flex items-center justify-center p-4 md:p-12"
+          >
+            <motion.div initial={{ scale: 0.88, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.88, opacity: 0 }} transition={{ type: 'spring', stiffness: 250, damping: 28 }}
+              className="relative max-w-5xl w-full rounded-2xl overflow-hidden border border-white/10"
+              onClick={e => e.stopPropagation()}
+            >
+              <button onClick={() => setLightbox(null)}
+                className="absolute top-4 right-4 z-10 w-8 h-8 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full flex items-center justify-center cursor-pointer transition-all">
+                <X size={14} className="text-white" />
+              </button>
+              <img src={lightbox.src} alt={lightbox.caption} className="w-full max-h-[78vh] object-contain bg-[#0d1220]" />
+              <div className="p-5 bg-[#0d1220] border-t border-white/10">
+                <p className="text-sm font-bold text-white">{lightbox.caption}</p>
+                <p className="text-xs text-white/30 mt-0.5">Click backdrop to close</p>
+              </div>
+            </motion.div>
+          </motion.div>
         )}
       </AnimatePresence>
 
-      {/* ── 7. PROJECT SPECIFICATIONS TABLE (Apple Documentation style) ── */}
-      <section className="py-20 bg-white border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
-          
-          <div className="max-w-3xl mx-auto">
-            
-            <div className="text-center md:text-left mb-10">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E]">Technical parameters</span>
-              <h2 className="text-2xl font-black text-[#111827] mt-1">Detailed Specifications Sheet</h2>
-            </div>
+      {/* ══════════════════════════════════════════════════
+          LOCATION — Dark map section
+      ══════════════════════════════════════════════════ */}
+      <section className="py-32 border-t border-white/8 bg-white/[0.015]">
+        <div className="px-8 md:px-16 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch">
 
-            <div className="bg-white border border-[#E6E8EC] rounded-3xl overflow-hidden shadow-sm">
-              <table className="w-full text-left border-collapse text-sm">
-                <thead>
-                  <tr className="bg-[#F7F8FA] border-b border-[#E6E8EC] text-[10px] font-bold uppercase tracking-wider text-[#6B7280]">
-                    <th className="p-4 pl-6">Technical Field</th>
-                    <th className="p-4 pr-6">Design Integration Value</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {Object.entries(detailsData.specs).map(([key, val], idx) => (
-                    <tr 
-                      key={idx}
-                      className="border-b border-[#E6E8EC] last:border-0 hover:bg-[#F7F8FA]/60 transition-colors"
-                    >
-                      <td className="p-4 pl-6 font-bold text-[#1E3A8A] text-xs">{key}</td>
-                      <td className="p-4 pr-6 text-[#6B7280] font-light text-xs">{val}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <Reveal direction="left" className="lg:col-span-5 flex flex-col gap-8 justify-center">
+              <div>
+                <span className="block text-[10px] font-extrabold uppercase tracking-[0.4em] mb-3" style={{ color: cat.accent }}>
+                  Site Location
+                </span>
+                <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-4">
+                  Regional<br />Footprint
+                </h2>
+                <div className="w-12 h-[2px] rounded-full mb-6" style={{ background: cat.accent }} />
+              </div>
 
-          </div>
+              <p className="text-white/50 text-base leading-relaxed">{details.locationStory}</p>
 
-        </div>
-      </section>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { label: 'Prefecture', value: details.prefecture },
+                  { label: 'City / District', value: details.city },
+                  { label: 'Coordinates', value: details.coordinates },
+                  { label: 'Nearest Hub', value: details.airport },
+                ].map((item, i) => (
+                  <div key={i} className="rounded-xl border border-white/8 bg-white/[0.03] p-4">
+                    <span className="block text-[9px] text-white/25 font-bold uppercase tracking-widest mb-1">{item.label}</span>
+                    <span className="block text-sm text-white/70 font-bold truncate">{item.value}</span>
+                  </div>
+                ))}
+              </div>
 
-      {/* ── 8. JAPANESE CULTURAL SECTION ── */}
-      <section className="py-24 bg-[#F7F8FA] border-b border-[#E6E8EC] relative">
-        <WavePattern />
-        
-        <div className="container mx-auto px-6 md:px-12 relative z-10">
-          <div className="max-w-2xl mx-auto text-center space-y-8">
-            
-            <HankoStamp char={detailsData.culturalInsight.title} />
-
-            <div className="space-y-4">
-              <span className="block text-[10px] font-bold uppercase tracking-[0.3em] text-[#C8102E]">
-                Traditional Craftsmanship Insights
-              </span>
-              
-              <h3 className="text-3xl font-extrabold text-[#111827] tracking-tight">
-                {detailsData.culturalInsight.quote}
-              </h3>
-              
-              <p className="text-xs font-mono text-slate-500 italic">
-                {detailsData.culturalInsight.quoteTranslation}
-              </p>
-            </div>
-
-            <div className="max-w-lg mx-auto bg-white border border-[#E6E8EC] rounded-2xl p-6 shadow-sm">
-              <p className="text-xs text-[#6B7280] leading-relaxed font-light font-sans">
-                {detailsData.culturalInsight.meaning}
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── 9. ENGINEERING HIGHLIGHTS ── */}
-      <section className="py-20 bg-white border-b border-[#E6E8EC]">
-        <div className="container mx-auto px-6 md:px-12">
-          
-          <div className="text-center mb-16">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-[#C8102E]">Technical Materiality</span>
-            <h2 className="text-3xl font-black text-[#111827] tracking-tight mt-1">Core Structural Merits</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {engineeringHighlights.map((item, idx) => (
-              <motion.div 
-                key={idx}
-                whileHover={{ y: -4 }}
-                className="bg-white border border-[#E6E8EC] rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
-              >
-                <div className="w-10 h-10 rounded-xl bg-[#F7F8FA] border border-[#E6E8EC] text-[#C8102E] flex items-center justify-center mb-5">
-                  {item.icon}
+              <div className="flex items-center gap-3 p-4 rounded-xl border border-white/8 bg-white/[0.03]">
+                <div className="w-8 h-8 rounded-lg border border-white/10 bg-white/5 flex items-center justify-center flex-shrink-0">
+                  <Globe size={15} className="text-white/40" />
                 </div>
-                <h4 className="font-extrabold text-[#111827] text-sm mb-2">{item.title}</h4>
-                <p className="text-xs text-[#6B7280] leading-relaxed font-light">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
+                <div>
+                  <span className="block text-[9px] text-white/25 font-bold uppercase tracking-widest">Base Distance</span>
+                  <span className="text-sm text-white/70 font-bold">{details.tokyoDistance} from Central Tokyo</span>
+                </div>
+                <span className="ml-auto text-[9px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-2 py-0.5 rounded-full">
+                  Active Site
+                </span>
+              </div>
+            </Reveal>
 
+            <Reveal direction="right" delay={0.1} className="lg:col-span-7">
+              <div className="rounded-2xl overflow-hidden border border-white/10 h-full min-h-[400px] relative">
+                <MiniJapanMap location={project.location} />
+                <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md border border-white/15 rounded-xl px-4 py-2.5">
+                  <span className="block text-[9px] text-white/40 font-bold uppercase tracking-widest">Location</span>
+                  <span className="block text-sm text-white font-black">{project.location}</span>
+                </div>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 
-      {/* Return Link bottom */}
-      <div className="container mx-auto px-6 md:px-12 py-8 flex justify-start border-t border-[#E6E8EC]">
-        <Link to="/works" className="inline-flex items-center gap-2 font-bold text-[#6B7280] hover:text-[#C8102E] transition-colors uppercase tracking-widest text-xs">
-          <ArrowLeft size={14} />
-          <span>Return to Projects Directory</span>
-        </Link>
-      </div>
+      {/* ══════════════════════════════════════════════════
+          ZEN CULTURAL SECTION — Immersive dark quote
+      ══════════════════════════════════════════════════ */}
+      <section className="py-40 relative overflow-hidden border-t border-white/8">
+        {/* Radial glow */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <motion.div
+            animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+            className="w-[600px] h-[600px] rounded-full blur-[120px]"
+            style={{ background: `radial-gradient(circle, ${cat.accent}20, transparent)` }}
+          />
+        </div>
 
-    </motion.div>
+        <div className="relative z-10 max-w-3xl mx-auto text-center px-8">
+          <Reveal>
+            {/* Hanko stamp */}
+            <motion.div
+              whileHover={{ rotate: [0, 8, -4, 6, 0], scale: 1.05 }}
+              transition={{ duration: 0.6 }}
+              className="inline-flex items-center justify-center w-24 h-24 rounded-full border-[2.5px] border-dashed font-serif font-black text-4xl select-none mb-10"
+              style={{ borderColor: cat.accent, color: cat.accent }}
+            >
+              <div className="w-20 h-20 rounded-full border flex items-center justify-center"
+                style={{ borderColor: cat.accent + '60' }}>
+                {details.culturalInsight.title}
+              </div>
+            </motion.div>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <span className="block text-[10px] font-extrabold uppercase tracking-[0.4em] mb-8" style={{ color: cat.accent }}>
+              Craftsmanship Philosophy
+            </span>
+          </Reveal>
+
+          <Reveal delay={0.2}>
+            <blockquote className="text-5xl md:text-6xl font-black text-white tracking-tight font-serif leading-tight mb-4">
+              {details.culturalInsight.quote}
+            </blockquote>
+            <p className="text-sm font-mono italic text-white/30 mb-12">
+              — {details.culturalInsight.quoteTranslation}
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.3}>
+            <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-sm">
+              <p className="text-base text-white/50 leading-relaxed">{details.culturalInsight.meaning}</p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════
+          RELATED PROJECTS
+      ══════════════════════════════════════════════════ */}
+      <section className="py-24 border-t border-white/8 bg-white/[0.015]">
+        <div className="px-8 md:px-16 max-w-7xl mx-auto">
+          <div className="flex items-end justify-between mb-12">
+            <Reveal>
+              <span className="block text-[10px] font-extrabold uppercase tracking-[0.4em] mb-3" style={{ color: cat.accent }}>
+                More Works
+              </span>
+              <h2 className="text-4xl font-black tracking-tight text-white">Related Projects</h2>
+            </Reveal>
+            <Reveal direction="right">
+              <Link to="/works" className="hidden md:flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white/40 hover:text-white transition-colors">
+                View All <ArrowRight size={12} />
+              </Link>
+            </Reveal>
+          </div>
+
+          <StaggerGrid className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {relatedProjects.map((p) => {
+              const pc = catTokens[p.category] || catTokens['Civil Infra'];
+              return (
+                <StaggerItem key={p.id}>
+                  <Link to={`/works/${p.id}`}
+                    className="group relative flex flex-col rounded-2xl overflow-hidden border border-white/8 hover:border-white/20 transition-all duration-400 bg-white/[0.02] hover:bg-white/[0.04]"
+                  >
+                    <div className="relative h-52 overflow-hidden">
+                      <img src={`/images/${p.id}.jpg`} alt={p.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                        onError={e => { e.target.src = fallbackImg[p.category] || fallback; e.target.onerror = null; }} />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#080c14]/80 to-transparent" />
+                      <span className={`absolute top-3 left-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-widest border backdrop-blur-sm ${pc.pill}`}>
+                        <span className="w-1.5 h-1.5 rounded-full" style={{ background: pc.accent }} />
+                        {p.category}
+                      </span>
+                    </div>
+                    <div className="p-5 flex flex-col gap-3 flex-grow">
+                      <h4 className="font-black text-white/80 group-hover:text-white text-sm leading-snug line-clamp-2 transition-colors">{p.title}</h4>
+                      <div className="flex items-center justify-between mt-auto pt-3 border-t border-white/8">
+                        <span className="flex items-center gap-1.5 text-xs text-white/30">
+                          <MapPin size={10} style={{ color: pc.accent }} /> {p.location}
+                        </span>
+                        <ArrowUpRight size={14} className="text-white/20 group-hover:text-white/50 transition-colors" />
+                      </div>
+                    </div>
+                  </Link>
+                </StaggerItem>
+              );
+            })}
+          </StaggerGrid>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════
+          CTA FOOTER
+      ══════════════════════════════════════════════════ */}
+      <section className="py-40 relative overflow-hidden border-t border-white/8">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/[0.01] to-transparent" />
+        </div>
+
+        <div className="relative z-10 max-w-2xl mx-auto text-center px-8">
+          <Reveal>
+            <span className="block text-[10px] font-extrabold uppercase tracking-[0.4em] mb-4" style={{ color: cat.accent }}>
+              Start a Project
+            </span>
+            <h2 className="text-5xl md:text-6xl font-black text-white tracking-tight leading-[1.05] mb-6">
+              Build Something<br />Extraordinary
+            </h2>
+            <p className="text-white/40 text-base leading-relaxed mb-10">
+              Obayashi Corporation handles complex structural builds and green utility infrastructure globally.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <Link to="/works"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-widest text-[#080c14] transition-all duration-300 hover:scale-105"
+                style={{ background: cat.accent }}
+              >
+                Explore All Works <ArrowRight size={14} />
+              </Link>
+              <Link to="/contact"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-widest text-white border border-white/20 hover:border-white/40 hover:bg-white/5 transition-all duration-300"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+
+        {/* Bottom wordmark */}
+        <div className="mt-28 text-center">
+          <div className="flex items-center justify-center gap-3 mb-3">
+            <div className="w-12 h-px bg-gradient-to-r from-transparent to-white/20" />
+            <div className="w-1.5 h-1.5 rounded-full" style={{ background: cat.accent }} />
+            <div className="w-12 h-px bg-gradient-to-l from-transparent to-white/20" />
+          </div>
+          <p className="text-[10px] font-mono text-white/20 uppercase tracking-[0.4em]">
+            Precision · Trust · Craftsmanship
+          </p>
+        </div>
+      </section>
+
+    </div>
   );
 }
