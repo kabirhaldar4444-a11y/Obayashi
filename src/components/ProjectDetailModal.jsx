@@ -49,7 +49,7 @@ export default function ProjectDetailModal({ project, onClose }) {
             <div 
               className="detail-modal-hero relative flex flex-col justify-end min-h-[300px] md:min-h-[360px]"
               style={{ 
-                backgroundImage: `linear-gradient(rgba(8, 12, 20, 0.15) 20%, rgba(8, 12, 20, 0.5) 70%, #ffffff 98%), url(/images/${project.id}.jpg)` 
+                backgroundImage: `linear-gradient(rgba(8, 12, 20, 0.15) 20%, rgba(8, 12, 20, 0.5) 70%, #ffffff 98%), url(/images/${project.id}.jpg?v=no_obama_2026)` 
               }}
             >
               <div 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, ArrowRight, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 
 const pickups = [
   {
@@ -7,8 +8,8 @@ const pickups = [
     title: "OBAYASHI MORI SORA MIRAI (GREEN×EXPO 2027)",
     summary: "At the Urban GX Village, Obayashi will exhibit interactive programs and bio-diverse systems, outlining the Group's goal for a sustainable future society.",
     image: "/images/expo2027_banner.png",
-    link: "https://expo2027yokohama.obayashi.co.jp/en/",
-    isExternal: true
+    link: "/solution_technology",
+    btnText: "Explore Green Tech Solutions"
   },
   {
     id: "thinking",
@@ -16,7 +17,7 @@ const pickups = [
     summary: "Exploring our construction philosophies—from realities on-site tackling social challenges and core technologies to design concepts behind landmarks.",
     image: "/images/thinking_banner.png",
     link: "/company#publications",
-    isExternal: false
+    btnText: "Read Corporate Publications"
   }
 ];
 
@@ -62,17 +63,10 @@ export default function PickupSlider() {
                     <h3 className="pickup-card-title">{item.title}</h3>
                     <p className="pickup-card-summary">{item.summary}</p>
                     
-                    {item.isExternal ? (
-                      <a href={item.link} className="pickup-card-btn" target="_blank" rel="noopener noreferrer">
-                        <span>Explore Official Site</span>
-                        <ExternalLink size={16} />
-                      </a>
-                    ) : (
-                      <a href={item.link} className="pickup-card-btn">
-                        <span>Read Publication</span>
-                        <ArrowRight size={16} />
-                      </a>
-                    )}
+                    <Link to={item.link} className="pickup-card-btn">
+                      <span>{item.btnText}</span>
+                      <ArrowRight size={16} />
+                    </Link>
                   </div>
                 </div>
               </div>

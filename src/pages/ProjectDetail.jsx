@@ -74,7 +74,7 @@ export default function ProjectDetail() {
 
   const budget = project.details?.find(d => d.label.toLowerCase() === 'budget')?.value || 'N/A';
   const client = project.details?.find(d => d.label.toLowerCase() === 'client')?.value || 'N/A';
-  const imgSrc = `/images/${project.id}.jpg`;
+  const imgSrc = `/images/${project.id}.jpg?v=no_obama_2026`;
 
   // Grab the next project in sequence for transition portal link
   const currentIndex = projects.findIndex(p => p.id === project.id);
@@ -103,31 +103,149 @@ export default function ProjectDetail() {
   }
 
   const [activePara, setActivePara] = React.useState(0);
-  const scrollContainerRef = React.useRef(null);
+  const activeParaRef = React.useRef(0);
+  const allCardsRef = React.useRef(allCards);
+  const bookRef = React.useRef(null);
+  const lastPageTurn = React.useRef(0);
+  const touchStartY = React.useRef(null);
+
+  const isSnapped = React.useRef(false);
 
   React.useEffect(() => {
-    const handleScroll = () => {
-      if (!scrollContainerRef.current) return;
-      const rect = scrollContainerRef.current.getBoundingClientRect();
-      const startOffset = 120;
-      const scrolled = startOffset - rect.top;
-      const totalScrollable = rect.height - window.innerHeight + startOffset;
-      
-      if (scrolled >= 0 && totalScrollable > 0) {
-        const percentage = scrolled / totalScrollable;
-        const index = Math.floor(percentage * allCards.length);
-        const safeIndex = Math.max(0, Math.min(allCards.length - 1, index));
-        setActivePara(safeIndex);
-      } else if (scrolled < 0) {
-        setActivePara(0);
+    activeParaRef.current = activePara;
+  }, [activePara]);
+
+  React.useEffect(() => {
+    allCardsRef.current = allCards;
+  }, [allCards]);
+
+  React.useEffect(() => {
+    const handleWindowWheel = (e) => {
+      const bookEl = bookRef.current;
+      if (!bookEl) return;
+
+      const rect = bookEl.getBoundingClientRect();
+      const active = activeParaRef.current;
+      const cards = allCardsRef.current;
+
+      if (Math.abs(e.deltaY) < 5) return;
+
+      const now = Date.now();
+
+      if (e.deltaY > 0) {
+        // Scrolling down: intercept if the book has scrolled up into active view (top <= 140px)
+        if (rect.top <= 140 && rect.top >= -100 && active < cards.length - 1) {
+          e.preventDefault();
+          
+          // Align book container to the center/sticky coordinate (top: 120px) smoothly
+          if (!isSnapped.current) {
+            window.scrollTo({ top: window.scrollY + rect.top - 120, behavior: 'smooth' });
+            isSnapped.current = true;
+          }
+
+          if (now - lastPageTurn.current > 400) {
+            setActivePara(prev => prev + 1);
+            lastPageTurn.current = now;
+          }
+        } else {
+          if (active === cards.length - 1) {
+            isSnapped.current = false;
+          }
+        }
       } else {
-        setActivePara(allCards.length - 1);
+        // Scrolling up: intercept if the book is coming into view from below (top >= 100px)
+        if (rect.top >= 100 && rect.top <= window.innerHeight - 150 && active > 0) {
+          e.preventDefault();
+          
+          if (!isSnapped.current) {
+            window.scrollTo({ top: window.scrollY + rect.top - 120, behavior: 'smooth' });
+            isSnapped.current = true;
+          }
+
+          if (now - lastPageTurn.current > 400) {
+            setActivePara(prev => prev - 1);
+            lastPageTurn.current = now;
+          }
+        } else {
+          if (active === 0) {
+            isSnapped.current = false;
+          }
+        }
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [allCards.length]);
+    const handleWindowTouchStart = (e) => {
+      touchStartY.current = e.touches[0].clientY;
+    };
+
+    const handleWindowTouchMove = (e) => {
+      const bookEl = bookRef.current;
+      if (!bookEl) return;
+
+      const rect = bookEl.getBoundingClientRect();
+      const active = activeParaRef.current;
+      const cards = allCardsRef.current;
+      
+      if (touchStartY.current === null) return;
+      const currentY = e.touches[0].clientY;
+      const diffY = touchStartY.current - currentY;
+
+      if (Math.abs(diffY) > 30) {
+        const now = Date.now();
+        if (diffY > 0) {
+          // Swiping up (scrolling down): intercept if book in view
+          if (rect.top <= 140 && rect.top >= -100 && active < cards.length - 1) {
+            e.preventDefault();
+            
+            if (!isSnapped.current) {
+              window.scrollTo({ top: window.scrollY + rect.top - 120, behavior: 'smooth' });
+              isSnapped.current = true;
+            }
+
+            if (now - lastPageTurn.current > 450) {
+              setActivePara(prev => prev + 1);
+              lastPageTurn.current = now;
+            }
+            touchStartY.current = null;
+          } else {
+            if (active === cards.length - 1) {
+              isSnapped.current = false;
+            }
+          }
+        } else {
+          // Swiping down (scrolling up): intercept if book in view
+          if (rect.top >= 100 && rect.top <= window.innerHeight - 150 && active > 0) {
+            e.preventDefault();
+            
+            if (!isSnapped.current) {
+              window.scrollTo({ top: window.scrollY + rect.top - 120, behavior: 'smooth' });
+              isSnapped.current = true;
+            }
+
+            if (now - lastPageTurn.current > 450) {
+              setActivePara(prev => prev - 1);
+              lastPageTurn.current = now;
+            }
+            touchStartY.current = null;
+          } else {
+            if (active === 0) {
+              isSnapped.current = false;
+            }
+          }
+        }
+      }
+    };
+
+    window.addEventListener('wheel', handleWindowWheel, { passive: false });
+    window.addEventListener('touchstart', handleWindowTouchStart, { passive: true });
+    window.addEventListener('touchmove', handleWindowTouchMove, { passive: false });
+
+    return () => {
+      window.removeEventListener('wheel', handleWindowWheel);
+      window.removeEventListener('touchstart', handleWindowTouchStart);
+      window.removeEventListener('touchmove', handleWindowTouchMove);
+    };
+  }, []);
 
   const fallbackImg = {
     'Civil Infra': '/images/category_civil.png',
@@ -273,10 +391,6 @@ export default function ProjectDetail() {
               transition: 'transform 4s cubic-bezier(0.16, 1, 0.3, 1)'
             }}
             className="group-hover:scale-102"
-            onError={(e) => {
-              e.target.src = fallbackImg[project.category] || '/images/category_civil.png';
-              e.target.onerror = null;
-            }}
           />
         </motion.div>
 
@@ -340,26 +454,143 @@ export default function ProjectDetail() {
               Project Narrative
             </span>
             
-            {/* Scrollable Track Container */}
-            <div 
-              ref={scrollContainerRef}
-              style={{ 
-                position: 'relative', 
-                height: `${allCards.length * 60}vh`, 
-                width: '100%' 
-              }}
-            >
-              {/* Pinned Sticky Space */}
+            {/* Flex Row Container to hold Left Timeline and Right Book */}
+            <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
+              
+              {/* Left Timeline Indicator */}
               <div 
                 style={{ 
-                  position: 'sticky', 
-                  top: '120px', 
-                  width: '100%', 
-                  minHeight: '360px', 
-                  perspective: '2000px', 
-                  transformStyle: 'preserve-3d' 
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  justifyContent: 'space-between', 
+                  alignItems: 'center', 
+                  height: '220px', 
+                  position: 'relative', 
+                  marginRight: '28px',
+                  width: '24px',
+                  flexShrink: 0
                 }}
               >
+                {/* Thin vertical track line */}
+                <div 
+                  style={{ 
+                    position: 'absolute', 
+                    top: '10px', 
+                    bottom: '10px', 
+                    left: '50%', 
+                    transform: 'translateX(-50%)', 
+                    width: '2px', 
+                    backgroundColor: '#cbd5e1', 
+                    borderRadius: '999px',
+                    zIndex: 1 
+                  }} 
+                />
+                
+                {allCards.map((_, idx) => {
+                  const isActive = idx === activePara;
+                  return (
+                    <motion.button
+                      key={idx}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setActivePara(idx);
+                        lastPageTurn.current = Date.now();
+                      }}
+                      animate={{
+                        scale: isActive ? 1.5 : 1,
+                        backgroundColor: isActive ? '#18181b' : '#ffffff',
+                        borderColor: isActive ? '#18181b' : '#cbd5e1',
+                        boxShadow: isActive ? '0 0 0 4px rgba(24, 24, 27, 0.15)' : '0 2px 4px rgba(0,0,0,0.05)',
+                      }}
+                      transition={{ 
+                        type: 'spring', 
+                        stiffness: 300, 
+                        damping: 18 
+                      }}
+                      style={{
+                        width: '10px',
+                        height: '10px',
+                        borderRadius: '50%',
+                        border: '2px solid',
+                        cursor: 'pointer',
+                        zIndex: 2,
+                        padding: 0,
+                        outline: 'none'
+                      }}
+                      aria-label={`Go to page ${idx + 1}`}
+                      className="hover:border-zinc-500 transition-colors duration-200"
+                    />
+                  );
+                })}
+              </div>
+
+              {/* Book Container with Scroll turning */}
+              <div 
+                ref={bookRef}
+                style={{ 
+                  position: 'relative', 
+                  flexGrow: 1, 
+                  height: '380px', 
+                  perspective: '2000px', 
+                  transformStyle: 'preserve-3d',
+                  marginBottom: '40px'
+                }}
+              >
+                {/* Realistic Helical Spiral Binding */}
+                <div 
+                  style={{ 
+                    position: 'absolute', 
+                    top: '-6px', 
+                    left: '10%', 
+                    right: '10%', 
+                    height: '28px', 
+                    display: 'flex', 
+                    justifyContent: 'space-between', 
+                    zIndex: 40,
+                    pointerEvents: 'none'
+                  }}
+                >
+                  {[...Array(12)].map((_, rIdx) => (
+                    <div 
+                      key={rIdx} 
+                      style={{
+                        position: 'relative',
+                        width: '14px',
+                        height: '28px'
+                      }}
+                    >
+                      {/* Dark inner-shadow hole */}
+                      <div 
+                        style={{
+                          position: 'absolute',
+                          bottom: '2px',
+                          left: '3px',
+                          width: '8px',
+                          height: '8px',
+                          backgroundColor: '#18181b',
+                          borderRadius: '50%',
+                          boxShadow: 'inset 0 1.5px 3px rgba(0,0,0,0.85), 0 1px 1px rgba(255,255,255,0.4)'
+                        }}
+                      />
+                      {/* 3D helical metallic ring loop */}
+                      <div 
+                        style={{
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          width: '12px',
+                          height: '24px',
+                          background: 'linear-gradient(135deg, #cbd5e1 0%, #ffffff 20%, #94a3b8 45%, #e2e8f0 60%, #475569 85%, #1e293b 100%)',
+                          borderRadius: '40% 40% 30% 30% / 60% 60% 40% 40%',
+                          transform: 'rotate(-15deg)',
+                          boxShadow: '1.5px 2.5px 4px rgba(0,0,0,0.25), inset -0.5px -0.5px 1.5px rgba(0,0,0,0.2)',
+                          border: '0.5px solid rgba(148, 163, 184, 0.6)'
+                        }}
+                      />
+                    </div>
+                  ))}
+                </div>
+
                 {allCards.map((p, i) => {
                   const isActive = i === activePara;
                   const isPast = i < activePara;
@@ -403,49 +634,31 @@ export default function ProjectDetail() {
                         zIndex
                       }}
                       transition={{ 
-                        duration: 0.65, 
-                        ease: [0.16, 1, 0.3, 1] 
+                        type: 'spring',
+                        stiffness: 130,
+                        damping: 18,
+                        mass: 0.8
                       }}
                       style={{
                         position: 'absolute',
                         top: 0,
                         left: 0,
                         right: 0,
+                        bottom: 0,
                         transformOrigin: isPast ? 'top center' : 'bottom center',
                         backgroundColor: isSummary ? '#f8fafc' : '#ffffff',
                         border: isSummary ? '1px dashed #cbd5e1' : '1px solid #e4e4e7',
                         borderRadius: '24px',
-                        padding: '48px 56px',
+                        padding: '40px 48px',
                         boxShadow: '0 20px 40px rgba(9, 9, 11, 0.03), 0 1px 3px rgba(9, 9, 11, 0.01)',
                         transformStyle: 'preserve-3d',
                         backfaceVisibility: 'hidden',
-                        minHeight: '280px',
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'center'
                       }}
                       className="hover:shadow-lg transition-shadow duration-300"
                     >
-                      {/* Spiral binder rings overlay (only for standard narrative cards) */}
-                      {!isSummary && (
-                        <div style={{ position: 'absolute', top: '-1px', left: '10%', right: '10%', height: '3px', display: 'flex', justifyContent: 'space-between', zIndex: 20 }}>
-                          {[...Array(6)].map((_, rIdx) => (
-                            <div 
-                              key={rIdx} 
-                              style={{
-                                width: '12px',
-                                height: '24px',
-                                backgroundColor: '#e4e4e7',
-                                border: '1px solid #cbd5e1',
-                                borderRadius: '4px',
-                                marginTop: '-12px',
-                                boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.1)'
-                              }}
-                            />
-                          ))}
-                        </div>
-                      )}
-
                       {isSummary && (
                         <span style={{ fontSize: '9px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#64748b', fontWeight: 'bold', display: 'block', marginBottom: '14px', borderBottom: '1px dashed #cbd5e1', paddingBottom: '8px' }}>
                           Executive Summary
@@ -591,7 +804,7 @@ export default function ProjectDetail() {
                 position: 'relative'
               }}
             >
-              <MiniJapanMap location={project.location} />
+              <MiniJapanMap location={project.location} locationCategory={project.locationCategory} />
             </div>
           </div>
 

@@ -1,0 +1,302 @@
+[
+  {
+    "Country": "India",
+    "Project Name": "Mumbai–Ahmedabad High-Speed Rail",
+    "Description": "India’s first high-speed railway, developed with Japanese ODA, engineering cooperation and Japanese Shinkansen technology. The project includes elevated viaducts, bridges, tunnels, stations, depots and high-speed rail systems connecting Mumbai and Ahmedabad.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "High-Speed Rail",
+    "Budget": "~$15–18 Billion",
+    "Timeline": "2017–Ongoing",
+    "Location": "Maharashtra, Gujarat & Dadra and Nagar Haveli"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Western Dedicated Freight Corridor",
+    "Description": "A large dedicated freight railway connecting northern India with western ports and industrial regions. Japan has provided major ODA financing and technical cooperation, including support for high-capacity electric freight infrastructure.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Freight Railway",
+    "Budget": "~$10–12 Billion",
+    "Timeline": "2009–Ongoing / Substantially Operational",
+    "Location": "Uttar Pradesh, Haryana, Rajasthan, Gujarat & Maharashtra"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Mumbai Trans Harbour Link – Atal Setu",
+    "Description": "A 21.8-km sea-crossing connecting Mumbai with Navi Mumbai. Japan, through JICA ODA financing, played a major role in development of India’s longest sea bridge, featuring long marine viaducts and advanced bridge engineering.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Sea Bridge",
+    "Budget": "~$2.1 Billion",
+    "Timeline": "2018–2024 Completed",
+    "Location": "Mumbai–Navi Mumbai, Maharashtra"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Dhubri–Phulbari Bridge",
+    "Description": "Major bridge across the Brahmaputra connecting Assam and Meghalaya. Japanese ODA supports construction of this strategic road connection, which will significantly shorten travel distance between the two northeastern states.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Bridge / Highway",
+    "Budget": "~$600–700 Million",
+    "Timeline": "2019–Ongoing",
+    "Location": "Assam–Meghalaya"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Chennai Peripheral Ring Road",
+    "Description": "Large orbital road project around Chennai connecting major highways, industrial areas and ports. JICA supports the project through Japanese ODA to strengthen freight movement and regional economic connectivity.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Ring Road / Highway",
+    "Budget": "~$1.5–2 Billion",
+    "Timeline": "2018–Ongoing",
+    "Location": "Chennai Metropolitan Region, Tamil Nadu"
+  },
+  {
+    "Country": "India",
+    "Project Name": "North East Road Network Connectivity Improvement Project – Phase I",
+    "Description": "Japan-supported road construction and upgrading program improving strategic highways through mountainous areas of Northeast India, including bridges, slope protection and resilient road engineering.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Highway / Mountain Roads",
+    "Budget": "~$500+ Million",
+    "Timeline": "2017–Ongoing",
+    "Location": "Mizoram & Meghalaya"
+  },
+  {
+    "Country": "India",
+    "Project Name": "North East Road Network Connectivity Improvement Project – Phase II",
+    "Description": "Second major phase of Japan-supported road connectivity improvements, strengthening transport links between remote northeastern regions and major economic corridors.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Roads & Bridges",
+    "Budget": "~$500+ Million",
+    "Timeline": "2018–Ongoing",
+    "Location": "Northeast India"
+  },
+  {
+    "Country": "India",
+    "Project Name": "North East Road Network Connectivity Improvement Project – Phase III",
+    "Description": "Continued development of strategic road infrastructure with Japanese assistance, including road widening, bridges, drainage, slope stabilization and improved regional connectivity.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Roads & Bridges",
+    "Budget": "~$500+ Million",
+    "Timeline": "2020–Ongoing",
+    "Location": "Northeast India"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Bihar National Highway Improvement Project – Phase I",
+    "Description": "Japanese ODA-supported highway improvement program involving road widening, pavement construction, bridges and related infrastructure to improve regional transportation in Bihar.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "National Highway",
+    "Budget": "~$300–500 Million",
+    "Timeline": "2010s–Completed / Operational",
+    "Location": "Bihar"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Bihar National Highway Improvement Project – Phase II",
+    "Description": "Further expansion and improvement of national highway infrastructure in Bihar with Japanese assistance, enhancing road capacity, safety and connectivity between important regional centers.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "National Highway",
+    "Budget": "~$300–500 Million",
+    "Timeline": "2010s–2020s",
+    "Location": "Bihar"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Delhi–Mumbai Industrial Corridor",
+    "Description": "A massive India–Japan strategic infrastructure initiative covering industrial cities, freight connectivity, logistics, roads, utilities and smart urban infrastructure along the Delhi–Mumbai economic corridor.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Industrial Corridor",
+    "Budget": "~$90–100 Billion Overall Vision",
+    "Timeline": "2008–Ongoing",
+    "Location": "Delhi to Maharashtra across multiple states"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Dholera Special Investment Region / Industrial City",
+    "Description": "Large greenfield industrial city under the DMIC framework, an India–Japan strategic initiative. Construction includes trunk roads, drainage, utilities, ICT infrastructure, water systems and large industrial zones.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Industrial Smart City",
+    "Budget": "Multi-Billion-Dollar Development",
+    "Timeline": "2011–Ongoing",
+    "Location": "Dholera, Gujarat"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Chennai–Bengaluru Industrial Corridor",
+    "Description": "India–Japan-supported economic corridor designed around integrated development of industrial zones, highways, ports, logistics and urban infrastructure between Chennai and Bengaluru.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Industrial Corridor",
+    "Budget": "Multi-Billion-Dollar Program",
+    "Timeline": "2013–Ongoing",
+    "Location": "Tamil Nadu, Andhra Pradesh & Karnataka"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Tamil Nadu Investment Promotion / Industrial Infrastructure Program",
+    "Description": "Japan-supported infrastructure and investment program improving roads, utilities, industrial parks and supporting infrastructure to strengthen manufacturing clusters, including areas hosting Japanese industries.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Industrial Infrastructure",
+    "Budget": "~$1+ Billion Across Phases",
+    "Timeline": "2013–Ongoing",
+    "Location": "Tamil Nadu"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Purulia Pumped Storage Project",
+    "Description": "Major pumped-storage hydroelectric complex developed with Japanese ODA. Construction included upper and lower reservoirs, underground/large civil structures, waterways and a 900-MW pumped-storage generating facility.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Hydropower / Pumped Storage",
+    "Budget": "~$700–900 Million",
+    "Timeline": "1990s–2008 Completed",
+    "Location": "Purulia, West Bengal"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Turga Pumped Storage Project",
+    "Description": "Large pumped-storage hydropower development supported through Japanese ODA. It involves construction of reservoirs, dams, water-conveyance systems and an approximately 1,000-MW underground/associated power generation facility.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Pumped Storage / Dam",
+    "Budget": "~$700–900 Million",
+    "Timeline": "2018–Ongoing",
+    "Location": "Purulia, West Bengal"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Ghatghar Pumped Storage Project",
+    "Description": "Pumped-storage hydroelectric project constructed with Japanese ODA assistance to meet peak electricity demand. Major works included reservoirs, waterways, tunnels and generating infrastructure.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Hydropower / Civil Works",
+    "Budget": "~$400–600 Million",
+    "Timeline": "1990s–2000s Completed",
+    "Location": "Maharashtra"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Bakreswar Thermal Power Station Expansion",
+    "Description": "Major power infrastructure development supported by Japanese ODA, involving construction of generating units and associated civil, mechanical and electrical infrastructure to expand electricity supply.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Power Plant Construction",
+    "Budget": "~$1+ Billion Across Development",
+    "Timeline": "1990s–2010s Completed",
+    "Location": "Birbhum, West Bengal"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Haldia Port Modernization Project",
+    "Description": "Port infrastructure modernization supported through Japanese ODA, aimed at improving cargo-handling capacity, port facilities and maritime logistics infrastructure at the strategically important Haldia port complex.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Port / Maritime",
+    "Budget": "~$200–400 Million Equivalent",
+    "Timeline": "1980s–1990s Completed",
+    "Location": "Haldia, West Bengal"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Hooghly Dock and Port Engineers Modernization Project",
+    "Description": "Japan-supported modernization of shipbuilding, dock and port-related industrial infrastructure, improving facilities and equipment for marine construction and vessel operations.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Port / Shipyard Infrastructure",
+    "Budget": "~$100–300 Million Equivalent",
+    "Timeline": "1980s–1990s Completed",
+    "Location": "West Bengal"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Burnpur Steel Works Modernization Project",
+    "Description": "Major modernization of Indian steel-making infrastructure supported through Japanese ODA. Works involved industrial construction, plant facilities, equipment modernization and supporting civil infrastructure.",
+    "Sector": "Construction / Industrial",
+    "Sub-Sector": "Steel Plant Infrastructure",
+    "Budget": "Multi-Hundred-Million-Dollar Program",
+    "Timeline": "1980s–2000s",
+    "Location": "Burnpur, West Bengal"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Mumbai Sewage Disposal Project",
+    "Description": "Large wastewater infrastructure program supported through Japanese ODA, involving sewage collection networks, treatment and disposal facilities designed to improve sanitation and coastal water quality in Mumbai.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Sewerage / Wastewater",
+    "Budget": "~$500 Million+ Across Phases",
+    "Timeline": "1990s–Completed Phases",
+    "Location": "Mumbai, Maharashtra"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Yamuna Action Plan Project",
+    "Description": "Major Japan-supported environmental infrastructure program involving construction of sewerage networks, pumping stations and sewage treatment plants to reduce pollution entering the Yamuna River.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Sewerage / Water Treatment",
+    "Budget": "~$1 Billion+ Across Phases",
+    "Timeline": "1993–Ongoing Phases",
+    "Location": "Delhi, Uttar Pradesh & Haryana"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Yamuna Action Plan Phase III – Delhi",
+    "Description": "Major wastewater construction program supported through JICA, including rehabilitation and construction of sewage treatment facilities, sewer networks and related infrastructure in the Delhi region.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Wastewater / Sewerage",
+    "Budget": "~$500–700 Million",
+    "Timeline": "2011–Ongoing / Advanced Stage",
+    "Location": "Delhi"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Bengaluru Water Supply and Sewerage Project",
+    "Description": "Large-scale urban water infrastructure development supported by Japanese ODA, involving water transmission pipelines, pumping facilities, reservoirs and sewerage systems for Bengaluru’s expanding population.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Water Supply / Sewerage",
+    "Budget": "Multi-Billion-Dollar Across Phases",
+    "Timeline": "1990s–Ongoing Phases",
+    "Location": "Bengaluru, Karnataka"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Rajasthan Water Sector / Rural Water Supply Infrastructure Projects",
+    "Description": "Japan-supported water infrastructure developments involving pipelines, treatment facilities, reservoirs and distribution systems designed to provide reliable water supply in water-scarce areas of Rajasthan.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Water Supply",
+    "Budget": "~$500 Million+ Across Programs",
+    "Timeline": "2000s–Ongoing Phases",
+    "Location": "Rajasthan"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Mumbai Metro Line 3 – Aqua Line",
+    "Description": "Major underground metro construction project supported heavily through Japanese ODA. The corridor includes long underground twin tunnels, deep stations, depots and complex civil construction beneath densely developed Mumbai.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Underground Metro / Tunneling",
+    "Budget": "~$4.5 Billion",
+    "Timeline": "2011–2025/26",
+    "Location": "Mumbai, Maharashtra"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Delhi Metro Rail Project",
+    "Description": "One of India’s most prominent examples of India–Japan infrastructure cooperation. Japanese ODA supported construction across several phases, with extensive elevated viaducts, tunnels, stations and rail systems.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Metro Rail",
+    "Budget": "$10+ Billion Across Major Phases",
+    "Timeline": "1998–Ongoing Expansion",
+    "Location": "Delhi NCR"
+  },
+  {
+    "Country": "India",
+    "Project Name": "Chennai Metro Rail Project",
+    "Description": "Major urban rail infrastructure project supported by Japanese ODA. Construction includes underground tunnels, elevated viaducts, stations, depots and associated transit infrastructure across Chennai.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Metro / Tunneling",
+    "Budget": "$8+ Billion Including Major Phases",
+    "Timeline": "2009–Ongoing",
+    "Location": "Chennai, Tamil Nadu"
+  },
+  {
+    "Country": "India",
+    "Project Name": "High-Speed Rail Training Institute & Associated MAHSR Infrastructure, Vadodara",
+    "Description": "Specialized infrastructure developed as part of the India–Japan high-speed rail cooperation program. It supports training of Indian engineers and personnel in Japanese Shinkansen-based railway construction, operation and maintenance.",
+    "Sector": "Infrastructure",
+    "Sub-Sector": "Railway Training / Technical Infrastructure",
+    "Budget": "Part of MAHSR Program",
+    "Timeline": "2017–Ongoing Development",
+    "Location": "Vadodara, Gujarat"
+  }
+]

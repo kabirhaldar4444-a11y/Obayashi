@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Sun, ShieldCheck, Heart, Users, FileText, CheckCircle2, Award, ArrowUpRight } from 'lucide-react';
 import { sustainabilityVision, esgMateriality, socialContributions, externalEvaluations, esgDataHighlights } from '../data/sustainabilityContent';
 
@@ -128,10 +129,10 @@ export default function Sustainability() {
             <div className="eval-cta-card">
               <h3 className="eval-cta-title">Integrated Reporting</h3>
               <p className="eval-cta-text">Read our latest ESG reports and Integrated Annual Review for comprehensive stats.</p>
-              <a href="https://ir.obayashi.co.jp/en/ir/data/report.html" target="_blank" rel="noopener noreferrer" className="btn-primary">
-                <span>Integrated Corporate Report (PDF)</span>
+              <Link to="/company#publications" className="btn-primary">
+                <span>Integrated Corporate Reports</span>
                 <ArrowUpRight size={16} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronUp, ExternalLink } from 'lucide-react';
+import { ChevronUp } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -85,12 +85,6 @@ export default function Footer() {
             <ul className="footer-link-list">
               <li><Link to="/news" className="footer-link bold">News Archive</Link></li>
               <li><Link to="/contact" className="footer-link bold">Contact Inquiry</Link></li>
-              <li>
-                <a href="https://www.obayashi.co.jp/" target="_blank" rel="noopener noreferrer" className="footer-link inline-flex-link">
-                  <span>Japanese Website</span>
-                  <ExternalLink size={12} />
-                </a>
-              </li>
             </ul>
           </div>
         </div>

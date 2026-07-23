@@ -1,7 +1,7 @@
 export const workCategories = {
   designBuild: ["All", "Design & Build", "Construction Only"],
   facilityType: ["All", "Offices", "Civil Infra", "Energy", "Education", "Recreation"],
-  location: ["All", "Japan"],
+  location: ["All", "Japan", "India"],
   year: ["All", "2025", "2024", "2023", "2022", "Before 2022"]
 };
 
@@ -778,6 +778,936 @@ export const projects = [
       {
         "label": "Location",
         "value": "Nagoya, Japan"
+      }
+    ]
+  },
+  {
+    "id": "work_mumbai_ahmedabad_rail_200",
+    "title": "Mumbai–Ahmedabad High-Speed Rail",
+    "subtitle": "India's first high-speed railway corridor (508 km) connecting Mumbai and Ahmedabad, incorporating Japanese Shinkansen technology, a 21 km tunnel with Thane Creek undersea boring, and 320 km/h operating speeds.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Maharashtra, Gujarat & Dadra and Nagar Haveli",
+    "locationCategory": "India",
+    "completion": "2017–Ongoing",
+    "completionYear": "2017",
+    "summary": "India's first high-speed railway corridor (508 km) connecting Mumbai and Ahmedabad, incorporating Japanese Shinkansen technology, a 21 km tunnel with Thane Creek undersea boring, and 320 km/h operating speeds.",
+    "description": "The Mumbai–Ahmedabad High-Speed Rail (MAHSR) project is India's first high-speed railway corridor, connecting Mumbai in Maharashtra with Ahmedabad in Gujarat. Developed by the National High Speed Rail Corporation Limited (NHSRCL) with technical and financial cooperation from Japan, the corridor is designed to introduce Shinkansen technology to India and significantly reduce travel times between the two major economic centers.\n\nThe approximately 508-kilometre corridor includes high-speed stations, elevated viaducts, bridges, tunnels, rolling stock depots, and advanced railway systems capable of supporting train speeds of up to 320 km/h. A notable engineering feature is the construction of a 21-kilometre tunnel near Mumbai, including an underwater section beneath Thane Creek.\n\nThe project incorporates Japanese high-speed rail technology, advanced seismic protection systems, automatic train control, dedicated tracks, and modern passenger safety standards. Large-scale civil engineering works involve precast segmental viaduct construction, river bridges, station development, and extensive utility relocation along the alignment.\n\nUpon completion, the Mumbai–Ahmedabad High-Speed Rail will transform intercity transportation in western India by reducing travel time, improving regional connectivity, promoting economic growth, and establishing the country's first operational high-speed railway network.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "High-Speed Rail"
+      },
+      {
+        "label": "Budget",
+        "value": "~$15–18 Billion"
+      },
+      {
+        "label": "Location",
+        "value": "Maharashtra, Gujarat & Dadra and Nagar Haveli"
+      }
+    ]
+  },
+  {
+    "id": "work_india_002",
+    "title": "Western Dedicated Freight Corridor",
+    "subtitle": "A landmark 1,506 km dedicated freight railway corridor connecting Dadri in UP to JNPT Port in Maharashtra, separating freight from passenger traffic to dramatically boost logistics efficiency across 5 states.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Uttar Pradesh, Haryana, Rajasthan, Gujarat & Maharashtra",
+    "locationCategory": "India",
+    "completion": "2009–Ongoing / Substantially Operational",
+    "completionYear": "2009",
+    "summary": "A landmark 1,506 km dedicated freight railway corridor connecting Dadri in UP to JNPT Port in Maharashtra, separating freight from passenger traffic to dramatically boost logistics efficiency across 5 states.",
+    "description": "The Western Dedicated Freight Corridor (WDFC) is one of India's largest railway infrastructure projects, developed by the Dedicated Freight Corridor Corporation of India Limited (DFCCIL). Stretching approximately 1,506 kilometres from Dadri in Uttar Pradesh to Jawaharlal Nehru Port (JNPT) in Maharashtra, the corridor is designed exclusively for freight operations, separating cargo traffic from passenger railway services.\n\nThe project includes the construction of dedicated double-track freight lines, railway bridges, tunnels, stations, maintenance depots, traction substations, signaling systems, and modern logistics infrastructure. The corridor passes through Uttar Pradesh, Haryana, Rajasthan, Gujarat, and Maharashtra, connecting major industrial zones, ports, and logistics hubs across western India.\n\nDesigned to accommodate heavier axle loads, longer freight trains, and higher operating speeds than conventional freight routes, the corridor incorporates advanced signaling technology, automatic train protection systems, and high-capacity electrified railway infrastructure. These improvements significantly enhance freight efficiency and network reliability.\n\nOnce fully operational, the Western Dedicated Freight Corridor will reduce logistics costs, improve supply chain efficiency, increase railway freight capacity, support industrial development, and strengthen India's national freight transportation network under the PM Gati Shakti initiative.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Freight Railway"
+      },
+      {
+        "label": "Budget",
+        "value": "~$10–12 Billion"
+      },
+      {
+        "label": "Location",
+        "value": "Uttar Pradesh, Haryana, Rajasthan, Gujarat & Maharashtra"
+      }
+    ]
+  },
+  {
+    "id": "work_india_003",
+    "title": "Mumbai Trans Harbour Link – Atal Setu",
+    "subtitle": "India's longest sea bridge (21.8 km) connecting Sewri in Mumbai to Chirle in Navi Mumbai, featuring a 16.5 km marine section, long-span orthotropic steel decks, and seismic-resistant coastal engineering.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Mumbai–Navi Mumbai, Maharashtra",
+    "locationCategory": "India",
+    "completion": "January, 2024",
+    "completionYear": "2024",
+    "summary": "India's longest sea bridge (21.8 km) connecting Sewri in Mumbai to Chirle in Navi Mumbai, featuring a 16.5 km marine section, long-span orthotropic steel decks, and seismic-resistant coastal engineering.",
+    "description": "The Mumbai Trans Harbour Link (MTHL), officially named Atal Bihari Vajpayee Sewri–Nhava Sheva Atal Setu, is India's longest sea bridge, connecting Sewri in Mumbai with Chirle near Navi Mumbai. Opened to traffic in January 2024, the bridge significantly improves connectivity between Mumbai, Navi Mumbai, Jawaharlal Nehru Port, and the upcoming Navi Mumbai International Airport.\n\nThe approximately 21.8-kilometre-long bridge consists of a 16.5-kilometre marine section and a 5.5-kilometre land approach. The project includes multi-lane expressway infrastructure, interchanges, intelligent traffic management systems, toll plazas, and advanced monitoring systems designed to ensure efficient and safe operations.\n\nConstructed using modern bridge engineering techniques, the project incorporates seismic-resistant design, corrosion-resistant materials, long-span steel orthotropic decks, and high-performance concrete capable of withstanding the harsh marine environment of Mumbai Harbour. Environmental protection measures were implemented throughout construction to minimize impacts on coastal ecosystems.\n\nThe bridge has substantially reduced travel time between Mumbai and Navi Mumbai while strengthening regional transportation, improving freight movement, supporting economic growth, and enhancing connectivity to major industrial and logistics hubs across the Mumbai Metropolitan Region.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Sea Bridge"
+      },
+      {
+        "label": "Budget",
+        "value": "~$2.1 Billion"
+      },
+      {
+        "label": "Location",
+        "value": "Mumbai–Navi Mumbai, Maharashtra"
+      }
+    ]
+  },
+  {
+    "id": "work_india_004",
+    "title": "Dhubri–Phulbari Bridge",
+    "subtitle": "A major 19 km 4-lane bridge spanning the Brahmaputra River to connect Dhubri in Assam with Phulbari in Meghalaya, dramatically improving North-East interstate transport.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Assam–Meghalaya",
+    "locationCategory": "India",
+    "completion": "2019–Ongoing",
+    "completionYear": "2019",
+    "summary": "A major 19 km 4-lane bridge spanning the Brahmaputra River to connect Dhubri in Assam with Phulbari in Meghalaya, dramatically improving North-East interstate transport.",
+    "description": "The Dhubri–Phulbari Bridge is a major road bridge under construction across the Brahmaputra River, connecting Dhubri in Assam with Phulbari in Meghalaya. Developed by the National Highways & Infrastructure Development Corporation Limited (NHIDCL), the bridge forms an important component of India's strategy to improve transportation connectivity across the northeastern region.\n\nThe project includes a multi-lane bridge, approach roads, river protection works, embankments, and associated highway infrastructure designed to provide uninterrupted road connectivity throughout the year. Once completed, it will become one of the longest river bridges in India, significantly reducing travel distance between Assam and Meghalaya.\n\nEngineering works involve deep river foundations, large-diameter bridge piers, long-span superstructures, and specialized construction techniques suited to the Brahmaputra's wide channel, strong currents, and seasonal flooding. Advanced geotechnical investigations and hydraulic studies have guided the bridge's design to ensure long-term structural stability.\n\nUpon completion, the bridge will strengthen regional connectivity, improve trade and logistics, reduce travel time, enhance access to neighboring states, and contribute to the economic development of northeastern India.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Bridge / Highway"
+      },
+      {
+        "label": "Budget",
+        "value": "~$600–700 Million"
+      },
+      {
+        "label": "Location",
+        "value": "Assam–Meghalaya"
+      }
+    ]
+  },
+  {
+    "id": "work_india_005",
+    "title": "Chennai Peripheral Ring Road",
+    "subtitle": "A 133 km 6-lane access-controlled expressway encircling the Chennai Metropolitan Region, connecting Ennore Port, Kattupalli Port, and major industrial manufacturing hubs.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Chennai Metropolitan Region, Tamil Nadu",
+    "locationCategory": "India",
+    "completion": "2018–Ongoing",
+    "completionYear": "2018",
+    "summary": "A 133 km 6-lane access-controlled expressway encircling the Chennai Metropolitan Region, connecting Ennore Port, Kattupalli Port, and major industrial manufacturing hubs.",
+    "description": "The Chennai Peripheral Ring Road (CPRR) is a major expressway project developed by the Chennai Metropolitan Development Authority (CMDA) and the Tamil Nadu Road Development Company (TNRDC). The corridor is designed to improve regional mobility by connecting key national highways, industrial corridors, ports, and logistics centers surrounding the Chennai Metropolitan Region.\n\nThe approximately 133-kilometre roadway includes access-controlled highway sections, grade-separated interchanges, bridges, flyovers, service roads, drainage systems, and modern traffic management infrastructure. The project provides strategic links between Ennore Port, Kattupalli Port, Chennai Port, and major industrial zones around Chennai.\n\nThe project incorporates advanced highway engineering standards, durable pavement systems, intelligent transportation technologies, and climate-resilient drainage infrastructure. Careful planning has been undertaken to improve traffic flow, reduce urban congestion, and support long-term transportation demand across the metropolitan region.\n\nWhen fully completed, the Chennai Peripheral Ring Road will enhance freight movement, improve regional connectivity, support industrial growth, reduce travel times, and strengthen Chennai's role as one of India's leading logistics and manufacturing hubs.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Ring Road / Highway"
+      },
+      {
+        "label": "Budget",
+        "value": "~$1.5–2 Billion"
+      },
+      {
+        "label": "Location",
+        "value": "Chennai Metropolitan Region, Tamil Nadu"
+      }
+    ]
+  },
+  {
+    "id": "work_india_006",
+    "title": "North East Road Network Connectivity Improvement Project – Phase I",
+    "subtitle": "Strategic highway widening, slope stabilization, and all-weather mountain road infrastructure across Mizoram and Meghalaya supported by ADB loan assistance.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Mizoram & Meghalaya",
+    "locationCategory": "India",
+    "completion": "2017–Completed",
+    "completionYear": "2017",
+    "summary": "Strategic highway widening, slope stabilization, and all-weather mountain road infrastructure across Mizoram and Meghalaya supported by ADB loan assistance.",
+    "description": "The North East Road Network Connectivity Improvement Project (NERNCIP) – Phase I is a major highway improvement initiative implemented by the Ministry of Road Transport and Highways with financial assistance from the Asian Development Bank (ADB). The project focuses on upgrading strategic road corridors across the northeastern states to improve accessibility, safety, and regional connectivity.\n\nPhase I includes the widening and rehabilitation of national and state highways, construction of bridges, slope stabilization works, improved drainage systems, and installation of modern road safety infrastructure across selected corridors in Mizoram and Meghalaya. The project aims to provide reliable all-weather transportation in mountainous terrain.\n\nEngineering activities address challenging geological conditions through retaining structures, landslide mitigation measures, improved pavement design, and climate-resilient construction techniques. Modern surveying, geotechnical investigations, and environmental management practices are incorporated to ensure sustainable infrastructure development.\n\nUpon completion, Phase I enhances transportation efficiency, improves access to remote communities, strengthens regional economic integration, and supports the long-term development of India's northeastern states.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Highway / Mountain Roads"
+      },
+      {
+        "label": "Budget",
+        "value": "~$500+ Million"
+      },
+      {
+        "label": "Location",
+        "value": "Mizoram & Meghalaya"
+      }
+    ]
+  },
+  {
+    "id": "work_india_007",
+    "title": "North East Road Network Connectivity Improvement Project – Phase II",
+    "subtitle": "Phase II multi-state highway upgrade across Northeast India under the Act East Policy, enhancing interstate border connectivity, bridge structures, and disaster-resilient mountain transport.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Northeast India",
+    "locationCategory": "India",
+    "completion": "2018–Ongoing",
+    "completionYear": "2018",
+    "summary": "Phase II multi-state highway upgrade across Northeast India under the Act East Policy, enhancing interstate border connectivity, bridge structures, and disaster-resilient mountain transport.",
+    "description": "The North East Road Network Connectivity Improvement Project (NERNCIP) – Phase II builds upon the success of the first phase by further upgrading strategic road infrastructure across multiple northeastern states. Supported by the Government of India and the Asian Development Bank, the project aims to improve regional mobility, strengthen economic connectivity, and enhance transportation resilience throughout Northeast India.\n\nThe project includes widening existing highways, construction of new bridges, junction improvements, pavement rehabilitation, slope protection, drainage upgrades, and modern road safety features. The improved network enhances connectivity between state capitals, border regions, industrial areas, and neighboring countries under India's Act East Policy.\n\nConstruction activities involve advanced geotechnical engineering, bridge construction, climate-resilient pavement technologies, and environmental protection measures adapted to the region's mountainous terrain and high rainfall conditions. Infrastructure is designed to improve long-term durability while minimizing environmental impacts.\n\nOnce completed, Phase II will improve interstate connectivity, reduce travel times, strengthen trade and tourism, enhance disaster resilience, and support sustainable economic development across the northeastern region of India.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Roads & Bridges"
+      },
+      {
+        "label": "Budget",
+        "value": "~$500+ Million"
+      },
+      {
+        "label": "Location",
+        "value": "Northeast India"
+      }
+    ]
+  },
+  {
+    "id": "work_india_008",
+    "title": "North East Road Network Connectivity Improvement Project – Phase III",
+    "subtitle": "Phase III multi-state strategic highway corridor expansion across Northeast India under the Act East Policy, supporting disaster-resilient mountain transport, border trade, and regional connectivity.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Northeast India",
+    "locationCategory": "India",
+    "completion": "2020–Ongoing",
+    "completionYear": "2020",
+    "summary": "Phase III multi-state strategic highway corridor expansion across Northeast India under the Act East Policy, supporting disaster-resilient mountain transport, border trade, and regional connectivity.",
+    "description": "The North East Road Network Connectivity Improvement Project (NERNCIP) – Phase III is a continuation of India's long-term initiative to strengthen transportation infrastructure across the northeastern states. Building on the achievements of the earlier phases, the program focuses on improving strategic road corridors that enhance regional connectivity, economic development, and access to remote communities. The project supports the Government of India's vision for sustainable infrastructure growth under the Act East Policy.\n\nPhase III includes highway widening, construction of new bridges, pavement rehabilitation, slope stabilization works, drainage improvements, and the installation of modern road safety infrastructure. The upgraded network is designed to provide reliable all-weather connectivity while improving access between state capitals, border areas, industrial zones, and neighboring countries.\n\nEngineering works address the challenging terrain of Northeast India through advanced geotechnical investigations, landslide mitigation measures, climate-resilient road construction techniques, and environmentally responsible infrastructure development. Careful planning ensures long-term durability while minimizing environmental impacts across ecologically sensitive regions.\n\nUpon completion, the project will improve interstate mobility, reduce travel times, strengthen logistics and trade, enhance disaster resilience, and contribute to the social and economic development of India's northeastern region.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Roads & Bridges"
+      },
+      {
+        "label": "Budget",
+        "value": "~$500+ Million"
+      },
+      {
+        "label": "Location",
+        "value": "Northeast India"
+      }
+    ]
+  },
+  {
+    "id": "work_india_009",
+    "title": "Bihar National Highway Improvement Project – Phase I",
+    "subtitle": "Major national highway modernization initiative across Bihar, upgrading key commercial corridors, bridge structures, and traffic capacity under MORTH.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Bihar",
+    "locationCategory": "India",
+    "completion": "2010–Completed",
+    "completionYear": "2010",
+    "summary": "Major national highway modernization initiative across Bihar, upgrading key commercial corridors, bridge structures, and traffic capacity under MORTH.",
+    "description": "The Bihar National Highway Improvement Project – Phase I is a major highway modernization initiative aimed at upgrading key national highway corridors across the state of Bihar. Developed under the Ministry of Road Transport and Highways, the project seeks to improve road capacity, safety, and connectivity while supporting economic growth and regional transportation efficiency.\n\nThe project includes widening existing highways, strengthening pavement structures, constructing bridges and flyovers, improving junctions, upgrading drainage systems, and implementing modern road safety measures. These improvements increase traffic capacity while providing safer and more reliable transportation for both passenger and freight movement.\n\nEngineering activities include ground improvement, bridge rehabilitation, utility relocation, advanced pavement construction, and traffic management during construction. The project incorporates modern highway design standards to improve long-term durability and operational performance under increasing traffic volumes.\n\nOnce completed, Phase I enhances connectivity between major cities, industrial areas, agricultural regions, and neighboring states, contributing to improved logistics, regional development, and safer transportation throughout Bihar.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "National Highway"
+      },
+      {
+        "label": "Budget",
+        "value": "~$300–500 Million"
+      },
+      {
+        "label": "Location",
+        "value": "Bihar"
+      }
+    ]
+  },
+  {
+    "id": "work_india_010",
+    "title": "Bihar National Highway Improvement Project – Phase II",
+    "subtitle": "Phase II expansion of highway corridors, bypasses, river bridges, and flood-resilient pavement infrastructure across Bihar to reduce travel times and boost regional trade.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Bihar",
+    "locationCategory": "India",
+    "completion": "2020–Ongoing",
+    "completionYear": "2020",
+    "summary": "Phase II expansion of highway corridors, bypasses, river bridges, and flood-resilient pavement infrastructure across Bihar to reduce travel times and boost regional trade.",
+    "description": "The Bihar National Highway Improvement Project – Phase II expands upon the infrastructure upgrades initiated during the first phase by modernizing additional highway corridors throughout Bihar. The project focuses on increasing transportation capacity, reducing congestion, and improving connectivity between urban centers, rural communities, and key economic corridors.\n\nMajor works include highway widening, construction of bypasses, new bridges, pavement rehabilitation, intersection improvements, drainage upgrades, and installation of intelligent traffic management and road safety systems. The upgraded network is designed to accommodate growing traffic demand while improving travel efficiency across the state.\n\nConstruction incorporates modern highway engineering techniques, high-performance pavement materials, improved drainage infrastructure, and resilient bridge designs capable of withstanding seasonal flooding common across Bihar's river systems. Environmental protection measures are integrated throughout project implementation.\n\nFollowing completion, Phase II will strengthen regional transportation infrastructure, reduce travel times, improve freight movement, support industrial and agricultural development, and enhance overall road safety across Bihar.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "National Highway"
+      },
+      {
+        "label": "Budget",
+        "value": "~$300–500 Million"
+      },
+      {
+        "label": "Location",
+        "value": "Bihar"
+      }
+    ]
+  },
+  {
+    "id": "work_india_011",
+    "title": "Delhi–Mumbai Industrial Corridor",
+    "subtitle": "A 1,500 km mega-industrial corridor spanning 7 states along the WDFC, establishing smart cities, multimodal logistics parks, and world-class manufacturing clusters with Japanese support.",
+    "category": "Offices",
+    "designType": "Design & Build",
+    "location": "Delhi to Maharashtra across multiple states",
+    "locationCategory": "India",
+    "completion": "2008–Ongoing Master Plan",
+    "completionYear": "2008",
+    "summary": "A 1,500 km mega-industrial corridor spanning 7 states along the WDFC, establishing smart cities, multimodal logistics parks, and world-class manufacturing clusters with Japanese support.",
+    "description": "The Delhi–Mumbai Industrial Corridor (DMIC) is one of India's largest infrastructure and industrial development initiatives, spanning approximately 1,500 kilometres between Delhi and Mumbai. Developed by the Government of India with support from Japan, the corridor is designed to establish world-class industrial infrastructure, smart cities, logistics hubs, and manufacturing clusters along the Western Dedicated Freight Corridor.\n\nThe project includes integrated industrial townships, multimodal logistics parks, freight terminals, expressways, power infrastructure, water supply systems, urban utilities, and advanced digital infrastructure. Multiple investment regions and industrial nodes are being developed across Delhi, Uttar Pradesh, Haryana, Rajasthan, Madhya Pradesh, Gujarat, and Maharashtra.\n\nThe corridor incorporates modern urban planning principles emphasizing sustainable development, smart infrastructure, renewable energy integration, intelligent transportation systems, and efficient utility management. Large-scale civil engineering works support long-term industrial growth while improving connectivity between manufacturing centers, ports, and domestic markets.\n\nUpon completion, the Delhi–Mumbai Industrial Corridor is expected to transform India's manufacturing sector, attract domestic and international investment, generate employment opportunities, strengthen export competitiveness, and support balanced regional economic development.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Industrial Corridor"
+      },
+      {
+        "label": "Budget",
+        "value": "~$90–100 Billion Overall Vision"
+      },
+      {
+        "label": "Location",
+        "value": "Delhi to Maharashtra across multiple states"
+      }
+    ]
+  },
+  {
+    "id": "work_india_012",
+    "title": "Dholera Special Investment Region / Industrial City",
+    "subtitle": "India's flagship Greenfield Smart City in Gujarat under DMIC, featuring integrated underground utility ducts, smart city ICT platforms, and eco-friendly manufacturing zones.",
+    "category": "Offices",
+    "designType": "Design & Build",
+    "location": "Dholera, Gujarat",
+    "locationCategory": "India",
+    "completion": "2011–Ongoing Greenfield Development",
+    "completionYear": "2011",
+    "summary": "India's flagship Greenfield Smart City in Gujarat under DMIC, featuring integrated underground utility ducts, smart city ICT platforms, and eco-friendly manufacturing zones.",
+    "description": "Dholera Special Investment Region (DSIR), also known as Dholera Industrial City, is India's first Greenfield Smart City being developed under the Delhi–Mumbai Industrial Corridor program. Located in Gujarat, the project aims to establish a globally competitive industrial and urban center equipped with world-class infrastructure, advanced manufacturing facilities, and sustainable urban planning.\n\nThe development includes industrial zones, commercial districts, residential neighborhoods, logistics parks, utilities, smart transportation systems, water management infrastructure, renewable energy integration, and advanced information and communication technology networks. The city is planned using integrated smart-city principles to support future industrial and economic growth.\n\nEngineering works involve large-scale land development, road construction, underground utility corridors, flood management systems, water treatment facilities, power distribution infrastructure, and digital city management platforms. Sustainable infrastructure and climate-resilient design principles are incorporated throughout the master plan.\n\nWhen fully developed, Dholera Industrial City is expected to become one of India's leading manufacturing and technology hubs, attracting global investment, promoting innovation, creating employment opportunities, and supporting the country's long-term industrialization objectives.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Industrial Smart City"
+      },
+      {
+        "label": "Budget",
+        "value": "Multi-Billion-Dollar Development"
+      },
+      {
+        "label": "Location",
+        "value": "Dholera, Gujarat"
+      }
+    ]
+  },
+  {
+    "id": "work_india_013",
+    "title": "Chennai–Bengaluru Industrial Corridor",
+    "subtitle": "A high-impact economic corridor connecting Tamil Nadu, Andhra Pradesh, and Karnataka, fostering advanced electronics, automotive, and aerospace manufacturing with ADB partnership.",
+    "category": "Offices",
+    "designType": "Design & Build",
+    "location": "Tamil Nadu, Andhra Pradesh & Karnataka",
+    "locationCategory": "India",
+    "completion": "2013–Ongoing Master Plan",
+    "completionYear": "2013",
+    "summary": "A high-impact economic corridor connecting Tamil Nadu, Andhra Pradesh, and Karnataka, fostering advanced electronics, automotive, and aerospace manufacturing with ADB partnership.",
+    "description": "The Chennai–Bengaluru Industrial Corridor (CBIC) is a major economic development initiative jointly promoted by the Government of India and the Asian Development Bank to strengthen industrial growth across Tamil Nadu, Andhra Pradesh, and Karnataka. The corridor connects two of southern India's most important manufacturing and technology regions while enhancing regional competitiveness and infrastructure.\n\nThe project includes industrial parks, logistics hubs, transportation infrastructure, urban utilities, power systems, water supply networks, and smart industrial townships designed to support manufacturing, electronics, automotive, aerospace, and high-technology industries. Improved road and rail connectivity strengthens supply chains across the corridor.\n\nInfrastructure development incorporates sustainable planning principles, modern industrial infrastructure, multimodal logistics systems, environmental management measures, and resilient utility networks capable of supporting long-term economic expansion. Strategic investments improve connectivity between ports, airports, industrial clusters, and urban centers.\n\nUpon completion, the Chennai–Bengaluru Industrial Corridor will stimulate industrial investment, strengthen regional manufacturing capabilities, improve logistics efficiency, generate employment opportunities, and contribute significantly to India's economic growth and global industrial competitiveness.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Industrial Corridor"
+      },
+      {
+        "label": "Budget",
+        "value": "Multi-Billion-Dollar Program"
+      },
+      {
+        "label": "Location",
+        "value": "Tamil Nadu, Andhra Pradesh & Karnataka"
+      }
+    ]
+  },
+  {
+    "id": "work_india_014",
+    "title": "Tamil Nadu Investment Promotion / Industrial Infrastructure Program",
+    "subtitle": "State-wide industrial infrastructure program developing world-class industrial parks, power networks, water treatment, and logistics connectivity to boost manufacturing export competitiveness.",
+    "category": "Offices",
+    "designType": "Design & Build",
+    "location": "Tamil Nadu",
+    "locationCategory": "India",
+    "completion": "2013–Ongoing Program",
+    "completionYear": "2013",
+    "summary": "State-wide industrial infrastructure program developing world-class industrial parks, power networks, water treatment, and logistics connectivity to boost manufacturing export competitiveness.",
+    "description": "The Tamil Nadu Investment Promotion and Industrial Infrastructure Program is a state-led initiative designed to strengthen industrial growth by developing world-class infrastructure across key manufacturing and investment regions. Implemented by the Government of Tamil Nadu with support from international development partners, the program aims to enhance the state's competitiveness as one of India's leading industrial and export destinations.\n\nThe program focuses on the development of industrial parks, internal road networks, water supply systems, power distribution infrastructure, drainage facilities, logistics connectivity, and common industrial utilities. These infrastructure improvements support sectors including automobiles, electronics, renewable energy, textiles, aerospace, and advanced manufacturing.\n\nEngineering works include construction of industrial access roads, utility corridors, substations, wastewater management systems, and sustainable urban infrastructure designed to accommodate long-term industrial expansion. Modern planning principles emphasize environmental sustainability, resource efficiency, and resilient infrastructure capable of supporting future investment.\n\nThe program continues to attract domestic and international manufacturers by providing reliable infrastructure, improving ease of doing business, creating employment opportunities, and strengthening Tamil Nadu's position as one of India's premier industrial states.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Industrial Infrastructure"
+      },
+      {
+        "label": "Budget",
+        "value": "~$1+ Billion Across Phases"
+      },
+      {
+        "label": "Location",
+        "value": "Tamil Nadu"
+      }
+    ]
+  },
+  {
+    "id": "work_india_015",
+    "title": "Purulia Pumped Storage Project",
+    "subtitle": "A 900 MW landmark hydroelectric pumped-storage power station in West Bengal featuring twin reservoirs, underground caverns, and reversible pump-turbine units to stabilize peak grid loads.",
+    "category": "Energy",
+    "designType": "Design & Build",
+    "location": "Purulia, West Bengal",
+    "locationCategory": "India",
+    "completion": "2008–Completed",
+    "completionYear": "2008",
+    "summary": "A 900 MW landmark hydroelectric pumped-storage power station in West Bengal featuring twin reservoirs, underground caverns, and reversible pump-turbine units to stabilize peak grid loads.",
+    "description": "The Purulia Pumped Storage Project is a major hydroelectric pumped-storage power station located in the Purulia district of West Bengal. Developed by the West Bengal State Electricity Distribution Company and associated state agencies, the project provides valuable peak-load power generation while supporting grid stability through large-scale energy storage.\n\nThe facility consists of upper and lower reservoirs connected through underground waterways, pressure shafts, tunnels, powerhouse caverns, and reversible pump-turbine generating units. During periods of low electricity demand, water is pumped to the upper reservoir and later released to generate electricity during peak demand periods.\n\nThe project required extensive civil engineering works, including dam construction, underground excavation, tunnel boring, powerhouse development, and installation of high-capacity electro-mechanical equipment. Advanced engineering techniques were employed to ensure reliable operation while addressing the region's geological and topographical conditions.\n\nThe Purulia Pumped Storage Project plays an important role in balancing electricity demand, supporting renewable energy integration, improving grid reliability, and enhancing the overall stability of eastern India's power network.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Hydropower / Pumped Storage"
+      },
+      {
+        "label": "Budget",
+        "value": "~$700–900 Million"
+      },
+      {
+        "label": "Location",
+        "value": "Purulia, West Bengal"
+      }
+    ]
+  },
+  {
+    "id": "work_india_016",
+    "title": "Turga Pumped Storage Project",
+    "subtitle": "A 1,000 MW hydro energy storage development in Purulia, West Bengal, engineered with upper and lower dams, subterranean powerhouse caverns, and reversible pump-turbines for renewable grid balancing.",
+    "category": "Energy",
+    "designType": "Design & Build",
+    "location": "Purulia, West Bengal",
+    "locationCategory": "India",
+    "completion": "2018–Ongoing Construction",
+    "completionYear": "2018",
+    "summary": "A 1,000 MW hydro energy storage development in Purulia, West Bengal, engineered with upper and lower dams, subterranean powerhouse caverns, and reversible pump-turbines for renewable grid balancing.",
+    "description": "The Turga Pumped Storage Project is an under-construction hydroelectric energy storage project located in Purulia district, West Bengal. Developed by the West Bengal State Electricity Distribution Company Limited (WBSEDCL), the project is designed to enhance grid flexibility and support the growing integration of renewable energy into India's electricity network.\n\nThe project includes upper and lower reservoirs, underground waterways, pressure tunnels, a subterranean powerhouse, reversible pump-turbine units, switchyards, and transmission infrastructure. These facilities enable electricity generated from surplus power to pump water uphill before releasing it through turbines during periods of high electricity demand.\n\nConstruction involves large-scale rock excavation, dam construction, tunnel engineering, underground powerhouse development, and installation of advanced hydro-mechanical and electrical systems. Modern engineering and environmental management practices are being implemented to ensure long-term operational efficiency and sustainability.\n\nUpon completion, the Turga Pumped Storage Project will strengthen grid stability, provide reliable peak-load electricity, improve renewable energy utilization, and contribute significantly to India's transition toward a cleaner and more flexible power system.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Pumped Storage / Dam"
+      },
+      {
+        "label": "Budget",
+        "value": "~$700–900 Million"
+      },
+      {
+        "label": "Location",
+        "value": "Purulia, West Bengal"
+      }
+    ]
+  },
+  {
+    "id": "work_india_017",
+    "title": "Ghatghar Pumped Storage Project",
+    "subtitle": "A 250 MW peak-load pumped-storage hydro scheme in the Western Ghats of Maharashtra, utilizing Roller Compacted Concrete (RCC) dams, underground caverns, and reversible Francis turbines.",
+    "category": "Energy",
+    "designType": "Design & Build",
+    "location": "Maharashtra",
+    "locationCategory": "India",
+    "completion": "2000–Completed",
+    "completionYear": "2000",
+    "summary": "A 250 MW peak-load pumped-storage hydro scheme in the Western Ghats of Maharashtra, utilizing Roller Compacted Concrete (RCC) dams, underground caverns, and reversible Francis turbines.",
+    "description": "The Ghatghar Pumped Storage Project is a hydroelectric pumped-storage power station located in the Western Ghats of Maharashtra. Developed by the Maharashtra State Power Generation Company Limited (MAHAGENCO), the project utilizes the elevation difference between two reservoirs to generate electricity during peak demand while storing energy during off-peak periods.\n\nThe development includes upper and lower dams, underground waterways, pressure shafts, an underground powerhouse, reversible Francis pump-turbine units, transformers, and associated transmission infrastructure. The pumped-storage system allows efficient utilization of available water resources while improving electricity supply reliability.\n\nEngineering works involved construction within challenging mountainous terrain, requiring extensive tunnel excavation, underground cavern development, dam engineering, slope stabilization, and installation of high-capacity electro-mechanical equipment. Modern safety systems and environmental protection measures were incorporated throughout the project.\n\nThe Ghatghar Pumped Storage Project enhances Maharashtra's power system by providing peak-load generation, improving grid stability, supporting renewable energy integration, and increasing the operational flexibility of the state's electricity network.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Hydropower / Civil Works"
+      },
+      {
+        "label": "Budget",
+        "value": "~$400–600 Million"
+      },
+      {
+        "label": "Location",
+        "value": "Maharashtra"
+      }
+    ]
+  },
+  {
+    "id": "work_india_018",
+    "title": "Bakreswar Thermal Power Station Expansion",
+    "subtitle": "1,050 MW thermal power expansion at Bakreswar in Birbhum, West Bengal under WBPDCL, featuring high-efficiency steam turbines, electrostatic precipitators, and modern coal/ash handling systems.",
+    "category": "Energy",
+    "designType": "Design & Build",
+    "location": "Birbhum, West Bengal",
+    "locationCategory": "India",
+    "completion": "2010–Completed Expansion",
+    "completionYear": "2010",
+    "summary": "1,050 MW thermal power expansion at Bakreswar in Birbhum, West Bengal under WBPDCL, featuring high-efficiency steam turbines, electrostatic precipitators, and modern coal/ash handling systems.",
+    "description": "The Bakreswar Thermal Power Station Expansion is a major power generation development undertaken at the Bakreswar Thermal Power Plant in Birbhum district, West Bengal. Operated by the West Bengal Power Development Corporation Limited (WBPDCL), the expansion is designed to increase electricity generation capacity while incorporating modern thermal power technologies that improve operational efficiency and environmental performance.\n\nThe project includes the construction of new generating units, boiler systems, steam turbines, generators, cooling facilities, ash handling systems, coal handling infrastructure, water treatment plants, and upgraded electrical transmission facilities. Modern emission control systems have also been incorporated to comply with India's environmental regulations.\n\nEngineering activities involve large-scale civil works, heavy industrial equipment installation, structural steel construction, high-pressure piping systems, electrical substations, and advanced plant automation technologies. The expansion integrates modern operational controls that improve plant reliability, fuel efficiency, and long-term performance.\n\nUpon completion, the expanded facility will strengthen electricity supply across eastern India, improve grid reliability, support industrial growth, and contribute to meeting the increasing energy demand of West Bengal.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Power Plant Construction"
+      },
+      {
+        "label": "Budget",
+        "value": "~$1+ Billion Across Development"
+      },
+      {
+        "label": "Location",
+        "value": "Birbhum, West Bengal"
+      }
+    ]
+  },
+  {
+    "id": "work_india_019",
+    "title": "Haldia Port Modernization Project",
+    "subtitle": "Maritime infrastructure upgrade at Haldia Dock Complex (SMP Kolkata), modernizing cargo berths, mechanizing bulk handling systems, and dredging deep shipping channels.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Haldia, West Bengal",
+    "locationCategory": "India",
+    "completion": "Before 2022 / Modernization Completed",
+    "completionYear": "Before 2022",
+    "summary": "Maritime infrastructure upgrade at Haldia Dock Complex (SMP Kolkata), modernizing cargo berths, mechanizing bulk handling systems, and dredging deep shipping channels.",
+    "description": "The Haldia Port Modernization Project is a comprehensive infrastructure upgrade undertaken at Haldia Dock Complex, part of Syama Prasad Mookerjee Port, Kolkata. The modernization program is designed to improve cargo handling efficiency, increase operational capacity, and strengthen Haldia's role as one of eastern India's most important maritime gateways serving domestic and international trade.\n\nThe project includes modernization of cargo berths, strengthening of quay structures, installation of advanced cargo handling equipment, expansion of storage facilities, improvement of internal road and rail connectivity, navigation infrastructure upgrades, and modernization of utility systems supporting port operations.\n\nEngineering activities involve marine civil works, berth rehabilitation, structural strengthening, dredging operations, installation of modern cranes, automation of cargo handling systems, and enhancement of port logistics infrastructure. Environmental management measures are incorporated to ensure sustainable port development while maintaining operational efficiency.\n\nFollowing completion, the modernization project will improve vessel turnaround time, increase cargo throughput, strengthen multimodal logistics connectivity, and enhance the competitiveness of Haldia Port within India's growing maritime trade network.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Port / Maritime"
+      },
+      {
+        "label": "Budget",
+        "value": "~$200–400 Million Equivalent"
+      },
+      {
+        "label": "Location",
+        "value": "Haldia, West Bengal"
+      }
+    ]
+  },
+  {
+    "id": "work_india_020",
+    "title": "Hooghly Dock and Port Engineers Modernization Project",
+    "subtitle": "Shipbuilding and drydock refurbishment program at HDPEL in West Bengal, upgrading ship repair facilities, heavy fabrication workshops, and marine engineering support infrastructure.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "West Bengal",
+    "locationCategory": "India",
+    "completion": "Before 2022 / Modernization Completed",
+    "completionYear": "Before 2022",
+    "summary": "Shipbuilding and drydock refurbishment program at HDPEL in West Bengal, upgrading ship repair facilities, heavy fabrication workshops, and marine engineering support infrastructure.",
+    "description": "The Hooghly Dock and Port Engineers Modernization Project is an infrastructure improvement initiative undertaken to upgrade ship repair, engineering, and marine support facilities operated by Hooghly Dock & Port Engineers Limited (HDPEL) in West Bengal. The project supports modernization of one of India's established shipbuilding and ship repair organizations, strengthening its capability to serve both commercial and government maritime sectors.\n\nThe modernization program includes refurbishment of dry docks, workshops, fabrication facilities, mechanical equipment, electrical infrastructure, lifting systems, utility networks, and marine engineering support facilities. Upgraded production infrastructure improves operational efficiency while supporting larger and more technologically advanced vessels.\n\nEngineering works involve structural rehabilitation, modernization of heavy industrial equipment, installation of advanced fabrication technologies, utility upgrades, and improvements to dockyard infrastructure. The project incorporates modern engineering practices to enhance workplace safety, production quality, and long-term operational reliability.\n\nUpon completion, the modernization strengthens shipbuilding and repair capabilities, improves engineering efficiency, enhances support for India's maritime industry, and contributes to the continued development of West Bengal as an important center for marine engineering and port-related industrial activities.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Port / Shipyard Infrastructure"
+      },
+      {
+        "label": "Budget",
+        "value": "~$100–300 Million Equivalent"
+      },
+      {
+        "label": "Location",
+        "value": "West Bengal"
+      }
+    ]
+  },
+  {
+    "id": "work_india_021",
+    "title": "Burnpur Steel Works Modernization Project",
+    "subtitle": "A major integrated steel plant modernization and expansion project at SAIL IISCO Burnpur, incorporating advanced blast furnace technology, BOF converters, and automated rolling mills.",
+    "category": "Offices",
+    "designType": "Design & Build",
+    "location": "Burnpur, West Bengal",
+    "locationCategory": "India",
+    "completion": "2000–Completed Modernization",
+    "completionYear": "2000",
+    "summary": "A major integrated steel plant modernization and expansion project at SAIL IISCO Burnpur, incorporating advanced blast furnace technology, BOF converters, and automated rolling mills.",
+    "description": "The Burnpur Steel Works Modernization Project is a major capacity expansion and technology upgrade undertaken at the IISCO Steel Plant in Burnpur, West Bengal, operated by the Steel Authority of India Limited (SAIL). The modernization program was implemented to improve production efficiency, product quality, energy performance, and environmental compliance while transforming the facility into a modern integrated steel plant.\n\nThe project included construction of a new blast furnace, basic oxygen furnace, coke oven batteries, sinter plant, continuous casting facilities, rolling mills, raw material handling systems, and advanced pollution control equipment. Supporting infrastructure such as power supply, water treatment, and plant utilities was also upgraded.\n\nEngineering works involved installation of large-scale heavy industrial equipment, structural steel construction, utility modernization, automation systems, and advanced process control technologies. Modern environmental management systems were incorporated to reduce emissions, improve energy efficiency, and enhance overall operational performance.\n\nFollowing modernization, the Burnpur Steel Works significantly increased its crude steel production capacity, improved manufacturing efficiency, expanded its product portfolio, and strengthened the competitiveness of India's domestic steel industry.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Construction / Industrial"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Steel Plant Infrastructure"
+      },
+      {
+        "label": "Budget",
+        "value": "Multi-Hundred-Million-Dollar Program"
+      },
+      {
+        "label": "Location",
+        "value": "Burnpur, West Bengal"
+      }
+    ]
+  },
+  {
+    "id": "work_india_022",
+    "title": "Mumbai Sewage Disposal Project",
+    "subtitle": "Major urban sanitation and coastal environment program by MCGM & World Bank/JICA, constructing 7 WWTFs, deep undersea tunnel outfalls, and pumping stations.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Mumbai, Maharashtra",
+    "locationCategory": "India",
+    "completion": "Before 2022 / Phased Modernization",
+    "completionYear": "Before 2022",
+    "summary": "Major urban sanitation and coastal environment program by MCGM & World Bank/JICA, constructing 7 WWTFs, deep undersea tunnel outfalls, and pumping stations.",
+    "description": "The Mumbai Sewage Disposal Project (MSDP) is one of India's largest urban wastewater infrastructure programs, implemented by the Municipal Corporation of Greater Mumbai (MCGM) to improve sewage collection, treatment, and marine disposal across the city. The project aims to enhance public health, reduce environmental pollution, and protect Mumbai's coastal waters by expanding and modernizing the city's sewerage system.\n\nThe project includes the construction and rehabilitation of sewage treatment plants, pumping stations, underground trunk sewers, interceptor pipelines, marine outfalls, and associated wastewater infrastructure. Upgrades to existing facilities increase treatment capacity while extending sewerage coverage to rapidly growing urban areas throughout the Mumbai Metropolitan Region.\n\nEngineering works involve deep underground tunneling, large-diameter sewer installation, coastal marine construction, advanced wastewater treatment technologies, and automated monitoring systems. Modern environmental standards and energy-efficient treatment processes are incorporated to improve operational performance while minimizing ecological impacts.\n\nUpon completion of its successive phases, the Mumbai Sewage Disposal Project will significantly improve wastewater management, reduce untreated sewage discharge into the Arabian Sea, enhance urban sanitation, and contribute to the long-term environmental sustainability of Mumbai.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Sewerage / Wastewater"
+      },
+      {
+        "label": "Budget",
+        "value": "~$500 Million+ Across Phases"
+      },
+      {
+        "label": "Location",
+        "value": "Mumbai, Maharashtra"
+      }
+    ]
+  },
+  {
+    "id": "work_india_023",
+    "title": "Yamuna Action Plan Project",
+    "subtitle": "A comprehensive multi-state river conservation initiative across Delhi, UP, and Haryana supported by JICA ODA, building STPs, interception sewers, and modern urban sanitation.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Delhi, Uttar Pradesh & Haryana",
+    "locationCategory": "India",
+    "completion": "2025–Ongoing Multi-State Program",
+    "completionYear": "2025",
+    "summary": "A comprehensive multi-state river conservation initiative across Delhi, UP, and Haryana supported by JICA ODA, building STPs, interception sewers, and modern urban sanitation.",
+    "description": "The Yamuna Action Plan (YAP) is a long-term river conservation initiative launched by the Government of India with financial and technical assistance from the Japan International Cooperation Agency (JICA). The program aims to reduce pollution in the Yamuna River by improving wastewater management, expanding sewerage infrastructure, and enhancing environmental protection across major cities in Delhi, Uttar Pradesh, and Haryana.\n\nThe project includes the construction and rehabilitation of sewage treatment plants, sewer networks, pumping stations, interception and diversion systems, drainage improvements, and riverfront environmental infrastructure. Public awareness initiatives and institutional capacity-building programs also support long-term river restoration efforts.\n\nEngineering works involve upgrading aging wastewater infrastructure, expanding treatment capacity, installing modern pumping systems, rehabilitating underground sewer networks, and implementing advanced treatment technologies to improve water quality before discharge into the river.\n\nThe Yamuna Action Plan continues to play an important role in improving urban sanitation, reducing river pollution, strengthening wastewater management infrastructure, and supporting the long-term ecological restoration of one of India's most significant rivers.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Sewerage / Water Treatment"
+      },
+      {
+        "label": "Budget",
+        "value": "~$1 Billion+ Across Phases"
+      },
+      {
+        "label": "Location",
+        "value": "Delhi, Uttar Pradesh & Haryana"
+      }
+    ]
+  },
+  {
+    "id": "work_india_024",
+    "title": "Yamuna Action Plan Phase III – Delhi",
+    "subtitle": "Targeted Delhi river restoration phase under DJB & JICA, constructing advanced STPs (like Okhla 564 MLD), interceptor sewers, and automated sludge energy recovery systems.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Delhi",
+    "locationCategory": "India",
+    "completion": "2011–Completed / Phased Modernization",
+    "completionYear": "2011",
+    "summary": "Targeted Delhi river restoration phase under DJB & JICA, constructing advanced STPs (like Okhla 564 MLD), interceptor sewers, and automated sludge energy recovery systems.",
+    "description": "Yamuna Action Plan Phase III is the latest stage of the Yamuna River conservation program focused specifically on Delhi, where a significant portion of the river's pollution originates. Supported by the Government of India, the Government of the National Capital Territory of Delhi, and JICA, the project seeks to substantially improve wastewater collection and treatment within the capital city.\n\nMajor works include construction of new sewage treatment plants, rehabilitation of existing treatment facilities, expansion of underground sewer networks, installation of pumping stations, interceptor sewer systems, and modernization of wastewater management infrastructure serving densely populated urban areas.\n\nThe project incorporates advanced wastewater treatment technologies, energy-efficient equipment, automated monitoring systems, and improved sludge management processes. Construction activities are carefully planned to minimize disruption while upgrading critical underground infrastructure across the city.\n\nUpon completion, Phase III will significantly improve wastewater treatment capacity, reduce untreated sewage entering the Yamuna River, enhance public health, and contribute to the long-term environmental sustainability of Delhi's urban water infrastructure.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Wastewater / Sewerage"
+      },
+      {
+        "label": "Budget",
+        "value": "~$500–700 Million"
+      },
+      {
+        "label": "Location",
+        "value": "Delhi"
+      }
+    ]
+  },
+  {
+    "id": "work_india_025",
+    "title": "Bengaluru Water Supply and Sewerage Project",
+    "subtitle": "City-wide water transmission and sewerage expansion across Bengaluru by BWSSB & JICA, constructing 110 village water supply networks, STPs, and smart SCADA monitoring.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Bengaluru, Karnataka",
+    "locationCategory": "India",
+    "completion": "2025–Ongoing Stage V Expansion",
+    "completionYear": "2025",
+    "summary": "City-wide water transmission and sewerage expansion across Bengaluru by BWSSB & JICA, constructing 110 village water supply networks, STPs, and smart SCADA monitoring.",
+    "description": "The Bengaluru Water Supply and Sewerage Project is a comprehensive urban infrastructure program undertaken by the Bangalore Water Supply and Sewerage Board (BWSSB) to improve drinking water supply and wastewater management across the rapidly expanding Bengaluru Metropolitan Area. The project supports the city's growing population through modernization and expansion of essential water infrastructure.\n\nThe development includes new water transmission pipelines, distribution networks, pumping stations, reservoirs, sewage treatment plants, underground sewer networks, and associated utility infrastructure. Several phases of the project also extend water supply to newly urbanized areas surrounding Bengaluru.\n\nEngineering works involve large-diameter pipeline installation, advanced pumping systems, underground utility construction, treatment plant expansion, and implementation of modern monitoring and control technologies. Sustainable water management practices are integrated to improve operational efficiency while reducing system losses.\n\nUpon completion, the project enhances access to safe drinking water, improves sanitation services, reduces environmental pollution, strengthens urban resilience, and supports the long-term sustainable development of Bengaluru.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Water Supply / Sewerage"
+      },
+      {
+        "label": "Budget",
+        "value": "Multi-Billion-Dollar Across Phases"
+      },
+      {
+        "label": "Location",
+        "value": "Bengaluru, Karnataka"
+      }
+    ]
+  },
+  {
+    "id": "work_india_026",
+    "title": "Rajasthan Water Sector / Rural Water Supply Infrastructure Projects",
+    "subtitle": "State-wide rural water security program in Rajasthan supported by JICA & PHED, constructing long-distance surface water pipelines, WTPs, and elevated storage reservoirs across arid districts.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Rajasthan",
+    "locationCategory": "India",
+    "completion": "2000–Ongoing Rural Program",
+    "completionYear": "2000",
+    "summary": "State-wide rural water security program in Rajasthan supported by JICA & PHED, constructing long-distance surface water pipelines, WTPs, and elevated storage reservoirs across arid districts.",
+    "description": "The Rajasthan Water Sector and Rural Water Supply Infrastructure Projects comprise a series of initiatives undertaken by the Government of Rajasthan with support from national and international development agencies to improve access to safe and reliable drinking water across rural communities. The projects address chronic water scarcity through the expansion and modernization of regional water supply systems.\n\nThe infrastructure includes intake structures, water treatment plants, transmission pipelines, elevated service reservoirs, pumping stations, village distribution networks, groundwater recharge facilities, and bulk water supply systems. Many schemes also utilize surface water from major rivers and reservoirs to provide sustainable long-term water sources.\n\nEngineering activities involve extensive pipeline construction across arid terrain, installation of high-capacity pumping equipment, advanced water treatment technologies, remote monitoring systems, and climate-resilient infrastructure capable of operating under Rajasthan's challenging environmental conditions.\n\nThese projects significantly improve rural water security, enhance public health, reduce dependence on groundwater extraction, support agricultural and economic development, and contribute to sustainable water resource management across the state of Rajasthan.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Water Supply"
+      },
+      {
+        "label": "Budget",
+        "value": "~$500 Million+ Across Programs"
+      },
+      {
+        "label": "Location",
+        "value": "Rajasthan"
+      }
+    ]
+  },
+  {
+    "id": "work_india_027",
+    "title": "Mumbai Metro Line 3 – Aqua Line",
+    "subtitle": "Mumbai's first fully underground metro corridor (33.5 km) with 27 stations connecting Aarey-JVLR to Cuffe Parade, featuring twin-bore TBM tunnels and advanced urban rail systems.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Mumbai, Maharashtra",
+    "locationCategory": "India",
+    "completion": "2025–Phase I Operational / Phased Completion",
+    "completionYear": "2025",
+    "summary": "Mumbai's first fully underground metro corridor (33.5 km) with 27 stations connecting Aarey-JVLR to Cuffe Parade, featuring twin-bore TBM tunnels and advanced urban rail systems.",
+    "description": "Mumbai Metro Line 3, officially known as the Aqua Line, is Mumbai's first fully underground metro corridor. Developed by the Mumbai Metro Rail Corporation Limited (MMRCL), the line extends approximately 33.5 kilometres between Aarey-JVLR and Cuffe Parade, significantly improving north-south connectivity through some of the city's busiest commercial and residential districts.\n\nThe project includes 27 underground stations, twin-bore tunnels, underground depots, ventilation shafts, modern signaling systems, platform screen doors, and advanced passenger information systems. The corridor provides seamless interchange with suburban railways, existing metro lines, the Mumbai Monorail, and major commercial districts.\n\nEngineering works involve extensive tunnel boring beneath densely populated urban areas, deep underground station construction, utility relocation, and advanced groundwater management while minimizing impacts on surrounding infrastructure. Modern seismic engineering, automated train control systems, and energy-efficient station design ensure safe and reliable metro operations.\n\nUpon full completion, the Aqua Line will substantially reduce travel times, alleviate road congestion, improve public transportation capacity, and support sustainable urban mobility across the Mumbai Metropolitan Region.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Underground Metro / Tunneling"
+      },
+      {
+        "label": "Budget",
+        "value": "~$4.5 Billion"
+      },
+      {
+        "label": "Location",
+        "value": "Mumbai, Maharashtra"
+      }
+    ]
+  },
+  {
+    "id": "work_india_028",
+    "title": "Delhi Metro Rail Project",
+    "subtitle": "India's largest urban rapid transit network serving Delhi NCR across multiple phases, featuring elevated and underground corridors, automated train operation, and green transit standards.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Delhi NCR",
+    "locationCategory": "India",
+    "completion": "2002–Ongoing Multi-Phase Expansion",
+    "completionYear": "2025",
+    "summary": "India's largest urban rapid transit network serving Delhi NCR across multiple phases, featuring elevated and underground corridors, automated train operation, and green transit standards.",
+    "description": "The Delhi Metro Rail Project is India's largest and most successful urban rapid transit system, developed and operated by the Delhi Metro Rail Corporation (DMRC). Since commencing operations in 2002, the network has expanded through multiple construction phases to serve Delhi and the National Capital Region, becoming one of the world's largest metro systems.\n\nThe project comprises elevated, underground, and at-grade metro corridors featuring modern stations, maintenance depots, advanced signaling systems, automated fare collection, platform screen doors on selected corridors, and energy-efficient rolling stock. The network provides seamless connectivity across Delhi, Noida, Gurugram, Ghaziabad, Faridabad, and surrounding urban centers.\n\nConstruction has involved complex tunneling beneath densely developed urban areas, elevated viaduct construction, river crossings, station development, and continuous network expansion while maintaining safe and uninterrupted metro operations. The project incorporates advanced engineering standards, earthquake-resistant structures, regenerative braking technology, and sustainable station design.\n\nToday, the Delhi Metro serves millions of passengers each day, significantly reducing traffic congestion, lowering urban emissions, improving regional connectivity, and setting the benchmark for modern urban rail transit development across India.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Metro Rail"
+      },
+      {
+        "label": "Budget",
+        "value": "$10+ Billion Across Major Phases"
+      },
+      {
+        "label": "Location",
+        "value": "Delhi NCR"
+      }
+    ]
+  },
+  {
+    "id": "work_india_029",
+    "title": "Chennai Metro Rail Project",
+    "subtitle": "Chennai's rapid transit network spanning elevated and underground lines across 2 phases, incorporating Japanese ODA financing, automated fare collection, and CBTC signaling.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Chennai, Tamil Nadu",
+    "locationCategory": "India",
+    "completion": "2009–Ongoing Phase II Expansion",
+    "completionYear": "2009",
+    "summary": "Chennai's rapid transit network spanning elevated and underground lines across 2 phases, incorporating Japanese ODA financing, automated fare collection, and CBTC signaling.",
+    "description": "The Chennai Metro Rail Project is a modern rapid transit system developed by Chennai Metro Rail Limited (CMRL) to improve urban mobility across Chennai and its expanding metropolitan region. Since the commencement of operations in 2015, the network has continued to expand through multiple phases, providing fast, reliable, and environmentally sustainable public transportation for millions of residents.\n\nThe project comprises elevated and underground metro corridors, modern stations, maintenance depots, operational control centers, advanced signaling systems, automatic fare collection, and energy-efficient rolling stock. Ongoing Phase II expansion will significantly increase the network by connecting emerging residential, commercial, and industrial corridors across the city.\n\nConstruction involves complex underground tunneling beneath densely populated urban areas, elevated viaduct construction, deep station excavation, utility relocation, and advanced traffic management to minimize disruption during execution. Modern engineering standards, seismic-resistant structures, and sustainable construction practices are integrated throughout the project.\n\nUpon completion of future phases, the Chennai Metro Rail Project will substantially improve urban connectivity, reduce road congestion, encourage public transport usage, lower carbon emissions, and support the long-term sustainable development of the Chennai Metropolitan Region.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Metro / Tunneling"
+      },
+      {
+        "label": "Budget",
+        "value": "$8+ Billion Including Major Phases"
+      },
+      {
+        "label": "Location",
+        "value": "Chennai, Tamil Nadu"
+      }
+    ]
+  },
+  {
+    "id": "work_india_030",
+    "title": "High-Speed Rail Training Institute & Associated MAHSR Infrastructure, Vadodara",
+    "subtitle": "A premier specialized training campus in Vadodara equipped with Japanese Shinkansen simulators, laboratories, and workshops to train engineers and personnel for India's high-speed railway network.",
+    "category": "Education",
+    "designType": "Design & Build",
+    "location": "Vadodara, Gujarat",
+    "locationCategory": "India",
+    "completion": "2017–Ongoing Development",
+    "completionYear": "2017",
+    "summary": "A premier specialized training campus in Vadodara equipped with Japanese Shinkansen simulators, laboratories, and workshops to train engineers and personnel for India's high-speed railway network.",
+    "description": "The High-Speed Rail Training Institute (HSRTI) in Vadodara, Gujarat, is a specialized educational and technical training facility established as part of the Mumbai–Ahmedabad High-Speed Rail project. Developed by the National High Speed Rail Corporation Limited with support from Japanese partners, the institute is dedicated to training engineers, operators, technicians, and maintenance personnel for India's future high-speed railway network.\n\nThe campus includes modern academic buildings, laboratories, simulation facilities, administrative offices, accommodation, workshops, and practical training infrastructure designed specifically for high-speed rail technology. Advanced simulators and technical equipment provide hands-on training in railway operations, signaling, rolling stock maintenance, and safety management.\n\nThe institute follows international training standards and incorporates knowledge transfer from Japan's Shinkansen system. Comprehensive programs cover railway engineering, operations management, maintenance procedures, disaster preparedness, and passenger safety, ensuring that India's workforce is equipped to operate and maintain high-speed rail infrastructure.\n\nThe High-Speed Rail Training Institute plays a critical role in developing the skilled workforce required for India's high-speed rail future while serving as a national center of excellence for railway technology, research, and professional development.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Railway Training / Technical Infrastructure"
+      },
+      {
+        "label": "Budget",
+        "value": "Part of MAHSR Program"
+      },
+      {
+        "label": "Location",
+        "value": "Vadodara, Gujarat"
       }
     ]
   }

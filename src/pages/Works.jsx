@@ -8,11 +8,11 @@ import ProjectMapPopup from '../components/ProjectMapPopup';
    Category colour map for accent pills
 ───────────────────────────────────────────── */
 const CATEGORY_COLORS = {
-  "Offices":    { bg: "rgba(11,61,107,0.90)",   text: "#ffffff" },
-  "Civil Infra":{ bg: "rgba(16,130,80,0.90)",    text: "#ffffff" },
-  "Energy":     { bg: "rgba(217,119,6,0.90)",    text: "#ffffff" },
-  "Education":  { bg: "rgba(109,40,217,0.90)",   text: "#ffffff" },
-  "Recreation": { bg: "rgba(220,38,38,0.90)",    text: "#ffffff" },
+  "Offices": { bg: "rgba(11,61,107,0.90)", text: "#ffffff" },
+  "Civil Infra": { bg: "rgba(16,130,80,0.90)", text: "#ffffff" },
+  "Energy": { bg: "rgba(217,119,6,0.90)", text: "#ffffff" },
+  "Education": { bg: "rgba(109,40,217,0.90)", text: "#ffffff" },
+  "Recreation": { bg: "rgba(220,38,38,0.90)", text: "#ffffff" },
 };
 
 /* ─────────────────────────────────────────────
@@ -26,7 +26,7 @@ const ProjectCardMemo = React.memo(({ project, onOpenPopup, index }) => {
       layout
       variants={{
         hidden: { opacity: 0, y: 36, scale: 0.97 },
-        show:   { opacity: 1, y: 0,  scale: 1 }
+        show: { opacity: 1, y: 0, scale: 1 }
       }}
       transition={{ type: "spring", stiffness: 200, damping: 24 }}
       onClick={() => onOpenPopup(project)}
@@ -59,17 +59,6 @@ const ProjectCardMemo = React.memo(({ project, onOpenPopup, index }) => {
           style={{ transition: 'transform 0.7s cubic-bezier(0.25,0.8,0.25,1)' }}
           onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.07)'; }}
           onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)'; }}
-          onError={(e) => {
-            const fallbacks = {
-              "Offices":    "/images/category_offices.png",
-              "Civil Infra":"/images/category_civil.png",
-              "Energy":     "/images/category_energy.png",
-              "Education":  "/images/category_education.png",
-              "Recreation": "/images/category_recreation.png"
-            };
-            e.target.src = fallbacks[project.category] || "/images/category_civil.png";
-            e.target.onerror = null;
-          }}
         />
         {/* Gradient overlay */}
         <div
@@ -271,9 +260,9 @@ export default function Works() {
 
   const filteredProjects = useMemo(() => {
     return projects.filter((proj) => {
-      const matchDB   = designBuild === "All" || proj.designType === designBuild;
+      const matchDB = designBuild === "All" || proj.designType === designBuild;
       const matchType = facilityType === "All" || proj.category === facilityType;
-      const matchLoc  = location === "All" || proj.locationCategory === location;
+      const matchLoc = location === "All" || proj.locationCategory === location;
 
       let matchYear = false;
       if (year === "All") {
@@ -475,10 +464,10 @@ export default function Works() {
             gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
             gap: '16px',
           }}>
-            <FilterSelect label="Contract Type"     value={designBuild}  onChange={setDesignBuild}  options={workCategories.designBuild} />
+            <FilterSelect label="Contract Type" value={designBuild} onChange={setDesignBuild} options={workCategories.designBuild} />
             <FilterSelect label="Building Category" value={facilityType} onChange={setFacilityType} options={workCategories.facilityType} />
-            <FilterSelect label="Project Site"      value={location}     onChange={setLocation}      options={workCategories.location} />
-            <FilterSelect label="Completion Date"   value={year}         onChange={setYear}          options={workCategories.year} />
+            <FilterSelect label="Project Site" value={location} onChange={setLocation} options={workCategories.location} />
+            <FilterSelect label="Completion Date" value={year} onChange={setYear} options={workCategories.year} />
           </div>
         </motion.div>
 

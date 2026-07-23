@@ -151,7 +151,7 @@ export default function WorkDetail() {
   const cat = catTokens[project.category] || catTokens['Civil Infra'];
   const budget = project.details?.find(d => d.label.toLowerCase() === 'budget')?.value || null;
   const client = project.details?.find(d => d.label.toLowerCase() === 'client')?.value || null;
-  const imgSrc = `/images/${project.id}.jpg`;
+  const imgSrc = `/images/${project.id}.jpg?v=no_obama_2026`;
   const fallback = fallbackImg[project.category] || '/images/category_civil.png';
 
   const heroStats = [
@@ -589,7 +589,7 @@ export default function WorkDetail() {
 
             <Reveal direction="right" delay={0.1} className="lg:col-span-7">
               <div className="rounded-2xl overflow-hidden border border-white/10 h-full min-h-[400px] relative">
-                <MiniJapanMap location={project.location} />
+                <MiniJapanMap location={project.location} locationCategory={project.locationCategory} />
                 <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md border border-white/15 rounded-xl px-4 py-2.5">
                   <span className="block text-[9px] text-white/40 font-bold uppercase tracking-widest">Location</span>
                   <span className="block text-sm text-white font-black">{project.location}</span>
@@ -681,7 +681,7 @@ export default function WorkDetail() {
                     className="group relative flex flex-col rounded-2xl overflow-hidden border border-white/8 hover:border-white/20 transition-all duration-400 bg-white/[0.02] hover:bg-white/[0.04]"
                   >
                     <div className="relative h-52 overflow-hidden">
-                      <img src={`/images/${p.id}.jpg`} alt={p.title}
+                      <img src={`/images/${p.id}.jpg?v=curated_2026`} alt={p.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                         onError={e => { e.target.src = fallbackImg[p.category] || fallback; e.target.onerror = null; }} />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#080c14]/80 to-transparent" />

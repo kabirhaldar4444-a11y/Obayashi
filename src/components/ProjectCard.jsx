@@ -8,24 +8,11 @@ export default function ProjectCard({ project }) {
       <Link to={`/works/${project.id}`} className="project-card-link">
         <div className="project-card-img-wrapper">
           <img
-            src={`/images/${project.id}.jpg`}
+            src={`/images/${project.id}.jpg?v=no_obama_2026`}
             alt={project.title}
             className="project-card-img"
             loading="lazy"
             decoding="async"
-            onError={(e) => {
-              // Map categories to custom fallback images
-              const fallbacks = {
-                "Offices": "/images/category_offices.png",
-                "Civil Infra": "/images/category_civil.png",
-                "Energy": "/images/category_energy.png",
-                "Education": "/images/category_education.png",
-                "Recreation": "/images/category_recreation.png"
-              };
-              e.target.src = fallbacks[project.category] || "/images/category_civil.png";
-              // Disable onError loop if fallback also fails
-              e.target.onerror = null;
-            }}
           />
           <div className="project-card-overlay">
             <span className="project-card-category">{project.category}</span>

@@ -1,9 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Users, Landmark, FileText, ChevronRight, Award } from 'lucide-react';
+import { motion, useScroll, useSpring } from 'framer-motion';
+import { Shield, Users, Landmark, FileText, ChevronRight, Award, Sparkles } from 'lucide-react';
 import { companyOverview, ceoMessage, philosophy, historyMilestones, groupNetwork, publications } from '../data/companyContent';
 
 export default function Company() {
+  const timelineRef = useRef(null);
+
+  // Scroll Progress for Glowing Chain Line
+  const { scrollYProgress } = useScroll({
+    target: timelineRef,
+    offset: ["start 75%", "end 60%"]
+  });
+
+  const chainScaleY = useSpring(scrollYProgress, {
+    stiffness: 120,
+    damping: 24,
+    restDelta: 0.001
+  });
+
   // Handle hash scrolling on mount
   useEffect(() => {
     const hash = window.location.hash;
@@ -117,25 +132,59 @@ export default function Company() {
         </div>
       </section>
 
-      {/* 3. Historical Timeline */}
-      <section id="history" className="section-padding">
+      {/* 3. Historical Timeline with Animated Chain Progress Line */}
+      <section id="history" ref={timelineRef} className="section-padding timeline-section-wrapper">
         <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">HISTORICAL TIMELINE</h2>
-            <p className="section-subtitle">Chronology of engineering milestones shaping global cityscapes</p>
+          <div className="section-header text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="section-title">HISTORICAL TIMELINE</h2>
+              <p className="section-subtitle">Chronology of engineering milestones shaping global cityscapes</p>
+            </motion.div>
           </div>
 
           <div className="timeline-container">
+            {/* Background Chain Track Line */}
+            <div className="timeline-chain-track" />
+
+            {/* Animated Glowing Chain Progress Line */}
+            <motion.div 
+              className="timeline-chain-progress"
+              style={{ scaleY: chainScaleY }}
+            />
+
             {historyMilestones.map((milestone, idx) => (
-              <div key={idx} className="timeline-item">
-                <div className="timeline-marker">
-                  <span className="timeline-year">{milestone.year}</span>
+              <motion.div 
+                key={idx} 
+                initial={{ opacity: 0, x: 35 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.55, delay: idx * 0.08, type: "spring", stiffness: 150, damping: 20 }}
+                className="timeline-item"
+              >
+                {/* Node Dot directly on line (No text overlap) */}
+                <div className="timeline-node-dot">
+                  <div className="node-inner-dot" />
+                  <div className="marker-pulse-ring" />
                 </div>
-                <div className="timeline-content">
+
+                {/* Timeline Card with Year Pill Header */}
+                <motion.div 
+                  whileHover={{ y: -4, boxShadow: "0 16px 36px rgba(11, 61, 107, 0.12)" }}
+                  className="timeline-content"
+                >
+                  <div className="timeline-card-header">
+                    <span className="timeline-year-pill">{milestone.year}</span>
+                    <span className="timeline-step-badge">MILESTONE 0{idx + 1}</span>
+                  </div>
                   <h3 className="timeline-title">{milestone.title}</h3>
                   <p className="timeline-desc">{milestone.description}</p>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             ))}
           </div>
         </div>
