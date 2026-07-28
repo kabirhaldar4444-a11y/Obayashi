@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, startTransition } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { SlidersHorizontal, RefreshCw, MapPin, Calendar, ArrowRight, Layers } from 'lucide-react';
+import { SlidersHorizontal, RefreshCw, MapPin, Calendar, ArrowRight, Layers, Search, X } from 'lucide-react';
 import { projects, workCategories } from '../data/worksContent';
 import ProjectMapPopup from '../components/ProjectMapPopup';
 
@@ -51,7 +51,7 @@ const ProjectCardMemo = React.memo(({ project, onOpenPopup, index }) => {
       {/* ── Image ── */}
       <div className="relative overflow-hidden" style={{ height: '218px' }}>
         <img
-          src={`/images/${project.id}.jpg`}
+          src={`/images/${project.id}.jpg?v=obayashi_real_2026_v35`}
           alt={project.title}
           className="w-full h-full object-cover"
           loading="lazy"
@@ -238,6 +238,7 @@ const FilterSelect = ({ label, value, onChange, options }) => (
 ───────────────────────────────────────────── */
 export default function Works() {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
   const [designBuild, setDesignBuild] = useState("All");
   const [facilityType, setFacilityType] = useState("All");
   const [location, setLocation] = useState("All");
@@ -251,6 +252,7 @@ export default function Works() {
 
   const handleReset = () => {
     startTransition(() => {
+      setSearchQuery("");
       setDesignBuild("All");
       setFacilityType("All");
       setLocation("All");
@@ -259,6 +261,8 @@ export default function Works() {
   };
 
   const filteredProjects = useMemo(() => {
+    const query = searchQuery.trim().toLowerCase();
+
     return projects.filter((proj) => {
       const matchDB = designBuild === "All" || proj.designType === designBuild;
       const matchType = facilityType === "All" || proj.category === facilityType;
@@ -274,11 +278,29 @@ export default function Works() {
         matchYear = proj.completionYear === year;
       }
 
-      return matchDB && matchType && matchLoc && matchYear;
-    });
-  }, [designBuild, facilityType, location, year]);
+      let matchSearch = true;
+      if (query) {
+        const titleText = (proj.title || '').toLowerCase();
+        const subtitleText = (proj.subtitle || '').toLowerCase();
+        const locationText = (proj.location || '').toLowerCase();
+        const summaryText = (proj.summary || '').toLowerCase();
+        const categoryText = (proj.category || '').toLowerCase();
+        const descText = (proj.description || '').toLowerCase();
 
-  const hasActiveFilters = designBuild !== "All" || facilityType !== "All" || location !== "All" || year !== "All";
+        matchSearch =
+          titleText.includes(query) ||
+          subtitleText.includes(query) ||
+          locationText.includes(query) ||
+          summaryText.includes(query) ||
+          categoryText.includes(query) ||
+          descText.includes(query);
+      }
+
+      return matchDB && matchType && matchLoc && matchYear && matchSearch;
+    });
+  }, [designBuild, facilityType, location, year, searchQuery]);
+
+  const hasActiveFilters = searchQuery !== "" || designBuild !== "All" || facilityType !== "All" || location !== "All" || year !== "All";
 
   return (
     <motion.div
@@ -456,6 +478,86 @@ export default function Works() {
               <RefreshCw size={11} />
               Reset Filters
             </button>
+          </div>
+
+          {/* Search Bar */}
+          <div style={{ marginBottom: '20px', position: 'relative' }}>
+            <label style={{
+              fontSize: '0.68rem',
+              fontWeight: 800,
+              color: '#909090',
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
+              display: 'block',
+              marginBottom: '6px'
+            }}>
+              Search Projects
+            </label>
+            <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
+              <Search
+                size={18}
+                style={{
+                  position: 'absolute',
+                  left: '14px',
+                  color: searchQuery ? '#C17F24' : '#909090',
+                  transition: 'color 0.2s ease',
+                  pointerEvents: 'none'
+                }}
+              />
+              <input
+                type="text"
+                placeholder="Search by project name, location, or keyword (e.g., Osaka, Metro, Tunnel, Bridge)..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                style={{
+                  width: '100%',
+                  background: '#ffffff',
+                  border: '1.5px solid #e8e8e8',
+                  borderRadius: '12px',
+                  padding: '12px 40px 12px 42px',
+                  fontSize: '0.88rem',
+                  color: '#1a1a1a',
+                  fontWeight: 600,
+                  fontFamily: 'inherit',
+                  outline: 'none',
+                  transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
+                  boxShadow: '0 2px 6px rgba(0,0,0,0.03)',
+                }}
+                onFocus={e => {
+                  e.target.style.borderColor = '#C17F24';
+                  e.target.style.boxShadow = '0 0 0 4px rgba(193,127,36,0.12)';
+                }}
+                onBlur={e => {
+                  e.target.style.borderColor = '#e8e8e8';
+                  e.target.style.boxShadow = '0 2px 6px rgba(0,0,0,0.03)';
+                }}
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  style={{
+                    position: 'absolute',
+                    right: '12px',
+                    background: 'rgba(0,0,0,0.06)',
+                    border: 'none',
+                    borderRadius: '50%',
+                    width: '24px',
+                    height: '24px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                    color: '#666',
+                    transition: 'background 0.2s ease',
+                  }}
+                  aria-label="Clear search query"
+                  onMouseEnter={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.12)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.background = 'rgba(0,0,0,0.06)'; }}
+                >
+                  <X size={13} />
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Selects grid */}

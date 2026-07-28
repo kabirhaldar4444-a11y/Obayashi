@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Search, Globe, ChevronDown, ArrowRight } from 'lucide-react';
+import { Menu, X, Search, ChevronDown, ArrowRight } from 'lucide-react';
 import SearchOverlay from './SearchOverlay';
 
 export default function Header() {
@@ -61,17 +61,7 @@ export default function Header() {
         { label: "Corporate Governance", path: "/company#governance" }
       ]
     },
-    {
-      title: "Investor Relations",
-      path: "/ir",
-      subItems: [
-        { label: "Financial Highlights", path: "/ir#financial" },
-        { label: "Upcoming Events Calendar", path: "/ir#calendar" },
-        { label: "Stock & Dividend Information", path: "/ir#stock" },
-        { label: "IR Documentation (PDFs)", path: "/ir#documents" },
-        { label: "Investor FAQs", path: "/ir#faq" }
-      ]
-    },
+
     {
       title: "Sustainability",
       path: "/sustainability",
@@ -166,10 +156,7 @@ export default function Header() {
             <Link to="/contact" className="contact-btn">
               Contact Us
             </Link>
-            <button className="lang-btn">
-              <Globe size={16} />
-              <span>EN</span>
-            </button>
+
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="mobile-hamburger"

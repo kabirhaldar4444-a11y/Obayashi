@@ -7,6 +7,16 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleHashClick = (path) => {
+    if (path.includes('#')) {
+      const id = path.split('#')[1];
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  };
+
   return (
     <footer className="global-footer">
       {/* Scroll to top bar */}
@@ -29,7 +39,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-grid">
-          {/* Column 1: Core Portals */}
+          {/* Column 1: Core Divisions */}
           <div className="footer-col">
             <h4 className="footer-col-title">Core Divisions</h4>
             <ul className="footer-link-list">
@@ -43,43 +53,26 @@ export default function Footer() {
           <div className="footer-col">
             <h4 className="footer-col-title"><Link to="/company" className="footer-link-main">Company Profile</Link></h4>
             <ul className="footer-link-list">
-              <li><Link to="/company#message" className="footer-link">President's Message</Link></li>
-              <li><Link to="/company#philosophy" className="footer-link">Obayashi Principles</Link></li>
-              <li><Link to="/company#mid-term" className="footer-link">Medium-Term Strategy</Link></li>
-              <li><Link to="/company#overview" className="footer-link">Corporate Overview</Link></li>
-              <li><Link to="/company#history" className="footer-link">Historical Timeline</Link></li>
-              <li><Link to="/company#group" className="footer-link">Global Group Network</Link></li>
-              <li><Link to="/company#publications" className="footer-link">Corporate Publications</Link></li>
+              <li><Link to="/company#message" onClick={() => handleHashClick('/company#message')} className="footer-link">President's Message</Link></li>
+              <li><Link to="/company#philosophy" onClick={() => handleHashClick('/company#philosophy')} className="footer-link">Obayashi Principles</Link></li>
+              <li><Link to="/company#history" onClick={() => handleHashClick('/company#history')} className="footer-link">Historical Timeline</Link></li>
+              <li><Link to="/company#group" onClick={() => handleHashClick('/company#group')} className="footer-link">Global Group Network</Link></li>
+              <li><Link to="/company#publications" onClick={() => handleHashClick('/company#publications')} className="footer-link">Corporate Publications</Link></li>
             </ul>
           </div>
 
-          {/* Column 3: Investor Relations */}
-          <div className="footer-col">
-            <h4 className="footer-col-title"><Link to="/ir" className="footer-link-main">Investor Relations</Link></h4>
-            <ul className="footer-link-list">
-              <li><Link to="/ir#financial" className="footer-link">Financial Highlights</Link></li>
-              <li><Link to="/ir#management" className="footer-link">Management Philosophy</Link></li>
-              <li><Link to="/ir#calendar" className="footer-link">Upcoming IR Events</Link></li>
-              <li><Link to="/ir#stock" className="footer-link">Stock & Dividends</Link></li>
-              <li><Link to="/ir#documents" className="footer-link">IR Documents (PDF)</Link></li>
-              <li><Link to="/ir#faq" className="footer-link">Investor FAQs</Link></li>
-            </ul>
-          </div>
-
-          {/* Column 4: Sustainability */}
+          {/* Column 3: Sustainability */}
           <div className="footer-col">
             <h4 className="footer-col-title"><Link to="/sustainability" className="footer-link-main">Sustainability</Link></h4>
             <ul className="footer-link-list">
-              <li><Link to="/sustainability#vision" className="footer-link">Vision 2050 Targets</Link></li>
-              <li><Link to="/sustainability#esg" className="footer-link">ESG Materiality</Link></li>
-              <li><Link to="/sustainability#environment" className="footer-link">Environment Policy</Link></li>
-              <li><Link to="/sustainability#safety" className="footer-link">Health & Safety</Link></li>
-              <li><Link to="/sustainability#contributions" className="footer-link">Social Contributions</Link></li>
-              <li><Link to="/sustainability#evaluations" className="footer-link">External Appraisals</Link></li>
+              <li><Link to="/sustainability#vision" onClick={() => handleHashClick('/sustainability#vision')} className="footer-link">Vision 2050 Targets</Link></li>
+              <li><Link to="/sustainability#esg" onClick={() => handleHashClick('/sustainability#esg')} className="footer-link">ESG Materiality</Link></li>
+              <li><Link to="/sustainability#contributions" onClick={() => handleHashClick('/sustainability#contributions')} className="footer-link">Social Contributions</Link></li>
+              <li><Link to="/sustainability#evaluations" onClick={() => handleHashClick('/sustainability#evaluations')} className="footer-link">External Appraisals</Link></li>
             </ul>
           </div>
 
-          {/* Column 5: Press & Updates */}
+          {/* Column 4: Press & Media */}
           <div className="footer-col">
             <h4 className="footer-col-title">Press & Media</h4>
             <ul className="footer-link-list">
@@ -105,3 +98,4 @@ export default function Footer() {
     </footer>
   );
 }
+

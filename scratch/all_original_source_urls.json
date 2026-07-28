@@ -1,0 +1,497 @@
+[
+  {
+    "index": 1,
+    "id": "work_haneda_airport__100",
+    "title": "Haneda Airport Terminal 2 International Expansion",
+    "location": "Tokyo, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 2,
+    "id": "work_fukutoku_toyosu_101",
+    "title": "Fukutoku & Toyosu District Redevelopment",
+    "location": "Tokyo, Japan",
+    "category": "Offices",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Toyosu_2014.JPG/1920px-Toyosu_2014.JPG",
+    "provider": "Wikimedia Commons"
+  },
+  {
+    "index": 3,
+    "id": "work_azabudai_hills__102",
+    "title": "Azabudai Hills Development",
+    "location": "Tokyo, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Azabudai_Hills_%28Garden_Plaza_B%2C_towers%2C_and_sign%3B_2025-11-06%29.jpg/1920px-Azabudai_Hills_%28Garden_Plaza_B%2C_towers%2C_and_sign%3B_2025-11-06%29.jpg",
+    "provider": "Wikimedia Commons"
+  },
+  {
+    "index": 4,
+    "id": "work_shibuya_sakura__103",
+    "title": "Shibuya Sakura Stage Redevelopment",
+    "location": "Tokyo, Japan",
+    "category": "Offices",
+    "sourceUrl": "https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 5,
+    "id": "work_takanawa_gatewa_104",
+    "title": "Takanawa Gateway City Phase 1",
+    "location": "Tokyo, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 6,
+    "id": "work_hokkaido_honshu_105",
+    "title": "Hokkaido–Honshu HVDC Interconnection Expansion",
+    "location": "Hokkaido & Honshu, Japan",
+    "category": "Energy",
+    "sourceUrl": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 7,
+    "id": "work_osaka_ir_integr_106",
+    "title": "Osaka IR Integrated Resort Development",
+    "location": "Osaka, Japan",
+    "category": "Offices",
+    "sourceUrl": "https://images.unsplash.com/photo-1590559899731-a382839e5549?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 8,
+    "id": "work_tokyo_metropoli_107",
+    "title": "Tokyo Metropolitan Underground Flood Protection Expansion",
+    "location": "Saitama, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 9,
+    "id": "work_hokkaido_offsho_108",
+    "title": "Hokkaido Offshore Wind Power Development",
+    "location": "Hokkaido, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1548337138-e87d889cc369?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 10,
+    "id": "work_chuo_shinkansen_109",
+    "title": "Chuo Shinkansen (Maglev) Southern Alps Tunnel",
+    "location": "Shizuoka, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1532105956626-9569c03602f6?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 11,
+    "id": "work_tokyo_metro_net_110",
+    "title": "Tokyo Metro Network Expansion Phase 2",
+    "location": "Tokyo, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 12,
+    "id": "work_osaka_metro_ext_111",
+    "title": "Osaka Metro Extension Plan",
+    "location": "Osaka, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Osaka-Metro_Series400-409-01.jpg/1920px-Osaka-Metro_Series400-409-01.jpg",
+    "provider": "Wikimedia Commons"
+  },
+  {
+    "index": 13,
+    "id": "work_yokohama_urban__112",
+    "title": "Yokohama Municipal Subway Extension",
+    "location": "Yokohama, Kanagawa, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 14,
+    "id": "work_nagoya_metro_gr_113",
+    "title": "Nagoya Municipal Subway Meijo Line Extension",
+    "location": "Nagoya, Aichi, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Shiyakusho_Station_1060.JPG",
+    "provider": "Wikimedia Commons"
+  },
+  {
+    "index": 15,
+    "id": "work_fukuoka_metro_n_114",
+    "title": "Fukuoka Subway Nanakuma Line Extension",
+    "location": "Fukuoka, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1548337138-e87d889cc369?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 16,
+    "id": "work_sapporo_metro_f_115",
+    "title": "Sapporo Subway Tozai Line Extension",
+    "location": "Sapporo, Hokkaido, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1560969184-10fe8719e047?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 17,
+    "id": "work_kyoto_urban_met_116",
+    "title": "Kyoto Subway Tozai Line Extension",
+    "location": "Kyoto, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1498084393753-b411b2d26b34?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 18,
+    "id": "work_kobe_metro_exte_117",
+    "title": "Kobe Subway Wangan Line Extension",
+    "location": "Kobe, Hyogo, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 19,
+    "id": "work_sendai_metro_ex_118",
+    "title": "Sendai Subway Tozai Line Extension",
+    "location": "Sendai, Miyagi, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 20,
+    "id": "work_hiroshima_metro_119",
+    "title": "Hiroshima Rapid Transit Line Extension",
+    "location": "Hiroshima, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 21,
+    "id": "work_chiba_metro_cor_120",
+    "title": "Chiba Urban Monorail Line Extension",
+    "location": "Chiba, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 22,
+    "id": "work_kawasaki_metro__121",
+    "title": "Kawasaki Rapid Transit Railway Project",
+    "location": "Kawasaki, Kanagawa, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Kawasaki_station_-_2024_10_1_various_19_18_34_294000.jpeg/1920px-Kawasaki_station_-_2024_10_1_various_19_18_34_294000.jpeg",
+    "provider": "Wikimedia Commons"
+  },
+  {
+    "index": 23,
+    "id": "work_greater_tokyo_o_122",
+    "title": "Greater Tokyo Outer Loop Railway Line",
+    "location": "Tokyo Metropolitan Area, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 24,
+    "id": "work_osaka_smart_met_123",
+    "title": "Osaka Smart Metro Modernization & Extension",
+    "location": "Osaka, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 25,
+    "id": "work_nagoya_metropol_124",
+    "title": "Nagoya Metropolitan Subway New Line Project",
+    "location": "Nagoya, Aichi, Japan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Nagoya_Series-N1000-N1114.jpg/1920px-Nagoya_Series-N1000-N1114.jpg",
+    "provider": "Wikimedia Commons"
+  },
+  {
+    "index": 26,
+    "id": "work_mumbai_ahmedabad_rail_200",
+    "title": "Mumbai–Ahmedabad High-Speed Rail",
+    "location": "Maharashtra, Gujarat & Dadra and Nagar Haveli",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 27,
+    "id": "work_india_002",
+    "title": "Western Dedicated Freight Corridor",
+    "location": "Uttar Pradesh, Haryana, Rajasthan, Gujarat & Maharashtra",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 28,
+    "id": "work_india_003",
+    "title": "Mumbai Trans Harbour Link – Atal Setu",
+    "location": "Mumbai–Navi Mumbai, Maharashtra",
+    "category": "Civil Infra",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Atal_Setu_-_Trans_Harbour_Link_Mumbai.jpg/1920px-Atal_Setu_-_Trans_Harbour_Link_Mumbai.jpg",
+    "provider": "Wikimedia Commons"
+  },
+  {
+    "index": 29,
+    "id": "work_india_004",
+    "title": "Dhubri–Phulbari Bridge",
+    "location": "Assam–Meghalaya",
+    "category": "Civil Infra",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Bogibeel_Bridge_view.jpg",
+    "provider": "Wikimedia Commons"
+  },
+  {
+    "index": 30,
+    "id": "work_india_005",
+    "title": "Chennai Peripheral Ring Road",
+    "location": "Chennai Metropolitan Region, Tamil Nadu",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 31,
+    "id": "work_india_006",
+    "title": "North East Road Network Connectivity Improvement Project – Phase I",
+    "location": "Mizoram & Meghalaya",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 32,
+    "id": "work_india_007",
+    "title": "North East Road Network Connectivity Improvement Project – Phase II",
+    "location": "Northeast India",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1544984243-ec57ea16fe25?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 33,
+    "id": "work_india_008",
+    "title": "North East Road Network Connectivity Improvement Project – Phase III",
+    "location": "Northeast India",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 34,
+    "id": "work_india_009",
+    "title": "Bihar National Highway Improvement Project – Phase I",
+    "location": "Bihar",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 35,
+    "id": "work_india_010",
+    "title": "Bihar National Highway Improvement Project – Phase II",
+    "location": "Bihar",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1509391365360-2e959784a276?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 36,
+    "id": "work_india_011",
+    "title": "Delhi–Mumbai Industrial Corridor",
+    "location": "Delhi to Maharashtra across multiple states",
+    "category": "Offices",
+    "sourceUrl": "https://images.unsplash.com/photo-1544984243-ec57ea16fe25?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 37,
+    "id": "work_india_012",
+    "title": "Dholera Special Investment Region / Industrial City",
+    "location": "Dholera, Gujarat",
+    "category": "Offices",
+    "sourceUrl": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 38,
+    "id": "work_india_013",
+    "title": "Chennai–Bengaluru Industrial Corridor",
+    "location": "Tamil Nadu, Andhra Pradesh & Karnataka",
+    "category": "Offices",
+    "sourceUrl": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 39,
+    "id": "work_india_014",
+    "title": "Tamil Nadu Investment Promotion / Industrial Infrastructure Program",
+    "location": "Tamil Nadu",
+    "category": "Offices",
+    "sourceUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 40,
+    "id": "work_india_015",
+    "title": "Purulia Pumped Storage Project",
+    "location": "Purulia, West Bengal",
+    "category": "Energy",
+    "sourceUrl": "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 41,
+    "id": "work_india_016",
+    "title": "Turga Pumped Storage Project",
+    "location": "Purulia, West Bengal",
+    "category": "Energy",
+    "sourceUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 42,
+    "id": "work_india_017",
+    "title": "Ghatghar Pumped Storage Project",
+    "location": "Maharashtra",
+    "category": "Energy",
+    "sourceUrl": "https://images.unsplash.com/photo-1584467735871-8e85353a8413?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 43,
+    "id": "work_india_018",
+    "title": "Bakreswar Thermal Power Station Expansion",
+    "location": "Birbhum, West Bengal",
+    "category": "Energy",
+    "sourceUrl": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 44,
+    "id": "work_india_019",
+    "title": "Haldia Port Modernization Project",
+    "location": "Haldia, West Bengal",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1574482620826-40685ca5ebd2?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 45,
+    "id": "work_india_020",
+    "title": "Hooghly Dock and Port Engineers Modernization Project",
+    "location": "West Bengal",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 46,
+    "id": "work_india_021",
+    "title": "Burnpur Steel Works Modernization Project",
+    "location": "Burnpur, West Bengal",
+    "category": "Offices",
+    "sourceUrl": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 47,
+    "id": "work_india_022",
+    "title": "Mumbai Sewage Disposal Project",
+    "location": "Mumbai, Maharashtra",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 48,
+    "id": "work_india_023",
+    "title": "Yamuna Action Plan Project",
+    "location": "Delhi, Uttar Pradesh & Haryana",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1583321500900-82807e458f3c?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 49,
+    "id": "work_india_024",
+    "title": "Yamuna Action Plan Phase III – Delhi",
+    "location": "Delhi",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1569429593410-b498b3fb3387?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 50,
+    "id": "work_india_025",
+    "title": "Bengaluru Water Supply and Sewerage Project",
+    "location": "Bengaluru, Karnataka",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 51,
+    "id": "work_india_026",
+    "title": "Rajasthan Water Sector / Rural Water Supply Infrastructure Projects",
+    "location": "Rajasthan",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1584467735871-8e85353a8413?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 52,
+    "id": "work_india_027",
+    "title": "Mumbai Metro Line 3 – Aqua Line",
+    "location": "Mumbai, Maharashtra",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 53,
+    "id": "work_india_028",
+    "title": "Delhi Metro Rail Project",
+    "location": "Delhi NCR",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 54,
+    "id": "work_india_029",
+    "title": "Chennai Metro Rail Project",
+    "location": "Chennai, Tamil Nadu",
+    "category": "Civil Infra",
+    "sourceUrl": "https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  },
+  {
+    "index": 55,
+    "id": "work_india_030",
+    "title": "High-Speed Rail Training Institute & Associated MAHSR Infrastructure, Vadodara",
+    "location": "Vadodara, Gujarat",
+    "category": "Education",
+    "sourceUrl": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1600&auto=format&fit=crop",
+    "provider": "Unsplash"
+  }
+]

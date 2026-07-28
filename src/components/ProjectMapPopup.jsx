@@ -10,90 +10,104 @@ import { useNavigate } from 'react-router-dom';
    533px (58% width) x 560px container.
 ================================================================== */
 const cityCoordinates = {
-  "tokyo":     { x: 55.8, y: 49.0 },
-  "kanagawa":  { x: 55.6, y: 50.5 },
-  "yokohama":  { x: 55.6, y: 50.5 },
-  "osaka":     { x: 37.2, y: 60.0 },
-  "kobe":      { x: 34.4, y: 57.1 },
-  "hyogo":     { x: 34.4, y: 57.1 },
-  "kyoto":     { x: 35.2, y: 57.0 },
-  "nagoya":    { x: 43.2, y: 58.0 },
-  "aichi":     { x: 43.2, y: 58.0 },
-  "sapporo":   { x: 52.5, y: 20.5 },
-  "hokkaido":  { x: 52.5, y: 20.5 },
-  "sendai":    { x: 58.5, y: 35.5 },
-  "miyagi":    { x: 58.5, y: 35.5 },
-  "fukuoka":   { x: 12.2, y: 70.5 },
-  "hiroshima": { x: 23.1, y: 63.5 },
-  "shizuoka":  { x: 51.2, y: 55.0 },
+  "tokyo":     { name: "Tokyo", x: 56.5, y: 49.0 },
+  "kanagawa":  { name: "Kanagawa", x: 56.0, y: 50.8 },
+  "yokohama":  { name: "Yokohama", x: 56.0, y: 50.8 },
+  "osaka":     { name: "Osaka", x: 41.2, y: 59.0 },
+  "kobe":      { name: "Kobe", x: 39.5, y: 58.5 },
+  "hyogo":     { name: "Hyogo", x: 39.5, y: 58.5 },
+  "kyoto":     { name: "Kyoto", x: 42.5, y: 56.2 },
+  "nagoya":    { name: "Nagoya", x: 47.5, y: 55.5 },
+  "aichi":     { name: "Aichi", x: 47.5, y: 55.5 },
+  "sapporo":   { name: "Sapporo", x: 62.5, y: 14.5 },
+  "hokkaido":  { name: "Hokkaido", x: 62.5, y: 14.5 },
+  "sendai":    { name: "Sendai", x: 60.5, y: 34.5 },
+  "miyagi":    { name: "Miyagi", x: 60.5, y: 34.5 },
+  "fukuoka":   { name: "Fukuoka", x: 22.0, y: 68.0 },
+  "hiroshima": { name: "Hiroshima", x: 31.8, y: 63.2 },
+  "shizuoka":  { name: "Shizuoka", x: 51.5, y: 52.5 },
+  "chiba":     { name: "Chiba", x: 59.5, y: 49.5 },
+  "kawasaki":  { name: "Kawasaki", x: 56.2, y: 50.0 },
+  "saitama":   { name: "Saitama", x: 56.0, y: 46.5 },
+  "kasukabe":  { name: "Saitama (Kasukabe)", x: 56.0, y: 46.5 },
+  "niigata":   { name: "Niigata", x: 53.5, y: 41.5 },
+  "akita":     { name: "Akita", x: 57.5, y: 31.0 },
+  "aomori":    { name: "Aomori", x: 59.0, y: 24.5 },
+  "hakodate":  { name: "Hakodate", x: 57.5, y: 20.5 },
+  "ishikari":  { name: "Ishikari", x: 61.5, y: 13.5 },
 };
 
 const indiaCoordinates = {
-  "mumbai-ahmedabad": { x: 24.0, y: 47.0 },
-  "mumbai":           { x: 23.5, y: 51.0 },
-  "ahmedabad":        { x: 25.5, y: 42.0 },
-  "dholera":          { x: 24.5, y: 43.5 },
-  "vadodara":         { x: 26.0, y: 44.0 },
-  "gujarat":          { x: 24.5, y: 42.5 },
-  "maharashtra":      { x: 33.0, y: 51.5 },
-  "bengaluru":        { x: 35.0, y: 65.0 },
-  "karnataka":        { x: 35.0, y: 64.0 },
-  "chennai":          { x: 41.0, y: 75.0 },
-  "tamil nadu":       { x: 40.0, y: 75.5 },
-  "andhra pradesh":   { x: 44.0, y: 67.0 },
-  "telangana":        { x: 43.0, y: 59.5 },
-  "delhi":            { x: 42.5, y: 31.5 },
-  "haryana":          { x: 46.0, y: 31.0 },
-  "rajasthan":        { x: 38.0, y: 35.0 },
-  "uttar pradesh":    { x: 55.0, y: 39.0 },
-  "bihar":            { x: 65.0, y: 43.5 },
-  "west bengal":      { x: 68.0, y: 51.0 },
-  "purulia":          { x: 65.0, y: 47.0 },
-  "haldia":           { x: 67.5, y: 50.0 },
-  "assam":            { x: 82.0, y: 45.5 },
-  "meghalaya":        { x: 81.0, y: 42.5 },
-  "mizoram":          { x: 88.0, y: 56.5 },
-  "northeast":        { x: 84.0, y: 45.0 },
+  "mumbai-ahmedabad": { x: 28.5, y: 48.0 },
+  "mumbai":           { x: 30.0, y: 54.0 },
+  "ahmedabad":        { x: 27.0, y: 43.0 },
+  "dholera":          { x: 26.5, y: 45.5 },
+  "vadodara":         { x: 29.0, y: 45.0 },
+  "gujarat":          { x: 27.0, y: 43.0 },
+  "maharashtra":      { x: 35.0, y: 54.0 },
+  "bengaluru":        { x: 39.0, y: 69.0 },
+  "karnataka":        { x: 37.0, y: 67.0 },
+  "chennai":          { x: 46.2, y: 71.0 },
+  "tamil nadu":       { x: 43.0, y: 75.0 },
+  "andhra pradesh":   { x: 46.0, y: 63.0 },
+  "telangana":        { x: 44.0, y: 57.0 },
+  "delhi":            { x: 42.0, y: 30.0 },
+  "haryana":          { x: 40.0, y: 29.0 },
+  "rajasthan":        { x: 34.0, y: 34.0 },
+  "uttar pradesh":    { x: 50.0, y: 34.0 },
+  "bihar":            { x: 64.0, y: 39.0 },
+  "west bengal":      { x: 67.0, y: 47.0 },
+  "purulia":          { x: 64.0, y: 46.0 },
+  "haldia":           { x: 69.0, y: 52.0 },
+  "assam":            { x: 79.0, y: 39.0 },
+  "meghalaya":        { x: 78.5, y: 41.5 },
+  "mizoram":          { x: 82.0, y: 47.0 },
+  "northeast":        { x: 80.0, y: 40.0 },
 };
 
 const ALL_STATE_BOUNDARIES = {
-  "ladakh":            { name: "Ladakh", x: 55.0, y: 21.0 },
-  "jammu":             { name: "Jammu & Kashmir", x: 47.0, y: 21.0 },
-  "himachal":          { name: "Himachal Pradesh", x: 50.0, y: 25.0 },
-  "punjab":            { name: "Punjab", x: 45.0, y: 27.5 },
-  "haryana":           { name: "Haryana", x: 46.0, y: 31.0 },
-  "delhi":             { name: "Delhi", x: 42.5, y: 31.5 },
-  "uttarakhand":       { name: "Uttarakhand", x: 54.0, y: 30.5 },
-  "rajasthan":         { name: "Rajasthan", x: 38.0, y: 35.0 },
-  "uttar pradesh":     { name: "Uttar Pradesh", x: 55.0, y: 39.0 },
-  "gujarat":           { name: "Gujarat", x: 24.5, y: 42.5 },
-  "madhya pradesh":    { name: "Madhya Pradesh", x: 45.0, y: 46.0 },
-  "maharashtra":       { name: "Maharashtra", x: 33.0, y: 51.5 },
-  "chhattisgarh":      { name: "Chhattisgarh", x: 50.0, y: 52.0 },
-  "jharkhand":         { name: "Jharkhand", x: 63.0, y: 47.5 },
-  "bihar":             { name: "Bihar", x: 65.0, y: 43.5 },
-  "west bengal":       { name: "West Bengal", x: 68.0, y: 51.0 },
-  "odisha":            { name: "Odisha", x: 58.0, y: 55.0 },
-  "goa":               { name: "Goa", x: 22.5, y: 61.0 },
-  "karnataka":         { name: "Karnataka", x: 35.0, y: 64.0 },
-  "telangana":          { name: "Telangana", x: 43.0, y: 59.5 },
-  "andhra pradesh":    { name: "Andhra Pradesh", x: 44.0, y: 67.0 },
-  "kerala":            { name: "Kerala", x: 28.5, y: 73.5 },
-  "tamil nadu":        { name: "Tamil Nadu", x: 40.0, y: 75.5 },
-  "puducherry":        { name: "Puducherry", x: 44.0, y: 73.0 },
-  "sikkim":            { name: "Sikkim", x: 73.0, y: 40.5 },
-  "assam":             { name: "Assam", x: 82.0, y: 45.5 },
-  "meghalaya":         { name: "Meghalaya", x: 81.0, y: 42.5 },
-  "tripura":           { name: "Tripura", x: 77.0, y: 59.0 },
-  "mizoram":           { name: "Mizoram", x: 88.0, y: 56.5 },
-  "manipur":           { name: "Manipur", x: 91.0, y: 53.0 },
-  "nagaland":          { name: "Nagaland", x: 93.0, y: 49.5 },
-  "arunachal pradesh": { name: "Arunachal Pradesh", x: 89.0, y: 39.5 },
-  "dadra":             { name: "Dadra & Nagar Haveli", x: 24.0, y: 48.0 },
-  "purulia":           { name: "West Bengal (Purulia)", x: 65.0, y: 47.0 },
-  "haldia":            { name: "West Bengal (Haldia)", x: 67.5, y: 50.0 },
-  "chennai":           { name: "Tamil Nadu (Chennai)", x: 41.0, y: 75.0 },
-  "bengaluru":         { name: "Karnataka (Bengaluru)", x: 35.0, y: 65.0 },
+  "ladakh":            { name: "Ladakh", x: 45.0, y: 16.0 },
+  "jammu":             { name: "Jammu & Kashmir", x: 37.0, y: 18.0 },
+  "himachal":          { name: "Himachal Pradesh", x: 42.0, y: 23.0 },
+  "punjab":            { name: "Punjab", x: 37.0, y: 25.0 },
+  "haryana":           { name: "Haryana", x: 40.0, y: 29.0 },
+  "delhi":             { name: "Delhi", x: 42.0, y: 30.0 },
+  "uttarakhand":       { name: "Uttarakhand", x: 47.0, y: 26.0 },
+  "rajasthan":         { name: "Rajasthan", x: 34.0, y: 34.0 },
+  "uttar pradesh":     { name: "Uttar Pradesh", x: 50.0, y: 34.0 },
+  "gujarat":           { name: "Gujarat", x: 27.0, y: 43.0 },
+  "madhya pradesh":    { name: "Madhya Pradesh", x: 43.0, y: 44.0 },
+  "maharashtra":       { name: "Maharashtra", x: 35.0, y: 54.0 },
+  "mumbai":            { name: "Mumbai", x: 30.0, y: 54.0 },
+  "chhattisgarh":      { name: "Chhattisgarh", x: 52.0, y: 48.0 },
+  "jharkhand":         { name: "Jharkhand", x: 63.0, y: 45.0 },
+  "bihar":             { name: "Bihar", x: 64.0, y: 39.0 },
+  "west bengal":       { name: "West Bengal", x: 67.0, y: 47.0 },
+  "odisha":            { name: "Odisha", x: 58.0, y: 52.0 },
+  "goa":               { name: "Goa", x: 31.0, y: 66.0 },
+  "karnataka":         { name: "Karnataka", x: 37.0, y: 67.0 },
+  "telangana":          { name: "Telangana", x: 44.0, y: 57.0 },
+  "andhra pradesh":    { name: "Andhra Pradesh", x: 46.0, y: 63.0 },
+  "kerala":            { name: "Kerala", x: 36.0, y: 76.0 },
+  "tamil nadu":        { name: "Tamil Nadu", x: 43.0, y: 75.0 },
+  "puducherry":        { name: "Puducherry", x: 46.5, y: 73.0 },
+  "sikkim":            { name: "Sikkim", x: 71.0, y: 36.0 },
+  "assam":             { name: "Assam", x: 79.0, y: 39.0 },
+  "meghalaya":         { name: "Meghalaya", x: 78.5, y: 41.5 },
+  "tripura":           { name: "Tripura", x: 79.0, y: 46.0 },
+  "mizoram":           { name: "Mizoram", x: 82.0, y: 47.0 },
+  "manipur":           { name: "Manipur", x: 83.5, y: 44.0 },
+  "nagaland":          { name: "Nagaland", x: 85.0, y: 41.0 },
+  "arunachal pradesh": { name: "Arunachal Pradesh", x: 85.0, y: 32.0 },
+  "dadra":             { name: "Dadra & Nagar Haveli", x: 28.0, y: 49.0 },
+  "purulia":           { name: "West Bengal (Purulia)", x: 64.0, y: 46.0 },
+  "haldia":            { name: "West Bengal (Haldia)", x: 69.0, y: 52.0 },
+  "burnpur":           { name: "West Bengal (Burnpur)", x: 64.5, y: 45.0 },
+  "birbhum":           { name: "West Bengal (Birbhum)", x: 66.0, y: 44.0 },
+  "chennai":           { name: "Tamil Nadu (Chennai)", x: 46.2, y: 71.0 },
+  "bengaluru":         { name: "Karnataka (Bengaluru)", x: 39.0, y: 69.0 },
+  "vadodara":          { name: "Gujarat (Vadodara)", x: 29.0, y: 45.0 },
+  "dholera":           { name: "Gujarat (Dholera)", x: 26.5, y: 45.5 },
 };
 
 /* Category colour tokens */
@@ -145,6 +159,35 @@ export default function ProjectMapPopup({ project, onClose }) {
   };
 
   const coords = getCoords(project.location);
+
+  // Parse all included states for Japan projects
+  const getJapanLocations = (locStr) => {
+    const clean = (locStr || '').toLowerCase();
+    const matched = [];
+    const addedKeys = new Set();
+
+    const addMatch = (key) => {
+      if (cityCoordinates[key] && !addedKeys.has(key)) {
+        addedKeys.add(key);
+        matched.push(cityCoordinates[key]);
+      }
+    };
+
+    if (clean.includes('tokyo–nagoya–osaka') || clean.includes('tokyo-nagoya-osaka') || clean.includes('chuo shinkansen')) {
+      ['tokyo', 'nagoya', 'osaka'].forEach(addMatch);
+    } else if (clean.includes('hokkaido & honshu') || clean.includes('hokkaido–honshu')) {
+      ['hokkaido', 'aomori'].forEach(addMatch);
+    } else {
+      for (const [key] of Object.entries(cityCoordinates)) {
+        if (clean.includes(key)) addMatch(key);
+      }
+    }
+
+    if (matched.length === 0) {
+      matched.push({ name: (locStr || 'Tokyo').split(',')[0], x: 55.8, y: 49.0 });
+    }
+    return matched;
+  };
 
   // Parse all included states for India projects with 100% exact geographical positioning
   const getIncludedStates = (locStr) => {
@@ -198,7 +241,7 @@ export default function ProjectMapPopup({ project, onClose }) {
     return matched;
   };
 
-  const includedStates = isIndia ? getIncludedStates(project.location) : [];
+  const includedStates = isIndia ? getIncludedStates(project.location) : getJapanLocations(project.location);
   const projectSlug = slugify(project.title);
   const catColor = CATEGORY_COLORS[project.category] || '#374151';
 
@@ -442,7 +485,7 @@ export default function ProjectMapPopup({ project, onClose }) {
           {/* Project thumbnail */}
           <div style={{ position: 'relative', height: '180px', flexShrink: 0, overflow: 'hidden' }}>
             <img
-              src={'/images/' + project.id + '.jpg?v=no_obama_2026'}
+              src={'/images/' + project.id + '.jpg?v=obayashi_real_2026_v35'}
               alt={project.title}
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

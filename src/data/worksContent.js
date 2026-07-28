@@ -39,8 +39,8 @@ export const projects = [
   },
   {
     "id": "work_fukutoku_toyosu_101",
-    "title": "Haneda Airport Access Line",
-    "subtitle": "A large mixed-use urban redevelopment project transforming the Yaesu–Nihonbashi area into a modern business and commercial hub.",
+    "title": "Fukutoku & Toyosu District Redevelopment",
+    "subtitle": "A large mixed-use urban redevelopment project transforming the Toyosu area into a modern business, residential, and commercial hub.",
     "category": "Offices",
     "designType": "Design & Build",
     "location": "Tokyo, Japan",
@@ -71,7 +71,7 @@ export const projects = [
   {
     "id": "work_azabudai_hills__102",
     "title": "Azabudai Hills Development",
-    "subtitle": "One of Japan's largest urban redevelopment projects featuring high-rise commercial towers, residential buildings, hotels, healthcare facilities, educational institutions, and extensive public green spaces.",
+    "subtitle": "One of Japan's largest urban redevelopment projects featuring high-rise commercial towers, residential spaces, and green plazas.",
     "category": "Civil Infra",
     "designType": "Design & Build",
     "location": "Tokyo, Japan",
@@ -164,7 +164,7 @@ export const projects = [
   {
     "id": "work_hokkaido_honshu_105",
     "title": "Hokkaido–Honshu HVDC Interconnection Expansion",
-    "subtitle": "A major national power transmission project designed to strengthen electricity transfer between Hokkaido and Honshu while supporting Japan's renewable energy transition.",
+    "subtitle": "A major national power transmission project designed to strengthen electricity transfer between Hokkaido and Honshu.",
     "category": "Energy",
     "designType": "Design & Build",
     "location": "Hokkaido & Honshu, Japan",
@@ -195,7 +195,7 @@ export const projects = [
   {
     "id": "work_osaka_ir_integr_106",
     "title": "Osaka IR Integrated Resort Development",
-    "subtitle": "A landmark mixed-use tourism and entertainment development being constructed on Yumeshima Island in Osaka.",
+    "subtitle": "A landmark mixed-use tourism and entertainment development constructed on Yumeshima Island in Osaka Bay.",
     "category": "Offices",
     "designType": "Design & Build",
     "location": "Osaka, Japan",
@@ -226,10 +226,10 @@ export const projects = [
   {
     "id": "work_tokyo_metropoli_107",
     "title": "Tokyo Metropolitan Underground Flood Protection Expansion",
-    "subtitle": "A large-scale urban resilience project focused on expanding Tokyo's underground flood protection and stormwater management infrastructure.",
+    "subtitle": "A large-scale urban resilience project expanding underground flood protection and water surge infrastructure across Greater Tokyo.",
     "category": "Civil Infra",
     "designType": "Design & Build",
-    "location": "Tokyo, Japan",
+    "location": "Saitama, Japan",
     "locationCategory": "Japan",
     "completion": "December, 2033",
     "completionYear": "2033",
@@ -250,7 +250,7 @@ export const projects = [
       },
       {
         "label": "Location",
-        "value": "Tokyo, Japan"
+        "value": "Saitama, Japan"
       }
     ]
   },
@@ -287,11 +287,11 @@ export const projects = [
   },
   {
     "id": "work_chuo_shinkansen_109",
-    "title": "Chuo Shinkansen (Maglev) Completion Project",
-    "subtitle": "Japan's next-generation high-speed magnetic levitation railway project connecting Tokyo, Nagoya, and Osaka through advanced transportation technology.",
+    "title": "Chuo Shinkansen (Maglev) Southern Alps Tunnel",
+    "subtitle": "Japan's next-generation high-speed magnetic levitation railway tunnel through the Southern Alps mountain range.",
     "category": "Civil Infra",
     "designType": "Design & Build",
-    "location": "Tokyo–Nagoya–Osaka, Japan",
+    "location": "Shizuoka, Japan",
     "locationCategory": "Japan",
     "completion": "December, 2037",
     "completionYear": "2037",
@@ -312,14 +312,14 @@ export const projects = [
       },
       {
         "label": "Location",
-        "value": "Tokyo–Nagoya–Osaka, Japan"
+        "value": "Shizuoka, Japan"
       }
     ]
   },
   {
     "id": "work_tokyo_metro_net_110",
-    "title": "Shinagawa Station Redevelopment & Rail Yard Redevelopment",
-    "subtitle": "A major urban rail expansion project designed to improve connectivity across the Tokyo metropolitan region.",
+    "title": "Tokyo Metro Network Expansion Phase 2",
+    "subtitle": "A major urban subway network expansion project designed to improve rail capacity and connectivity across Tokyo.",
     "category": "Civil Infra",
     "designType": "Design & Build",
     "location": "Tokyo, Japan",
@@ -349,8 +349,8 @@ export const projects = [
   },
   {
     "id": "work_osaka_metro_ext_111",
-    "title": "Shibuya Station Redevelopment (Final Phase)",
-    "subtitle": "A large-scale metro expansion initiative focused on extending existing subway corridors to rapidly developing residential and commercial districts.",
+    "title": "Osaka Metro Extension Plan",
+    "subtitle": "A high-capacity metro expansion initiative extending underground lines into developing commercial and waterfront districts in Osaka.",
     "category": "Civil Infra",
     "designType": "Design & Build",
     "location": "Osaka, Japan",
@@ -380,11 +380,11 @@ export const projects = [
   },
   {
     "id": "work_yokohama_urban__112",
-    "title": "Tokyo Station South East–West Free Passage Redevelopment",
-    "subtitle": "A strategic urban transportation project aimed at expanding Yokohama's rapid transit network with new metro corridors and interchange stations.",
+    "title": "Yokohama Municipal Subway Extension",
+    "subtitle": "A strategic municipal transportation project extending Yokohama's rapid subway transit network.",
     "category": "Civil Infra",
     "designType": "Design & Build",
-    "location": "Yokohama, Japan",
+    "location": "Yokohama, Kanagawa, Japan",
     "locationCategory": "Japan",
     "completion": "December, 2033",
     "completionYear": "2033",
@@ -405,17 +405,17 @@ export const projects = [
       },
       {
         "label": "Location",
-        "value": "Yokohama, Japan"
+        "value": "Yokohama, Kanagawa, Japan"
       }
     ]
   },
   {
     "id": "work_nagoya_metro_gr_113",
-    "title": "Nakano Station Redevelopment Project",
-    "subtitle": "A metro rail development project extending rapid transit services into newly developed suburban communities surrounding Nagoya.",
+    "title": "Nagoya Municipal Subway Meijo Line Extension",
+    "subtitle": "A metro rail development project extending rapid transit services along Nagoya's circular Meijo Subway Line.",
     "category": "Civil Infra",
     "designType": "Design & Build",
-    "location": "Nagoya, Japan",
+    "location": "Nagoya, Aichi, Japan",
     "locationCategory": "Japan",
     "completion": "December, 2031",
     "completionYear": "2031",
@@ -436,14 +436,14 @@ export const projects = [
       },
       {
         "label": "Location",
-        "value": "Nagoya, Japan"
+        "value": "Nagoya, Aichi, Japan"
       }
     ]
   },
   {
     "id": "work_fukuoka_metro_n_114",
-    "title": "Hamamatsucho Station Redevelopment Project",
-    "subtitle": "A comprehensive metro expansion project designed to enhance public transportation capacity across Fukuoka City.",
+    "title": "Fukuoka Subway Nanakuma Line Extension",
+    "subtitle": "A subway extension project enhancing urban transit connectivity between Hakata Station and downtown Fukuoka.",
     "category": "Civil Infra",
     "designType": "Design & Build",
     "location": "Fukuoka, Japan",
@@ -473,11 +473,11 @@ export const projects = [
   },
   {
     "id": "work_sapporo_metro_f_115",
-    "title": "Niigata Station Grade Separation & Urban Redevelopment",
-    "subtitle": "A next-generation metro development project extending rapid transit services to emerging residential districts in Sapporo.",
+    "title": "Sapporo Subway Tozai Line Extension",
+    "subtitle": "A rapid subway transit development project extending east-west line coverage across suburban Sapporo.",
     "category": "Civil Infra",
     "designType": "Design & Build",
-    "location": "Sapporo, Japan",
+    "location": "Sapporo, Hokkaido, Japan",
     "locationCategory": "Japan",
     "completion": "December, 2034",
     "completionYear": "2034",
@@ -498,14 +498,14 @@ export const projects = [
       },
       {
         "label": "Location",
-        "value": "Sapporo, Japan"
+        "value": "Sapporo, Hokkaido, Japan"
       }
     ]
   },
   {
     "id": "work_kyoto_urban_met_116",
-    "title": "Tohoku Shinkansen Morioka–Shin-Aomori Speed Upgrade Project",
-    "subtitle": "A strategic underground railway development focused on strengthening public transportation across Kyoto while preserving the city's historic landscape.",
+    "title": "Kyoto Subway Tozai Line Extension",
+    "subtitle": "An underground transit extension project expanding public transit access across Kyoto while preserving historical heritage sites.",
     "category": "Civil Infra",
     "designType": "Design & Build",
     "location": "Kyoto, Japan",
@@ -535,11 +535,11 @@ export const projects = [
   },
   {
     "id": "work_kobe_metro_exte_117",
-    "title": "Yamagata Shinkansen Fukushima Approach Line Project",
-    "subtitle": "An urban rail infrastructure project expanding metro connectivity between Kobe's commercial districts, residential zones, and port facilities.",
+    "title": "Kobe Subway Wangan Line Extension",
+    "subtitle": "An urban waterfront subway project connecting Kobe's port facilities, commercial zones, and residential areas.",
     "category": "Civil Infra",
     "designType": "Design & Build",
-    "location": "Kobe, Japan",
+    "location": "Kobe, Hyogo, Japan",
     "locationCategory": "Japan",
     "completion": "December, 2032",
     "completionYear": "2032",
@@ -560,17 +560,17 @@ export const projects = [
       },
       {
         "label": "Location",
-        "value": "Kobe, Japan"
+        "value": "Kobe, Hyogo, Japan"
       }
     ]
   },
   {
     "id": "work_sendai_metro_ex_118",
-    "title": "Mageshima Port & Self-Defense Base Construction Project",
-    "subtitle": "A metropolitan rail expansion initiative designed to improve accessibility across Sendai's growing urban areas.",
+    "title": "Sendai Subway Tozai Line Extension",
+    "subtitle": "A metro expansion initiative improving commuter travel times across Sendai's east-west transit corridor.",
     "category": "Civil Infra",
     "designType": "Design & Build",
-    "location": "Sendai, Japan",
+    "location": "Sendai, Miyagi, Japan",
     "locationCategory": "Japan",
     "completion": "December, 2031",
     "completionYear": "2031",
@@ -591,14 +591,14 @@ export const projects = [
       },
       {
         "label": "Location",
-        "value": "Sendai, Japan"
+        "value": "Sendai, Miyagi, Japan"
       }
     ]
   },
   {
     "id": "work_hiroshima_metro_119",
-    "title": "Tsukishima 3-Chome North District Redevelopment",
-    "subtitle": "A modern urban rail development project introducing new metro corridors to improve connectivity across Hiroshima.",
+    "title": "Hiroshima Rapid Transit Line Extension",
+    "subtitle": "An elevated and underground urban transit line extension enhancing connectivity throughout Hiroshima.",
     "category": "Civil Infra",
     "designType": "Design & Build",
     "location": "Hiroshima, Japan",
@@ -628,16 +628,16 @@ export const projects = [
   },
   {
     "id": "work_chiba_metro_cor_120",
-    "title": "Oga–Katagami–Akita Offshore Wind Farm",
-    "subtitle": "A new metro corridor project designed to improve public transportation links between residential suburbs and central business districts.",
+    "title": "Chiba Urban Monorail Line Extension",
+    "subtitle": "A major urban monorail corridor project expanding suspended rail transit between residential suburbs and central Chiba.",
     "category": "Civil Infra",
     "designType": "Design & Build",
     "location": "Chiba, Japan",
     "locationCategory": "Japan",
     "completion": "December, 2033",
     "completionYear": "2033",
-    "summary": "A new metro corridor project designed to improve public transportation links between residential suburbs and central business districts. The project includes underground tunnels, passenger stations, maintenance depots, power systems, and digital railway operations.",
-    "description": "The Oga–Katagami–Akita Offshore Wind Farm is one of Japan's designated offshore wind development areas located off the coast of Akita Prefecture. The project forms part of the Japanese government's strategy to expand renewable energy generation and accelerate the transition toward carbon neutrality through large-scale offshore wind power.\n\nThe development includes the installation of offshore wind turbines, submarine transmission cables, offshore electrical substations, and grid connection infrastructure capable of delivering renewable electricity to the mainland. Comprehensive environmental assessments and marine surveys have been conducted to support responsible project planning and construction.\n\nEngineering activities involve seabed investigations, foundation installation, specialized offshore construction vessels, and advanced marine logistics designed to withstand the challenging conditions of the Sea of Japan. Careful consideration is given to fisheries, shipping routes, and marine ecosystems throughout project development.\n\nOnce operational, the offshore wind farm will contribute significantly to Japan's renewable energy capacity, reduce greenhouse gas emissions, strengthen regional energy security, and promote sustainable economic development across Akita Prefecture.",
+    "summary": "A major urban monorail corridor project expanding suspended rail transit between residential suburbs and central Chiba. The project includes elevated steel structures, modern station platforms, power substations, and automated transit technology.",
+    "description": "The Chiba Urban Monorail Line Extension is a major municipal transit project expanding suspended monorail services across Chiba City. Designed to enhance urban mobility, reduce road congestion, and provide direct transit access between residential districts and central business centers, the project features state-of-the-art elevated rail structures and automated train operations.\n\nConstruction involves specialized elevated steel girder erection, column foundations engineered to withstand coastal soil conditions, and modern elevated station platforms. Advanced seismic isolation bearings and sound-dampening track mountings ensure rider comfort and structural resilience.\n\nUpon completion, the monorail extension will deliver faster commute times, reduce urban carbon emissions, and strengthen connectivity across the Chiba metropolitan area.",
     "details": [
       {
         "label": "Sector",
@@ -659,11 +659,11 @@ export const projects = [
   },
   {
     "id": "work_kawasaki_metro__121",
-    "title": "Murakami–Tainai Offshore Wind Farm",
-    "subtitle": "A large urban transit project expanding metro services across Kawasaki through the construction of new underground rail corridors and multimodal transport hubs.",
+    "title": "Kawasaki Rapid Transit Railway Project",
+    "subtitle": "An urban rail transit project constructing new subway corridors and multimodal hubs across Kawasaki.",
     "category": "Civil Infra",
     "designType": "Design & Build",
-    "location": "Kawasaki, Japan",
+    "location": "Kawasaki, Kanagawa, Japan",
     "locationCategory": "Japan",
     "completion": "December, 2032",
     "completionYear": "2032",
@@ -684,14 +684,14 @@ export const projects = [
       },
       {
         "label": "Location",
-        "value": "Kawasaki, Japan"
+        "value": "Kawasaki, Kanagawa, Japan"
       }
     ]
   },
   {
     "id": "work_greater_tokyo_o_122",
-    "title": "Kita-Shinagawa 4-Chome Redevelopment Project",
-    "subtitle": "A high-capacity orbital metro railway designed to improve cross-city connectivity without requiring travel through central Tokyo.",
+    "title": "Greater Tokyo Outer Loop Railway Line",
+    "subtitle": "A high-capacity orbital railway project improving regional travel across the outer Tokyo metropolitan perimeter.",
     "category": "Civil Infra",
     "designType": "Design & Build",
     "location": "Tokyo Metropolitan Area, Japan",
@@ -721,8 +721,8 @@ export const projects = [
   },
   {
     "id": "work_osaka_smart_met_123",
-    "title": "Osaka Metro Chuo Line Extension (Yumeshima Extension)",
-    "subtitle": "A combined modernization and expansion program introducing new metro lines alongside upgrades to existing infrastructure.",
+    "title": "Osaka Smart Metro Modernization & Extension",
+    "subtitle": "A modern subway renovation and expansion program deploying automated train controls and smart station systems.",
     "category": "Civil Infra",
     "designType": "Design & Build",
     "location": "Osaka, Japan",
@@ -752,11 +752,11 @@ export const projects = [
   },
   {
     "id": "work_nagoya_metropol_124",
-    "title": "Linear Chuo Shinkansen Nagoya Station Construction",
-    "subtitle": "A major underground railway construction program connecting new residential, commercial, and industrial districts throughout the Nagoya metropolitan region.",
+    "title": "Nagoya Metropolitan Subway New Line Project",
+    "subtitle": "An underground railway development expanding transit service throughout the Nagoya metropolitan region.",
     "category": "Civil Infra",
     "designType": "Design & Build",
-    "location": "Nagoya, Japan",
+    "location": "Nagoya, Aichi, Japan",
     "locationCategory": "Japan",
     "completion": "December, 2035",
     "completionYear": "2035",
@@ -777,7 +777,7 @@ export const projects = [
       },
       {
         "label": "Location",
-        "value": "Nagoya, Japan"
+        "value": "Nagoya, Aichi, Japan"
       }
     ]
   },
