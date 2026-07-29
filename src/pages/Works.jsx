@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, startTransition } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { SlidersHorizontal, RefreshCw, MapPin, Calendar, ArrowRight, Layers, Search, X } from 'lucide-react';
+import { SlidersHorizontal, RefreshCw, Calendar, ArrowRight, Layers, Search, X } from 'lucide-react';
 import { projects, workCategories } from '../data/worksContent';
 import ProjectMapPopup from '../components/ProjectMapPopup';
 
@@ -60,11 +60,6 @@ const ProjectCardMemo = React.memo(({ project, onOpenPopup, index }) => {
           onMouseEnter={e => { e.currentTarget.style.transform = 'scale(1.07)'; }}
           onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)'; }}
         />
-        {/* Gradient overlay */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{ background: 'linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.45) 100%)' }}
-        />
         {/* Category pill */}
         <div className="absolute top-3 left-3 z-10">
           <span
@@ -85,22 +80,6 @@ const ProjectCardMemo = React.memo(({ project, onOpenPopup, index }) => {
             {project.category}
           </span>
         </div>
-        {/* Location if available */}
-        {project.location && (
-          <div className="absolute bottom-3 right-3 z-10 flex items-center gap-1"
-            style={{
-              background: 'rgba(0,0,0,0.55)',
-              backdropFilter: 'blur(6px)',
-              borderRadius: '6px',
-              padding: '3px 8px',
-              color: 'rgba(255,255,255,0.88)',
-              fontSize: '0.67rem',
-              fontWeight: 600,
-            }}>
-            <MapPin size={9} />
-            <span className="truncate" style={{ maxWidth: '110px' }}>{project.location?.split(',')[0]}</span>
-          </div>
-        )}
       </div>
 
       {/* ── Info strip ── */}
