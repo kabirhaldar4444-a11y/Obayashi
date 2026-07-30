@@ -74,7 +74,7 @@ export default function ProjectDetail() {
 
   const budget = project.details?.find(d => d.label.toLowerCase() === 'budget')?.value || 'N/A';
   const client = project.details?.find(d => d.label.toLowerCase() === 'client')?.value || 'N/A';
-  const imgSrc = `/images/${project.id}.jpg?v=obayashi_real_2026_v35`;
+  const imgSrc = `/images/${project.id}.jpg?v=obayashi_real_2026_v37`;
 
   // Grab the next project in sequence for transition portal link
   const currentIndex = projects.findIndex(p => p.id === project.id);

@@ -485,7 +485,7 @@ export default function ProjectMapPopup({ project, onClose }) {
           {/* Project thumbnail */}
           <div style={{ position: 'relative', height: '180px', flexShrink: 0, overflow: 'hidden' }}>
             <img
-              src={'/images/' + project.id + '.jpg?v=obayashi_real_2026_v35'}
+              src={'/images/' + project.id + '.jpg?v=obayashi_real_2026_v37'}
               alt={project.title}
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />

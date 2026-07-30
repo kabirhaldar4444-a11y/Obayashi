@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
       <Link to={`/works/${project.id}`} className="project-card-link">
         <div className="project-card-img-wrapper">
           <img
-            src={`/images/${project.id}.jpg?v=obayashi_real_2026_v35`}
+            src={`/images/${project.id}.jpg?v=obayashi_real_2026_v37`}
             alt={project.title}
             className="project-card-img"
             loading="lazy"

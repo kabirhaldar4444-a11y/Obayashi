@@ -51,7 +51,7 @@ const ProjectCardMemo = React.memo(({ project, onOpenPopup, index }) => {
       {/* ── Image ── */}
       <div className="relative overflow-hidden" style={{ height: '218px' }}>
         <img
-          src={`/images/${project.id}.jpg?v=obayashi_real_2026_v35`}
+          src={`/images/${project.id}.jpg?v=obayashi_real_2026_v37`}
           alt={project.title}
           className="w-full h-full object-cover"
           loading="lazy"

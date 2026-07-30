@@ -151,7 +151,7 @@ export default function WorkDetail() {
   const cat = catTokens[project.category] || catTokens['Civil Infra'];
   const budget = project.details?.find(d => d.label.toLowerCase() === 'budget')?.value || null;
   const client = project.details?.find(d => d.label.toLowerCase() === 'client')?.value || null;
-  const imgSrc = `/images/${project.id}.jpg?v=obayashi_real_2026_v35`;
+  const imgSrc = `/images/${project.id}.jpg?v=obayashi_real_2026_v37`;
   const fallback = fallbackImg[project.category] || '/images/category_civil.png';
 
   const heroStats = [
@@ -681,7 +681,7 @@ export default function WorkDetail() {
                     className="group relative flex flex-col rounded-2xl overflow-hidden border border-white/8 hover:border-white/20 transition-all duration-400 bg-white/[0.02] hover:bg-white/[0.04]"
                   >
                     <div className="relative h-52 overflow-hidden">
-                      <img src={`/images/${p.id}.jpg?v=obayashi_real_2026_v35`} alt={p.title}
+                      <img src={`/images/${p.id}.jpg?v=obayashi_real_2026_v37`} alt={p.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                         onError={e => { e.target.src = fallbackImg[p.category] || fallback; e.target.onerror = null; }} />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#080c14]/80 to-transparent" />

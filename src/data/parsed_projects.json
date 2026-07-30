@@ -1612,68 +1612,6 @@
     ]
   },
   {
-    "id": "work_india_028",
-    "title": "Delhi Metro Rail Project",
-    "subtitle": "India's largest urban rapid transit network serving Delhi NCR across multiple phases, featuring elevated and underground corridors, automated train operation, and green transit standards.",
-    "category": "Civil Infra",
-    "designType": "Design & Build",
-    "location": "Delhi NCR",
-    "locationCategory": "India",
-    "completion": "2002–Ongoing Multi-Phase Expansion",
-    "completionYear": "2025",
-    "summary": "India's largest urban rapid transit network serving Delhi NCR across multiple phases, featuring elevated and underground corridors, automated train operation, and green transit standards.",
-    "description": "The Delhi Metro Rail Project is India's largest and most successful urban rapid transit system, developed and operated by the Delhi Metro Rail Corporation (DMRC). Since commencing operations in 2002, the network has expanded through multiple construction phases to serve Delhi and the National Capital Region, becoming one of the world's largest metro systems.\n\nThe project comprises elevated, underground, and at-grade metro corridors featuring modern stations, maintenance depots, advanced signaling systems, automated fare collection, platform screen doors on selected corridors, and energy-efficient rolling stock. The network provides seamless connectivity across Delhi, Noida, Gurugram, Ghaziabad, Faridabad, and surrounding urban centers.\n\nConstruction has involved complex tunneling beneath densely developed urban areas, elevated viaduct construction, river crossings, station development, and continuous network expansion while maintaining safe and uninterrupted metro operations. The project incorporates advanced engineering standards, earthquake-resistant structures, regenerative braking technology, and sustainable station design.\n\nToday, the Delhi Metro serves millions of passengers each day, significantly reducing traffic congestion, lowering urban emissions, improving regional connectivity, and setting the benchmark for modern urban rail transit development across India.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Metro Rail"
-      },
-      {
-        "label": "Budget",
-        "value": "$10+ Billion Across Major Phases"
-      },
-      {
-        "label": "Location",
-        "value": "Delhi NCR"
-      }
-    ]
-  },
-  {
-    "id": "work_india_029",
-    "title": "Chennai Metro Rail Project",
-    "subtitle": "Chennai's rapid transit network spanning elevated and underground lines across 2 phases, incorporating Japanese ODA financing, automated fare collection, and CBTC signaling.",
-    "category": "Civil Infra",
-    "designType": "Design & Build",
-    "location": "Chennai, Tamil Nadu",
-    "locationCategory": "India",
-    "completion": "2009–Ongoing Phase II Expansion",
-    "completionYear": "2009",
-    "summary": "Chennai's rapid transit network spanning elevated and underground lines across 2 phases, incorporating Japanese ODA financing, automated fare collection, and CBTC signaling.",
-    "description": "The Chennai Metro Rail Project is a modern rapid transit system developed by Chennai Metro Rail Limited (CMRL) to improve urban mobility across Chennai and its expanding metropolitan region. Since the commencement of operations in 2015, the network has continued to expand through multiple phases, providing fast, reliable, and environmentally sustainable public transportation for millions of residents.\n\nThe project comprises elevated and underground metro corridors, modern stations, maintenance depots, operational control centers, advanced signaling systems, automatic fare collection, and energy-efficient rolling stock. Ongoing Phase II expansion will significantly increase the network by connecting emerging residential, commercial, and industrial corridors across the city.\n\nConstruction involves complex underground tunneling beneath densely populated urban areas, elevated viaduct construction, deep station excavation, utility relocation, and advanced traffic management to minimize disruption during execution. Modern engineering standards, seismic-resistant structures, and sustainable construction practices are integrated throughout the project.\n\nUpon completion of future phases, the Chennai Metro Rail Project will substantially improve urban connectivity, reduce road congestion, encourage public transport usage, lower carbon emissions, and support the long-term sustainable development of the Chennai Metropolitan Region.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Metro / Tunneling"
-      },
-      {
-        "label": "Budget",
-        "value": "$8+ Billion Including Major Phases"
-      },
-      {
-        "label": "Location",
-        "value": "Chennai, Tamil Nadu"
-      }
-    ]
-  },
-  {
     "id": "work_india_030",
     "title": "High-Speed Rail Training Institute & Associated MAHSR Infrastructure, Vadodara",
     "subtitle": "A premier specialized training campus in Vadodara equipped with Japanese Shinkansen simulators, laboratories, and workshops to train engineers and personnel for India's high-speed railway network.",
