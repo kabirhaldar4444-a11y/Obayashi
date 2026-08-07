@@ -91,7 +91,7 @@ export default function Footer() {
             <li><Link to="/accessibility" className="footer-util-link">Web Accessibility</Link></li>
           </ul>
           <p className="footer-copyright">
-            Copyright &copy; {new Date().getFullYear()}, OBAYASHI CORPORATION. All rights reserved. (Plagiarism-Free Demonstration Clone)
+            Copyright &copy; {new Date().getFullYear()}, OBAYASHI CORPORATION. All rights reserved.
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight, MapPin, Calendar, ChevronLeft, ChevronRight, Layers, Volume2 } from "lucide-react";
+import { ArrowUpRight, MapPin, Calendar, ChevronLeft, ChevronRight, Layers } from "lucide-react";
 
 /* ─── Ongoing Japan Projects Only ─── */
 const PROJECTS = [
@@ -141,23 +141,9 @@ const prefersReducedMotion = () =>
   typeof window !== 'undefined' &&
   window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-/* ─── Japanese TTS helper ─── */
-function speakJapanese(text) {
-  if (!window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
-  const utter = new SpeechSynthesisUtterance(text);
-  utter.lang = "ja-JP";
-  utter.rate = 0.85;
-  utter.pitch = 1.0;
-  const voices = window.speechSynthesis.getVoices();
-  const jaVoice = voices.find(v => v.lang.startsWith("ja"));
-  if (jaVoice) utter.voice = jaVoice;
-  window.speechSynthesis.speak(utter);
-}
 
 export default function HeroSlider() {
   const [active, setActive]   = useState(0);
-  const [speaking, setSpeaking] = useState(null);
   const timerRef = useRef(null);
 
   const go = useCallback((delta) => {
@@ -180,19 +166,6 @@ export default function HeroSlider() {
     }
   }, [go]);
 
-  useEffect(() => {
-    if (window.speechSynthesis) {
-      window.speechSynthesis.getVoices();
-      window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
-    }
-  }, []);
-
-  const handleSpeak = useCallback((e, proj) => {
-    e.stopPropagation();
-    setSpeaking(proj.id);
-    speakJapanese(proj.japaneseName);
-    setTimeout(() => setSpeaking(null), 3000);
-  }, []);
 
   const ap = PROJECTS[active];
 
@@ -271,7 +244,6 @@ export default function HeroSlider() {
             const slot    = slotOf(idx, active);
             if (Math.abs(slot) > 2) return null;
             const isAct   = slot === 0;
-            const isSpeaking = speaking === proj.id;
             const cs      = cardStyle(slot);
 
             return (
@@ -299,20 +271,6 @@ export default function HeroSlider() {
                   }}
                 />
 
-                {/* 🔊 Sound Button */}
-                <button
-                  className={"hs-card-sound-btn" + (isSpeaking ? " hs-card-sound-btn--active" : "")}
-                  style={{
-                    "--accent": proj.palette.accent,
-                    "--glow":   proj.palette.glow,
-                    "--text":   proj.palette.text,
-                  }}
-                  onClick={(e) => handleSpeak(e, proj)}
-                  aria-label={"Hear Japanese name: " + proj.japaneseName}
-                  title={proj.japaneseName + " (" + proj.japaneseRomaji + ")"}
-                >
-                  <Volume2 size={13} />
-                </button>
 
                 <div className="hs-card-body">
                   <span className="hs-card-index">{proj.index}</span>
