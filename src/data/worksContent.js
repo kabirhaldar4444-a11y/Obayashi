@@ -1,8 +1,31 @@
+// Works content and project definitions
 export const workCategories = {
-  designBuild: ["All", "Design & Build", "Construction Only"],
-  facilityType: ["All", "Offices", "Civil Infra", "Energy", "Education", "Recreation"],
+  designBuild: ["All", "Design & Build", "General Contracting"],
+  facilityType: [
+    "All",
+    "Commercial Infrastructure",
+    "Industrial Infrastructure",
+    "Port Infrastructure",
+    "Railways",
+    "Renewable Energy",
+    "Solar Energy",
+    "Roads and Highways",
+    "Urban Infrastructure",
+    "Urban Transportation",
+    "Aviation",
+    "Transportation",
+    "Education",
+    "Research",
+    "Healthcare",
+    "Hospitality",
+    "Residential",
+    "Urban Redevelopment",
+    "Cultural",
+    "Sports",
+    "Government"
+  ],
   location: ["All", "Japan", "India"],
-  year: ["All", "2025", "2024", "2023", "2022", "Before 2022"]
+  year: ["All", "2030", "2031", "2032", "2033", "2034", "2035", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005", "2004", "2003", "2002", "2001", "2000", "1999", "1998", "1997", "1996", "1995", "1994", "1993", "1992", "1991", "1990", "1989", "1988", "1987", "1986", "1985", "1984", "1983", "1982", "1981", "1980", "1979", "1978", "1977", "1976", "1975", "1974", "1973", "1972", "1971", "1970", "1969", "1968", "1967", "1966", "1965", "1964"]
 };
 
 export const projects = [
@@ -782,773 +805,558 @@ export const projects = [
     ]
   },
   {
-    "id": "work_mumbai_ahmedabad_rail_200",
-    "title": "Mumbai–Ahmedabad High-Speed Rail",
-    "subtitle": "India's first high-speed railway corridor (508 km) connecting Mumbai and Ahmedabad, incorporating Japanese Shinkansen technology, a 21 km tunnel with Thane Creek undersea boring, and 320 km/h operating speeds.",
-    "category": "Civil Infra",
+    "id": "work_india_001",
+    "title": "Pune International Airport Expansion",
+    "subtitle": "A modern multi-level terminal expansion engineered to significantly scale passenger handling capacity, apron stands, and aviation logistics at Pune Airport.",
+    "category": "Aviation",
     "designType": "Design & Build",
-    "location": "Maharashtra, Gujarat & Dadra and Nagar Haveli",
+    "location": "Maharashtra",
     "locationCategory": "India",
-    "completion": "2017–Ongoing",
-    "completionYear": "2017",
-    "summary": "India's first high-speed railway corridor (508 km) connecting Mumbai and Ahmedabad, incorporating Japanese Shinkansen technology, a 21 km tunnel with Thane Creek undersea boring, and 320 km/h operating speeds.",
-    "description": "The Mumbai–Ahmedabad High-Speed Rail (MAHSR) project is India's first high-speed railway corridor, connecting Mumbai in Maharashtra with Ahmedabad in Gujarat. Developed by the National High Speed Rail Corporation Limited (NHSRCL) with technical and financial cooperation from Japan, the corridor is designed to introduce Shinkansen technology to India and significantly reduce travel times between the two major economic centers.\n\nThe approximately 508-kilometre corridor includes high-speed stations, elevated viaducts, bridges, tunnels, rolling stock depots, and advanced railway systems capable of supporting train speeds of up to 320 km/h. A notable engineering feature is the construction of a 21-kilometre tunnel near Mumbai, including an underwater section beneath Thane Creek.\n\nThe project incorporates Japanese high-speed rail technology, advanced seismic protection systems, automatic train control, dedicated tracks, and modern passenger safety standards. Large-scale civil engineering works involve precast segmental viaduct construction, river bridges, station development, and extensive utility relocation along the alignment.\n\nUpon completion, the Mumbai–Ahmedabad High-Speed Rail will transform intercity transportation in western India by reducing travel time, improving regional connectivity, promoting economic growth, and establishing the country's first operational high-speed railway network.",
+    "completion": "2033 Completion",
+    "completionYear": "2033",
+    "image": "/images/work_india_001.jpg",
+    "summary": "The Pune International Airport Expansion is a flagship aviation infrastructure project developed by the Airports Authority of India (AAI) and state agencies to transform Pune's civil enclave into a modern international gateway. The expansion includes a new integrated multi-level terminal building (NITB), rapid exit taxiways, expanded aircraft parking aprons, multi-level car parking, and advanced passenger handling systems.",
+    "description": "The Pune International Airport Expansion represents a major strategic upgrade to western India's aviation network, developed to accommodate exponential growth in regional business, industrial, and tourist air traffic. Undertaken by the Airports Authority of India (AAI) in coordination with the Indian Air Force and Maharashtra Airport Development Company, the project transforms the existing civil enclave at Lohegaon into a high-capacity, state-of-the-art international air transit hub.\n\nThe centerpiece of the expansion is the New Integrated Terminal Building (NITB), spanning over 52,000 square meters across multiple levels. Structural engineering features large-span structural steel roof trusses, high-performance insulated double-glazed curtain walls, 10 passenger boarding aerobridges, 34 automated check-in counters, in-line baggage handling systems with advanced explosives detection, and a dedicated multi-level car parking (MLCP) facility connected via climate-controlled pedestrian skywalks.\n\nCivil and airfield engineering works included the construction of high-load aircraft aprons accommodating up to 16 Code-C aircraft simultaneously, parallel taxiways, rapid exit taxiways (RET), and airfield ground lighting (AGL) systems. Rigorous engineering management was required to execute heavy structural erections, underground utility networks, and runway pavement upgrades while maintaining uninterrupted daily military and civilian flight operations within strict security and flight-curfew windows.\n\nEnvironmental sustainability is integral to the development, featuring GRIHA 4-Star and LEED Gold compliant building systems, rooftop solar photovoltaic generation, extensive rainwater harvesting reservoirs, and energy-efficient centralized HVAC with variable refrigerant flow. Upon completion, the expanded terminal increases annual passenger handling capacity to over 16 million, bolstering Maharashtra's manufacturing and IT export corridors while providing world-class international passenger comfort.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Aviation Infrastructure"
       },
       {
         "label": "Sub-Sector",
-        "value": "High-Speed Rail"
+        "value": "Airport Terminal & Airside"
       },
       {
         "label": "Budget",
-        "value": "~$15–18 Billion"
+        "value": "₹3,000–4,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "200 Acres (52,000+ m² NITB)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2033"
       },
       {
         "label": "Location",
-        "value": "Maharashtra, Gujarat & Dadra and Nagar Haveli"
+        "value": "Pune, Maharashtra"
       }
     ]
   },
   {
     "id": "work_india_002",
-    "title": "Western Dedicated Freight Corridor",
-    "subtitle": "A landmark 1,506 km dedicated freight railway corridor connecting Dadri in UP to JNPT Port in Maharashtra, separating freight from passenger traffic to dramatically boost logistics efficiency across 5 states.",
-    "category": "Civil Infra",
+    "title": "Tidel Park Chennai Expansion",
+    "subtitle": "A premium IT/ITES high-rise commercial campus expansion expanding Chennai's technological footprint with modern Grade-A smart infrastructure.",
+    "category": "Commercial Infrastructure",
     "designType": "Design & Build",
-    "location": "Uttar Pradesh, Haryana, Rajasthan, Gujarat & Maharashtra",
+    "location": "Tamil Nadu",
     "locationCategory": "India",
-    "completion": "2009–Ongoing / Substantially Operational",
-    "completionYear": "2009",
-    "summary": "A landmark 1,506 km dedicated freight railway corridor connecting Dadri in UP to JNPT Port in Maharashtra, separating freight from passenger traffic to dramatically boost logistics efficiency across 5 states.",
-    "description": "The Western Dedicated Freight Corridor (WDFC) is one of India's largest railway infrastructure projects, developed by the Dedicated Freight Corridor Corporation of India Limited (DFCCIL). Stretching approximately 1,506 kilometres from Dadri in Uttar Pradesh to Jawaharlal Nehru Port (JNPT) in Maharashtra, the corridor is designed exclusively for freight operations, separating cargo traffic from passenger railway services.\n\nThe project includes the construction of dedicated double-track freight lines, railway bridges, tunnels, stations, maintenance depots, traction substations, signaling systems, and modern logistics infrastructure. The corridor passes through Uttar Pradesh, Haryana, Rajasthan, Gujarat, and Maharashtra, connecting major industrial zones, ports, and logistics hubs across western India.\n\nDesigned to accommodate heavier axle loads, longer freight trains, and higher operating speeds than conventional freight routes, the corridor incorporates advanced signaling technology, automatic train protection systems, and high-capacity electrified railway infrastructure. These improvements significantly enhance freight efficiency and network reliability.\n\nOnce fully operational, the Western Dedicated Freight Corridor will reduce logistics costs, improve supply chain efficiency, increase railway freight capacity, support industrial development, and strengthen India's national freight transportation network under the PM Gati Shakti initiative.",
+    "completion": "2031 Completion",
+    "completionYear": "2031",
+    "image": "/images/work_india_002.jpg",
+    "summary": "The Tidel Park Chennai Expansion is a landmark commercial infrastructure development by TIDEL Park Ltd (a joint venture of TIDCO and ELCOT) expanding the iconic Taramani and Pattabiram technology corridors. The project adds millions of square feet of Grade-A IT workspace, smart enterprise incubation centers, Tier-IV data center facilities, and sustainable green office towers.",
+    "description": "The Tidel Park Chennai Expansion builds upon the monumental legacy of India's pioneering software tech park, developed to meet surging global demand for enterprise software, fintech, and semiconductor engineering spaces across Tamil Nadu. Developed under the aegis of the Tamil Nadu Industrial Development Corporation (TIDCO) and ELCOT, the expansion reinforces Chennai's status as the SaaS and technology capital of South Asia.\n\nThe multi-tower high-rise complex incorporates cutting-edge structural engineering, utilizing high-strength composite steel-concrete columns, post-tensioned flat slabs to create expansive column-free floor plates exceeding 40,000 sq. ft., and unitized double-glazed solar-reflective facades that optimize natural daylight while drastically reducing solar heat gain in Chennai's tropical climate.\n\nSpecialized building engineering includes dual-redundant 110kV dedicated electrical substations, Tier-IV ready enterprise data center infrastructure, intelligent Building Management Systems (IBMS), centralized chilled-water HVAC with thermal energy storage, automated destination-dispatch elevator banks, and multi-tier basement parking equipped with EV charging stations.\n\nAchieving LEED Platinum and IGBC Green Building Platinum ratings, the project incorporates on-site solar photovoltaic canopies, zero-liquid-discharge (ZLD) wastewater treatment plants recycling 100% of greywater for cooling and landscaping, and rainwater percolation pits across the campus. Upon completion, the development provides cutting-edge workspace for over 35,000 technology professionals.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Commercial Infrastructure"
       },
       {
         "label": "Sub-Sector",
-        "value": "Freight Railway"
+        "value": "IT/ITES Technology Parks"
       },
       {
         "label": "Budget",
-        "value": "~$10–12 Billion"
+        "value": "₹1,500–2,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "50 Acres (~3.5 Million sq. ft. Built-up)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2031"
       },
       {
         "label": "Location",
-        "value": "Uttar Pradesh, Haryana, Rajasthan, Gujarat & Maharashtra"
+        "value": "Chennai, Tamil Nadu"
       }
     ]
   },
   {
     "id": "work_india_003",
-    "title": "Mumbai Trans Harbour Link – Atal Setu",
-    "subtitle": "India's longest sea bridge (21.8 km) connecting Sewri in Mumbai to Chirle in Navi Mumbai, featuring a 16.5 km marine section, long-span orthotropic steel decks, and seismic-resistant coastal engineering.",
-    "category": "Civil Infra",
+    "title": "Shendra-Bidkin Industrial Area",
+    "subtitle": "A world-class greenfield smart industrial city in Maharashtra developed under the Delhi–Mumbai Industrial Corridor (DMIC) and AURIC.",
+    "category": "Industrial Infrastructure",
     "designType": "Design & Build",
-    "location": "Mumbai–Navi Mumbai, Maharashtra",
+    "location": "Maharashtra",
     "locationCategory": "India",
-    "completion": "January, 2024",
-    "completionYear": "2024",
-    "summary": "India's longest sea bridge (21.8 km) connecting Sewri in Mumbai to Chirle in Navi Mumbai, featuring a 16.5 km marine section, long-span orthotropic steel decks, and seismic-resistant coastal engineering.",
-    "description": "The Mumbai Trans Harbour Link (MTHL), officially named Atal Bihari Vajpayee Sewri–Nhava Sheva Atal Setu, is India's longest sea bridge, connecting Sewri in Mumbai with Chirle near Navi Mumbai. Opened to traffic in January 2024, the bridge significantly improves connectivity between Mumbai, Navi Mumbai, Jawaharlal Nehru Port, and the upcoming Navi Mumbai International Airport.\n\nThe approximately 21.8-kilometre-long bridge consists of a 16.5-kilometre marine section and a 5.5-kilometre land approach. The project includes multi-lane expressway infrastructure, interchanges, intelligent traffic management systems, toll plazas, and advanced monitoring systems designed to ensure efficient and safe operations.\n\nConstructed using modern bridge engineering techniques, the project incorporates seismic-resistant design, corrosion-resistant materials, long-span steel orthotropic decks, and high-performance concrete capable of withstanding the harsh marine environment of Mumbai Harbour. Environmental protection measures were implemented throughout construction to minimize impacts on coastal ecosystems.\n\nThe bridge has substantially reduced travel time between Mumbai and Navi Mumbai while strengthening regional transportation, improving freight movement, supporting economic growth, and enhancing connectivity to major industrial and logistics hubs across the Mumbai Metropolitan Region.",
+    "completion": "2030 Completion",
+    "completionYear": "2030",
+    "image": "/images/work_india_003.jpg",
+    "summary": "The Shendra-Bidkin Industrial Area, also known as AURIC (Aurangabad Industrial City), is India's flagship greenfield smart industrial city developed under the Delhi–Mumbai Industrial Corridor (DMIC). Spanning advanced manufacturing nodes, the project integrates 100% underground utilities, automated SCADA water supply, common effluent treatment, and smart digital governance.",
+    "description": "The Shendra-Bidkin Industrial Area represents a paradigm shift in Indian industrial town planning, developed as part of the Delhi–Mumbai Industrial Corridor (DMIC) in Chhatrapati Sambhajinagar (Aurangabad), Maharashtra. Planned by Maharashtra Industrial Township Limited (MITL) in partnership with the Government of India, the development provides a self-sustaining industrial ecosystem designed to attract global automotive, electronics, and precision engineering giants.\n\nCivil engineering infrastructure across the zone features wide multi-lane heavy-haul arterial roads with dedicated utility corridors, subterranean multi-duct trenches carrying 100% underground power and optical fiber networks, automated water distribution networks supplied via dedicated raw water pipelines from the Jayakwadi Dam, and a state-of-the-art Central Command and Control Centre (CCCC) managing civic operations in real time.\n\nIndustrial environmental sustainability is anchored by a high-capacity Common Effluent Treatment Plant (CETP) utilizing membrane bioreactors and multi-stage reverse osmosis to achieve Zero Liquid Discharge (ZLD), automated solid waste processing, dedicated industrial gas pipeline networks, and high-voltage 220kV/33kV digital gas-insulated substations ensuring 99.99% power reliability for sensitive high-tech manufacturing.\n\nThe smart city integrates social infrastructure alongside industrial plots, including residential neighborhoods, commercial hubs, exhibition centers, skill development academies, and green buffer parks. Upon full operationalization, the Shendra-Bidkin node generates over 150,000 direct and indirect manufacturing jobs, positioning Maharashtra as a premier global manufacturing destination.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Industrial Infrastructure"
       },
       {
         "label": "Sub-Sector",
-        "value": "Sea Bridge"
+        "value": "Smart Industrial City / DMIC Node"
       },
       {
         "label": "Budget",
-        "value": "~$2.1 Billion"
+        "value": "₹2,500–3,500 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "500 Acres (Part of 10,000-acre AURIC master plan)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2030"
       },
       {
         "label": "Location",
-        "value": "Mumbai–Navi Mumbai, Maharashtra"
+        "value": "Chhatrapati Sambhajinagar, Maharashtra"
       }
     ]
   },
   {
     "id": "work_india_004",
-    "title": "Dhubri–Phulbari Bridge",
-    "subtitle": "A major 19 km 4-lane bridge spanning the Brahmaputra River to connect Dhubri in Assam with Phulbari in Meghalaya, dramatically improving North-East interstate transport.",
-    "category": "Civil Infra",
+    "title": "East Coast Economic Corridor (ECEC)",
+    "subtitle": "India's premier coastal economic corridor spanning 1,000 km along the eastern seaboard to boost port-led industrialization and manufacturing trade.",
+    "category": "Industrial Infrastructure",
     "designType": "Design & Build",
-    "location": "Assam–Meghalaya",
+    "location": "Odisha, Andhra Pradesh, Tamil Nadu",
     "locationCategory": "India",
-    "completion": "2019–Ongoing",
-    "completionYear": "2019",
-    "summary": "A major 19 km 4-lane bridge spanning the Brahmaputra River to connect Dhubri in Assam with Phulbari in Meghalaya, dramatically improving North-East interstate transport.",
-    "description": "The Dhubri–Phulbari Bridge is a major road bridge under construction across the Brahmaputra River, connecting Dhubri in Assam with Phulbari in Meghalaya. Developed by the National Highways & Infrastructure Development Corporation Limited (NHIDCL), the bridge forms an important component of India's strategy to improve transportation connectivity across the northeastern region.\n\nThe project includes a multi-lane bridge, approach roads, river protection works, embankments, and associated highway infrastructure designed to provide uninterrupted road connectivity throughout the year. Once completed, it will become one of the longest river bridges in India, significantly reducing travel distance between Assam and Meghalaya.\n\nEngineering works involve deep river foundations, large-diameter bridge piers, long-span superstructures, and specialized construction techniques suited to the Brahmaputra's wide channel, strong currents, and seasonal flooding. Advanced geotechnical investigations and hydraulic studies have guided the bridge's design to ensure long-term structural stability.\n\nUpon completion, the bridge will strengthen regional connectivity, improve trade and logistics, reduce travel time, enhance access to neighboring states, and contribute to the economic development of northeastern India.",
+    "completion": "2034 Completion",
+    "completionYear": "2034",
+    "image": "/images/work_india_004.jpg",
+    "summary": "The East Coast Economic Corridor (ECEC) is India's first coastal economic corridor, developed with technical and financial assistance from the Asian Development Bank (ADB). Stretching from West Bengal and Odisha through Andhra Pradesh (Vizag–Chennai Industrial Corridor - VCIC) to Tamil Nadu, the corridor connects major deepwater ports with heavy industrial clusters.",
+    "description": "The East Coast Economic Corridor (ECEC) represents India's flagship port-led industrialization initiative along the Bay of Bengal, developed by the National Industrial Corridor Development Corporation (NICDC) in partnership with state governments and the Asian Development Bank (ADB). Spanning strategic coastal regions of Odisha, Andhra Pradesh, and Tamil Nadu, the corridor accelerates trade integration with Southeast Asia under India's Act East policy.\n\nThe multi-faceted engineering scope comprises high-capacity access-controlled coastal expressways, heavy-duty freight rail sidings, multi-modal logistics parks (MMLH), internal industrial cluster networks, and dedicated port-rail-road interchange hubs connecting major seaports including Paradip, Visakhapatnam, Kakinada, Krishnapatnam, Ennore, and Chennai.\n\nCivil engineering in coastal zones required specialized techniques, including deep soil improvement via prefabricated vertical drains (PVD) and stone columns across marine clay flats, cyclone-resilient elevated roadway embankments, anti-corrosion marine grade concrete bridges over tidal estuaries, and dedicated high-voltage power evacuation lines designed to withstand Category 4 tropical cyclones.\n\nMultiple industrial nodes—such as the Visakhapatnam, Srikalahasti, and Chittoor nodes—feature centralized industrial effluent networks, desalinated water supply pipelines, and green energy substations. When fully realized, the ECEC creates a thriving manufacturing corridor contributing significantly to India's GDP and maritime export volume.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Industrial Infrastructure"
       },
       {
         "label": "Sub-Sector",
-        "value": "Bridge / Highway"
+        "value": "Coastal Industrial Corridor / Port Connectivity"
       },
       {
         "label": "Budget",
-        "value": "~$600–700 Million"
+        "value": "₹20,000–25,000 Crores"
+      },
+      {
+        "label": "Length / Area",
+        "value": "1,000 km Multi-State Coastal Alignment"
+      },
+      {
+        "label": "Deadline",
+        "value": "2034"
       },
       {
         "label": "Location",
-        "value": "Assam–Meghalaya"
+        "value": "Odisha, Andhra Pradesh, Tamil Nadu"
       }
     ]
   },
   {
     "id": "work_india_005",
-    "title": "Chennai Peripheral Ring Road",
-    "subtitle": "A 133 km 6-lane access-controlled expressway encircling the Chennai Metropolitan Region, connecting Ennore Port, Kattupalli Port, and major industrial manufacturing hubs.",
-    "category": "Civil Infra",
+    "title": "Hyderabad Pharma City",
+    "subtitle": "The world's largest integrated pharmaceutical and life sciences manufacturing hub engineered with Zero Liquid Discharge (ZLD) smart infrastructure.",
+    "category": "Industrial Infrastructure",
     "designType": "Design & Build",
-    "location": "Chennai Metropolitan Region, Tamil Nadu",
+    "location": "Telangana",
     "locationCategory": "India",
-    "completion": "2018–Ongoing",
-    "completionYear": "2018",
-    "summary": "A 133 km 6-lane access-controlled expressway encircling the Chennai Metropolitan Region, connecting Ennore Port, Kattupalli Port, and major industrial manufacturing hubs.",
-    "description": "The Chennai Peripheral Ring Road (CPRR) is a major expressway project developed by the Chennai Metropolitan Development Authority (CMDA) and the Tamil Nadu Road Development Company (TNRDC). The corridor is designed to improve regional mobility by connecting key national highways, industrial corridors, ports, and logistics centers surrounding the Chennai Metropolitan Region.\n\nThe approximately 133-kilometre roadway includes access-controlled highway sections, grade-separated interchanges, bridges, flyovers, service roads, drainage systems, and modern traffic management infrastructure. The project provides strategic links between Ennore Port, Kattupalli Port, Chennai Port, and major industrial zones around Chennai.\n\nThe project incorporates advanced highway engineering standards, durable pavement systems, intelligent transportation technologies, and climate-resilient drainage infrastructure. Careful planning has been undertaken to improve traffic flow, reduce urban congestion, and support long-term transportation demand across the metropolitan region.\n\nWhen fully completed, the Chennai Peripheral Ring Road will enhance freight movement, improve regional connectivity, support industrial growth, reduce travel times, and strengthen Chennai's role as one of India's leading logistics and manufacturing hubs.",
+    "completion": "2032 Completion",
+    "completionYear": "2032",
+    "image": "/images/work_india_005.jpg",
+    "summary": "Hyderabad Pharma City, situated in Mucherla, Rangareddy district, is the world's largest integrated pharmaceutical cluster developed by the Telangana State Industrial Infrastructure Corporation (TSIIC). Recognized as a National Investment and Manufacturing Zone (NIMZ), the project features zero-liquid-discharge (ZLD) common effluent treatment, steam pipelines, and digital logistics.",
+    "description": "Hyderabad Pharma City is an epoch-making industrial development engineered to establish the world's preeminent life-sciences and bulk-drug manufacturing ecosystem. Conceived by the Government of Telangana and developed through the Telangana State Industrial Infrastructure Corporation (TSIIC) with NIMZ status, the mega-park caters to global vaccine, biotechnology, and active pharmaceutical ingredient (API) manufacturers.\n\nThe infrastructure engineering blueprint incorporates centralized common steam generation grids, dedicated raw water pipeline supply from the Krishna River basin, specialized hazardous chemical handling corridors, dual-circuit high-reliability electrical grids, wide concrete transport corridors, and a smart logistics hub integrated with Hyderabad's international airport cargo network.\n\nEnvironmental compliance is anchored by a state-of-the-art Common Effluent Treatment Plant (CETP) with a daily capacity exceeding 100 MLD. Utilizing advanced biological treatment, multi-stage membrane filtration, and thermal evaporators, the facility guarantees 100% Zero Liquid Discharge (ZLD), converting industrial wastewater into high-purity recycled process water and reusable salts.\n\nThe development also features research and development centers, testing labs accredited to US FDA and WHO standards, residential townships for scientists and workers, and extensive green buffer plantations. Upon completion, Hyderabad Pharma City consolidates Hyderabad's position as the 'Vaccine Capital of the World', driving life-saving pharmaceutical exports across the globe.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Industrial Infrastructure"
       },
       {
         "label": "Sub-Sector",
-        "value": "Ring Road / Highway"
+        "value": "Pharmaceutical & Life Sciences Park / NIMZ"
       },
       {
         "label": "Budget",
-        "value": "~$1.5–2 Billion"
+        "value": "₹6,000–8,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "1,000 Acres Phase I (Part of 19,000-acre master plan)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2032"
       },
       {
         "label": "Location",
-        "value": "Chennai Metropolitan Region, Tamil Nadu"
+        "value": "Mucherla / Hyderabad, Telangana"
       }
     ]
   },
   {
     "id": "work_india_006",
-    "title": "North East Road Network Connectivity Improvement Project – Phase I",
-    "subtitle": "Strategic highway widening, slope stabilization, and all-weather mountain road infrastructure across Mizoram and Meghalaya supported by ADB loan assistance.",
-    "category": "Civil Infra",
+    "title": "Amritsar-Kolkata Economic Corridor",
+    "subtitle": "A massive 800+ km industrial corridor spanning northern and eastern India to unlock high-efficiency manufacturing clusters and freight trade.",
+    "category": "Industrial Infrastructure",
     "designType": "Design & Build",
-    "location": "Mizoram & Meghalaya",
+    "location": "Punjab, West Bengal",
     "locationCategory": "India",
-    "completion": "2017–Completed",
-    "completionYear": "2017",
-    "summary": "Strategic highway widening, slope stabilization, and all-weather mountain road infrastructure across Mizoram and Meghalaya supported by ADB loan assistance.",
-    "description": "The North East Road Network Connectivity Improvement Project (NERNCIP) – Phase I is a major highway improvement initiative implemented by the Ministry of Road Transport and Highways with financial assistance from the Asian Development Bank (ADB). The project focuses on upgrading strategic road corridors across the northeastern states to improve accessibility, safety, and regional connectivity.\n\nPhase I includes the widening and rehabilitation of national and state highways, construction of bridges, slope stabilization works, improved drainage systems, and installation of modern road safety infrastructure across selected corridors in Mizoram and Meghalaya. The project aims to provide reliable all-weather transportation in mountainous terrain.\n\nEngineering activities address challenging geological conditions through retaining structures, landslide mitigation measures, improved pavement design, and climate-resilient construction techniques. Modern surveying, geotechnical investigations, and environmental management practices are incorporated to ensure sustainable infrastructure development.\n\nUpon completion, Phase I enhances transportation efficiency, improves access to remote communities, strengthens regional economic integration, and supports the long-term development of India's northeastern states.",
+    "completion": "2031 Completion",
+    "completionYear": "2031",
+    "image": "/images/work_india_006.jpg",
+    "summary": "The Amritsar-Kolkata Economic Corridor (AKEC) is one of India's most ambitious industrial megaprojects, structured around the Eastern Dedicated Freight Corridor (EDFC). Spanning from Punjab through northern agricultural belts to the maritime ports of West Bengal, the corridor integrates manufacturing clusters, freight yards, and smart expressways.",
+    "description": "The Amritsar-Kolkata Economic Corridor (AKEC) is a transformative economic artery spanning 1,800+ km across seven northern and eastern states, planned by NICDC in alignment with the Eastern Dedicated Freight Corridor. The initiative unites agricultural, mineral, and steel heartlands with global export shipping routes along the Bay of Bengal.\n\nMajor civil engineering components include Integrated Manufacturing Clusters (IMCs) established at strategic nodes such as Rajpura (Punjab), Hisar (Haryana), Agra (UP), Gaya (Bihar), and Raghunathpur (West Bengal). Each node features heavy-haul concrete roads, smart electrical sub-stations, high-capacity water distribution networks, and automated multi-modal cargo transfer yards.\n\nDirect rail spurs connect industrial parks to electrified 25-tonne axle-load EDFC freight lines, enabling 100 km/h container and bulk cargo trains to move goods across states in a fraction of traditional transit times. Advanced digital logistics platforms monitor shipment location, customs clearances, and warehouse inventories across the entire alignment.\n\nSustainable engineering practices include centralized industrial wastewater treatment, solar rooftop power on industrial sheds, and extensive green landscape buffers. Upon full implementation, AKEC catalyzes manufacturing employment for over 3 million people and drives sustainable regional development across northern and eastern India.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Industrial Infrastructure"
       },
       {
         "label": "Sub-Sector",
-        "value": "Highway / Mountain Roads"
+        "value": "Mega Industrial Freight Corridor"
       },
       {
         "label": "Budget",
-        "value": "~$500+ Million"
+        "value": "₹15,000–20,000 Crores"
+      },
+      {
+        "label": "Alignment Length",
+        "value": "800+ km Primary Industrial Focus (1,800 km EDFC Spine)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2031"
       },
       {
         "label": "Location",
-        "value": "Mizoram & Meghalaya"
+        "value": "Punjab, West Bengal & Northern Belt"
       }
     ]
   },
   {
     "id": "work_india_007",
-    "title": "North East Road Network Connectivity Improvement Project – Phase II",
-    "subtitle": "Phase II multi-state highway upgrade across Northeast India under the Act East Policy, enhancing interstate border connectivity, bridge structures, and disaster-resilient mountain transport.",
-    "category": "Civil Infra",
+    "title": "Visakhapatnam Port Expansion",
+    "subtitle": "A major maritime port modernization deepening berths, mechanizing bulk cargo handling, and building a world-class international cruise terminal in Andhra Pradesh.",
+    "category": "Port Infrastructure",
     "designType": "Design & Build",
-    "location": "Northeast India",
+    "location": "Andhra Pradesh",
     "locationCategory": "India",
-    "completion": "2018–Ongoing",
-    "completionYear": "2018",
-    "summary": "Phase II multi-state highway upgrade across Northeast India under the Act East Policy, enhancing interstate border connectivity, bridge structures, and disaster-resilient mountain transport.",
-    "description": "The North East Road Network Connectivity Improvement Project (NERNCIP) – Phase II builds upon the success of the first phase by further upgrading strategic road infrastructure across multiple northeastern states. Supported by the Government of India and the Asian Development Bank, the project aims to improve regional mobility, strengthen economic connectivity, and enhance transportation resilience throughout Northeast India.\n\nThe project includes widening existing highways, construction of new bridges, junction improvements, pavement rehabilitation, slope protection, drainage upgrades, and modern road safety features. The improved network enhances connectivity between state capitals, border regions, industrial areas, and neighboring countries under India's Act East Policy.\n\nConstruction activities involve advanced geotechnical engineering, bridge construction, climate-resilient pavement technologies, and environmental protection measures adapted to the region's mountainous terrain and high rainfall conditions. Infrastructure is designed to improve long-term durability while minimizing environmental impacts.\n\nOnce completed, Phase II will improve interstate connectivity, reduce travel times, strengthen trade and tourism, enhance disaster resilience, and support sustainable economic development across the northeastern region of India.",
+    "completion": "2035 Completion",
+    "completionYear": "2035",
+    "image": "/images/work_india_007.jpg",
+    "summary": "The Visakhapatnam Port Expansion is a strategic maritime project under the Sagarmala program executed by the Visakhapatnam Port Authority. The development expands cargo handling capacity to over 120 MMTPA by deepening the outer and inner harbors to -18.1m draft to receive fully laden Capesize vessels, constructing mechanized berths, and building an international cruise terminal.",
+    "description": "Visakhapatnam Port, one of India's premier major seaports on the eastern coast of Andhra Pradesh, is undergoing an extensive infrastructure expansion to meet surging cargo volumes in coking coal, iron ore, containerized goods, and petroleum products. Developed under the Sagarmala maritime initiative, the project elevates the port into a world-class transshipment and industrial shipping gateway.\n\nMaritime civil engineering works include extensive capital dredging in the outer harbour to achieve a draft of -18.1 meters, enabling fully laden Capesize vessels of up to 200,000 DWT to dock. The expansion comprises newly constructed heavy-duty diaphragm quay walls, deep-water bulk cargo berths, automated stacker-reclaimers (5,000 TPH capacity), and enclosed conveyor galleries.\n\nTo address environmental compliance, the port features covered dry-cargo storage domes with automated dry fog dust suppression systems, mechanized dust extraction at wagon tipplers, and 100% solar and wind power electrification for all container gantry cranes. A newly built international cruise terminal welcomes global luxury liners with state-of-the-art customs and immigration facilities.\n\nLogistics connectivity is enhanced through multi-tier grade-separated flyovers connecting the port directly to the national highway grid (NH-16) and modernized rail marshalling yards equipped with electronic interlocking. Upon completion, the project establishes Visakhapatnam as a premier green port driving trade across the Indo-Pacific.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Port Infrastructure"
       },
       {
         "label": "Sub-Sector",
-        "value": "Roads & Bridges"
+        "value": "Deepwater Seaport & Terminal Expansion"
       },
       {
         "label": "Budget",
-        "value": "~$500+ Million"
+        "value": "₹4,000–5,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "200 Acres Port Expansion & Berths"
+      },
+      {
+        "label": "Deadline",
+        "value": "2035"
       },
       {
         "label": "Location",
-        "value": "Northeast India"
+        "value": "Visakhapatnam, Andhra Pradesh"
       }
     ]
   },
   {
     "id": "work_india_008",
-    "title": "North East Road Network Connectivity Improvement Project – Phase III",
-    "subtitle": "Phase III multi-state strategic highway corridor expansion across Northeast India under the Act East Policy, supporting disaster-resilient mountain transport, border trade, and regional connectivity.",
-    "category": "Civil Infra",
+    "title": "Kandla Port Expansion",
+    "subtitle": "A mega maritime capacity expansion at Deendayal Port (Kandla & Tuna Tekra) adding deep-draft liquid, bulk, and container terminals on the Gulf of Kutch.",
+    "category": "Port Infrastructure",
     "designType": "Design & Build",
-    "location": "Northeast India",
+    "location": "Gujarat",
     "locationCategory": "India",
-    "completion": "2020–Ongoing",
-    "completionYear": "2020",
-    "summary": "Phase III multi-state strategic highway corridor expansion across Northeast India under the Act East Policy, supporting disaster-resilient mountain transport, border trade, and regional connectivity.",
-    "description": "The North East Road Network Connectivity Improvement Project (NERNCIP) – Phase III is a continuation of India's long-term initiative to strengthen transportation infrastructure across the northeastern states. Building on the achievements of the earlier phases, the program focuses on improving strategic road corridors that enhance regional connectivity, economic development, and access to remote communities. The project supports the Government of India's vision for sustainable infrastructure growth under the Act East Policy.\n\nPhase III includes highway widening, construction of new bridges, pavement rehabilitation, slope stabilization works, drainage improvements, and the installation of modern road safety infrastructure. The upgraded network is designed to provide reliable all-weather connectivity while improving access between state capitals, border areas, industrial zones, and neighboring countries.\n\nEngineering works address the challenging terrain of Northeast India through advanced geotechnical investigations, landslide mitigation measures, climate-resilient road construction techniques, and environmentally responsible infrastructure development. Careful planning ensures long-term durability while minimizing environmental impacts across ecologically sensitive regions.\n\nUpon completion, the project will improve interstate mobility, reduce travel times, strengthen logistics and trade, enhance disaster resilience, and contribute to the social and economic development of India's northeastern region.",
+    "completion": "2033 Completion",
+    "completionYear": "2033",
+    "image": "/images/work_india_008.jpg",
+    "summary": "The Kandla Port Expansion, undertaken by the Deendayal Port Authority (DPA) in the Gulf of Kutch, Gujarat, is a strategic mega-project developing deep-draft container and multipurpose terminals at Tuna Tekra, modernizing oil jetties, and expanding liquid cargo handling to over 150 MMTPA under the Sagarmala initiative.",
+    "description": "Deendayal Port at Kandla in the Gulf of Kutch is India's highest cargo-handling major seaport by volume, serving the extensive industrial and agricultural hinterlands of Gujarat, Rajasthan, Punjab, Haryana, and Delhi NCR. The expansion project dramatically scales up containerized and liquid bulk cargo capacity to support India's burgeoning trade.\n\nThe centerpiece of the expansion is the development of a mega container terminal at Tuna Tekra with a draft of -16 meters, capable of accommodating next-generation container vessels of up to 18,000 TEU. The engineering scope includes a 1.1-kilometer container berth, heavy-duty approach trestles, back-up container stacking yards, and dedicated rail connectivity.\n\nLiquid cargo infrastructure is significantly augmented through the construction of specialized oil jetties equipped with high-pressure marine loading arms, automated vapor recovery units, and insulated chemical pipelines connected to tank farms. Marine piling across the soft marine clay and tidal flats of the Gulf of Kutch utilized heavy hydraulic hammer pile-drivers and corrosion-resistant prestressed concrete.\n\nAdvanced tidal monitoring and hydrodynamic models guide automated dredging operations in the high-tidal-range (up to 7 meters) estuary. Upon full commissioning, the expanded Kandla Port reinforces India's western maritime trade dominance and optimizes bulk cargo logistics across northwestern India.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Port Infrastructure"
       },
       {
         "label": "Sub-Sector",
-        "value": "Roads & Bridges"
+        "value": "Container & Liquid Cargo Terminal Expansion"
       },
       {
         "label": "Budget",
-        "value": "~$500+ Million"
+        "value": "₹2,000–3,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "150 Acres Berths & Interchanges"
+      },
+      {
+        "label": "Deadline",
+        "value": "2033"
       },
       {
         "label": "Location",
-        "value": "Northeast India"
+        "value": "Kandla, Gujarat"
       }
     ]
   },
   {
     "id": "work_india_009",
-    "title": "Bihar National Highway Improvement Project – Phase I",
-    "subtitle": "Major national highway modernization initiative across Bihar, upgrading key commercial corridors, bridge structures, and traffic capacity under MORTH.",
-    "category": "Civil Infra",
+    "title": "Rishikesh-Karanprayag Rail Line",
+    "subtitle": "A monumental 125 km broad-gauge Himalayan mountain railway with over 105 km in NATM tunnels and iconic gorge bridges across Uttarakhand.",
+    "category": "Railways",
     "designType": "Design & Build",
-    "location": "Bihar",
+    "location": "Uttarakhand",
     "locationCategory": "India",
-    "completion": "2010–Completed",
-    "completionYear": "2010",
-    "summary": "Major national highway modernization initiative across Bihar, upgrading key commercial corridors, bridge structures, and traffic capacity under MORTH.",
-    "description": "The Bihar National Highway Improvement Project – Phase I is a major highway modernization initiative aimed at upgrading key national highway corridors across the state of Bihar. Developed under the Ministry of Road Transport and Highways, the project seeks to improve road capacity, safety, and connectivity while supporting economic growth and regional transportation efficiency.\n\nThe project includes widening existing highways, strengthening pavement structures, constructing bridges and flyovers, improving junctions, upgrading drainage systems, and implementing modern road safety measures. These improvements increase traffic capacity while providing safer and more reliable transportation for both passenger and freight movement.\n\nEngineering activities include ground improvement, bridge rehabilitation, utility relocation, advanced pavement construction, and traffic management during construction. The project incorporates modern highway design standards to improve long-term durability and operational performance under increasing traffic volumes.\n\nOnce completed, Phase I enhances connectivity between major cities, industrial areas, agricultural regions, and neighboring states, contributing to improved logistics, regional development, and safer transportation throughout Bihar.",
+    "completion": "2032 Completion",
+    "completionYear": "2032",
+    "image": "/images/work_india_009.jpg",
+    "summary": "The Rishikesh-Karanprayag Rail Line is an extraordinary mountain infrastructure megaproject executed by Rail Vikas Nigam Limited (RVNL) in the Garhwal Himalayas of Uttarakhand. Spanning 125 kilometers through rugged alpine terrain, over 84% of the alignment (105+ km) is constructed inside 17 deep rock tunnels, establishing a permanent, all-weather railway connection to holy pilgrimage shrines and strategic defense borders.",
+    "description": "The Rishikesh-Karanprayag Rail Line is one of the most formidable high-altitude railway engineering undertakings in global civil construction history. Developed by Rail Vikas Nigam Limited (RVNL) under the Ministry of Railways, the 125-kilometer broad-gauge corridor weaves through five Himalayan districts (Dehradun, Tehri Garhwal, Pauri Garhwal, Rudraprayag, and Chamoli) to link Rishikesh with Karanprayag.\n\nOwing to the young, fragile geological formations of the Himalayas, over 105 kilometers (84% of the route) is built within 17 deep underground tunnels, including India's longest railway tunnel (Tunnel No. 8 spanning 15.1 km between Devprayag and Janasu). Tunneling is executed using the New Austrian Tunneling Method (NATM) and Double-Shield Hard-Rock Tunnel Boring Machines (TBMs), supported by robotic shotcreting, heavy steel rib supports, and umbrella pipe-roofing.\n\nThe surface alignment incorporates 35 major bridges, 18 minor bridges, and 12 modern railway stations spanning deep alpine valleys and the roaring torrents of the Alaknanda and Ganga rivers. Structural bridge engineering features long-span steel bowstring arch bridges, tall reinforced concrete piers exceeding 60 meters in height, and seismic elastomeric pot bearings designed to withstand Richter Scale 8+ earthquakes in Seismic Zone V.\n\nAll tunnel portals integrate cross-passages every 250 meters for emergency egress, automated jet-fan forced ventilation, digital fire alarm grids, and continuous rock-stress sensors linked to satellite command centers. Upon completion, the rail line reduces travel time between Rishikesh and Karanprayag from 7 hours on winding mountain roads to under 2 hours by train, boosting tourism, pilgrimage security, and military logistics.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Railways"
       },
       {
         "label": "Sub-Sector",
-        "value": "National Highway"
+        "value": "Himalayan Mountain Railway / Deep Rock Tunneling"
       },
       {
         "label": "Budget",
-        "value": "~$300–500 Million"
+        "value": "₹3,000–4,000 Crores (Initial Phase Components)"
+      },
+      {
+        "label": "Length",
+        "value": "125 km (105+ km Underground in Tunnels)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2032"
       },
       {
         "label": "Location",
-        "value": "Bihar"
+        "value": "Garhwal Himalayas, Uttarakhand"
       }
     ]
   },
   {
     "id": "work_india_010",
-    "title": "Bihar National Highway Improvement Project – Phase II",
-    "subtitle": "Phase II expansion of highway corridors, bypasses, river bridges, and flood-resilient pavement infrastructure across Bihar to reduce travel times and boost regional trade.",
-    "category": "Civil Infra",
+    "title": "Singrauli Solar Park",
+    "subtitle": "A massive 2,500+ acre ultra-mega solar power development combining ground-mounted solar arrays and floating photovoltaic modules across Madhya Pradesh.",
+    "category": "Solar Energy",
     "designType": "Design & Build",
-    "location": "Bihar",
+    "location": "Madhya Pradesh",
     "locationCategory": "India",
-    "completion": "2020–Ongoing",
-    "completionYear": "2020",
-    "summary": "Phase II expansion of highway corridors, bypasses, river bridges, and flood-resilient pavement infrastructure across Bihar to reduce travel times and boost regional trade.",
-    "description": "The Bihar National Highway Improvement Project – Phase II expands upon the infrastructure upgrades initiated during the first phase by modernizing additional highway corridors throughout Bihar. The project focuses on increasing transportation capacity, reducing congestion, and improving connectivity between urban centers, rural communities, and key economic corridors.\n\nMajor works include highway widening, construction of bypasses, new bridges, pavement rehabilitation, intersection improvements, drainage upgrades, and installation of intelligent traffic management and road safety systems. The upgraded network is designed to accommodate growing traffic demand while improving travel efficiency across the state.\n\nConstruction incorporates modern highway engineering techniques, high-performance pavement materials, improved drainage infrastructure, and resilient bridge designs capable of withstanding seasonal flooding common across Bihar's river systems. Environmental protection measures are integrated throughout project implementation.\n\nFollowing completion, Phase II will strengthen regional transportation infrastructure, reduce travel times, improve freight movement, support industrial and agricultural development, and enhance overall road safety across Bihar.",
+    "completion": "2034 Completion",
+    "completionYear": "2034",
+    "image": "/images/work_india_010.jpg",
+    "summary": "The Singrauli Solar Park is a landmark renewable energy infrastructure project developed in Singrauli, Madhya Pradesh (historically known as India's Energy Capital). Spanning over 2,500 acres of arid wasteland and reservoir backwaters, the 1,200+ MW ultra-mega solar complex integrates high-efficiency bifacial mono-PERC PV modules, single-axis solar tracking, and floating solar pontoon arrays.",
+    "description": "Singrauli in Madhya Pradesh, long celebrated as India's thermal energy hub, is undergoing a historic green transition through the development of the Singrauli Solar Park. Executed by the Rewa Ultra Mega Solar Limited (RUMSL) and central public sector undertakings, the multi-gigawatt solar complex delivers clean, zero-carbon electricity to the national power grid.\n\nThe engineering layout spans over 2,500 acres of non-agricultural terrain and features ground-mounted solar arrays utilizing automated single-axis horizontal trackers that rotate modules to follow the sun's path, boosting annual energy yields by over 18% compared to fixed-tilt systems. The arrays utilize high-efficiency 600W+ bifacial mono-PERC solar photovoltaic cells that capture reflected albedo radiation from the ground.\n\nA specialized engineering component involves floating photovoltaic (FPV) arrays installed across water reservoirs. These floating arrays utilize UV-stabilized high-density polyethylene (HDPE) pontoons and specialized anchoring tethers that adapt to fluctuating seasonal water levels while reducing water evaporation losses by millions of cubic meters each year.\n\nPower evacuation is managed through dual 400kV/220kV Gas-Insulated Substations (GIS) and dedicated high-voltage transmission lines integrated into the Green Energy Corridor. Centralized SCADA systems equipped with drone thermography and automated dry robotic cleaning eliminate water consumption during panel maintenance. Upon completion, the park avoids over 2 million tonnes of CO2 emissions annually.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Renewable Energy"
       },
       {
         "label": "Sub-Sector",
-        "value": "National Highway"
+        "value": "Ultra-Mega Solar & Floating Photovoltaics"
       },
       {
         "label": "Budget",
-        "value": "~$300–500 Million"
+        "value": "₹5,000–7,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "2,500+ Acres (Ground-Mounted & Floating)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2034"
       },
       {
         "label": "Location",
-        "value": "Bihar"
+        "value": "Singrauli, Madhya Pradesh"
       }
     ]
   },
   {
     "id": "work_india_011",
-    "title": "Delhi–Mumbai Industrial Corridor",
-    "subtitle": "A 1,500 km mega-industrial corridor spanning 7 states along the WDFC, establishing smart cities, multimodal logistics parks, and world-class manufacturing clusters with Japanese support.",
-    "category": "Offices",
+    "title": "Ludhiana Elevated Road Project",
+    "subtitle": "A 13 km 4-lane elevated urban arterial expressway along NH-5 (Ferozepur Road) eliminating severe bottlenecks across Ludhiana's industrial core.",
+    "category": "Roads and Highways",
     "designType": "Design & Build",
-    "location": "Delhi to Maharashtra across multiple states",
+    "location": "Punjab",
     "locationCategory": "India",
-    "completion": "2008–Ongoing Master Plan",
-    "completionYear": "2008",
-    "summary": "A 1,500 km mega-industrial corridor spanning 7 states along the WDFC, establishing smart cities, multimodal logistics parks, and world-class manufacturing clusters with Japanese support.",
-    "description": "The Delhi–Mumbai Industrial Corridor (DMIC) is one of India's largest infrastructure and industrial development initiatives, spanning approximately 1,500 kilometres between Delhi and Mumbai. Developed by the Government of India with support from Japan, the corridor is designed to establish world-class industrial infrastructure, smart cities, logistics hubs, and manufacturing clusters along the Western Dedicated Freight Corridor.\n\nThe project includes integrated industrial townships, multimodal logistics parks, freight terminals, expressways, power infrastructure, water supply systems, urban utilities, and advanced digital infrastructure. Multiple investment regions and industrial nodes are being developed across Delhi, Uttar Pradesh, Haryana, Rajasthan, Madhya Pradesh, Gujarat, and Maharashtra.\n\nThe corridor incorporates modern urban planning principles emphasizing sustainable development, smart infrastructure, renewable energy integration, intelligent transportation systems, and efficient utility management. Large-scale civil engineering works support long-term industrial growth while improving connectivity between manufacturing centers, ports, and domestic markets.\n\nUpon completion, the Delhi–Mumbai Industrial Corridor is expected to transform India's manufacturing sector, attract domestic and international investment, generate employment opportunities, strengthen export competitiveness, and support balanced regional economic development.",
+    "completion": "2030 Completion",
+    "completionYear": "2030",
+    "image": "/images/work_india_011.jpg",
+    "summary": "The Ludhiana Elevated Road Project is a critical urban highway infrastructure project executed by the National Highways Authority of India (NHAI) along NH-5 (Ferozepur Road) in Ludhiana, Punjab. Stretching approximately 13 km from Octroi Post to Samrala Chowk, the 4-lane elevated corridor bypasses major congested city junctions and commercial hubs.",
+    "description": "Ludhiana, known as the 'Manchester of India', is the largest industrial manufacturing and textile center in Punjab. To resolve crippling traffic bottlenecks along its busiest commercial spine (Ferozepur Road / NH-5), NHAI commissioned the Ludhiana Elevated Expressway to separate through-freight traffic from local commuter transit.\n\nThe structural design incorporates precast prestressed segmental concrete box girders erected using overhead launching gantries over single-pier portal bents. This cantilever pier design minimizes the ground footprint, allowing existing surface roadways and market lanes below to remain fully functional.\n\nCivil engineering challenges included rerouting dense underground storm drains, high-voltage transmission lines, and water utility networks in densely populated urban quarters. The project includes dedicated entry and exit ramps at critical nodes such as Bhai Bala Chowk, Bharat Nagar Chowk, and the Ludhiana Bus Terminal.\n\nEquipped with vibration-damped expansion joints, high-durability mastic asphalt wearing coats, LED smart street lighting, and automated traffic surveillance cameras (ATMS), the elevated highway slashes crosstown travel times from over 45 minutes to just 10 minutes.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Roads and Highways"
       },
       {
         "label": "Sub-Sector",
-        "value": "Industrial Corridor"
+        "value": "Elevated Urban Arterial Expressway"
       },
       {
         "label": "Budget",
-        "value": "~$90–100 Billion Overall Vision"
+        "value": "₹1,500–2,000 Crores"
+      },
+      {
+        "label": "Corridor Length",
+        "value": "13 km 4-Lane Elevated Viaduct"
+      },
+      {
+        "label": "Deadline",
+        "value": "2030"
       },
       {
         "label": "Location",
-        "value": "Delhi to Maharashtra across multiple states"
+        "value": "Ludhiana, Punjab"
       }
     ]
   },
   {
     "id": "work_india_012",
-    "title": "Dholera Special Investment Region / Industrial City",
-    "subtitle": "India's flagship Greenfield Smart City in Gujarat under DMIC, featuring integrated underground utility ducts, smart city ICT platforms, and eco-friendly manufacturing zones.",
-    "category": "Offices",
+    "title": "Jaipur Elevated Road Project",
+    "subtitle": "A 12 km elevated corridor across western Jaipur seamlessly connecting Sodala, Ajmer Road, and the 200 Feet Bypass with modern flyovers.",
+    "category": "Roads and Highways",
     "designType": "Design & Build",
-    "location": "Dholera, Gujarat",
+    "location": "Rajasthan",
     "locationCategory": "India",
-    "completion": "2011–Ongoing Greenfield Development",
-    "completionYear": "2011",
-    "summary": "India's flagship Greenfield Smart City in Gujarat under DMIC, featuring integrated underground utility ducts, smart city ICT platforms, and eco-friendly manufacturing zones.",
-    "description": "Dholera Special Investment Region (DSIR), also known as Dholera Industrial City, is India's first Greenfield Smart City being developed under the Delhi–Mumbai Industrial Corridor program. Located in Gujarat, the project aims to establish a globally competitive industrial and urban center equipped with world-class infrastructure, advanced manufacturing facilities, and sustainable urban planning.\n\nThe development includes industrial zones, commercial districts, residential neighborhoods, logistics parks, utilities, smart transportation systems, water management infrastructure, renewable energy integration, and advanced information and communication technology networks. The city is planned using integrated smart-city principles to support future industrial and economic growth.\n\nEngineering works involve large-scale land development, road construction, underground utility corridors, flood management systems, water treatment facilities, power distribution infrastructure, and digital city management platforms. Sustainable infrastructure and climate-resilient design principles are incorporated throughout the master plan.\n\nWhen fully developed, Dholera Industrial City is expected to become one of India's leading manufacturing and technology hubs, attracting global investment, promoting innovation, creating employment opportunities, and supporting the country's long-term industrialization objectives.",
+    "completion": "2034 Completion",
+    "completionYear": "2034",
+    "image": "/images/work_india_012.jpg",
+    "summary": "The Jaipur Elevated Road Project, executed by the Jaipur Development Authority (JDA) and state road corporations, is a major transportation infrastructure development connecting Sodala, Hawa Sadak, Ajmer Road, and the western 200 Feet Bypass. Spanning over 12 km of elevated concrete and composite steel viaducts, the project eliminates surface gridlock in the Pink City.",
+    "description": "Jaipur, the capital of Rajasthan and a cornerstone of the Golden Triangle tourism corridor, has seen rapid vehicular growth across its western suburbs and industrial nodes. The Jaipur Elevated Road Project provides a grade-separated express corridor over heavily congested heritage and modern commercial districts.\n\nThe engineering design utilizes single-column cantilever piers supporting curved steel-concrete composite box girders at major junction curves and precast prestressed U-girders along straight tangent alignments. This hybrid structural system accommodated sharp urban curvature while maintaining high aesthetic elegance complementing Jaipur's architectural heritage.\n\nCivil construction required precision foundation engineering across sandy loam and calcareous soils. Elevated ramps connect directly to the Sodala Elevated Road and Jaipur Metro Line 1 interchange, providing multi-modal transit synchronization for daily commuters.\n\nThe elevated expressway features solar-powered LED illumination, automated speed monitoring radars, central crash barriers meeting MASH TL-4 crash test criteria, and aesthetic heritage-styled facade finishes. Upon completion, travel time between central Jaipur and the Ajmer Highway is reduced by 70%.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Roads and Highways"
       },
       {
         "label": "Sub-Sector",
-        "value": "Industrial Smart City"
+        "value": "Urban Elevated Expressway & Interchange"
       },
       {
         "label": "Budget",
-        "value": "Multi-Billion-Dollar Development"
+        "value": "₹2,000–3,000 Crores"
+      },
+      {
+        "label": "Corridor Length",
+        "value": "12 km 4/6-Lane Viaduct"
+      },
+      {
+        "label": "Deadline",
+        "value": "2034"
       },
       {
         "label": "Location",
-        "value": "Dholera, Gujarat"
+        "value": "Jaipur, Rajasthan"
       }
     ]
   },
   {
     "id": "work_india_013",
-    "title": "Chennai–Bengaluru Industrial Corridor",
-    "subtitle": "A high-impact economic corridor connecting Tamil Nadu, Andhra Pradesh, and Karnataka, fostering advanced electronics, automotive, and aerospace manufacturing with ADB partnership.",
-    "category": "Offices",
+    "title": "Raipur-Durg Expressway",
+    "subtitle": "A 56 km 6-lane access-controlled greenfield expressway connecting Chhattisgarh's capital with the Bhilai-Durg industrial hub under Bharatmala Pariyojana.",
+    "category": "Roads and Highways",
     "designType": "Design & Build",
-    "location": "Tamil Nadu, Andhra Pradesh & Karnataka",
+    "location": "Chhattisgarh",
     "locationCategory": "India",
-    "completion": "2013–Ongoing Master Plan",
-    "completionYear": "2013",
-    "summary": "A high-impact economic corridor connecting Tamil Nadu, Andhra Pradesh, and Karnataka, fostering advanced electronics, automotive, and aerospace manufacturing with ADB partnership.",
-    "description": "The Chennai–Bengaluru Industrial Corridor (CBIC) is a major economic development initiative jointly promoted by the Government of India and the Asian Development Bank to strengthen industrial growth across Tamil Nadu, Andhra Pradesh, and Karnataka. The corridor connects two of southern India's most important manufacturing and technology regions while enhancing regional competitiveness and infrastructure.\n\nThe project includes industrial parks, logistics hubs, transportation infrastructure, urban utilities, power systems, water supply networks, and smart industrial townships designed to support manufacturing, electronics, automotive, aerospace, and high-technology industries. Improved road and rail connectivity strengthens supply chains across the corridor.\n\nInfrastructure development incorporates sustainable planning principles, modern industrial infrastructure, multimodal logistics systems, environmental management measures, and resilient utility networks capable of supporting long-term economic expansion. Strategic investments improve connectivity between ports, airports, industrial clusters, and urban centers.\n\nUpon completion, the Chennai–Bengaluru Industrial Corridor will stimulate industrial investment, strengthen regional manufacturing capabilities, improve logistics efficiency, generate employment opportunities, and contribute significantly to India's economic growth and global industrial competitiveness.",
+    "completion": "2033 Completion",
+    "completionYear": "2033",
+    "image": "/images/work_india_013.jpg",
+    "summary": "The Raipur-Durg Expressway is a high-speed, 6-lane access-controlled greenfield highway developed by the National Highways Authority of India (NHAI) under the Bharatmala Pariyojana in Chhattisgarh. Spanning 56 km between Raipur and the twin cities of Bhilai and Durg, the expressway forms a high-capacity freight conduit for central India's steel and cement belts.",
+    "description": "The Raipur-Durg-Bhilai urban agglomeration is the economic powerhouse of Chhattisgarh, home to the Bhilai Steel Plant, heavy industrial machinery manufacturers, and extensive educational and commercial centers. The Raipur-Durg Expressway separates high-speed heavy industrial freight from congested local bypass routes.\n\nEngineered with rigid Pavement Quality Concrete (PQC) designed for 40-year lifespans under intense 30-tonne commercial truck axle loads, the expressway incorporates automated slipform paving machinery, stabilized sub-base layers using granulated blast-furnace slag (GGBS), and high-durability dowel bar load transfer systems.\n\nThe alignment features multiple grade-separated diamond and trumpet interchanges, 14 major and minor river bridges over the Kharun river basin, 28 vehicular underpasses (VUP), and dedicated green wildlife corridors preventing animal collisions.\n\nEquipped with an Advanced Traffic Management System (ATMS), optical fiber surveillance, variable message signboards (VMS), and high-speed multi-lane free-flow (MLFF) FASTag electronic tolling, the expressway cuts transit time between Raipur and Durg to just 25 minutes.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Roads and Highways"
       },
       {
         "label": "Sub-Sector",
-        "value": "Industrial Corridor"
+        "value": "Access-Controlled Greenfield Expressway"
       },
       {
         "label": "Budget",
-        "value": "Multi-Billion-Dollar Program"
+        "value": "₹3,000–4,000 Crores"
+      },
+      {
+        "label": "Length",
+        "value": "56 km 6-Lane Access-Controlled Highway"
+      },
+      {
+        "label": "Deadline",
+        "value": "2033"
       },
       {
         "label": "Location",
-        "value": "Tamil Nadu, Andhra Pradesh & Karnataka"
+        "value": "Raipur–Bhilai–Durg, Chhattisgarh"
       }
     ]
   },
   {
     "id": "work_india_014",
-    "title": "Tamil Nadu Investment Promotion / Industrial Infrastructure Program",
-    "subtitle": "State-wide industrial infrastructure program developing world-class industrial parks, power networks, water treatment, and logistics connectivity to boost manufacturing export competitiveness.",
-    "category": "Offices",
+    "title": "Bengaluru Elevated Corridor",
+    "subtitle": "A massive multi-level elevated expressway network across Bengaluru connecting Silk Board, Hebbal, and Electronic City to eliminate urban gridlock.",
+    "category": "Roads and Highways",
     "designType": "Design & Build",
-    "location": "Tamil Nadu",
+    "location": "Karnataka",
     "locationCategory": "India",
-    "completion": "2013–Ongoing Program",
-    "completionYear": "2013",
-    "summary": "State-wide industrial infrastructure program developing world-class industrial parks, power networks, water treatment, and logistics connectivity to boost manufacturing export competitiveness.",
-    "description": "The Tamil Nadu Investment Promotion and Industrial Infrastructure Program is a state-led initiative designed to strengthen industrial growth by developing world-class infrastructure across key manufacturing and investment regions. Implemented by the Government of Tamil Nadu with support from international development partners, the program aims to enhance the state's competitiveness as one of India's leading industrial and export destinations.\n\nThe program focuses on the development of industrial parks, internal road networks, water supply systems, power distribution infrastructure, drainage facilities, logistics connectivity, and common industrial utilities. These infrastructure improvements support sectors including automobiles, electronics, renewable energy, textiles, aerospace, and advanced manufacturing.\n\nEngineering works include construction of industrial access roads, utility corridors, substations, wastewater management systems, and sustainable urban infrastructure designed to accommodate long-term industrial expansion. Modern planning principles emphasize environmental sustainability, resource efficiency, and resilient infrastructure capable of supporting future investment.\n\nThe program continues to attract domestic and international manufacturers by providing reliable infrastructure, improving ease of doing business, creating employment opportunities, and strengthening Tamil Nadu's position as one of India's premier industrial states.",
+    "completion": "2032 Completion",
+    "completionYear": "2032",
+    "image": "/images/work_india_014.jpg",
+    "summary": "The Bengaluru Elevated Corridor is a landmark urban infrastructure megaproject undertaken by the Karnataka Road Development Corporation (KRDCL) and BMRDA in Bengaluru, Karnataka. Spanning over 22 km of elevated viaducts across North–South and East–West axes, the project connects tech corridors from Silk Board to Hebbal and Electronic City.",
+    "description": "Bengaluru, India's Silicon Valley, is one of the world's most dynamic technology metropolises but faces acute urban congestion across its arterial junctions. The Bengaluru Elevated Corridor network provides high-speed, grade-separated transit routes that bypass dense surface traffic and intersection bottlenecks.\n\nThe structural engineering incorporates double-deck and cantilever single-pier viaduct designs. At critical junctions, the lower elevated tier carries multi-lane vehicular express traffic while the upper tier accommodates mass rapid metro transit, drastically reducing the required surface right-of-way footprint.\n\nTo minimize traffic disruption during construction, the project utilizes off-site precast segmental concrete box girders manufactured in automated casting yards and erected using self-propelled modular transporters (SPMT) and overhead launching trusses during night shifts.\n\nThe elevated expressway includes integrated rainwater harvesting channels within pier columns, acoustic sound barrier walls near residential neighborhoods, dynamic LED lighting grids, and seamless ramp connections to major IT campuses and the Kempegowda International Airport road.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Roads and Highways"
       },
       {
         "label": "Sub-Sector",
-        "value": "Industrial Infrastructure"
+        "value": "Multi-Tier Urban Elevated Expressway"
       },
       {
         "label": "Budget",
-        "value": "~$1+ Billion Across Phases"
+        "value": "₹3,500–4,500 Crores"
       },
       {
-        "label": "Location",
-        "value": "Tamil Nadu"
-      }
-    ]
-  },
-  {
-    "id": "work_india_015",
-    "title": "Purulia Pumped Storage Project",
-    "subtitle": "A 900 MW landmark hydroelectric pumped-storage power station in West Bengal featuring twin reservoirs, underground caverns, and reversible pump-turbine units to stabilize peak grid loads.",
-    "category": "Energy",
-    "designType": "Design & Build",
-    "location": "Purulia, West Bengal",
-    "locationCategory": "India",
-    "completion": "2008–Completed",
-    "completionYear": "2008",
-    "summary": "A 900 MW landmark hydroelectric pumped-storage power station in West Bengal featuring twin reservoirs, underground caverns, and reversible pump-turbine units to stabilize peak grid loads.",
-    "description": "The Purulia Pumped Storage Project is a major hydroelectric pumped-storage power station located in the Purulia district of West Bengal. Developed by the West Bengal State Electricity Distribution Company and associated state agencies, the project provides valuable peak-load power generation while supporting grid stability through large-scale energy storage.\n\nThe facility consists of upper and lower reservoirs connected through underground waterways, pressure shafts, tunnels, powerhouse caverns, and reversible pump-turbine generating units. During periods of low electricity demand, water is pumped to the upper reservoir and later released to generate electricity during peak demand periods.\n\nThe project required extensive civil engineering works, including dam construction, underground excavation, tunnel boring, powerhouse development, and installation of high-capacity electro-mechanical equipment. Advanced engineering techniques were employed to ensure reliable operation while addressing the region's geological and topographical conditions.\n\nThe Purulia Pumped Storage Project plays an important role in balancing electricity demand, supporting renewable energy integration, improving grid reliability, and enhancing the overall stability of eastern India's power network.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
+        "label": "Corridor Length",
+        "value": "22 km Elevated Viaduct Network"
       },
       {
-        "label": "Sub-Sector",
-        "value": "Hydropower / Pumped Storage"
-      },
-      {
-        "label": "Budget",
-        "value": "~$700–900 Million"
-      },
-      {
-        "label": "Location",
-        "value": "Purulia, West Bengal"
-      }
-    ]
-  },
-  {
-    "id": "work_india_016",
-    "title": "Turga Pumped Storage Project",
-    "subtitle": "A 1,000 MW hydro energy storage development in Purulia, West Bengal, engineered with upper and lower dams, subterranean powerhouse caverns, and reversible pump-turbines for renewable grid balancing.",
-    "category": "Energy",
-    "designType": "Design & Build",
-    "location": "Purulia, West Bengal",
-    "locationCategory": "India",
-    "completion": "2018–Ongoing Construction",
-    "completionYear": "2018",
-    "summary": "A 1,000 MW hydro energy storage development in Purulia, West Bengal, engineered with upper and lower dams, subterranean powerhouse caverns, and reversible pump-turbines for renewable grid balancing.",
-    "description": "The Turga Pumped Storage Project is an under-construction hydroelectric energy storage project located in Purulia district, West Bengal. Developed by the West Bengal State Electricity Distribution Company Limited (WBSEDCL), the project is designed to enhance grid flexibility and support the growing integration of renewable energy into India's electricity network.\n\nThe project includes upper and lower reservoirs, underground waterways, pressure tunnels, a subterranean powerhouse, reversible pump-turbine units, switchyards, and transmission infrastructure. These facilities enable electricity generated from surplus power to pump water uphill before releasing it through turbines during periods of high electricity demand.\n\nConstruction involves large-scale rock excavation, dam construction, tunnel engineering, underground powerhouse development, and installation of advanced hydro-mechanical and electrical systems. Modern engineering and environmental management practices are being implemented to ensure long-term operational efficiency and sustainability.\n\nUpon completion, the Turga Pumped Storage Project will strengthen grid stability, provide reliable peak-load electricity, improve renewable energy utilization, and contribute significantly to India's transition toward a cleaner and more flexible power system.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Pumped Storage / Dam"
-      },
-      {
-        "label": "Budget",
-        "value": "~$700–900 Million"
-      },
-      {
-        "label": "Location",
-        "value": "Purulia, West Bengal"
-      }
-    ]
-  },
-  {
-    "id": "work_india_017",
-    "title": "Ghatghar Pumped Storage Project",
-    "subtitle": "A 250 MW peak-load pumped-storage hydro scheme in the Western Ghats of Maharashtra, utilizing Roller Compacted Concrete (RCC) dams, underground caverns, and reversible Francis turbines.",
-    "category": "Energy",
-    "designType": "Design & Build",
-    "location": "Maharashtra",
-    "locationCategory": "India",
-    "completion": "2000–Completed",
-    "completionYear": "2000",
-    "summary": "A 250 MW peak-load pumped-storage hydro scheme in the Western Ghats of Maharashtra, utilizing Roller Compacted Concrete (RCC) dams, underground caverns, and reversible Francis turbines.",
-    "description": "The Ghatghar Pumped Storage Project is a hydroelectric pumped-storage power station located in the Western Ghats of Maharashtra. Developed by the Maharashtra State Power Generation Company Limited (MAHAGENCO), the project utilizes the elevation difference between two reservoirs to generate electricity during peak demand while storing energy during off-peak periods.\n\nThe development includes upper and lower dams, underground waterways, pressure shafts, an underground powerhouse, reversible Francis pump-turbine units, transformers, and associated transmission infrastructure. The pumped-storage system allows efficient utilization of available water resources while improving electricity supply reliability.\n\nEngineering works involved construction within challenging mountainous terrain, requiring extensive tunnel excavation, underground cavern development, dam engineering, slope stabilization, and installation of high-capacity electro-mechanical equipment. Modern safety systems and environmental protection measures were incorporated throughout the project.\n\nThe Ghatghar Pumped Storage Project enhances Maharashtra's power system by providing peak-load generation, improving grid stability, supporting renewable energy integration, and increasing the operational flexibility of the state's electricity network.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Hydropower / Civil Works"
-      },
-      {
-        "label": "Budget",
-        "value": "~$400–600 Million"
-      },
-      {
-        "label": "Location",
-        "value": "Maharashtra"
-      }
-    ]
-  },
-  {
-    "id": "work_india_018",
-    "title": "Bakreswar Thermal Power Station Expansion",
-    "subtitle": "1,050 MW thermal power expansion at Bakreswar in Birbhum, West Bengal under WBPDCL, featuring high-efficiency steam turbines, electrostatic precipitators, and modern coal/ash handling systems.",
-    "category": "Energy",
-    "designType": "Design & Build",
-    "location": "Birbhum, West Bengal",
-    "locationCategory": "India",
-    "completion": "2010–Completed Expansion",
-    "completionYear": "2010",
-    "summary": "1,050 MW thermal power expansion at Bakreswar in Birbhum, West Bengal under WBPDCL, featuring high-efficiency steam turbines, electrostatic precipitators, and modern coal/ash handling systems.",
-    "description": "The Bakreswar Thermal Power Station Expansion is a major power generation development undertaken at the Bakreswar Thermal Power Plant in Birbhum district, West Bengal. Operated by the West Bengal Power Development Corporation Limited (WBPDCL), the expansion is designed to increase electricity generation capacity while incorporating modern thermal power technologies that improve operational efficiency and environmental performance.\n\nThe project includes the construction of new generating units, boiler systems, steam turbines, generators, cooling facilities, ash handling systems, coal handling infrastructure, water treatment plants, and upgraded electrical transmission facilities. Modern emission control systems have also been incorporated to comply with India's environmental regulations.\n\nEngineering activities involve large-scale civil works, heavy industrial equipment installation, structural steel construction, high-pressure piping systems, electrical substations, and advanced plant automation technologies. The expansion integrates modern operational controls that improve plant reliability, fuel efficiency, and long-term performance.\n\nUpon completion, the expanded facility will strengthen electricity supply across eastern India, improve grid reliability, support industrial growth, and contribute to meeting the increasing energy demand of West Bengal.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Power Plant Construction"
-      },
-      {
-        "label": "Budget",
-        "value": "~$1+ Billion Across Development"
-      },
-      {
-        "label": "Location",
-        "value": "Birbhum, West Bengal"
-      }
-    ]
-  },
-  {
-    "id": "work_india_019",
-    "title": "Haldia Port Modernization Project",
-    "subtitle": "Maritime infrastructure upgrade at Haldia Dock Complex (SMP Kolkata), modernizing cargo berths, mechanizing bulk handling systems, and dredging deep shipping channels.",
-    "category": "Civil Infra",
-    "designType": "Design & Build",
-    "location": "Haldia, West Bengal",
-    "locationCategory": "India",
-    "completion": "Before 2022 / Modernization Completed",
-    "completionYear": "Before 2022",
-    "summary": "Maritime infrastructure upgrade at Haldia Dock Complex (SMP Kolkata), modernizing cargo berths, mechanizing bulk handling systems, and dredging deep shipping channels.",
-    "description": "The Haldia Port Modernization Project is a comprehensive infrastructure upgrade undertaken at Haldia Dock Complex, part of Syama Prasad Mookerjee Port, Kolkata. The modernization program is designed to improve cargo handling efficiency, increase operational capacity, and strengthen Haldia's role as one of eastern India's most important maritime gateways serving domestic and international trade.\n\nThe project includes modernization of cargo berths, strengthening of quay structures, installation of advanced cargo handling equipment, expansion of storage facilities, improvement of internal road and rail connectivity, navigation infrastructure upgrades, and modernization of utility systems supporting port operations.\n\nEngineering activities involve marine civil works, berth rehabilitation, structural strengthening, dredging operations, installation of modern cranes, automation of cargo handling systems, and enhancement of port logistics infrastructure. Environmental management measures are incorporated to ensure sustainable port development while maintaining operational efficiency.\n\nFollowing completion, the modernization project will improve vessel turnaround time, increase cargo throughput, strengthen multimodal logistics connectivity, and enhance the competitiveness of Haldia Port within India's growing maritime trade network.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Port / Maritime"
-      },
-      {
-        "label": "Budget",
-        "value": "~$200–400 Million Equivalent"
-      },
-      {
-        "label": "Location",
-        "value": "Haldia, West Bengal"
-      }
-    ]
-  },
-  {
-    "id": "work_india_020",
-    "title": "Hooghly Dock and Port Engineers Modernization Project",
-    "subtitle": "Shipbuilding and drydock refurbishment program at HDPEL in West Bengal, upgrading ship repair facilities, heavy fabrication workshops, and marine engineering support infrastructure.",
-    "category": "Civil Infra",
-    "designType": "Design & Build",
-    "location": "West Bengal",
-    "locationCategory": "India",
-    "completion": "Before 2022 / Modernization Completed",
-    "completionYear": "Before 2022",
-    "summary": "Shipbuilding and drydock refurbishment program at HDPEL in West Bengal, upgrading ship repair facilities, heavy fabrication workshops, and marine engineering support infrastructure.",
-    "description": "The Hooghly Dock and Port Engineers Modernization Project is an infrastructure improvement initiative undertaken to upgrade ship repair, engineering, and marine support facilities operated by Hooghly Dock & Port Engineers Limited (HDPEL) in West Bengal. The project supports modernization of one of India's established shipbuilding and ship repair organizations, strengthening its capability to serve both commercial and government maritime sectors.\n\nThe modernization program includes refurbishment of dry docks, workshops, fabrication facilities, mechanical equipment, electrical infrastructure, lifting systems, utility networks, and marine engineering support facilities. Upgraded production infrastructure improves operational efficiency while supporting larger and more technologically advanced vessels.\n\nEngineering works involve structural rehabilitation, modernization of heavy industrial equipment, installation of advanced fabrication technologies, utility upgrades, and improvements to dockyard infrastructure. The project incorporates modern engineering practices to enhance workplace safety, production quality, and long-term operational reliability.\n\nUpon completion, the modernization strengthens shipbuilding and repair capabilities, improves engineering efficiency, enhances support for India's maritime industry, and contributes to the continued development of West Bengal as an important center for marine engineering and port-related industrial activities.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Port / Shipyard Infrastructure"
-      },
-      {
-        "label": "Budget",
-        "value": "~$100–300 Million Equivalent"
-      },
-      {
-        "label": "Location",
-        "value": "West Bengal"
-      }
-    ]
-  },
-  {
-    "id": "work_india_021",
-    "title": "Burnpur Steel Works Modernization Project",
-    "subtitle": "A major integrated steel plant modernization and expansion project at SAIL IISCO Burnpur, incorporating advanced blast furnace technology, BOF converters, and automated rolling mills.",
-    "category": "Offices",
-    "designType": "Design & Build",
-    "location": "Burnpur, West Bengal",
-    "locationCategory": "India",
-    "completion": "2000–Completed Modernization",
-    "completionYear": "2000",
-    "summary": "A major integrated steel plant modernization and expansion project at SAIL IISCO Burnpur, incorporating advanced blast furnace technology, BOF converters, and automated rolling mills.",
-    "description": "The Burnpur Steel Works Modernization Project is a major capacity expansion and technology upgrade undertaken at the IISCO Steel Plant in Burnpur, West Bengal, operated by the Steel Authority of India Limited (SAIL). The modernization program was implemented to improve production efficiency, product quality, energy performance, and environmental compliance while transforming the facility into a modern integrated steel plant.\n\nThe project included construction of a new blast furnace, basic oxygen furnace, coke oven batteries, sinter plant, continuous casting facilities, rolling mills, raw material handling systems, and advanced pollution control equipment. Supporting infrastructure such as power supply, water treatment, and plant utilities was also upgraded.\n\nEngineering works involved installation of large-scale heavy industrial equipment, structural steel construction, utility modernization, automation systems, and advanced process control technologies. Modern environmental management systems were incorporated to reduce emissions, improve energy efficiency, and enhance overall operational performance.\n\nFollowing modernization, the Burnpur Steel Works significantly increased its crude steel production capacity, improved manufacturing efficiency, expanded its product portfolio, and strengthened the competitiveness of India's domestic steel industry.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Construction / Industrial"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Steel Plant Infrastructure"
-      },
-      {
-        "label": "Budget",
-        "value": "Multi-Hundred-Million-Dollar Program"
-      },
-      {
-        "label": "Location",
-        "value": "Burnpur, West Bengal"
-      }
-    ]
-  },
-  {
-    "id": "work_india_022",
-    "title": "Mumbai Sewage Disposal Project",
-    "subtitle": "Major urban sanitation and coastal environment program by MCGM & World Bank/JICA, constructing 7 WWTFs, deep undersea tunnel outfalls, and pumping stations.",
-    "category": "Civil Infra",
-    "designType": "Design & Build",
-    "location": "Mumbai, Maharashtra",
-    "locationCategory": "India",
-    "completion": "Before 2022 / Phased Modernization",
-    "completionYear": "Before 2022",
-    "summary": "Major urban sanitation and coastal environment program by MCGM & World Bank/JICA, constructing 7 WWTFs, deep undersea tunnel outfalls, and pumping stations.",
-    "description": "The Mumbai Sewage Disposal Project (MSDP) is one of India's largest urban wastewater infrastructure programs, implemented by the Municipal Corporation of Greater Mumbai (MCGM) to improve sewage collection, treatment, and marine disposal across the city. The project aims to enhance public health, reduce environmental pollution, and protect Mumbai's coastal waters by expanding and modernizing the city's sewerage system.\n\nThe project includes the construction and rehabilitation of sewage treatment plants, pumping stations, underground trunk sewers, interceptor pipelines, marine outfalls, and associated wastewater infrastructure. Upgrades to existing facilities increase treatment capacity while extending sewerage coverage to rapidly growing urban areas throughout the Mumbai Metropolitan Region.\n\nEngineering works involve deep underground tunneling, large-diameter sewer installation, coastal marine construction, advanced wastewater treatment technologies, and automated monitoring systems. Modern environmental standards and energy-efficient treatment processes are incorporated to improve operational performance while minimizing ecological impacts.\n\nUpon completion of its successive phases, the Mumbai Sewage Disposal Project will significantly improve wastewater management, reduce untreated sewage discharge into the Arabian Sea, enhance urban sanitation, and contribute to the long-term environmental sustainability of Mumbai.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Sewerage / Wastewater"
-      },
-      {
-        "label": "Budget",
-        "value": "~$500 Million+ Across Phases"
-      },
-      {
-        "label": "Location",
-        "value": "Mumbai, Maharashtra"
-      }
-    ]
-  },
-  {
-    "id": "work_india_023",
-    "title": "Yamuna Action Plan Project",
-    "subtitle": "A comprehensive multi-state river conservation initiative across Delhi, UP, and Haryana supported by JICA ODA, building STPs, interception sewers, and modern urban sanitation.",
-    "category": "Civil Infra",
-    "designType": "Design & Build",
-    "location": "Delhi, Uttar Pradesh & Haryana",
-    "locationCategory": "India",
-    "completion": "2025–Ongoing Multi-State Program",
-    "completionYear": "2025",
-    "summary": "A comprehensive multi-state river conservation initiative across Delhi, UP, and Haryana supported by JICA ODA, building STPs, interception sewers, and modern urban sanitation.",
-    "description": "The Yamuna Action Plan (YAP) is a long-term river conservation initiative launched by the Government of India with financial and technical assistance from the Japan International Cooperation Agency (JICA). The program aims to reduce pollution in the Yamuna River by improving wastewater management, expanding sewerage infrastructure, and enhancing environmental protection across major cities in Delhi, Uttar Pradesh, and Haryana.\n\nThe project includes the construction and rehabilitation of sewage treatment plants, sewer networks, pumping stations, interception and diversion systems, drainage improvements, and riverfront environmental infrastructure. Public awareness initiatives and institutional capacity-building programs also support long-term river restoration efforts.\n\nEngineering works involve upgrading aging wastewater infrastructure, expanding treatment capacity, installing modern pumping systems, rehabilitating underground sewer networks, and implementing advanced treatment technologies to improve water quality before discharge into the river.\n\nThe Yamuna Action Plan continues to play an important role in improving urban sanitation, reducing river pollution, strengthening wastewater management infrastructure, and supporting the long-term ecological restoration of one of India's most significant rivers.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Sewerage / Water Treatment"
-      },
-      {
-        "label": "Budget",
-        "value": "~$1 Billion+ Across Phases"
-      },
-      {
-        "label": "Location",
-        "value": "Delhi, Uttar Pradesh & Haryana"
-      }
-    ]
-  },
-  {
-    "id": "work_india_024",
-    "title": "Yamuna Action Plan Phase III – Delhi",
-    "subtitle": "Targeted Delhi river restoration phase under DJB & JICA, constructing advanced STPs (like Okhla 564 MLD), interceptor sewers, and automated sludge energy recovery systems.",
-    "category": "Civil Infra",
-    "designType": "Design & Build",
-    "location": "Delhi",
-    "locationCategory": "India",
-    "completion": "2011–Completed / Phased Modernization",
-    "completionYear": "2011",
-    "summary": "Targeted Delhi river restoration phase under DJB & JICA, constructing advanced STPs (like Okhla 564 MLD), interceptor sewers, and automated sludge energy recovery systems.",
-    "description": "Yamuna Action Plan Phase III is the latest stage of the Yamuna River conservation program focused specifically on Delhi, where a significant portion of the river's pollution originates. Supported by the Government of India, the Government of the National Capital Territory of Delhi, and JICA, the project seeks to substantially improve wastewater collection and treatment within the capital city.\n\nMajor works include construction of new sewage treatment plants, rehabilitation of existing treatment facilities, expansion of underground sewer networks, installation of pumping stations, interceptor sewer systems, and modernization of wastewater management infrastructure serving densely populated urban areas.\n\nThe project incorporates advanced wastewater treatment technologies, energy-efficient equipment, automated monitoring systems, and improved sludge management processes. Construction activities are carefully planned to minimize disruption while upgrading critical underground infrastructure across the city.\n\nUpon completion, Phase III will significantly improve wastewater treatment capacity, reduce untreated sewage entering the Yamuna River, enhance public health, and contribute to the long-term environmental sustainability of Delhi's urban water infrastructure.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Wastewater / Sewerage"
-      },
-      {
-        "label": "Budget",
-        "value": "~$500–700 Million"
-      },
-      {
-        "label": "Location",
-        "value": "Delhi"
-      }
-    ]
-  },
-  {
-    "id": "work_india_025",
-    "title": "Bengaluru Water Supply and Sewerage Project",
-    "subtitle": "City-wide water transmission and sewerage expansion across Bengaluru by BWSSB & JICA, constructing 110 village water supply networks, STPs, and smart SCADA monitoring.",
-    "category": "Civil Infra",
-    "designType": "Design & Build",
-    "location": "Bengaluru, Karnataka",
-    "locationCategory": "India",
-    "completion": "2025–Ongoing Stage V Expansion",
-    "completionYear": "2025",
-    "summary": "City-wide water transmission and sewerage expansion across Bengaluru by BWSSB & JICA, constructing 110 village water supply networks, STPs, and smart SCADA monitoring.",
-    "description": "The Bengaluru Water Supply and Sewerage Project is a comprehensive urban infrastructure program undertaken by the Bangalore Water Supply and Sewerage Board (BWSSB) to improve drinking water supply and wastewater management across the rapidly expanding Bengaluru Metropolitan Area. The project supports the city's growing population through modernization and expansion of essential water infrastructure.\n\nThe development includes new water transmission pipelines, distribution networks, pumping stations, reservoirs, sewage treatment plants, underground sewer networks, and associated utility infrastructure. Several phases of the project also extend water supply to newly urbanized areas surrounding Bengaluru.\n\nEngineering works involve large-diameter pipeline installation, advanced pumping systems, underground utility construction, treatment plant expansion, and implementation of modern monitoring and control technologies. Sustainable water management practices are integrated to improve operational efficiency while reducing system losses.\n\nUpon completion, the project enhances access to safe drinking water, improves sanitation services, reduces environmental pollution, strengthens urban resilience, and supports the long-term sustainable development of Bengaluru.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Water Supply / Sewerage"
-      },
-      {
-        "label": "Budget",
-        "value": "Multi-Billion-Dollar Across Phases"
+        "label": "Deadline",
+        "value": "2032"
       },
       {
         "label": "Location",
@@ -1557,95 +1365,1242 @@ export const projects = [
     ]
   },
   {
-    "id": "work_india_026",
-    "title": "Rajasthan Water Sector / Rural Water Supply Infrastructure Projects",
-    "subtitle": "State-wide rural water security program in Rajasthan supported by JICA & PHED, constructing long-distance surface water pipelines, WTPs, and elevated storage reservoirs across arid districts.",
-    "category": "Civil Infra",
+    "id": "work_india_015",
+    "title": "Char Dham Highway Project",
+    "subtitle": "A monumental 889 km all-weather two-lane highway expansion across the high Garhwal Himalayas connecting Yamunotri, Gangotri, Kedarnath, and Badrinath.",
+    "category": "Roads and Highways",
     "designType": "Design & Build",
-    "location": "Rajasthan",
+    "location": "Uttarakhand",
     "locationCategory": "India",
-    "completion": "2000–Ongoing Rural Program",
-    "completionYear": "2000",
-    "summary": "State-wide rural water security program in Rajasthan supported by JICA & PHED, constructing long-distance surface water pipelines, WTPs, and elevated storage reservoirs across arid districts.",
-    "description": "The Rajasthan Water Sector and Rural Water Supply Infrastructure Projects comprise a series of initiatives undertaken by the Government of Rajasthan with support from national and international development agencies to improve access to safe and reliable drinking water across rural communities. The projects address chronic water scarcity through the expansion and modernization of regional water supply systems.\n\nThe infrastructure includes intake structures, water treatment plants, transmission pipelines, elevated service reservoirs, pumping stations, village distribution networks, groundwater recharge facilities, and bulk water supply systems. Many schemes also utilize surface water from major rivers and reservoirs to provide sustainable long-term water sources.\n\nEngineering activities involve extensive pipeline construction across arid terrain, installation of high-capacity pumping equipment, advanced water treatment technologies, remote monitoring systems, and climate-resilient infrastructure capable of operating under Rajasthan's challenging environmental conditions.\n\nThese projects significantly improve rural water security, enhance public health, reduce dependence on groundwater extraction, support agricultural and economic development, and contribute to sustainable water resource management across the state of Rajasthan.",
+    "completion": "2031 Completion",
+    "completionYear": "2031",
+    "image": "/images/work_india_015.jpg",
+    "summary": "The Char Dham Highway Project is an extraordinary mountain civil engineering undertaking by the Ministry of Road Transport and Highways (MoRTH) in Uttarakhand. Spanning 889 km of all-weather two-lane highways across steep Himalayan valleys, the project widens, stabilizes, and tunnels through difficult mountain terrain connecting Yamunotri, Gangotri, Kedarnath, and Badrinath.",
+    "description": "The Char Dham pilgrimage circuit in the Garhwal Himalayas holds supreme cultural and spiritual significance for millions, while also serving as critical strategic border defense routes. Historically vulnerable to severe monsoon landslides, flash floods, and winter snow blockades, MoRTH launched the Char Dham Pariyojana to build climate-resilient, all-weather highway corridors.\n\nCivil engineering measures encompass extensive slope stabilization utilizing active rock-fall protection netting, soil nailing with self-drilling hollow core anchors, shotcrete with welded wire mesh, deep concrete counterfort retaining walls, and reinforced earth (RE) walls with geogrid reinforcement.\n\nTo bypass treacherous landslide zones and avalanche chutes, the project incorporates major highway tunnels—including the 4.5 km Silkyara Tunnel—and long-span steel truss bridges across the Bhagirathi, Alaknanda, and Mandakini river gorges. Bridge foundations utilize deep concrete well caissons anchored directly into solid granite and quartzite strata.\n\nEco-sensitive civil engineering features include dedicated muck-dumping yard rehabilitation with geotextile bio-turfing, wildlife crossing corridors, and avalanche defense snow sheds. Upon full completion, the highway ensures year-round pilgrimage safety, cuts travel times by 40%, and strengthens national security logistics.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Roads and Highways"
       },
       {
         "label": "Sub-Sector",
-        "value": "Water Supply"
+        "value": "High-Altitude Himalayan Highway / Slope Engineering"
       },
       {
         "label": "Budget",
-        "value": "~$500 Million+ Across Programs"
+        "value": "₹12,000–14,000 Crores"
+      },
+      {
+        "label": "Length",
+        "value": "889 km All-Weather Two-Lane Mountain Highway"
+      },
+      {
+        "label": "Deadline",
+        "value": "2031"
       },
       {
         "label": "Location",
-        "value": "Rajasthan"
+        "value": "Garhwal Himalayas, Uttarakhand"
+      }
+    ]
+  },
+  {
+    "id": "work_india_016",
+    "title": "Siliguri Elevated Corridor",
+    "subtitle": "A strategic 20+ km elevated 4-lane expressway across the Siliguri Corridor ('Chicken's Neck') connecting mainland India with the North-Eastern States.",
+    "category": "Roads and Highways",
+    "designType": "Design & Build",
+    "location": "West Bengal",
+    "locationCategory": "India",
+    "completion": "2034 Completion",
+    "completionYear": "2034",
+    "image": "/images/work_india_016.jpg",
+    "summary": "The Siliguri Elevated Corridor is a nationally strategic highway megaproject undertaken by the National Highways and Infrastructure Development Corporation (NHIDCL) along NH-27 and NH-10 in Siliguri, West Bengal. Spanning over 20 km through the crucial Siliguri Corridor ('Chicken's Neck'), the elevated 4-lane expressway unblocks heavy freight and military logistics between mainland India and the eight North-Eastern states.",
+    "description": "Siliguri occupies one of South Asia's most crucial geopolitical and transportation choke points, acting as the sole land bridge connecting mainland India to Assam, Sikkim, Bhutan, Nepal, Bangladesh, and the wider North-East. The Siliguri Elevated Corridor bypasses intensive urban and local market congestion along Sevoke Road, Darjeeling More, and Bagdogra.\n\nThe structural engineering comprises continuous precast prestressed concrete box girders supported on tall cantilever and portal piers designed to withstand high seismic forces (Seismic Zone IV). At the Mahananda River crossing, the corridor incorporates long-span steel-concrete composite continuous trusses designed to maintain clear waterway flow during severe monsoon floods.\n\nCivil construction required deep hydraulic piling through alluvial gravel, boulders, and high-groundwater sand beds. The design includes dedicated military vehicle loading clearances (Class 70R), multi-level interchanges at Bagdogra Airport and Sevoke Road, and sound-absorbing acoustic barriers.\n\nEquipped with advanced incident detection systems, optical fiber CCTV grids, dynamic variable message displays, and solar street illumination, the corridor ensures 24x7 uninterrupted commercial and defense transit, reducing travel time across Siliguri from 2 hours to under 20 minutes.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Roads and Highways"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Strategic Elevated Freight & Defense Expressway"
+      },
+      {
+        "label": "Budget",
+        "value": "₹2,500–3,500 Crores"
+      },
+      {
+        "label": "Corridor Length",
+        "value": "20+ km 4-Lane Elevated Viaduct"
+      },
+      {
+        "label": "Deadline",
+        "value": "2034"
+      },
+      {
+        "label": "Location",
+        "value": "Siliguri, West Bengal"
+      }
+    ]
+  },
+  {
+    "id": "work_india_017",
+    "title": "Chandigarh Elevated Corridor",
+    "subtitle": "A 16 km modern elevated expressway from Tribune Chowk towards Zirakpur and Panchkula, engineered with slim aesthetic columns and noise damping.",
+    "category": "Roads and Highways",
+    "designType": "Design & Build",
+    "location": "Chandigarh",
+    "locationCategory": "India",
+    "completion": "2030 Completion",
+    "completionYear": "2030",
+    "image": "/images/work_india_017.jpg",
+    "summary": "The Chandigarh Elevated Corridor is a flagship urban highway project executed by the National Highways Authority of India (NHAI) and the Chandigarh Administration. Spanning approximately 16 km from Tribune Chowk along Dakshin Marg toward Zirakpur, Mohali, and Panchkula, the elevated expressway eliminates persistent regional bottlenecks connecting the tri-city urban area with Punjab, Haryana, and Himachal Pradesh.",
+    "description": "Chandigarh, famed worldwide for Le Corbusier's modernist grid city planning, has witnessed exponential growth in inter-state transit traffic heading towards the Himalayan foothills and Punjab/Haryana industrial clusters. The Chandigarh Elevated Corridor provides a seamless flyover corridor that preserves the aesthetic green character of the ground-level avenues.\n\nStructural architecture features slim, elliptical reinforced concrete piers supporting precast post-tensioned segmental box girders with cantilevered wings. This structural configuration creates an ultra-sleek visual profile, allowing sunlight to penetrate to the tree-lined boulevards and landscaped rotundas below.\n\nCivil engineering works incorporated deep rotary bored piling within narrow central medians without disturbing heritage roundabouts. The project includes specialized acoustic polycarbonate noise barrier walls along sensitive educational and medical institutions and seamless entry/exit flyover loops at the Zirakpur barrier.\n\nEquipped with automated multi-lane free-flow tolling, rainwater downcomers feeding subterranean aquifer recharge wells, and smart LED lighting fixtures, the corridor slashes tri-city commute times by 65% while providing a world-class gateway to Himachal Pradesh.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Roads and Highways"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Aesthetic Urban Elevated Expressway"
+      },
+      {
+        "label": "Budget",
+        "value": "₹1,500–2,500 Crores"
+      },
+      {
+        "label": "Corridor Length",
+        "value": "16 km 4/6-Lane Elevated Viaduct"
+      },
+      {
+        "label": "Deadline",
+        "value": "2030"
+      },
+      {
+        "label": "Location",
+        "value": "Chandigarh, Mohali & Panchkula"
+      }
+    ]
+  },
+  {
+    "id": "work_india_018",
+    "title": "Indore-Ahmedabad Expressway",
+    "subtitle": "A 350+ km 4/6-lane expressway modernization along NH-47 crossing the Mahi and Narmada river basins with high-efficiency freight infrastructure.",
+    "category": "Roads and Highways",
+    "designType": "Design & Build",
+    "location": "Madhya Pradesh, Gujarat",
+    "locationCategory": "India",
+    "completion": "2033 Completion",
+    "completionYear": "2033",
+    "image": "/images/work_india_018.jpg",
+    "summary": "The Indore-Ahmedabad Expressway (NH-47 corridor upgrade) is a premier inter-state economic highway project developed by the National Highways Authority of India (NHAI). Spanning over 350 km across western Madhya Pradesh (Indore, Dhar, Jhabua) and eastern Gujarat (Dahod, Godhra, Ahmedabad), the expressway establishes a seamless high-speed logistics artery connecting central India's commercial hub with western maritime ports.",
+    "description": "Indore, India's cleanest metropolis and a prime commercial center of Madhya Pradesh, requires robust, high-capacity highway links to Gujarat's industrial ports (Kandla, Mundra, and Dahej) and economic center (Ahmedabad). The Indore-Ahmedabad Expressway upgrades and realigns NH-47 into a high-speed, access-controlled transport corridor.\n\nCivil engineering challenges involved cutting through the rugged tribal hills of Jhabua and the undulating Malwa plateau, requiring extensive rock blasting, deep hill cuts with reinforced soil slopes, and long-span prestressed concrete viaducts over the Mahi, Anas, and Panam river basins.\n\nThe roadway pavement utilizes a heavy-duty perpetual flexible pavement design featuring polymer-modified bitumen (PMB) surface courses, stone mastic asphalt, and cement-treated permeable bases (CTPB) designed to resist rutting under heavy chemical and automotive container truck traffic.\n\nEquipped with automated FASTag electronic toll plazas, roadside solar microgrids, dedicated truck laybys with driver welfare amenities, and emergency trauma medical helipads, the expressway reduces travel time from over 9 hours to just 4.5 hours.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Roads and Highways"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Inter-State Economic Freight Corridor"
+      },
+      {
+        "label": "Budget",
+        "value": "₹5,500–6,500 Crores"
+      },
+      {
+        "label": "Length",
+        "value": "350+ km 4/6-Lane High-Speed Highway"
+      },
+      {
+        "label": "Deadline",
+        "value": "2033"
+      },
+      {
+        "label": "Location",
+        "value": "Madhya Pradesh & Gujarat"
+      }
+    ]
+  },
+  {
+    "id": "work_india_019",
+    "title": "Smart City Project, Indore",
+    "subtitle": "A comprehensive urban renewal program in India's cleanest city featuring heritage precinct restoration, 24x7 smart water grids, and automated ICCC.",
+    "category": "Urban Infrastructure",
+    "designType": "Design & Build",
+    "location": "Madhya Pradesh",
+    "locationCategory": "India",
+    "completion": "2031 Completion",
+    "completionYear": "2031",
+    "image": "/images/work_india_019.jpg",
+    "summary": "The Smart City Project, Indore is an acclaimed urban renewal megaproject executed by the Indore Smart City Development Limited (ISCDL) under the national Smart Cities Mission. Having won India's 'Cleanest City' award for seven consecutive years, Indore's smart city initiative pioneers 24x7 pressurized drinking water grids, Rajwada heritage conservation, bio-methanation waste-to-energy plants, and an Integrated Command and Control Centre (ICCC).",
+    "description": "Indore, the commercial heart of Madhya Pradesh, has established international benchmarks in urban municipal management, solid waste processing, and civic innovation. The Smart City Project transforms over 100 square kilometers of urban fabric into a digitized, resilient, and human-centric smart metropolis.\n\nCivil engineering works center on Area-Based Development (ABD) across the historic Rajwada and Sarafa precincts, featuring pedestrianized cobblestone heritage avenues, underground multi-utility duct corridors that eliminate overhead electric cables, and automated subsurface storm drainage networks.\n\nWater infrastructure includes citywide 24x7 pressurized drinking water networks equipped with ultrasonic smart meters, automated pressure-reducing valves (PRV), and SCADA telemetry that slashes non-revenue water (NRW) losses below 10%. Municipal waste engineering is anchored by Asia's largest bio-CNG plant (Gobar-Dhan), processing 550 tonnes/day of segregated organic municipal waste into vehicle fuel.\n\nThe city's Integrated Command and Control Centre (ICCC) unifies municipal IoT sensor feeds, 3,000+ AI-powered surveillance cameras, smart solid waste truck GPS tracking, adaptive traffic signal timers, and emergency response management onto a single digital dashboard.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Smart City / 24x7 Water & Civic Digitization"
+      },
+      {
+        "label": "Budget",
+        "value": "₹1,000–1,500 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "100–150 km² Smart City Footprint"
+      },
+      {
+        "label": "Deadline",
+        "value": "2031"
+      },
+      {
+        "label": "Location",
+        "value": "Indore, Madhya Pradesh"
+      }
+    ]
+  },
+  {
+    "id": "work_india_020",
+    "title": "Varanasi Smart City Project",
+    "subtitle": "A transformative urban modernization in the world's oldest living city, introducing India's first urban transit ropeway, smart ghats, and underground utilities.",
+    "category": "Urban Infrastructure",
+    "designType": "Design & Build",
+    "location": "Uttar Pradesh",
+    "locationCategory": "India",
+    "completion": "2032 Completion",
+    "completionYear": "2032",
+    "image": "/images/work_india_020.jpg",
+    "summary": "The Varanasi Smart City Project is a flagship urban infrastructure and heritage revitalization initiative executed by Varanasi Smart City Limited (VSCL) under the Smart Cities Mission. Spanning the ancient cultural capital along the holy Ganga River in Uttar Pradesh, the project introduces India's first public transit urban ropeway, subterranean power ducting, Kashi Vishwanath corridor integration, and smart ghat management.",
+    "description": "Varanasi (Kashi), regarded as the world's oldest continuously inhabited spiritual city, faces unique challenges blending ancient sacred traditions with modern urban demands. The Varanasi Smart City Project revitalizes its historic core while introducing state-of-the-art public infrastructure.\n\nThe centerpiece of transport innovation is India's first urban public ropeway transit system, spanning 3.8 km with 5 modern stations from Varanasi Cantonment Railway Station to Godowlia Chowk. Featuring 30-passenger detachable monocable gondolas flying above congested heritage alleyways, the ropeway carries over 4,000 passengers per hour per direction.\n\nCivil engineering achievements include the subterranean relocation of hundreds of kilometers of dangling electrical wires into underground multi-duct utility trenches, installation of smart heritage-styled LED illumination across 84 historic ghats, automated Ganga water quality monitoring buoys, and advanced liquid waste interceptor drains preventing untreated sewage from entering the river.\n\nThe Integrated Command and Control Centre (Kashi Integrated Command Center - KICC) manages citywide crowd telemetry during major pilgrimage festivals (Dev Deepawali, Mahashivratri), emergency boat rescue grids, and smart tourist information kiosks.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Heritage Smart City / Urban Transit Ropeway"
+      },
+      {
+        "label": "Budget",
+        "value": "₹1,200–1,800 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "80–120 km² Urban Revival Zone"
+      },
+      {
+        "label": "Deadline",
+        "value": "2032"
+      },
+      {
+        "label": "Location",
+        "value": "Varanasi, Uttar Pradesh"
+      }
+    ]
+  },
+  {
+    "id": "work_india_021",
+    "title": "Amritsar Smart City Project",
+    "subtitle": "A major urban modernization in Punjab revitalizing the historic Walled City, constructing a 440 MLD canal water treatment plant, and deploying ICCC.",
+    "category": "Urban Infrastructure",
+    "designType": "Design & Build",
+    "location": "Punjab",
+    "locationCategory": "India",
+    "completion": "2034 Completion",
+    "completionYear": "2034",
+    "image": "/images/work_india_021.jpg",
+    "summary": "The Amritsar Smart City Project is a flagship urban infrastructure and water security program executed by the Amritsar Smart City Limited (ASCL) and Punjab municipal bodies. Anchored by the monumental 440 MLD Bulk Canal Water Supply Project at Vallah, the development transforms municipal water delivery, pedestrianizes historic precincts around the Golden Temple, and deploys intelligent command centers.",
+    "description": "Amritsar, the spiritual and cultural heart of Punjab and home to the revered Golden Temple (Harmandir Sahib), welcomes over 100,000 pilgrims and visitors every day. The Amritsar Smart City Project resolves long-standing groundwater depletion while modernizing civic transit and urban sanitation.\n\nThe centerpiece of civil and environmental engineering is the 440 MLD Surface Canal Water Treatment Plant at Vallah, drawing water from the Upper Bari Doab Canal. The complex features rapid sand gravity filters, ozonation, chlorination, and large-diameter ductile iron (DI) transmission mains supplying clean surface drinking water across the entire city.\n\nUrban heritage engineering focuses on the Walled City revitalization, incorporating terracotta and heritage-brick pedestrian walkways, underground storm drainage preventing monsoon waterlogging, facade illumination along the Heritage Street, and dedicated multi-level automated car parking facilities at Kairon Market and Town Hall.\n\nThe Integrated Command and Control Centre (ICCC) incorporates AI video analytics for traffic flow management along the Bus Rapid Transit System (BRTS), smart municipal solid waste vehicle route optimization, and air quality monitoring stations.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Smart City / 440 MLD Surface Canal Water Grid"
+      },
+      {
+        "label": "Budget",
+        "value": "₹1,500–2,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "80–100 km² Municipal Area"
+      },
+      {
+        "label": "Deadline",
+        "value": "2034"
+      },
+      {
+        "label": "Location",
+        "value": "Amritsar, Punjab"
+      }
+    ]
+  },
+  {
+    "id": "work_india_022",
+    "title": "Rajkot Smart City Project",
+    "subtitle": "A 930-acre greenfield smart city development in Gujarat centered around Atal Sarovar lake, featuring vacuum sewerage and smart utility corridors.",
+    "category": "Urban Infrastructure",
+    "designType": "Design & Build",
+    "location": "Gujarat",
+    "locationCategory": "India",
+    "completion": "2033 Completion",
+    "completionYear": "2033",
+    "image": "/images/work_india_022.jpg",
+    "summary": "The Rajkot Smart City Project is a model greenfield smart urbanization project developed by the Rajkot Smart City Development Limited (RSCDL) in Raiya, Rajkot, Gujarat. Encompassing over 930 acres around the picturesque Atal Sarovar lake, the development implements 100% underground multi-utility duct trenches, vacuum sewerage networks, solar microgrids, and digital governance.",
+    "description": "Rajkot, the commercial capital of Saurashtra in Gujarat, is renowned for its vibrant engineering, casting, and jewelry manufacturing industries. The Rajkot Smart City Project (TOI - Township of Innovations at Raiya) is envisioned as a world-class greenfield smart township showcasing sustainable 21st-century urban living.\n\nCivil engineering infrastructure across the 930-acre greenfield site features wide concrete arterial avenues flanked by dedicated subsurface multi-utility concrete box ducts that house high-voltage electric lines, fiber-optic telecom cables, treated drinking water pipelines, and recycled wastewater lines.\n\nEnvironmental engineering is highlighted by India's first large-scale automated vacuum sewerage system, which uses differential air pressure to transport wastewater through small-diameter sealed pipes, eliminating sewage odors and reducing water usage. The iconic Atal Sarovar lake underwent deep desilting, stone pitching, promenade development, and musical fountain integration.\n\nThe development is completely powered by a 100% smart digital backbone linked to the Rajkot Eye-Way Command and Control Centre (ICCC), managing automated LED streetlights, environmental air/noise sensors, smart water meter billing, and free public Wi-Fi zones.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Greenfield Smart Township / Vacuum Sewerage"
+      },
+      {
+        "label": "Budget",
+        "value": "₹1,200–1,600 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "70–90 km² (930-Acre Greenfield Core at Raiya)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2033"
+      },
+      {
+        "label": "Location",
+        "value": "Rajkot (Raiya), Gujarat"
+      }
+    ]
+  },
+  {
+    "id": "work_india_023",
+    "title": "Patna Ganga Riverfront Project",
+    "subtitle": "A 20+ km urban riverfront transformation along the south bank of the holy Ganga River in Bihar, linking 20+ historical ghats with promenades and eco-parks.",
+    "category": "Urban Infrastructure",
+    "designType": "Design & Build",
+    "location": "Bihar",
+    "locationCategory": "India",
+    "completion": "2031 Completion",
+    "completionYear": "2031",
+    "image": "/images/work_india_023.jpg",
+    "summary": "The Patna Ganga Riverfront Project is an ambitious urban ecological and public infrastructure development executed under the Namami Gange and World Bank assistance program by the Bihar Urban Infrastructure Development Corporation (BUIDCO). Stretching over 20 km along the southern bank of the Ganga River in Patna, the project integrates 20+ historical ghats with continuous pedestrian promenades, community centers, interceptor sewers, and flood-protection stone revetments.",
+    "description": "Patna (ancient Pataliputra), the historic capital of Bihar, has flourished along the banks of the mighty Ganga River for millennia. The Patna Ganga Riverfront Project rejuvenates the city's riverfront interface, transforming deteriorating riverbanks into a vibrant, eco-friendly civic and cultural promenade.\n\nCivil and hydraulic engineering works comprise heavy boulder rip-rap stone pitching and reinforced concrete sheet piles along the riverbed to protect the city against seasonal monsoon riverbank erosion and high-velocity flood scouring during peak Ganga discharge.\n\nThe project constructs continuous 6.5-meter-wide pedestrian promenades connecting famous ghats—including Collectorate Ghat, Gandhi Ghat, Gai Ghat, and Bhadra Ghat. Amenities feature 16 multi-purpose community ghat buildings, landscaped ecological parks, reading plazas, solar-powered LED lighting, and public cafe pavilions.\n\nEnvironmental protection is central to the mission, featuring massive subterranean interceptor sewer mains laid parallel to the river. These sewers capture municipal drainage from over 30 urban outfalls and redirect wastewater to modern Sewage Treatment Plants (STPs) at Beur, Saidpur, and Digha, ensuring zero untreated sewage enters the holy river.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Urban Riverfront Development / River Ecology"
+      },
+      {
+        "label": "Budget",
+        "value": "₹3,000–4,500 Crores"
+      },
+      {
+        "label": "Length",
+        "value": "20–30 km Continuous Riverfront Corridor"
+      },
+      {
+        "label": "Deadline",
+        "value": "2031"
+      },
+      {
+        "label": "Location",
+        "value": "Patna, Bihar"
+      }
+    ]
+  },
+  {
+    "id": "work_india_024",
+    "title": "Bhilai Smart City Project",
+    "subtitle": "A digital and physical transformation of Chhattisgarh's premier steel city, featuring smart municipal SCADA, sewage recycling, and solar microgrids.",
+    "category": "Urban Infrastructure",
+    "designType": "Design & Build",
+    "location": "Chhattisgarh",
+    "locationCategory": "India",
+    "completion": "2035 Completion",
+    "completionYear": "2035",
+    "image": "/images/work_india_024.jpg",
+    "summary": "The Bhilai Smart City Project is a comprehensive municipal modernization and sustainable town planning initiative executed by the Bhilai Municipal Corporation (BMC) and state infrastructure agencies in Chhattisgarh. Leveraging Bhilai's legacy as India's iconic steel city, the project deploys smart municipal SCADA grids, 100% wastewater recycling for industrial reuse, rooftop solar arrays, and digital command centers.",
+    "description": "Bhilai is celebrated globally as India's 'Steel City', home to the flagship Bhilai Steel Plant (SAIL) that manufactures the nation's railway tracks and heavy structural plates. The Bhilai Smart City Project upgrades the civic infrastructure of this industrial powerhouse to world-class modern standards.\n\nCivil engineering works encompass citywide underground stormwater drainage networks designed to prevent monsoon waterlogging, rehabilitation of industrial township roads with heavy-duty concrete overlays, and the construction of modern commercial incubation and skill centers.\n\nWater and environmental infrastructure includes decentralized Sewage Treatment Plants (STPs) equipped with Moving Bed Biofilm Reactors (MBBR). The treated effluent is supplied directly via dedicated industrial pipelines to nearby steel fabrication and manufacturing clusters, conserving millions of liters of fresh river water.\n\nDigital smart governance is centered at the Bhilai Integrated Command and Control Centre (ICCC), unifying smart traffic management at major highway junctions along the Great Eastern Road, municipal solid waste vehicle GPS tracking, smart water telemetry, and citizen grievance redressal.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Industrial Smart City / Wastewater Recycling"
+      },
+      {
+        "label": "Budget",
+        "value": "₹1,000–1,500 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "60–90 km² Municipal Territory"
+      },
+      {
+        "label": "Deadline",
+        "value": "2035"
+      },
+      {
+        "label": "Location",
+        "value": "Bhilai-Durg, Chhattisgarh"
+      }
+    ]
+  },
+  {
+    "id": "work_india_025",
+    "title": "Lucknow Metro Phase 2",
+    "subtitle": "A 11.16 km East-West mass rapid transit corridor connecting Charbagh to Vasant Kunj via deep underground EPB-bored tunnels beneath Old Lucknow.",
+    "category": "Urban Transportation",
+    "designType": "Design & Build",
+    "location": "Uttar Pradesh",
+    "locationCategory": "India",
+    "completion": "2035 Completion",
+    "completionYear": "2035",
+    "image": "/images/work_india_025.jpg",
+    "summary": "Lucknow Metro Phase 2 (East-West Corridor / Blue Line) is a high-capacity urban mass rapid transit project developed by the Uttar Pradesh Metro Rail Corporation (UPMRC). Spanning 11.16 km from Charbagh Railway Station to Vasant Kunj, the corridor features 6.88 km of deep underground EPB-bored twin tunnels beneath the densely built historic quarters of Old Lucknow (Aminabad, Chowk, City Railway Station) and 4.28 km of elevated viaducts.",
+    "description": "Lucknow, the historic capital of Uttar Pradesh, is home to priceless Nawabi heritage architecture, dense traditional markets, and rapidly expanding residential suburbs. Lucknow Metro Phase 2 complements the operational North-South Red Line by creating an indispensable East-West mass transit spine.\n\nThe subterranean engineering is one of the most delicate tunneling endeavors in northern India, utilizing Earth Pressure Balance (EPB) Tunnel Boring Machines to bore twin tunnels 18 to 22 meters beneath centuries-old heritage structures, narrow bazaar lanes, and high-water-table alluvium with near-zero surface settlement.\n\nThe corridor comprises 12 modern stations—7 underground (including Gautam Buddha Marg, Aminabad, Pandeyganj, City Railway Station, Medical College Chowk, and Thakurganj) and 5 elevated stations towards Vasant Kunj. Underground stations are constructed using top-down cut-and-cover methods with reinforced concrete diaphragm walls.\n\nEquipped with automated Communication-Based Train Control (CBTC) signaling, stainless steel lightweight rolling stock with regenerative braking, full-height platform screen doors (PSDs) in underground stations, and 100% solar-powered elevated stations, Phase 2 will carry over 350,000 daily commuters upon full operation.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Transportation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Urban Mass Rapid Transit / Underground Metro"
+      },
+      {
+        "label": "Budget",
+        "value": "₹2,500–3,500 Crores"
+      },
+      {
+        "label": "Route Length",
+        "value": "11.16 km (6.88 km Underground / 4.28 km Elevated)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2035"
+      },
+      {
+        "label": "Location",
+        "value": "Lucknow, Uttar Pradesh"
+      }
+    ]
+  },
+  {
+    "id": "work_india_026",
+    "title": "Kolkata East-West Metro Corridor",
+    "subtitle": "A landmark 16.6 km metro line (Green Line) developed by KMRC connecting Salt Lake Sector V to Howrah Maidan, featuring India's deepest station at Howrah.",
+    "category": "Urban Transportation",
+    "designType": "Design & Build",
+    "location": "West Bengal",
+    "locationCategory": "India",
+    "completion": "2031 Completion",
+    "completionYear": "2031",
+    "image": "/images/work_india_026.jpg",
+    "summary": "The Kolkata East-West Metro Corridor (Line 2 / Green Line) is an extraordinary urban mass transit project executed by the Kolkata Metro Rail Corporation (KMRC). Spanning 16.6 km to unite the IT hub of Salt Lake Sector V with Howrah Maidan across the Hooghly River, the project incorporates 5.8 km of elevated viaducts and 10.8 km of deep underground tunneling, including India's deepest metro station at Howrah (33 meters deep).",
+    "description": "Kolkata, the pioneering birthplace of Indian metro railways, has achieved another monumental civil engineering milestone with the East-West Metro Corridor. Connecting the bustling railway terminal at Howrah with central Kolkata's business districts (BBD Bagh, Esplanade, Sealdah) and Salt Lake tech city, the line removes millions of vehicle trips across congested bridges.\n\nUnderground engineering required navigating century-old heritage edifices and soft alluvial clay strata. The underground section features twin 5.55m internal diameter tunnels bored by Earth Pressure Balance TBMs, supported by precast reinforced concrete segment rings sealed with hydrophilic elastomeric gaskets.\n\nThe centerpiece station at Howrah is a 5-level subterranean marvel built 33 meters (over 105 feet) below ground level, integrating directly into the Indian Railways Howrah Station complex to transfer over 500,000 passengers per day between suburban rail and rapid metro.\n\nEquipped with Grade of Automation 2 (GoA2) Automatic Train Operation (ATO), Communication-Based Train Control (CBTC), full-height platform screen doors, and rooftop solar installations across elevated stations, the corridor slashes transit time between Howrah and Salt Lake from over 90 minutes to just 24 minutes.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Transportation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Mass Rapid Transit / Deep Underground Metro"
+      },
+      {
+        "label": "Budget",
+        "value": "₹4,500–6,000 Crores"
+      },
+      {
+        "label": "Route Length",
+        "value": "16.6 km (10.8 km Underground / 5.8 km Elevated)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2031"
+      },
+      {
+        "label": "Location",
+        "value": "Kolkata & Howrah, West Bengal"
       }
     ]
   },
   {
     "id": "work_india_027",
-    "title": "Mumbai Metro Line 3 – Aqua Line",
-    "subtitle": "Mumbai's first fully underground metro corridor (33.5 km) with 27 stations connecting Aarey-JVLR to Cuffe Parade, featuring twin-bore TBM tunnels and advanced urban rail systems.",
-    "category": "Civil Infra",
+    "title": "Bhopal Metro Project",
+    "subtitle": "A 30 km modern mass transit network in Madhya Pradesh spanning the Orange and Blue Lines with elevated U-girders and CBTC signaling.",
+    "category": "Urban Transportation",
     "designType": "Design & Build",
-    "location": "Mumbai, Maharashtra",
+    "location": "Madhya Pradesh",
     "locationCategory": "India",
-    "completion": "2025–Phase I Operational / Phased Completion",
-    "completionYear": "2025",
-    "summary": "Mumbai's first fully underground metro corridor (33.5 km) with 27 stations connecting Aarey-JVLR to Cuffe Parade, featuring twin-bore TBM tunnels and advanced urban rail systems.",
-    "description": "Mumbai Metro Line 3, officially known as the Aqua Line, is Mumbai's first fully underground metro corridor. Developed by the Mumbai Metro Rail Corporation Limited (MMRCL), the line extends approximately 33.5 kilometres between Aarey-JVLR and Cuffe Parade, significantly improving north-south connectivity through some of the city's busiest commercial and residential districts.\n\nThe project includes 27 underground stations, twin-bore tunnels, underground depots, ventilation shafts, modern signaling systems, platform screen doors, and advanced passenger information systems. The corridor provides seamless interchange with suburban railways, existing metro lines, the Mumbai Monorail, and major commercial districts.\n\nEngineering works involve extensive tunnel boring beneath densely populated urban areas, deep underground station construction, utility relocation, and advanced groundwater management while minimizing impacts on surrounding infrastructure. Modern seismic engineering, automated train control systems, and energy-efficient station design ensure safe and reliable metro operations.\n\nUpon full completion, the Aqua Line will substantially reduce travel times, alleviate road congestion, improve public transportation capacity, and support sustainable urban mobility across the Mumbai Metropolitan Region.",
+    "completion": "2030 Completion",
+    "completionYear": "2030",
+    "image": "/images/work_india_027.jpg",
+    "summary": "The Bhopal Metro Project (Bhoj Metro) is an advanced mass rapid transit system executed by the Madhya Pradesh Metro Rail Corporation Limited (MPMRCL) in the City of Lakes. Spanning 30 km across the Orange Line (Karond Circle to AIIMS) and Blue Line (Bhadbhada Square to Ratnagiri Tiraha), the network features elevated precast U-girders, rooftop solar stations, and automated CBTC trainsets.",
+    "description": "Bhopal, the administrative and cultural capital of Madhya Pradesh, is evolving into a major education and industrial hub. The Bhopal Metro Rail project provides an eco-friendly, high-frequency transit alternative that eliminates traffic bottlenecks along congested arterial roads connecting old and new Bhopal.\n\nStructural viaduct construction employs 28-meter precast prestressed concrete U-girders, each weighing over 160 tonnes, cast in state-of-the-art automated casting yards and erected overnight using high-capacity mobile crane tandems. The U-girder design acts as a natural sound barrier while providing a clean, aesthetic structural profile.\n\nStations are designed with modern architectural cantilevers, open-air natural ventilation, integrated solar photovoltaic rooftops meeting 100% of station auxiliary power needs, and seamless multi-modal interchange plazas at Habibganj (Rani Kamlapati) and Bhopal Railway Station.\n\nThe rolling stock consists of modern, lightweight stainless-steel coaches equipped with driver-assisted CBTC signaling, regenerative braking returning 30% of traction power to the grid, and automated passenger information displays.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Urban Transportation"
       },
       {
         "label": "Sub-Sector",
-        "value": "Underground Metro / Tunneling"
+        "value": "Mass Rapid Transit / Elevated Metro"
       },
       {
         "label": "Budget",
-        "value": "~$4.5 Billion"
+        "value": "₹2,500–3,500 Crores"
+      },
+      {
+        "label": "Network Length",
+        "value": "30 km (Orange Line: 14.99 km / Blue Line: 12.88 km)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2030"
       },
       {
         "label": "Location",
-        "value": "Mumbai, Maharashtra"
+        "value": "Bhopal, Madhya Pradesh"
+      }
+    ]
+  },
+  {
+    "id": "work_india_028",
+    "title": "Mumbai Metro Line 5",
+    "subtitle": "A 24.9 km fully elevated Orange Line mass rapid transit corridor developed by MMRDA connecting Thane, Bhiwandi, and Kalyan across the Kasheli Creek.",
+    "category": "Urban Transportation",
+    "designType": "Design & Build",
+    "location": "Maharashtra",
+    "locationCategory": "India",
+    "completion": "2032 Completion",
+    "completionYear": "2032",
+    "image": "/images/work_india_028.jpg",
+    "summary": "Mumbai Metro Line 5 (Orange Line) is a major mass rapid transit megaproject executed by the Mumbai Metropolitan Region Development Authority (MMRDA). Spanning 24.9 km with 15 elevated stations, the corridor connects the dense urban and logistics corridors of Thane, Bhiwandi, and Kalyan, including a long-span balanced cantilever bridge across the Kasheli Creek.",
+    "description": "The Thane–Bhiwandi–Kalyan urban cluster is one of the fastest-growing industrial, warehousing, and residential growth corridors in the Mumbai Metropolitan Region (MMR). Mumbai Metro Line 5 establishes a rapid, reliable transit spine that drastically cuts road congestion and connects with suburban railway grids.\n\nCivil engineering is anchored by the crossing of the dynamic Kasheli Creek. MMRDA engineered a 550-meter-long balanced cantilever prestressed concrete box girder bridge featuring long spans exceeding 80 meters, supported on deep marine pile foundations driven through tidal mud into basalt bedrock.\n\nThe viaduct across congested urban stretches utilizes precast segmental concrete box girders erected using overhead launching gantries, minimizing the ground-level footprint along congested highway corridors like the Thane–Bhiwandi Road.\n\nEquipped with state-of-the-art CBTC signaling, driverless-ready trainsets, integrated multi-modal transit hubs at Kapurbawdi (interchange with Metro Line 4) and Kalyan Railway Station, Line 5 carries over 400,000 daily commuters upon full operation.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Transportation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Mass Rapid Transit / Elevated Marine Viaduct"
+      },
+      {
+        "label": "Budget",
+        "value": "₹8,000–10,000 Crores"
+      },
+      {
+        "label": "Route Length",
+        "value": "24.9 km Elevated Viaduct with 15 Stations"
+      },
+      {
+        "label": "Deadline",
+        "value": "2032"
+      },
+      {
+        "label": "Location",
+        "value": "Thane, Bhiwandi & Kalyan, Maharashtra"
+      }
+    ]
+  },
+  {
+    "id": "work_india_029",
+    "title": "Kolkata-Howrah Metro Tunnel",
+    "subtitle": "India's first underwater metro tunnel, bored 13m beneath the Hooghly riverbed (33m below water surface) across 520m of river channel with Hydro-Shield TBMs.",
+    "category": "Urban Transportation",
+    "designType": "Design & Build",
+    "location": "West Bengal",
+    "locationCategory": "India",
+    "completion": "2034 Completion",
+    "completionYear": "2034",
+    "image": "/images/work_india_029.jpg",
+    "summary": "The Kolkata-Howrah Metro Tunnel is a historic engineering marvel executed under the Hooghly River by the Kolkata Metro Rail Corporation (KMRC) and Afcons–Transtonnelstroy. As India's first underwater transportation tunnel, twin 5.55-meter-diameter tunnels were bored 13 meters beneath the riverbed and 33 meters below the water surface over a 520-meter river stretch to connect Kolkata and Howrah in just 45 seconds.",
+    "description": "For over three centuries, the mighty Hooghly River (a distributary of the Ganges) separated Kolkata from Howrah, connected only by iconic bridges like the Howrah Bridge and Vidyasagar Setu. The Kolkata-Howrah Underwater Metro Tunnel represents India's most daring underwater infrastructure breakthrough.\n\nSubterranean hydraulic engineering utilized two state-of-the-art slurry Earth Pressure Balance Tunnel Boring Machines (TBMs 'Rachna' and 'Prerna'). Boring through water-saturated alluvial silt, clay, and sand under extreme hydrostatic water pressure (up to 3 bar), the TBMs maintained continuous face support with bentonite slurry.\n\nThe tunnel lining consists of precast reinforced concrete segments (1.4m wide rings) made with micro-silica high-durability M50 concrete. Each segment is fitted with dual hydrophilic swellable elastomeric gaskets that expand upon contact with moisture, ensuring 100% water-tightness beneath the riverbed.\n\nSafety innovations include cross-passages excavated using artificial ground freezing technology, automated high-volume drainage sump pumps, positive-pressure emergency egress ventilation, and automatic floodgates at both river banks.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Transportation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Underwater Metro Tunnel / Subaqueous Tunneling"
+      },
+      {
+        "label": "Budget",
+        "value": "₹3,000–4,500 Crores"
+      },
+      {
+        "label": "Tunnel Length",
+        "value": "10–12 km Tunnel Package (520m Subaqueous River Section)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2034"
+      },
+      {
+        "label": "Location",
+        "value": "Hooghly River, Kolkata–Howrah, West Bengal"
       }
     ]
   },
   {
     "id": "work_india_030",
-    "title": "High-Speed Rail Training Institute & Associated MAHSR Infrastructure, Vadodara",
-    "subtitle": "A premier specialized training campus in Vadodara equipped with Japanese Shinkansen simulators, laboratories, and workshops to train engineers and personnel for India's high-speed railway network.",
-    "category": "Education",
+    "title": "Mumbai Metro Line 4",
+    "subtitle": "A 32.32 km elevated Green Line mass transit corridor developed by MMRDA along LBS Marg and Eastern Express Highway from Wadala to Thane.",
+    "category": "Urban Transportation",
     "designType": "Design & Build",
-    "location": "Vadodara, Gujarat",
+    "location": "Maharashtra",
     "locationCategory": "India",
-    "completion": "2017–Ongoing Development",
-    "completionYear": "2017",
-    "summary": "A premier specialized training campus in Vadodara equipped with Japanese Shinkansen simulators, laboratories, and workshops to train engineers and personnel for India's high-speed railway network.",
-    "description": "The High-Speed Rail Training Institute (HSRTI) in Vadodara, Gujarat, is a specialized educational and technical training facility established as part of the Mumbai–Ahmedabad High-Speed Rail project. Developed by the National High Speed Rail Corporation Limited with support from Japanese partners, the institute is dedicated to training engineers, operators, technicians, and maintenance personnel for India's future high-speed railway network.\n\nThe campus includes modern academic buildings, laboratories, simulation facilities, administrative offices, accommodation, workshops, and practical training infrastructure designed specifically for high-speed rail technology. Advanced simulators and technical equipment provide hands-on training in railway operations, signaling, rolling stock maintenance, and safety management.\n\nThe institute follows international training standards and incorporates knowledge transfer from Japan's Shinkansen system. Comprehensive programs cover railway engineering, operations management, maintenance procedures, disaster preparedness, and passenger safety, ensuring that India's workforce is equipped to operate and maintain high-speed rail infrastructure.\n\nThe High-Speed Rail Training Institute plays a critical role in developing the skilled workforce required for India's high-speed rail future while serving as a national center of excellence for railway technology, research, and professional development.",
+    "completion": "2031 Completion",
+    "completionYear": "2031",
+    "image": "/images/work_india_030.jpg",
+    "summary": "Mumbai Metro Line 4 (Green Line) is a massive 32.32 km elevated mass rapid transit project developed by the Mumbai Metropolitan Region Development Authority (MMRDA). Connecting Wadala in central Mumbai with Kasarvadavali in Thane through 32 elevated stations, the corridor runs along the heavily congested Lal Bahadur Shastri (LBS) Marg and Eastern Express Highway (EEH).",
+    "description": "Mumbai Metro Line 4 is one of the longest and most impactful elevated metro alignments in the Mumbai Metropolitan Region. By providing a high-capacity alternative along the Eastern suburbs (Ghatkopar, Bhandup, Mulund, Thane), Line 4 decongests the overcrowded Central suburban railway corridor.\n\nStructural engineering involves large-span precast prestressed concrete U-girders and composite steel-concrete box girders at major highway flyover crossings. Slender pier columns designed with self-compacting high-strength concrete minimize the right-of-way footprint along the narrow central medians of LBS Marg.\n\nThe project integrates multi-modal interchanges with Central Railway at Ghatkopar and Bhandup, Mumbai Monorail at Bhakti Park (Wadala), Metro Line 2B at EEH, and Metro Line 5 at Kapurbawdi, creating a truly unified regional transit web.\n\nEquipped with advanced Grade of Automation 4 (GoA4) driverless train capability, Communication-Based Train Control (CBTC), rooftop solar generation across all 32 stations, and regenerative braking rolling stock, Line 4 will carry over 1.2 million passengers daily.",
     "details": [
       {
         "label": "Sector",
-        "value": "Infrastructure"
+        "value": "Urban Transportation"
       },
       {
         "label": "Sub-Sector",
-        "value": "Railway Training / Technical Infrastructure"
+        "value": "Mass Rapid Transit / Elevated Arterial Metro"
       },
       {
         "label": "Budget",
-        "value": "Part of MAHSR Program"
+        "value": "₹4,500–6,000 Crores"
+      },
+      {
+        "label": "Route Length",
+        "value": "32.32 km (100% Elevated with 32 Stations)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2031"
       },
       {
         "label": "Location",
-        "value": "Vadodara, Gujarat"
+        "value": "Wadala to Thane, Maharashtra"
+      }
+    ]
+  },
+  {
+    "id": "work_india_031",
+    "title": "Kolkata Metro Line 6",
+    "subtitle": "A 29.87 km Orange Line mass rapid transit corridor along the Eastern Metropolitan Bypass connecting New Garia directly to Netaji Subhash Chandra Bose International Airport.",
+    "category": "Urban Transportation",
+    "designType": "Design & Build",
+    "location": "West Bengal",
+    "locationCategory": "India",
+    "completion": "2034 Completion",
+    "completionYear": "2034",
+    "image": "/images/work_india_031.jpg",
+    "summary": "Kolkata Metro Line 6 (Orange Line / Kavi Subhash to Jai Hind Airport) is a vital 29.87 km mass rapid transit corridor developed by Rail Vikas Nigam Limited (RVNL) and Kolkata Metro. Running along the Eastern Metropolitan Bypass, New Town (Rajarhat), and VIP Road, the project includes 24 elevated stations and an underground terminal station at Kolkata International Airport.",
+    "description": "Kolkata's eastern growth corridor—spanning the IT hub of New Town Rajarhat, major medical centers on EM Bypass, and Salt Lake—requires seamless mass rapid rail connectivity to Netaji Subhash Chandra Bose International Airport. Kolkata Metro Line 6 fulfills this strategic mobility need.\n\nCivil engineering challenges involved constructing elevated viaducts over the sensitive East Kolkata Wetlands and dense canal systems (Chingrighata, Bagjola canal). The foundation design utilizes deep pile groups with sacrificial steel liners to prevent groundwater contamination in fragile wetland soil.\n\nThe northern terminus at Kolkata Airport is an underground cut-and-cover mega-station (Jai Hind Station) integrated with the international terminal building, allowing air travelers to walk directly from baggage claim to air-conditioned metro platforms.\n\nFeaturing precast concrete I-girders and continuous box spans, CBTC signaling, energy-regenerating stainless-steel trains, and multi-modal integration with Metro Line 1 at Kavi Subhash and Line 2 at VIP Road, the Orange Line slashes airport commute times from 2 hours to under 35 minutes.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Transportation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Mass Rapid Transit / Airport Metro Link"
+      },
+      {
+        "label": "Budget",
+        "value": "₹3,000–4,000 Crores"
+      },
+      {
+        "label": "Route Length",
+        "value": "29.87 km (24 Elevated Stations + 1 Underground Airport Terminal)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2034"
+      },
+      {
+        "label": "Location",
+        "value": "Kolkata (EM Bypass & New Town), West Bengal"
+      }
+    ]
+  },
+  {
+    "id": "work_india_032",
+    "title": "Delhi Metro Phase 5",
+    "subtitle": "Next-generation expansion of the 390+ km DMRC network introducing orbital loops, automated GoA4 driverless operations, and 100% solar stations.",
+    "category": "Urban Transportation",
+    "designType": "Design & Build",
+    "location": "Delhi",
+    "locationCategory": "India",
+    "completion": "2032 Completion",
+    "completionYear": "2032",
+    "image": "/images/work_india_032.jpg",
+    "summary": "Delhi Metro Phase 5 is the next-generation expansion of India's largest and busiest metro network, executed by the Delhi Metro Rail Corporation (DMRC). Adding 50+ km of advanced orbital corridors and outer NCR feeder lines, Phase 5 introduces Grade of Automation 4 (GoA4) fully unattended driverless train operation, deep EPB tunneling beneath high-density urban areas, and 100% renewable energy operation.",
+    "description": "The Delhi Metro is globally recognized as a gold standard in urban transit engineering, operating over 390 km of network. Phase 5 extends the network's tentacles into underserved outer growth centers of Delhi NCR while completing missing orbital links that allow commuters to bypass central interchange stations.\n\nSubterranean civil engineering incorporates advanced Earth Pressure Balance (EPB) and Slurry TBMs to bore tunnels 20 to 25 meters deep beneath congested multi-story residential areas, heritage monuments, and active railway tracks with millimeter-level surface settlement control.\n\nElevated corridors feature slender aesthetic single-pier viaducts carrying precast concrete U-girders and long-span composite steel trusses at major road flyover crossings. Stations are designed with net-zero energy architecture, utilizing rooftop solar panels, smart regenerative elevators, and automated LED daylight-harvesting lighting.\n\nWith GoA4 unattended train operation, CBTC moving-block signaling allowing 90-second train headways, and full-height platform screen doors (PSDs), Phase 5 will expand Delhi Metro's daily ridership beyond 7 million passengers.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Transportation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Mass Rapid Transit / GoA4 Driverless Metro"
+      },
+      {
+        "label": "Budget",
+        "value": "₹5,000–7,000 Crores"
+      },
+      {
+        "label": "Network Addition",
+        "value": "50–60 km Orbital & Radial Corridors"
+      },
+      {
+        "label": "Deadline",
+        "value": "2032"
+      },
+      {
+        "label": "Location",
+        "value": "Delhi National Capital Region (NCR)"
+      }
+    ]
+  },
+  {
+    "id": "work_india_033",
+    "title": "Navi Mumbai Metro Line 1 & 2",
+    "subtitle": "A comprehensive urban mass transit system developed by CIDCO connecting Belapur to Kharghar, Taloja industrial nodes, and the upcoming NMIA Airport.",
+    "category": "Urban Transportation",
+    "designType": "Design & Build",
+    "location": "Maharashtra",
+    "locationCategory": "India",
+    "completion": "2030 Completion",
+    "completionYear": "2030",
+    "image": "/images/work_india_033.jpg",
+    "summary": "The Navi Mumbai Metro (Line 1 & Line 2) is a premier urban mass transit system executed by the City and Industrial Development Corporation (CIDCO) and Maha Metro. Spanning over 25 km from CBD Belapur through Kharghar, Pendhar, and the Taloja industrial hub towards the upcoming Navi Mumbai International Airport (NMIA), the elevated metro provides high-speed, congestion-free mobility across Navi Mumbai.",
+    "description": "Navi Mumbai, one of the world's largest planned satellite cities, is experiencing tremendous growth driven by the Navi Mumbai International Airport (NMIA) and expanding commercial sectors. The Navi Mumbai Metro forms the mass transit backbone connecting residential nodes with industrial and airport zones.\n\nCivil engineering works feature precast prestressed concrete viaducts and long-span structural steel truss bridges engineered to cross the Mumbai–Pune Expressway, Central Railway suburban tracks, and Sion–Panvel Highway without disrupting continuous ground traffic.\n\nThe stations are designed with futuristic aerodynamic steel canopies, translucent polycarbonate roofing, open natural ventilation reducing air conditioning energy demand, and full accessibility features including elevators, tactile paving, and automated fare collection (AFC) gates.\n\nOperated with CBTC signaling, 3-car stainless-steel rolling stock expandable to 6 cars, regenerative braking returning electrical power during deceleration, and dedicated solar rooftop installations, the metro delivers a smooth, comfortable transit experience.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Transportation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Mass Rapid Transit / Elevated Viaducts"
+      },
+      {
+        "label": "Budget",
+        "value": "₹4,000–6,000 Crores"
+      },
+      {
+        "label": "Route Length",
+        "value": "25–30 km Combined Network (Line 1: 11.1 km + Line 2 Expansion)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2030"
+      },
+      {
+        "label": "Location",
+        "value": "Navi Mumbai, Maharashtra"
+      }
+    ]
+  },
+  {
+    "id": "work_india_034",
+    "title": "Kanpur Elevated Metro Line",
+    "subtitle": "A 23.78 km high-speed mass transit network developed by UPMRC connecting IIT Kanpur to Naubasta and Agricultural University to Barra-8.",
+    "category": "Urban Transportation",
+    "designType": "Design & Build",
+    "location": "Uttar Pradesh",
+    "locationCategory": "India",
+    "completion": "2035 Completion",
+    "completionYear": "2035",
+    "image": "/images/work_india_034.jpg",
+    "summary": "The Kanpur Elevated Metro Line (Corridor-1 & Corridor-2) is a high-speed urban mass rapid transit project executed by the Uttar Pradesh Metro Rail Corporation (UPMRC). Spanning 23.78 km from IIT Kanpur to Naubasta and 8.6 km from CSA University to Barra-8, the network utilizes precast concrete U-girders, regenerative braking energy recovery, and green station architecture.",
+    "description": "Kanpur, the industrial and commercial metropolis of Uttar Pradesh historically known as the 'Leather City' and an educational powerhouse, faces severe vehicular congestion along its Grand Trunk Road corridor. The Kanpur Metro provides an ultra-modern, clean, and rapid transportation artery.\n\nStructural viaduct construction incorporates high-strength precast prestressed concrete U-girders manufactured in automated casting yards. The single-piece U-girders were erected using custom-designed overhead launching gantries over slender pier columns situated in narrow central medians.\n\nElevated stations feature sustainable architecture, including rainwater harvesting recharge pits, 100% rooftop solar panels supplying auxiliary power, automated destination elevators, and aesthetic terracotta-inspired facade fins.\n\nRolling stock comprises ultra-modern stainless-steel coaches equipped with CBTC signaling, regenerative braking that feeds electrical power back to the 25kV traction grid, and real-time CCTV monitoring, carrying over 300,000 passengers daily.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Transportation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Mass Rapid Transit / Elevated Metro"
+      },
+      {
+        "label": "Budget",
+        "value": "₹3,500–4,500 Crores"
+      },
+      {
+        "label": "Route Length",
+        "value": "23.78 km (Corridor 1: IIT Kanpur to Naubasta)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2035"
+      },
+      {
+        "label": "Location",
+        "value": "Kanpur, Uttar Pradesh"
+      }
+    ]
+  },
+  {
+    "id": "work_india_035",
+    "title": "Pune Metro Line 2",
+    "subtitle": "A 15.7 km East-West Aqua Line mass rapid transit corridor developed by Maha Metro from Vanaz to Ramwadi, featuring elevated bridge crossings over the Mutha River.",
+    "category": "Urban Transportation",
+    "designType": "Design & Build",
+    "location": "Maharashtra",
+    "locationCategory": "India",
+    "completion": "2031 Completion",
+    "completionYear": "2031",
+    "image": "/images/work_india_035.jpg",
+    "summary": "Pune Metro Line 2 (Aqua Line) is a major 15.7 km East-West urban mass transit corridor executed by the Maharashtra Metro Rail Corporation Limited (Maha Metro). Spanning from Vanaz in Kothrud to Ramwadi via Deccan Gymkhana, PMC, and Pune Railway Station, the elevated line incorporates 16 modern stations, prestressed concrete viaducts, and scenic river bridge crossings over the Mutha River.",
+    "description": "Pune, the cultural and academic capital of Maharashtra and a global automotive and software metropolis, has experienced massive urban expansion. Pune Metro Line 2 forms the vital East-West spine uniting residential suburbs, historic cultural centers, and bustling IT corridors.\n\nCivil engineering highlights include the construction of elevated viaduct crossings over the Mutha River. Maha Metro engineered long-span steel-concrete composite box girders and precast concrete segmental spans supported on circular piers designed to resist high-velocity river flood currents.\n\nThe viaduct across congested urban thoroughfares (Karve Road, Jangli Maharaj Road, Ahmednagar Road) utilized single-column cantilever piers and precast prestressed box girders erected using overhead launching trusses, preserving existing ground roadway capacity.\n\nFeaturing ultra-light stainless-steel rolling stock with aluminum-skinned aerodynamics, CBTC signaling for 90-second headways, integrated interchange with Line 1 (Purple Line) at District Court Interchange, and 100% solar-paneled station roofs, Line 2 carries over 350,000 daily commuters.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Transportation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Mass Rapid Transit / Elevated River Crossing Metro"
+      },
+      {
+        "label": "Budget",
+        "value": "₹2,500–3,500 Crores"
+      },
+      {
+        "label": "Route Length",
+        "value": "15.7 km (100% Elevated with 16 Modern Stations)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2031"
+      },
+      {
+        "label": "Location",
+        "value": "Pune (Vanaz to Ramwadi), Maharashtra"
+      }
+    ]
+  },
+  {
+    "id": "work_india_036",
+    "title": "Mumbai Metro Line 7A",
+    "subtitle": "A 3.42 km critical airport link extension of MMRDA's Red Line, featuring 2.49 km of deep underground tunneling beneath the Western Express Highway into CSMIA Terminal 2.",
+    "category": "Urban Transportation",
+    "designType": "Design & Build",
+    "location": "Maharashtra",
+    "locationCategory": "India",
+    "completion": "2032 Completion",
+    "completionYear": "2032",
+    "image": "/images/work_india_036.jpg",
+    "summary": "Mumbai Metro Line 7A is a vital 3.42 km direct airport link extension of the operational Red Line (Line 7), executed by the Mumbai Metropolitan Region Development Authority (MMRDA). Spanning from Andheri East (Gundavali) directly into Chhatrapati Shivaji Maharaj International Airport (CSMIA) Terminal 2, the project features 2.49 km of deep underground EPB-bored tunnels beneath the Western Express Highway and Sahar Elevated Road.",
+    "description": "Mumbai's Chhatrapati Shivaji Maharaj International Airport (CSMIA Terminal 2) is one of the world's busiest single-runway airport hubs, handling over 45 million passengers annually. Mumbai Metro Line 7A connects the northern suburbs (Dahisar, Borivali, Kandivali, Malad, Andheri) directly to the airport terminal without road congestion.\n\nSubterranean engineering challenges required boring twin 5.8-meter-diameter tunnels directly beneath the active Western Express Highway, elevated flyovers, and active aircraft taxiway clearance envelopes. MMRDA utilized specialized Earth Pressure Balance (EPB) Tunnel Boring Machines equipped with real-time ground settlement compensation.\n\nThe underground CSMIA T2 station is a multi-level subterranean box built using top-down cut-and-cover diaphragm walls, integrating directly into the airport's departures and arrivals concourse via subterranean moving travelators.\n\nEquipped with CBTC driverless signaling, full-height platform screen doors, automated baggage-check facilities, and direct seamless interchange with Underground Metro Line 3 (Aqua Line), Line 7A slashes airport commute times from Dahisar from 90 minutes to just 25 minutes.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Transportation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Airport Express Transit / Underground Metro"
+      },
+      {
+        "label": "Budget",
+        "value": "₹3,000–4,500 Crores"
+      },
+      {
+        "label": "Route Length",
+        "value": "3.42 km (2.49 km Underground Tunnels + 0.93 km Elevated)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2032"
+      },
+      {
+        "label": "Location",
+        "value": "Andheri East to CSMIA T2, Mumbai, Maharashtra"
+      }
+    ]
+  },
+  {
+    "id": "work_india_037",
+    "title": "Enayam Port Project",
+    "subtitle": "A greenfield deepwater International Container Transshipment Port in Tamil Nadu engineered with -20m natural draft and 4+ km of deep-sea breakwaters.",
+    "category": "Port Infrastructure",
+    "designType": "Design & Build",
+    "location": "Tamil Nadu",
+    "locationCategory": "India",
+    "completion": "2032 Completion",
+    "completionYear": "2032",
+    "image": "/images/work_india_037.jpg",
+    "summary": "The Enayam Port Project (Colachel/Enayam International Container Transshipment Port) is a mega maritime infrastructure project developed under the Sagarmala initiative in Kanyakumari district, Tamil Nadu. Located directly along the international East–West shipping channel, the greenfield port features a natural draft of -20 meters, 4+ km of deep-sea rubble-mound breakwaters, and automated super post-Panamax container berths.",
+    "description": "Currently, over 75% of India's transshipment container cargo is handled at foreign ports such as Colombo, Singapore, and Port Klang, resulting in substantial financial outflow and logistical delays. The Enayam Port Project is engineered to establish a premier domestic transshipment hub on the southern tip of the Indian peninsula.\n\nMaritime civil engineering is highlighted by the construction of over 4.5 km of heavy rubble-mound breakwaters armored with 20-tonne concrete Core-Loc and Accropode units designed to withstand intense Arabian Sea monsoon waves (wave heights exceeding 6 meters).\n\nThe port's deep natural water depth (-20 meters with minimal capital dredging) allows next-generation mega container vessels of up to 24,000 TEU to dock. The terminal features 2.5 km of deepwater quay walls, automated Ship-to-Shore (STS) gantry cranes with outreach exceeding 24 container rows, and an automated container stacking yard.\n\nConnected to the national highway grid (NH-66) via a dedicated 6-lane elevated freight expressway and an electrified double-track railway spur, Enayam Port will transform Indian maritime logistics upon full commissioning.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Port Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Greenfield International Container Transshipment Port"
+      },
+      {
+        "label": "Budget",
+        "value": "INR 7,500–10,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "1,000–1,500 Hectares (Offshore & Hinterland Reclamation)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2032"
+      },
+      {
+        "label": "Location",
+        "value": "Enayam / Kanyakumari, Tamil Nadu"
+      }
+    ]
+  },
+  {
+    "id": "work_india_038",
+    "title": "Paradip Port Capacity Expansion",
+    "subtitle": "A mega port modernization in Odisha adding the Western Dock, capital dredging to -18m draft, and automated 5,000 TPH stacker-reclaimers to reach 300+ MMTPA.",
+    "category": "Port Infrastructure",
+    "designType": "Design & Build",
+    "location": "Odisha",
+    "locationCategory": "India",
+    "completion": "2033 Completion",
+    "completionYear": "2033",
+    "image": "/images/work_india_038.jpg",
+    "summary": "The Paradip Port Capacity Expansion is a major maritime infrastructure development executed by the Paradip Port Authority (PPA) in Odisha under the Sagarmala initiative. Modernizing the port into a mega maritime hub handling over 300 MMTPA, the project includes constructing the Western Dock, deepening the approach channel to -18m draft for Capesize bulk carriers, and installing fully mechanized 5,000 TPH material handling systems.",
+    "description": "Paradip Port, situated at the confluence of the Mahanadi River and the Bay of Bengal, is India's leading major port for coking coal, iron ore, pellet, and dry bulk trade, serving the rich mineral hinterlands of Odisha, Jharkhand, and Chhattisgarh. The expansion scales up handling efficiency to world-class benchmarks.\n\nThe centerpiece of the expansion is the development of the Western Dock with a capacity of 25 MMTPA. Civil engineering comprises heavy reinforced concrete diaphragm quay walls, marine piling into dense coastal sand, and expansive capital dredging of 12+ million cubic meters to achieve a draft of -18 meters.\n\nMechanized bulk handling infrastructure includes high-speed tandem wagon tipplers, automated stacker-reclaimers (5,000 tonnes per hour capacity), and 15 km of fully enclosed conveyor galleries equipped with dry fog dust suppression systems that eliminate coal dust dispersion.\n\nEnvironmental protection is enhanced through 100% wastewater treatment, extensive peripheral green shelterbelts, and rooftop solar installations. Upon completion, the project cements Paradip's position as the bulk shipping powerhouse of the East Coast.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Port Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Dry Bulk & Deepwater Harbor Expansion"
+      },
+      {
+        "label": "Budget",
+        "value": "INR 3,000–4,500 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "150–200 Hectares Berths & Storage Yards"
+      },
+      {
+        "label": "Deadline",
+        "value": "2033"
+      },
+      {
+        "label": "Location",
+        "value": "Paradip, Odisha"
+      }
+    ]
+  },
+  {
+    "id": "work_india_039",
+    "title": "Colachel Port Project",
+    "subtitle": "A deep-sea transshipment port on the Arabian Sea in Tamil Nadu, engineered with 18.5m natural draft, rubble-mound breakwaters, and automated STS gantry cranes.",
+    "category": "Port Infrastructure",
+    "designType": "Design & Build",
+    "location": "Tamil Nadu",
+    "locationCategory": "India",
+    "completion": "2032 Completion",
+    "completionYear": "2032",
+    "image": "/images/work_india_039.jpg",
+    "summary": "The Colachel Port Project is a major commercial transshipment and maritime gateway development located on the pristine Arabian Sea coast in Kanyakumari district, Tamil Nadu. Engineered under the Sagarmala program to capitalize on deep natural bathymetry (18.5m draft), the project features heavy marine breakwaters, automated container terminals, and direct links to southern industrial corridors.",
+    "description": "Colachel has historically enjoyed a natural deep-water bay along the southwestern tip of India, situated just a few nautical miles from the prime east-west international maritime shipping routes. The project converts this geographic advantage into an international transshipment terminal.\n\nCivil engineering works center on the construction of a 3.5 km rubble-mound breakwater armored with 15-tonne precast concrete tetrapod and Accropode units to create a calm harbor basin in open oceanic waters subject to high wave swells.\n\nThe terminal features deepwater container quay walls constructed using large-diameter steel tubular piles with reinforced concrete decks capable of supporting heavy automated Ship-to-Shore (STS) gantry cranes and automated guided vehicles (AGVs).\n\nConnected to the hinterland via a dedicated 4-lane access expressway and an electrified broad-gauge freight rail link, Colachel Port provides an eco-friendly, high-efficiency maritime conduit for southern India's textiles, electronics, and automotive manufacturing exports.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Port Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Deep-Sea Commercial Port & Transshipment"
+      },
+      {
+        "label": "Budget",
+        "value": "INR 4,000–6,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "500–700 Hectares Port Basin & Yards"
+      },
+      {
+        "label": "Deadline",
+        "value": "2032"
+      },
+      {
+        "label": "Location",
+        "value": "Colachel, Tamil Nadu"
+      }
+    ]
+  },
+  {
+    "id": "work_india_040",
+    "title": "Bikaner Solar Park",
+    "subtitle": "A 500 MW grid-connected ultra-mega solar project under UMREPP across 2,000 acres in the Thar Desert, featuring N-type TOPCon modules and robotic dry cleaning.",
+    "category": "Solar Energy",
+    "designType": "Design & Build",
+    "location": "Rajasthan",
+    "locationCategory": "India",
+    "completion": "2033 Completion",
+    "completionYear": "2033",
+    "image": "/images/work_india_040.jpg",
+    "summary": "The Bikaner Solar Park is a high-efficiency 500 MW utility-scale solar power development executed under the Ultra Mega Renewable Energy Power Projects (UMREPP) scheme by NTPC Renewable Energy and state agencies in the Thar Desert, Rajasthan. Spanning 2,000 acres, the solar complex incorporates advanced N-type TOPCon bifacial modules, single-axis astronomical trackers, and robotic dry cleaning systems.",
+    "description": "Bikaner, situated in the arid desert heart of northwestern Rajasthan, receives some of the highest solar irradiance levels in the world (>5.8 kWh/m²/day). The Bikaner Solar Park transforms this abundant solar resource into clean electricity evacuated to northern and western national grids.\n\nThe engineering blueprint features ground-mounted solar arrays utilizing N-type Tunnel Oxide Passivated Contact (TOPCon) bifacial photovoltaic modules with cell efficiencies exceeding 22.5%. The panels are mounted on automated horizontal single-axis trackers that follow the sun from east to west.\n\nTo address severe desert dust storms (Andhi) while conserving precious groundwater, the park is 100% equipped with autonomous water-free robotic cleaning machines that sweep sand and dust off module surfaces every night using specialized microfiber rollers.\n\nPower evacuation is channeled through an on-site 400kV/220kV Pooling Substation equipped with Gas-Insulated Switchgear (GIS) and connected to the Inter-State Transmission System (ISTS), generating over 1.2 billion units (kWh) of clean electricity annually.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Solar Energy"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Utility Solar / Thar Desert UMREPP"
+      },
+      {
+        "label": "Budget",
+        "value": "INR 2,500–3,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "2,000 Acres (~8.1 km²)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2033"
+      },
+      {
+        "label": "Location",
+        "value": "Bikaner, Rajasthan"
+      }
+    ]
+  },
+  {
+    "id": "work_india_041",
+    "title": "Rewa Solar Park Expansion",
+    "subtitle": "A 250 MW Phase II expansion of the landmark 750 MW Rewa solar park across 500 acres, supplying zero-carbon electricity to the MP grid and Delhi Metro.",
+    "category": "Solar Energy",
+    "designType": "Design & Build",
+    "location": "Madhya Pradesh",
+    "locationCategory": "India",
+    "completion": "2030 Completion",
+    "completionYear": "2030",
+    "image": "/images/work_india_041.jpg",
+    "summary": "The Rewa Solar Park Expansion (Phase II) is a 250 MW clean energy project executed by Rewa Ultra Mega Solar Limited (RUMSL) in Gurh tehsil, Rewa district, Madhya Pradesh. Expanding the iconic 750 MW Rewa project—celebrated for supplying green power to the Delhi Metro network—Phase II adds 500 acres of bifacial solar PV arrays and seasonal tilt racking.",
+    "description": "The Rewa Ultra Mega Solar Park was India's first solar project to achieve grid parity and break tariffs below conventional thermal power, famously powering 100% of Delhi Metro's daytime daytime traction and station requirements. Phase II expands this landmark clean energy complex.\n\nThe engineering scope comprises ground-mounted arrays over undulating rocky terrain in Gurh. The development utilizes high-yield monocrystalline bifacial photovoltaic modules mounted on seasonally adjustable tilt structural steel frames, optimizing solar harvest between summer and winter sun angles.\n\nCivil works incorporated rock drilling for foundation anchors in hard sandstone bedrock, precast concrete foundation blocks, and internal concrete utility roads. The electrical design features central inverter stations with smart transformer units and underground 33kV medium-voltage collector cables.\n\nPower evacuation is integrated seamlessly into the existing 220kV/400kV PGCIL pooling substation, delivering over 600 million units of green power annually with high availability and automated SCADA remote monitoring.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Solar Energy"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Grid-Connected Ultra-Mega Solar Expansion"
+      },
+      {
+        "label": "Budget",
+        "value": "INR 1,500–2,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "Additional 500 Acres (Phase II Addition)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2030"
+      },
+      {
+        "label": "Location",
+        "value": "Gurh / Rewa, Madhya Pradesh"
+      }
+    ]
+  },
+  {
+    "id": "work_india_042",
+    "title": "Bundelkhand Solar Project",
+    "subtitle": "A 150 MW utility-scale solar park developed by UPNEDA across 600 acres along the Bundelkhand Expressway in Jalaun–Jhansi, Uttar Pradesh.",
+    "category": "Solar Energy",
+    "designType": "Design & Build",
+    "location": "Uttar Pradesh",
+    "locationCategory": "India",
+    "completion": "2033 Completion",
+    "completionYear": "2033",
+    "image": "/images/work_india_042.jpg",
+    "summary": "The Bundelkhand Solar Project is a 150 MW utility-scale clean energy installation developed by the Uttar Pradesh New and Renewable Energy Development Agency (UPNEDA) and state power corporations in the Jalaun and Jhansi districts of Bundelkhand, Uttar Pradesh. Spanning 600 acres of non-arable land along the Bundelkhand Expressway, the project powers regional industrial growth.",
+    "description": "Bundelkhand, historically characterized by semi-arid terrain and high solar insolation, is being transformed into a green energy hub for Uttar Pradesh. The Bundelkhand Solar Project supplies clean renewable electricity directly to the regional 132kV transmission grid.\n\nThe engineering design utilizes desert-grade monocrystalline PERC solar photovoltaic modules with anti-reflective glass coatings designed to resist high summer ambient temperatures (>47°C). The mounting structures utilize fixed-tilt optimized galvanized steel frames angled to maximize annual kilowatt-hour yield.\n\nCivil works included land grading, constructing perimeter drainage canals to manage sudden monsoon runoff, and ramming pre-drilled steel pile foundations. The project incorporates modular containerized inverter stations with integrated step-up transformers and automated fire suppression systems.\n\nEquipped with SCADA telemetry, automated string-level monitoring, and semi-automated dry cleaning equipment, the park delivers over 330 million units of green power annually, reducing carbon emissions by 280,000 tonnes each year.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Solar Energy"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Utility Solar / Bundelkhand Green Corridor"
+      },
+      {
+        "label": "Budget",
+        "value": "INR 650–850 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "600 Acres (~2.4 km²)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2033"
+      },
+      {
+        "label": "Location",
+        "value": "Jalaun / Jhansi, Uttar Pradesh"
+      }
+    ]
+  },
+  {
+    "id": "work_india_043",
+    "title": "Sambhar Lake Solar Park",
+    "subtitle": "A massive 2,000 MW (2 GW) Ultra Mega Renewable Energy Park across 9,000 acres of surplus salt wasteland in Rajasthan with anti-corrosion tech and 765kV grid.",
+    "category": "Solar Energy",
+    "designType": "Design & Build",
+    "location": "Rajasthan",
+    "locationCategory": "India",
+    "completion": "2030 Completion",
+    "completionYear": "2030",
+    "image": "/images/work_india_043.jpg",
+    "summary": "The Sambhar Lake Solar Park is one of the world's largest planned renewable energy installations, developed by a joint venture of PSU energy corporations (including Sambhar Salts Limited, SECI, and NTPC) in Rajasthan. Spanning 9,000 acres of non-wetland surplus salt flat wasteland, the 2,000 MW (2 GW) ultra-mega park incorporates specialized anti-corrosion mounting structures, hydrophobic solar glass, and 765kV transmission links.",
+    "description": "Sambhar Lake in Rajasthan is India's largest inland salt lake. Across surrounding non-ecological surplus salt flats and barren saline wastelands, the Sambhar Lake Ultra Mega Solar Park creates a titanic clean energy generation engine capable of powering millions of homes and industrial clusters.\n\nThe engineering scope requires specialized materials science to combat high salinity and salt-laden corrosive desert dust. All structural steel mountings are engineered with heavy hot-dip galvanization (>100 microns) and epoxy-polyurethane coatings tested to withstand C5-M extreme marine/saline atmospheric corrosion.\n\nThe solar arrays utilize bifacial monocrystalline silicon photovoltaic modules with hydrophobic and anti-saline nano-coated front glass. The modules capture intense reflected albedo sunlight from the white, salt-crusted ground plane, boosting energy generation by up to 22% over standard fixed arrays.\n\nPower evacuation is managed through a state-of-the-art 765kV/400kV Gas-Insulated Substation (GIS) linked directly to the national Green Energy Corridor, preventing over 4 million tonnes of greenhouse gas emissions every year.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Solar Energy"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Gigawatt-Scale Ultra Mega Solar Park"
+      },
+      {
+        "label": "Budget",
+        "value": "INR 18,000–22,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "9,000 Acres (~36.4 km²)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2030"
+      },
+      {
+        "label": "Location",
+        "value": "Sambhar Salt Wastelands, Rajasthan"
+      }
+    ]
+  },
+  {
+    "id": "work_india_044",
+    "title": "Bhadla Solar Phase II",
+    "subtitle": "A 1,000 MW expansion of the world-renowned Bhadla Solar Park in the Thar Desert (Phalodi/Jodhpur), expanding total complex capacity to 3,200+ MW.",
+    "category": "Solar Energy",
+    "designType": "Design & Build",
+    "location": "Rajasthan",
+    "locationCategory": "India",
+    "completion": "2034 Completion",
+    "completionYear": "2034",
+    "image": "/images/work_india_044.jpg",
+    "summary": "Bhadla Solar Park Phase II is a 1,000 MW gigawatt-scale expansion of the world's largest operational solar park, developed by the Rajasthan Solar Park Development Company Limited (RSDCL) and national clean energy agencies in Phalodi tehsil, Jodhpur district, Rajasthan. Spanning 5,000 acres of desert wasteland, Phase II elevates the total Bhadla solar complex capacity to over 3,200 MW.",
+    "description": "Bhadla, situated in the deep arid expanse of the Thar Desert, is globally renowned for hosting the largest operational solar power complex on Earth, blessed with extreme solar radiation (>5.9 kWh/m²/day). Phase II expands this monumental renewable energy landmark with next-generation photovoltaics.\n\nThe engineering layout features monocrystalline silicon bifacial modules mounted on smart astronomical single-axis trackers equipped with AI-based backtracking algorithms to avoid panel-on-panel shading during early morning and late afternoon hours.\n\nDesert operations are supported by a park-wide robotic dry cleaning infrastructure. Fleets of autonomous waterless robots travel along module rows each night, removing dust particles with microfiber brushes and electrostatic repulsion without consuming a single drop of scarce desert water.\n\nPower is collected through 33kV collector rings, stepped up to 220kV at internal pooling stations, and evacuated into the national 765kV Green Energy Corridor via Power Grid Corporation of India (PGCIL) substations, generating over 2.4 billion kWh of green electricity annually.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Solar Energy"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "World's Largest Ultra-Mega Solar Complex Expansion"
+      },
+      {
+        "label": "Budget",
+        "value": "INR 10,000–12,000 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "5,000 Acres (~20.2 km² Phase II Expansion)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2034"
+      },
+      {
+        "label": "Location",
+        "value": "Bhadla / Phalodi, Rajasthan"
+      }
+    ]
+  },
+  {
+    "id": "work_india_045",
+    "title": "Khavda Solar Project",
+    "subtitle": "A 250 MW utility-scale solar development within the world's largest 30 GW Khavda Renewable Energy Park in the Rann of Kutch, Gujarat.",
+    "category": "Solar Energy",
+    "designType": "Design & Build",
+    "location": "Gujarat",
+    "locationCategory": "India",
+    "completion": "2031 Completion",
+    "completionYear": "2031",
+    "image": "/images/work_india_045.jpg",
+    "summary": "The Khavda Solar Project is a high-performance 250 MW utility-scale clean energy installation developed within the colossal 30 GW Khavda Renewable Energy Park by Adani Green Energy, NTPC, and Gujarat Power Corporation Limited (GPCL) in the Great Rann of Kutch, Gujarat. Spanning 1,000 acres, the project features anti-saline foundation engineering, 600W+ bifacial modules, and 765kV power evacuation.",
+    "description": "The Khavda Renewable Energy Park in the Rann of Kutch is the world's largest hybrid renewable energy development, spanning over 726 square kilometers with a targeted capacity of 30,000 MW (30 GW). The Khavda Solar Project forms a vital, high-yield utility block within this global megaproject.\n\nCivil engineering challenges are defined by the unique hyper-saline soil and seasonal waterlogging of the Rann of Kutch. Foundation engineering utilizes pre-bored concrete-encased corrosion-resistant piles and elevated module mounting structures that raise sensitive electrical systems 1.5 meters above maximum flood levels.\n\nThe solar installation comprises high-efficiency 600W+ monocrystalline bifacial photovoltaic modules mounted on single-axis horizontal trackers with anti-corrosion galvanized steel coatings rated for C5-I industrial/saline environments.\n\nPower evacuation is routed through 33kV/220kV pooling substations and dispatched into the 765kV national Green Energy Corridor via Power Grid Corporation of India (PGCIL) transmission lines, delivering over 650 million units of clean electricity annually.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Solar Energy"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "30 GW Mega Khavda Renewable Energy Park Block"
+      },
+      {
+        "label": "Budget",
+        "value": "INR 1,200–1,500 Crores"
+      },
+      {
+        "label": "Area",
+        "value": "1,000 Acres (~4.0 km²)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2031"
+      },
+      {
+        "label": "Location",
+        "value": "Khavda, Rann of Kutch, Gujarat"
       }
     ]
   }

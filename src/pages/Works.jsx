@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect, startTransition } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SlidersHorizontal, RefreshCw, Calendar, ArrowRight, Layers, Search, X } from 'lucide-react';
 import { projects, workCategories } from '../data/worksContent';
@@ -8,11 +9,30 @@ import ProjectMapPopup from '../components/ProjectMapPopup';
    Category colour map for accent pills
 ───────────────────────────────────────────── */
 const CATEGORY_COLORS = {
+  "Aviation": { bg: "rgba(30,58,138,0.92)", text: "#ffffff" },
+  "Commercial Infrastructure": { bg: "rgba(11,61,107,0.92)", text: "#ffffff" },
+  "Industrial Infrastructure": { bg: "rgba(16,130,80,0.92)", text: "#ffffff" },
+  "Port Infrastructure": { bg: "rgba(14,116,144,0.92)", text: "#ffffff" },
+  "Railways": { bg: "rgba(180,83,9,0.92)", text: "#ffffff" },
+  "Renewable Energy": { bg: "rgba(217,119,6,0.92)", text: "#ffffff" },
+  "Solar Energy": { bg: "rgba(234,88,12,0.92)", text: "#ffffff" },
+  "Roads and Highways": { bg: "rgba(15,118,110,0.92)", text: "#ffffff" },
+  "Urban Infrastructure": { bg: "rgba(109,40,217,0.92)", text: "#ffffff" },
+  "Urban Transportation": { bg: "rgba(2,132,199,0.92)", text: "#ffffff" },
   "Offices": { bg: "rgba(11,61,107,0.90)", text: "#ffffff" },
   "Civil Infra": { bg: "rgba(16,130,80,0.90)", text: "#ffffff" },
   "Energy": { bg: "rgba(217,119,6,0.90)", text: "#ffffff" },
   "Education": { bg: "rgba(109,40,217,0.90)", text: "#ffffff" },
   "Recreation": { bg: "rgba(220,38,38,0.90)", text: "#ffffff" },
+  "Transportation": { bg: "rgba(2,132,199,0.90)", text: "#ffffff" },
+  "Healthcare": { bg: "rgba(225,29,72,0.90)", text: "#ffffff" },
+  "Research": { bg: "rgba(79,70,229,0.90)", text: "#ffffff" },
+  "Hospitality": { bg: "rgba(194,65,12,0.90)", text: "#ffffff" },
+  "Residential": { bg: "rgba(13,148,136,0.90)", text: "#ffffff" },
+  "Urban Redevelopment": { bg: "rgba(109,40,217,0.90)", text: "#ffffff" },
+  "Cultural": { bg: "rgba(190,24,93,0.90)", text: "#ffffff" },
+  "Sports": { bg: "rgba(220,38,38,0.90)", text: "#ffffff" },
+  "Government": { bg: "rgba(51,65,85,0.90)", text: "#ffffff" },
 };
 
 /* ─────────────────────────────────────────────
@@ -216,18 +236,69 @@ const FilterSelect = ({ label, value, onChange, options }) => (
    Main Page
 ───────────────────────────────────────────── */
 export default function Works() {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [selectedProject, setSelectedProject] = useState(null);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [designBuild, setDesignBuild] = useState("All");
-  const [facilityType, setFacilityType] = useState("All");
-  const [location, setLocation] = useState("All");
-  const [year, setYear] = useState("All");
+
+  // Read initial filter values from URL params first, then sessionStorage, then defaults
+  const getInitialFilters = () => {
+    let saved = {};
+    try {
+      const raw = sessionStorage.getItem('obayashi_works_filters');
+      if (raw) saved = JSON.parse(raw);
+    } catch (e) {
+      saved = {};
+    }
+
+    const siteParam = searchParams.get('site') || searchParams.get('location');
+    const catParam = searchParams.get('category') || searchParams.get('facilityType');
+    const contractParam = searchParams.get('contract') || searchParams.get('designBuild');
+    const yearParam = searchParams.get('year');
+    const qParam = searchParams.get('q') || searchParams.get('search');
+
+    return {
+      searchQuery: qParam !== null ? qParam : (saved.searchQuery || ""),
+      designBuild: contractParam || saved.designBuild || "All",
+      facilityType: catParam || saved.facilityType || "All",
+      location: siteParam || saved.location || "All",
+      year: yearParam || saved.year || "All",
+    };
+  };
+
+  const initialFilters = useMemo(() => getInitialFilters(), []);
+
+  const [searchQuery, setSearchQuery] = useState(initialFilters.searchQuery);
+  const [designBuild, setDesignBuild] = useState(initialFilters.designBuild);
+  const [facilityType, setFacilityType] = useState(initialFilters.facilityType);
+  const [location, setLocation] = useState(initialFilters.location);
+  const [year, setYear] = useState(initialFilters.year);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 800);
+    const timer = setTimeout(() => setLoading(false), 400);
     return () => clearTimeout(timer);
   }, []);
+
+  // Persist filter changes to sessionStorage and sync to URL query string
+  useEffect(() => {
+    try {
+      sessionStorage.setItem('obayashi_works_filters', JSON.stringify({
+        searchQuery,
+        designBuild,
+        facilityType,
+        location,
+        year
+      }));
+    } catch (e) {}
+
+    const params = new URLSearchParams();
+    if (location && location !== 'All') params.set('site', location);
+    if (facilityType && facilityType !== 'All') params.set('category', facilityType);
+    if (designBuild && designBuild !== 'All') params.set('contract', designBuild);
+    if (year && year !== 'All') params.set('year', year);
+    if (searchQuery && searchQuery.trim()) params.set('q', searchQuery.trim());
+
+    setSearchParams(params, { replace: true });
+  }, [searchQuery, designBuild, facilityType, location, year, setSearchParams]);
 
   const handleReset = () => {
     startTransition(() => {
@@ -236,6 +307,10 @@ export default function Works() {
       setFacilityType("All");
       setLocation("All");
       setYear("All");
+      try {
+        sessionStorage.removeItem('obayashi_works_filters');
+      } catch (e) {}
+      setSearchParams({}, { replace: true });
     });
   };
 
