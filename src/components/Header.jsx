@@ -58,6 +58,7 @@ export default function Header() {
         { label: "Corporate Philosophy", path: "/company#philosophy" },
         { label: "Historical Timeline", path: "/company#history" },
         { label: "Group Network & Affiliates", path: "/company#group" },
+        { label: "Certificates & Accreditations", path: "/company/certificates" },
         { label: "Corporate Governance", path: "/company#governance" }
       ]
     },

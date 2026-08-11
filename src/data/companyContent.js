@@ -110,3 +110,55 @@ export const publications = [
     link: "#"
   }
 ];
+
+export const certificates = [
+  {
+    id: "ohs-600018",
+    standard: "OHSAS 18001:2007 / ISO 45001:2018",
+    title: "Occupational Health & Safety Management System",
+    entity: "OBAYASHI VIETNAM CORPORATION",
+    location: "Ho Chi Minh City, Vietnam",
+    address: "No. 37, Ton Duc Thang Street, District 1, Ho Chi Minh City, Vietnam",
+    certNumber: "OHS 600018",
+    issuer: "BSI (British Standards Institution)",
+    scope: "Management of construction projects.",
+    validity: "Certified to OHSAS 18001 since 05/08/2013",
+    image: "/images/certificate/Screenshot 2026-08-11 185425.png",
+    category: "Safety & Project Management",
+    badge: "ISO 45001:2018 Certified",
+    officials: [
+      { name: "Michael Lam", role: "Managing Director Assurance, APAC" },
+      { name: "Le Duyen Anh", role: "Managing Director Vietnam" }
+    ],
+    highlights: [
+      "Zero-harm workplace health & safety standard",
+      "Rigorous construction management auditing",
+      "Continuous BSI APAC accreditation"
+    ]
+  },
+  {
+    id: "ohs-617337",
+    standard: "OHSAS 18001:2007 / ISO 45001:2018",
+    title: "Civil & Industrial Safety & Construction Supervision",
+    entity: "OBAYASHI VIETNAM CORPORATION - HANOI BRANCH",
+    location: "Hanoi, Vietnam",
+    address: "Room 1701, 17th Floor, PVI Tower, Lot VP2, Pham Van Bach, Yen Hoa Ward, Cau Giay District, Hanoi, Vietnam",
+    certNumber: "OHS 617337",
+    issuer: "BSI (British Standards Institution)",
+    scope: "Design, project management, construction supervision and management of civil and industrial projects.",
+    validity: "Certified by BS OHSAS 18001:2007 since 2014-07-22",
+    image: "/images/certificate/Screenshot 2026-08-11 185503.png",
+    category: "Design & Construction Supervision",
+    badge: "ISO 45001:2018 Certified",
+    officials: [
+      { name: "Michael Lam", role: "Managing Director Assurance, APAC" },
+      { name: "Le Duyen Anh", role: "Managing Director Vietnam" }
+    ],
+    highlights: [
+      "Civil & industrial site safety protocols",
+      "Integrated design & supervision quality assurance",
+      "Certified under strict international safety frameworks"
+    ]
+  }
+];
+

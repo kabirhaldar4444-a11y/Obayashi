@@ -19,6 +19,7 @@ function ScrollToTop() {
 
 // Lazy-load all non-home pages to reduce initial bundle size
 const Company      = lazy(() => import('./pages/Company'));
+const Certificates = lazy(() => import('./pages/Certificates'));
 const Business     = lazy(() => import('./pages/Business'));
 const Works        = lazy(() => import('./pages/Works'));
 const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
@@ -39,6 +40,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/company" element={<Company />} />
+            <Route path="/company/certificates" element={<Certificates />} />
+            <Route path="/certificates" element={<Certificates />} />
             <Route path="/business" element={<Business />} />
             <Route path="/works" element={<Works />} />
             <Route path="/works/:id" element={<ProjectDetail />} />

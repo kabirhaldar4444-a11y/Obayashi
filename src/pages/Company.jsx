@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import { Shield, Users, Landmark, FileText, ChevronRight, Award, Sparkles } from 'lucide-react';
+import { Shield, Users, Landmark, FileText, ChevronRight, Award, Sparkles, ShieldCheck } from 'lucide-react';
 import { companyOverview, ceoMessage, philosophy, historyMilestones, groupNetwork, publications } from '../data/companyContent';
+import CertificatesShowcase from '../components/CertificatesShowcase';
 
 export default function Company() {
   const timelineRef = useRef(null);
@@ -46,18 +47,26 @@ export default function Company() {
       {/* Subpage Navigation Bar */}
       <div className="subpage-sticky-nav">
         <div className="container sub-nav-container">
-          {['message', 'philosophy', 'history', 'group', 'publications'].map((section) => (
+          {[
+            { id: 'message', label: 'Message' },
+            { id: 'philosophy', label: 'Philosophy' },
+            { id: 'history', label: 'History' },
+            { id: 'group', label: 'Global Network' },
+            { id: 'certificates', label: 'Certificates' },
+            { id: 'publications', label: 'Publications' },
+            { id: 'governance', label: 'Governance' }
+          ].map((section) => (
             <a
-              key={section}
-              href={`#${section}`}
+              key={section.id}
+              href={`#${section.id}`}
               className="subpage-nav-link"
               onClick={(e) => {
                 e.preventDefault();
-                const el = document.getElementById(section);
+                const el = document.getElementById(section.id);
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
+              {section.label}
             </a>
           ))}
         </div>
@@ -231,8 +240,34 @@ export default function Company() {
         </div>
       </section>
 
-      {/* 5. Corporate Publications */}
-      <section id="publications" className="section-padding">
+      {/* 5. Certificates & Accreditations (Loop Showcase) */}
+      <section id="certificates" className="section-padding">
+        <div className="container">
+          <div className="section-header-flex">
+            <div className="section-header" style={{ marginBottom: 0 }}>
+              <div className="inline-badge">
+                <ShieldCheck size={16} />
+                <span>SAFETY & QUALITY ACCREDITATIONS</span>
+              </div>
+              <h2 className="section-title">ACCREDITATIONS & CERTIFICATES</h2>
+              <p className="section-subtitle">
+                International ISO standards, OHSAS health & safety management systems, and quality accreditations accredited by BSI Assurance.
+              </p>
+            </div>
+            <Link to="/company/certificates" className="btn-secondary-link">
+              <span>View Full Certificate Hub</span>
+              <ChevronRight size={16} />
+            </Link>
+          </div>
+
+          <div style={{ marginTop: '36px' }}>
+            <CertificatesShowcase showHeader={false} />
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Corporate Publications */}
+      <section id="publications" className="section-padding light-bg-section">
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">PUBLICATIONS</h2>
