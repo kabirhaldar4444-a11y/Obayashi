@@ -1,23 +1,15 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { 
   ShieldCheck, 
   Award, 
-  CheckCircle2, 
   ChevronRight, 
-  Building2, 
-  FileCheck2, 
-  Sparkles,
   ArrowLeft,
-  Download,
   Calendar,
   Lock,
-  Globe2,
-  FileText
+  Globe2
 } from 'lucide-react';
 import CertificatesShowcase from '../components/CertificatesShowcase';
-import { certificates, companyOverview } from '../data/companyContent';
 
 export default function Certificates() {
   useEffect(() => {
@@ -103,81 +95,6 @@ export default function Certificates() {
             title="AUTHENTICATED CORPORATE CERTIFICATIONS"
             subtitle="Explore our verified management certifications in interactive loop mode and full resolution inspection."
           />
-        </div>
-      </section>
-
-      {/* Detailed Certificate Registry Grid */}
-      <section className="section-padding light-bg-section">
-        <div className="container">
-          <div className="section-header text-center">
-            <div className="inline-badge">
-              <FileCheck2 size={16} />
-              <span>OFFICIAL REGISTRY</span>
-            </div>
-            <h2 className="section-title">CERTIFICATE DIRECTORY & SCOPE OF WORKS</h2>
-            <p className="section-subtitle" style={{ margin: '0 auto' }}>
-              Full accreditation scope and registry entries authorized by BSI Assurance UK and APAC.
-            </p>
-          </div>
-
-          <div className="cert-directory-grid">
-            {certificates.map((cert, idx) => (
-              <motion.div 
-                key={cert.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.15 }}
-                className="cert-directory-card"
-              >
-                <div className="card-top-accent" />
-                <div className="directory-card-body">
-                  <div className="directory-card-header">
-                    <span className="directory-cert-num">{cert.certNumber}</span>
-                    <span className="directory-status-badge">
-                      <CheckCircle2 size={13} />
-                      <span>Active Registration</span>
-                    </span>
-                  </div>
-
-                  <h3 className="directory-entity">{cert.entity}</h3>
-                  <p className="directory-standard">{cert.standard}</p>
-
-                  <div className="directory-scope-box">
-                    <span className="scope-tag">SCOPE OF ACCREDITATION</span>
-                    <p className="scope-text">{cert.scope}</p>
-                  </div>
-
-                  <div className="directory-details-list">
-                    <div className="dir-detail-row">
-                      <span className="dir-label">Location:</span>
-                      <span className="dir-val">{cert.location}</span>
-                    </div>
-                    <div className="dir-detail-row">
-                      <span className="dir-label">Issuing Body:</span>
-                      <span className="dir-val">{cert.issuer}</span>
-                    </div>
-                    <div className="dir-detail-row">
-                      <span className="dir-label">Validity Track:</span>
-                      <span className="dir-val">{cert.validity}</span>
-                    </div>
-                  </div>
-
-                  <div className="directory-card-footer">
-                    <a 
-                      href={cert.image} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="btn-view-orig"
-                    >
-                      <span>Open Original Certificate</span>
-                      <ChevronRight size={14} />
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
