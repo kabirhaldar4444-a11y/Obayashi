@@ -57,6 +57,7 @@ export default function Footer() {
               <li><Link to="/company#philosophy" onClick={() => handleHashClick('/company#philosophy')} className="footer-link">Obayashi Principles</Link></li>
               <li><Link to="/company#history" onClick={() => handleHashClick('/company#history')} className="footer-link">Historical Timeline</Link></li>
               <li><Link to="/company#group" onClick={() => handleHashClick('/company#group')} className="footer-link">Global Group Network</Link></li>
+              <li><Link to="/company/certificates" className="footer-link bold-accent">Certificates & Accreditations</Link></li>
               <li><Link to="/company#publications" onClick={() => handleHashClick('/company#publications')} className="footer-link">Corporate Publications</Link></li>
             </ul>
           </div>
