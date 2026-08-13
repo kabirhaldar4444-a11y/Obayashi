@@ -18,17 +18,18 @@ function ScrollToTop() {
 }
 
 // Lazy-load all non-home pages to reduce initial bundle size
-const Company      = lazy(() => import('./pages/Company'));
-const Certificates = lazy(() => import('./pages/Certificates'));
-const Business     = lazy(() => import('./pages/Business'));
-const Works        = lazy(() => import('./pages/Works'));
-const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
-const Technologies = lazy(() => import('./pages/Technologies'));
-const Sustainability = lazy(() => import('./pages/Sustainability'));
-const IR           = lazy(() => import('./pages/IR'));
-const News         = lazy(() => import('./pages/News'));
-const Contact      = lazy(() => import('./pages/Contact'));
-const UtilityPage  = lazy(() => import('./pages/UtilityPage'));
+const Company              = lazy(() => import('./pages/Company'));
+const Certificates         = lazy(() => import('./pages/Certificates'));
+const BusinessPerformance  = lazy(() => import('./pages/BusinessPerformance'));
+const Business             = lazy(() => import('./pages/Business'));
+const Works                = lazy(() => import('./pages/Works'));
+const ProjectDetail        = lazy(() => import('./pages/ProjectDetail'));
+const Technologies         = lazy(() => import('./pages/Technologies'));
+const Sustainability       = lazy(() => import('./pages/Sustainability'));
+const IR                   = lazy(() => import('./pages/IR'));
+const News                 = lazy(() => import('./pages/News'));
+const Contact              = lazy(() => import('./pages/Contact'));
+const UtilityPage          = lazy(() => import('./pages/UtilityPage'));
 
 function App() {
   return (
@@ -40,8 +41,17 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/company" element={<Company />} />
+            <Route path="/about-us" element={<Company />} />
+            <Route path="/about" element={<Company />} />
+            
+            <Route path="/company/business-performance" element={<BusinessPerformance />} />
+            <Route path="/business-performance" element={<BusinessPerformance />} />
+            <Route path="/about-us/business-performance" element={<BusinessPerformance />} />
+
             <Route path="/company/certificates" element={<Certificates />} />
             <Route path="/certificates" element={<Certificates />} />
+            <Route path="/about-us/certificates" element={<Certificates />} />
+            
             <Route path="/business" element={<Business />} />
             <Route path="/works" element={<Works />} />
             <Route path="/works/:id" element={<ProjectDetail />} />
@@ -59,5 +69,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;

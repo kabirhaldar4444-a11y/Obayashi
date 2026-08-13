@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { 
   ShieldCheck, 
   Award, 
@@ -7,22 +8,55 @@ import {
   ArrowLeft,
   Calendar,
   Lock,
-  Globe2
+  Globe2,
+  Trophy,
+  Filter,
+  CheckCircle2
 } from 'lucide-react';
 import CertificatesShowcase from '../components/CertificatesShowcase';
+import CompanySubNav from '../components/CompanySubNav';
+import { awards, certificates } from '../data/companyContent';
 
 export default function Certificates() {
+  const [activeCategory, setActiveCategory] = useState('All');
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const categories = [
+    'All',
+    'Safety & Health',
+    'Quality Management',
+    'Information Security',
+    'Construction Capability'
+  ];
+
+  const filteredCertificates = activeCategory === 'All'
+    ? certificates
+    : certificates.filter(cert => cert.category === activeCategory);
+
   return (
     <div className="certificates-page fade-in">
+      {/* Top SubNav Bar matching input_file_0.png layout */}
+      <div className="company-page-top-header">
+        <div className="container header-top-flex">
+          <div className="header-title-left">
+            <span className="section-pre-title">ACCREDITATIONS & RECOGNITION</span>
+            <h1 className="company-main-title">Certificates & Awards</h1>
+          </div>
+
+          <div className="header-subnav-right">
+            <CompanySubNav activeTab="certificates" />
+          </div>
+        </div>
+      </div>
+
       {/* Hero Banner */}
       <div 
         className="page-hero-banner" 
         style={{ 
-          backgroundImage: `linear-gradient(rgba(3,8,16,0.65), rgba(3,8,16,0.85)), url(/images/thinking_banner.png)` 
+          backgroundImage: `linear-gradient(rgba(3,8,16,0.7), rgba(3,8,16,0.85)), url(/images/thinking_banner.png)` 
         }}
       >
         <div className="container hero-banner-inner">
@@ -31,11 +65,11 @@ export default function Certificates() {
             <ChevronRight size={14} />
             <Link to="/company" className="breadcrumb-link">Company Profile</Link>
             <ChevronRight size={14} />
-            <span className="breadcrumb-current">Certificates & Accreditations</span>
+            <span className="breadcrumb-current">Certificates & Awards</span>
           </div>
           <h1 className="hero-banner-title">ACCREDITATIONS & CERTIFICATIONS</h1>
           <p className="hero-banner-subtitle">
-            Demonstrating global leadership in Occupational Health & Safety Management Systems (ISO 45001:2018 & OHSAS 18001) accredited by BSI Assurance.
+            Demonstrating global leadership in Occupational Health & Safety Management (ISO 45001:2018), Quality Management (ISO 9001:2015), Information Security (ISO 27001), and Grade 1 Construction Capabilities.
           </p>
         </div>
       </div>
@@ -49,8 +83,8 @@ export default function Certificates() {
                 <ShieldCheck size={24} />
               </div>
               <div className="stat-info">
-                <span className="stat-num">ISO 45001:2018</span>
-                <span className="stat-lbl">Occupational Safety Standard</span>
+                <span className="stat-num">ISO 45001 & 9001</span>
+                <span className="stat-lbl">Quality & Safety Standards</span>
               </div>
             </div>
 
@@ -66,11 +100,11 @@ export default function Certificates() {
 
             <div className="stat-ribbon-item">
               <div className="stat-icon-wrap">
-                <Calendar size={24} />
+                <Trophy size={24} />
               </div>
               <div className="stat-info">
-                <span className="stat-num">Since 2013</span>
-                <span className="stat-lbl">Over a Decade of Safety Excellence</span>
+                <span className="stat-num">Grade 1 License</span>
+                <span className="stat-lbl">Ministry of Construction</span>
               </div>
             </div>
 
@@ -79,22 +113,84 @@ export default function Certificates() {
                 <Globe2 size={24} />
               </div>
               <div className="stat-info">
-                <span className="stat-num">Global Network</span>
-                <span className="stat-lbl">Standardized Site Governance</span>
+                <span className="stat-num">8 Authenticated</span>
+                <span className="stat-lbl">Official High-Res Documents</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Main Looping Showcase Section */}
-      <section className="section-padding" style={{ paddingTop: '60px' }}>
+      {/* Filter Category Tabs */}
+      <section className="section-padding" style={{ paddingTop: '50px', paddingBottom: '10px' }}>
+        <div className="container">
+          <div className="cert-category-filter-bar">
+            <span className="filter-title"><Filter size={15} /> Filter Certificates:</span>
+            <div className="filter-tabs-wrapper">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`cert-category-tab ${activeCategory === cat ? 'active' : ''}`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Certificates Interactive Loop Showcase Section */}
+      <section className="section-padding" style={{ paddingTop: '20px' }}>
         <div className="container">
           <CertificatesShowcase 
             showHeader={true}
             title="AUTHENTICATED CORPORATE CERTIFICATIONS"
-            subtitle="Explore our verified management certifications in interactive loop mode and full resolution inspection."
+            subtitle={`Explore our ${filteredCertificates.length} verified management certifications in interactive loop mode and full resolution inspection.`}
           />
+        </div>
+      </section>
+
+      {/* OUR AWARDS & RECOGNITION SECTION */}
+      <section className="section-padding light-bg-section">
+        <div className="container">
+          <div className="section-header text-center">
+            <div className="inline-badge">
+              <Trophy size={16} />
+              <span>HONORS & RECOGNITION</span>
+            </div>
+            <h2 className="section-title">OUR AWARDS</h2>
+            <p className="section-subtitle">
+              Prestigious industry citations, safety honors, and environmental excellence awards bestowed upon Obayashi Construction.
+            </p>
+          </div>
+
+          <div className="awards-grid">
+            {awards.map((award, idx) => (
+              <motion.div
+                key={award.id}
+                className="award-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+              >
+                <div className="award-card-header">
+                  <div className="award-year-pill">{award.year}</div>
+                  <span className="award-category-tag">{award.category}</span>
+                </div>
+
+                <div className="award-icon-box">
+                  <Trophy size={28} className="award-trophy-icon" />
+                </div>
+
+                <h3 className="award-title">{award.title}</h3>
+                <span className="award-issuer">Conferred by: {award.issuer}</span>
+                <p className="award-desc">{award.description}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -116,8 +212,8 @@ export default function Certificates() {
                   <ArrowLeft size={16} />
                   <span>Return to Company Profile</span>
                 </Link>
-                <Link to="/sustainability#esg" className="btn-secondary-outline">
-                  <span>Explore ESG & Sustainability</span>
+                <Link to="/company/business-performance" className="btn-secondary-outline">
+                  <span>View Business Performance Graph</span>
                   <ChevronRight size={14} />
                 </Link>
               </div>

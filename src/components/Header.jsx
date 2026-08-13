@@ -51,14 +51,16 @@ export default function Header() {
       ]
     },
     {
-      title: "Company Profile",
+      title: "About Us / Company",
       path: "/company",
       subItems: [
+        { label: "Company Overview", path: "/company" },
+        { label: "Business Performance Chart", path: "/company/business-performance" },
+        { label: "Certificates & Awards", path: "/company/certificates" },
         { label: "President's Message", path: "/company#message" },
         { label: "Corporate Philosophy", path: "/company#philosophy" },
         { label: "Historical Timeline", path: "/company#history" },
         { label: "Group Network & Affiliates", path: "/company#group" },
-        { label: "Certificates & Accreditations", path: "/company/certificates" },
         { label: "Corporate Governance", path: "/company#governance" }
       ]
     },

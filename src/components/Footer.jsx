@@ -49,16 +49,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 2: Company Profile */}
+          {/* Column 2: About Us / Company */}
           <div className="footer-col">
-            <h4 className="footer-col-title"><Link to="/company" className="footer-link-main">Company Profile</Link></h4>
+            <h4 className="footer-col-title"><Link to="/company" className="footer-link-main">About Us</Link></h4>
             <ul className="footer-link-list">
+              <li><Link to="/company" className="footer-link bold">Company Overview</Link></li>
+              <li><Link to="/company/business-performance" className="footer-link bold-accent">Business Performance Chart</Link></li>
+              <li><Link to="/company/certificates" className="footer-link bold-accent">Certificates & Awards</Link></li>
               <li><Link to="/company#message" onClick={() => handleHashClick('/company#message')} className="footer-link">President's Message</Link></li>
               <li><Link to="/company#philosophy" onClick={() => handleHashClick('/company#philosophy')} className="footer-link">Obayashi Principles</Link></li>
               <li><Link to="/company#history" onClick={() => handleHashClick('/company#history')} className="footer-link">Historical Timeline</Link></li>
               <li><Link to="/company#group" onClick={() => handleHashClick('/company#group')} className="footer-link">Global Group Network</Link></li>
-              <li><Link to="/company/certificates" className="footer-link bold-accent">Certificates & Accreditations</Link></li>
-              <li><Link to="/company#publications" onClick={() => handleHashClick('/company#publications')} className="footer-link">Corporate Publications</Link></li>
             </ul>
           </div>
 

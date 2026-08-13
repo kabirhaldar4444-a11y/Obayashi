@@ -1,9 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import { Shield, Users, Landmark, FileText, ChevronRight, Award, Sparkles, ShieldCheck } from 'lucide-react';
+import { Shield, Users, Landmark, FileText, ChevronRight, Award, Sparkles, ShieldCheck, TrendingUp } from 'lucide-react';
 import { companyOverview, ceoMessage, philosophy, historyMilestones, groupNetwork, publications } from '../data/companyContent';
 import CertificatesShowcase from '../components/CertificatesShowcase';
+import CompanySubNav from '../components/CompanySubNav';
 
 export default function Company() {
   const timelineRef = useRef(null);
@@ -36,6 +37,20 @@ export default function Company() {
 
   return (
     <div className="company-page fade-in">
+      {/* Top SubNav Header matching input_file_0.png layout */}
+      <div className="company-page-top-header">
+        <div className="container header-top-flex">
+          <div className="header-title-left">
+            <span className="section-pre-title">ABOUT US</span>
+            <h1 className="company-main-title">Company Overview</h1>
+          </div>
+
+          <div className="header-subnav-right">
+            <CompanySubNav activeTab="overview" />
+          </div>
+        </div>
+      </div>
+
       {/* Page Hero */}
       <div className="page-hero-banner" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(/images/ones_tower.png)` }}>
         <div className="container hero-banner-inner">
@@ -43,6 +58,7 @@ export default function Company() {
           <p className="hero-banner-subtitle">Crafting modern infrastructure with safety, ethics, and innovation since 1892</p>
         </div>
       </div>
+
 
       {/* Subpage Navigation Bar */}
       <div className="subpage-sticky-nav">
@@ -265,6 +281,31 @@ export default function Company() {
           </div>
         </div>
       </section>
+
+      {/* 5.5 Business Performance Highlight Banner */}
+      <section id="business-performance" className="section-padding light-bg-section">
+        <div className="container">
+          <div className="company-perf-cta-card">
+            <div className="perf-cta-left">
+              <div className="inline-badge">
+                <TrendingUp size={16} />
+                <span>OUR BUSINESS CHART</span>
+              </div>
+              <h2 className="perf-cta-title">Business Performance & Floor Area Growth</h2>
+              <p className="perf-cta-desc">
+                View our interactive accumulative floor area chart reaching <strong>3,467,136 m²</strong> with over 250 main projects completed over 30 years of engineering leadership.
+              </p>
+            </div>
+            <div className="perf-cta-right">
+              <Link to="/company/business-performance" className="btn-primary">
+                <span>Explore Business Performance Chart</span>
+                <ChevronRight size={16} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* 6. Corporate Publications */}
       <section id="publications" className="section-padding light-bg-section">
