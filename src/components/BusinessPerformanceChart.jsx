@@ -10,7 +10,7 @@ export default function BusinessPerformanceChart() {
   const svgWidth = 900;
   const svgHeight = 440;
   const paddingLeft = 90;
-  const paddingRight = 60;
+  const paddingRight = 85;
   const paddingTop = 40;
   const paddingBottom = 60;
 
@@ -225,12 +225,13 @@ export default function BusinessPerformanceChart() {
           {/* X Axis Milestone Year Labels (1996, 2006, 2016, 2025) */}
           {milestoneYears.concat([1996]).filter((v, i, a) => a.indexOf(v) === i).sort((a,b)=>a-b).map((year) => {
             const x = getX(year);
+            const anchor = year === 1996 ? "start" : "middle";
             return (
               <text
                 key={`xlabel-${year}`}
                 x={x}
                 y={paddingTop + chartHeight + 24}
-                textAnchor="center"
+                textAnchor={anchor}
                 className="x-axis-year-text"
               >
                 {year}
@@ -238,10 +239,10 @@ export default function BusinessPerformanceChart() {
             );
           })}
 
-          {/* "Year" label at far right bottom corner matching screenshot */}
+          {/* "Year" label positioned cleanly to the right without overlapping 2025 */}
           <text
-            x={svgWidth - paddingRight + 5}
-            y={paddingTop + chartHeight + 18}
+            x={svgWidth - paddingRight + 16}
+            y={paddingTop + chartHeight + 24}
             textAnchor="start"
             className="x-axis-title-text"
           >
