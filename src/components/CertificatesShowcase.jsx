@@ -1,18 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ShieldCheck, 
   ChevronLeft, 
   ChevronRight, 
-  Play, 
-  Pause, 
   Maximize2, 
   ZoomIn, 
   ZoomOut, 
   RotateCcw, 
   X, 
   Download,
-  CheckCircle2,
   Award
 } from 'lucide-react';
 import { certificates } from '../data/companyContent';
@@ -23,24 +20,10 @@ export default function CertificatesShowcase({
   subtitle = "International ISO standards and safety compliance certifications verified by BSI Assurance." 
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
   const [zoomLevel, setZoomLevel] = useState(1);
-  const timerRef = useRef(null);
 
   const activeCert = certificates[currentIndex];
-
-  // Auto-play loop logic (continuous cycling)
-  useEffect(() => {
-    if (isPlaying && !modalOpen) {
-      timerRef.current = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % certificates.length);
-      }, 4500);
-    }
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [isPlaying, modalOpen, currentIndex]);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev - 1 + certificates.length) % certificates.length);
@@ -55,12 +38,14 @@ export default function CertificatesShowcase({
     setModalOpen(true);
   };
 
-  const handleModalPrev = () => {
+  const handleModalPrev = (e) => {
+    if (e) e.stopPropagation();
     setCurrentIndex((prev) => (prev - 1 + certificates.length) % certificates.length);
     setZoomLevel(1);
   };
 
-  const handleModalNext = () => {
+  const handleModalNext = (e) => {
+    if (e) e.stopPropagation();
     setCurrentIndex((prev) => (prev + 1) % certificates.length);
     setZoomLevel(1);
   };
@@ -108,34 +93,26 @@ export default function CertificatesShowcase({
 
           <div className="cert-meta-right">
             <button 
-              onClick={() => setIsPlaying(!isPlaying)} 
-              className={`cert-control-pill ${isPlaying ? 'playing' : ''}`}
-              title={isPlaying ? "Pause Auto-Loop" : "Resume Auto-Loop"}
-            >
-              {isPlaying ? <Pause size={14} /> : <Play size={14} />}
-              <span>{isPlaying ? 'Auto-Loop On' : 'Paused'}</span>
-            </button>
-            <button 
               onClick={openLightbox} 
               className="cert-zoom-pill"
               title="View Fullscreen High-Resolution"
             >
-              <Maximize2 size={14} />
-              <span>Fullscreen</span>
+              <Maximize2 size={15} />
+              <span>Fullscreen View</span>
             </button>
           </div>
         </div>
 
         {/* 1. Main Large Certificate Image Display */}
         <div className="cert-main-stage">
-          {/* Loop Navigation Left Arrow */}
+          {/* Main Stage Navigation Left Arrow (<) */}
           <button 
             onClick={handlePrev} 
             className="stage-nav-arrow left"
             aria-label="Previous Certificate"
             title="Previous Certificate"
           >
-            <ChevronLeft size={28} />
+            <ChevronLeft size={32} strokeWidth={2.5} />
           </button>
 
           {/* Certificate Document Display */}
@@ -146,7 +123,7 @@ export default function CertificatesShowcase({
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.35, ease: "easeInOut" }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="stage-image-wrapper"
               >
                 <img 
@@ -159,25 +136,25 @@ export default function CertificatesShowcase({
                 <div className="stage-hover-overlay">
                   <div className="hover-zoom-badge">
                     <Maximize2 size={16} />
-                    <span>Click to Inspect High-Resolution</span>
+                    <span>Click to Inspect Fullscreen</span>
                   </div>
                 </div>
               </motion.div>
             </AnimatePresence>
           </div>
 
-          {/* Loop Navigation Right Arrow */}
+          {/* Main Stage Navigation Right Arrow (>) */}
           <button 
             onClick={handleNext} 
             className="stage-nav-arrow right"
             aria-label="Next Certificate"
             title="Next Certificate"
           >
-            <ChevronRight size={28} />
+            <ChevronRight size={32} strokeWidth={2.5} />
           </button>
         </div>
 
-        {/* 2. Bottom Thumbnail Loop Strip (Exact Match to User 2nd Screenshot) */}
+        {/* 2. Bottom Thumbnail Strip */}
         <div className="cert-thumbnails-strip-container">
           <div className="cert-thumbnails-strip">
             {certificates.map((cert, index) => {
@@ -203,7 +180,7 @@ export default function CertificatesShowcase({
             })}
           </div>
 
-          {/* Loop Progress & Counter */}
+          {/* Counter Footer */}
           <div className="cert-strip-footer">
             <span className="cert-loop-counter">
               Showing <strong>{currentIndex + 1}</strong> of <strong>{certificates.length}</strong> certificates • {activeCert.scope}
@@ -212,7 +189,7 @@ export default function CertificatesShowcase({
         </div>
       </div>
 
-      {/* 3. Fullscreen Lightbox Modal with Loop Controls */}
+      {/* 3. Fullscreen Lightbox Modal (Enlarged & Prominent < > Navigation) */}
       <AnimatePresence>
         {modalOpen && (
           <motion.div 
@@ -223,32 +200,33 @@ export default function CertificatesShowcase({
             onClick={() => setModalOpen(false)}
           >
             <motion.div 
-              className="cert-modal-container"
-              initial={{ scale: 0.95, opacity: 0 }}
+              className="cert-modal-container full-immersive"
+              initial={{ scale: 0.96, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.95, opacity: 0 }}
+              exit={{ scale: 0.96, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Modal Header */}
+              {/* Modal Top Bar */}
               <div className="cert-modal-header">
                 <div className="modal-header-info">
                   <div className="modal-title-row">
                     <span className="modal-badge">{activeCert.certNumber}</span>
                     <h3 className="modal-title">{activeCert.entity}</h3>
+                    <span className="modal-counter-tag">{currentIndex + 1} / {certificates.length}</span>
                   </div>
                   <p className="modal-subtitle">{activeCert.standard} • {activeCert.scope}</p>
                 </div>
 
                 <div className="modal-header-actions">
                   <button 
-                    onClick={() => setZoomLevel(prev => Math.min(prev + 0.25, 2.5))} 
+                    onClick={() => setZoomLevel(prev => Math.min(prev + 0.3, 3))} 
                     className="modal-tool-btn" 
                     title="Zoom In"
                   >
                     <ZoomIn size={18} />
                   </button>
                   <button 
-                    onClick={() => setZoomLevel(prev => Math.max(prev - 0.25, 0.75))} 
+                    onClick={() => setZoomLevel(prev => Math.max(prev - 0.3, 0.7))} 
                     className="modal-tool-btn" 
                     title="Zoom Out"
                   >
@@ -257,15 +235,15 @@ export default function CertificatesShowcase({
                   <button 
                     onClick={() => setZoomLevel(1)} 
                     className="modal-tool-btn" 
-                    title="Reset Zoom"
+                    title="Reset Size"
                   >
                     <RotateCcw size={18} />
                   </button>
                   <a 
                     href={activeCert.image} 
-                    download={`Obayashi_Certificate_${activeCert.certNumber}.png`} 
+                    download={`Obayashi_Certificate_${activeCert.certNumber}.jpg`} 
                     className="modal-tool-btn" 
-                    title="Download Original"
+                    title="Download Original High-Res"
                   >
                     <Download size={18} />
                   </a>
@@ -274,36 +252,40 @@ export default function CertificatesShowcase({
                     className="modal-close-btn" 
                     title="Close (Esc)"
                   >
-                    <X size={22} />
+                    <X size={24} />
                   </button>
                 </div>
               </div>
 
-              {/* Modal Body */}
+              {/* Modal Body with Large Big Certificate and Prominent < > Navigation Arrows */}
               <div className="cert-modal-body">
+                {/* Previous Navigation Arrow Button (<) */}
                 <button 
                   onClick={handleModalPrev} 
                   className="modal-nav-arrow left"
-                  title="Previous Certificate"
+                  title="Previous Certificate (<)"
+                  aria-label="Previous Certificate"
                 >
-                  <ChevronLeft size={28} />
+                  <ChevronLeft size={38} strokeWidth={2.5} />
                 </button>
 
-                <div className="modal-image-stage">
+                {/* Big Image Viewer Container */}
+                <div className="modal-image-stage" style={{ transform: `scale(${zoomLevel})` }}>
                   <img 
                     src={activeCert.image} 
-                    alt={activeCert.title} 
+                    alt={`${activeCert.entity} - ${activeCert.standard}`} 
                     className="modal-cert-image"
-                    style={{ transform: `scale(${zoomLevel})` }}
                   />
                 </div>
 
+                {/* Next Navigation Arrow Button (>) */}
                 <button 
                   onClick={handleModalNext} 
                   className="modal-nav-arrow right"
-                  title="Next Certificate"
+                  title="Next Certificate (>)"
+                  aria-label="Next Certificate"
                 >
-                  <ChevronRight size={28} />
+                  <ChevronRight size={38} strokeWidth={2.5} />
                 </button>
               </div>
 
@@ -318,14 +300,15 @@ export default function CertificatesShowcase({
                         setZoomLevel(1);
                       }}
                       className={`modal-thumb-box ${currentIndex === idx ? 'active-green-border' : 'dimmed'}`}
+                      title={cert.entity}
                     >
                       <img src={cert.image} alt={cert.entity} className="modal-thumb-img" />
                     </button>
                   ))}
                 </div>
                 <div className="modal-footer-status">
-                  <ShieldCheck size={16} className="text-emerald-500" />
-                  <span>Authenticated Certificate • Issued by BSI Assurance</span>
+                  <ShieldCheck size={16} className="text-emerald-400" />
+                  <span>Authenticated Certificate • High Resolution Preview</span>
                 </div>
               </div>
             </motion.div>
