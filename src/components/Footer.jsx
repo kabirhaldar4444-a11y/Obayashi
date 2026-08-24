@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronUp } from 'lucide-react';
+import { ChevronUp, MapPin } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -36,6 +36,13 @@ export default function Footer() {
               <span className="logo-text-sub">CONSTRUCTION GROUP</span>
             </div>
           </Link>
+          <div className="footer-hq-info">
+            <span className="footer-hq-title">
+              <MapPin size={12} className="inline-block mr-1 text-[var(--primary-red)] align-text-bottom" />
+              Corporate Headquarters
+            </span>
+            <p className="footer-hq-address">2-15-2, Konan, Minato-ku, Tokyo, 108-8502, Japan</p>
+          </div>
         </div>
 
         <div className="footer-grid">

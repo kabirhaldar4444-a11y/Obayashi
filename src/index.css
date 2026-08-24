@@ -320,6 +320,48 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
   border-bottom: 1px solid var(--border-dark);
   padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .footer-logo-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.footer-hq-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .footer-hq-info {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+
+.footer-hq-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-red);
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-hq-address {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  line-height: 1.4;
 }
 
 .footer-logo-link {
