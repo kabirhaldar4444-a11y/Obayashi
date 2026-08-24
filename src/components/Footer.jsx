@@ -37,11 +37,20 @@ export default function Footer() {
             </div>
           </Link>
           <div className="footer-hq-info">
-            <span className="footer-hq-title">
-              <MapPin size={12} className="inline-block mr-1 text-[var(--primary-red)] align-text-bottom" />
-              Corporate Headquarters
-            </span>
-            <p className="footer-hq-address">Umeda Sky Building, 1-1-88 Oyodonaka, Kita-ku, Osaka 531-0076, Japan</p>
+            <div className="footer-hq-block">
+              <span className="footer-hq-title">
+                <MapPin size={12} className="inline-block mr-1 text-[var(--primary-red)] align-text-bottom" />
+                Corporate HQ (Japan)
+              </span>
+              <p className="footer-hq-address">Umeda Sky Building, 1-1-88 Oyodonaka, Kita-ku, Osaka 531-0076, Japan</p>
+            </div>
+            <div className="footer-hq-block">
+              <span className="footer-hq-title">
+                <MapPin size={12} className="inline-block mr-1 text-[var(--primary-red)] align-text-bottom" />
+                Asia HQ (India)
+              </span>
+              <p className="footer-hq-address">The Ruby, 9th Floor, 29, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028, India</p>
+            </div>
           </div>
         </div>
 

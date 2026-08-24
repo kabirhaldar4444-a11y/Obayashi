@@ -129,6 +129,10 @@ export default function Company() {
                   <span className="overview-label">Headquarters:</span>
                   <span className="overview-value">{companyOverview.headquarters}</span>
                 </li>
+                <li>
+                  <span className="overview-label">Asia HQ:</span>
+                  <span className="overview-value">{companyOverview.asiaHeadquarters}</span>
+                </li>
               </ul>
             </div>
           </div>

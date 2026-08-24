@@ -266,8 +266,16 @@ export default function Contact() {
               <div className="info-item">
                 <Building2 size={18} className="info-icon" />
                 <div>
-                  <h4>OBAYASHI CORPORATION</h4>
+                  <h4>OBAYASHI CORPORATION (Japan HQ)</h4>
                   <p>Umeda Sky Building, 1-1-88 Oyodonaka, Kita-ku, Osaka 531-0076, Japan</p>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <Building2 size={18} className="info-icon" />
+                <div>
+                  <h4>OBAYASHI CORPORATION (Asia HQ)</h4>
+                  <p>The Ruby, 9th Floor, 29, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028, India</p>
                 </div>
               </div>
 

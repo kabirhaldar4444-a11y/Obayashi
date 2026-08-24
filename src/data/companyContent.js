@@ -1,6 +1,7 @@
 export const companyOverview = {
   name: "Obayashi Corporation",
   headquarters: "Umeda Sky Building, 1-1-88 Oyodonaka, Kita-ku, Osaka 531-0076, Japan",
+  asiaHeadquarters: "The Ruby, 9th Floor, 29, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028, India",
   founded: "January 1892",
   incorporated: "December 1936",
   president: "Toshimi Sato (President and CEO)",
