@@ -267,7 +267,7 @@ export default function Contact() {
                 <Building2 size={18} className="info-icon" />
                 <div>
                   <h4>OBAYASHI CORPORATION</h4>
-                  <p>2-15-2, Konan, Minato-ku, Tokyo, 108-8502, Japan</p>
+                  <p>Umeda Sky Building, 1-1-88 Oyodonaka, Kita-ku, Osaka 531-0076, Japan</p>
                 </div>
               </div>
 

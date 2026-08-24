@@ -1,6 +1,6 @@
 export const companyOverview = {
   name: "Obayashi Corporation",
-  headquarters: "2-15-2, Konan, Minato-ku, Tokyo, 108-8502, Japan",
+  headquarters: "Umeda Sky Building, 1-1-88 Oyodonaka, Kita-ku, Osaka 531-0076, Japan",
   founded: "January 1892",
   incorporated: "December 1936",
   president: "Toshimi Sato (President and CEO)",
