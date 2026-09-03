@@ -247,27 +247,43 @@ export default function ProjectMapPopup({ project, onClose }) {
 
   if (!project) return null;
 
+  const cleanLoc = (project.location || '').toLowerCase();
+  const cleanCat = (project.locationCategory || '').toLowerCase();
+
   const isIndia = 
-    (project.locationCategory && project.locationCategory.toLowerCase() === 'india') ||
-    (project.location && project.location.toLowerCase().includes('india')) ||
-    (project.location && project.location.toLowerCase().includes('mumbai')) ||
-    (project.location && project.location.toLowerCase().includes('ahmedabad')) ||
-    (project.location && project.location.toLowerCase().includes('gujarat')) ||
-    (project.location && project.location.toLowerCase().includes('maharashtra'));
+    cleanCat === 'india' ||
+    (!cleanCat && (
+      cleanLoc.includes('india') ||
+      cleanLoc.includes('mumbai') ||
+      cleanLoc.includes('ahmedabad') ||
+      cleanLoc.includes('gujarat') ||
+      cleanLoc.includes('maharashtra')
+    ));
 
   const isUSA = 
-    (project.locationCategory && (project.locationCategory.toLowerCase() === 'united states' || project.locationCategory.toLowerCase() === 'usa')) ||
-    (project.location && (
-      project.location.toLowerCase().includes('u.s.a') ||
-      project.location.toLowerCase().includes('usa') ||
-      project.location.toLowerCase().includes('united states') ||
-      project.location.toLowerCase().includes('california') ||
-      project.location.toLowerCase().includes('new york') ||
-      project.location.toLowerCase().includes('colorado') ||
-      project.location.toLowerCase().includes('washington') ||
-      project.location.toLowerCase().includes('nevada') ||
-      project.location.toLowerCase().includes('arizona')
+    cleanCat === 'united states' ||
+    cleanCat === 'usa' ||
+    cleanCat === 'u.s.a' ||
+    (!cleanCat && (
+      cleanLoc.includes('u.s.a') ||
+      cleanLoc.includes('usa') ||
+      cleanLoc.includes('united states') ||
+      cleanLoc.includes('california') ||
+      cleanLoc.includes('new york') ||
+      cleanLoc.includes('colorado') ||
+      cleanLoc.includes('washington') ||
+      cleanLoc.includes('nevada') ||
+      cleanLoc.includes('arizona')
     ));
+
+  const isJapan = 
+    cleanCat === 'japan' ||
+    (!cleanCat && (
+      cleanLoc.includes('japan') ||
+      Object.keys(cityCoordinates).some(c => cleanLoc.includes(c))
+    ));
+
+  const hasMap = isJapan || isIndia || isUSA;
 
   const getCoords = (locStr) => {
     const clean = (locStr || '').toLowerCase();
@@ -283,10 +299,13 @@ export default function ProjectMapPopup({ project, onClose }) {
       }
       return usaCoordinates["united states"];
     }
-    for (const [city, coord] of Object.entries(cityCoordinates)) {
-      if (clean.includes(city)) return coord;
+    if (isJapan) {
+      for (const [city, coord] of Object.entries(cityCoordinates)) {
+        if (clean.includes(city)) return coord;
+      }
+      return cityCoordinates.tokyo;
     }
-    return cityCoordinates.tokyo;
+    return null;
   };
 
   const coords = getCoords(project.location);
@@ -488,122 +507,126 @@ export default function ProjectMapPopup({ project, onClose }) {
               overflow: 'hidden',
             }}
           >
-            {/* --- Map image --- */}
-            <img
-              src={isIndia ? "/images/india_3d_map.png" : (isUSA ? "/images/usa_3d_map.png" : "/images/japan_3d_map.png")}
-              alt={isIndia ? "India Map" : (isUSA ? "USA Map" : "Japan Map")}
-              onLoad={() => setImgLoaded(true)}
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                objectFit: 'fill',
-                pointerEvents: 'none',
-                userSelect: 'none',
-                filter: isIndia || isUSA ? 'none' : 'sepia(0.05) contrast(1.05) brightness(0.95)',
-                opacity: imgLoaded ? 1 : 0,
-                transition: 'opacity 0.4s ease',
-                zIndex: 1,
-              }}
-            />
-
-            {/* Soft gradient overlay covering the right edge - ONLY for Japan map */}
-            {!isIndia && !isUSA && (
-              <div style={{
-                position: 'absolute',
-                top: 0,
-                right: 0,
-                bottom: 0,
-                width: '24%',
-                background: 'linear-gradient(90deg, transparent 0%, #0b0f19 50%, #0b0f19 100%)',
-                zIndex: 3,
-                pointerEvents: 'none',
-              }} />
-            )}
-
-            {/* Dark gradient restricted to top-left header zone - ONLY for Japan map */}
-            {!isIndia && !isUSA && (
-              <div style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '50%',
-                height: '18%',
-                background: 'linear-gradient(180deg, #0b0f19 0%, rgba(11,15,25,0.7) 60%, rgba(11,15,25,0) 100%)',
-                zIndex: 3,
-                pointerEvents: 'none',
-              }} />
-            )}
-
-            {/* Cool tint wash */}
-            <div style={{
-              position: 'absolute', inset: 0, zIndex: 4,
-              backgroundColor: isIndia ? 'rgba(16, 185, 129, 0.04)' : 'rgba(8,12,24,0.12)',
-              mixBlendMode: 'multiply',
-              pointerEvents: 'none',
-            }} />
-
-            {/* --- Compact Sleek Red Map Pins for Included Locations --- */}
-            {imgLoaded && includedStates.map((st, idx) => (
-              <motion.div
-                key={'dancing-gmap-pin-' + st.name + idx}
-                initial={{ y: 0 }}
-                animate={{
-                  y: [0, -6, 0, -3, 0],
-                  scale: [1, 1.08, 1, 1.04, 1],
-                }}
-                transition={{
-                  duration: 1.8,
-                  repeat: Infinity,
-                  ease: 'easeInOut',
-                  delay: idx * 0.15,
-                }}
-                style={{
-                  position: 'absolute',
-                  left: `${st.x}%`,
-                  top: `${st.y}%`,
-                  transform: 'translate(-50%, -100%)',
-                  zIndex: 10,
-                  pointerEvents: 'none',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                }}
-              >
-                {/* Compact 12px x 16px Sleek Red Google Map Teardrop Pin */}
-                <svg width="13" height="17" viewBox="0 0 16 22" fill="none" style={{ filter: 'drop-shadow(0 0 6px rgba(239,68,68,0.9))' }}>
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8C0 14 8 22 8 22C8 22 16 14 16 8C16 3.58 12.42 0 8 0Z"
-                    fill="url(#redGMapPinGrad)"
-                    stroke="#ffffff"
-                    strokeWidth="1.2"
-                  />
-                  <circle cx="8" cy="7.5" r="2.8" fill="#ffffff" />
-                  <defs>
-                    <linearGradient id="redGMapPinGrad" x1="0" y1="0" x2="0" y2="22" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#ff4d4d" />
-                      <stop offset="1" stopColor="#dc2626" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-
-                {/* Ground Glow Shadow under Compact Pin */}
-                <motion.div
-                  animate={{ scale: [1, 0.5, 1], opacity: [0.6, 0.2, 0.6] }}
-                  transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut', delay: idx * 0.15 }}
+            {hasMap && (
+              <>
+                {/* --- Map image --- */}
+                <img
+                  src={isIndia ? "/images/india_3d_map.png" : (isUSA ? "/images/usa_3d_map.png" : "/images/japan_3d_map.png")}
+                  alt={isIndia ? "India Map" : (isUSA ? "USA Map" : "Japan Map")}
+                  onLoad={() => setImgLoaded(true)}
                   style={{
-                    width: '8px',
-                    height: '2.5px',
-                    borderRadius: '50%',
-                    background: 'rgba(239, 68, 68, 0.8)',
-                    marginTop: '-1px',
-                    boxShadow: '0 0 6px rgba(239, 68, 68, 0.9)',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'fill',
+                    pointerEvents: 'none',
+                    userSelect: 'none',
+                    filter: isIndia || isUSA ? 'none' : 'sepia(0.05) contrast(1.05) brightness(0.95)',
+                    opacity: imgLoaded ? 1 : 0,
+                    transition: 'opacity 0.4s ease',
+                    zIndex: 1,
                   }}
                 />
-              </motion.div>
-            ))}
+
+                {/* Soft gradient overlay covering the right edge - ONLY for Japan map */}
+                {isJapan && (
+                  <div style={{
+                    position: 'absolute',
+                    top: 0,
+                    right: 0,
+                    bottom: 0,
+                    width: '24%',
+                    background: 'linear-gradient(90deg, transparent 0%, #0b0f19 50%, #0b0f19 100%)',
+                    zIndex: 3,
+                    pointerEvents: 'none',
+                  }} />
+                )}
+
+                {/* Dark gradient restricted to top-left header zone - ONLY for Japan map */}
+                {isJapan && (
+                  <div style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '50%',
+                    height: '18%',
+                    background: 'linear-gradient(180deg, #0b0f19 0%, rgba(11,15,25,0.7) 60%, rgba(11,15,25,0) 100%)',
+                    zIndex: 3,
+                    pointerEvents: 'none',
+                  }} />
+                )}
+
+                {/* Cool tint wash */}
+                <div style={{
+                  position: 'absolute', inset: 0, zIndex: 4,
+                  backgroundColor: isIndia ? 'rgba(16, 185, 129, 0.04)' : 'rgba(8,12,24,0.12)',
+                  mixBlendMode: 'multiply',
+                  pointerEvents: 'none',
+                }} />
+
+                {/* --- Compact Sleek Red Map Pins for Included Locations --- */}
+                {imgLoaded && includedStates.map((st, idx) => (
+                  <motion.div
+                    key={'dancing-gmap-pin-' + st.name + idx}
+                    initial={{ y: 0 }}
+                    animate={{
+                      y: [0, -6, 0, -3, 0],
+                      scale: [1, 1.08, 1, 1.04, 1],
+                    }}
+                    transition={{
+                      duration: 1.8,
+                      repeat: Infinity,
+                      ease: 'easeInOut',
+                      delay: idx * 0.15,
+                    }}
+                    style={{
+                      position: 'absolute',
+                      left: `${st.x}%`,
+                      top: `${st.y}%`,
+                      transform: 'translate(-50%, -100%)',
+                      zIndex: 10,
+                      pointerEvents: 'none',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                    }}
+                  >
+                    {/* Compact 12px x 16px Sleek Red Google Map Teardrop Pin */}
+                    <svg width="13" height="17" viewBox="0 0 16 22" fill="none" style={{ filter: 'drop-shadow(0 0 6px rgba(239,68,68,0.9))' }}>
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8C0 14 8 22 8 22C8 22 16 14 16 8C16 3.58 12.42 0 8 0Z"
+                        fill="url(#redGMapPinGrad)"
+                        stroke="#ffffff"
+                        strokeWidth="1.2"
+                      />
+                      <circle cx="8" cy="7.5" r="2.8" fill="#ffffff" />
+                      <defs>
+                        <linearGradient id="redGMapPinGrad" x1="0" y1="0" x2="0" y2="22" gradientUnits="userSpaceOnUse">
+                          <stop stopColor="#ff4d4d" />
+                          <stop offset="1" stopColor="#dc2626" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+
+                    {/* Ground Glow Shadow under Compact Pin */}
+                    <motion.div
+                      animate={{ scale: [1, 0.5, 1], opacity: [0.6, 0.2, 0.6] }}
+                      transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut', delay: idx * 0.15 }}
+                      style={{
+                        width: '8px',
+                        height: '2.5px',
+                        borderRadius: '50%',
+                        background: 'rgba(239, 68, 68, 0.8)',
+                        marginTop: '-1px',
+                        boxShadow: '0 0 6px rgba(239, 68, 68, 0.9)',
+                      }}
+                    />
+                  </motion.div>
+                ))}
+              </>
+            )}
           </div>
 
           {/* --- Premium Dark Gradient Header --- */}
@@ -612,11 +635,11 @@ export default function ProjectMapPopup({ project, onClose }) {
             padding: '24px 28px',
             pointerEvents: 'none',
           }}>
-            <p style={{ fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.14em', color: isIndia ? '#34d399' : '#C17F24', textTransform: 'uppercase', marginBottom: '2px' }}>
-              Interactive Project Map
+            <p style={{ fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.14em', color: isIndia ? '#34d399' : (isUSA ? '#60a5fa' : '#C17F24'), textTransform: 'uppercase', marginBottom: '2px' }}>
+              {hasMap ? 'Interactive Project Map' : 'Global Footprint'}
             </p>
             <h2 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#ffffff', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
-              {isIndia ? 'OUR INDIA IMPRINT' : 'OUR NATIONAL IMPRINT'}
+              {isIndia ? 'OUR INDIA IMPRINT' : (isUSA ? 'OUR UNITED STATES IMPRINT' : (isJapan ? 'OUR NATIONAL IMPRINT' : 'OVERSEAS OPERATIONS'))}
             </h2>
           </div>
         </div>

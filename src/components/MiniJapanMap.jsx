@@ -130,25 +130,50 @@ const usaCoordinates = {
 };
 
 export default function MiniJapanMap({ location = "Tokyo", locationCategory }) {
+  const cleanLoc = (location || '').toLowerCase();
+  const cleanCat = (locationCategory || '').toLowerCase();
+
   const isIndia = 
-    (locationCategory && locationCategory.toLowerCase() === 'india') ||
-    location.toLowerCase().includes('india') ||
-    location.toLowerCase().includes('mumbai') ||
-    location.toLowerCase().includes('ahmedabad') ||
-    location.toLowerCase().includes('gujarat') ||
-    location.toLowerCase().includes('maharashtra');
+    cleanCat === 'india' ||
+    (!cleanCat && (
+      cleanLoc.includes('india') ||
+      cleanLoc.includes('mumbai') ||
+      cleanLoc.includes('ahmedabad') ||
+      cleanLoc.includes('gujarat') ||
+      cleanLoc.includes('maharashtra')
+    ));
 
   const isUSA =
-    (locationCategory && (locationCategory.toLowerCase() === 'united states' || locationCategory.toLowerCase() === 'usa')) ||
-    location.toLowerCase().includes('u.s.a') ||
-    location.toLowerCase().includes('usa') ||
-    location.toLowerCase().includes('united states') ||
-    location.toLowerCase().includes('california') ||
-    location.toLowerCase().includes('new york') ||
-    location.toLowerCase().includes('colorado') ||
-    location.toLowerCase().includes('washington') ||
-    location.toLowerCase().includes('nevada') ||
-    location.toLowerCase().includes('arizona');
+    cleanCat === 'united states' ||
+    cleanCat === 'usa' ||
+    cleanCat === 'u.s.a' ||
+    (!cleanCat && (
+      cleanLoc.includes('u.s.a') ||
+      cleanLoc.includes('usa') ||
+      cleanLoc.includes('united states') ||
+      cleanLoc.includes('california') ||
+      cleanLoc.includes('new york') ||
+      cleanLoc.includes('colorado') ||
+      cleanLoc.includes('washington') ||
+      cleanLoc.includes('nevada') ||
+      cleanLoc.includes('arizona')
+    ));
+
+  const isJapan =
+    cleanCat === 'japan' ||
+    (!cleanCat && (
+      cleanLoc.includes('japan') ||
+      Object.keys(cityCoordinates).some(city => cleanLoc.includes(city))
+    ));
+
+  // Keep map strictly for Japan, India, and USA projects; rest keep blank
+  if (!isJapan && !isIndia && !isUSA) {
+    return (
+      <div className="relative w-full h-full min-h-[280px] bg-transparent flex items-center justify-center">
+        {/* Intentionally blank for other international projects */}
+      </div>
+    );
+  }
 
   const getCoordinates = (locString) => {
     const clean = locString.toLowerCase();
