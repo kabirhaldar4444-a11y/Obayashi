@@ -4180,5 +4180,2255 @@ export const detailedProjectContent = {
       "quote": "「潮平両岸闊」",
       "quoteTranslation": "The tide is smooth, both banks are vast, and the green wind fills the sails of progress."
     }
+  },
+  "work_usa_001": {
+    "kanjiName": "ハーレム・ミーア・デイヴィス・センター新築工事",
+    "romajiName": "Hāremu Mīa Deivisu Sentā Shinchiku Kōji",
+    "prefecture": "New York",
+    "city": "New York City",
+    "tokyoDistance": "John F. Kennedy International Airport (JFK) (Nearest Transit Hub)",
+    "airport": "John F. Kennedy International Airport (JFK)",
+    "locationStory": "Situated along the tranquil northern shores of the Harlem Meer in Upper Manhattan's Central Park. The site was selected to restore historic visual connections across the ravine while providing state-of-the-art public recreation amenities.",
+    "coordinates": "40.7969° N, 73.9519° W",
+    "challenges": [
+      "Excavating deeply into ultra-dense Manhattan schist bedrock directly adjacent to active urban parklands, mature tree root systems, and sensitive freshwater shorelines.",
+      "Constructing an earth-sheltered structure with heavy load-bearing green roofs carrying pedestrian walkways under absolute waterproof integrity guarantees."
+    ],
+    "solutions": [
+      "Deployed non-explosive hydraulic rock splitters and GPS-calibrated micro-pile anchoring to prevent seismic shock propagation to surrounding park ecosystems.",
+      "Engineered multi-tiered elastomeric waterproofing membranes and monolithic mass timber structural decks supporting landscaped soil overburden."
+    ],
+    "timeline": [
+      {
+        "phase": "Environmental & Heritage Permitting",
+        "date": "2021–2022",
+        "desc": "Comprehensive parkland preservation approvals, geotechnical core drillings, and community engagement sessions."
+      },
+      {
+        "phase": "Bedrock Excavation & Geothermal Wells",
+        "date": "2022–2023",
+        "desc": "Drilling 40+ deep geothermal heat pump boreholes and excavating bedrock shoring for the subterranean pavilion."
+      },
+      {
+        "phase": "Mass Timber & Steel Superstructure",
+        "date": "2023–2024",
+        "desc": "Erection of architectural glulam timber trusses, concrete retaining walls, and ice-rink refrigeration pipe grids."
+      },
+      {
+        "phase": "Green Roof & Public Commissioning",
+        "date": "2024–2025",
+        "desc": "Planting native flora on green roofs, pool and rink testing, wetland daylighting, and final handover."
+      }
+    ],
+    "specs": {
+      "Structure": "Cast-in-Place Concrete & Mass Timber Hybrid",
+      "Foundation": "Rock-socketed Steel Micro-piles into Manhattan Schist",
+      "Steel Used": "High-Strength Structural Steel Grade A992",
+      "Concrete Grade": "Watertight High-Durability Mix (40 N/mm²)",
+      "Facility Area": "28,000 sq ft Built Area + 5 Acres Restored Parkland",
+      "Green Certification": "LEED Gold Certified",
+      "Energy System": "Closed-Loop Geothermal Heat Exchange System",
+      "Pool Capacity": "Olympic-Regulation Public Swimming Pool & NHL Rink",
+      "Executing Agency": "Central Park Conservancy & NYC Department of Parks",
+      "Construction Method": "Low-Impact Rock Excavation & Off-site Prefabricated Glulam"
+    },
+    "culturalInsight": {
+      "title": "調和",
+      "meaning": "Embodying 'Chōwa' (harmony between nature and human endeavor), the Davis Center seamlessly knits modern civic architecture into historic park topography.",
+      "quote": "「緑蔭清風」",
+      "quoteTranslation": "Cool breezes whispering through deep green shade."
+    }
+  },
+  "work_usa_002": {
+    "kanjiName": "カリフォルニア大学アーバイン校メサ・コート・オソタワー",
+    "romajiName": "Kariforunia Daigaku Ābain-kō Mesa Kōto Oso Tawā",
+    "prefecture": "California",
+    "city": "Irvine",
+    "tokyoDistance": "John Wayne Airport (SNA) (Nearest Transit Hub)",
+    "airport": "John Wayne Airport (SNA)",
+    "locationStory": "Located on the flagship University of California, Irvine campus in Orange County. Strategically positioned within the Mesa Court student precinct to maximize walking transit to academic faculties and research parks.",
+    "coordinates": "33.6461° N, 117.8427° W",
+    "challenges": [
+      "Delivering high-density residential structures under stringent California Division of the State Architect seismic codes within compressed academic holiday windows.",
+      "Achieving net-zero energy readiness and comprehensive acoustic privacy on a high-density active university campus."
+    ],
+    "solutions": [
+      "Employed high-performance seismic Buckling-Restrained Braced Frames (BRBF) integrated with modular prefabricated lightweight facade assemblies.",
+      "Integrated rooftop photovoltaic solar generation with passive airflow corridors and decentralized acoustic isolation flooring systems."
+    ],
+    "timeline": [
+      {
+        "phase": "Design & Approvals",
+        "date": "2021–2022",
+        "desc": "Collaborative design-build planning, structural modeling, and environmental compliance audits."
+      },
+      {
+        "phase": "Substructure & Seismic Podiums",
+        "date": "2022–2023",
+        "desc": "Post-tensioned concrete slab foundation, deep utility connections, and basement retaining structures."
+      },
+      {
+        "phase": "Superstructure & Facade Erection",
+        "date": "2023–2024",
+        "desc": "Structural steel erection with BRBF dampers, prefabricated panel hoisting, and roof solar installation."
+      },
+      {
+        "phase": "Interior Fit-out & Handover",
+        "date": "August, 2024",
+        "desc": "Acoustic room testing, dining common commissioning, and student move-in readiness."
+      }
+    ],
+    "specs": {
+      "Structure": "Buckling-Restrained Braced Steel Frame & Concrete Podium",
+      "Foundation": "Reinforced Concrete Mat Footing & Drilled Piers",
+      "Steel Used": "High-Strength Grade ASTM A992 & BRB Dampers",
+      "Concrete Grade": "High-Early-Strength Concrete (35 N/mm²)",
+      "Gross Floor Area": "260,000 sq ft",
+      "Residential Capacity": "800+ Undergraduates across 3 Towers",
+      "Green Certification": "LEED Platinum Certified",
+      "Seismic Rating": "Exceeds California Title 24 Seismic Requirements",
+      "Client": "University of California, Irvine (UCI)",
+      "Construction Method": "Modular Prefabricated Facade & Rapid Steel Assembly"
+    },
+    "culturalInsight": {
+      "title": "啓発",
+      "meaning": "Representing 'Keihatsu' (enlightenment and intellectual awakening), providing a sanctuary where future minds learn and innovate together.",
+      "quote": "「学問無窮」",
+      "quoteTranslation": "The pursuit of knowledge is boundless."
+    }
+  },
+  "work_usa_003": {
+    "kanjiName": "フーバーダム・バイパス コロラド川橋梁工事",
+    "romajiName": "Fūbā Damu Baipasu Kororado-gawa Kyōryō Kōji",
+    "prefecture": "Nevada / Arizona",
+    "city": "Clark County / Mohave County",
+    "tokyoDistance": "Harry Reid International Airport (LAS) (Nearest Transit Hub)",
+    "airport": "Harry Reid International Airport (LAS)",
+    "locationStory": "Suspended 890 feet above the Colorado River on the Nevada-Arizona border, 1,500 feet south of the historic Hoover Dam. Conceived to eliminate dangerous hairpin turns and secure vital regional freight transit.",
+    "coordinates": "36.0157° N, 114.7417° W",
+    "challenges": [
+      "Erecting massive twin concrete arch ribs across an 890-foot-deep canyon void subject to violent 80-mph wind gusts and extreme desert temperature fluctuations.",
+      "Transporting multi-ton structural components across sheer volcanic cliff faces without disturbing the structural integrity or tourism operations of Hoover Dam."
+    ],
+    "solutions": [
+      "Engineered an unprecedented 2,500-foot heavy-lift cable crane system suspended between 330-foot steel towers on opposing canyon rims.",
+      "Executed balanced cantilever segmental arch casting using temporary stay cables and automated GPS laser-calibrated geometry controls."
+    ],
+    "timeline": [
+      {
+        "phase": "Deep Rock Excavation & Anchorages",
+        "date": "2017–2018",
+        "desc": "Blasting sheer volcanic cliffs and installing deep pre-stressed rock anchors on both canyon rims."
+      },
+      {
+        "phase": "Cableway System & Pier Foundations",
+        "date": "2018–2019",
+        "desc": "Erecting the twin highline cable cranes and casting massive arch footing thrust blocks."
+      },
+      {
+        "phase": "Segmental Arch Erection & Closure",
+        "date": "2019–2021",
+        "desc": "Cantilevered casting of 106 arch segments and closure of the crown keystone 890 ft in midair."
+      },
+      {
+        "phase": "Deck Steel Girders & Commissioning",
+        "date": "2021–2022",
+        "desc": "Hoisting composite steel box girders, concrete roadway deck paving, and final bridge opening."
+      }
+    ],
+    "specs": {
+      "Structure": "Twin-Rib Cast-in-Place Concrete Arch with Steel Box Girder Deck",
+      "Total Length": "1,900 ft (579 m)",
+      "Main Arch Span": "1,060 ft (323 m) — Longest in Western Hemisphere",
+      "Height above River": "890 ft (271 m)",
+      "Concrete Volume": "30,000+ cubic yards High-Performance Concrete",
+      "Steel Reinforcement": "16 Million Pounds of Structural & Rebar Steel",
+      "Seismic Resistance": "Designed for Maximum Credible Earthquake",
+      "Wind Design": "Aerodynamically Stable against 115 mph Extreme Wind Loads",
+      "Executing Agency": "Federal Highway Administration (FHWA) & NDOT/ADOT",
+      "Construction Method": "Highline Cable Crane & Stay-Cable Cantilever Segmental Casting"
+    },
+    "culturalInsight": {
+      "title": "雄飛",
+      "meaning": "Embodying 'Yūhi' (soaring courageously), the arch bridge vaults across the abyss, demonstrating human engineering mastery over rugged natural barriers.",
+      "quote": "「虹霓貫日」",
+      "quoteTranslation": "Like a rainbow arching across the sky to embrace the sun."
+    }
+  },
+  "work_usa_004": {
+    "kanjiName": "コロラド州州間高速道路70号線ツイン・トンネル拡幅工事",
+    "romajiName": "Kororado-shū Shūkan Kōsokudōro 70-gōsen Tsuin Tonneru Kakuhaku Kōji",
+    "prefecture": "Colorado",
+    "city": "Idaho Springs",
+    "tokyoDistance": "Denver International Airport (DEN) (Nearest Transit Hub)",
+    "airport": "Denver International Airport (DEN)",
+    "locationStory": "Nestled within the rugged Clear Creek Canyon in the Colorado Rockies at an elevation of 7,500 feet. Engineered to unlock the critical mountain transit corridor connecting Denver with summit ski resorts and western states.",
+    "coordinates": "39.7431° N, 105.4981° W",
+    "challenges": [
+      "Widening active tunnels through fractured rock formations while maintaining continuous live traffic flow of 45,000 vehicles daily.",
+      "Preventing rock mass instability, blasting vibration damage, and toxic sediment runoff into neighboring Clear Creek river ecosystems."
+    ],
+    "solutions": [
+      "Utilized sequential excavation (NATM) with multi-boom computer-guided drilling jumbos and immediate structural shotcrete application.",
+      "Deployed automated seismic geophone arrays and electronic precision-delay blasting caps to confine shockwaves strictly within safe limits."
+    ],
+    "timeline": [
+      {
+        "phase": "Bypass Alignment & Portal Shoring",
+        "date": "2020–2021",
+        "desc": "Constructing temporary river diversions, detour highway bridges, and rockfall barrier fences."
+      },
+      {
+        "phase": "Eastbound Bore Mining & Enlargement",
+        "date": "2021–2022",
+        "desc": "Controlled drill-and-blast widening, rock bolt installation, and fiber shotcrete lining."
+      },
+      {
+        "phase": "Westbound Bore Mining & Concrete Arch",
+        "date": "2022–2023",
+        "desc": "Enlarging westbound bore, casting final waterproof cast-in-place concrete arch liners."
+      },
+      {
+        "phase": "ITS Systems & Highway Reopening",
+        "date": "December, 2023",
+        "desc": "Installing intelligent tolling sensors, fire deluge, ventilation jets, and opening express lanes."
+      }
+    ],
+    "specs": {
+      "Structure": "Drill-and-Blast Enlarged Tunnel with Reinforced Concrete Arch",
+      "Tunnel Width": "Expanded from 35 ft to 53 ft (50% Width Increase)",
+      "Bore Length": "1,200 ft (365 m) each bore",
+      "Rock Excavation": "Over 75,000 cubic yards of Crystalline Granite",
+      "Support System": "Swellex Rock Bolts, Steel Lattice Girders, Fiber Shotcrete",
+      "Lining Type": "Waterproof Membrane with Cast-in-Place Reinforced Concrete",
+      "Elevation": "7,500+ ft above Sea Level",
+      "Executing Agency": "Colorado Department of Transportation (CDOT)",
+      "Construction Method": "New Austrian Tunnelling Method (NATM / SEM)"
+    },
+    "culturalInsight": {
+      "title": "拓道",
+      "meaning": "Embodying 'Takudō' (carving new paths through wilderness), piercing the granite heart of the Rocky Mountains to ensure safe and open passage.",
+      "quote": "「山川開通」",
+      "quoteTranslation": "Opening roads through towering peaks and rushing rivers."
+    }
+  },
+  "work_usa_005": {
+    "kanjiName": "シアトル・ライトレール ビーコンヒル・トンネル及び地下駅工事",
+    "romajiName": "Shiatoru Raito Rēru Bīkon Hiru Tonneru oyobi Chikaeki Kōji",
+    "prefecture": "Washington",
+    "city": "Seattle",
+    "tokyoDistance": "Seattle–Tacoma International Airport (SEA) (Nearest Transit Hub)",
+    "airport": "Seattle–Tacoma International Airport (SEA)",
+    "locationStory": "Constructed deep beneath Beacon Hill in south Seattle, connecting the Rainier Valley and Sea-Tac Airport directly with downtown Seattle. The station serves as a vital community gateway for diverse urban neighborhoods.",
+    "coordinates": "47.5792° N, 122.3117° W",
+    "challenges": [
+      "Boring twin tunnels through unstable water-bearing glacial soils directly beneath densely populated residential homes with strict zero-settlement thresholds.",
+      "Excavating a massive 160-foot-deep underground station cavern under high hydrostatic pressure in complex glacial till formations."
+    ],
+    "solutions": [
+      "Deployed a 21-foot state-of-the-art Earth Pressure Balance (EPB) TBM with continuous pressurized face support and high-precision laser guidance.",
+      "Employed the Sequential Excavation Method (SEM) with pre-drainage vacuum wells, pipe canopies, and gasketed watertight precast tunnel rings."
+    ],
+    "timeline": [
+      {
+        "phase": "Vertical Shaft Sinking & TBM Launch",
+        "date": "2019–2020",
+        "desc": "Constructing 160-ft deep slurry-wall shafts and assembling the EPB TBM shield."
+      },
+      {
+        "phase": "Twin Tunnel TBM Drives",
+        "date": "2020–2021",
+        "desc": "Driving 1.1 miles of twin bores with zero surface subsidence beneath Beacon Hill homes."
+      },
+      {
+        "phase": "Station Cavern Mining & Architecture",
+        "date": "2021–2022",
+        "desc": "Mining the bi-level station cavern using SEM and installing high-speed elevator shafts."
+      },
+      {
+        "phase": "Systems Integration & Rail Handover",
+        "date": "2022–2023",
+        "desc": "Laying continuous welded track, overhead catenary electrification, and passenger testing."
+      }
+    ],
+    "specs": {
+      "Structure": "Twin EPB Bored Tunnels & SEM Subterranean Station Cavern",
+      "Tunnel Length": "1.1 miles (1.77 km) each bore",
+      "TBM Shield Diameter": "21 ft (6.4 m) Earth Pressure Balance Machine",
+      "Station Depth": "160 ft (49 m) Subterranean Depth",
+      "Tunnel Lining": "Precision Steel-Reinforced Precast Gasketed Concrete Segments",
+      "Passenger Access": "4 High-Speed Elevators & Pressurized Emergency Egress Stairs",
+      "Transit Speed": "55 mph Operational Speed",
+      "Executing Agency": "Central Puget Sound Regional Transit Authority (Sound Transit)",
+      "Construction Method": "EPB Tunnel Boring Machine & Sequential Excavation Method"
+    },
+    "culturalInsight": {
+      "title": "深脈",
+      "meaning": "Embodying 'Shinmyaku' (deep underground arterial pulse), quietly carrying the lifeblood of urban transit deep beneath the living city.",
+      "quote": "「地中潜行」",
+      "quoteTranslation": "Moving silently through the earth to unite distant communities."
+    }
+  },
+  "work_usa_006": {
+    "kanjiName": "ゴールデンゲート・ブリッジ 第2期耐震改修工事",
+    "romajiName": "Gōruden Gēto Burijji Dai-ni-ki Taishin Kaishū Kōji",
+    "prefecture": "California",
+    "city": "San Francisco",
+    "tokyoDistance": "San Francisco International Airport (SFO) (Nearest Transit Hub)",
+    "airport": "San Francisco International Airport (SFO)",
+    "locationStory": "Connecting the northern tip of the San Francisco Peninsula to Marin County across the turbulent Pacific tidal entrance to San Francisco Bay. The retrofit protects a designated Monument of the Century.",
+    "coordinates": "37.8199° N, 122.4783° W",
+    "challenges": [
+      "Performing heavy steel demolition and damper retrofits high above active ocean straits without closing highway traffic carrying 110,000 vehicles daily.",
+      "Integrating cutting-edge seismic isolation devices while preserving strict historical landmark preservation guidelines."
+    ],
+    "solutions": [
+      "Designed custom suspended scaffolding platforms and mobile acoustic weather enclosures to protect marine environments and highway users.",
+      "Installed massive lead-rubber isolation bearings, viscous fluid dampers, and post-tensioned internal anchor tendons inside historic concrete pylons."
+    ],
+    "timeline": [
+      {
+        "phase": "Seismic Dynamic Modeling & Scaffolding",
+        "date": "2018–2019",
+        "desc": "Non-linear seismic time-history simulations and suspended marine scaffold installation."
+      },
+      {
+        "phase": "North Viaduct Truss Strengthening",
+        "date": "2019–2020",
+        "desc": "Replacing riveted steel bracing with ductile high-strength members and seismic isolators."
+      },
+      {
+        "phase": "Pylon Post-Tensioning & Viscous Dampers",
+        "date": "2020–2021",
+        "desc": "Core drilling 200-ft vertical holes for post-tensioned tendons and installing fluid dampers."
+      },
+      {
+        "phase": "Final Calibration & Protective Coating",
+        "date": "2021–2022",
+        "desc": "Dynamic sensor validation, historic International Orange painting, and project certification."
+      }
+    ],
+    "specs": {
+      "Structure": "Historic Steel Truss Viaduct & Post-Tensioned Concrete Pylons",
+      "Seismic Design Target": "Resilient against 8.3 Magnitude San Andreas Fault Rupture",
+      "Isolation Devices": "Heavy-Duty Lead-Rubber Elastomeric Bearings",
+      "Dampers Installed": "High-Capacity Viscous Fluid Dampers (1,000+ kN capacity)",
+      "Post-Tensioning": "350+ tons High-Strength Prestressing Tendon Steels",
+      "Daily Traffic Maintained": "110,000+ Vehicles and 10,000 Pedestrians/Cyclists",
+      "Steel Coating": "Lead-Free Zinc Primer & Historic 'International Orange' Topcoat",
+      "Executing Agency": "Golden Gate Bridge, Highway and Transportation District",
+      "Construction Method": "Suspended Marine Falsework & Non-Disruptive Live Retrofitting"
+    },
+    "culturalInsight": {
+      "title": "不朽",
+      "meaning": "Embodying 'Fukyū' (immortality and resilience), ensuring that an iconic global landmark continues to bridge generations through the fiercest temblors.",
+      "quote": "「堅牢無比」",
+      "quoteTranslation": "Incomparably solid and unyielding against the tests of time."
+    }
+  },
+  "work_usa_007": {
+    "kanjiName": "グッド・サマリタン大学病院 患者ケア・パビリオン新築工事",
+    "romajiName": "Guddo Samaritan Daigaku Byōin Kanja Kea Pabirion Shinchiku Kōji",
+    "prefecture": "New York",
+    "city": "West Islip",
+    "tokyoDistance": "Long Island MacArthur Airport (ISP) (Nearest Transit Hub)",
+    "airport": "Long Island MacArthur Airport (ISP)",
+    "locationStory": "Located on the South Shore of Long Island in West Islip, New York. Positioned strategically to elevate emergency trauma response, cancer care, and specialized surgery across suburban New York communities.",
+    "coordinates": "40.7103° N, 73.2989° W",
+    "challenges": [
+      "Constructing a heavy structural steel medical tower immediately adjacent to an active 24/7 Level-2 emergency trauma center without acoustic or vibration interference.",
+      "Integrating intricate multi-trade medical gas, clean air filtration, and electrical emergency microgrid networks under strict New York State DOH regulations."
+    ],
+    "solutions": [
+      "Utilized 3D BIM spatial clash detection and off-site multi-trade prefabricated utility racks to accelerate mechanical installation by 30%.",
+      "Engineered independent vibration-isolated foundation pads for sensitive imaging equipment and robotic surgical theatres."
+    ],
+    "timeline": [
+      {
+        "phase": "Campus Master Planning & Foundations",
+        "date": "2021–2022",
+        "desc": "Auger-cast piling, utility diversions, and construction of coastal flood protection barriers."
+      },
+      {
+        "phase": "Structural Steel & Enclosure",
+        "date": "2022–2023",
+        "desc": "Erecting 4,500 tons of structural steel and high-efficiency curtain wall glazing."
+      },
+      {
+        "phase": "MEP & Surgical Suite Fit-out",
+        "date": "2023–2024",
+        "desc": "Installing cleanroom laminar airflow, hybrid operating theatre systems, and ICU telemetry."
+      },
+      {
+        "phase": "Clinical Commissioning & Opening",
+        "date": "2024–2025",
+        "desc": "DOH medical audits, life safety testing, air balancing, and clinical operational launch."
+      }
+    ],
+    "specs": {
+      "Structure": "Structural Steel Frame with Composite Concrete Decks",
+      "Foundation": "Auger Cast Continuous Flight Piles (60 ft depth)",
+      "Total Floor Area": "300,000 sq ft across 6 Stories",
+      "Surgical Suites": "16 Advanced Hybrid & Robotic Operating Rooms",
+      "Bed Capacity": "36 ICU Beds + 120 Private Inpatient Rooms",
+      "Emergency Dept": "Expanded 75-Bay Trauma Center with Dedicated CT/Imaging",
+      "Cleanroom Standard": "ISO Class 7/8 Laminar Flow Air Handling Units",
+      "Sustainability": "LEED Silver Target & Energy Star Certified",
+      "Client": "Catholic Health System (New York)",
+      "Construction Method": "Prefabricated MEP Corridor Racks & 3D BIM Clash Automation"
+    },
+    "culturalInsight": {
+      "title": "仁術",
+      "meaning": "Embodying 'Jinjutsu' (the noble art of benevolent healing), constructing healing spaces dedicated to saving lives and serving the community.",
+      "quote": "「医者仁心」",
+      "quoteTranslation": "The healer's craft is guided by a heart of boundless compassion."
+    }
+  },
+  "work_usa_008": {
+    "kanjiName": "ロバート・B・ディーマー浄水場 オゾン高度浄水施設建設工事",
+    "romajiName": "Robāto B Dīmā Jōsuijō Ozon Kōdo Jōsui Shisetsu Kensetsu Kōji",
+    "prefecture": "California",
+    "city": "Yorba Linda",
+    "tokyoDistance": "John Wayne Airport (SNA) (Nearest Transit Hub)",
+    "airport": "John Wayne Airport (SNA)",
+    "locationStory": "Perched atop the hills of Yorba Linda in northern Orange County, receiving raw water from the Colorado River Aqueduct and State Water Project to serve 3.5 million Californians.",
+    "coordinates": "33.9103° N, 117.7886° W",
+    "challenges": [
+      "Constructing massive watertight concrete contactor basins within an active seismic fault zone without cracking or chemical leakage.",
+      "Executing complex hydraulic tie-ins into the main aqueduct while maintaining uninterrupted 520 MGD water delivery to metropolitan municipalities."
+    ],
+    "solutions": [
+      "Utilized specialized post-tensioned watertight concrete with seismic expansion isolation joints designed for heavy ground motions.",
+      "Fabricated ultra-clean 316L stainless steel ozone injection manifolds and implemented automated SCADA safety shutdown loops."
+    ],
+    "timeline": [
+      {
+        "phase": "Earthwork, Shoring & Foundations",
+        "date": "2019–2020",
+        "desc": "Excavating 120,000 cubic yards of soil and installing deep soldier pile shoring walls."
+      },
+      {
+        "phase": "Post-Tensioned Ozone Basins",
+        "date": "2020–2021",
+        "desc": "Casting monolithic reinforced concrete contactor tanks and post-tensioning tendons."
+      },
+      {
+        "phase": "LOX Storage & Ozone Generators",
+        "date": "2021–2022",
+        "desc": "Installing vacuum-insulated cryogenic tanks, vaporizers, and high-voltage ozone generators."
+      },
+      {
+        "phase": "System Tie-ins & Water Commissioning",
+        "date": "2022–2023",
+        "desc": "Executing live aqueduct tie-ins, hydrostatic pressure testing, and full municipal online delivery."
+      }
+    ],
+    "specs": {
+      "Structure": "Post-Tensioned Watertight Reinforced Concrete Basins",
+      "Treatment Capacity": "520 Million Gallons Per Day (MGD) / 2.0 Billion Liters Daily",
+      "Disinfection Technology": "Liquid Oxygen (LOX) Advanced Ozone Oxidation",
+      "Piping Material": "Heavy-Wall Sanitary Grade 316L Stainless Steel",
+      "Concrete Volume": "28,000 cubic yards Low-Permeability Watertight Concrete",
+      "Seismic Standard": "Essential Facility Design (Whittier Fault Zone Resistant)",
+      "Automation": "Fully Redundant Triple-Modular Redundant (TMR) SCADA Control",
+      "Executing Agency": "Metropolitan Water District of Southern California (MWD)",
+      "Construction Method": "Post-Tensioned Water Basin Casting & Clean-room Stainless Welding"
+    },
+    "culturalInsight": {
+      "title": "清流",
+      "meaning": "Embodying 'Seiryū' (pure crystalline water), engineering the vital purification networks that sustain health and life across desert metropolitan basins.",
+      "quote": "「上善若水」",
+      "quoteTranslation": "The highest virtue is like water, nourishing all things without striving."
+    }
+  },
+  "work_usa_009": {
+    "kanjiName": "ロサンゼルス メトロポリス第1期複合開発プロジェクト",
+    "romajiName": "Rosanzerusu Metoroporisu Dai-ik-ki Fukugō Kaihatsu Purojekuto",
+    "prefecture": "California",
+    "city": "Los Angeles",
+    "tokyoDistance": "Los Angeles International Airport (LAX) (Nearest Transit Hub)",
+    "airport": "Los Angeles International Airport (LAX)",
+    "locationStory": "Prominently located along Francisco Street and the Harbor Freeway in Downtown Los Angeles, bridging the downtown corporate core with the LA Live sports and entertainment district.",
+    "coordinates": "34.0507° N, 118.2631° W",
+    "challenges": [
+      "Constructing two simultaneous high-rise towers immediately adjacent to the high-volume SR-110 freeway with zero traffic interruption.",
+      "Meeting stringent California seismic skyscraper performance standards for high-occupancy hotel and residential towers."
+    ],
+    "solutions": [
+      "Engineered dual high-strength concrete shear wall cores with seismic outriggers and continuous mat foundation slabs.",
+      "Deployed automated 4D construction logistics modeling to synchronize tower crane picks and just-in-time concrete delivery."
+    ],
+    "timeline": [
+      {
+        "phase": "Subterranean Shoring & Mat Pours",
+        "date": "2020–2021",
+        "desc": "Mass excavation, tied-back soldier pile shoring, and continuous 8,000-cubic-yard mat pours."
+      },
+      {
+        "phase": "Superstructure Core Slipforming",
+        "date": "2021–2023",
+        "desc": "Accelerated climbing core construction and structural steel framing for both towers."
+      },
+      {
+        "phase": "Curtain Wall Glazing & Interior Fit-Out",
+        "date": "2023–2024",
+        "desc": "Installing unitized low-E curtain walls and bespoke luxury interior millwork for Hotel Indigo."
+      },
+      {
+        "phase": "Sky Deck Commissioning & Handover",
+        "date": "2024",
+        "desc": "Amenity deck commissioning, hotel hospitality launch, and residential closings."
+      }
+    ],
+    "specs": {
+      "Structure": "High-Strength Cast-in-Place Concrete Core with Steel Outriggers",
+      "Tower 1 Height": "38 Storeys / 308 Luxury Residential Condominiums",
+      "Hotel Tower Height": "19 Storeys / 350 Luxury Guestrooms (Hotel Indigo)",
+      "Podium Facility": "4-Story Subterranean Garage (1,000+ vehicles) & Retail",
+      "Gross Floor Area": "Over 850,000 sq ft across Phase 1",
+      "Green Certification": "LEED Certified Building Envelopes",
+      "Seismic Resilience": "High-Ductility Dual-System Seismic Engineering",
+      "Client": "Greenland USA",
+      "Construction Method": "Automated Climbing Formwork & 4D BIM Logistics Scheduling"
+    },
+    "culturalInsight": {
+      "title": "摩天",
+      "meaning": "Embodying 'Maten' (touching the heavens), raising vertical urban marvels that harmonize cosmopolitan lifestyle with engineering excellence.",
+      "quote": "「聳立雲端」",
+      "quoteTranslation": "Soaring majestically to touch the edge of the clouds."
+    }
+  },
+  "work_usa_010": {
+    "kanjiName": "キャッスルロック・ノースメドウズ延伸立体交差事業",
+    "romajiName": "Kyassuru Rokku Nōsu Medōzu Enshin Rittai Kōsa Jigyō",
+    "prefecture": "Colorado",
+    "city": "Castle Rock",
+    "tokyoDistance": "Denver International Airport (DEN) (Nearest Transit Hub)",
+    "airport": "Denver International Airport (DEN)",
+    "locationStory": "Located in Douglas County between Denver and Colorado Springs. Vaulting over the I-25 corridor and major transcontinental rail routes to create vital community connectivity.",
+    "coordinates": "39.3986° N, 104.8778° W",
+    "challenges": [
+      "Erecting a major curved highway flyover across active mainline tracks of Union Pacific and BNSF Railroads with zero train schedule interruptions.",
+      "Navigating steep prairie bluffs and fragile riparian ecosystems along East Plum Creek prone to seasonal storm flooding."
+    ],
+    "solutions": [
+      "Employed balanced cantilever segmental bridge construction using overhead form travelers, eliminating ground falsework over tracks.",
+      "Engineered multi-tiered Mechanically Stabilized Earth (MSE) retaining walls and geogrid-reinforced slope stabilization."
+    ],
+    "timeline": [
+      {
+        "phase": "Corridor Shoring & Rail Coordination",
+        "date": "2020–2021",
+        "desc": "Detailed railroad flagging agreements, utility diversions, and massive earthwork balancing."
+      },
+      {
+        "phase": "Substructure Piers & Abutments",
+        "date": "2021–2022",
+        "desc": "Drilling 8-ft diameter caissons and casting monumental reinforced concrete hammerhead piers."
+      },
+      {
+        "phase": "Balanced Cantilever Box Girder Casting",
+        "date": "2022–2023",
+        "desc": "Segmental casting using overhead travelers across I-25 and rail tracks with post-tensioning."
+      },
+      {
+        "phase": "Roadway Paving & Community Opening",
+        "date": "2023",
+        "desc": "Final asphalt wearing surface, LED highway lighting, trail connections, and ribbon-cutting."
+      }
+    ],
+    "specs": {
+      "Structure": "Post-Tensioned Cast-in-Place Concrete Box Girder Bridge",
+      "Flyover Length": "1,400 ft (426 m) Curved Multi-Span Flyover",
+      "Total Roadway": "2.0 Miles Multi-Lane Access-Controlled Arterial",
+      "Additional Bridges": "2 Precast Concrete Girder Bridges over East Plum Creek",
+      "Rail Clearance": "Maintained Unbroken Operations for BNSF and Union Pacific",
+      "Retaining Walls": "Over 120,000 sq ft of Mechanically Stabilized Earth (MSE) Walls",
+      "Post-Tensioning": "High-Strength Low-Relaxation Prestressing Steel Strands",
+      "Executing Agency": "Town of Castle Rock & Colorado Department of Transportation (CDOT)",
+      "Construction Method": "Balanced Cantilever Segmental Construction with Overhead Travelers"
+    },
+    "culturalInsight": {
+      "title": "飛橋",
+      "meaning": "Embodying 'Hikyō' (soaring bridge), effortlessly vaulting across bustling rail and highway arteries to bring communities together.",
+      "quote": "「通達無碍」",
+      "quoteTranslation": "Connecting all pathways freely without barrier or hindrance."
+    }
+  },
+  "work_sg_001": {
+    "kanjiName": "ジュエル・チャンギ国際空港複合施設建設工事",
+    "romajiName": "Jueru Changi Kokusai Kūkō Fukugō Shisetsu Kensetsu Kōji",
+    "prefecture": "Singapore",
+    "city": "Singapore",
+    "tokyoDistance": "Singapore Changi Airport (SIN) (Nearest Transit Hub)",
+    "airport": "Singapore Changi Airport (SIN)",
+    "locationStory": "Located at the epicenter of Changi Airport, connecting Terminals 1, 2, and 3. The project redefines passenger dwell experience by providing world-class nature and retail amenities directly airside.",
+    "coordinates": "1.3602° N, 103.9898° E",
+    "challenges": [
+      "Erecting a 200-meter-wide continuous glass and steel diagrid dome with zero internal columns directly above active airport roadways and subterranean baggage handling networks.",
+      "Managing complex indoor microclimates to sustain 120,000 living plants while controlling humidity around the world's tallest indoor waterfall."
+    ],
+    "solutions": [
+      "Deployed 3D BIM parametric modeling and automated hydraulic jacks to adjust spatial nodal geometry across 18,000 bespoke steel trusses.",
+      "Engineered a dynamic computational fluid dynamic (CFD) climate control system with integrated smoke purge exhaust and rainwater recycling."
+    ],
+    "timeline": [
+      {
+        "phase": "Excavation & Substructure",
+        "date": "2014–2016",
+        "desc": "Basement parking excavation and structural diaphragm walls connected to Terminal 1."
+      },
+      {
+        "phase": "Diagrid Dome Steel Erection",
+        "date": "2016–2018",
+        "desc": "Assembly of the toroidal steel lattice and installation of 9,000 custom glass panes."
+      },
+      {
+        "phase": "Forest Valley & Rain Vortex",
+        "date": "2018–2019",
+        "desc": "Planting the 5-story terraced forest and installing the 40-meter waterfall pumping loop."
+      },
+      {
+        "phase": "Commissioning & Grand Opening",
+        "date": "April, 2019",
+        "desc": "Full passenger flow simulations, retail fit-outs, and opening to global acclaim."
+      }
+    ],
+    "specs": {
+      "Structure": "Continuous Toroidal Steel Diagrid Dome & Reinforced Concrete",
+      "Dome Span": "Over 200 meters column-free span",
+      "Glass Panels": "9,000+ High-Performance Acoustic & Thermal Low-E Panes",
+      "Waterfall Height": "40 meters (130 ft) Rain Vortex",
+      "Greenery": "2,000+ Trees and 100,000+ Shrubs (Forest Valley)",
+      "Green Certification": "BCA Green Mark GoldPLUS",
+      "Client": "Jewel Changi Airport Trustee Pte Ltd",
+      "Construction Method": "Joint Venture (Obayashi Singapore & Woh Hup)"
+    },
+    "culturalInsight": {
+      "title": "水華",
+      "meaning": "Embodying 'Suika' (water flower blooming), Jewel transforms falling rain into an architectural marvel harmonizing nature and technology.",
+      "quote": "「潤沢無窮」",
+      "quoteTranslation": "Nourishing abundance flowing without end."
+    }
+  },
+  "work_sg_002": {
+    "kanjiName": "シンガポール・バード・パラダイス新設工事",
+    "romajiName": "Shingapōru Bādo Paradaisu Shinsetsu Kōji",
+    "prefecture": "Singapore",
+    "city": "Singapore",
+    "tokyoDistance": "Singapore Changi Airport (SIN) (Nearest Transit Hub)",
+    "airport": "Singapore Changi Airport (SIN)",
+    "locationStory": "Set within the lush rainforests of the Mandai Wildlife Precinct in northern Singapore, creating a contiguous wildlife hub alongside the Night Safari and Singapore Zoo.",
+    "coordinates": "1.4034° N, 103.7891° E",
+    "challenges": [
+      "Constructing massive high-tensile aviary cable-net enclosures across steep terrain without disturbing adjacent native forest reserves.",
+      "Integrating aquatic biofiltration and automated feeding streams for sensitive bird species."
+    ],
+    "solutions": [
+      "Deployed helicopter and mini-crane rigging techniques to hoist tensile cable masts with zero heavy equipment ground compaction.",
+      "Engineered natural reed bed bio-retention wetlands that cleanse millions of liters of avian pond water daily."
+    ],
+    "timeline": [
+      {
+        "phase": "Topographic Earthwork & Drainage",
+        "date": "2018–2019",
+        "desc": "Contour-sensitive earthwork and ecological drainage swale construction."
+      },
+      {
+        "phase": "Tensile Masts & Canopy Rigging",
+        "date": "2019–2021",
+        "desc": "Erection of structural steel masts and stainless steel aviary flight netting."
+      },
+      {
+        "phase": "Habitat Landscaping & Theming",
+        "date": "2021–2022",
+        "desc": "Constructing artificial rockwork, waterfalls, canopy bridges, and avian breeding zones."
+      },
+      {
+        "phase": "Avian Acclimatization & Opening",
+        "date": "November, 2022",
+        "desc": "Successful transfer of 3,500 birds and grand opening to the public."
+      }
+    ],
+    "specs": {
+      "Structure": "High-Tensile Stainless Steel Cable-Netting & Tubular Steel Masts",
+      "Site Area": "17 Hectares (42 Acres)",
+      "Aviaries": "8 Major Immersive Walk-through Biomes",
+      "Green Rating": "BCA Green Mark Platinum",
+      "Water System": "Natural Bio-Retention & Wetland Filtration",
+      "Client": "Mandai Wildlife Group",
+      "Construction Method": "Low-Impact Forestry Construction & Tensile Net Rigging"
+    },
+    "culturalInsight": {
+      "title": "羽翼",
+      "meaning": "Embodying 'Uyoku' (wings in flight), crafting free and open flight realms where wildlife thrives in harmony with human appreciation.",
+      "quote": "「鸞翔鳳集」",
+      "quoteTranslation": "Where magnificent birds soar and gather in peaceful splendor."
+    }
+  },
+  "work_sg_003": {
+    "kanjiName": "ワン・ラッフルズ・キー超高層オフィスビル建設工事",
+    "romajiName": "Wan Raffuruzu Kī Chōkōsō Ofisu Biru Kensetsu Kōji",
+    "prefecture": "Singapore",
+    "city": "Singapore",
+    "tokyoDistance": "Singapore Changi Airport (SIN) (Nearest Transit Hub)",
+    "airport": "Singapore Changi Airport (SIN)",
+    "locationStory": "Standing at the gateway between the historic Raffles Place commercial core and the newly reclaimed Marina Bay financial district, connecting major mass transit networks.",
+    "coordinates": "1.2821° N, 103.8523° E",
+    "challenges": [
+      "Excavating four levels of basements within soft, water-saturated marine clay directly adjacent to active MRT rail tunnels.",
+      "Constructing large-span column-free office trading floors with high structural floor-loading requirements."
+    ],
+    "solutions": [
+      "Installed a 1.2-meter-thick structural concrete diaphragm wall and automated geotechnical inclinometer monitoring.",
+      "Employed high-strength structural steel outrigger trusses and post-tensioned floor beams to eliminate interior columns."
+    ],
+    "timeline": [
+      {
+        "phase": "Diaphragm Walls & Deep Basement",
+        "date": "2002–2003",
+        "desc": "Top-down basement excavation and diaphragm wall installation in marine clay."
+      },
+      {
+        "phase": "Twin Tower Superstructure",
+        "date": "2003–2005",
+        "desc": "Simultaneous slipform core construction and structural steel framing for both towers."
+      },
+      {
+        "phase": "Curtain Wall & Fit-out",
+        "date": "2005–2006",
+        "desc": "Unitized glass facade installation and financial trading floor technical fit-outs."
+      },
+      {
+        "phase": "Handover & FIABCI Recognition",
+        "date": "2006",
+        "desc": "Official opening with major anchor tenants including UBS and Deutsche Bank."
+      }
+    ],
+    "specs": {
+      "Structure": "Cast-in-Place Concrete Core with Structural Steel Composite Framing",
+      "Heights": "North Tower: 245m (50 Storeys) / South Tower: 140m (29 Storeys)",
+      "Office Floorplates": "Up to 30,000 sq ft Column-Free",
+      "Foundation": "Deep Bored Cast-in-Place Concrete Piles into Jurong Formation",
+      "Awards": "FIABCI Prix d'Excellence Winner & BCA Green Mark Gold",
+      "Client": "One Raffles Quay Pte Ltd (Keppel Land, Cheung Kong, Hongkong Land)",
+      "Construction Method": "Top-Down Basement Excavation & Dual Tower Climbing Core"
+    },
+    "culturalInsight": {
+      "title": "礎石",
+      "meaning": "Embodying 'Soseki' (cornerstone of prosperity), anchoring Singapore's transformation into a preeminent global financial metropolis.",
+      "quote": "「立地千秋」",
+      "quoteTranslation": "Standing firm and steadfast across a thousand autumns."
+    }
+  },
+  "work_sg_004": {
+    "kanjiName": "オーシャン・ファイナンシャル・センター新築工事",
+    "romajiName": "Ōshan Finansharu Sentā Shinchiku Kōji",
+    "prefecture": "Singapore",
+    "city": "Singapore",
+    "tokyoDistance": "Singapore Changi Airport (SIN) (Nearest Transit Hub)",
+    "airport": "Singapore Changi Airport (SIN)",
+    "locationStory": "Positioned at 10 Collyer Quay in Raffles Place, overlooking Marina Bay. Built on historic maritime shipping grounds to serve modern global financial corporations.",
+    "coordinates": "1.2831° N, 103.8519° E",
+    "challenges": [
+      "Demolishing the existing historic Ocean Building and reconstructing a 245-meter skyscraper within an ultra-dense, active financial corridor.",
+      "Engineering a record-breaking 110-meter-tall exterior vertical green wall capable of withstanding tropical storm gusts."
+    ],
+    "solutions": [
+      "Employed quiet, non-percussive demolition methods and real-time noise and dust mitigation enclosures.",
+      "Designed an automated drip-irrigation vertical trellis system with specialized soil-less media to nourish over 10,000 plants."
+    ],
+    "timeline": [
+      {
+        "phase": "Demolition & Diaphragm Walls",
+        "date": "2007–2008",
+        "desc": "Safe dismantling of old structure and deep perimeter retaining walls."
+      },
+      {
+        "phase": "Substructure & Mat Foundations",
+        "date": "2008–2009",
+        "desc": "Continuous deep concrete mat pour and basement construction."
+      },
+      {
+        "phase": "Superstructure & Solar Façade",
+        "date": "2009–2010",
+        "desc": "Core slipforming, structural steel erection, and solar PV curtain wall cladding."
+      },
+      {
+        "phase": "Vertical Garden & Handover",
+        "date": "2011",
+        "desc": "Vertical green wall planting, LEED Platinum certification, and tenant occupancy."
+      }
+    ],
+    "specs": {
+      "Structure": "Composite Concrete Core with Structural Steel Framing",
+      "Height": "245 meters (43 Storeys)",
+      "Green Wall": "Guinness Record Vertical Garden (110m Height)",
+      "Solar Capacity": "Singapore's Largest Office Solar PV Installation",
+      "Green Ratings": "BCA Green Mark Platinum & LEED Platinum",
+      "Client": "Keppel Land",
+      "Construction Method": "Eco-Efficient Construction with Prefabricated Green Wall Modules"
+    },
+    "culturalInsight": {
+      "title": "碧帆",
+      "meaning": "Embodying 'Hekihan' (emerald sails over deep waters), unfurling green architectural sails to guide sustainable commerce toward the future.",
+      "quote": "「風帆高邁」",
+      "quoteTranslation": "Hoisting lofty sails to catch the winds of positive change."
+    }
+  },
+  "work_sg_005": {
+    "kanjiName": "シンガポール国立大学先端科学技術研究団地（CREATE）新築工事",
+    "romajiName": "Shingapōru Kokuritsu Daigaku Sentan Kagaku Gijutsu Kenkyū Danchi Shinchiku Kōji",
+    "prefecture": "Singapore",
+    "city": "Singapore",
+    "tokyoDistance": "Singapore Changi Airport (SIN) (Nearest Transit Hub)",
+    "airport": "Singapore Changi Airport (SIN)",
+    "locationStory": "Located in University Town at the National University of Singapore. Conceived by the National Research Foundation as Singapore's global epicenter for breakthrough scientific discoveries.",
+    "coordinates": "1.3045° N, 103.7725° E",
+    "challenges": [
+      "Achieving ultra-low vibration tolerances (Vibration Criteria VC-E) for delicate electron microscopy on a multi-story structural frame.",
+      "Safely designing redundant laboratory HVAC and chemical exhaust systems handling thousands of diverse volatile compounds."
+    ],
+    "solutions": [
+      "Constructed isolated heavy-mass concrete inertia blocks and decoupled slab joints for microscopy suites.",
+      "Installed high-efficiency variable-air-volume (VAV) fume hood exhausts with multi-stage chemical scrubbers and heat recovery coils."
+    ],
+    "timeline": [
+      {
+        "phase": "Geotechnical Foundations",
+        "date": "2008–2009",
+        "desc": "Deep foundation piling and vibration baseline acoustic surveys."
+      },
+      {
+        "phase": "Concrete Frame & Lab Wings",
+        "date": "2009–2010",
+        "desc": "Constructing the 16-story tower and three specialized laboratory wings."
+      },
+      {
+        "phase": "MEP, Cleanrooms & Scrubbers",
+        "date": "2010–2011",
+        "desc": "Precision installation of cleanroom air handlers and laboratory gas lines."
+      },
+      {
+        "phase": "Global Lab Commissioning",
+        "date": "2011",
+        "desc": "Occupancy by MIT, Cambridge, and ETH Zurich research teams; Lab of the Year Award."
+      }
+    ],
+    "specs": {
+      "Structure": "Reinforced Concrete Frame with Vibration-Dampened Slabs",
+      "Vibration Standard": "Vibration Criteria VC-E Compliant for Nanotech",
+      "Floor Area": "67,000 m² High-Density Laboratory Space",
+      "Awards": "R&D Magazine 'Laboratory of the Year' & BCA Green Mark Platinum",
+      "Energy Efficiency": "Shading Facade Louvers & Sensible Heat Recovery Wheels",
+      "Client": "National Research Foundation (NRF) Singapore",
+      "Construction Method": "Modular Wet-Lab Utility Design & Inertia Mass Isolation"
+    },
+    "culturalInsight": {
+      "title": "究理",
+      "meaning": "Embodying 'Kyūri' (investigating the fundamental principles of nature), creating a crucible where global scientific pioneers expand human horizons.",
+      "quote": "「格物致知」",
+      "quoteTranslation": "Investigating the nature of things to attain ultimate knowledge."
+    }
+  },
+  "work_sg_006": {
+    "kanjiName": "シンガポール地下鉄MRT第304工区シールドトンネル工事",
+    "romajiName": "Shingapōru Chikatetsu Emu-āru-tī Dai-san-byaku-yon Kōku Shīrudo Tonneru Kōji",
+    "prefecture": "Singapore",
+    "city": "Singapore",
+    "tokyoDistance": "Singapore Changi Airport (SIN) (Nearest Transit Hub)",
+    "airport": "Singapore Changi Airport (SIN)",
+    "locationStory": "Winding deep beneath central Singapore's bustling commercial districts, linking key transport interchanges to alleviate surface traffic congestion.",
+    "coordinates": "1.2987° N, 103.8458° E",
+    "challenges": [
+      "Boring twin railway tunnels through variable soft marine clay and granite boulder formations directly beneath active commercial boulevards.",
+      "Underpinning existing highway flyover foundations without closing surface traffic."
+    ],
+    "solutions": [
+      "Utilized custom-manufactured EPB Tunnel Boring Machines with automated face pressure monitoring and soil conditioners.",
+      "Implemented permeation micro-grouting and computer-controlled hydraulic jacks for structural underpinning."
+    ],
+    "timeline": [
+      {
+        "phase": "Shaft Sinking & Utility Diversions",
+        "date": "2003–2004",
+        "desc": "Constructing launching shafts and rerouting major municipal fiber and power lines."
+      },
+      {
+        "phase": "Twin TBM Shield Drives",
+        "date": "2004–2006",
+        "desc": "Driving bored tunnels with precision precast bolted segment erection."
+      },
+      {
+        "phase": "Cross Passages & Trackbed Pours",
+        "date": "2006–2007",
+        "desc": "Mining underground cross passages and casting high-accuracy concrete trackbeds."
+      },
+      {
+        "phase": "LTA Systems Testing & Handover",
+        "date": "2007",
+        "desc": "Integrated traction power runs and seamless passenger operational handover."
+      }
+    ],
+    "specs": {
+      "Structure": "Twin EPB Bored Tunnels with Bolted Precast Concrete Segments",
+      "TBM Shield": "Earth Pressure Balance (EPB) Tunnel Boring Technology",
+      "Tunnel Diameter": "6.5 meters Outer Diameter",
+      "Track Type": "Continuous Welded High-Speed Mass Transit Trackwork",
+      "Client": "Land Transport Authority (LTA) Singapore",
+      "Construction Method": "Soft-Ground TBM Shield Driving & Real-Time Laser Telemetry"
+    },
+    "culturalInsight": {
+      "title": "穿地",
+      "meaning": "Embodying 'Senchi' (threading through the subterranean earth), forging hidden lifelines that keep dynamic global metropolises moving smoothly.",
+      "quote": "「行雲流水」",
+      "quoteTranslation": "Flowing smoothly and ceaselessly like drifting clouds and moving water."
+    }
+  },
+  "work_th_001": {
+    "kanjiName": "クイーン・シリキット・ナショナル・コンベンション・センター再開発工事",
+    "romajiName": "Kuīn Shirikitto Nashonaru Kompenshon Sentā Saikaihatsu Kōji",
+    "prefecture": "Thailand",
+    "city": "Bangkok",
+    "tokyoDistance": "Suvarnabhumi International Airport (BKK) (Nearest Transit Hub)",
+    "airport": "Suvarnabhumi International Airport (BKK)",
+    "locationStory": "Situated along Ratchadaphisek Road adjacent to Benjakitti Park in downtown Bangkok, functioning as Thailand's primary portal for global summit meetings.",
+    "coordinates": "13.7238° N, 100.5598° E",
+    "challenges": [
+      "Executing an enormous 300,000 m² high-specification civic facility under an aggressive fast-track schedule in time for the APEC 2022 Summit.",
+      "Erecting heavy long-span structural steel roof trusses spanning over 100 meters above subterranean MRT rail tunnels."
+    ],
+    "solutions": [
+      "Implemented comprehensive 4D BIM logistics scheduling and pre-assembled roof truss segments offsite for rapid overnight lifting.",
+      "Installed continuous geotechnical vibration and displacement sensors to safeguard adjacent Bangkok MRT rail infrastructure."
+    ],
+    "timeline": [
+      {
+        "phase": "Demolition & Ground Improvement",
+        "date": "2019–2020",
+        "desc": "Dismantling of original 1991 venue and installing 1,800 heavy foundation piles."
+      },
+      {
+        "phase": "Deep Basements & Floor Slabs",
+        "date": "2020–2021",
+        "desc": "Constructing multi-level subterranean logistics docks and direct MRT subway link."
+      },
+      {
+        "phase": "Long-Span Roof Truss Erection",
+        "date": "2021–2022",
+        "desc": "Hoisting massive 110-meter steel trusses and installing acoustic acoustic-rated envelopes."
+      },
+      {
+        "phase": "APEC Summit Inauguration",
+        "date": "September, 2022",
+        "desc": "Official handover, LEED certification, and hosting the 2022 APEC World Leaders' Summit."
+      }
+    ],
+    "specs": {
+      "Structure": "Composite Steel Truss Roof with Reinforced Concrete Substructure",
+      "Gross Area": "298,000 m² (5x expansion of historic venue)",
+      "Exhibition Halls": "8 Exhibition Halls, 4 Plenary Halls, 50 Meeting Rooms",
+      "Green Rating": "LEED Silver Certified",
+      "Client": "N.C.C. Management & Development Co., Ltd.",
+      "Construction Method": "Offsite Pre-Assembly & Fast-Track 4D BIM Project Delivery"
+    },
+    "culturalInsight": {
+      "title": "盛会",
+      "meaning": "Embodying 'Seikai' (grand celebratory gathering), a dignified hall where cultures and nations converse in harmony.",
+      "quote": "「賓客盈門」",
+      "quoteTranslation": "Welcoming esteemed guests from across the world with boundless hospitality."
+    }
+  },
+  "work_th_002": {
+    "kanjiName": "オー・ネス・タワー新築工事",
+    "romajiName": "Ō-Nesu Tawā Shinchiku Kōji",
+    "prefecture": "Thailand",
+    "city": "Bangkok",
+    "tokyoDistance": "Suvarnabhumi International Airport (BKK) (Nearest Transit Hub)",
+    "airport": "Suvarnabhumi International Airport (BKK)",
+    "locationStory": "Strategically located on Sukhumvit Road adjacent to BTS Nana Station, directly connected via an elevated all-weather skybridge walkway.",
+    "coordinates": "13.7402° N, 100.5539° E",
+    "challenges": [
+      "Constructing deep multi-level basements and high-rise CFT columns within the narrow confines of one of Bangkok's busiest vehicular corridors.",
+      "Meeting stringent dual LEED Gold and WELL Gold indoor environmental quality standards."
+    ],
+    "solutions": [
+      "Introduced Japanese Concrete-Filled Steel Tube (CFT) column technology, speeding up vertical erection while slimming down column dimensions.",
+      "Integrated smart MERV 14 / HEPA filtration with real-time indoor air quality (IAQ) sensors and automated outdoor air flush cycles."
+    ],
+    "timeline": [
+      {
+        "phase": "Deep Foundation Piles",
+        "date": "2018–2019",
+        "desc": "Installing high-capacity barrette piles and diaphragm retaining walls."
+      },
+      {
+        "phase": "CFT Columns & Steel Frame",
+        "date": "2019–2021",
+        "desc": "Precision erection of Japanese CFT columns and composite metal floor decks."
+      },
+      {
+        "phase": "Unitized Low-E Facade",
+        "date": "2021–2022",
+        "desc": "Installing insulated triple-glazed panels and rooftop solar photovoltaic arrays."
+      },
+      {
+        "phase": "Commissioning & Headquarters Move",
+        "date": "2022",
+        "desc": "Thai Obayashi headquarters relocation and commercial tenant handover."
+      }
+    ],
+    "specs": {
+      "Structure": "Concrete-Filled Steel Tube (CFT) Columns with Steel Composite Beams",
+      "Height / Floors": "29 Storeys Above Ground, 4 Basements",
+      "Gross Area": "85,000 m²",
+      "Green Ratings": "LEED Gold & WELL Gold Certified",
+      "Transit Connection": "Direct BTS Nana Skybridge Link",
+      "Client": "Thai Obayashi Corporation Limited",
+      "Construction Method": "Japanese CFT Engineering & Automated Smart Building Automation"
+    },
+    "culturalInsight": {
+      "title": "堅牢",
+      "meaning": "Embodying 'Kenrō' (unyielding structural integrity), pioneering resilient Japanese composite engineering to safeguard urban enterprise.",
+      "quote": "「玉樹臨風」",
+      "quoteTranslation": "Standing elegant and resilient against the changing winds of time."
+    }
+  },
+  "work_th_003": {
+    "kanjiName": "サムヤーン・ミットタウン大規模複合開発新築工事",
+    "romajiName": "Samuyān Mittotaun Daikibo Fukugō Kaihatsu Shinchiku Kōji",
+    "prefecture": "Thailand",
+    "city": "Bangkok",
+    "tokyoDistance": "Suvarnabhumi International Airport (BKK) (Nearest Transit Hub)",
+    "airport": "Suvarnabhumi International Airport (BKK)",
+    "locationStory": "Situated at the vibrant gateway to Chulalongkorn University, revitalizing the historic Samyan neighborhood into an educational, creative, and commercial hub.",
+    "coordinates": "13.7335° N, 100.5284° E",
+    "challenges": [
+      "Boring a pedestrian subway tunnel beneath Rama IV Road while maintaining unimpeded traffic flow on one of Bangkok's busiest transit corridors.",
+      "Coordinating concurrent construction of two distinct high-rise towers (office and residential) above a shared commercial podium."
+    ],
+    "solutions": [
+      "Employed pipe-jacking and pipe-roof micro-tunneling methods under Rama IV Road with zero surface road closures.",
+      "Utilized synchronized modular jump forms and dedicated material hoist hoppers to erect both superstructures simultaneously."
+    ],
+    "timeline": [
+      {
+        "phase": "Substructure & Excavation",
+        "date": "2016–2017",
+        "desc": "Large-scale basement excavation and slurry diaphragm perimeter retaining walls."
+      },
+      {
+        "phase": "Dual High-Rise Erection",
+        "date": "2017–2018",
+        "desc": "Simultaneous core climbing for 31-story office and 33-story condo towers."
+      },
+      {
+        "phase": "Underground MRT Tunnel",
+        "date": "2018–2019",
+        "desc": "Pipe-jacking pedestrian link under Rama IV Road and retail concourse fit-out."
+      },
+      {
+        "phase": "LEED Gold Inauguration",
+        "date": "September, 2019",
+        "desc": "Grand opening of the 24-hour learning zone and office tower tenant move-in."
+      }
+    ],
+    "specs": {
+      "Structure": "Post-Tensioned Concrete Frames with High-Strength Concrete Cores",
+      "Gross Area": "222,000 m² Mixed-Use Space",
+      "Features": "31-Storey Office, 33-Storey Condo, 6-Storey Mall, MRT Tunnel Link",
+      "Green Rating": "LEED Gold Certified",
+      "Client": "Golden Land Property Development PLC",
+      "Construction Method": "Pipe-Jacking Pedestrian Underpass & Concurrent Twin-Tower Superstructure"
+    },
+    "culturalInsight": {
+      "title": "友誼",
+      "meaning": "Embodying 'Yūgi' (enduring companionship), 'Mitrtown' reflects a friendly gathering place that nurtures learning, commerce, and community 24/7.",
+      "quote": "「三人行必有我師」",
+      "quoteTranslation": "In the company of fellow seekers, endless wisdom is shared."
+    }
+  },
+  "work_th_004": {
+    "kanjiName": "パーク・ベンチャーズ・エコプレックス（ホテル・オフィス複合ビル）新築工事",
+    "romajiName": "Pāku Benchāzu Ekopurekkusu Shinchiku Kōji",
+    "prefecture": "Thailand",
+    "city": "Bangkok",
+    "tokyoDistance": "Suvarnabhumi International Airport (BKK) (Nearest Transit Hub)",
+    "airport": "Suvarnabhumi International Airport (BKK)",
+    "locationStory": "Standing prominently at the junction of Wireless Road and Ploenchit Road, with a direct elevated skybridge link to BTS Ploenchit Station.",
+    "coordinates": "13.7431° N, 100.5467° E",
+    "challenges": [
+      "Constructing a complex 25-meter cantilevered infinity swimming pool extending outward from the 25th floor over Bangkok's skyline.",
+      "Attaining Thailand's first LEED Platinum certification for a mixed-use commercial and luxury hotel development."
+    ],
+    "solutions": [
+      "Fabricated massive post-tensioned steel outrigger trusses to securely anchor the cantilevered sky pool structure.",
+      "Implemented full building commissioning, enthalpy recovery heat exchangers, and 100% closed-loop greywater landscape recycling."
+    ],
+    "timeline": [
+      {
+        "phase": "Deep Foundation Piling",
+        "date": "2008–2009",
+        "desc": "Bored cast-in-place piling into deep stiff Bangkok clay strata."
+      },
+      {
+        "phase": "Concrete Superstructure",
+        "date": "2009–2010",
+        "desc": "Slipforming the central core and casting angled outward cantilever floor slabs."
+      },
+      {
+        "phase": "Curtain Wall & Sky Pool Cantilever",
+        "date": "2010–2011",
+        "desc": "Installing double low-E curtain walling and heavy steel pool cantilevers."
+      },
+      {
+        "phase": "LEED Platinum Handover",
+        "date": "September, 2011",
+        "desc": "Hotel opening of The Okura Prestige and historic LEED Platinum award."
+      }
+    ],
+    "specs": {
+      "Structure": "Post-Tensioned Reinforced Concrete Frame with Structural Steel Outriggers",
+      "Height": "142 meters (33 Storeys)",
+      "Hotel Rooms": "240 Luxury Rooms (The Okura Prestige Bangkok)",
+      "Green Rating": "LEED Platinum (First in Thailand for Mixed-Use)",
+      "Key Feature": "25-Meter Cantilevered Sky Infinity Pool",
+      "Client": "Univentures Public Company Limited",
+      "Construction Method": "Complex Angled Slipform Core & Post-Tensioned Cantilever Trussing"
+    },
+    "culturalInsight": {
+      "title": "合掌",
+      "meaning": "Embodying 'Gasshō' (the Thai Wai gesture of respect and welcome), bowing gracefully toward the city in a timeless gesture of peace.",
+      "quote": "「和敬清寂」",
+      "quoteTranslation": "Harmony, respect, purity, and tranquility woven into architecture."
+    }
+  },
+  "work_th_005": {
+    "kanjiName": "AIAイースト・ゲートウェイ新築工事",
+    "romajiName": "Ei-Ai-Ei Īsuto Gētowei Shinchiku Kōji",
+    "prefecture": "Thailand",
+    "city": "Bangkok",
+    "tokyoDistance": "Suvarnabhumi International Airport (BKK) (Nearest Transit Hub)",
+    "airport": "Suvarnabhumi International Airport (BKK)",
+    "locationStory": "Positioned along Bangna-Trad KM 4.5, connecting central Bangkok directly with the Eastern Economic Corridor (EEC) industrial zones and Suvarnabhumi Airport.",
+    "coordinates": "13.6689° N, 100.6482° E",
+    "challenges": [
+      "Achieving rigorous indoor air quality standards with HEPA and UVGI sterilization throughout high-occupancy office towers.",
+      "Constructing multi-level landscaped podium gardens and rooftop jogging tracks with zero structural water leakage."
+    ],
+    "solutions": [
+      "Installed continuous UVGI germicidal lamps inside central air handling units alongside real-time PM2.5 monitoring.",
+      "Engineered multi-layer elastomeric waterproofing membranes with electronic vector leak detection on all garden terraces."
+    ],
+    "timeline": [
+      {
+        "phase": "Substructure & Bored Piling",
+        "date": "2019–2020",
+        "desc": "Foundation piling and multi-level parking podium construction."
+      },
+      {
+        "phase": "Tower Superstructure Frame",
+        "date": "2020–2021",
+        "desc": "Rapid post-tensioned floor slab pours and central service core climbing."
+      },
+      {
+        "phase": "Curtain Wall & Wellness Fit-out",
+        "date": "2021–2022",
+        "desc": "Energy-efficient glass facade installation and sky garden landscaping."
+      },
+      {
+        "phase": "Handover & Dual Gold Certification",
+        "date": "2022",
+        "desc": "Official opening with dual LEED Gold and WELL Gold distinctions."
+      }
+    ],
+    "specs": {
+      "Structure": "Post-Tensioned Reinforced Concrete Frame with Shear Wall Core",
+      "Storeys / Area": "33 Storeys / 70,000 m² Gross Floor Area",
+      "Office Plates": "Column-Free 2,000 m² Floor Plates with 3m Ceilings",
+      "Wellness Features": "Rooftop Running Track, Fitness Pavilion & Multi-Tier Green Terraces",
+      "Green Ratings": "LEED Gold & WELL Gold Certified",
+      "Client": "AIA Company Limited (Thailand)",
+      "Construction Method": "Health-Centric Construction with Zero-VOC Finishes"
+    },
+    "culturalInsight": {
+      "title": "康泰",
+      "meaning": "Embodying 'Kōtai' (vibrant health and enduring peace), blending workplace vigor with natural tranquility.",
+      "quote": "「身心康寧」",
+      "quoteTranslation": "A balanced sanctuary where both mind and body flourish."
+    }
+  },
+  "work_th_006": {
+    "kanjiName": "タイ証券取引所（SET）新本社ビル建設工事",
+    "romajiName": "Tai Shōken Torihikijo Shin-honsha Biru Kensetsu Kōji",
+    "prefecture": "Thailand",
+    "city": "Bangkok",
+    "tokyoDistance": "Suvarnabhumi International Airport (BKK) (Nearest Transit Hub)",
+    "airport": "Suvarnabhumi International Airport (BKK)",
+    "locationStory": "Situated along Ratchadaphisek Road next to the Chinese Embassy, anchoring Bangkok's burgeoning New Central Business District.",
+    "coordinates": "13.7198° N, 100.5601° E",
+    "challenges": [
+      "Engineering a mission-critical 24/7 financial data core with zero tolerance for power interruptions or operational downtime.",
+      "Constructing an acoustically isolated 400-seat multi-purpose auditorium and public financial museum within an active office tower."
+    ],
+    "solutions": [
+      "Built dual-feed redundant substations and uninterruptible power supply (UPS) banks with seismic-isolated emergency generator bays.",
+      "Installed box-in-box acoustic isolation floating slabs and double-mass drywall partitions for the auditorium."
+    ],
+    "timeline": [
+      {
+        "phase": "Bored Piles & Basement Slurry",
+        "date": "2012–2013",
+        "desc": "Foundation piling and construction of high-security subterranean vaults."
+      },
+      {
+        "phase": "Superstructure Concrete Core",
+        "date": "2013–2014",
+        "desc": "Erection of reinforced concrete frame with high-durability floor plates."
+      },
+      {
+        "phase": "Curtain Wall & Mission Systems",
+        "date": "2014–2015",
+        "desc": "Glass envelope installation, trading server rooms, and museum fit-outs."
+      },
+      {
+        "phase": "Official Commissioning",
+        "date": "December, 2015",
+        "desc": "Handover to the Stock Exchange of Thailand and LEED Gold certification."
+      }
+    ],
+    "specs": {
+      "Structure": "Reinforced Concrete Frame with Dual High-Strength Core Walls",
+      "Storeys / Height": "28 Storeys, 134 meters",
+      "Gross Area": "62,000 m²",
+      "Special Facilities": "INVESTORY Museum, 400-Seat Auditorium, Maruey Library",
+      "Green Rating": "LEED Gold Certified & Thailand Energy Award Winner",
+      "Client": "The Stock Exchange of Thailand (SET)",
+      "Construction Method": "High-Security Mission-Critical Construction & Tier-III Redundancy"
+    },
+    "culturalInsight": {
+      "title": "公正",
+      "meaning": "Embodying 'Kōsei' (fairness and upright transparency), creating a transparent glass citadel that anchors national financial trust.",
+      "quote": "「信義通天下」",
+      "quoteTranslation": "Integrity and trust command respect throughout the entire world."
+    }
+  },
+  "work_th_007": {
+    "kanjiName": "サイアム・パラゴン内ネクストピア新設工事",
+    "romajiName": "Saiamu Paragon-nai Nekusutopia Shinsetsu Kōji",
+    "prefecture": "Thailand",
+    "city": "Bangkok",
+    "tokyoDistance": "Suvarnabhumi International Airport (BKK) (Nearest Transit Hub)",
+    "airport": "Suvarnabhumi International Airport (BKK)",
+    "locationStory": "Located inside Siam Paragon along Rama I Road, connected directly with the BTS Siam central transit interchange in heart of Bangkok.",
+    "coordinates": "13.7466° N, 100.5348° E",
+    "challenges": [
+      "Performing heavy structural retrofitting and slab modifications directly inside an operating luxury shopping destination without noise or dust migration.",
+      "Incorporating living biophilic canopies and sophisticated digital media ceilings with minimal structural floor loads."
+    ],
+    "solutions": [
+      "Executed negative-pressure soundproof enclosures with overnight robotic diamond cutting for structural openings.",
+      "Used ultra-lightweight recycled aluminum frames, mass timber structures, and lightweight volcanic soil substitutes."
+    ],
+    "timeline": [
+      {
+        "phase": "Phased Enclosure & Demolition",
+        "date": "2023–2024",
+        "desc": "Acoustic hoarding installation and selective structural slab removal."
+      },
+      {
+        "phase": "Structural Reinforcement & Framing",
+        "date": "2024",
+        "desc": "Lightweight steel truss installation and mechanical service rerouting."
+      },
+      {
+        "phase": "Biophilic Pods & Media Ceilings",
+        "date": "2024–2025",
+        "desc": "Installation of living green walls, kinetic digital domes, and timber pods."
+      },
+      {
+        "phase": "Grand Opening",
+        "date": "2025",
+        "desc": "Official launch as Siam Paragon's flagship sustainable future retail experience."
+      }
+    ],
+    "specs": {
+      "Structure": "Lightweight Structural Steel Framing with Engineered Mass Timber",
+      "Area": "10,000 m² Immersive Experience Zone",
+      "Sustainability": "Zero-VOC Finishes, 80% Recycled Content, Living Air Filtration",
+      "Client": "Siam Piwat Company Limited",
+      "Construction Method": "Low-Impact Clean Retrofitting within Active Luxury Mall"
+    },
+    "culturalInsight": {
+      "title": "新境",
+      "meaning": "Embodying 'Shinkyō' (new horizons of possibility), pioneering sustainable retail spaces where environmental consciousness and modern lifestyle intertwine.",
+      "quote": "「革故鼎新」",
+      "quoteTranslation": "Shedding the obsolete to bring forth radiant, enduring innovation."
+    }
+  },
+  "work_th_008": {
+    "kanjiName": "エバラ食品タイランド新工場建設工事",
+    "romajiName": "Ebara Shokuhin Tairando Shin-kōjō Kensetsu Kōji",
+    "prefecture": "Thailand",
+    "city": "Ayutthaya",
+    "tokyoDistance": "Don Mueang International Airport (DMK) (Nearest Transit Hub)",
+    "airport": "Don Mueang International Airport (DMK)",
+    "locationStory": "Located in the Rojana Industrial Park in Ayutthaya province, serving as Ebara's ASEAN food manufacturing export and distribution hub.",
+    "coordinates": "14.3532° N, 100.5684° E",
+    "challenges": [
+      "Engineering robust flood defense protections for an industrial facility located within the Chao Phraya river basin floodplain.",
+      "Meeting stringent Japanese and international HACCP and GMP sanitary cleanroom certifications."
+    ],
+    "solutions": [
+      "Engineered an elevated engineered earth pad with peripheral flood defense dykes and automated stormwater retention pumps.",
+      "Implemented positive-pressure air locks, seamless epoxy resin flooring, and automated CIP (Clean-In-Place) piping sterilization."
+    ],
+    "timeline": [
+      {
+        "phase": "Earthfill & Flood Protection Berms",
+        "date": "2021–2022",
+        "desc": "Engineered site elevation and perimeter flood dyke construction."
+      },
+      {
+        "phase": "Structural Steel Frame & Insulated Cladding",
+        "date": "2022",
+        "desc": "Erecting portal frames and food-grade insulated sandwich wall panels."
+      },
+      {
+        "phase": "Cleanrooms & Processing Lines",
+        "date": "2022–2023",
+        "desc": "Installing sanitary piping, bottling cleanrooms, and steam boilers."
+      },
+      {
+        "phase": "HACCP Certification & Commercial Production",
+        "date": "2023",
+        "desc": "Sanitary commissioning and commencement of export production."
+      }
+    ],
+    "specs": {
+      "Structure": "Pre-Engineered Structural Steel Frame with Food-Grade Insulated Panels",
+      "Floor Area": "14,500 m² Modern Processing Plant",
+      "Hygiene Standards": "HACCP & GMP Certified Food Production Facility",
+      "Flood Protection": "Finished Floor Elevated 1.5m Above Historical Flood Level",
+      "Client": "Ebara Foods (Thailand) Co., Ltd.",
+      "Construction Method": "HACCP-Compliant Sanitary Engineering & Flood-Resilient Civil Design"
+    },
+    "culturalInsight": {
+      "title": "食育",
+      "meaning": "Embodying 'Shokuiku' (nourishing life through culinary craftsmanship), delivering safe, wholesome Japanese culinary flavors across the world.",
+      "quote": "「民以食為天」",
+      "quoteTranslation": "To humanity, wholesome sustenance is as vital as the heavens themselves."
+    }
+  },
+  "work_ca_001": {
+    "kanjiName": "カナダ・トロント市エグリントン・クロスタウンLRTシールドトンネル建設工事",
+    "romajiName": "Kanada Toronto-shi Egurinton Kurosutaun Eru-āru-tī Shīrudo Tonneru Kensetsu Kōji",
+    "prefecture": "Canada",
+    "city": "Toronto",
+    "tokyoDistance": "Toronto Pearson International Airport (YYZ) (Nearest Transit Hub)",
+    "airport": "Toronto Pearson International Airport (YYZ)",
+    "locationStory": "Running directly beneath midtown Toronto's major east-west commercial arterial corridor along Eglinton Avenue.",
+    "coordinates": "43.7056° N, 79.4008° W",
+    "challenges": [
+      "Boring twin tunnels through complex glacial till geology with heavy boulder fields beneath active commercial retail avenues.",
+      "Safely tunneling beneath the existing, operating TTC Yonge-University Line subway tunnels with zero settlement."
+    ],
+    "solutions": [
+      "Deployed custom EPB Tunnel Boring Machines equipped with heavy-duty disc cutters capable of crushing glacial granite boulders.",
+      "Implemented real-time automated laser optical prisms and compensation grouting to protect surface structures."
+    ],
+    "timeline": [
+      {
+        "phase": "Launch Shaft Excavation",
+        "date": "2011–2012",
+        "desc": "Constructing the Black Creek launch shaft and staging yards."
+      },
+      {
+        "phase": "TBM 'Dennis' & 'Lea' Drives",
+        "date": "2013–2015",
+        "desc": "Driving 13 kilometers of combined tunnels and placing 42,000 precast segments."
+      },
+      {
+        "phase": "Cross Passages & Headwalls",
+        "date": "2015–2016",
+        "desc": "Mining cross passages under frozen ground and casting station headwalls."
+      },
+      {
+        "phase": "Substantial Completion",
+        "date": "2016",
+        "desc": "Handover of completed tunnel tubes to Metrolinx for track and systems installation."
+      }
+    ],
+    "specs": {
+      "Structure": "Twin EPB Bored Tunnels with Precast Bolted Concrete Segments",
+      "Bore Length": "6.5 km Twin Tunnel (13 km Total)",
+      "Machines Used": "Two 6.5m Diameter Caterpillar EPB Tunnel Boring Machines",
+      "Client": "Metrolinx (Ontario Transit Agency)",
+      "Construction Method": "Joint Venture (Obayashi Canada, Kenny, Kenaidan, Technicore)"
+    },
+    "culturalInsight": {
+      "title": "貫通",
+      "meaning": "Embodying 'Kantsū' (piercing through obstacles to forge connection), carving vital underground lifelines through Canadian winter earth.",
+      "quote": "「千里之行始於足下」",
+      "quoteTranslation": "A journey of a thousand miles begins with a single steadfast step."
+    }
+  },
+  "work_ca_002": {
+    "kanjiName": "カナダ・コキットラム紫外線浄水施設新設工事",
+    "romajiName": "Kanada Kokittoramu Shigaisen Jōsui Shisetsu Shinsetsu Kōji",
+    "prefecture": "Canada",
+    "city": "Coquitlam",
+    "tokyoDistance": "Vancouver International Airport (YVR) (Nearest Transit Hub)",
+    "airport": "Vancouver International Airport (YVR)",
+    "locationStory": "Set at the foot of the Coast Mountains in Coquitlam, British Columbia, downstream of the pristine mountain-fed Coquitlam Reservoir.",
+    "coordinates": "49.2838° N, 122.7932° W",
+    "challenges": [
+      "Blasting granite bedrock and pouring heavy concrete substructures in an ecologically pristine watershed directly adjacent to salmon habitat.",
+      "Installing large-diameter stainless-steel hydraulic manifold conduits with zero water leakage."
+    ],
+    "solutions": [
+      "Employed controlled vibration micro-blasting and multi-stage turbidity silt curtains with 24/7 water chemistry logging.",
+      "Utilized 3D digital photogrammetry and robotic automated orbital welding on 2.4m stainless steel pipes."
+    ],
+    "timeline": [
+      {
+        "phase": "Bedrock Excavation & Retaining",
+        "date": "2010–2011",
+        "desc": "Controlled rock excavation and environmental runoff containment."
+      },
+      {
+        "phase": "Concrete Water Reservoirs",
+        "date": "2011–2012",
+        "desc": "Pouring crack-free hydraulic concrete chambers and underground vault piping."
+      },
+      {
+        "phase": "UV Reactor Installation",
+        "date": "2012–2013",
+        "desc": "Installing eight high-output TrojanUV disinfection trains and backup generators."
+      },
+      {
+        "phase": "Commissioning & Clean Water Flow",
+        "date": "2014",
+        "desc": "Full water quality validation and seamless integration into Vancouver's water grid."
+      }
+    ],
+    "specs": {
+      "Structure": "Seismic-Isolated Cast-in-Place Concrete Vaults & Architectural Metal Enclosure",
+      "Capacity": "1.2 Billion Liters per Day (317 MGD)",
+      "Technology": "High-Efficiency Low-Pressure High-Output (LPHO) Ultraviolet Lamps",
+      "Seismic Standard": "Post-Disaster Operational Reliability (1-in-2,475-year seismic event)",
+      "Client": "Metro Vancouver Regional District",
+      "Construction Method": "Watershed Eco-Sensitive Civil Engineering & Automated Stainless Conduits"
+    },
+    "culturalInsight": {
+      "title": "清冽",
+      "meaning": "Embodying 'Seiretsu' (pure, crystalline mountain waters), safeguarding the vital springs of life for generations to come.",
+      "quote": "「上善若水」",
+      "quoteTranslation": "The highest virtue is like water: nurturing all living things without contention."
+    }
+  },
+  "work_ca_003": {
+    "kanjiName": "カナダ・エリンデールGO駅立体駐車場新設工事",
+    "romajiName": "Kanada Erindēru Gō-eki Rittai Chūshajō Shinsetsu Kōji",
+    "prefecture": "Canada",
+    "city": "Mississauga",
+    "tokyoDistance": "Toronto Pearson International Airport (YYZ) (Nearest Transit Hub)",
+    "airport": "Toronto Pearson International Airport (YYZ)",
+    "locationStory": "Located at the Erindale GO Station in Mississauga, Ontario, serving as a primary park-and-ride gateway to downtown Toronto's Union Station.",
+    "coordinates": "43.5682° N, 79.6679° W",
+    "challenges": [
+      "Erecting a heavy six-level precast concrete structure immediately adjacent to active, high-speed freight and passenger railway tracks.",
+      "Maintaining full daily commuter parking operations and bus connections throughout the multi-year construction duration."
+    ],
+    "solutions": [
+      "Scheduled all overhead crane lifts and pedestrian bridge erections during nighttime rail possession track windows.",
+      "Implemented a phased parking staging masterplan with temporary transit shuttle lanes."
+    ],
+    "timeline": [
+      {
+        "phase": "Site Utilities & Deep Foundations",
+        "date": "2011–2012",
+        "desc": "Foundation caissons and stormwater management bioretention basins."
+      },
+      {
+        "phase": "Precast Concrete Superstructure",
+        "date": "2012–2013",
+        "desc": "Erection of six levels of post-tensioned precast beams, columns, and double-tee slabs."
+      },
+      {
+        "phase": "Enclosed Pedestrian Skybridge",
+        "date": "2013",
+        "desc": "Hoisting the pre-assembled glass-enclosed skybridge across the rail corridor."
+      },
+      {
+        "phase": "LEED Certification & Handover",
+        "date": "2014",
+        "desc": "Installation of EV chargers, solar inverters, and official public opening."
+      }
+    ],
+    "specs": {
+      "Structure": "Precast Post-Tensioned Concrete with Architectural Aluminum Louvers",
+      "Levels / Stalls": "6 Levels / 1,500 Commuter Vehicles",
+      "Features": "Glass-Enclosed Heated Rail Bridge, EV Fast Chargers, Bike Vaults",
+      "Green Rating": "LEED Silver Certified",
+      "Client": "Metrolinx",
+      "Construction Method": "Offsite Precast Fabrication & Critical Rail Possession Hoisting"
+    },
+    "culturalInsight": {
+      "title": "通達",
+      "meaning": "Embodying 'Tsūtatsu' (seamless and unhindered transit), linking regional communities effortlessly to urban centers.",
+      "quote": "「通達無礙」",
+      "quoteTranslation": "Flowing unobstructed across all paths and journeys."
+    }
+  },
+  "work_ca_004": {
+    "kanjiName": "カナダ・エジャックスGO駅立体駐車場新設工事",
+    "romajiName": "Kanada Ejakkusu Gō-eki Rittai Chūshajō Shinsetsu Kōji",
+    "prefecture": "Canada",
+    "city": "Ajax",
+    "tokyoDistance": "Toronto Pearson International Airport (YYZ) (Nearest Transit Hub)",
+    "airport": "Toronto Pearson International Airport (YYZ)",
+    "locationStory": "Located at the Ajax GO Station along Highway 401 in Durham Region, Ontario, serving eastern commuters traveling to downtown Toronto.",
+    "coordinates": "43.8485° N, 79.0256° W",
+    "challenges": [
+      "Pouring high-durability precast concrete frames during harsh Canadian sub-zero winter freeze conditions.",
+      "Installing a massive rooftop structural steel solar canopy without compromising roof membrane integrity."
+    ],
+    "solutions": [
+      "Utilized heated concrete curing enclosures and high-early-strength silica fume concrete admixtures.",
+      "Fabricated custom structural steel roof stanchions with pre-tested thermal break isolators and leak-proof flashing boots."
+    ],
+    "timeline": [
+      {
+        "phase": "Site Civil Works & Caissons",
+        "date": "2011–2012",
+        "desc": "Heavy foundation caisson drilling and perimeter stormwater retention."
+      },
+      {
+        "phase": "Precast Deck Erection",
+        "date": "2012–2013",
+        "desc": "Rapid assembly of six levels of precast concrete parking modules."
+      },
+      {
+        "phase": "Rooftop Solar Array & Bridge",
+        "date": "2013",
+        "desc": "Installing the rooftop solar photovoltaic canopy and platform walkway."
+      },
+      {
+        "phase": "Commissioning & Handover",
+        "date": "2014",
+        "desc": "Grid-tie solar commissioning, LEED Silver award, and public launch."
+      }
+    ],
+    "specs": {
+      "Structure": "Precast Concrete Superstructure with Rooftop Solar Canopy",
+      "Capacity": "1,300 Stalls across 6 Storeys",
+      "Solar Power": "Rooftop Photovoltaic Solar Array Generating Clean Grid Energy",
+      "Green Rating": "LEED Silver Certified",
+      "Client": "Metrolinx",
+      "Construction Method": "Winter-Proof Precast Assembly & Integrated Solar Roofing"
+    },
+    "culturalInsight": {
+      "title": "光彩",
+      "meaning": "Embodying 'Kōsai' (brilliant radiance), harnessing the clean power of the sun to energize daily human transit.",
+      "quote": "「光風霽月」",
+      "quoteTranslation": "Gentle sunlight and clear skies illuminating the path forward."
+    }
+  },
+  "work_tw_001": {
+    "kanjiName": "台湾高速鉄道第C210工区高架橋・トンネル・桃園駅新設工事",
+    "romajiName": "Taiwan Kōsoku Tetsudō Dai-C210 Kōku Kōkakyō Tonneru Tōen-eki Shinsetsu Kōji",
+    "prefecture": "Taiwan",
+    "city": "Taoyuan",
+    "tokyoDistance": "Taiwan Taoyuan International Airport (TPE) (Nearest Transit Hub)",
+    "airport": "Taiwan Taoyuan International Airport (TPE)",
+    "locationStory": "Stretching through Taoyuan City, linking Taiwan's primary international airport directly to the high-speed rail spine running to Kaohsiung.",
+    "coordinates": "25.0125° N, 121.2144° E",
+    "challenges": [
+      "Constructing 21 kilometers of high-speed rail viaducts capable of withstanding 300 km/h dynamic loads and major earthquake faults.",
+      "Excavating a massive underground station in soft water-bearing alluvial gravels adjacent to airport highway junctions."
+    ],
+    "solutions": [
+      "Deployed span-by-span precast concrete box girder launching gantries with automated hydraulic leveling.",
+      "Constructed deep continuous diaphragm perimeter walls and pre-stressed ground anchors for the station box."
+    ],
+    "timeline": [
+      {
+        "phase": "Earthwork & Viaduct Gantries",
+        "date": "2001–2003",
+        "desc": "Setting up precast girder casting yards and mobilizing span launching gantries."
+      },
+      {
+        "phase": "Taoyuan Underground Station",
+        "date": "2003–2004",
+        "desc": "Top-down excavation of the subterranean station box and platform levels."
+      },
+      {
+        "phase": "Trackbeds & Systems Handover",
+        "date": "2004–2006",
+        "desc": "High-accuracy slab trackbed casting and 300 km/h high-speed train test runs."
+      },
+      {
+        "phase": "Commercial Operation",
+        "date": "January, 2007",
+        "desc": "Flawless inauguration of commercial passenger services across western Taiwan."
+      }
+    ],
+    "specs": {
+      "Structure": "Prestressed Concrete Box Girder Viaducts & Reinforced Concrete Station Box",
+      "Route Length": "21.2 km (12.8 km Viaduct, 3.8 km Tunnel, Station Complex)",
+      "Design Speed": "350 km/h (Operational Speed: 300 km/h)",
+      "Client": "Taiwan High Speed Rail Corporation (THSRC)",
+      "Construction Method": "Joint Venture (Obayashi, Fu Tsu, Evergreen) & Span Launching Gantries"
+    },
+    "culturalInsight": {
+      "title": "駿足",
+      "meaning": "Embodying 'Shunsoku' (swift as a galloping steed), carrying travelers across the island with lightning speed and peaceful comfort.",
+      "quote": "「一日千里」",
+      "quoteTranslation": "Covering a thousand miles in a single day with grace and precision."
+    }
+  },
+  "work_tw_002": {
+    "kanjiName": "台湾・日勝生加賀屋国際温泉ホテル新築工事",
+    "romajiName": "Taiwan Nisshōsei Kagaya Kokusai Onsen Hoteru Shinchiku Kōji",
+    "prefecture": "Taiwan",
+    "city": "Taipei",
+    "tokyoDistance": "Taipei Songshan Airport (TSA) (Nearest Transit Hub)",
+    "airport": "Taipei Songshan Airport (TSA)",
+    "locationStory": "Nestled in the lush hills of Beitou Hot Springs National Geothermal Park, overlooking Beitou Public Park and the historic thermal stream.",
+    "coordinates": "25.1368° N, 121.5062° E",
+    "challenges": [
+      "Protecting mechanical and structural components against highly corrosive sulfurous geothermal hot-spring steam.",
+      "Achieving authentic Sukiya-zukuri traditional wood joinery across a modern 16-story concrete high-rise frame."
+    ],
+    "solutions": [
+      "Utilized specialized titanium heat exchangers and acid-resistant polypropylene piping for thermal spring conduits.",
+      "Pre-cut authentic Japanese Hinoki timbers in Japan and dispatched master temple carpenters to oversee joinery assembly."
+    ],
+    "timeline": [
+      {
+        "phase": "Geothermal Foundation Excavation",
+        "date": "2007–2008",
+        "desc": "Excavation and acid-resistant foundation pile installation in Beitou thermal soils."
+      },
+      {
+        "phase": "Concrete Superstructure",
+        "date": "2008–2009",
+        "desc": "Constructing the 16-story seismic-reinforced concrete frame."
+      },
+      {
+        "phase": "Sukiya Carpentry & Thermal Baths",
+        "date": "2009–2010",
+        "desc": "Handcrafting Hinoki wood interiors and installing stone onsen pools."
+      },
+      {
+        "phase": "Grand Inauguration",
+        "date": "December, 2010",
+        "desc": "Official opening celebrating authentic Japanese omotenashi hospitality in Taiwan."
+      }
+    ],
+    "specs": {
+      "Structure": "Reinforced Concrete Core with Traditional Japanese Sukiya Timber Interior",
+      "Storeys": "16 Storeys, 3 Basements",
+      "Suites": "90 Traditional Japanese Suites with Private Cypress Onsen Tubs",
+      "Thermal Water": "Natural Beitou Acidic White Sulfur Hot Spring",
+      "Client": "Radium Life Tech Co., Ltd. & Kagaya Co., Ltd.",
+      "Construction Method": "Corrosion-Resistant Geothermal Engineering & Traditional Sukiya Joinery"
+    },
+    "culturalInsight": {
+      "title": "温雅",
+      "meaning": "Embodying 'On'ga' (gentle warmth and timeless elegance), honoring the sacred gift of thermal waters with refined Japanese hospitality.",
+      "quote": "「温故知新」",
+      "quoteTranslation": "Reflecting on ancient wisdom to discover profound, eternal beauty."
+    }
+  },
+  "work_tw_003": {
+    "kanjiName": "台湾・日東紡亜洲玻璃繊維（NAG）嘉義新工場建設工事",
+    "romajiName": "Taiwan Nittobō Ashū Hari Sen'i (NAG) Kagi Shin-kōjō Kensetsu Kōji",
+    "prefecture": "Taiwan",
+    "city": "Chiayi",
+    "tokyoDistance": "Chiayi Airport (CYI) / Tainan Airport (TNN) (Nearest Transit Hub)",
+    "airport": "Chiayi Airport (CYI) / Tainan Airport (TNN)",
+    "locationStory": "Located in Chiayi's Minxiong Industrial Park, strategically positioned near the Southern Taiwan Science Park semiconductor hub.",
+    "coordinates": "23.4815° N, 120.4536° E",
+    "challenges": [
+      "Protecting 24/7 continuous ultra-high-temperature molten glass tanks from structural deflection during earthquakes.",
+      "Maintaining micro-climate cleanroom environments with strictly controlled humidity for micro-fine glass yarn spinning."
+    ],
+    "solutions": [
+      "Incorporated seismic Buckling-Restrained Braces (BRB) and decoupled inertia foundations under heavy furnaces.",
+      "Engineered precision closed-loop desiccant dehumidification air-handling units and anti-static epoxy flooring."
+    ],
+    "timeline": [
+      {
+        "phase": "Heavy Foundations & Piling",
+        "date": "2019–2020",
+        "desc": "Foundation piling and heavy vibration-isolated furnace foundation mats."
+      },
+      {
+        "phase": "Structural Steel Frame",
+        "date": "2020",
+        "desc": "Erection of high-capacity industrial steel frame with BRB seismic dampening."
+      },
+      {
+        "phase": "Furnace & Cleanroom Mechanicals",
+        "date": "2020–2021",
+        "desc": "Installing electric melting tanks, yarn drawing machines, and cleanroom air systems."
+      },
+      {
+        "phase": "Commercial Production Launch",
+        "date": "2021",
+        "desc": "Successful furnace firing and supply ramp to tier-one semiconductor substrate makers."
+      }
+    ],
+    "specs": {
+      "Structure": "Structural Steel Frame with Buckling-Restrained Braces (BRB)",
+      "Gross Area": "38,000 m² High-Tech Production Facility",
+      "Special Facilities": "Continuous Electric Melting Glass Tank, Cleanroom Spinning Halls",
+      "Client": "Nittobo Asia Glass Fiber Co., Ltd.",
+      "Construction Method": "Seismic-Damped Industrial Construction & Precision Thermal Isolation"
+    },
+    "culturalInsight": {
+      "title": "精紡",
+      "meaning": "Embodying 'Seibō' (precision spinning of gossamer threads), weaving ultra-fine glass threads that empower the global digital mind.",
+      "quote": "「積微成著」",
+      "quoteTranslation": "From microscopic perfection emerges monumental technological power."
+    }
+  },
+  "work_vn_001": {
+    "kanjiName": "ベトナム・イオンモール・タンフーセラドン新築工事",
+    "romajiName": "Betonamu Ion Mōru Tan-fū Seradon Shinchiku Kōji",
+    "prefecture": "Vietnam",
+    "city": "Ho Chi Minh City",
+    "tokyoDistance": "Tan Son Nhat International Airport (SGN) (Nearest Transit Hub)",
+    "airport": "Tan Son Nhat International Airport (SGN)",
+    "locationStory": "Located within the master-planned green township of Celadon City in western Ho Chi Minh City, serving over two million surrounding residents.",
+    "coordinates": "10.8015° N, 106.6189° E",
+    "challenges": [
+      "Constructing an expansive commercial facility on deep, soft Mekong Delta alluvial clay soils with high groundwater tables.",
+      "Coordinating multi-tier tenant fit-out contractors to open 130 retail stores concurrently on opening day."
+    ],
+    "solutions": [
+      "Executed pre-stressed spun concrete pile foundations driven deep into underlying stiff sand strata.",
+      "Deployed centralized digital tenant management interfaces and Japanese quality control supervisors on every concourse."
+    ],
+    "timeline": [
+      {
+        "phase": "Ground Piling & Earthworks",
+        "date": "2012",
+        "desc": "Driving 3,500 spun concrete piles and casting foundation grade beams."
+      },
+      {
+        "phase": "Superstructure Frame",
+        "date": "2012–2013",
+        "desc": "Casting reinforced concrete columns, floor slabs, and steel roof trusses."
+      },
+      {
+        "phase": "Architectural Finishes & Fit-out",
+        "date": "2013",
+        "desc": "Installing skylights, terrazzo concourses, and Japanese MEP systems."
+      },
+      {
+        "phase": "Grand Opening Celebration",
+        "date": "January, 2014",
+        "desc": "Spectacular public debut welcoming over 100,000 visitors on opening weekend."
+      }
+    ],
+    "specs": {
+      "Structure": "Reinforced Concrete Frame with Long-Span Structural Steel Roof Trusses",
+      "Gross Area": "83,000 m² Commercial Center",
+      "Tenants": "Anchor AEON Department Store + 130 Specialty Boutiques",
+      "Client": "AEON Mall Vietnam Co., Ltd.",
+      "Construction Method": "Precast Spun Piling & Synchronized Multi-Tenant Retail Fit-Out"
+    },
+    "culturalInsight": {
+      "title": "賑わい",
+      "meaning": "Embodying 'Nigiwai' (bustling, joyful community spirit), providing a bright social town center that enriches daily Vietnamese family life.",
+      "quote": "「百客歓集」",
+      "quoteTranslation": "Hundreds of joyful guests gathering together in warm celebration."
+    }
+  },
+  "work_vn_002": {
+    "kanjiName": "ベトナム・雪印メグミルク新工場建設工事",
+    "romajiName": "Betonamu Yukijirushi Megu-miruku Shin-kōjō Kensetsu Kōji",
+    "prefecture": "Vietnam",
+    "city": "Bien Hoa",
+    "tokyoDistance": "Long Thanh International Airport / Tan Son Nhat (SGN) (Nearest Transit Hub)",
+    "airport": "Long Thanh International Airport / Tan Son Nhat (SGN)",
+    "locationStory": "Located in the Amata Industrial Park in Dong Nai province, near major highway links connecting to Ho Chi Minh City and the future Long Thanh International Airport.",
+    "coordinates": "10.9574° N, 106.8427° E",
+    "challenges": [
+      "Achieving ISO Class 7 aseptic cleanroom standards for milk processing in a hot, humid tropical environment.",
+      "Installing complex imported Japanese aseptic UHT pasteurization and automated filling machines with zero pipeline contamination."
+    ],
+    "solutions": [
+      "Engineered multi-stage HEPA air handling systems maintaining positive room pressurization and continuous relative humidity control.",
+      "Deployed automated orbital TIG welding for sanitary food-grade stainless-steel piping with 100% borescope video inspection."
+    ],
+    "timeline": [
+      {
+        "phase": "Ground Improvement & Piling",
+        "date": "2024",
+        "desc": "Foundation piling and underground biological wastewater treatment tanks."
+      },
+      {
+        "phase": "Factory Shell & Cleanroom Envelope",
+        "date": "2024–2025",
+        "desc": "Structural steel framing and insulated cleanroom ceiling panels."
+      },
+      {
+        "phase": "Aseptic UHT & Bottling Lines",
+        "date": "2025–2026",
+        "desc": "Sanitary piping installation, boiler systems, and filling machine alignment."
+      },
+      {
+        "phase": "Commissioning & Commercial Production",
+        "date": "2026",
+        "desc": "Aseptic validation runs and commencement of commercial dairy shipments."
+      }
+    ],
+    "specs": {
+      "Structure": "Pre-Engineered Structural Steel Frame with Food-Grade Cleanroom Enclosures",
+      "Gross Area": "18,000 m² Processing Complex",
+      "Processing Tech": "Continuous Aseptic UHT Pasteurization & Automated CIP/SIP Systems",
+      "Client": "Megmilk Snow Brand Vietnam Co., Ltd.",
+      "Construction Method": "High-Purity Aseptic Sanitary Engineering & Tropical Climate HVAC"
+    },
+    "culturalInsight": {
+      "title": "乳徳",
+      "meaning": "Embodying 'Nyūtoku' (the nurturing virtue of pure milk), providing safe, wholesome nutrition that supports the growth and vitality of youth.",
+      "quote": "「恵沢深厚」",
+      "quoteTranslation": "Nourishing blessings flowing deep and bountifully across generations."
+    }
+  },
+  "work_vn_003": {
+    "kanjiName": "ベトナム・ハノイ市タインチー橋建設工事",
+    "romajiName": "Betonamu Hanoi-shi Tainchī-kyō Kensetsu Kōji",
+    "prefecture": "Vietnam",
+    "city": "Hanoi",
+    "tokyoDistance": "Noi Bai International Airport (HAN) (Nearest Transit Hub)",
+    "airport": "Noi Bai International Airport (HAN)",
+    "locationStory": "Crossing the majestic Red River in southeastern Hanoi, connecting National Highway 1A with the Hanoi-Haiphong expressway system.",
+    "coordinates": "20.9782° N, 105.9015° E",
+    "challenges": [
+      "Constructing deep underwater pier foundations subject to ferocious Red River monsoon floods and shifting alluvial riverbeds.",
+      "Executing balanced cantilever box girder spans of up to 130 meters across navigable international river channels."
+    ],
+    "solutions": [
+      "Employed heavy circular steel pipe sheet-pile cofferdams and reverse-circulation drilling rigs socketed deep into stiff gravels.",
+      "Utilized computerized form traveler gantries for balanced cantilever segment casting with real-time hydraulic geometry adjustment."
+    ],
+    "timeline": [
+      {
+        "phase": "Deep River Foundation Piling",
+        "date": "2002–2003",
+        "desc": "Driving caissons and pouring underwater tremie concrete seals."
+      },
+      {
+        "phase": "Substructure Piers & Abutments",
+        "date": "2003–2004",
+        "desc": "Constructing massive reinforced concrete river piers and collision fenders."
+      },
+      {
+        "phase": "Balanced Cantilever Deck Erection",
+        "date": "2004–2005",
+        "desc": "Pouring prestressed concrete box segments simultaneously from each pier."
+      },
+      {
+        "phase": "Deck Closure & Inauguration",
+        "date": "2006",
+        "desc": "Final mid-span stitching, asphalt paving, and official national ribbon-cutting."
+      }
+    ],
+    "specs": {
+      "Structure": "Prestressed Concrete Continuous Box Girder (Balanced Cantilever)",
+      "Total Length / Width": "3,084 meters Length / 33.1 meters Width (6 Lanes)",
+      "Main Spans": "130-meter Maximum Navigation Clear Spans",
+      "Client": "Ministry of Transport, Project Management Unit 1 (PMU1) Vietnam",
+      "Funding": "Japan Bank for International Cooperation (JBIC / JICA ODA)",
+      "Construction Method": "Joint Venture (Obayashi & Sumitomo Mitsui) with Form Travelers"
+    },
+    "culturalInsight": {
+      "title": "大梁",
+      "meaning": "Embodying 'Tairyō' (a great structural girder spanning mighty currents), linking shores and people in enduring friendship.",
+      "quote": "「架橋通衢」",
+      "quoteTranslation": "Building monumental bridges that turn separated waters into bustling thoroughfares."
+    }
+  },
+  "work_vn_004": {
+    "kanjiName": "ベトナム・日清製粉新工場建設工事",
+    "romajiName": "Betonamu Nisshin Seifun Shin-kōjō Kensetsu Kōji",
+    "prefecture": "Vietnam",
+    "city": "Thuan An",
+    "tokyoDistance": "Tan Son Nhat International Airport (SGN) (Nearest Transit Hub)",
+    "airport": "Tan Son Nhat International Airport (SGN)",
+    "locationStory": "Located in the flagship Vietnam-Singapore Industrial Park 1 (VSIP 1) in Binh Duong, just north of Ho Chi Minh City.",
+    "coordinates": "10.9167° N, 106.7028° E",
+    "challenges": [
+      "Engineering vibration-isolated heavy structural mezzanines to support high-capacity steam cooking and retort sterilization vessels.",
+      "Meeting strict Japanese HACCP sanitary protocols for food export compliance."
+    ],
+    "solutions": [
+      "Constructed post-tensioned reinforced concrete mezzanine slabs with localized elastomer vibration damping pads.",
+      "Installed continuous Clean-In-Place (CIP) piping systems, epoxy-coated drainage gullies, and positive air filtration."
+    ],
+    "timeline": [
+      {
+        "phase": "Foundation Piling & Ground Slabs",
+        "date": "2011",
+        "desc": "Driving spun concrete piles and casting moisture-barrier ground slabs."
+      },
+      {
+        "phase": "Steel Superstructure & Cleanrooms",
+        "date": "2011–2012",
+        "desc": "Erecting pre-engineered steel frames and insulated cleanroom partitions."
+      },
+      {
+        "phase": "Steam Retorts & Automated Packaging",
+        "date": "2012",
+        "desc": "Installing high-pressure steam retorts, pouching lines, and quality lab suites."
+      },
+      {
+        "phase": "HACCP Certification & Production",
+        "date": "2012",
+        "desc": "Sanitary validation runs and commencement of commercial food production."
+      }
+    ],
+    "specs": {
+      "Structure": "Pre-Engineered Structural Steel Frame with Food-Grade Sandwich Panels",
+      "Gross Area": "11,200 m² Production Facility",
+      "Hygiene Compliance": "HACCP & ISO 22000 Sanitary Cleanroom Standards",
+      "Client": "Nisshin Foods Vietnam Co., Ltd.",
+      "Construction Method": "Sanitary Industrial Engineering & Thermal-Insulated Retort Processing"
+    },
+    "culturalInsight": {
+      "title": "滋味",
+      "meaning": "Embodying 'Jimi' (wholesome, nourishing taste), creating food products that warm hearts and nurture human energy.",
+      "quote": "「食為民天」",
+      "quoteTranslation": "Safe and wholesome food is the fundamental foundation of life."
+    }
+  },
+  "work_ae_001": {
+    "kanjiName": "アラブ首長国連邦・ドバイメトロ新設工事（レッドライン・グリーンライン）",
+    "romajiName": "Arabu Shuchōkoku Rempō Dobai Metoro Shinsetsu Kōji (Reddo Rain Gurīn Rain)",
+    "prefecture": "United Arab Emirates",
+    "city": "Dubai",
+    "tokyoDistance": "Dubai International Airport (DXB) (Nearest Transit Hub)",
+    "airport": "Dubai International Airport (DXB)",
+    "locationStory": "Threading through the heart of Dubai from Dubai International Airport down Sheikh Zayed Road to Jebel Ali and across historic Dubai Creek.",
+    "coordinates": "25.2048° N, 55.2708° E",
+    "challenges": [
+      "Erecting 70 kilometers of elevated concrete viaducts directly above Sheikh Zayed Road, one of the world's busiest multi-lane urban highways.",
+      "Tunneling beneath Dubai Creek and operating complex automated railway systems under intense 50°C summer desert heat."
+    ],
+    "solutions": [
+      "Utilized giant overhead self-launching precast concrete box girder gantries that moved without closing surface highway lanes.",
+      "Installed full-height climate-controlled platform screen doors and multi-stage cooling loops at every station."
+    ],
+    "timeline": [
+      {
+        "phase": "Consortium Mobilization & Viaducts",
+        "date": "2006–2007",
+        "desc": "Setting up precast girder casting yards and deploying launching gantries."
+      },
+      {
+        "phase": "Subterranean Creek Tunneling",
+        "date": "2007–2008",
+        "desc": "Driving slurry TBMs beneath Dubai Creek and casting underground stations."
+      },
+      {
+        "phase": "Red Line Inauguration",
+        "date": "09/09/2009",
+        "desc": "Historic opening of the Red Line on 09/09/09 to global international fanfare."
+      },
+      {
+        "phase": "Green Line & Network Handover",
+        "date": "2011",
+        "desc": "Completion of the Green Line and successful full network operation."
+      }
+    ],
+    "specs": {
+      "Structure": "Elevated Post-Tensioned Segmental Box Viaducts & Slurry Bored Tunnels",
+      "Route Length": "74.6 km Total Automated Network",
+      "Stations": "47 Total Stations with Aerodynamic Pearl-Seashell Roof Canopies",
+      "World Record": "Guinness World Record for Longest Automated Driverless Metro Line",
+      "Client": "Roads and Transport Authority (RTA) Dubai",
+      "Construction Method": "DURL Consortium (Obayashi, MHI, Mitsubishi Corp, Kajima, Yapi Merkezi)"
+    },
+    "culturalInsight": {
+      "title": "神速",
+      "meaning": "Embodying 'Shinsoku' (divine velocity gliding across golden desert sands), uniting ancient pearl-diving heritage with cutting-edge automated transit.",
+      "quote": "「大漠飛龍」",
+      "quoteTranslation": "A soaring dragon flying across the vast desert sands with boundless grace."
+    }
+  },
+  "work_au_001": {
+    "kanjiName": "オーストラリア・シドニー・オリンピック主競技場新設工事",
+    "romajiName": "Ōsutoraria Shidonī Orimpikku Shu-kyōgijō Shinsetsu Kōji",
+    "prefecture": "Australia",
+    "city": "Sydney",
+    "tokyoDistance": "Sydney Kingsford Smith Airport (SYD) (Nearest Transit Hub)",
+    "airport": "Sydney Kingsford Smith Airport (SYD)",
+    "locationStory": "Situated in Sydney Olympic Park at Homebush Bay, anchoring Australia's national precinct for premier sports and global entertainment.",
+    "coordinates": "33.8471° S, 151.0634° E",
+    "challenges": [
+      "Erecting two massive 300-meter long-span structural steel roof arches with high aerodynamic wind-uplift tolerances.",
+      "Executing rigorous environmental sustainability and stormwater recycling for an arena seating 110,000 visitors."
+    ],
+    "solutions": [
+      "Employed high-capacity mobile crawler cranes and temporary cable guy towers to hoist the arch trusses in synchronized tandem lifts.",
+      "Engineered subterranean rainwater storage cisterns holding millions of liters of roof runoff for turf and sanitation uses."
+    ],
+    "timeline": [
+      {
+        "phase": "Earthworks & Caisson Piling",
+        "date": "1996–1997",
+        "desc": "Site remediation and deep concrete foundation caissons into Hawkesbury sandstone."
+      },
+      {
+        "phase": "Seating Tiers & Concourse",
+        "date": "1997–1998",
+        "desc": "Constructing four tiers of precast concrete seating grandstands."
+      },
+      {
+        "phase": "Twin 300m Steel Arch Roof",
+        "date": "1998–1999",
+        "desc": "Erection of iconic twin arch trusses and translucent polycarbonate cladding."
+      },
+      {
+        "phase": "Opening & Sydney 2000 Games",
+        "date": "March, 1999",
+        "desc": "Inaugural sporting matches and hosting the world-famous Sydney 2000 Olympics."
+      }
+    ],
+    "specs": {
+      "Structure": "Post-Tensioned Concrete Grandstands with Long-Span Structural Steel Arch Trusses",
+      "Capacity": "110,000 Seats (Opening & Closing Ceremonies)",
+      "Roof Structure": "Two 300-meter Arch Trusses Suspended in Hyperbolic Saddle Form",
+      "Green Features": "Passive Ventilation, Natural Daylighting & 100% Roof Rainwater Harvesting",
+      "Client": "Olympic Coordination Authority (OCA) / Stadium Australia Management",
+      "Construction Method": "Joint Venture (Obayashi Corporation & Multiplex Constructions)"
+    },
+    "culturalInsight": {
+      "title": "雄飛",
+      "meaning": "Embodying 'Yūhi' (soaring heroically to grand heights), inspiring the world's greatest athletes to achieve transcendent glory.",
+      "quote": "「勇冠三軍」",
+      "quoteTranslation": "Heroic spirit and athletic valor surpassing all limits."
+    }
+  },
+  "work_id_001": {
+    "kanjiName": "インドネシア・グリコ・カラワン新工場建設工事",
+    "romajiName": "Indoneshia Guriko Karawan Shin-kōjō Kensetsu Kōji",
+    "prefecture": "Indonesia",
+    "city": "Karawang",
+    "tokyoDistance": "Soekarno-Hatta International Airport (CGK) (Nearest Transit Hub)",
+    "airport": "Soekarno-Hatta International Airport (CGK)",
+    "locationStory": "Located in the Karawang International Industry City (KIIC) along the Jakarta-Cikampek industrial corridor in West Java.",
+    "coordinates": "6.3542° S, 107.2882° E",
+    "challenges": [
+      "Maintaining strict confectionery cleanroom temperature and low-humidity zones in equatorial tropical heat.",
+      "Installing large-scale high-precision automated baking ovens and continuous chocolate dipping lines."
+    ],
+    "solutions": [
+      "Engineered continuous thermal envelope boundaries with high-efficiency desiccant air handlers.",
+      "Poured ultra-flat industrial floor slabs (Superflat FM2) to support precision automated conveyor machinery."
+    ],
+    "timeline": [
+      {
+        "phase": "Ground Preparation & Piling",
+        "date": "2020–2021",
+        "desc": "Engineered earthfill and precast concrete foundation piling."
+      },
+      {
+        "phase": "Factory Superstructure Frame",
+        "date": "2021",
+        "desc": "Erecting structural steel portal frames and insulated roof sandwich panels."
+      },
+      {
+        "phase": "Baking Lines & Chocolate Suites",
+        "date": "2021–2022",
+        "desc": "Installing biscuit ovens, chocolate temper rooms, and cleanroom packaging bays."
+      },
+      {
+        "phase": "Commercial Production Launch",
+        "date": "2022",
+        "desc": "Halal certification and commencement of global Pocky export shipments."
+      }
+    ],
+    "specs": {
+      "Structure": "Pre-Engineered Structural Steel Frame with Superflat Concrete Slabs",
+      "Site / Floor Area": "66,000 m² Site / 35,000 m² Factory Floor Area",
+      "Products": "Pocky Chocolate Biscuit Sticks & Japanese Confectionery",
+      "Green Features": "Rooftop Solar PV Installation & Heat Recovery Steam Systems",
+      "Client": "PT Glico Manufacturing Indonesia",
+      "Construction Method": "Superflat Industrial Concrete Pouring & Tropical Climate HVAC"
+    },
+    "culturalInsight": {
+      "title": "歓楽",
+      "meaning": "Embodying 'Kanraku' (delivering boundless joy and smiles), crafting wholesome sweet treats that brighten human lives.",
+      "quote": "「美味歓暢」",
+      "quoteTranslation": "Delicious flavors bringing joy, delight, and cheerful smiles to all."
+    }
+  },
+  "work_id_002": {
+    "kanjiName": "インドネシア・キョーエイ・サイキュウ新工場建設工事",
+    "romajiName": "Indoneshia Kyōei Saikyū Shin-kōjō Kensetsu Kōji",
+    "prefecture": "Indonesia",
+    "city": "Karawang",
+    "tokyoDistance": "Soekarno-Hatta International Airport (CGK) (Nearest Transit Hub)",
+    "airport": "Soekarno-Hatta International Airport (CGK)",
+    "locationStory": "Positioned in the Karawang industrial corridor, directly servicing nearby Toyota, Daihatsu, and Honda assembly plants.",
+    "coordinates": "6.3612° S, 107.2941° E",
+    "challenges": [
+      "Constructing deep vibration-isolated reinforced concrete press pits capable of absorbing continuous 1,500-ton dynamic stamping shocks.",
+      "Achieving rapid completion and machine alignment for early trial stampings."
+    ],
+    "solutions": [
+      "Engineered massive concrete inertia foundation blocks decoupled by specialized neoprene damping elastomer perimeter joints.",
+      "Pre-fabricated structural steel frames and used 3D laser leveling for high-capacity overhead crane runway beams."
+    ],
+    "timeline": [
+      {
+        "phase": "Deep Foundation Piling",
+        "date": "2011",
+        "desc": "Driving heavy foundation piles and excavating deep stamping press pits."
+      },
+      {
+        "phase": "Vibration-Damped Concrete Pits",
+        "date": "2011–2012",
+        "desc": "Pouring monolithic concrete inertia foundations for 1,500-ton stamping presses."
+      },
+      {
+        "phase": "Heavy Steel Frame & Cranes",
+        "date": "2012",
+        "desc": "Erecting structural steel bays, insulated cladding, and 30-ton gantry cranes."
+      },
+      {
+        "phase": "Equipment Commissioning",
+        "date": "2012",
+        "desc": "Successful press machine installation and start of commercial automotive stamping."
+      }
+    ],
+    "specs": {
+      "Structure": "Heavy Structural Steel Frame with Vibration-Isolated Concrete Press Pits",
+      "Gross Area": "15,800 m² Manufacturing Facility",
+      "Press Capacity": "500 to 1,500-Ton Automotive Stamping Press Bays",
+      "Client": "PT Indonesia Kyouei Saikyu",
+      "Construction Method": "Inertia Block Vibration Isolation & Heavy Industrial Rigging"
+    },
+    "culturalInsight": {
+      "title": "鍛冶",
+      "meaning": "Embodying 'Tan'ya' (the revered art of precision metal craftsmanship), shaping durable steel to move human mobility forward safely.",
+      "quote": "「百錬成鋼」",
+      "quoteTranslation": "Through a hundred rigorous firings and hammerings, supreme steel is born."
+    }
+  },
+  "work_kh_001": {
+    "kanjiName": "カンボジア国道5号線改修工事",
+    "romajiName": "Kambojia Kokudō Go-gōsen Kaishū Kōji",
+    "prefecture": "Cambodia",
+    "city": "Battambang",
+    "tokyoDistance": "Phnom Penh International Airport (PNH) (Nearest Transit Hub)",
+    "airport": "Phnom Penh International Airport (PNH)",
+    "locationStory": "Traversing Cambodia's western provinces between Phnom Penh and the Thai border at Poipet, driving economic vitality across agricultural heartlands.",
+    "coordinates": "12.5657° N, 104.9272° E",
+    "challenges": [
+      "Constructing expansive highway embankments across soft alluvial floodplain soils prone to catastrophic seasonal Mekong monsoon inundation.",
+      "Safely managing heavy public vehicular traffic on Cambodia's primary freight road while widening lanes."
+    ],
+    "solutions": [
+      "Engineered elevated embankments using lime-stabilized subgrades and stone pitching slope protection.",
+      "Implemented comprehensive traffic control diversions and dust suppression water spraying for roadside communities."
+    ],
+    "timeline": [
+      {
+        "phase": "Embankment Raising & Drainage",
+        "date": "2018–2019",
+        "desc": "Raising roadway subgrades above historical flood levels and installing precast box culverts."
+      },
+      {
+        "phase": "Bridge Substructures & Decks",
+        "date": "2019–2020",
+        "desc": "Constructing reinforced concrete highway river bridges over Mekong tributaries."
+      },
+      {
+        "phase": "Asphalt Concrete Paving",
+        "date": "2020–2021",
+        "desc": "Applying multi-layer asphalt concrete pavement and thermoplastic road markings."
+      },
+      {
+        "phase": "National Inauguration",
+        "date": "2022",
+        "desc": "Official opening ceremony led by the Cambodian Ministry of Public Works and JICA."
+      }
+    ],
+    "specs": {
+      "Structure": "4-Lane Divided Asphalt Highway with Reinforced Concrete Bridges",
+      "Corridor Width": "23-meter Wide Divided Cross-Section with Median Barrier",
+      "Pavement Type": "Heavy-Duty Modified Asphalt Concrete (AC)",
+      "Client": "Ministry of Public Works and Transport (MPWT) Cambodia",
+      "Funding": "Japan International Cooperation Agency (JICA ODA)",
+      "Construction Method": "Joint Venture Highway Civil Engineering & Flood-Resilient Earthworks"
+    },
+    "culturalInsight": {
+      "title": "康衢",
+      "meaning": "Embodying 'Kōku' (a peaceful, broad thoroughfare connecting nations), paving smooth roads that carry prosperity and hope across borders.",
+      "quote": "「四通八達」",
+      "quoteTranslation": "Extending open roads in all directions to connect the world in harmony."
+    }
+  },
+  "work_bd_001": {
+    "kanjiName": "バングラデシュ・カンプール橋・メグナ橋・グムティ第2橋新設工事",
+    "romajiName": "Banguradeshu Kanpūru-kyō Meguna-kyō Gumuti Dai-ni-kyō Shinsetsu Kōji",
+    "prefecture": "Bangladesh",
+    "city": "Dhaka",
+    "tokyoDistance": "Hazrat Shahjalal International Airport (DAC) (Nearest Transit Hub)",
+    "airport": "Hazrat Shahjalal International Airport (DAC)",
+    "locationStory": "Spanning three major tidal river systems along National Highway 1, linking the commercial heart of Dhaka with Chittagong Seaport.",
+    "coordinates": "23.7099° N, 90.5284° E",
+    "challenges": [
+      "Constructing deep underwater river piers subject to severe monsoonal bed scour depths exceeding 20 meters.",
+      "Completing three major river bridges spanning over 2.7 km ahead of the contractual national deadline."
+    ],
+    "solutions": [
+      "Pioneered the use of Steel Pipe Sheet Pile (SPSP) well foundation technology for the first time in South Asia.",
+      "Manufactured prefabricated steel girder spans offsite and floated them in on heavy marine barges during high tide."
+    ],
+    "timeline": [
+      {
+        "phase": "SPSP Foundation Installation",
+        "date": "2016–2017",
+        "desc": "Driving large-diameter steel pipe sheet piles deep into riverbed formations."
+      },
+      {
+        "phase": "Pier Casting & Marine Logistics",
+        "date": "2017–2018",
+        "desc": "Constructing reinforced concrete pier stems using floating batching plants."
+      },
+      {
+        "phase": "Steel Box Girder Erection",
+        "date": "2018–2019",
+        "desc": "Floating in 100-meter steel girder spans using high-capacity marine cranes."
+      },
+      {
+        "phase": "Ahead-of-Schedule Opening",
+        "date": "May, 2019",
+        "desc": "Inaugurated by Prime Minister Sheikh Hasina months ahead of schedule."
+      }
+    ],
+    "specs": {
+      "Structure": "Composite Steel Narrow-Box Girders with Prestressed Concrete Decks",
+      "Bridge Lengths": "Gumti: 1,410m (17 Spans), Meghna: 930m (12 Spans), Kanchpur: 397m",
+      "Foundation Type": "Steel Pipe Sheet Pile (SPSP) Well Foundations",
+      "Client": "Roads and Highways Department (RHD), Ministry of Road Transport and Bridges",
+      "Funding": "Japan International Cooperation Agency (JICA ODA)",
+      "Construction Method": "Joint Venture (Obayashi, Shimizu, JFE Engineering, IHI Infrastructure)"
+    },
+    "culturalInsight": {
+      "title": "大河",
+      "meaning": "Embodying 'Taiga' (taming mighty rivers to unite people), bridging vast waters to bring boundless economic empowerment to millions.",
+      "quote": "「長虹臥波」",
+      "quoteTranslation": "Magnificent long rainbows resting peacefully across the mighty waves."
+    }
   }
 };

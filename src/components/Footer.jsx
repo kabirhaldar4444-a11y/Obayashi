@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronUp, MapPin } from 'lucide-react';
+import { ChevronUp, MapPin, Phone, Mail } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -23,18 +23,14 @@ export default function Footer() {
       <div className="footer-top-bar" onClick={scrollToTop}>
         <div className="container scroll-top-container">
           <span>Go to Pagetop</span>
-          <ChevronUp size={18} />
+          <ChevronUp size={16} className="scroll-top-icon" />
         </div>
       </div>
 
       <div className="container footer-content">
         <div className="footer-logo-row">
-          <Link to="/" className="footer-logo-link">
-            <img src="/logo.png" alt="Obayashi Construction Logo" className="footer-logo-img" />
-            <div className="logo-text-wrapper">
-              <span className="logo-text-main">OBAYASHI</span>
-              <span className="logo-text-sub">CONSTRUCTION GROUP</span>
-            </div>
+          <Link to="/" className="footer-logo-link" title="Obayashi India Corporation">
+            <img src="/Newlogo.png" alt="Obayashi India Corporation Logo" className="footer-logo-img" />
           </Link>
           <div className="footer-hq-info">
             <div className="footer-hq-block">
@@ -50,6 +46,18 @@ export default function Footer() {
                 Asia HQ (India)
               </span>
               <p className="footer-hq-address">The Ruby, 9th Floor, 29, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028, India</p>
+              <div className="footer-hq-contact mt-2 flex flex-col md:items-end gap-1 text-xs text-[#a0a0a0]">
+                <div className="flex items-center gap-1.5">
+                  <Phone size={11} className="text-[var(--primary-red)]" />
+                  <span>
+                    Tel: <a href="tel:02241504282" className="hover:text-white transition-colors">022-41504282</a> / <a href="tel:02241504283" className="hover:text-white transition-colors">41504283</a>
+                  </span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <Mail size={11} className="text-[var(--primary-red)]" />
+                  <a href="mailto:hrd@obayashi.in" className="hover:text-white transition-colors">hrd@obayashi.in</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -97,6 +105,19 @@ export default function Footer() {
               <li><Link to="/news" className="footer-link bold">News Archive</Link></li>
               <li><Link to="/contact" className="footer-link bold">Contact Inquiry</Link></li>
             </ul>
+            <div className="footer-col-contact mt-3 pt-3 border-t border-white/10">
+              <span className="text-[11px] font-bold text-white/50 uppercase tracking-wider block mb-1.5">Direct Contact</span>
+              <ul className="footer-link-list text-xs text-[#a0a0a0] space-y-1">
+                <li className="flex items-center gap-1.5">
+                  <Phone size={11} className="text-[var(--primary-red)] shrink-0" />
+                  <a href="tel:02241504282" className="footer-link">022-41504282</a> / <a href="tel:02241504283" className="footer-link">41504283</a>
+                </li>
+                <li className="flex items-center gap-1.5">
+                  <Mail size={11} className="text-[var(--primary-red)] shrink-0" />
+                  <a href="mailto:hrd@obayashi.in" className="footer-link">hrd@obayashi.in</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

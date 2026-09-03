@@ -82,12 +82,8 @@ export default function Header() {
       <header className="global-header">
         <div className="container header-container">
           {/* Logo */}
-          <Link to="/" className="logo-link">
-            <img src="/logo.png" alt="Obayashi Construction Logo" className="header-logo-img" />
-            <div className="logo-text-wrapper">
-              <span className="logo-text-main">OBAYASHI</span>
-              <span className="logo-text-sub">CONSTRUCTION GROUP</span>
-            </div>
+          <Link to="/" className="logo-link" title="Obayashi India Corporation">
+            <img src="/Newlogo.png" alt="Obayashi India Corporation Logo" className="header-logo-img" />
           </Link>
 
           {/* Desktop Nav Items */}

@@ -104,6 +104,31 @@ const ALL_STATE_BOUNDARIES = {
   "dholera":           { name: "Gujarat (Dholera)", x: 26.0, y: 45.5 },
 };
 
+// Pixel-perfect coordinate mapping calibrated for 1024x1024 3D USA map
+const usaCoordinates = {
+  "new york":     { name: "New York", x: 84.5, y: 34.5 },
+  "manhattan":    { name: "New York (Central Park)", x: 84.5, y: 34.5 },
+  "west islip":   { name: "Long Island (West Islip)", x: 86.0, y: 35.0 },
+  "long island":  { name: "New York (Long Island)", x: 86.0, y: 35.0 },
+  "california":   { name: "California", x: 13.0, y: 56.0 },
+  "irvine":       { name: "California (Irvine)", x: 15.0, y: 62.5 },
+  "los angeles":  { name: "California (Los Angeles)", x: 14.5, y: 61.5 },
+  "san francisco":{ name: "California (San Francisco)", x: 10.0, y: 52.0 },
+  "yorba linda":  { name: "California (Yorba Linda)", x: 15.2, y: 61.8 },
+  "nevada":       { name: "Nevada / Arizona", x: 20.5, y: 57.5 },
+  "arizona":      { name: "Nevada / Arizona", x: 20.5, y: 57.5 },
+  "hoover":       { name: "Hoover Dam (Black Canyon)", x: 20.5, y: 57.5 },
+  "colorado":     { name: "Colorado", x: 38.0, y: 49.0 },
+  "idaho springs":{ name: "Colorado (Clear Creek)", x: 37.5, y: 48.5 },
+  "castle rock":  { name: "Colorado (Castle Rock)", x: 38.5, y: 49.5 },
+  "washington":   { name: "Washington", x: 13.0, y: 27.0 },
+  "seattle":      { name: "Washington (Seattle)", x: 13.0, y: 27.0 },
+  "beacon hill":  { name: "Seattle (Beacon Hill)", x: 13.0, y: 27.0 },
+  "united states":{ name: "United States", x: 50.0, y: 50.0 },
+  "usa":          { name: "United States", x: 50.0, y: 50.0 },
+  "u.s.a":        { name: "United States", x: 50.0, y: 50.0 },
+};
+
 export default function MiniJapanMap({ location = "Tokyo", locationCategory }) {
   const isIndia = 
     (locationCategory && locationCategory.toLowerCase() === 'india') ||
@@ -112,6 +137,18 @@ export default function MiniJapanMap({ location = "Tokyo", locationCategory }) {
     location.toLowerCase().includes('ahmedabad') ||
     location.toLowerCase().includes('gujarat') ||
     location.toLowerCase().includes('maharashtra');
+
+  const isUSA =
+    (locationCategory && (locationCategory.toLowerCase() === 'united states' || locationCategory.toLowerCase() === 'usa')) ||
+    location.toLowerCase().includes('u.s.a') ||
+    location.toLowerCase().includes('usa') ||
+    location.toLowerCase().includes('united states') ||
+    location.toLowerCase().includes('california') ||
+    location.toLowerCase().includes('new york') ||
+    location.toLowerCase().includes('colorado') ||
+    location.toLowerCase().includes('washington') ||
+    location.toLowerCase().includes('nevada') ||
+    location.toLowerCase().includes('arizona');
 
   const getCoordinates = (locString) => {
     const clean = locString.toLowerCase();
@@ -123,6 +160,15 @@ export default function MiniJapanMap({ location = "Tokyo", locationCategory }) {
         }
       }
       return indiaCoordinates["maharashtra"]; // Fallback for India
+    }
+
+    if (isUSA) {
+      for (const city of Object.keys(usaCoordinates)) {
+        if (clean.includes(city)) {
+          return usaCoordinates[city];
+        }
+      }
+      return usaCoordinates["united states"]; // Fallback for USA
     }
 
     for (const city of Object.keys(cityCoordinates)) {
@@ -224,13 +270,42 @@ export default function MiniJapanMap({ location = "Tokyo", locationCategory }) {
     return matched;
   };
 
-  const includedStates = isIndia ? getIncludedStates(location) : getJapanLocations(location);
+  const getUsaLocations = (locStr) => {
+    const clean = (locStr || '').toLowerCase();
+    const matched = [];
+    const addedCoords = [];
+
+    const addMatch = (key) => {
+      const coord = usaCoordinates[key];
+      if (!coord) return;
+      const isDuplicate = addedCoords.some(
+        c => Math.abs(c.x - coord.x) < 1.0 && Math.abs(c.y - coord.y) < 1.0
+      );
+      if (!isDuplicate) {
+        addedCoords.push(coord);
+        matched.push(coord);
+      }
+    };
+
+    for (const [key] of Object.entries(usaCoordinates)) {
+      if (clean.includes(key)) addMatch(key);
+    }
+
+    if (matched.length === 0) {
+      matched.push({ name: (locStr || 'United States').split(',')[0], x: 50.0, y: 50.0 });
+    }
+    return matched;
+  };
+
+  const includedStates = isIndia 
+    ? getIncludedStates(location) 
+    : (isUSA ? getUsaLocations(location) : getJapanLocations(location));
 
   return (
-    // Outer container - white bg like Japan flag, or deep dark blue/black for India cyberpunk map
+    // Outer container - white bg like Japan flag, or deep dark blue/black for India/USA cyberpunk maps
     <div 
       className={"relative w-full h-full rounded-xl overflow-hidden shadow-inner flex items-center justify-center border " + 
-        (isIndia ? "bg-[#0b0f19] border-emerald-950/40" : "bg-white border-red-100")
+        (isIndia ? "bg-[#0b0f19] border-emerald-950/40" : (isUSA ? "bg-[#070b16] border-blue-900/40" : "bg-white border-red-100"))
       }
     >
       
@@ -248,14 +323,14 @@ export default function MiniJapanMap({ location = "Tokyo", locationCategory }) {
       >
         {/* 1. Map image */}
         <img 
-          src={isIndia ? "/images/india_3d_map.png" : "/images/japan_3d_map.png"} 
-          alt={isIndia ? "3D Map of India" : "3D Map of Japan"} 
+          src={isIndia ? "/images/india_3d_map.png" : (isUSA ? "/images/usa_3d_map.png" : "/images/japan_3d_map.png")} 
+          alt={isIndia ? "3D Map of India" : (isUSA ? "3D Map of USA" : "3D Map of Japan")} 
           className="absolute inset-y-0 left-0 h-full w-full object-fill select-none pointer-events-none"
-          style={isIndia ? { opacity: 0.85 } : { filter: 'grayscale(1) invert(0.92) brightness(1.04) contrast(1.06)' }}
+          style={isIndia || isUSA ? { opacity: 0.9 } : { filter: 'grayscale(1) invert(0.92) brightness(1.04) contrast(1.06)' }}
         />
 
         {/* Soft white gradient overlay covering right edge - ONLY for Japan map */}
-        {!isIndia && (
+        {!isIndia && !isUSA && (
           <div style={{
             position: 'absolute',
             top: 0,
@@ -269,7 +344,7 @@ export default function MiniJapanMap({ location = "Tokyo", locationCategory }) {
         )}
 
         {/* Top-left restricted gradient overlay - ONLY for Japan map */}
-        {!isIndia && (
+        {!isIndia && !isUSA && (
           <div style={{
             position: 'absolute',
             top: 0,

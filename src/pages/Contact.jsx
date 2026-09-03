@@ -258,8 +258,113 @@ export default function Contact() {
             )}
           </div>
 
-          {/* Contact Details Side */}
+          {/* Contact Details Side (Beside Form) */}
           <div className="contact-details-panel">
+            {/* Card 1: Departmental Inquiries (India) */}
+            <div className="contact-info-card">
+              <h3 className="info-card-title">Departmental Inquiries (India)</h3>
+
+              <div className="info-item">
+                <Mail size={18} className="info-icon" />
+                <div>
+                  <h4>Human Resources Division</h4>
+                  <p><a href="mailto:hrd@obayashi.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">hrd@obayashi.in</a></p>
+                  <span className="text-[12px] text-gray-500">General HR queries and employee relations</span>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <Mail size={18} className="info-icon" />
+                <div>
+                  <h4>Legal & Compliance Affairs</h4>
+                  <p><a href="mailto:legal@obayashi.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">legal@obayashi.in</a></p>
+                  <span className="text-[12px] text-gray-500">Contractual, regulatory & compliance notices</span>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <Mail size={18} className="info-icon" />
+                <div>
+                  <h4>Careers & Recruitment Desk</h4>
+                  <p><a href="mailto:recruitment@obayashi.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">recruitment@obayashi.in</a></p>
+                  <span className="text-[12px] text-gray-500">Job applications and career opportunities</span>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <Mail size={18} className="info-icon" />
+                <div>
+                  <h4>Talent Acquisition Team</h4>
+                  <p><a href="mailto:talent@obayashi.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">talent@obayashi.in</a></p>
+                  <span className="text-[12px] text-gray-500">Specialized executive & engineering hiring</span>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <Mail size={18} className="info-icon" />
+                <div>
+                  <h4>Employee Onboarding Services</h4>
+                  <p><a href="mailto:onboard@obayashi.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">onboard@obayashi.in</a></p>
+                  <span className="text-[12px] text-gray-500">New hire documentations and orientation</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2: Direct Telephones (India) - Below Departmental Inquiries */}
+            <div className="contact-info-card" style={{ marginTop: '24px' }}>
+              <h3 className="info-card-title">Direct Telephones (India)</h3>
+
+              <div className="info-item">
+                <Phone size={18} className="info-icon" />
+                <div>
+                  <h4>Direct Line 1</h4>
+                  <p><a href="tel:02241504282" className="hover:text-[var(--primary-red)] font-semibold transition-colors">022-41504282</a></p>
+                  <span className="text-[12px] text-gray-500">General administration & board assistance</span>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <Phone size={18} className="info-icon" />
+                <div>
+                  <h4>Direct Line 2</h4>
+                  <p><a href="tel:02241504283" className="hover:text-[var(--primary-red)] font-semibold transition-colors">022-41504283</a></p>
+                  <span className="text-[12px] text-gray-500">Commercial projects & vendor coordination</span>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <Phone size={18} className="info-icon" />
+                <div>
+                  <h4>Direct Line 3</h4>
+                  <p><a href="tel:02241504284" className="hover:text-[var(--primary-red)] font-semibold transition-colors">022-41504284</a></p>
+                  <span className="text-[12px] text-gray-500">Human resources & employee affairs</span>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <Phone size={18} className="info-icon" />
+                <div>
+                  <h4>Direct Line 4</h4>
+                  <p><a href="tel:02241504285" className="hover:text-[var(--primary-red)] font-semibold transition-colors">022-41504285</a></p>
+                  <span className="text-[12px] text-gray-500">Legal, contracts & compliance desk</span>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <Phone size={18} className="info-icon" />
+                <div>
+                  <h4>Direct Line 5</h4>
+                  <p><a href="tel:02241504286" className="hover:text-[var(--primary-red)] font-semibold transition-colors">022-41504286</a></p>
+                  <span className="text-[12px] text-gray-500">Engineering & technical assistance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Corporate Headquarters & Security Notice Section */}
+        <div style={{ marginTop: '48px' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="contact-info-card">
               <h3 className="info-card-title">Corporate Headquarters</h3>
               
@@ -282,16 +387,11 @@ export default function Contact() {
               <div className="info-item">
                 <Phone size={18} className="info-icon" />
                 <div>
-                  <h4>Public Relations Desk</h4>
-                  <p>+81-3-5769-1111 (Central line)</p>
-                </div>
-              </div>
-
-              <div className="info-item">
-                <Mail size={18} className="info-icon" />
-                <div>
-                  <h4>General Correspondence</h4>
-                  <p>en-inquiry@obayashi.co.jp</p>
+                  <h4>Central Office Board (India)</h4>
+                  <p className="font-semibold text-[var(--dark-main)]">
+                    <a href="tel:02241504282" className="hover:text-[var(--primary-red)] transition-colors">022-41504282</a> &nbsp;/&nbsp; <a href="tel:02241504283" className="hover:text-[var(--primary-red)] transition-colors">022-41504283</a>
+                  </p>
+                  <span className="text-[12px] text-gray-500 block mt-1">Available Mon–Fri, 9:00 AM – 6:00 PM IST</span>
                 </div>
               </div>
             </div>
@@ -299,10 +399,10 @@ export default function Contact() {
             <div className="contact-security-card">
               <div className="security-card-header">
                 <ShieldCheck size={20} className="text-red" />
-                <h4>Security Notice</h4>
+                <h4>Security & Governance Notice</h4>
               </div>
               <p className="security-card-text">
-                Verify any email source carefully. Obayashi Corporation does not issue transactional funds requests or legal notifications through unverified external email platforms. Report any suspicious correspondences impersonating Obayashi management.
+                Verify any email source carefully. Official correspondence from Obayashi Corporation in India originates solely from verified <strong>@obayashi.in</strong> domains. Obayashi Corporation does not issue transactional funds requests or recruitment fees through unverified external email platforms. Report any suspicious correspondences impersonating Obayashi management.
               </p>
             </div>
           </div>

@@ -22,10 +22,27 @@ export const workCategories = {
     "Urban Redevelopment",
     "Cultural",
     "Sports",
-    "Government"
+    "Government",
+    "Civil Infra",
+    "Offices"
   ],
-  location: ["All", "Japan", "India"],
-  year: ["All", "2030", "2031", "2032", "2033", "2034", "2035", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005", "2004", "2003", "2002", "2001", "2000", "1999", "1998", "1997", "1996", "1995", "1994", "1993", "1992", "1991", "1990", "1989", "1988", "1987", "1986", "1985", "1984", "1983", "1982", "1981", "1980", "1979", "1978", "1977", "1976", "1975", "1974", "1973", "1972", "1971", "1970", "1969", "1968", "1967", "1966", "1965", "1964"]
+  location: [
+  "All",
+  "Japan",
+  "India",
+  "United States",
+  "Singapore",
+  "Thailand",
+  "Canada",
+  "Taiwan",
+  "Vietnam",
+  "United Arab Emirates",
+  "Australia",
+  "Indonesia",
+  "Cambodia",
+  "Bangladesh"
+],
+  year: ["All", "2037", "2036", "2035", "2034", "2033", "2032", "2031", "2030", "2026", "2025", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2007", "2006", "2002", "1999"]
 };
 
 export const projects = [
@@ -2601,6 +2618,1646 @@ export const projects = [
       {
         "label": "Location",
         "value": "Khavda, Rann of Kutch, Gujarat"
+      }
+    ]
+  },
+  {
+    "id": "work_usa_001",
+    "title": "Davis Center at the Harlem Meer",
+    "subtitle": "A state-of-the-art recreation, sports, and community center designed to blend into Central Park's historic landscape with cutting-edge sustainable architecture.",
+    "category": "Sports",
+    "designType": "Design & Build",
+    "location": "New York City, New York",
+    "locationCategory": "United States",
+    "completion": "2025 Completion",
+    "completionYear": "2025",
+    "image": "/images/work_usa_001.jpg",
+    "summary": "The Davis Center at the Harlem Meer is a transformative community and recreation project by Obayashi's subsidiary in partnership with the Central Park Conservancy and NYC Parks. Replacing the obsolete 1966 Lasker Rink, the project restores natural topography and historical waterways while providing world-class public amenities including an Olympic-size pool, ice rink, and an earth-sheltered pavilion.",
+    "description": "The Davis Center at the Harlem Meer represents one of the most ambitious sustainable landscape and civic recreation developments undertaken in Central Park's northern perimeter. Spearheaded by the Central Park Conservancy in collaboration with Obayashi Corporation, the project replaces the aging 1966 Lasker Rink structure with an open, ecologically responsive facility that organically integrates into Frederick Law Olmsted and Calvert Vaux's iconic 19th-century parkland design.\n\nEngineered into the natural sloped topography of the park, the earth-sheltered pavilion features green living roofs supporting pedestrian pathways, large-span mass timber framing, and floor-to-ceiling high-efficiency insulated glazing. In summer, the facility operates as an Olympic-size public swimming pool with integrated splash pads; in winter, it converts into an NHL-regulation ice skating and hockey rink, complemented by year-round public community rooms and environmental education classrooms.\n\nCivil engineering required precision excavation into crystalline Manhattan schist bedrock directly adjacent to sensitive freshwater bodies and centuries-old park trees without hydraulic disruption. Deep rock anchoring, vibration-damped rock breaking, and specialized subterranean cutoff grout curtains were deployed to safeguard the Harlem Meer water table while connecting historically severed park streams through daylighted freshwater wetland corridors.\n\nEnvironmental sustainability is embedded into every layer of the development, achieving LEED Gold certification. The project features a closed-loop geothermal well field drilled deep into the bedrock to provide ultra-efficient radiant heating and cooling, extensive rainwater capture reservoirs for irrigation, and photovoltaic solar arrays. The Davis Center re-establishes equitable recreation access for Harlem and Upper Manhattan communities.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Public Facility & Recreation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Community Center & Ice Rink"
+      },
+      {
+        "label": "Budget",
+        "value": "$160 Million"
+      },
+      {
+        "label": "Area",
+        "value": "28,000 sq ft Facility / 5-Acre Park Zone"
+      },
+      {
+        "label": "Deadline",
+        "value": "2025"
+      },
+      {
+        "label": "Location",
+        "value": "Central Park, New York City, NY"
+      }
+    ]
+  },
+  {
+    "id": "work_usa_002",
+    "title": "UCI Mesa Court Oso Tower",
+    "subtitle": "A LEED Platinum high-density student residential complex at UC Irvine featuring modular construction and advanced passive energy optimization.",
+    "category": "Residential",
+    "designType": "Design & Build",
+    "location": "Irvine, California",
+    "locationCategory": "United States",
+    "completion": "2024 Completion",
+    "completionYear": "2024",
+    "image": "/images/work_usa_002.jpg",
+    "summary": "The UCI Mesa Court Oso Tower is a premier student housing expansion project developed for the University of California, Irvine. Designed and constructed to LEED Platinum standards, the complex provides living spaces for over 800 undergraduates, modern dining halls, collaborative academic lounges, and integrated outdoor recreational courtyards.",
+    "description": "The UCI Mesa Court Oso Tower expansion addresses soaring academic housing demand across southern California's premier research university. Executed by Obayashi's US building operations under a collaborative design-build framework, the multi-story student community delivers a vibrant, sustainable, and socially cohesive living-learning campus environment.\n\nComprising three interconnected residence halls rising up to six storeys, the project encompasses over 260,000 square feet of contemporary living spaces. The architectural concept emphasizes natural illumination, social porosity, and thermal efficiency. The towers feature double-height community study lounges, communal kitchenettes, a cutting-edge 800-seat multi-concept dining commons, and fitness amenities.\n\nStructural engineering incorporated buckling-restrained braced frames (BRBF) on cast-in-place concrete podium slabs, ensuring exceptional seismic resilience under stringent California Title 24 building codes. Construction schedules were accelerated by four months using off-site prefabricated exterior wall panels pre-fitted with high-performance low-E double glazing and weather-resistive air barriers.\n\nAwarded LEED Platinum certification, the Oso Tower incorporates extensive rooftop solar photovoltaic canopies, advanced greywater treatment for campus irrigation, dynamic sensor-driven LED lighting, and natural cross-ventilation shafts. The project stands as a benchmark for student wellness, seismic performance, and campus carbon neutrality.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Higher Education & Residential"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Student Housing & Dining Commons"
+      },
+      {
+        "label": "Budget",
+        "value": "$130 Million"
+      },
+      {
+        "label": "Area",
+        "value": "260,000 sq ft"
+      },
+      {
+        "label": "Deadline",
+        "value": "2024"
+      },
+      {
+        "label": "Location",
+        "value": "Irvine, California"
+      }
+    ]
+  },
+  {
+    "id": "work_usa_003",
+    "title": "Hoover Dam Bypass - Colorado River Bridge",
+    "subtitle": "An engineering marvel spanning the Black Canyon of the Colorado River—the longest concrete arch bridge in the Western Hemisphere.",
+    "category": "Civil Infra",
+    "designType": "General Contracting",
+    "location": "Nevada & Arizona",
+    "locationCategory": "United States",
+    "completion": "2022 Completion",
+    "completionYear": "2022",
+    "image": "/images/work_usa_003.jpg",
+    "summary": "The Hoover Dam Bypass (Mike O'Callaghan–Pat Tillman Memorial Bridge) is one of the world's most renowned bridge engineering feats, constructed by Obayashi Corporation as lead joint-venture contractor. Spanning 1,900 feet across the 890-foot-deep Black Canyon downstream of Hoover Dam, the bridge provides an essential interstate corridor between Nevada and Arizona.",
+    "description": "The Hoover Dam Bypass Project stands among the greatest civil engineering achievements of modern bridge construction. Constructed across the rugged volcanic cliffs of the Black Canyon of the Colorado River, the structure was commissioned by the Federal Highway Administration to remove heavy commercial freight traffic from the historic Hoover Dam crest roadway, drastically enhancing transportation safety and regional homeland security.\n\nThe centerpiece of the bypass is the 1,060-foot twin-rib cast-in-place concrete arch, soaring nearly 900 feet above the Colorado River—making it the highest concrete arch bridge in the Western Hemisphere. The bridge carries four lanes of highway traffic on composite high-performance steel box girders supported by slender reinforced concrete spandrel columns anchored directly into the arch ribs.\n\nConstructing the arch across the canyon abyss required pioneering engineering. Obayashi engineered an unprecedented 2,500-foot-span heavy-lift highline cable crane system capable of hoisting 50-ton concrete segments and equipment across the canyon void. The arch was erected using the cantilevered segmental method, supported by temporary stay-cable towers anchored into solid volcanic bedrock and monitored continuously via real-time satellite telemetry.\n\nEngineered to withstand extreme 80-mph canyon winds, severe desert thermal cycles, and maximum credible seismic events, the bridge incorporates ductile concrete formulations and seismic expansion joints. The bypass has transformed interstate logistics along US Route 93, slashing transit times between Las Vegas and Phoenix while standing as an enduring symbol of world-class bridge engineering.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Civil Infrastructure & Bridges"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Long-Span Concrete Arch Bridge"
+      },
+      {
+        "label": "Budget",
+        "value": "$240 Million"
+      },
+      {
+        "label": "Area",
+        "value": "1,900 ft Length / 890 ft Height"
+      },
+      {
+        "label": "Deadline",
+        "value": "2022"
+      },
+      {
+        "label": "Location",
+        "value": "Nevada / Arizona Border"
+      }
+    ]
+  },
+  {
+    "id": "work_usa_004",
+    "title": "I-70 Twin Tunnels Widening & Expansion",
+    "subtitle": "High-altitude interstate highway tunnel widening project through crystalline granitic bedrock to alleviate major Rocky Mountain transportation bottlenecks.",
+    "category": "Roads and Highways",
+    "designType": "Design & Build",
+    "location": "Clear Creek County, Colorado",
+    "locationCategory": "United States",
+    "completion": "2023 Completion",
+    "completionYear": "2023",
+    "image": "/images/work_usa_004.jpg",
+    "summary": "The I-70 Twin Tunnels Widening & Expansion project is a landmark highway engineering initiative executed by Obayashi's civil tunneling team for the Colorado Department of Transportation (CDOT). The project enlarged existing highway tunnels by 50% in width through fractured granitic bedrock to provide dedicated express toll lanes through the Rocky Mountains.",
+    "description": "The Interstate 70 Mountain Corridor is Colorado's premier trans-continental arterial, carrying millions of commuter, ski resort, and commercial freight trips through the steep canyons of the Rocky Mountains. The I-70 Twin Tunnels near Idaho Springs had long formed the corridor's most congested bottleneck, restricting three-lane highway traffic into constrained two-lane bores.\n\nUnder a fast-track design-build contract, Obayashi enlarged the eastbound and westbound tunnel bores from 35 feet to over 53 feet in width. The project created capacity for three full travel lanes plus wide shoulders, integrating advanced LED illumination, intelligent variable toll messaging, emergency egress passages, and specialized fire suppression systems.\n\nExcavation required sequential precision drill-and-blast methods through highly fractured crystalline granitic gneiss rock. To protect over 45,000 daily motorists traveling along adjacent detour roadways, Obayashi implemented the New Austrian Tunnelling Method (NATM), combining fiber-reinforced shotcrete, heavy lattice girders, and high-capacity swell-pack rock bolts installed within minutes of each blast.\n\nOperating at an elevation of over 7,500 feet under harsh sub-zero Rocky Mountain winter blizzards, the project was delivered on schedule without disrupting environmental trout habitats along Clear Creek. The widened tunnels have reduced peak weekend ski traffic travel times by up to 45 minutes, dramatically improving transit efficiency and mountain highway safety.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Transportation & Tunnels"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Mountain Highway Tunnel Widening"
+      },
+      {
+        "label": "Budget",
+        "value": "$106 Million"
+      },
+      {
+        "label": "Area",
+        "value": "3.5 Miles Highway / 1,200 ft Tunnels"
+      },
+      {
+        "label": "Deadline",
+        "value": "2023"
+      },
+      {
+        "label": "Location",
+        "value": "Idaho Springs, Colorado"
+      }
+    ]
+  },
+  {
+    "id": "work_usa_005",
+    "title": "Central Link Light Rail Beacon Hill Tunnel & Station",
+    "subtitle": "A deep-bore twin transit tunnel and one of the deepest underground rail stations in North America, connecting downtown Seattle to Sea-Tac Airport.",
+    "category": "Railways",
+    "designType": "General Contracting",
+    "location": "Seattle, Washington",
+    "locationCategory": "United States",
+    "completion": "2023 Completion",
+    "completionYear": "2023",
+    "image": "/images/work_usa_005.jpg",
+    "summary": "The Central Link Light Rail Beacon Hill Tunnel & Station is a premier underground mass transit project constructed by Obayashi Corporation for Sound Transit. Featuring 1.1-mile twin bored tunnels and a deep subterranean station cavern 160 feet beneath surface grade, the line forms the vital transit link connecting downtown Seattle with Sea-Tac Airport.",
+    "description": "The Central Link Light Rail Beacon Hill Tunnel and Station contract was the most geotechnically challenging and complex segment of Seattle's Sound Transit regional passenger rail network. Piercing directly beneath the historic Beacon Hill residential district, the project was designed to bypass congested freeway networks and deliver zero-emission rapid transit between Seattle's urban center and Seattle-Tacoma International Airport.\n\nThe scope entailed boring 1.1-mile twin running tunnels, excavating a massive 160-foot-deep underground station cavern, and constructing four 160-foot vertical ventilation and high-speed elevator shafts. The Beacon Hill Station represents one of the deepest subterranean transit stations in North America, featuring bi-level platform vaults, high-speed passenger elevators, and emergency egress stairs.\n\nMining through Seattle's glacially overridden geology presented extreme geotechnical hazards, including dense glacial tills, water-bearing sand pockets, saturated gravels, and slickensided hard clays under high hydrostatic heads. Obayashi deployed a 21-foot-diameter Earth Pressure Balance (EPB) Tunnel Boring Machine (TBM) customized with continuous face-pressure balance and robotic gasketed precast segmental ring installation to prevent surface settlement under dense residential neighborhoods.\n\nThe station cavern was mined using the Sequential Excavation Method (SEM) with ground depressurization dewatering wells, structural lattice girders, and multi-stage shotcrete liners. Completed with zero major structural settlements, the Beacon Hill segment provides thousands of daily commuters with swift, reliable, and flood-resilient underground rail transit.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Railways & Urban Transit"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Deep Subterranean Station & Twin Tunnels"
+      },
+      {
+        "label": "Budget",
+        "value": "$280 Million"
+      },
+      {
+        "label": "Area",
+        "value": "1.1-Mile Twin Tunnels / 160-ft Depth"
+      },
+      {
+        "label": "Deadline",
+        "value": "2023"
+      },
+      {
+        "label": "Location",
+        "value": "Seattle, Washington"
+      }
+    ]
+  },
+  {
+    "id": "work_usa_006",
+    "title": "Golden Gate Bridge Seismic Retrofit Phase II",
+    "subtitle": "Critical structural hardening and seismic isolation of the iconic suspension bridge to withstand maximum credible earthquakes on the San Andreas fault.",
+    "category": "Civil Infra",
+    "designType": "General Contracting",
+    "location": "San Francisco, California",
+    "locationCategory": "United States",
+    "completion": "2022 Completion",
+    "completionYear": "2022",
+    "image": "/images/work_usa_006.jpg",
+    "summary": "The Golden Gate Bridge Seismic Retrofit Phase II was a high-profile structural rehabilitation contract executed by Obayashi Corporation. Designed to protect the world-famous Art Deco suspension bridge against catastrophic 8.3-magnitude earthquakes along the San Andreas and Hayward faults, the work reinforced historic viaducts, tower pylons, and approach spans without disrupting traffic.",
+    "description": "The Golden Gate Bridge is an internationally recognized symbol of American civil engineering and a vital transportation arterial spanning the Golden Gate Strait between San Francisco and Marin County. Comprehensive seismic assessments revealed that a major rupture of the San Andreas or Hayward fault could induce catastrophic displacements in the bridge's approach viaducts and steel pylon towers.\n\nUnder Phase II of the comprehensive seismic retrofit program, Obayashi executed critical structural hardening across the bridge's North Approach Viaduct, Marin Anchorage, and North Tower Pylons. The work was engineered to ensure the bridge remains operational for emergency and military vehicles immediately following a maximum credible earthquake (M8.3+).\n\nEngineering interventions required the precision replacement of historic steel truss components with high-ductility structural members, installation of enormous lead-rubber elastomeric seismic isolation bearings, and placement of hydraulic viscous dampers. Massive historic concrete pylon walls were reinforced from within by post-tensioned high-strength steel tendons anchored deep into Franciscan bedrock.\n\nAll construction operations were performed high above treacherous marine currents subject to dense fog and 60-mph gale-force winds, while maintaining uninterrupted passage for 110,000 daily vehicles and millions of annual pedestrians. The retrofit preserved the bridge's celebrated Art Deco aesthetics while imbuing it with cutting-edge 21st-century earthquake resistance.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Civil Infrastructure & Historic Bridges"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Seismic Retrofit & Structural Hardening"
+      },
+      {
+        "label": "Budget",
+        "value": "$190 Million"
+      },
+      {
+        "label": "Area",
+        "value": "North Approach Viaduct & Anchorage Piers"
+      },
+      {
+        "label": "Deadline",
+        "value": "2022"
+      },
+      {
+        "label": "Location",
+        "value": "San Francisco, California"
+      }
+    ]
+  },
+  {
+    "id": "work_usa_007",
+    "title": "Good Samaritan University Hospital Patient Care Pavilion",
+    "subtitle": "A 300,000 sq ft modern medical tower featuring advanced surgical suites, intensive care units, and a dedicated emergency pavilion on Long Island.",
+    "category": "Healthcare",
+    "designType": "Design & Build",
+    "location": "West Islip, New York",
+    "locationCategory": "United States",
+    "completion": "2025 Completion",
+    "completionYear": "2025",
+    "image": "/images/work_usa_007.jpg",
+    "summary": "The Good Samaritan University Hospital Patient Care Pavilion is a flagship healthcare infrastructure expansion built by Obayashi's healthcare construction division on Long Island, New York. The 300,000 sq ft, six-story surgical and inpatient pavilion delivers 16 state-of-the-art operating suites, 36 intensive care beds, and a designated emergency trauma center.",
+    "description": "The Good Samaritan University Hospital Patient Care Pavilion represents a monumental investment in advanced regional healthcare for Catholic Health System, serving over 1.5 million residents across Suffolk County, Long Island. Designed and built under a collaborative management framework, the pavilion redefines clinical efficiency, patient comfort, and emergency trauma resilience.\n\nRising six storeys above the West Islip hospital campus, the 300,000-square-foot medical pavilion features 16 high-tech hybrid operating suites equipped for robotic surgery, neurosurgery, and cardiovascular interventions. The facility also houses 36 private intensive care (ICU) rooms, 120 acute private inpatient beds with smart bedside telemetry, and an expanded 75-bay emergency and trauma department.\n\nHealthcare construction required extreme vibration and acoustic isolation to safeguard active microsurgery and imaging procedures in adjacent existing hospital wings. Deep cast-in-place auger cast piles and heavy structural steel framing were erected using 3D BIM spatial clash coordination, ensuring precision integration of complex medical gas lines, cleanroom laminar airflow HVAC, and emergency backup power generators.\n\nTargeting high energy efficiency and resilience against coastal storm surges, the pavilion incorporates flood-resistant subterranean barrier walls, high-efficiency magnetic-bearing chillers, rooftop HEPA filtration, and biophilic interior healing gardens. The facility positions Good Samaritan as Long Island's premier academic medical center.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Healthcare & Life Sciences"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Acute Surgical & Patient Care Pavilion"
+      },
+      {
+        "label": "Budget",
+        "value": "$500 Million"
+      },
+      {
+        "label": "Area",
+        "value": "300,000 sq ft (6-Storey Pavilion)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2025"
+      },
+      {
+        "label": "Location",
+        "value": "West Islip, Long Island, NY"
+      }
+    ]
+  },
+  {
+    "id": "work_usa_008",
+    "title": "Robert B. Diemer Water Treatment Plant Oxidation Retrofit",
+    "subtitle": "A massive municipal water infrastructure modernization program deploying advanced ozone oxidation to ensure clean drinking water for Southern California.",
+    "category": "Civil Infra",
+    "designType": "General Contracting",
+    "location": "Yorba Linda, California",
+    "locationCategory": "United States",
+    "completion": "2023 Completion",
+    "completionYear": "2023",
+    "image": "/images/work_usa_008.jpg",
+    "summary": "The Robert B. Diemer Water Treatment Plant Oxidation Retrofit is a premier waterworks engineering project constructed by Obayashi for the Metropolitan Water District of Southern California (MWD). Modernizing one of the world's largest water filtration complexes, the facility incorporates advanced liquid-oxygen ozone disinfection treating up to 520 million gallons daily.",
+    "description": "The Robert B. Diemer Water Treatment Plant, nestled on a prominent 212-acre hillside in Yorba Linda, California, is one of the foundational treatment centers in Southern California's water distribution grid. The facility purifies water imported via the Colorado River Aqueduct and California State Water Project, supplying safe drinking water to over 3.5 million residents across Orange and Los Angeles counties.\n\nTo comply with stringent federal drinking water standards and eliminate disinfection byproducts, Obayashi constructed a massive ozone oxidation disinfection facility. The project introduced state-of-the-art liquid oxygen (LOX) storage, high-frequency ozone generation modules, deep post-tensioned ozone contactor basins, and chemical quench facilities capable of processing 520 million gallons per day (MGD).\n\nCivil and seismic engineering was exceptionally demanding due to the plant's proximity to the active Whittier fault zone. Obayashi constructed deep post-tensioned concrete contactor basins with flexible seismic joints, engineered to hold millions of gallons of treated water without structural cracking during seismic shaking. High-grade 316L stainless-steel piping was installed under strict sanitary clean-room conditions.\n\nCritically, all tie-ins, excavation, and structural connections were executed while maintaining continuous, uninterrupted water delivery to Southern California cities. The completed oxidation facility neutralizes taste, odor, and biological pathogens, ensuring a resilient, drought-proof drinking water supply for millions.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Waterworks & Environmental Infra"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Ozone Oxidation & Water Treatment Plant"
+      },
+      {
+        "label": "Budget",
+        "value": "$180 Million"
+      },
+      {
+        "label": "Area",
+        "value": "212-Acre Plant / 520 MGD Capacity"
+      },
+      {
+        "label": "Deadline",
+        "value": "2023"
+      },
+      {
+        "label": "Location",
+        "value": "Yorba Linda, California"
+      }
+    ]
+  },
+  {
+    "id": "work_usa_009",
+    "title": "Metropolis Phase 1",
+    "subtitle": "A transformative mixed-use urban mega-development in downtown Los Angeles featuring a 19-story boutique hotel and a 38-story residential luxury skyscraper.",
+    "category": "Hospitality",
+    "designType": "General Contracting",
+    "location": "Downtown Los Angeles, California",
+    "locationCategory": "United States",
+    "completion": "2024 Completion",
+    "completionYear": "2024",
+    "image": "/images/work_usa_009.jpg",
+    "summary": "Metropolis Phase 1 is a transformative mixed-use high-rise landmark constructed by Obayashi Corporation in Downtown Los Angeles. Spanning a 6.3-acre urban block, Phase 1 delivered a 19-story luxury boutique hotel (Hotel Indigo) and a 38-story residential condominium skyscraper towering over the Harbor Freeway.",
+    "description": "Metropolis is one of the largest mixed-use urban developments in the history of the City of Los Angeles, transforming a long-vacant parcel along the SR-110 Harbor Freeway into a bustling vertical community. Constructed by Obayashi as general contractor for Greenland USA, the development bridges the historic Financial District with LA Live and the Crypto.com Arena entertainment campus.\n\nPhase 1 encompasses two prominent towers rising from a shared four-story subterranean parking and retail podium. Tower 1 rises 38 storeys, offering 308 luxury condominium residences with panoramic skyline views, private resident clubhouses, resort-style swimming pools, and landscaped sky terraces. The adjacent 19-story Hotel Indigo features 350 curated guestrooms, convention banquet ballrooms, and rooftop cocktail lounges.\n\nStructural engineering required deep foundation mat pours and robust ductile concrete shear cores coupled with structural steel outriggers to meet California's strictest seismic skyscraper codes. Logistics was exceptionally demanding; situated immediately adjacent to one of the busiest freeway corridors in the United States, Obayashi utilized automated 4D building information modeling and precise night-shift material delivery.\n\nIncorporating energy-efficient curtain-wall glazing, solar thermal hot water heating, LED architectural illumination, and drought-tolerant landscaping, Metropolis Phase 1 achieved LEED certification. The towers have revitalized the downtown skyline, setting a new standard for luxury hospitality and urban living in Southern California.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Commercial & Hospitality"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "High-Rise Hotel & Luxury Residential Towers"
+      },
+      {
+        "label": "Budget",
+        "value": "$450 Million"
+      },
+      {
+        "label": "Area",
+        "value": "38-Storey Condo / 19-Storey Hotel / 6.3 Acres"
+      },
+      {
+        "label": "Deadline",
+        "value": "2024"
+      },
+      {
+        "label": "Location",
+        "value": "Downtown Los Angeles, California"
+      }
+    ]
+  },
+  {
+    "id": "work_usa_010",
+    "title": "Town of Castle Rock North Meadows Extension",
+    "subtitle": "A major transportation infrastructure extension featuring a monumental cast-in-place segmental flyover bridge over an interstate and railway tracks.",
+    "category": "Roads and Highways",
+    "designType": "Design & Build",
+    "location": "Castle Rock, Colorado",
+    "locationCategory": "United States",
+    "completion": "2023 Completion",
+    "completionYear": "2023",
+    "image": "/images/work_usa_010.jpg",
+    "summary": "The Town of Castle Rock North Meadows Extension is an award-winning transportation infrastructure project executed by Obayashi Corporation's civil engineering group in Douglas County, Colorado. Spanning 2.0 miles of multi-lane arterial roadway and three major bridges, the project features a monumental cast-in-place concrete flyover vaulting over Interstate 25 and two transcontinental railroads.",
+    "description": "The Town of Castle Rock in Douglas County is one of the fastest-growing residential and commercial communities along Colorado's Front Range urban corridor. To address acute traffic congestion and eliminate an isolated transportation bottleneck for western neighborhoods, the Town partnered with CDOT and Obayashi to design and construct the North Meadows Extension.\n\nThe centerpiece of the 2.0-mile multi-modal arterial corridor is a monumental 1,400-foot cast-in-place post-tensioned concrete box girder flyover bridge. The bridge curves gracefully over eight lanes of Interstate 25, active tracks of both the Union Pacific and BNSF Railroads, and local collector roadways, providing western Castle Rock with a direct, uninterrupted connection to the highway network.\n\nCivil engineering was exceptionally complex due to the requirement of maintaining full daily operation of two major freight railroads and the I-25 interstate corridor. Obayashi utilized the balanced cantilever construction method, employing overhead form travelers to cast bridge segments in symmetrical pairs extending outward from central piers without requiring falsework supports beneath.\n\nThe project also included two additional precast girder bridges across East Plum Creek, multi-tiered mechanically stabilized earth (MSE) retaining walls, integrated bike and pedestrian trails, and environmentally sensitive stream stabilization. Completed ahead of schedule, the extension has dramatically reduced emergency response times and unlocked regional commercial development.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Roads, Highways & Bridges"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Balanced Cantilever Concrete Flyover & Arterial"
+      },
+      {
+        "label": "Budget",
+        "value": "$85 Million"
+      },
+      {
+        "label": "Area",
+        "value": "2.0 Miles Roadway / 3 Major Bridges"
+      },
+      {
+        "label": "Deadline",
+        "value": "2023"
+      },
+      {
+        "label": "Location",
+        "value": "Castle Rock, Colorado"
+      }
+    ]
+  },
+  {
+    "id": "work_sg_001",
+    "title": "Jewel Changi Airport",
+    "subtitle": "A world-renowned multi-dimensional lifestyle destination connecting three airport terminals, featuring the world's tallest indoor waterfall.",
+    "category": "Aviation",
+    "designType": "Design & Build",
+    "location": "Changi Airport, Singapore",
+    "locationCategory": "Singapore",
+    "completion": "2019 Completion",
+    "completionYear": "2019",
+    "image": "/images/work_sg_001.jpg",
+    "summary": "Jewel Changi Airport is an architectural icon constructed by a joint venture between Obayashi Singapore and Woh Hup. Enclosed by a dramatic toroidal glass-and-steel facade, Jewel integrates airport facilities with a five-story indoor forest (Forest Valley) and the breathtaking 40-meter-tall Rain Vortex indoor waterfall.",
+    "description": "Jewel Changi Airport represents one of the most technologically intricate civic aviation and retail developments in modern architecture. Spearheaded by Changi Airport Group and CapitaLand, the project was executed by Obayashi Singapore to seamlessly link Terminals 1, 2, and 3 into an integrated global transit oasis.\n\nThe centerpiece of the structure is the Rain Vortex, a monumental 40-meter-tall indoor waterfall cascading from a continuous oculus in the faceted glass-and-steel diagrid dome. Surrounding the vortex is the Shiseido Forest Valley, a tiered 22,000-square-meter indoor terraced garden housing more than 2,000 trees and 100,000 shrubs sourced globally.\n\nStructural engineering required the fabrication and erection of an unprecedented continuous toroid dome spanning over 200 meters without internal column obstructions. Over 9,000 high-performance double-glazed glass panels and 18,000 steel struts were placed with sub-millimeter precision using 3D laser-guided geospatial tracking.\n\nSince opening, Jewel has set global benchmarks for biophilic airport design, earning BCA Green Mark GoldPLUS certification and winning numerous international structural and architectural engineering awards.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Aviation Infrastructure & Retail"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Airport Transit Hub & Indoor Biosphere"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "135,700 m² across 10 Storeys"
+      },
+      {
+        "label": "Height / Span",
+        "value": "40m Rain Vortex / 200m Dome Span"
+      },
+      {
+        "label": "Deadline",
+        "value": "2019"
+      },
+      {
+        "label": "Location",
+        "value": "Changi, Singapore"
+      }
+    ]
+  },
+  {
+    "id": "work_sg_002",
+    "title": "Bird Paradise",
+    "subtitle": "A state-of-the-art 17-hectare walk-in aviary park in the Mandai Wildlife Reserve featuring eight immersive large-scale walk-through aviaries.",
+    "category": "Recreation",
+    "designType": "Design & Build",
+    "location": "Mandai, Singapore",
+    "locationCategory": "Singapore",
+    "completion": "2022 Completion",
+    "completionYear": "2022",
+    "image": "/images/work_sg_002.jpg",
+    "summary": "Bird Paradise is an expansive wildlife conservation and eco-tourism development built by Obayashi Singapore within the Mandai Wildlife Reserve. Spanning 17 hectares, the facility houses over 3,500 birds across 400 species in massive naturalistic walk-through aviaries with suspended sky bridges and waterfall gullies.",
+    "description": "Bird Paradise represents Singapore's flagship national wildlife conservation development, relocating the historic Jurong Bird Park into the ecologically sensitive Mandai Wildlife Reserve. Built by Obayashi Singapore, the park seamlessly merges zoological science, civil engineering, and sustainable forestry conservation.\n\nThe development features eight monumental walk-through aviaries representing diverse global biomes—from dense African rainforests and South American wetlands to Australian eucalyptus groves. Visitors navigate elevated canopy suspension walkways, viewing pavilions, and breeding research observatories.\n\nCivil engineering required careful soil preservation and lightweight structural foundations across undulating tropical rainforest terrain. Massive tensile cable-net canopies, suspended from tall masts, were engineered to provide expansive flight corridors for birds while withstanding tropical monsoon typhoons.\n\nThe park incorporates extensive closed-loop wetland biofiltration, solar generation, and rainwater harvesting, earning BCA Green Mark Platinum for biophilic excellence and biodiversity stewardship.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Public Recreation & Conservation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Zoological Aviary & Wildlife Reserve"
+      },
+      {
+        "label": "Park Area",
+        "value": "17 Hectares (170,000 m²)"
+      },
+      {
+        "label": "Capacity",
+        "value": "3,500+ Birds across 400 Species"
+      },
+      {
+        "label": "Deadline",
+        "value": "2022"
+      },
+      {
+        "label": "Location",
+        "value": "Mandai, Singapore"
+      }
+    ]
+  },
+  {
+    "id": "work_sg_003",
+    "title": "One Raffles Quay",
+    "subtitle": "A prime landmark commercial development in Singapore's central business district featuring a 50-story North Tower and a 29-story South Tower.",
+    "category": "Offices",
+    "designType": "Design & Build",
+    "location": "Marina Bay, Singapore",
+    "locationCategory": "Singapore",
+    "completion": "2006 Completion",
+    "completionYear": "2006",
+    "image": "/images/work_sg_003.jpg",
+    "summary": "One Raffles Quay is a flagship prime commercial development built by Obayashi in Singapore's Marina Bay financial district. Comprising the 50-story North Tower and 29-story South Tower, the complex offers 1.3 million square feet of Grade-A office space housing leading international financial institutions.",
+    "description": "One Raffles Quay marked the pioneering high-rise development that kicked off Singapore's master-planned Marina Bay financial and business district. Constructed by Obayashi Corporation, the twin-tower development established the benchmark for Grade-A institutional office architecture in Southeast Asia.\n\nThe project comprises the 50-story North Tower and the 29-story South Tower, joined by a spacious podium pavilion and subterranean pedestrian connections to Raffles Place and Marina Bay MRT interchange stations. Designed with column-free floor plates of up to 30,000 square feet, the towers cater to major global trading and financial hubs.\n\nCivil engineering required deep marine clay excavation and extensive diaphragm wall construction directly adjacent to the historic Singapore coastline. High-capacity bored piles were socketed into deep Jurong formation bedrock, while structural steel frames and high-performance insulated curtain walls were erected using specialized climbing formwork.\n\nOne Raffles Quay was awarded the prestigious FIABCI Prix d'Excellence and BCA Green Mark Gold, solidifying its status as an enduring pillar of Singapore's financial skyline.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Commercial Office Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Twin-Tower Grade-A Financial Complex"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "123,000 m² (1.3 Million sq ft)"
+      },
+      {
+        "label": "Storeys",
+        "value": "North Tower: 50 Floors / South Tower: 29 Floors"
+      },
+      {
+        "label": "Deadline",
+        "value": "2006"
+      },
+      {
+        "label": "Location",
+        "value": "Raffles Quay, Marina Bay, Singapore"
+      }
+    ]
+  },
+  {
+    "id": "work_sg_004",
+    "title": "Ocean Financial Centre",
+    "subtitle": "A 43-story sustainable Grade-A commercial skyscraper featuring one of the world's largest vertical garden green walls.",
+    "category": "Offices",
+    "designType": "Design & Build",
+    "location": "Raffles Place, Singapore",
+    "locationCategory": "Singapore",
+    "completion": "2011 Completion",
+    "completionYear": "2011",
+    "image": "/images/work_sg_004.jpg",
+    "summary": "Ocean Financial Centre is a 43-story landmark office tower in the heart of Raffles Place, Singapore. Constructed by Obayashi Corporation on the site of the historic Ocean Building, the skyscraper features cutting-edge sustainable engineering, including solar photovoltaic panels and a Guinness World Record-sized vertical green wall.",
+    "description": "Ocean Financial Centre stands as an architectural and sustainability benchmark in Singapore's central business district. Constructed by Obayashi Corporation for Keppel Land, the 43-story tower rises 245 meters, replacing the historic Ocean Building with a 21st-century eco-smart skyscraper.\n\nThe building features a distinct curved glass curtain wall designed to evoke a billowing ship sail, paying homage to Singapore's maritime heritage. Inside, column-free office floor plates offer maximum spatial flexibility, complemented by high-speed smart destination elevators and advanced air purification.\n\nSustainability was the driving engineering ethos. Obayashi installed Singapore's largest solar photovoltaic assembly on a commercial office tower, generating clean energy for communal facilities. The exterior incorporates an astonishing 110-meter-tall vertical green wall featuring thousands of tropical plants, which dramatically reduces urban heat island effects.\n\nOcean Financial Centre achieved BCA Green Mark Platinum and LEED Platinum certifications, underscoring Obayashi's mastery in delivering high-performance vertical green skyscrapers.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Commercial Office Skyscraper"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Eco-Smart Grade-A Commercial Tower"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "82,500 m² (888,000 sq ft)"
+      },
+      {
+        "label": "Height / Storeys",
+        "value": "245 meters / 43 Storeys"
+      },
+      {
+        "label": "Deadline",
+        "value": "2011"
+      },
+      {
+        "label": "Location",
+        "value": "10 Collyer Quay, Raffles Place, Singapore"
+      }
+    ]
+  },
+  {
+    "id": "work_sg_005",
+    "title": "Campus for Research Excellence and Technological Enterprise (CREATE)",
+    "subtitle": "A premier international academic research complex at NUS featuring high-performance wet laboratories and collaborative academic pavilions.",
+    "category": "Research",
+    "designType": "Design & Build",
+    "location": "Clementi, Singapore",
+    "locationCategory": "Singapore",
+    "completion": "2011 Completion",
+    "completionYear": "2011",
+    "image": "/images/work_sg_005.jpg",
+    "summary": "CREATE (Campus for Research Excellence and Technological Enterprise) is a flagship scientific research laboratory complex built by Obayashi for the National Research Foundation within the National University of Singapore (NUS). It houses world-class research centers from MIT, ETH Zurich, Cambridge, and TUM.",
+    "description": "The CREATE complex represents Singapore's flagship national project to convene the world's greatest universities and scientific institutes under one collaborative research campus. Built by Obayashi Singapore in University Town at NUS, the development serves top-tier global institutions including MIT, UC Berkeley, Cambridge University, and ETH Zurich.\n\nComprising three low-rise laboratory wings and a 16-story high-performance laboratory tower, the campus offers over 67,000 square meters of highly adaptable wet laboratories, cleanrooms, server clusters, and academic colloquium pavilions. The buildings are organized around landscaped pedestrian courtyards designed to foster interdisciplinary synergy.\n\nEngineering wet laboratories of this caliber required stringent vibration mitigation to protect nanoscale electron microscopy and laser instrumentation. Obayashi implemented thick, isolated concrete slabs, acoustic isolation barriers, and custom stainless-steel exhaust fume scrubbing systems capable of safely venting specialized chemical vapors.\n\nCREATE was named 'Laboratory of the Year' by R&D Magazine and achieved BCA Green Mark Platinum, celebrated globally for its high energy efficiency and modular research infrastructure.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Education & Scientific Research"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "High-Tech Wet Laboratories & R&D Campus"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "67,000 m²"
+      },
+      {
+        "label": "Facilities",
+        "value": "16-Storey Lab Tower + 3 Low-Rise Research Wings"
+      },
+      {
+        "label": "Deadline",
+        "value": "2011"
+      },
+      {
+        "label": "Location",
+        "value": "University Town, NUS, Singapore"
+      }
+    ]
+  },
+  {
+    "id": "work_sg_006",
+    "title": "Singapore MRT 304 Section",
+    "subtitle": "A vital subterranean mass rapid transit project involving deep-bore bored tunnels and the complex underground Dhoby Ghaut interchange station.",
+    "category": "Railways",
+    "designType": "General Contracting",
+    "location": "Singapore",
+    "locationCategory": "Singapore",
+    "completion": "2007 Completion",
+    "completionYear": "2007",
+    "image": "/images/work_sg_006.jpg",
+    "summary": "The Singapore MRT 304 Section is a critical underground railway infrastructure contract constructed by Obayashi Corporation for the Land Transport Authority (LTA). The work involved deep shield tunneling through soft soils and complex underpinning beneath active urban roadways to expand the mass transit network.",
+    "description": "The Singapore MRT network is universally recognized as one of the world's most punctual, reliable, and technologically advanced mass transit operations. Obayashi Corporation was entrusted by Singapore's Land Transport Authority (LTA) with Contract 304, a critical civil infrastructure link threading through dense commercial and heritage precincts.\n\nThe project entailed tunneling bored running tunnels through saturated marine clays, reclaimed sand fills, and fractured boulder beds. Obayashi deployed advanced Earth Pressure Balance (EPB) Tunnel Boring Machines engineered with real-time pressure compensation to eliminate ground subsidence beneath heavily trafficked arterial avenues.\n\nSubterranean construction also required complex underpinning beneath active roadways, utility diversions of critical high-voltage transmission lines, and precision integration with existing MRT subway lines. Specialized compensation grouting and continuous laser optical displacement sensors ensured zero disruption to surface buildings and passenger services.\n\nThe completed rail infrastructure expanded daily commuter capacity, slashed cross-island travel times, and exemplified Obayashi's mastery of urban soft-ground tunneling in tropical environments.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Civil Infrastructure & Urban Rail"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Subterranean MRT Tunnels & Transit Infrastructure"
+      },
+      {
+        "label": "Tunnel Length",
+        "value": "Twin-Bore Shield Tunnel Drives"
+      },
+      {
+        "label": "TBM Type",
+        "value": "Earth Pressure Balance (EPB) Machines"
+      },
+      {
+        "label": "Deadline",
+        "value": "2007"
+      },
+      {
+        "label": "Location",
+        "value": "Central Singapore"
+      }
+    ]
+  },
+  {
+    "id": "work_th_001",
+    "title": "Queen Sirikit National Convention Center (QSNCC)",
+    "subtitle": "A massive state-of-the-art redevelopment expanding Bangkok's premier convention center to 300,000 square meters.",
+    "category": "Cultural",
+    "designType": "Design & Build",
+    "location": "Bangkok, Thailand",
+    "locationCategory": "Thailand",
+    "completion": "2022 Completion",
+    "completionYear": "2022",
+    "image": "/images/work_th_001.jpg",
+    "summary": "The redevelopment of Queen Sirikit National Convention Center (QSNCC) transformed Bangkok's premier national venue into an ultra-modern convention and exhibition hub spanning nearly 300,000 square meters. Obayashi executed the massive fast-track reconstruction featuring expansive column-free exhibition halls and traditional Thai architectural motifs.",
+    "description": "Queen Sirikit National Convention Center (QSNCC) has stood as the pride of Thailand's international diplomacy and commerce since its original debut in 1991. To accommodate massive 21st-century global congresses, Obayashi Corporation spearheaded an ambitious total redevelopment that increased the facility's usable capacity more than fivefold.\n\nThe revitalized center encompasses over 300,000 square meters of exhibition, conference, and commercial facilities. The centerpiece consists of vast column-free exhibition halls spanning 78,500 square meters, supported by colossal long-span steel roof trusses designed to carry heavy suspended exhibition rigging.\n\nArchitecturally, the development marries contemporary sustainable engineering with delicate interpretations of traditional Thai craftsmanship, including undulating ceiling canopies reminiscent of hand-woven Thai silks. Direct underground connectivity links the center seamlessly with the MRT Blue Line subway station.\n\nAchieving LEED Silver certification, the new QSNCC hosted the historic 2022 APEC Economic Leaders' Week shortly after opening, receiving global acclaim for its state-of-the-art audio-visual integration, security systems, and rapid modular turnaround capabilities.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Cultural & Convention Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "International Exhibition & Conference Center"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "298,000 m²"
+      },
+      {
+        "label": "Exhibition Space",
+        "value": "78,500 m² Column-Free Space"
+      },
+      {
+        "label": "Deadline",
+        "value": "2022"
+      },
+      {
+        "label": "Location",
+        "value": "Ratchadaphisek Road, Bangkok, Thailand"
+      }
+    ]
+  },
+  {
+    "id": "work_th_002",
+    "title": "O-NES TOWER",
+    "subtitle": "A next-generation 29-story Grade-A smart office skyscraper in Nana, Bangkok, engineered with Japanese CFT composite columns.",
+    "category": "Offices",
+    "designType": "Design & Build",
+    "location": "Sukhumvit, Bangkok, Thailand",
+    "locationCategory": "Thailand",
+    "completion": "2022 Completion",
+    "completionYear": "2022",
+    "image": "/images/work_th_002.jpg",
+    "summary": "O-NES TOWER is a 29-story Grade-A smart office building developed and constructed by Obayashi's Thai subsidiary (Thai Obayashi). Located in the heart of Sukhumvit with direct BTS Nana skybridge connectivity, the tower features pioneering Concrete-Filled Steel Tube (CFT) seismic engineering and high-efficiency sustainable systems.",
+    "description": "O-NES TOWER exemplifies Thai Obayashi's commitment to creating human-centric, high-performance commercial architecture in Bangkok. Rising 29 stories above the vibrant Sukhumvit commercial strip, the building serves as Thai Obayashi's new corporate headquarters while providing prime office leasing for multinational corporations.\n\nThe tower incorporates Concrete-Filled Steel Tube (CFT) structural columns, a sophisticated structural technology pioneered in Japan that dramatically enhances earthquake resilience, maximizes usable floor space, and delivers superior fire resistance without bulky internal masonry.\n\nThe exterior facade combines triple-glazed low-E insulated glass with automated sun-tracking exterior aluminum louvers, substantially reducing solar heat gain in Bangkok's tropical climate. Generous landscaped sky terraces, fresh air ionization filtration, and touchless smart building turnstiles provide tenant wellness.\n\nO-NES TOWER achieved both LEED Gold and WELL Gold pre-certifications, earning a reputation as one of Thailand's most technologically sophisticated green commercial addresses.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Commercial Office Skyscraper"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Next-Generation Smart Grade-A Corporate Tower"
+      },
+      {
+        "label": "Storeys",
+        "value": "29 Storeys + 4 Basements"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "85,000 m²"
+      },
+      {
+        "label": "Deadline",
+        "value": "2022"
+      },
+      {
+        "label": "Location",
+        "value": "Sukhumvit Soi 6, Bangkok, Thailand"
+      }
+    ]
+  },
+  {
+    "id": "work_th_003",
+    "title": "SAMYAN MITRTOWN",
+    "subtitle": "A vibrant 222,000 m² mixed-use complex combining Grade-A offices, retail, residential condominiums, and a 24-hour community hub.",
+    "category": "Urban Redevelopment",
+    "designType": "General Contracting",
+    "location": "Pathum Wan, Bangkok, Thailand",
+    "locationCategory": "Thailand",
+    "completion": "2019 Completion",
+    "completionYear": "2019",
+    "image": "/images/work_th_003.jpg",
+    "summary": "SAMYAN MITRTOWN is a transformative mixed-use urban development constructed by Thai Obayashi at the junction of Phaya Thai and Rama IV Roads. Spanning 222,000 square meters, the complex features a 31-story Grade-A office tower, a 33-story condominium tower, a multi-story lifestyle mall with 24-hour zones, and a dedicated MRT underground pedestrian tunnel.",
+    "description": "SAMYAN MITRTOWN redefines mixed-use urban placemaking in central Bangkok. Located at the vibrant nexus of Chulalongkorn University and Bangkok's central business district, the multi-award-winning project was built by Thai Obayashi for Golden Land Property Development.\n\nThe complex integrates three distinct functional towers over a dynamic podium: a 31-story Grade-A commercial office tower (Mitrtown Office Tower), a 33-story residential condominium (Triple Y Residence), and a six-story lifestyle and dining center housing Bangkok's pioneering 24-hour co-working and learning zone.\n\nA key engineering highlight of the project was the construction of the Samyan MRT Tunnel, an underground pedestrian tunnel crossing beneath Rama IV Road to directly connect the subterranean retail concourse with the Samyan MRT subway station without disrupting heavy surface traffic.\n\nCertified LEED Gold for building design and construction, SAMYAN MITRTOWN seamlessly integrates intelligent building automation, green pocket parks, and high-efficiency water reclamation.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Urban Redevelopment & Mixed-Use"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Commercial Office, Residential & Retail Complex"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "222,000 m²"
+      },
+      {
+        "label": "Towers",
+        "value": "31-Storey Office + 33-Storey Condo + Retail Mall"
+      },
+      {
+        "label": "Deadline",
+        "value": "2019"
+      },
+      {
+        "label": "Location",
+        "value": "Rama IV & Phaya Thai Road, Bangkok, Thailand"
+      }
+    ]
+  },
+  {
+    "id": "work_th_004",
+    "title": "Park Ventures Ecoplex",
+    "subtitle": "Bangkok's pioneering LEED Platinum commercial development, integrating Grade-A offices with the luxury Okura Prestige Bangkok hotel.",
+    "category": "Offices",
+    "designType": "Design & Build",
+    "location": "Ploenchit, Bangkok, Thailand",
+    "locationCategory": "Thailand",
+    "completion": "2011 Completion",
+    "completionYear": "2011",
+    "image": "/images/work_th_004.jpg",
+    "summary": "Park Ventures Ecoplex is a 33-story landmark skyscraper at the corner of Ploenchit and Wireless Roads in central Bangkok. Constructed by Thai Obayashi, it made history as the first mixed-use building in Thailand to achieve prestigious LEED Platinum certification, combining corporate offices with The Okura Prestige Bangkok.",
+    "description": "Park Ventures Ecoplex stands as a watershed achievement in Southeast Asian green architecture. Constructed by Thai Obayashi for Univentures, the 33-story, 142-meter skyscraper occupies the prestigious corner of Wireless Road and Ploenchit Road in Bangkok's diplomatic embassy quarter.\n\nThe building's poetic silhouette is inspired by the 'Wai'—the traditional Thai gesture of warm greeting and respect—characterized by fluid, converging cantilevered glass planes. The lower floors provide 27,000 square meters of premium column-free office space, while floors 23 through 33 house the five-star Okura Prestige Bangkok hotel, complete with a breathtaking 25-meter cantilevered infinity pool overlooking the city skyline.\n\nObayashi integrated advanced environmental engineering systems, including double-glazed low-E laminated glass that reflects 75% of solar heat, greywater recycling plants, high-efficiency chillers with variable speed drives, and occupancy-sensing LED illumination throughout.\n\nEarning LEED Platinum certification with honors, Park Ventures established the gold standard for luxury, environmental stewardship, and Japanese hospitality in Thailand.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Commercial Office & Luxury Hospitality"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "LEED Platinum Mixed-Use Skyscraper"
+      },
+      {
+        "label": "Height / Storeys",
+        "value": "142 meters / 33 Storeys"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "54,000 m²"
+      },
+      {
+        "label": "Deadline",
+        "value": "2011"
+      },
+      {
+        "label": "Location",
+        "value": "Wireless Road & Ploenchit Road, Bangkok, Thailand"
+      }
+    ]
+  },
+  {
+    "id": "work_th_005",
+    "title": "AIA East Gateway",
+    "subtitle": "A modern 33-story commercial Grade-A and retail office tower in Bangna, designed for environmental sustainability and tenant wellness.",
+    "category": "Offices",
+    "designType": "Design & Build",
+    "location": "Bangna, Bangkok, Thailand",
+    "locationCategory": "Thailand",
+    "completion": "2022 Completion",
+    "completionYear": "2022",
+    "image": "/images/work_th_005.jpg",
+    "summary": "AIA East Gateway is a 33-story premium Grade-A office and retail development built by Thai Obayashi on Bangna-Trad Road. Spanning 70,000 square meters, the building incorporates forward-looking wellness engineering, extensive urban greenery, sports tracks, and dual LEED Gold and WELL Gold certifications.",
+    "description": "AIA East Gateway stands as a landmark corporate development anchoring Bangkok's burgeoning eastern economic growth corridor along Bangna-Trad Road. Constructed by Thai Obayashi for AIA Thailand, the 33-story high-rise integrates sustainable corporate commerce with holistic occupant wellness.\n\nThe development features five floors of retail and wellness amenities, topped by 28 floors of premium Grade-A office space with flexible 2,000-square-meter column-free floor plates and high three-meter ceiling clearances. The building boasts an outdoor fitness park, a rooftop jogging track, and multi-tier sky gardens.\n\nTechnical engineering prioritized environmental performance. Obayashi implemented double-glazed low-E ceramic-fritted curtain walling, advanced ultraviolet germicidal irradiation (UVGI) in air handlers, high-efficiency variable-flow chillers, and rooftop rainwater collection cisterns.\n\nHaving earned LEED Gold and WELL Gold certifications, AIA East Gateway sets a new standard for healthy corporate workplaces that foster active lifestyles.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Commercial Office & Retail"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Eco-Wellness Grade-A Corporate Tower"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "70,000 m²"
+      },
+      {
+        "label": "Storeys",
+        "value": "33 Storeys"
+      },
+      {
+        "label": "Deadline",
+        "value": "2022"
+      },
+      {
+        "label": "Location",
+        "value": "Bangna-Trad Road, Bangkok, Thailand"
+      }
+    ]
+  },
+  {
+    "id": "work_th_006",
+    "title": "Head Office of the Stock Exchange of Thailand (SET)",
+    "subtitle": "A monumental 28-story corporate headquarters and financial complex symbolizing Thailand's modern capital market leadership.",
+    "category": "Government",
+    "designType": "Design & Build",
+    "location": "Ratchadaphisek, Bangkok, Thailand",
+    "locationCategory": "Thailand",
+    "completion": "2015 Completion",
+    "completionYear": "2015",
+    "image": "/images/work_th_006.jpg",
+    "summary": "The Head Office of the Stock Exchange of Thailand (SET) is a prestigious 28-story financial headquarters built by Thai Obayashi on Ratchadaphisek Road. Designed to symbolize the transparency and stability of Thailand's capital markets, the building features advanced trading floor data networks, an auditorium, and a public financial museum.",
+    "description": "The Head Office of the Stock Exchange of Thailand stands as the architectural and financial nervous system of Thailand's capital economy. Commissioned by the Stock Exchange of Thailand and constructed by Thai Obayashi, the 28-story headquarters houses trading operations, regulatory bodies, and corporate institutions.\n\nThe architectural design conveys institutional transparency and prestige through crystalline, multi-faceted high-performance glass curtain walls. The building features an expansive public financial library (Maruey Knowledge Center), the Sukree Charoensook Auditorium, and the INVESTORY interactive investment learning museum.\n\nGiven the mission-critical nature of capital market operations, Obayashi implemented Tier-III data center redundancy, uninterrupted emergency power backups, and military-grade physical and cyber security perimeters. Seismic-resistant concrete core walls and vibration-damped structural floor slabs ensure uninterrupted digital transaction processing.\n\nThe building was awarded the Thailand Energy Award and achieved LEED Gold certification, exemplifying Obayashi's capacity to deliver state-of-the-art financial nerve centers.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Government & Financial Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "National Capital Market Headquarters"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "62,000 m²"
+      },
+      {
+        "label": "Height / Storeys",
+        "value": "28 Storeys + 2 Basements"
+      },
+      {
+        "label": "Deadline",
+        "value": "2015"
+      },
+      {
+        "label": "Location",
+        "value": "Ratchadaphisek Road, Bangkok, Thailand"
+      }
+    ]
+  },
+  {
+    "id": "work_th_007",
+    "title": "NEXTOPIA (Siam Paragon)",
+    "subtitle": "A groundbreaking 10,000 m² eco-futuristic prototype floor transformation inside Bangkok's premier luxury shopping destination.",
+    "category": "Cultural",
+    "designType": "Design & Build",
+    "location": "Pathum Wan, Bangkok, Thailand",
+    "locationCategory": "Thailand",
+    "completion": "2025 Completion",
+    "completionYear": "2025",
+    "image": "/images/work_th_007.jpg",
+    "summary": "NEXTOPIA is an ambitious 10,000 m² commercial transformation within Bangkok's iconic Siam Paragon mall. Executed by Thai Obayashi, the project creates an immersive, sustainable multi-dimensional retail and cultural innovation showcase featuring circular materials, living biophilic canopies, and experiential digital domes.",
+    "description": "NEXTOPIA represents the cutting edge of retail reinvention in Asia. Commissioned by Siam Piwat and executed by Thai Obayashi within the world-famous Siam Paragon luxury retail mall, this 10,000-square-meter development transforms an entire high-level concourse into an eco-futuristic community biosphere.\n\nThe project integrates biophilic indoor architecture with interactive technology, featuring modular pavilion pods, living moss walls, low-energy LED kinetic sky ceilings, and multi-functional experiential amphitheaters. It serves as a living incubator for sustainable lifestyle brands, carbon-neutral dining, and eco-art exhibitions.\n\nExecuting major structural demolition, reinforcement, and fit-out directly within an open, fully operating luxury mall required extreme precision. Obayashi implemented dust-tight negative-pressure partitions, silent diamond-wheel concrete cutting, and overnight heavy hoisting to ensure uninterrupted visitor operations below.\n\nNEXTOPIA establishes a prototype for the future of commercial spaces, demonstrating how circular architecture, recycled timber, and smart energy monitoring can revitalize retail.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Retail & Cultural Innovation"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Sustainable Experiential Commercial Transformation"
+      },
+      {
+        "label": "Transformed Area",
+        "value": "10,000 m²"
+      },
+      {
+        "label": "Location Level",
+        "value": "Siam Paragon Upper Concourses"
+      },
+      {
+        "label": "Deadline",
+        "value": "2025"
+      },
+      {
+        "label": "Location",
+        "value": "Rama I Road, Pathum Wan, Bangkok, Thailand"
+      }
+    ]
+  },
+  {
+    "id": "work_th_008",
+    "title": "EBARA FOODS (THAILAND) New Factory",
+    "subtitle": "A cutting-edge modern food processing and sauce manufacturing facility built to international HACCP and GMP hygiene standards in Ayutthaya.",
+    "category": "Industrial Infrastructure",
+    "designType": "Design & Build",
+    "location": "Ayutthaya, Thailand",
+    "locationCategory": "Thailand",
+    "completion": "2023 Completion",
+    "completionYear": "2023",
+    "image": "/images/work_th_008.jpg",
+    "summary": "The EBARA FOODS (THAILAND) New Factory is an advanced food manufacturing plant constructed by Thai Obayashi in Rojana Industrial Park, Ayutthaya. Designed to supply high-quality Japanese sauces and seasonings across Southeast Asia, the facility adheres to rigorous HACCP hygiene protocols and energy-efficient climate design.",
+    "description": "The EBARA FOODS New Factory represents a key strategic expansion for renowned Japanese seasoning manufacturer Ebara Foods into Southeast Asia. Built by Thai Obayashi in the Rojana Industrial Park in historic Ayutthaya province, the plant manufactures Japanese barbecue sauces, soup bases, and specialized condiments.\n\nThe single-story manufacturing complex encompasses computerized raw material storage, cleanroom batch mixing rooms, automated high-speed bottling lines, packaging halls, and cold-chain warehousing. Positive air pressure zoning and antimicrobial wall and floor coatings prevent microbial contamination.\n\nAyutthaya's floodplain geography required comprehensive civil flood defense engineering. Obayashi raised the building's finished ground level well above regional historical flood levels, installing perimeter containment berms, retention ponds, and automated backflow check valves.\n\nThe plant incorporates rooftop solar photovoltaic arrays, wastewater treatment bioreactors, and heat recovery steam systems, exemplifying clean, sustainable Japanese industrial construction in Thailand.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Industrial Infrastructure & Food Manufacturing"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Advanced HACCP / GMP Food Processing Plant"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "14,500 m²"
+      },
+      {
+        "label": "Site Area",
+        "value": "32,000 m²"
+      },
+      {
+        "label": "Deadline",
+        "value": "2023"
+      },
+      {
+        "label": "Location",
+        "value": "Rojana Industrial Park, Ayutthaya, Thailand"
+      }
+    ]
+  },
+  {
+    "id": "work_ca_001",
+    "title": "Eglinton Crosstown LRT (Keele to Yonge Tunnel)",
+    "subtitle": "A monumental 6.5-kilometer twin bored tunnel drive beneath central Toronto, forming the underground spine of the Eglinton Crosstown LRT.",
+    "category": "Railways",
+    "designType": "General Contracting",
+    "location": "Toronto, Ontario, Canada",
+    "locationCategory": "Canada",
+    "completion": "2016 Completion",
+    "completionYear": "2016",
+    "image": "/images/work_ca_001.jpg",
+    "summary": "The Eglinton Crosstown LRT (Keele to Yonge Tunnel) is a landmark urban rail transit project in Toronto, Canada. Obayashi Canada, as part of a joint venture, constructed 6.5 kilometers of twin-bored subway tunnels beneath bustling Eglinton Avenue West using specialized Earth Pressure Balance (EPB) Tunnel Boring Machines.",
+    "description": "The Eglinton Crosstown Light Rail Transit project is the largest transit expansion in modern Canadian history. Undertaken for Metrolinx, Obayashi Canada was entrusted with the complex western underground tunnel contract, constructing 6.5 kilometers of twin 6.5-meter-diameter tunnels stretching from Keele Street to Yonge Street in midtown Toronto.\n\nTunneling occurred beneath dense urban avenues, crossing directly under active municipal water mains, historic building foundations, and the existing Yonge-University subway line. Obayashi deployed two 400-ton Earth Pressure Balance (EPB) Tunnel Boring Machines (nicknamed 'Dennis' and 'Lea') that excavated through glacial tills, sands, and clays while concurrently placing precast bolted concrete ring segments.\n\nGround settlement monitoring was executed via an automated total station network providing millimeter-accurate telemetry 24 hours a day. The project achieved a zero-subsidence record, successfully safeguarding Toronto's iconic midtown surface infrastructure.\n\nThe finished twin tunnels form the permanent underground corridor for the Crosstown LRT line, providing rapid, low-carbon transit connectivity for hundreds of thousands of daily commuters across Greater Toronto.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Railways & Urban Mass Transit"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Twin-Bore EPB Subterranean LRT Tunnels"
+      },
+      {
+        "label": "Tunnel Length",
+        "value": "6.5 Kilometers (13 km total bored drives)"
+      },
+      {
+        "label": "Tunnel Diameter",
+        "value": "6.5 meters Outer Diameter"
+      },
+      {
+        "label": "Deadline",
+        "value": "2016"
+      },
+      {
+        "label": "Location",
+        "value": "Eglinton Avenue West, Toronto, Ontario, Canada"
+      }
+    ]
+  },
+  {
+    "id": "work_ca_002",
+    "title": "Coquitlam Ultraviolet Disinfection Facility",
+    "subtitle": "A world-class clean water treatment infrastructure facility in Metro Vancouver, treating up to 1.2 billion liters of pristine drinking water daily.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Coquitlam, British Columbia, Canada",
+    "locationCategory": "Canada",
+    "completion": "2014 Completion",
+    "completionYear": "2014",
+    "image": "/images/work_ca_002.jpg",
+    "summary": "The Coquitlam Ultraviolet Disinfection Facility is an essential clean water utility built by Obayashi Canada for Metro Vancouver. Equipped with high-intensity ultraviolet disinfection reactors, the facility treats up to 1.2 billion liters of drinking water per day for over one million residents in the Lower Mainland.",
+    "description": "The Coquitlam Ultraviolet Disinfection Facility forms a cornerstone of Greater Vancouver's drinking water security. Built by Obayashi Canada for the Metro Vancouver regional district, this state-of-the-art water utility provides an uncompromised biological barrier against pathogens for clean water sourced from the pristine Coquitlam Watershed reservoir.\n\nThe facility houses eight high-output, low-pressure ultraviolet (UV) disinfection reactors, each capable of treating up to 150 million liters per day without altering the natural mountain water taste or chemical composition. High-volume raw water feeds flow via gravity from the Coquitlam Dam through 2.4-meter-diameter stainless steel conduits.\n\nNestled within steep rainforest terrain, construction required deep seismic slope stabilization, micro-blasting of granite bedrock, and zero-discharge environmental monitoring to protect adjacent salmon spawning streams. Heavy reinforced concrete substructures were engineered to withstand high-magnitude Cascadia subduction zone earthquakes.\n\nThe project achieved prestigious environmental and civil engineering awards, ensuring the continuous supply of crystal-clear mountain water to over one million British Columbians.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Civil Infrastructure & Clean Waterworks"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Ultraviolet Water Treatment & Disinfection Facility"
+      },
+      {
+        "label": "Capacity",
+        "value": "1,200,000,000 Liters (317 Million Gallons) Daily"
+      },
+      {
+        "label": "Serves",
+        "value": "1,000,000+ Metro Vancouver Residents"
+      },
+      {
+        "label": "Deadline",
+        "value": "2014"
+      },
+      {
+        "label": "Location",
+        "value": "Coquitlam, British Columbia, Canada"
+      }
+    ]
+  },
+  {
+    "id": "work_ca_003",
+    "title": "Erindale GO Station Parking Structure",
+    "subtitle": "A 6-level, 1,500-vehicle sustainable multi-modal commuter parking facility built for Metrolinx in Mississauga, Ontario.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Mississauga, Ontario, Canada",
+    "locationCategory": "Canada",
+    "completion": "2014 Completion",
+    "completionYear": "2014",
+    "image": "/images/work_ca_003.jpg",
+    "summary": "The Erindale GO Station Parking Structure is a six-level, 1,500-vehicle commuter parking facility constructed by Obayashi Canada for Metrolinx in Mississauga, Ontario. The project transformed a regional commuter transit hub with pedestrian bridges, electric vehicle chargers, and sustainable stormwater bio-swales.",
+    "description": "The Erindale GO Station Parking Structure is a cornerstone infrastructure investment by Metrolinx to encourage mass transit ridership and reduce highway congestion across the Greater Toronto and Hamilton Area. Constructed by Obayashi Canada, the six-level facility provides 1,500 parking spaces directly adjacent to the active Milton commuter rail line.\n\nThe structure utilizes high-durability precast post-tensioned concrete components designed to withstand harsh Canadian freeze-thaw cycles and winter road de-icing salts. A temperature-controlled elevated glass pedestrian bridge safely conveys commuters from upper parking decks across active railway tracks to the station platforms.\n\nEnvironmental sustainability was a central design criterion. Obayashi incorporated natural daylighting ventilation openings, energy-efficient smart LED fixtures, electric vehicle fast chargers, and expansive landscaped bioretention swales that filter surface runoff before discharging to local watersheds.\n\nThe completed structure achieved LEED Silver certification and substantially boosted transit connectivity across Mississauga and Toronto.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Civil Infrastructure & Commuter Transit"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Multi-Level Commuter Parking & Transit Bridge"
+      },
+      {
+        "label": "Capacity",
+        "value": "1,500 Commuter Parking Stalls across 6 Levels"
+      },
+      {
+        "label": "Transit Line",
+        "value": "Metrolinx Milton GO Transit Rail Line"
+      },
+      {
+        "label": "Deadline",
+        "value": "2014"
+      },
+      {
+        "label": "Location",
+        "value": "Burnhamthorpe Road West, Mississauga, Ontario, Canada"
+      }
+    ]
+  },
+  {
+    "id": "work_ca_004",
+    "title": "Ajax GO Station Parking Structure",
+    "subtitle": "A 6-level, 1,300-stall modern transit hub facility in Durham Region, featuring a landmark solar photovoltaic canopy.",
+    "category": "Civil Infra",
+    "designType": "Design & Build",
+    "location": "Ajax, Ontario, Canada",
+    "locationCategory": "Canada",
+    "completion": "2014 Completion",
+    "completionYear": "2014",
+    "image": "/images/work_ca_004.jpg",
+    "summary": "The Ajax GO Station Parking Structure is a premier commuter transit development built by Obayashi Canada for Metrolinx along the Lakeshore East rail corridor in Ajax, Ontario. Spanning six levels and housing 1,300 vehicles, the facility integrates a rooftop solar photovoltaic farm, electric vehicle stations, and covered platform connections.",
+    "description": "The Ajax GO Station Parking Structure serves as a vital commuter link along Metrolinx's heavily trafficked Lakeshore East rail line, connecting Durham Region commuters directly with downtown Toronto. Built by Obayashi Canada, the project addresses surging regional suburban growth with forward-looking sustainable civil engineering.\n\nThe six-level facility accommodates approximately 1,300 vehicles, featuring open architectural spans that enhance natural sightlines, daylight illumination, and commuter security. An integrated overhead pedestrian walkway connects commuters directly to the train platforms, providing shelter from Ontario's severe winter blizzards.\n\nThe defining feature of the building is its rooftop solar photovoltaic canopy, one of the largest solar installations on a Canadian transit structure. The solar array offsets a substantial portion of the building's operational energy, powering smart LED lighting, automated ticket kiosks, and EV charging stations.\n\nCertified LEED Silver, the Ajax facility stands as a model for green, high-capacity commuter transportation infrastructure in Canada.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Civil Infrastructure & Transit Facilities"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Solar-Powered Commuter Parking Complex"
+      },
+      {
+        "label": "Capacity",
+        "value": "1,300 Commuter Vehicles across 6 Levels"
+      },
+      {
+        "label": "Rail Line",
+        "value": "Metrolinx Lakeshore East GO Transit Corridor"
+      },
+      {
+        "label": "Deadline",
+        "value": "2014"
+      },
+      {
+        "label": "Location",
+        "value": "Westney Road South, Ajax, Ontario, Canada"
+      }
+    ]
+  },
+  {
+    "id": "work_tw_001",
+    "title": "Taiwan High Speed Rail (Taoyuan Section & Station C210)",
+    "subtitle": "A historic 21-kilometer high-speed railway viaduct, tunnel, and underground station contract linking northern Taiwan at 300 km/h.",
+    "category": "Railways",
+    "designType": "General Contracting",
+    "location": "Taoyuan City, Taiwan",
+    "locationCategory": "Taiwan",
+    "completion": "2006 Completion",
+    "completionYear": "2006",
+    "image": "/images/work_tw_001.jpg",
+    "summary": "The Taiwan High Speed Rail (Contract C210) is a landmark railway civil engineering contract constructed by an Obayashi-led consortium. Spanning 21 kilometers across Taoyuan County, the project included massive elevated viaducts, cut-and-cover tunnels, and the world-class subterranean Taoyuan High Speed Rail Station.",
+    "description": "The Taiwan High Speed Rail (THSR) revolutionized travel along Taiwan's western corridor, shrinking the journey between Taipei and Kaohsiung to just 90 minutes at operational speeds of 300 km/h. Obayashi Corporation was chosen to lead the critical Contract C210 in northern Taiwan.\n\nSpanning 21.2 kilometers through Taoyuan, the contract encompassed the construction of 12.8 kilometers of elevated precast concrete viaducts, 3.8 kilometers of cut-and-cover tunnels, and the centerpiece underground Taoyuan High Speed Rail Station, which integrates seamlessly with the Taoyuan Airport MRT.\n\nTaiwan's active seismic environment and soft alluvial soils required extreme civil precision. Obayashi utilized massive precast segmental launching gantries capable of hoisting 800-ton concrete box girders without disturbing surface traffic. The underground station was constructed using diaphragm walls and deep top-down excavation to resist severe earthquake shaking.\n\nThe line opened to flawless passenger operations in 2007, serving as a global benchmark for high-speed rail civil engineering in active earthquake zones.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Railways & High-Speed Rail Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "High-Speed Rail Viaducts & Subterranean Station"
+      },
+      {
+        "label": "Route Length",
+        "value": "21.2 Kilometers"
+      },
+      {
+        "label": "Operating Speed",
+        "value": "300 km/h (186 mph) Shinkansen-Based System"
+      },
+      {
+        "label": "Deadline",
+        "value": "2006"
+      },
+      {
+        "label": "Location",
+        "value": "Taoyuan City, Taiwan"
+      }
+    ]
+  },
+  {
+    "id": "work_tw_002",
+    "title": "Radium Kagaya International Hotel",
+    "subtitle": "A 16-story luxury Japanese hot-spring ryokan hotel in Beitou, Taipei, built with authentic traditional Sukiya-zukuri craftsmanship.",
+    "category": "Hospitality",
+    "designType": "Design & Build",
+    "location": "Beitou, Taipei, Taiwan",
+    "locationCategory": "Taiwan",
+    "completion": "2010 Completion",
+    "completionYear": "2010",
+    "image": "/images/work_tw_002.jpg",
+    "summary": "Radium Kagaya International Hotel is a 16-story luxury onsen resort hotel in historic Beitou, Taipei. Constructed by Obayashi Corporation in partnership with Radium Life and Japan's famed Kagaya Ryokan, the building merges modern seismic engineering with handcrafted Sukiya-zukuri Japanese joinery and natural thermal spring baths.",
+    "description": "Radium Kagaya brought the revered hospitality traditions of Japan's legendary Kagaya ryokan (originating in Wakura Onsen, Ishikawa) to the thermal hot springs of Beitou in Taipei. Built by Obayashi Corporation, the 16-story luxury hotel offers an authentic Japanese onsen retreat in Taiwan.\n\nThe exterior architecture harmonizes traditional Japanese roof eaves with modern structural glass. Inside, master Japanese carpenters (Miyadaiku) collaborated with Obayashi engineers to execute authentic Sukiya-zukuri interior woodwork, using aromatic Japanese cypress (Hinoki), shoji paper screens, tatami mats, and delicate bamboo lattices.\n\nEngineering a luxury hot spring resort atop Beitou's acidic geothermal mineral springs presented unique corrosion challenges. Obayashi engineered corrosion-resistant titanium and polymer thermal piping, advanced air neutralization systems, and seismic-isolated foundation piles to safeguard the facility against earthquake tremors.\n\nRadium Kagaya has won numerous international hospitality awards, serving as an enduring cultural ambassador of Japanese ryokan aesthetics in Taiwan.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Hospitality & Cultural Leisure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Luxury Sukiya-Zukuri Onsen Hotel"
+      },
+      {
+        "label": "Storeys",
+        "value": "16 Storeys + 3 Basements"
+      },
+      {
+        "label": "Rooms",
+        "value": "90 Authentic Japanese Tatami Suites"
+      },
+      {
+        "label": "Deadline",
+        "value": "2010"
+      },
+      {
+        "label": "Location",
+        "value": "Beitou Hot Springs, Taipei City, Taiwan"
+      }
+    ]
+  },
+  {
+    "id": "work_tw_003",
+    "title": "NAG Chiayi New Plant",
+    "subtitle": "A high-precision electronic glass fiber manufacturing plant built for Nittobo Asia Glass Fiber in Chiayi, supporting global semiconductor supply chains.",
+    "category": "Industrial Infrastructure",
+    "designType": "Design & Build",
+    "location": "Chiayi County, Taiwan",
+    "locationCategory": "Taiwan",
+    "completion": "2021 Completion",
+    "completionYear": "2021",
+    "image": "/images/work_tw_003.jpg",
+    "summary": "The NAG Chiayi New Plant is a high-tech industrial manufacturing facility constructed by Taiwan Obayashi for Nittobo Asia Glass Fiber Co., Ltd. in Chiayi. The plant manufactures ultra-thin, low dielectric loss electronic glass yarn used in cutting-edge semiconductor substrate packaging and 5G/AI electronics.",
+    "description": "Nittobo Asia Glass Fiber's Chiayi facility plays an indispensable role in the global high-technology semiconductor ecosystem. Built by Taiwan Obayashi in Chiayi County, the plant produces high-performance electronic glass cloth—a vital dielectric material essential for 5G telecommunications, artificial intelligence servers, and semiconductor substrates.\n\nThe complex comprises specialized raw material silos, automated electric melting furnaces, glass yarn spinning cleanrooms, twisting halls, and climate-controlled warehousing. The continuous melting and spinning processes require absolute temperature uniformity and cleanroom air handling.\n\nChiayi's proximity to active seismic faults demanded exceptional structural resilience. Obayashi designed an isolated reinforced concrete floor slab network and heavy structural steel framing with seismic buckling-restrained braces (BRB) to ensure zero displacement on continuous molten glass tanks during tremors.\n\nThe completed plant reinforces Taiwan's global dominance in semiconductor packaging materials while demonstrating Obayashi's industrial engineering leadership.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Industrial Infrastructure & High-Tech Materials"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Advanced Electronic Glass Fiber Plant for Semiconductors"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "38,000 m²"
+      },
+      {
+        "label": "Products",
+        "value": "Low Dielectric Constant (Low-k) Glass Fiber"
+      },
+      {
+        "label": "Deadline",
+        "value": "2021"
+      },
+      {
+        "label": "Location",
+        "value": "Minxiong Industrial Park, Chiayi County, Taiwan"
+      }
+    ]
+  },
+  {
+    "id": "work_vn_001",
+    "title": "AEON MALL Tan Phu Celadon",
+    "subtitle": "A massive 83,000 m² modern shopping and lifestyle center in Ho Chi Minh City, inaugurating AEON's flagship presence in Vietnam.",
+    "category": "Cultural",
+    "designType": "Design & Build",
+    "location": "Tan Phu, Ho Chi Minh City, Vietnam",
+    "locationCategory": "Vietnam",
+    "completion": "2013 Completion",
+    "completionYear": "2013",
+    "image": "/images/work_vn_001.jpg",
+    "summary": "AEON MALL Tan Phu Celadon is the pioneering shopping mall developed by Japanese retail giant AEON in Vietnam. Constructed by Obayashi Vietnam in the Celadon City master-planned township in Ho Chi Minh City, the 83,000-square-meter lifestyle complex features Japanese retail standards, department stores, cinemas, and entertainment venues.",
+    "description": "AEON MALL Tan Phu Celadon inaugurated a new era of modern retail and community lifestyle shopping in Vietnam. Built by Obayashi Vietnam for AEON Mall Vietnam, the flagship complex anchors the 82-hectare Celadon City township in Tan Phu District, Ho Chi Minh City.\n\nThe development encompasses over 83,000 square meters of gross floor area across four levels, accommodating a full-line General Merchandise Store (GMS), over 130 specialty retail stores, an international food court, amusement centers, and a multi-screen cinema complex. Generous open corridors, skylights, and escalators create intuitive family-friendly circulation.\n\nExecuting a project of this scale on soft Mekong Delta alluvial subsoils required deep ground consolidation and extensive pre-cast concrete piling. Obayashi implemented rigorous Japanese quality assurance protocols, training local Vietnamese construction teams to achieve flawless concrete finishing and MEP coordination.\n\nSince its landmark opening in 2014, AEON MALL Tan Phu Celadon has welcomed millions of visitors annually, establishing Obayashi as the contractor of choice for major commercial developments across Vietnam.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Commercial Retail & Lifestyle Mall"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Large-Scale Suburban Shopping Center"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "83,000 m² (Subsequent expansion to 150,000 m²)"
+      },
+      {
+        "label": "Parking Capacity",
+        "value": "500 Cars + 4,000 Motorbikes"
+      },
+      {
+        "label": "Deadline",
+        "value": "2013"
+      },
+      {
+        "label": "Location",
+        "value": "Tan Phu District, Ho Chi Minh City, Vietnam"
+      }
+    ]
+  },
+  {
+    "id": "work_vn_002",
+    "title": "MEGMILK SNOW BRAND VIETNAM Factory",
+    "subtitle": "A modern dairy beverage processing plant in Dong Nai, engineered to Japanese dairy hygiene and clean-in-place standards.",
+    "category": "Industrial Infrastructure",
+    "designType": "Design & Build",
+    "location": "Dong Nai, Vietnam",
+    "locationCategory": "Vietnam",
+    "completion": "2026 Completion",
+    "completionYear": "2026",
+    "image": "/images/work_vn_002.jpg",
+    "summary": "The MEGMILK SNOW BRAND VIETNAM Factory is a high-technology dairy processing facility constructed by Obayashi Vietnam in Dong Nai province. Built for renowned Japanese dairy brand Megmilk Snow Brand, the plant manufactures premium nutritious dairy beverages, milk products, and infant formulations using automated CIP sanitary processing.",
+    "description": "Megmilk Snow Brand's expansion into Dong Nai province represents a major milestone in Vietnam's high-value dairy manufacturing sector. Built by Obayashi Vietnam, the state-of-the-art production plant produces nutritious milk drinks, yogurts, and functional dairy products for Vietnamese and ASEAN families.\n\nThe complex encompasses automated milk silo reception, ultra-high-temperature (UHT) continuous pasteurization lines, aseptic bottle filling cleanrooms, packaging bays, and refrigerated logistics warehouses. Positive-pressure HEPA filtration and airtight sanitary partitions prevent external airborne bacteria from entering processing suites.\n\nObayashi implemented advanced cleanroom engineering, including seamless antimicrobial resin flooring, radiused wall corners, and fully automated Clean-In-Place (CIP) / Sterilize-In-Place (SIP) stainless-steel piping loops.\n\nThe plant features advanced biological wastewater treatment, solar rooftop generation, and heat recovery steam systems, setting a high standard for clean, sustainable food processing in Southeast Asia.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Industrial Infrastructure & Dairy Processing"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Aseptic Cleanroom Food & Milk Beverage Plant"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "18,000 m²"
+      },
+      {
+        "label": "Hygiene Standard",
+        "value": "HACCP & ISO 22000 Cleanroom Processing"
+      },
+      {
+        "label": "Deadline",
+        "value": "2026"
+      },
+      {
+        "label": "Location",
+        "value": "Amata Industrial Park, Dong Nai, Vietnam"
+      }
+    ]
+  },
+  {
+    "id": "work_vn_003",
+    "title": "Thanh Tri Bridge",
+    "subtitle": "A monumental 3.1-kilometer prestressed concrete box girder bridge spanning the Red River in Hanoi, forming the core of Hanoi's Ring Road 3.",
+    "category": "Roads and Highways",
+    "designType": "General Contracting",
+    "location": "Hanoi, Vietnam",
+    "locationCategory": "Vietnam",
+    "completion": "2006 Completion",
+    "completionYear": "2006",
+    "image": "/images/work_vn_003.jpg",
+    "summary": "Thanh Tri Bridge is a critical river crossing spanning the Red River in Hanoi, Vietnam. Constructed by an Obayashi-led consortium funded by Japanese ODA, the 3.1-kilometer prestressed concrete bridge serves as the cornerstone of Hanoi's Third Ring Road, alleviating severe cross-river congestion and connecting northern industrial corridors.",
+    "description": "Thanh Tri Bridge is one of the most vital highway infrastructure assets constructed in modern Vietnam. Financed through Japanese Official Development Assistance (ODA) and constructed by an Obayashi joint venture, the bridge spans the wide, silt-laden Red River on the southeastern edge of Hanoi.\n\nWith a total bridge length of 3,084 meters and a width of 33.1 meters carrying six lanes of high-speed highway traffic, it was the largest prestressed concrete continuous box girder bridge in Vietnam upon completion. The main river bridge consists of balanced cantilever box girders resting on massive deep-drilled cast-in-place concrete piers.\n\nConstructing deep river piers in the Red River presented severe hydrological challenges, including extreme monsoon flooding and deep seasonal riverbed scouring. Obayashi deployed large steel sheet pile cofferdams and high-capacity drilling rigs to anchor caisson foundations into deep bedrock beneath turbulent river waters.\n\nOpened in 2006, Thanh Tri Bridge permanently eliminated bottleneck delays for cargo trucks moving between Haiphong Port and Hanoi, serving as an enduring symbol of Japan-Vietnam friendship and engineering excellence.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Roads & Highways Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Prestressed Concrete Major River Bridge"
+      },
+      {
+        "label": "Bridge Length",
+        "value": "3,084 meters (Main Bridge: 1,440 m)"
+      },
+      {
+        "label": "Bridge Width",
+        "value": "33.1 meters (6 Highway Traffic Lanes)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2006"
+      },
+      {
+        "label": "Location",
+        "value": "Red River, Hanoi, Vietnam"
+      }
+    ]
+  },
+  {
+    "id": "work_vn_004",
+    "title": "NISSHIN FOODS VIETNAM New Factory",
+    "subtitle": "An advanced automated pasta sauce and processed food processing plant in Binh Duong, built to Japanese food hygiene standards.",
+    "category": "Industrial Infrastructure",
+    "designType": "Design & Build",
+    "location": "Binh Duong, Vietnam",
+    "locationCategory": "Vietnam",
+    "completion": "2012 Completion",
+    "completionYear": "2012",
+    "image": "/images/work_vn_004.jpg",
+    "summary": "The NISSHIN FOODS VIETNAM New Factory is a state-of-the-art food manufacturing facility constructed by Obayashi Vietnam in the Vietnam-Singapore Industrial Park (VSIP 1), Binh Duong. Built for Nisshin Seifun Group, the plant manufactures cooked pouch pasta sauces and instant processed food products for regional consumption.",
+    "description": "The NISSHIN FOODS VIETNAM manufacturing plant marked a significant strategic overseas investment by Japan's leading food conglomerate, Nisshin Seifun Group. Constructed by Obayashi Vietnam in the prestigious Vietnam-Singapore Industrial Park (VSIP 1) in Binh Duong province, the plant produces pouch pasta sauces and food mixes.\n\nThe facility integrates raw material automated sorting, continuous steam cooking kettles, high-speed retort pouch pouching, and high-pressure steam sterilization retorts. Cleanroom HVAC zoning with positive air pressure differentials and antibacterial wall paneling prevents microbial contamination.\n\nObayashi designed energy-efficient thermal insulation systems to minimize refrigeration heat gain in southern Vietnam's tropical climate. Heavy structural mezzanine floors support stainless-steel batch cooking kettles, while continuous automated CIP washing loops ensure high sanitary standards.\n\nThe plant exemplifies Obayashi's mastery of Japanese food hygiene engineering, providing safe, wholesome food products for Southeast Asian consumers.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Industrial Infrastructure & Processed Foods"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Automated Retort Pouch & Sauce Processing Plant"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "11,200 m²"
+      },
+      {
+        "label": "Site Area",
+        "value": "20,000 m²"
+      },
+      {
+        "label": "Deadline",
+        "value": "2012"
+      },
+      {
+        "label": "Location",
+        "value": "VSIP 1 Industrial Park, Binh Duong, Vietnam"
+      }
+    ]
+  },
+  {
+    "id": "work_ae_001",
+    "title": "Dubai Metro Project (Red & Green Lines)",
+    "subtitle": "The world's longest automated driverless metro network, spanning 75 kilometers with 47 futuristic seashell stations.",
+    "category": "Railways",
+    "designType": "General Contracting",
+    "location": "Dubai, United Arab Emirates",
+    "locationCategory": "United Arab Emirates",
+    "completion": "2011 Completion",
+    "completionYear": "2011",
+    "image": "/images/work_ae_001.jpg",
+    "summary": "The Dubai Metro is the world's longest fully automated driverless urban railway system, constructed by the Dubai Rapid Link (DURL) consortium led by Obayashi Corporation. Spanning nearly 75 kilometers across the Red and Green Lines, the transit network features 47 futuristic stations with iconic golden seashell roofs.",
+    "description": "The Dubai Metro stands as one of the most audacious, technologically sophisticated public transit infrastructure projects executed in the 21st century. Commissioned by Dubai's Roads and Transport Authority (RTA) and built by the Dubai Rapid Link (DURL) consortium—jointly led by Obayashi Corporation, Mitsubishi Heavy Industries, and Kajima—the system modernized transportation across the emirate.\n\nSpanning nearly 75 kilometers with 47 stations, the network comprises long elevated viaducts gliding along Sheikh Zayed Road and deep subterranean tunnels threading beneath the historic Dubai Creek. The elevated stations feature iconic aerodynamic golden seashell canopies inspired by Dubai's historic pearl diving heritage.\n\nConstructing high-speed automated rail through extreme desert heat (exceeding 50°C) required specialized materials and logistics. Obayashi deployed massive precast box girder launching gantries that erected thousands of viaduct spans over active multi-lane expressways, alongside specialized slurry Tunnel Boring Machines for underwater Creek crossings.\n\nThe Dubai Metro entered the Guinness World Records as the longest driverless metro line in the world. It has transported over two billion passengers safely, establishing a global benchmark for automated rapid transit.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Railways & Automated Mass Transit"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "World-Record Fully Automated Driverless Metro"
+      },
+      {
+        "label": "Route Length",
+        "value": "74.6 Kilometers (Red Line + Green Line)"
+      },
+      {
+        "label": "Stations",
+        "value": "47 Stations (Iconic Seashell Architecture)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2011"
+      },
+      {
+        "label": "Location",
+        "value": "Dubai, United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "id": "work_au_001",
+    "title": "Stadium Australia (Sydney Olympic Stadium)",
+    "subtitle": "The magnificent 110,000-seat centerpiece stadium constructed for the Sydney 2000 Olympic Games in Homebush Bay.",
+    "category": "Sports",
+    "designType": "Design & Build",
+    "location": "Sydney, New South Wales, Australia",
+    "locationCategory": "Australia",
+    "completion": "1999 Completion",
+    "completionYear": "1999",
+    "image": "/images/work_au_001.jpg",
+    "summary": "Stadium Australia (currently Accor Stadium) is the historic 110,000-seat centerpiece stadium constructed for the Sydney 2000 Olympic Games. Built by an Obayashi-led joint venture (Obayashi / Multiplex) in Sydney Olympic Park, the stadium features iconic hyperbolic paraboloid steel arch roofs and green passive-cooling engineering.",
+    "description": "Stadium Australia stands as one of the most celebrated and ecologically innovative sports arenas in Olympic history. Built for the Sydney 2000 Olympic and Paralympic Games by an Obayashi joint venture with Australian partner Multiplex, the stadium accommodated over 110,000 spectators for the Opening Ceremony and track-and-field events.\n\nThe stadium's silhouette is defined by two majestic 300-meter-long curved structural steel arch trusses supporting translucent polycarbonate roofs, suspended gracefully like soaring hyperbolic saddle wings. The roof was designed to shade 80% of spectators while allowing natural sunlight to nourish the natural turf pitch below.\n\nEnvironmental sustainability was pioneered at an unprecedented scale. Obayashi integrated passive natural ventilation, oversized rainwater collection tanks feeding turf irrigation, and natural solar lighting, which reduced stadium energy consumption by 30% compared to traditional domed stadiums.\n\nCelebrated globally as the 'Green Games' stadium, Stadium Australia continues to host major international rugby, soccer, and entertainment events as an enduring Australian cultural landmark.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Sports & Public Entertainment Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "110,000-Seat Olympic Main Stadium"
+      },
+      {
+        "label": "Seating Capacity",
+        "value": "110,000 Spectators (Olympic Configuration)"
+      },
+      {
+        "label": "Roof Span",
+        "value": "Two 300-Meter Main Structural Steel Arch Trusses"
+      },
+      {
+        "label": "Deadline",
+        "value": "1999"
+      },
+      {
+        "label": "Location",
+        "value": "Sydney Olympic Park, Homebush Bay, NSW, Australia"
+      }
+    ]
+  },
+  {
+    "id": "work_id_001",
+    "title": "PT Glico Manufacturing Indonesia Karawang Factory",
+    "subtitle": "A modern confectionery and biscuit manufacturing plant built in Karawang, producing Pocky snacks for international markets.",
+    "category": "Industrial Infrastructure",
+    "designType": "Design & Build",
+    "location": "Karawang, West Java, Indonesia",
+    "locationCategory": "Indonesia",
+    "completion": "2022 Completion",
+    "completionYear": "2022",
+    "image": "/images/work_id_001.jpg",
+    "summary": "The PT Glico Manufacturing Indonesia Karawang Factory is a premier confectionery processing plant constructed by PT Jaya Obayashi in Karawang International Industry City (KIIC). Built for Japan's Ezaki Glico, the plant is one of Glico's largest manufacturing investments worldwide, producing iconic Pocky chocolate snacks.",
+    "description": "The PT Glico Manufacturing Indonesia factory marks a transformative manufacturing hub for beloved Japanese confectionery brand Ezaki Glico. Constructed by PT Jaya Obayashi in the Karawang International Industry City (KIIC) industrial corridor, the facility represents Glico's largest and most advanced production plant globally.\n\nThe sprawling single-story industrial complex encompasses computerized flour and chocolate batch mixing suites, high-speed automated biscuit baking ovens, chocolate dipping tunnels, and automated packaging halls. The entire plant is certified Halal and adheres to strict Japanese confectionery cleanroom standards.\n\nKarawang's tropical climate required comprehensive thermal insulation and energy-efficient dehumidification to safeguard chocolate temper and biscuit crispness. Obayashi installed insulated PIR wall cladding, rooftop solar photovoltaic panels, and energy-recovery heat exchangers.\n\nThe completed factory supplies millions of boxes of Pocky snacks to Indonesia, Southeast Asia, and North America, showcasing Obayashi's industrial engineering prowess in Indonesia.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Industrial Infrastructure & Confectionery"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Advanced Automated Biscuit & Chocolate Factory"
+      },
+      {
+        "label": "Site Area",
+        "value": "66,000 m² (Gross Floor Area: 35,000 m²)"
+      },
+      {
+        "label": "Certification",
+        "value": "Halal Certified & ISO 22000 Food Hygiene"
+      },
+      {
+        "label": "Deadline",
+        "value": "2022"
+      },
+      {
+        "label": "Location",
+        "value": "KIIC Industrial City, Karawang, West Java, Indonesia"
+      }
+    ]
+  },
+  {
+    "id": "work_id_002",
+    "title": "PT INDONESIA KYOUEI SAIKYU Factory",
+    "subtitle": "A precision automotive metal stamping and structural component manufacturing facility in Karawang, supporting automotive manufacturing.",
+    "category": "Industrial Infrastructure",
+    "designType": "Design & Build",
+    "location": "Karawang, West Java, Indonesia",
+    "locationCategory": "Indonesia",
+    "completion": "2012 Completion",
+    "completionYear": "2012",
+    "image": "/images/work_id_002.jpg",
+    "summary": "The PT INDONESIA KYOUEI SAIKYU Factory is a precision automotive component manufacturing plant constructed by PT Jaya Obayashi in Karawang, West Java. The facility features heavy press pits, automated robotic stamping lines, and automated parts warehousing to supply major Japanese automotive manufacturers.",
+    "description": "The PT INDONESIA KYOUEI SAIKYU plant plays a vital role in Indonesia's thriving automotive industrial base. Constructed by PT Jaya Obayashi in the KIIC industrial corridor in Karawang, the plant manufactures high-precision stamped sheet metal components, sub-assemblies, and body frames for international automobile brands.\n\nThe facility is engineered to accommodate heavy mechanical and hydraulic stamping presses ranging from 500 to 1,500 tons. Heavy machine foundations required isolated concrete inertia blocks cast into deep foundation caissons to completely decouple stamping shock vibrations from the surrounding factory floor and precision measurement labs.\n\nThe plant features high-bay overhead gantry crane tracks, automated raw steel coil feeding, robotic spot welding stations, and an integrated paint finishing line. Energy-efficient natural roof daylighting monitors and high-volume low-speed (HVLS) ventilation fans ensure comfortable working environments.\n\nCompleted on time and with zero incidents, the plant stands as a prime example of Jaya Obayashi's industrial manufacturing expertise in Southeast Asia.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Industrial Infrastructure & Automotive Components"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Precision Automotive Metal Stamping & Assembly Plant"
+      },
+      {
+        "label": "Gross Floor Area",
+        "value": "15,800 m²"
+      },
+      {
+        "label": "Site Area",
+        "value": "30,000 m²"
+      },
+      {
+        "label": "Deadline",
+        "value": "2012"
+      },
+      {
+        "label": "Location",
+        "value": "KIIC Industrial City, Karawang, West Java, Indonesia"
+      }
+    ]
+  },
+  {
+    "id": "work_kh_001",
+    "title": "National Road No. 5 Improvement Project",
+    "subtitle": "A critical 360-kilometer international trade arterial highway connecting Phnom Penh with the Thailand border, constructed under JICA ODA.",
+    "category": "Roads and Highways",
+    "designType": "General Contracting",
+    "location": "Kandal, Kampong Chhnang, Pursat, Battambang, Cambodia",
+    "locationCategory": "Cambodia",
+    "completion": "2022 Completion",
+    "completionYear": "2022",
+    "image": "/images/work_kh_001.jpg",
+    "summary": "The National Road No. 5 Improvement Project is a transformative highway modernization contract in Cambodia funded by Japanese ODA (JICA). Obayashi Corporation reconstructed and widened critical sections of this vital national corridor from a narrow two-lane road into a modern four-lane divided asphalt arterial highway with bypasses.",
+    "description": "National Road No. 5 represents the central commercial spine of Cambodia's land transport network, forming part of the Greater Mekong Subregion (GMS) Southern Economic Corridor connecting Phnom Penh with Bangkok. Financed through Japanese Official Development Assistance (JICA), Obayashi was awarded key execution packages to modernize this historic corridor.\n\nThe project transformed narrow, deteriorating rural roads into a robust four-lane divided national expressway paved with high-durability asphalt concrete. Construction included numerous concrete bridges over seasonal Mekong floodplain tributaries, reinforced culverts, and dedicated community urban bypasses around congested market towns.\n\nCambodia's severe monsoon flooding required substantial civil engineering adjustments. Obayashi raised the highway embankment significantly above historical 50-year flood levels, incorporating stone rip-rap embankment slope protection and automated flood drainage sluices.\n\nCompleted in 2022, National Road No. 5 has cut freight transit times in half, stimulated local agricultural trade, and reduced road fatalities, serving as a lasting testament to Japan's international cooperation.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Roads & Highways Infrastructure"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "4-Lane Divided International Arterial Highway"
+      },
+      {
+        "label": "Funding",
+        "value": "JICA Japanese ODA Loan"
+      },
+      {
+        "label": "Route Importance",
+        "value": "GMS Southern Economic Corridor (Phnom Penh–Bangkok)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2022"
+      },
+      {
+        "label": "Location",
+        "value": "Central & Western Cambodia"
+      }
+    ]
+  },
+  {
+    "id": "work_bd_001",
+    "title": "Kanchpur, Meghna, and Gumti 2nd Bridges Project",
+    "subtitle": "Three monumental highway river crossings constructed across the vital Dhaka-Chittagong corridor under Japanese ODA.",
+    "category": "Civil Infra",
+    "designType": "General Contracting",
+    "location": "Dhaka–Chittagong Highway, Bangladesh",
+    "locationCategory": "Bangladesh",
+    "completion": "2020 Completion",
+    "completionYear": "2020",
+    "image": "/images/work_bd_001.jpg",
+    "summary": "The Kanchpur, Meghna, and Gumti 2nd Bridges Project is one of the most celebrated civil transport infrastructure achievements in Bangladesh. Built by an Obayashi-led Japanese joint venture under JICA ODA, the project constructed three modern four-lane bridges spanning the Shitalakshya, Meghna, and Gumti rivers on the Dhaka-Chittagong Highway.",
+    "description": "The Dhaka-Chittagong Highway is the economic lifeline of Bangladesh, carrying over 90% of the nation's import and export container cargo between the capital city Dhaka and the primary maritime port of Chittagong. To eliminate historic multi-hour traffic gridlock at two-lane river bottlenecks, an Obayashi-led Japanese consortium was awarded the monumental contract to construct the 2nd Kanchpur, 2nd Meghna, and 2nd Gumti Bridges.\n\nThe project encompassed three major prestressed concrete and steel composite bridges: the 2nd Kanchpur Bridge (397 m), the 2nd Meghna Bridge (930 m), and the 2nd Gumti Bridge (1,410 m). The bridges feature continuous narrow-box steel girders and prestressed concrete decks resting on massive deep-drilled steel pipe sheet pile foundations.\n\nChallenging river hydrology—including deep monsoonal riverbed scouring and severe seismic liquefaction potential—required innovative engineering. Obayashi utilized specialized large-diameter steel pipe sheet pile (SPSP) foundation walls socketed deep into dense sand strata beneath the rivers.\n\nIn a remarkable civil engineering achievement, the Obayashi consortium completed the bridges months ahead of schedule and well within budget, earning heartfelt praise from the Prime Minister of Bangladesh and global development agencies.",
+    "details": [
+      {
+        "label": "Sector",
+        "value": "Civil Infrastructure & Major Bridges"
+      },
+      {
+        "label": "Sub-Sector",
+        "value": "Triple Highway River Bridges on Primary Trade Corridor"
+      },
+      {
+        "label": "Total Length",
+        "value": "Combined 2,737 meters (Gumti: 1,410m, Meghna: 930m, Kanchpur: 397m)"
+      },
+      {
+        "label": "Corridor",
+        "value": "Dhaka–Chittagong Highway (National Highway 1)"
+      },
+      {
+        "label": "Deadline",
+        "value": "2020"
+      },
+      {
+        "label": "Location",
+        "value": "Dhaka & Munshiganj & Comilla, Bangladesh"
       }
     ]
   }

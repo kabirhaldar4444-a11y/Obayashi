@@ -578,8 +578,8 @@ export default function WorkDetail() {
                   <Globe size={15} className="text-white/40" />
                 </div>
                 <div>
-                  <span className="block text-[9px] text-white/25 font-bold uppercase tracking-widest">Base Distance</span>
-                  <span className="text-sm text-white/70 font-bold">{details.tokyoDistance} from Central Tokyo</span>
+                  <span className="block text-[9px] text-white/25 font-bold uppercase tracking-widest">Base Transit / Distance</span>
+                  <span className="text-sm text-white/70 font-bold">{details.tokyoDistance?.includes('km') ? `${details.tokyoDistance} from Central Tokyo` : details.tokyoDistance}</span>
                 </div>
                 <span className="ml-auto text-[9px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-2 py-0.5 rounded-full">
                   Active Site

@@ -284,9 +284,14 @@ h1, h2, h3, h4, h5, h6 {
 .header-logo-img {
   height: 52px;
   width: auto;
-  max-width: 140px;
+  max-width: 220px;
   object-fit: contain;
   display: block;
+  transition: transform 0.2s ease;
+}
+
+.header-logo-img:hover {
+  transform: scale(1.02);
 }
 
 .logo-text-wrapper {
@@ -404,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-logo-img {
   height: 60px;
   width: auto;
-  max-width: 180px;
+  max-width: 220px;
   object-fit: contain;
   display: block;
 }

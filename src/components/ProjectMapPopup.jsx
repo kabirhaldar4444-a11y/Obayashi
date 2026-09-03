@@ -196,6 +196,31 @@ const ALL_STATE_BOUNDARIES = {
   "dholera":           { name: "Gujarat (Dholera)", x: 26.0, y: 45.5 },
 };
 
+// Pixel-perfect coordinate mapping calibrated for 1024x1024 3D USA map
+const usaCoordinates = {
+  "new york":     { name: "New York", x: 84.5, y: 34.5 },
+  "manhattan":    { name: "New York (Central Park)", x: 84.5, y: 34.5 },
+  "west islip":   { name: "Long Island (West Islip)", x: 86.0, y: 35.0 },
+  "long island":  { name: "New York (Long Island)", x: 86.0, y: 35.0 },
+  "california":   { name: "California", x: 13.0, y: 56.0 },
+  "irvine":       { name: "California (Irvine)", x: 15.0, y: 62.5 },
+  "los angeles":  { name: "California (Los Angeles)", x: 14.5, y: 61.5 },
+  "san francisco":{ name: "California (San Francisco)", x: 10.0, y: 52.0 },
+  "yorba linda":  { name: "California (Yorba Linda)", x: 15.2, y: 61.8 },
+  "nevada":       { name: "Nevada / Arizona", x: 20.5, y: 57.5 },
+  "arizona":      { name: "Nevada / Arizona", x: 20.5, y: 57.5 },
+  "hoover":       { name: "Hoover Dam (Black Canyon)", x: 20.5, y: 57.5 },
+  "colorado":     { name: "Colorado", x: 38.0, y: 49.0 },
+  "idaho springs":{ name: "Colorado (Clear Creek)", x: 37.5, y: 48.5 },
+  "castle rock":  { name: "Colorado (Castle Rock)", x: 38.5, y: 49.5 },
+  "washington":   { name: "Washington", x: 13.0, y: 27.0 },
+  "seattle":      { name: "Washington (Seattle)", x: 13.0, y: 27.0 },
+  "beacon hill":  { name: "Seattle (Beacon Hill)", x: 13.0, y: 27.0 },
+  "united states":{ name: "United States", x: 50.0, y: 50.0 },
+  "usa":          { name: "United States", x: 50.0, y: 50.0 },
+  "u.s.a":        { name: "United States", x: 50.0, y: 50.0 },
+};
+
 /* Category colour tokens */
 const CATEGORY_COLORS = {
   "Offices":    "#0B3D6B",
@@ -230,6 +255,20 @@ export default function ProjectMapPopup({ project, onClose }) {
     (project.location && project.location.toLowerCase().includes('gujarat')) ||
     (project.location && project.location.toLowerCase().includes('maharashtra'));
 
+  const isUSA = 
+    (project.locationCategory && (project.locationCategory.toLowerCase() === 'united states' || project.locationCategory.toLowerCase() === 'usa')) ||
+    (project.location && (
+      project.location.toLowerCase().includes('u.s.a') ||
+      project.location.toLowerCase().includes('usa') ||
+      project.location.toLowerCase().includes('united states') ||
+      project.location.toLowerCase().includes('california') ||
+      project.location.toLowerCase().includes('new york') ||
+      project.location.toLowerCase().includes('colorado') ||
+      project.location.toLowerCase().includes('washington') ||
+      project.location.toLowerCase().includes('nevada') ||
+      project.location.toLowerCase().includes('arizona')
+    ));
+
   const getCoords = (locStr) => {
     const clean = (locStr || '').toLowerCase();
     if (isIndia) {
@@ -237,6 +276,12 @@ export default function ProjectMapPopup({ project, onClose }) {
         if (clean.includes(city)) return coord;
       }
       return indiaCoordinates["maharashtra"];
+    }
+    if (isUSA) {
+      for (const [city, coord] of Object.entries(usaCoordinates)) {
+        if (clean.includes(city)) return coord;
+      }
+      return usaCoordinates["united states"];
     }
     for (const [city, coord] of Object.entries(cityCoordinates)) {
       if (clean.includes(city)) return coord;
@@ -337,7 +382,36 @@ export default function ProjectMapPopup({ project, onClose }) {
     return matched;
   };
 
-  const includedStates = isIndia ? getIncludedStates(project.location) : getJapanLocations(project.location);
+  const getUsaLocations = (locStr) => {
+    const clean = (locStr || '').toLowerCase();
+    const matched = [];
+    const addedCoords = [];
+
+    const addMatch = (key) => {
+      const coord = usaCoordinates[key];
+      if (!coord) return;
+      const isDuplicate = addedCoords.some(
+        c => Math.abs(c.x - coord.x) < 1.0 && Math.abs(c.y - coord.y) < 1.0
+      );
+      if (!isDuplicate) {
+        addedCoords.push(coord);
+        matched.push(coord);
+      }
+    };
+
+    for (const [key] of Object.entries(usaCoordinates)) {
+      if (clean.includes(key)) addMatch(key);
+    }
+
+    if (matched.length === 0) {
+      matched.push({ name: (locStr || 'United States').split(',')[0], x: 50.0, y: 50.0 });
+    }
+    return matched;
+  };
+
+  const includedStates = isIndia 
+    ? getIncludedStates(project.location) 
+    : (isUSA ? getUsaLocations(project.location) : getJapanLocations(project.location));
   const projectSlug = slugify(project.title);
   const catColor = CATEGORY_COLORS[project.category] || '#374151';
 
@@ -380,7 +454,7 @@ export default function ProjectMapPopup({ project, onClose }) {
         }}
       >
         {/* ====================================
-            LEFT PANEL - Full Japan or India Map
+            LEFT PANEL - Full Japan, India or USA Map
             ==================================== */}
         <div
           style={{
@@ -416,8 +490,8 @@ export default function ProjectMapPopup({ project, onClose }) {
           >
             {/* --- Map image --- */}
             <img
-              src={isIndia ? "/images/india_3d_map.png" : "/images/japan_3d_map.png"}
-              alt={isIndia ? "India Map" : "Japan Map"}
+              src={isIndia ? "/images/india_3d_map.png" : (isUSA ? "/images/usa_3d_map.png" : "/images/japan_3d_map.png")}
+              alt={isIndia ? "India Map" : (isUSA ? "USA Map" : "Japan Map")}
               onLoad={() => setImgLoaded(true)}
               style={{
                 position: 'absolute',
@@ -428,7 +502,7 @@ export default function ProjectMapPopup({ project, onClose }) {
                 objectFit: 'fill',
                 pointerEvents: 'none',
                 userSelect: 'none',
-                filter: isIndia ? 'none' : 'sepia(0.05) contrast(1.05) brightness(0.95)',
+                filter: isIndia || isUSA ? 'none' : 'sepia(0.05) contrast(1.05) brightness(0.95)',
                 opacity: imgLoaded ? 1 : 0,
                 transition: 'opacity 0.4s ease',
                 zIndex: 1,
@@ -436,7 +510,7 @@ export default function ProjectMapPopup({ project, onClose }) {
             />
 
             {/* Soft gradient overlay covering the right edge - ONLY for Japan map */}
-            {!isIndia && (
+            {!isIndia && !isUSA && (
               <div style={{
                 position: 'absolute',
                 top: 0,
@@ -450,7 +524,7 @@ export default function ProjectMapPopup({ project, onClose }) {
             )}
 
             {/* Dark gradient restricted to top-left header zone - ONLY for Japan map */}
-            {!isIndia && (
+            {!isIndia && !isUSA && (
               <div style={{
                 position: 'absolute',
                 top: 0,
