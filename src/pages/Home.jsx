@@ -108,27 +108,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="portal-split-row">
-          <div className="portal-block portal-ir" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.65)), url(/images/jamuna_bridge.png)` }}>
-            <div className="portal-block-content">
-              <h3 className="portal-block-title">Investor Relations</h3>
-              <p className="portal-block-text">Financial updates, stock configurations, dividend charts, and corporate report downloads.</p>
-              <Link to="/ir" className="portal-block-btn">
-                <span>Investor Resources</span>
-                <ChevronRight size={16} />
-              </Link>
-            </div>
-          </div>
-
-          <div className="portal-block portal-sustainability" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.65)), url(/images/rokka_mori.png)` }}>
-            <div className="portal-block-content">
-              <h3 className="portal-block-title">Sustainability</h3>
-              <p className="portal-block-text">Learn about ESG materiality matrix items, zero-emission timelines, and community updates.</p>
-              <Link to="/sustainability" className="portal-block-btn">
-                <span>View Sustainability Focus</span>
-                <ChevronRight size={16} />
-              </Link>
-            </div>
+        <div className="portal-block portal-sustainability" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.65)), url(/images/rokka_mori.png)` }}>
+          <div className="portal-block-content">
+            <h3 className="portal-block-title">Sustainability</h3>
+            <p className="portal-block-text">Learn about ESG materiality matrix items, zero-emission timelines, and community updates.</p>
+            <Link to="/sustainability" className="portal-block-btn">
+              <span>View Sustainability Focus</span>
+              <ChevronRight size={16} />
+            </Link>
           </div>
         </div>
       </section>

@@ -26,7 +26,6 @@ const Works                = lazy(() => import('./pages/Works'));
 const ProjectDetail        = lazy(() => import('./pages/ProjectDetail'));
 const Technologies         = lazy(() => import('./pages/Technologies'));
 const Sustainability       = lazy(() => import('./pages/Sustainability'));
-const IR                   = lazy(() => import('./pages/IR'));
 const News                 = lazy(() => import('./pages/News'));
 const Contact              = lazy(() => import('./pages/Contact'));
 const UtilityPage          = lazy(() => import('./pages/UtilityPage'));
@@ -58,7 +57,6 @@ function App() {
             <Route path="/projects/:slug" element={<ProjectDetail />} />
             <Route path="/solution_technology" element={<Technologies />} />
             <Route path="/sustainability" element={<Sustainability />} />
-            <Route path="/ir" element={<IR />} />
             <Route path="/news" element={<News />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/:policyId" element={<UtilityPage />} />

@@ -99,19 +99,6 @@ export const groupNetwork = {
   ]
 };
 
-export const publications = [
-  {
-    title: "Obayashi Corporate Report (Annual)",
-    description: "An annual review detailing financial results, mid-term plans, and environmental milestones.",
-    link: "#"
-  },
-  {
-    title: "Obayashi Quarterly (Kikan Obayashi)",
-    description: "A cultural publication highlighting the intersection of architectural design, civil history, and social development.",
-    link: "#"
-  }
-];
-
 export const certificates = [
   {
     id: "hcm-iso27001",

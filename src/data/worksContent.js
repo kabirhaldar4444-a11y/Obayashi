@@ -1,7 +1,11 @@
 // Works content and project definitions
 export const workCategories = {
-  designBuild: ["All", "Design & Build", "General Contracting"],
-  facilityType: [
+  "designBuild": [
+    "All",
+    "Design & Build",
+    "General Contracting"
+  ],
+  "facilityType": [
     "All",
     "Commercial Infrastructure",
     "Industrial Infrastructure",
@@ -26,23 +30,54 @@ export const workCategories = {
     "Civil Infra",
     "Offices"
   ],
-  location: [
-  "All",
-  "Japan",
-  "India",
-  "United States",
-  "Singapore",
-  "Thailand",
-  "Canada",
-  "Taiwan",
-  "Vietnam",
-  "United Arab Emirates",
-  "Australia",
-  "Indonesia",
-  "Cambodia",
-  "Bangladesh"
-],
-  year: ["All", "2037", "2036", "2035", "2034", "2033", "2032", "2031", "2030", "2026", "2025", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2007", "2006", "2002", "1999"]
+  "location": [
+    "All",
+    "Japan",
+    "India",
+    "United States",
+    "Singapore",
+    "Thailand",
+    "Canada",
+    "Taiwan",
+    "Vietnam",
+    "United Arab Emirates",
+    "Australia",
+    "Indonesia",
+    "Cambodia",
+    "Bangladesh"
+  ],
+  "year": [
+    "All",
+    "2037",
+    "2036",
+    "2035",
+    "2034",
+    "2033",
+    "2032",
+    "2031",
+    "2030",
+    "2026",
+    "2025",
+    "2024",
+    "2023",
+    "2022",
+    "2021",
+    "2020",
+    "2019",
+    "2018",
+    "2017",
+    "2016",
+    "2015",
+    "2014",
+    "2013",
+    "2012",
+    "2011",
+    "2010",
+    "2007",
+    "2006",
+    "2002",
+    "1999"
+  ]
 };
 
 export const projects = [
@@ -74,8 +109,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Tokyo, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Taisei Corporation / Maeda Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Taisei Corporation / Maeda Corporation JV"
   },
   {
     "id": "work_fukutoku_toyosu_101",
@@ -105,8 +150,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Tokyo, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Shimizu Corporation"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Shimizu Corporation"
   },
   {
     "id": "work_azabudai_hills__102",
@@ -136,8 +191,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Tokyo, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Taisei Corporation / Shimizu Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Taisei Corporation / Shimizu Corporation JV"
   },
   {
     "id": "work_shibuya_sakura__103",
@@ -167,8 +232,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Tokyo, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Tokyu Construction / Kajima Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Tokyu Construction / Kajima Corporation JV"
   },
   {
     "id": "work_takanawa_gatewa_104",
@@ -198,8 +273,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Tokyo, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Kajima Corporation / Kumagai Gumi JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Kajima Corporation / Kumagai Gumi JV"
   },
   {
     "id": "work_hokkaido_honshu_105",
@@ -229,8 +314,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Hokkaido & Honshu, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Sumitomo Electric / Hitachi Energy JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Sumitomo Electric / Hitachi Energy JV"
   },
   {
     "id": "work_osaka_ir_integr_106",
@@ -260,8 +355,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Osaka, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Takenaka Corporation / Taisei Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Takenaka Corporation / Taisei Corporation JV"
   },
   {
     "id": "work_tokyo_metropoli_107",
@@ -291,8 +396,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Saitama, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Tobishima Corporation / Maeda Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Tobishima Corporation / Maeda Corporation JV"
   },
   {
     "id": "work_hokkaido_offsho_108",
@@ -322,8 +437,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Hokkaido, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Kajima Corporation / Penta-Ocean JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Kajima Corporation / Penta-Ocean JV"
   },
   {
     "id": "work_chuo_shinkansen_109",
@@ -353,8 +478,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Shizuoka, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Taisei Corporation / Kajima Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Taisei Corporation / Kajima Corporation JV"
   },
   {
     "id": "work_tokyo_metro_net_110",
@@ -384,8 +519,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Tokyo, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Maeda Corporation / Kumagai Gumi JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Maeda Corporation / Kumagai Gumi JV"
   },
   {
     "id": "work_osaka_metro_ext_111",
@@ -415,8 +560,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Osaka, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Takenaka Corporation / Zenitaka Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Takenaka Corporation / Zenitaka Corporation JV"
   },
   {
     "id": "work_yokohama_urban__112",
@@ -446,8 +601,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Yokohama, Kanagawa, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Tobishima Corporation / Sotetsu Construction JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Tobishima Corporation / Sotetsu Construction JV"
   },
   {
     "id": "work_nagoya_metro_gr_113",
@@ -477,8 +642,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Nagoya, Aichi, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Nishimatsu Construction / Yahagi Construction JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Nishimatsu Construction / Yahagi Construction JV"
   },
   {
     "id": "work_fukuoka_metro_n_114",
@@ -508,8 +683,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Fukuoka, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Taisei Corporation / Shimizu Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Taisei Corporation / Shimizu Corporation JV"
   },
   {
     "id": "work_sapporo_metro_f_115",
@@ -539,8 +724,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Sapporo, Hokkaido, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Iwakura Corporation / Maeda Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Iwakura Corporation / Maeda Corporation JV"
   },
   {
     "id": "work_kyoto_urban_met_116",
@@ -570,8 +765,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Kyoto, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Taisei Corporation / Matsumura-gumi JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Taisei Corporation / Matsumura-gumi JV"
   },
   {
     "id": "work_kobe_metro_exte_117",
@@ -601,8 +806,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Kobe, Hyogo, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Shimizu Corporation / Hanshin Construction JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Shimizu Corporation / Hanshin Construction JV"
   },
   {
     "id": "work_sendai_metro_ex_118",
@@ -632,8 +847,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Sendai, Miyagi, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Kajima Corporation / Hashimoto Gumi JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Kajima Corporation / Hashimoto Gumi JV"
   },
   {
     "id": "work_hiroshima_metro_119",
@@ -663,8 +888,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Hiroshima, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Nishimatsu Construction / Toda Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Nishimatsu Construction / Toda Corporation JV"
   },
   {
     "id": "work_chiba_metro_cor_120",
@@ -694,8 +929,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Chiba, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Mitsubishi Heavy Industries / Kumagai Gumi JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Mitsubishi Heavy Industries / Kumagai Gumi JV"
   },
   {
     "id": "work_kawasaki_metro__121",
@@ -725,8 +970,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Kawasaki, Kanagawa, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Keikyu Construction / Maeda Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Keikyu Construction / Maeda Corporation JV"
   },
   {
     "id": "work_greater_tokyo_o_122",
@@ -756,8 +1011,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Tokyo Metropolitan Area, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Kajima Corporation / Taisei Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Kajima Corporation / Taisei Corporation JV"
   },
   {
     "id": "work_osaka_smart_met_123",
@@ -787,8 +1052,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Osaka, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Takenaka Corporation / Shimizu Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Takenaka Corporation / Shimizu Corporation JV"
   },
   {
     "id": "work_nagoya_metropol_124",
@@ -818,8 +1093,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Nagoya, Aichi, Japan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Shimizu Corporation / Okumura Corporation JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Shimizu Corporation / Okumura Corporation JV"
   },
   {
     "id": "work_india_001",
@@ -858,8 +1143,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Pune, Maharashtra"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Tata Projects Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Tata Projects Limited"
   },
   {
     "id": "work_india_002",
@@ -898,8 +1193,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Chennai, Tamil Nadu"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Larsen & Toubro (L&T Construction)"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Larsen & Toubro (L&T Construction)"
   },
   {
     "id": "work_india_003",
@@ -938,8 +1243,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Chhatrapati Sambhajinagar, Maharashtra"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Shapoorji Pallonji & Co. Ltd"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Shapoorji Pallonji & Co. Ltd"
   },
   {
     "id": "work_india_004",
@@ -978,8 +1293,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Odisha, Andhra Pradesh, Tamil Nadu"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Larsen & Toubro / NCC Limited JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Larsen & Toubro / NCC Limited JV"
   },
   {
     "id": "work_india_005",
@@ -1018,8 +1343,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Mucherla / Hyderabad, Telangana"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Megha Engineering & Infrastructures Ltd (MEIL)"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Megha Engineering & Infrastructures Ltd (MEIL)"
   },
   {
     "id": "work_india_006",
@@ -1058,8 +1393,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Punjab, West Bengal & Northern Belt"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Dilip Buildcon / G R Infraprojects"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Dilip Buildcon / G R Infraprojects"
   },
   {
     "id": "work_india_007",
@@ -1098,8 +1443,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Visakhapatnam, Andhra Pradesh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Afcons Infrastructure Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Afcons Infrastructure Limited"
   },
   {
     "id": "work_india_008",
@@ -1138,8 +1493,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Kandla, Gujarat"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Adani Ports & SEZ / ITD Cementation"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Adani Ports & SEZ / ITD Cementation"
   },
   {
     "id": "work_india_009",
@@ -1178,8 +1543,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Garhwal Himalayas, Uttarakhand"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Larsen & Toubro (L&T) / Max Infra JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Larsen & Toubro (L&T) / Max Infra JV"
   },
   {
     "id": "work_india_010",
@@ -1218,8 +1593,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Singrauli, Madhya Pradesh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Sterling and Wilson Solar / BHEL"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Sterling and Wilson Solar / BHEL"
   },
   {
     "id": "work_india_011",
@@ -1258,8 +1643,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Ludhiana, Punjab"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Ceigall India Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Ceigall India Limited"
   },
   {
     "id": "work_india_012",
@@ -1298,8 +1693,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Jaipur, Rajasthan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Simplex Infrastructures Ltd"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Simplex Infrastructures Ltd"
   },
   {
     "id": "work_india_013",
@@ -1338,8 +1743,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Raipur–Bhilai–Durg, Chhattisgarh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Dilip Buildcon Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Dilip Buildcon Limited"
   },
   {
     "id": "work_india_014",
@@ -1378,8 +1793,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Bengaluru, Karnataka"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Navayuga Engineering Company"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Navayuga Engineering Company"
   },
   {
     "id": "work_india_015",
@@ -1418,8 +1843,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Garhwal Himalayas, Uttarakhand"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Dilip Buildcon / L&T Infrastructure"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Dilip Buildcon / L&T Infrastructure"
   },
   {
     "id": "work_india_016",
@@ -1458,8 +1893,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Siliguri, West Bengal"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "IRCON International Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "IRCON International Limited"
   },
   {
     "id": "work_india_017",
@@ -1498,8 +1943,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Chandigarh, Mohali & Panchkula"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Gawar Construction Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Gawar Construction Limited"
   },
   {
     "id": "work_india_018",
@@ -1538,8 +1993,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Madhya Pradesh & Gujarat"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Dilip Buildcon / Sadbhav Engineering"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Dilip Buildcon / Sadbhav Engineering"
   },
   {
     "id": "work_india_019",
@@ -1578,8 +2043,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Indore, Madhya Pradesh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Larsen & Toubro (L&T Construction)"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Larsen & Toubro (L&T Construction)"
   },
   {
     "id": "work_india_020",
@@ -1618,8 +2093,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Varanasi, Uttar Pradesh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Tata Projects Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Tata Projects Limited"
   },
   {
     "id": "work_india_021",
@@ -1658,8 +2143,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Amritsar, Punjab"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Shapoorji Pallonji & Co."
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Shapoorji Pallonji & Co."
   },
   {
     "id": "work_india_022",
@@ -1698,8 +2193,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Rajkot (Raiya), Gujarat"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "JMC Projects (India) Ltd"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "JMC Projects (India) Ltd"
   },
   {
     "id": "work_india_023",
@@ -1738,8 +2243,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Patna, Bihar"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "NCC Limited (Nagarjuna Construction)"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "NCC Limited (Nagarjuna Construction)"
   },
   {
     "id": "work_india_024",
@@ -1778,8 +2293,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Bhilai-Durg, Chhattisgarh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "KEC International Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "KEC International Limited"
   },
   {
     "id": "work_india_025",
@@ -1818,8 +2343,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Lucknow, Uttar Pradesh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Larsen & Toubro (L&T Construction)"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Larsen & Toubro (L&T Construction)"
   },
   {
     "id": "work_india_026",
@@ -1858,8 +2393,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Kolkata & Howrah, West Bengal"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Afcons Infrastructure / Transtonnelstroy JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Afcons Infrastructure / Transtonnelstroy JV"
   },
   {
     "id": "work_india_027",
@@ -1898,8 +2443,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Bhopal, Madhya Pradesh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Dilip Buildcon / URC Construction JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Dilip Buildcon / URC Construction JV"
   },
   {
     "id": "work_india_028",
@@ -1938,8 +2493,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Thane, Bhiwandi & Kalyan, Maharashtra"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Afcons Infrastructure Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Afcons Infrastructure Limited"
   },
   {
     "id": "work_india_029",
@@ -1978,8 +2543,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Hooghly River, Kolkata–Howrah, West Bengal"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Afcons Infrastructure / Transtonnelstroy JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Afcons Infrastructure / Transtonnelstroy JV"
   },
   {
     "id": "work_india_030",
@@ -2018,8 +2593,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Wadala to Thane, Maharashtra"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Reliance Infrastructure & Astaldi JV / Tata Projects"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Reliance Infrastructure & Astaldi JV / Tata Projects"
   },
   {
     "id": "work_india_031",
@@ -2058,8 +2643,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Kolkata (EM Bypass & New Town), West Bengal"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "ITD Cementation India Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "ITD Cementation India Limited"
   },
   {
     "id": "work_india_032",
@@ -2098,8 +2693,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Delhi National Capital Region (NCR)"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Larsen & Toubro (L&T Construction)"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Larsen & Toubro (L&T Construction)"
   },
   {
     "id": "work_india_033",
@@ -2138,8 +2743,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Navi Mumbai, Maharashtra"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "J. Kumar Infraprojects / JJM Joint Venture"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "J. Kumar Infraprojects / JJM Joint Venture"
   },
   {
     "id": "work_india_034",
@@ -2178,8 +2793,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Kanpur, Uttar Pradesh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Afcons Infrastructure Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Afcons Infrastructure Limited"
   },
   {
     "id": "work_india_035",
@@ -2218,8 +2843,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Pune (Vanaz to Ramwadi), Maharashtra"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "HCC (Hindustan Construction Co.) / Alstom JV"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "HCC (Hindustan Construction Co.) / Alstom JV"
   },
   {
     "id": "work_india_036",
@@ -2258,8 +2893,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Andheri East to CSMIA T2, Mumbai, Maharashtra"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "J. Kumar Infraprojects Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "J. Kumar Infraprojects Limited"
   },
   {
     "id": "work_india_037",
@@ -2298,8 +2943,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Enayam / Kanyakumari, Tamil Nadu"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Larsen & Toubro Port Construction"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Larsen & Toubro Port Construction"
   },
   {
     "id": "work_india_038",
@@ -2338,8 +2993,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Paradip, Odisha"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Essar Ports / ITD Cementation"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Essar Ports / ITD Cementation"
   },
   {
     "id": "work_india_039",
@@ -2378,8 +3043,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Colachel, Tamil Nadu"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Adani Ports & SEZ Limited"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Adani Ports & SEZ Limited"
   },
   {
     "id": "work_india_040",
@@ -2418,8 +3093,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Bikaner, Rajasthan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Tata Power Solar Systems Ltd"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Tata Power Solar Systems Ltd"
   },
   {
     "id": "work_india_041",
@@ -2458,8 +3143,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Gurh / Rewa, Madhya Pradesh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Mahindra Susten / Larsen & Toubro"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Mahindra Susten / Larsen & Toubro"
   },
   {
     "id": "work_india_042",
@@ -2498,8 +3193,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Jalaun / Jhansi, Uttar Pradesh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Sterling and Wilson Solar"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Sterling and Wilson Solar"
   },
   {
     "id": "work_india_043",
@@ -2538,8 +3243,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Sambhar Salt Wastelands, Rajasthan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Bharat Heavy Electricals Limited (BHEL)"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Bharat Heavy Electricals Limited (BHEL)"
   },
   {
     "id": "work_india_044",
@@ -2578,8 +3293,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Bhadla / Phalodi, Rajasthan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Sterling and Wilson / SoftBank Energy"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Sterling and Wilson / SoftBank Energy"
   },
   {
     "id": "work_india_045",
@@ -2618,8 +3343,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Khavda, Rann of Kutch, Gujarat"
+      },
+      {
+        "label": "Constructor",
+        "value": "Obayashi"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Adani Green Energy / L&T Power Transmission"
       }
-    ]
+    ],
+    "constructor": "Obayashi",
+    "subConstructor": "Adani Green Energy / L&T Power Transmission"
   },
   {
     "id": "work_usa_001",
@@ -2658,8 +3393,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Central Park, New York City, NY"
+      },
+      {
+        "label": "Constructor",
+        "value": "Bovis Lend Lease / NYC Central Park"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Bovis Lend Lease / NYC Central Park",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_usa_002",
@@ -2698,8 +3443,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Irvine, California"
+      },
+      {
+        "label": "Constructor",
+        "value": "Hensel Phelps Construction Co."
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Hensel Phelps Construction Co.",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_usa_003",
@@ -2738,8 +3493,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Nevada / Arizona Border"
+      },
+      {
+        "label": "Constructor",
+        "value": "Balfour Beatty Infrastructure Inc."
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Balfour Beatty Infrastructure Inc.",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_usa_004",
@@ -2778,8 +3543,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Idaho Springs, Colorado"
+      },
+      {
+        "label": "Constructor",
+        "value": "Kraemer North America"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Kraemer North America",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_usa_005",
@@ -2818,8 +3593,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Seattle, Washington"
+      },
+      {
+        "label": "Constructor",
+        "value": "Traylor Bros / Frontier-Kemper JV"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Traylor Bros / Frontier-Kemper JV",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_usa_006",
@@ -2858,8 +3643,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "San Francisco, California"
+      },
+      {
+        "label": "Constructor",
+        "value": "Shimmick Construction Company"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Shimmick Construction Company",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_usa_007",
@@ -2898,8 +3693,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "West Islip, Long Island, NY"
+      },
+      {
+        "label": "Constructor",
+        "value": "Skanska USA Building Inc."
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Skanska USA Building Inc.",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_usa_008",
@@ -2938,8 +3743,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Yorba Linda, California"
+      },
+      {
+        "label": "Constructor",
+        "value": "MWD Engineering / Kiewit Infrastructure"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "MWD Engineering / Kiewit Infrastructure",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_usa_009",
@@ -2978,8 +3793,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Downtown Los Angeles, California"
+      },
+      {
+        "label": "Constructor",
+        "value": "Webcor Builders / Greenland USA"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Webcor Builders / Greenland USA",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_usa_010",
@@ -3018,8 +3843,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Castle Rock, Colorado"
+      },
+      {
+        "label": "Constructor",
+        "value": "Edward Kraemer & Sons / CDOT"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Edward Kraemer & Sons / CDOT",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_sg_001",
@@ -3058,8 +3893,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Changi, Singapore"
+      },
+      {
+        "label": "Constructor",
+        "value": "Woh Hup (Private) Limited"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Woh Hup (Private) Limited",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_sg_002",
@@ -3098,8 +3943,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Mandai, Singapore"
+      },
+      {
+        "label": "Constructor",
+        "value": "Mandai Park Development / Woh Hup"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Mandai Park Development / Woh Hup",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_sg_003",
@@ -3138,8 +3993,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Raffles Quay, Marina Bay, Singapore"
+      },
+      {
+        "label": "Constructor",
+        "value": "Woh Hup / Dragages Singapore JV"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Woh Hup / Dragages Singapore JV",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_sg_004",
@@ -3178,8 +4043,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "10 Collyer Quay, Raffles Place, Singapore"
+      },
+      {
+        "label": "Constructor",
+        "value": "Keppel Land / Dragages Singapore"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Keppel Land / Dragages Singapore",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_sg_005",
@@ -3218,8 +4093,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "University Town, NUS, Singapore"
+      },
+      {
+        "label": "Constructor",
+        "value": "Singapore NRF / Shimizu Corporation"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Singapore NRF / Shimizu Corporation",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_sg_006",
@@ -3258,8 +4143,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Central Singapore"
+      },
+      {
+        "label": "Constructor",
+        "value": "Land Transport Authority (LTA) / Nishimatsu"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Land Transport Authority (LTA) / Nishimatsu",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_th_001",
@@ -3298,8 +4193,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Ratchadaphisek Road, Bangkok, Thailand"
+      },
+      {
+        "label": "Constructor",
+        "value": "Italian-Thai Development (ITD)"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Italian-Thai Development (ITD)",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_th_002",
@@ -3338,8 +4243,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Sukhumvit Soi 6, Bangkok, Thailand"
+      },
+      {
+        "label": "Constructor",
+        "value": "Thai Takenaka International"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Thai Takenaka International",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_th_003",
@@ -3378,8 +4293,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Rama IV & Phaya Thai Road, Bangkok, Thailand"
+      },
+      {
+        "label": "Constructor",
+        "value": "Golden Land Property / Italian-Thai Dev."
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Golden Land Property / Italian-Thai Dev.",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_th_004",
@@ -3418,8 +4343,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Wireless Road & Ploenchit Road, Bangkok, Thailand"
+      },
+      {
+        "label": "Constructor",
+        "value": "Univentures / Thai Bouygues Construction"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Univentures / Thai Bouygues Construction",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_th_005",
@@ -3458,8 +4393,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Bangna-Trad Road, Bangkok, Thailand"
+      },
+      {
+        "label": "Constructor",
+        "value": "AIA Thailand / Ritta Co., Ltd."
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "AIA Thailand / Ritta Co., Ltd.",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_th_006",
@@ -3498,8 +4443,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Ratchadaphisek Road, Bangkok, Thailand"
+      },
+      {
+        "label": "Constructor",
+        "value": "Sino-Thai Engineering & Construction (STECON)"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Sino-Thai Engineering & Construction (STECON)",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_th_007",
@@ -3538,8 +4493,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Rama I Road, Pathum Wan, Bangkok, Thailand"
+      },
+      {
+        "label": "Constructor",
+        "value": "Siam Piwat / Christiani & Nielsen (Thai)"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Siam Piwat / Christiani & Nielsen (Thai)",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_th_008",
@@ -3578,8 +4543,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Rojana Industrial Park, Ayutthaya, Thailand"
+      },
+      {
+        "label": "Constructor",
+        "value": "Thai Shimizu Co., Ltd."
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Thai Shimizu Co., Ltd.",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_ca_001",
@@ -3618,8 +4593,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Eglinton Avenue West, Toronto, Ontario, Canada"
+      },
+      {
+        "label": "Constructor",
+        "value": "Crosslinx Transit Solutions / EllisDon / Dragados"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Crosslinx Transit Solutions / EllisDon / Dragados",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_ca_002",
@@ -3658,8 +4643,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Coquitlam, British Columbia, Canada"
+      },
+      {
+        "label": "Constructor",
+        "value": "PCL Construction Leaders"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "PCL Construction Leaders",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_ca_003",
@@ -3698,8 +4693,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Burnhamthorpe Road West, Mississauga, Ontario, Canada"
+      },
+      {
+        "label": "Constructor",
+        "value": "Kenaidan Contracting Ltd / Metrolinx"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Kenaidan Contracting Ltd / Metrolinx",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_ca_004",
@@ -3738,8 +4743,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Westney Road South, Ajax, Ontario, Canada"
+      },
+      {
+        "label": "Constructor",
+        "value": "Bird Construction Inc. / Metrolinx"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Bird Construction Inc. / Metrolinx",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_tw_001",
@@ -3778,8 +4793,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Taoyuan City, Taiwan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Continental Engineering Corporation (CEC)"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Continental Engineering Corporation (CEC)",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_tw_002",
@@ -3818,8 +4843,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Beitou Hot Springs, Taipei City, Taiwan"
+      },
+      {
+        "label": "Constructor",
+        "value": "Radium Life Tech / Kumagai Gumi Taiwan"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Radium Life Tech / Kumagai Gumi Taiwan",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_tw_003",
@@ -3858,8 +4893,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Minxiong Industrial Park, Chiayi County, Taiwan"
+      },
+      {
+        "label": "Constructor",
+        "value": "CTCI Corporation / Taiwan Shimizu"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "CTCI Corporation / Taiwan Shimizu",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_vn_001",
@@ -3898,8 +4943,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Tan Phu District, Ho Chi Minh City, Vietnam"
+      },
+      {
+        "label": "Constructor",
+        "value": "Coteccons Construction JSC"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Coteccons Construction JSC",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_vn_002",
@@ -3938,8 +4993,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Amata Industrial Park, Dong Nai, Vietnam"
+      },
+      {
+        "label": "Constructor",
+        "value": "Shimizu Corporation Vietnam"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Shimizu Corporation Vietnam",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_vn_003",
@@ -3978,8 +5043,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Red River, Hanoi, Vietnam"
+      },
+      {
+        "label": "Constructor",
+        "value": "Taisei Corporation / CIENCO 1 JV"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Taisei Corporation / CIENCO 1 JV",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_vn_004",
@@ -4018,8 +5093,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "VSIP 1 Industrial Park, Binh Duong, Vietnam"
+      },
+      {
+        "label": "Constructor",
+        "value": "Kajima Vietnam Co., Ltd."
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Kajima Vietnam Co., Ltd.",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_ae_001",
@@ -4058,8 +5143,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Dubai, United Arab Emirates"
+      },
+      {
+        "label": "Constructor",
+        "value": "Mitsubishi Heavy Industries / Yapi Merkezi Consortium"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Mitsubishi Heavy Industries / Yapi Merkezi Consortium",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_au_001",
@@ -4098,8 +5193,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Sydney Olympic Park, Homebush Bay, NSW, Australia"
+      },
+      {
+        "label": "Constructor",
+        "value": "Multiplex Constructions Pty Ltd"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Multiplex Constructions Pty Ltd",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_id_001",
@@ -4138,8 +5243,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "KIIC Industrial City, Karawang, West Java, Indonesia"
+      },
+      {
+        "label": "Constructor",
+        "value": "PT Shimizu Bangun Cipta Kontraktor"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "PT Shimizu Bangun Cipta Kontraktor",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_id_002",
@@ -4178,8 +5293,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "KIIC Industrial City, Karawang, West Java, Indonesia"
+      },
+      {
+        "label": "Constructor",
+        "value": "PT Taisei Pulauintan Construction"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "PT Taisei Pulauintan Construction",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_kh_001",
@@ -4218,8 +5343,18 @@ export const projects = [
       {
         "label": "Location",
         "value": "Central & Western Cambodia"
+      },
+      {
+        "label": "Constructor",
+        "value": "Tekken Corporation / Taisei Corporation JV"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Tekken Corporation / Taisei Corporation JV",
+    "subConstructor": "Obayashi"
   },
   {
     "id": "work_bd_001",
@@ -4258,7 +5393,17 @@ export const projects = [
       {
         "label": "Location",
         "value": "Dhaka & Munshiganj & Comilla, Bangladesh"
+      },
+      {
+        "label": "Constructor",
+        "value": "Shimizu Corporation / JFE Engineering JV"
+      },
+      {
+        "label": "Sub Constructor",
+        "value": "Obayashi"
       }
-    ]
+    ],
+    "constructor": "Shimizu Corporation / JFE Engineering JV",
+    "subConstructor": "Obayashi"
   }
 ];

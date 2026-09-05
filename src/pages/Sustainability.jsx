@@ -127,10 +127,10 @@ export default function Sustainability() {
             </div>
             
             <div className="eval-cta-card">
-              <h3 className="eval-cta-title">Integrated Reporting</h3>
-              <p className="eval-cta-text">Read our latest ESG reports and Integrated Annual Review for comprehensive stats.</p>
-              <Link to="/company#publications" className="btn-primary">
-                <span>Integrated Corporate Reports</span>
+              <h3 className="eval-cta-title">Corporate Overview</h3>
+              <p className="eval-cta-text">Read our latest ESG initiatives and corporate vision for comprehensive stats.</p>
+              <Link to="/company" className="btn-primary">
+                <span>View Company Profile</span>
                 <ArrowUpRight size={16} />
               </Link>
             </div>

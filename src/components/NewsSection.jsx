@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, FileText, ExternalLink } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { newsArticles, newsCategories } from '../data/newsContent';
 
 export default function NewsSection() {
@@ -53,14 +53,7 @@ export default function NewsSection() {
                   </div>
                   <div className="news-item-content">
                     {item.isExternal ? (
-                      <a href={item.link} className="news-item-link" target="_blank" rel="noopener noreferrer">
-                        <span className="news-item-title">{item.title}</span>
-                        <div className="news-pdf-indicator">
-                          <FileText size={14} />
-                          <span>{item.fileSize || 'PDF'}</span>
-                          <ExternalLink size={12} />
-                        </div>
-                      </a>
+                      <span className="news-item-title news-item-static">{item.title}</span>
                     ) : (
                       <Link to={`/news#${item.id}`} className="news-item-link">
                         <span className="news-item-title">{item.title}</span>

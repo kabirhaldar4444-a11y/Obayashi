@@ -13,11 +13,11 @@ const pickups = [
   },
   {
     id: "thinking",
-    title: "OBAYASHI Thinking Publication",
+    title: "OBAYASHI Principles & Philosophy",
     summary: "Exploring our construction philosophies—from realities on-site tackling social challenges and core technologies to design concepts behind landmarks.",
     image: "/images/thinking_banner.png",
-    link: "/company#publications",
-    btnText: "Read Corporate Publications"
+    link: "/company#philosophy",
+    btnText: "Explore Corporate Philosophy"
   }
 ];
 

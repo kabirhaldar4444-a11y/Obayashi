@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { projects } from '../data/worksContent';
 import { detailedProjectContent } from '../data/projectDetails';
+import { getProjectContractors } from '../data/projectContractors';
 import MiniJapanMap from '../components/MiniJapanMap';
 
 const slugify = (t) => t.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-').replace(/^-+/, '').replace(/-+$/, '');
@@ -73,7 +74,10 @@ export default function ProjectDetail() {
   };
 
   const budget = project.details?.find(d => d.label.toLowerCase() === 'budget')?.value || 'N/A';
-  const client = project.details?.find(d => d.label.toLowerCase() === 'client')?.value || 'N/A';
+  const client = project.details?.find(d => d.label.toLowerCase() === 'client')?.value || details.specs?.Client || details.specs?.['Client / Sponsor'] || details.specs?.Developer || project.client || 'N/A';
+  const contractors = getProjectContractors(project);
+  const constructorName = project.constructor || contractors.constructor;
+  const subConstructorName = project.subConstructor || contractors.subConstructor;
   const imgSrc = `/images/${project.id}.jpg?v=obayashi_real_2026_v37`;
 
   // Grab the next project in sequence for transition portal link
@@ -430,6 +434,8 @@ export default function ProjectDetail() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 {[
                   { label: 'Client / Sponsor', value: client },
+                  { label: 'Constructor', value: constructorName },
+                  { label: 'Sub Constructor', value: subConstructorName },
                   { label: 'Completion Date', value: project.completion },
                   { label: 'Budget Allocation', value: budget },
                   { label: 'Contract Type', value: project.designType },

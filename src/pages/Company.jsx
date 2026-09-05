@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import { Shield, Users, Landmark, FileText, ChevronRight, Award, Sparkles, ShieldCheck, TrendingUp } from 'lucide-react';
-import { companyOverview, ceoMessage, philosophy, historyMilestones, groupNetwork, publications } from '../data/companyContent';
+import { Shield, Users, Landmark, ChevronRight, Award, Sparkles, ShieldCheck, TrendingUp } from 'lucide-react';
+import { companyOverview, ceoMessage, philosophy, historyMilestones, groupNetwork } from '../data/companyContent';
 import CertificatesShowcase from '../components/CertificatesShowcase';
 import CompanySubNav from '../components/CompanySubNav';
 
@@ -69,7 +69,6 @@ export default function Company() {
             { id: 'history', label: 'History' },
             { id: 'group', label: 'Global Network' },
             { id: 'certificates', label: 'Certificates' },
-            { id: 'publications', label: 'Publications' },
             { id: 'governance', label: 'Governance' }
           ].map((section) => (
             <a
@@ -311,33 +310,6 @@ export default function Company() {
       </section>
 
 
-      {/* 6. Corporate Publications */}
-      <section id="publications" className="section-padding light-bg-section">
-        <div className="container">
-          <div className="section-header">
-            <h2 className="section-title">PUBLICATIONS</h2>
-            <p className="section-subtitle">Downloadable reports and journals detailing financial updates and structural designs</p>
-          </div>
-
-          <div className="publications-grid">
-            {publications.map((pub, idx) => (
-              <div key={idx} className="publication-card">
-                <div className="pub-card-icon">
-                  <FileText size={32} />
-                </div>
-                <div className="pub-card-details">
-                  <h3 className="pub-title">{pub.title}</h3>
-                  <p className="pub-desc">{pub.description}</p>
-                  <a href={pub.link} className="pub-action-btn">
-                    <span>Access Resource</span>
-                    <ChevronRight size={14} />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* 6. Corporate Governance Statement */}
       <section id="governance" className="section-padding light-bg-section">
@@ -345,10 +317,6 @@ export default function Company() {
           <div className="governance-banner">
             <h3 className="gov-title">Corporate Governance Standards</h3>
             <p className="gov-text">Obayashi is committed to structural transparency and audit controls. We follow ethical principles, securing risk supervision and equal rights compliance across all project sites.</p>
-            <Link to="/ir#management" className="btn-primary">
-              <span>View Corporate Governance Details</span>
-              <ChevronRight size={14} />
-            </Link>
           </div>
         </div>
       </section>

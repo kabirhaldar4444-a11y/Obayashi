@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FileText, ChevronRight, X, ArrowLeft, ExternalLink, Calendar } from 'lucide-react';
+import { ChevronRight, X, Calendar } from 'lucide-react';
 import { newsArticles, newsCategories } from '../data/newsContent';
 
 export default function News() {
@@ -76,14 +76,9 @@ export default function News() {
                     
                     <div className="news-dir-main">
                       {item.isExternal ? (
-                        <a href={item.link} className="news-dir-link" target="_blank" rel="noopener noreferrer">
+                        <div className="news-dir-static">
                           <h3 className="news-dir-title">{item.title}</h3>
-                          <div className="news-pdf-indicator">
-                            <FileText size={14} />
-                            <span>{item.fileSize || 'PDF'}</span>
-                            <ExternalLink size={12} />
-                          </div>
-                        </a>
+                        </div>
                       ) : (
                         <button onClick={() => toggleExpand(item.id)} className="news-dir-expand-btn">
                           <h3 className="news-dir-title text-left">{item.title}</h3>

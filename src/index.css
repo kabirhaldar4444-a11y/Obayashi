@@ -1319,11 +1319,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-size: 0.98rem;
   line-height: 1.45;
+  color: var(--text-primary);
   transition: var(--transition-fast);
 }
 
 .news-item-link:hover .news-item-title {
   color: var(--primary-red);
+}
+
+.news-item-static {
+  cursor: default;
 }
 
 .news-pdf-indicator {
@@ -4418,18 +4423,28 @@ h1, h2, h3, h4, h5, h6 {
   gap: 16px;
   color: var(--text-primary);
   background: transparent;
+  cursor: pointer;
+  text-align: left;
 }
 
 .news-dir-title {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.45;
+  color: var(--text-primary);
   transition: var(--transition-fast);
 }
 
-.news-dir-link:hover .news-dir-title,
 .news-dir-expand-btn:hover .news-dir-title {
   color: var(--primary-red);
+}
+
+.news-dir-static {
+  cursor: default;
+}
+
+.news-dir-static .news-dir-title {
+  cursor: default;
 }
 
 .news-dir-chevron {
