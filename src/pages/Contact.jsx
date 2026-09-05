@@ -362,11 +362,11 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Corporate Headquarters & Security Notice Section */}
+        {/* Corporate Headquarters & Global Offices Section */}
         <div style={{ marginTop: '48px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="contact-info-card">
-              <h3 className="info-card-title">Corporate Headquarters</h3>
+              <h3 className="info-card-title">Corporate Headquarters & Regional Offices</h3>
               
               <div className="info-item">
                 <Building2 size={18} className="info-icon" />
@@ -381,6 +381,25 @@ export default function Contact() {
                 <div>
                   <h4>OBAYASHI CORPORATION (Asia HQ)</h4>
                   <p>The Ruby, 9th Floor, 29, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028, India</p>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <Building2 size={18} className="info-icon" />
+                <div>
+                  <h4>OBAYASHI CORPORATION — Australia Office</h4>
+                  <p>
+                    1203, Level 12, 115 Pitt Street<br />
+                    Sydney, NSW 2000, Australia
+                  </p>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <Building2 size={18} className="info-icon" />
+                <div>
+                  <h4>OBAYASHI CORPORATION — North America</h4>
+                  <p>18331 Von Karman Ave, Irvine, CA 92612</p>
                 </div>
               </div>
 
