@@ -7081,6 +7081,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ffffff;
 }
 
+.leadership-section-title {
+  letter-spacing: 0.06em;
+  word-spacing: 0.35em;
+  line-height: 1.35;
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+
 /* Board of Directors Cards Grid */
 .board-grid {
   display: grid;

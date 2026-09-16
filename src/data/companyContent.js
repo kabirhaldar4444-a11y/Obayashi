@@ -409,8 +409,8 @@ export const businessPerformanceData = {
 
 export const boardOfDirectors = [
   {
-    id: "haruto-sato",
-    name: "Haruto Sato",
+    id: "toshimi-sato",
+    name: "Toshimi Sato",
     role: "Representative Director, President & Chief Executive Officer (CEO)",
     shortRole: "President & CEO",
     focus: "Corporate Strategy, Global Operations & General Governance",
