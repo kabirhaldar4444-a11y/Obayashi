@@ -62,7 +62,6 @@ export const realConstructors = {
   "work_india_022": "JMC Projects (India) Ltd",
   "work_india_023": "NCC Limited (Nagarjuna Construction)",
   "work_india_024": "KEC International Limited",
-  "work_india_025": "Larsen & Toubro (L&T Construction)",
   "work_india_026": "Afcons Infrastructure / Transtonnelstroy JV",
   "work_india_027": "Dilip Buildcon / URC Construction JV",
   "work_india_028": "Afcons Infrastructure Limited",

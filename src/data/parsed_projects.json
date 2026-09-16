@@ -1519,37 +1519,6 @@
     ]
   },
   {
-    "id": "work_india_025",
-    "title": "Bengaluru Water Supply and Sewerage Project",
-    "subtitle": "City-wide water transmission and sewerage expansion across Bengaluru by BWSSB & JICA, constructing 110 village water supply networks, STPs, and smart SCADA monitoring.",
-    "category": "Civil Infra",
-    "designType": "Design & Build",
-    "location": "Bengaluru, Karnataka",
-    "locationCategory": "India",
-    "completion": "2025–Ongoing Stage V Expansion",
-    "completionYear": "2025",
-    "summary": "City-wide water transmission and sewerage expansion across Bengaluru by BWSSB & JICA, constructing 110 village water supply networks, STPs, and smart SCADA monitoring.",
-    "description": "The Bengaluru Water Supply and Sewerage Project is a comprehensive urban infrastructure program undertaken by the Bangalore Water Supply and Sewerage Board (BWSSB) to improve drinking water supply and wastewater management across the rapidly expanding Bengaluru Metropolitan Area. The project supports the city's growing population through modernization and expansion of essential water infrastructure.\n\nThe development includes new water transmission pipelines, distribution networks, pumping stations, reservoirs, sewage treatment plants, underground sewer networks, and associated utility infrastructure. Several phases of the project also extend water supply to newly urbanized areas surrounding Bengaluru.\n\nEngineering works involve large-diameter pipeline installation, advanced pumping systems, underground utility construction, treatment plant expansion, and implementation of modern monitoring and control technologies. Sustainable water management practices are integrated to improve operational efficiency while reducing system losses.\n\nUpon completion, the project enhances access to safe drinking water, improves sanitation services, reduces environmental pollution, strengthens urban resilience, and supports the long-term sustainable development of Bengaluru.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Infrastructure"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Water Supply / Sewerage"
-      },
-      {
-        "label": "Budget",
-        "value": "Multi-Billion-Dollar Across Phases"
-      },
-      {
-        "label": "Location",
-        "value": "Bengaluru, Karnataka"
-      }
-    ]
-  },
-  {
     "id": "work_india_026",
     "title": "Rajasthan Water Sector / Rural Water Supply Infrastructure Projects",
     "subtitle": "State-wide rural water security program in Rajasthan supported by JICA & PHED, constructing long-distance surface water pipelines, WTPs, and elevated storage reservoirs across arid districts.",

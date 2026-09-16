@@ -78,6 +78,7 @@ export default function Footer() {
             <h4 className="footer-col-title"><Link to="/company" className="footer-link-main">About Us</Link></h4>
             <ul className="footer-link-list">
               <li><Link to="/company" className="footer-link bold">Company Overview</Link></li>
+              <li><Link to="/company/leadership" className="footer-link bold-accent">Executive Leadership</Link></li>
               <li><Link to="/company/business-performance" className="footer-link bold-accent">Business Performance Chart</Link></li>
               <li><Link to="/company/certificates" className="footer-link bold-accent">Certificates & Awards</Link></li>
               <li><Link to="/company#message" onClick={() => handleHashClick('/company#message')} className="footer-link">President's Message</Link></li>

@@ -19,6 +19,7 @@ function ScrollToTop() {
 
 // Lazy-load all non-home pages to reduce initial bundle size
 const Company              = lazy(() => import('./pages/Company'));
+const Leadership           = lazy(() => import('./pages/Leadership'));
 const Certificates         = lazy(() => import('./pages/Certificates'));
 const BusinessPerformance  = lazy(() => import('./pages/BusinessPerformance'));
 const Business             = lazy(() => import('./pages/Business'));
@@ -43,6 +44,10 @@ function App() {
             <Route path="/about-us" element={<Company />} />
             <Route path="/about" element={<Company />} />
             
+            <Route path="/company/leadership" element={<Leadership />} />
+            <Route path="/leadership" element={<Leadership />} />
+            <Route path="/about-us/leadership" element={<Leadership />} />
+
             <Route path="/company/business-performance" element={<BusinessPerformance />} />
             <Route path="/business-performance" element={<BusinessPerformance />} />
             <Route path="/about-us/business-performance" element={<BusinessPerformance />} />

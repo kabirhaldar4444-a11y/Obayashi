@@ -2307,56 +2307,6 @@ export const projects = [
     "subConstructor": "KEC International Limited"
   },
   {
-    "id": "work_india_025",
-    "title": "Lucknow Metro Phase 2",
-    "subtitle": "A 11.16 km East-West mass rapid transit corridor connecting Charbagh to Vasant Kunj via deep underground EPB-bored tunnels beneath Old Lucknow.",
-    "category": "Urban Transportation",
-    "designType": "Design & Build",
-    "location": "Uttar Pradesh",
-    "locationCategory": "India",
-    "completion": "2035 Completion",
-    "completionYear": "2035",
-    "image": "/images/work_india_025.jpg",
-    "summary": "Lucknow Metro Phase 2 (East-West Corridor / Blue Line) is a high-capacity urban mass rapid transit project developed by the Uttar Pradesh Metro Rail Corporation (UPMRC). Spanning 11.16 km from Charbagh Railway Station to Vasant Kunj, the corridor features 6.88 km of deep underground EPB-bored twin tunnels beneath the densely built historic quarters of Old Lucknow (Aminabad, Chowk, City Railway Station) and 4.28 km of elevated viaducts.",
-    "description": "Lucknow, the historic capital of Uttar Pradesh, is home to priceless Nawabi heritage architecture, dense traditional markets, and rapidly expanding residential suburbs. Lucknow Metro Phase 2 complements the operational North-South Red Line by creating an indispensable East-West mass transit spine.\n\nThe subterranean engineering is one of the most delicate tunneling endeavors in northern India, utilizing Earth Pressure Balance (EPB) Tunnel Boring Machines to bore twin tunnels 18 to 22 meters beneath centuries-old heritage structures, narrow bazaar lanes, and high-water-table alluvium with near-zero surface settlement.\n\nThe corridor comprises 12 modern stations—7 underground (including Gautam Buddha Marg, Aminabad, Pandeyganj, City Railway Station, Medical College Chowk, and Thakurganj) and 5 elevated stations towards Vasant Kunj. Underground stations are constructed using top-down cut-and-cover methods with reinforced concrete diaphragm walls.\n\nEquipped with automated Communication-Based Train Control (CBTC) signaling, stainless steel lightweight rolling stock with regenerative braking, full-height platform screen doors (PSDs) in underground stations, and 100% solar-powered elevated stations, Phase 2 will carry over 350,000 daily commuters upon full operation.",
-    "details": [
-      {
-        "label": "Sector",
-        "value": "Urban Transportation"
-      },
-      {
-        "label": "Sub-Sector",
-        "value": "Urban Mass Rapid Transit / Underground Metro"
-      },
-      {
-        "label": "Budget",
-        "value": "₹2,500–3,500 Crores"
-      },
-      {
-        "label": "Route Length",
-        "value": "11.16 km (6.88 km Underground / 4.28 km Elevated)"
-      },
-      {
-        "label": "Deadline",
-        "value": "2035"
-      },
-      {
-        "label": "Location",
-        "value": "Lucknow, Uttar Pradesh"
-      },
-      {
-        "label": "Constructor",
-        "value": "Obayashi"
-      },
-      {
-        "label": "Sub Constructor",
-        "value": "Larsen & Toubro (L&T Construction)"
-      }
-    ],
-    "constructor": "Obayashi",
-    "subConstructor": "Larsen & Toubro (L&T Construction)"
-  },
-  {
     "id": "work_india_026",
     "title": "Kolkata East-West Metro Corridor",
     "subtitle": "A landmark 16.6 km metro line (Green Line) developed by KMRC connecting Salt Lake Sector V to Howrah Maidan, featuring India's deepest station at Howrah.",

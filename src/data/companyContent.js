@@ -407,4 +407,93 @@ export const businessPerformanceData = {
   ]
 };
 
+export const boardOfDirectors = [
+  {
+    id: "haruto-sato",
+    name: "Haruto Sato",
+    role: "Representative Director, President & Chief Executive Officer (CEO)",
+    shortRole: "President & CEO",
+    focus: "Corporate Strategy, Global Operations & General Governance",
+    bio: "Guiding Obayashi Corporation's strategic transformation, international expansions, and digital-first construction modernization across Asia, North America, and Europe.",
+    tenure: "Over 32 years of leadership in civil infrastructure and international development",
+    quote: "Our mission is to shape resilient, sustainable habitats for future generations through disciplined craftsmanship and ethical stewardship."
+  },
+  {
+    id: "yuki-tanaka",
+    name: "Yuki Tanaka",
+    role: "Representative Director, Executive Vice President & Chief Technology Officer (CTO)",
+    shortRole: "Executive VP & CTO",
+    focus: "Construction Automation, Advanced BIM, Robotics & Seismic Engineering",
+    bio: "Pioneering technological breakthroughs in smart site robotics, automated climbing formwork, and low-carbon composite materials that set new global benchmarks.",
+    tenure: "28 years leading engineering research, patented construction techniques, and digital twin implementations",
+    quote: "Engineering innovation is not just about building higher or faster—it is about creating resilient systems that withstand time and elements."
+  },
+  {
+    id: "ren-nakamura",
+    name: "Ren Nakamura",
+    role: "Senior Managing Director & Head of Civil Engineering",
+    shortRole: "Senior Managing Director",
+    focus: "Civil Contracting, Tunneling, High-Speed Transit & Major Infrastructure",
+    bio: "Supervising landmark transportation infrastructure, deep-shield underground tunneling, airport expansions, and complex coastal engineering developments worldwide.",
+    tenure: "26 years orchestrating complex public-private partnership mega-projects across Asia and Oceania",
+    quote: "Infrastructure serves as the foundation of society; our responsibility is to ensure every foundation is unshakeable."
+  },
+  {
+    id: "aoi-yamamoto",
+    name: "Aoi Yamamoto",
+    role: "Managing Director & Head of Global Sustainability (CSO)",
+    shortRole: "Managing Director & CSO",
+    focus: "ESG Strategy, Net-Zero Carbon Construction & Circular Mass-Timber Systems",
+    bio: "Spearheading Obayashi's Sustainability Vision 2050 roadmap, championing mass timber high-rise technology, renewable energy assets, and circular raw material sourcing.",
+    tenure: "24 years in environmental engineering, ecological urban design, and global ESG disclosure governance",
+    quote: "True sustainability is realized when human architecture harmonizes seamlessly with the natural ecological cycle."
+  }
+];
+
+export const executiveLeadershipTeam = [
+  {
+    id: "michael-thompson",
+    name: "Michael S. Thompson",
+    role: "Chief Financial Officer (CFO)",
+    department: "Corporate Finance & Capital Strategy",
+    description: "Capital allocation, investor relations, international treasury oversight, and financial risk mitigation across group subsidiaries."
+  },
+  {
+    id: "james-richardson",
+    name: "James D. Richardson",
+    role: "Chief Operations Officer",
+    department: "Global Project Operations",
+    description: "Operational execution, supply chain resilience, site safety protocols, and cross-border construction resource deployment."
+  },
+  {
+    id: "sarah-williams",
+    name: "Sarah L. Williams",
+    role: "Head of Human Resources",
+    department: "People & Talent Development",
+    description: "Global talent acquisition, technical apprentice development, diversity and inclusion, and executive succession planning."
+  },
+  {
+    id: "david-clark",
+    name: "David B. Clark",
+    role: "Director of Global Projects",
+    department: "International Contracting",
+    description: "Multi-regional mega-project management, joint venture integrations, and EPC contract delivery across Americas and EMEA."
+  },
+  {
+    id: "rajesh-sharma",
+    name: "Rajesh K. Sharma",
+    role: "Head of Asia Pacific",
+    department: "APAC Regional Headquarters",
+    description: "Managing regional operations, industrial cleanroom builds, logistics parks, and expanding client relationships across India and ASEAN."
+  },
+  {
+    id: "christopher-evans",
+    name: "Christopher P. Evans",
+    role: "Head of Middle East Hub",
+    department: "Middle East & Special Regions",
+    description: "Leading urban infrastructure initiatives, hospitality high-rises, and sustainable desert engineering projects in the GCC region."
+  }
+];
+
+
 

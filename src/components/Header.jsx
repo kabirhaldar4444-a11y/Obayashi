@@ -55,6 +55,7 @@ export default function Header() {
       path: "/company",
       subItems: [
         { label: "Company Overview", path: "/company" },
+        { label: "Executive Leadership", path: "/company/leadership" },
         { label: "Business Performance Chart", path: "/company/business-performance" },
         { label: "Certificates & Awards", path: "/company/certificates" },
         { label: "President's Message", path: "/company#message" },

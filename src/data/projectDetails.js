@@ -2983,64 +2983,6 @@ export const detailedProjectContent = {
       "quoteTranslation": "Resolute, courageous, and decisive in building a prosperous future."
     }
   },
-  "work_india_025": {
-    "kanjiName": "ラクナウ地下鉄第２期東西線建設事業",
-    "romajiName": "Rakunau Chikatetsu Dai-Ni-Ki Tōzai-sen Kensetsu Jigyō",
-    "prefecture": "Uttar Pradesh",
-    "city": "Lucknow",
-    "tokyoDistance": "Chaudhary Charan Singh International Airport (LKO)",
-    "airport": "Chaudhary Charan Singh International Airport (LKO)",
-    "locationStory": "Connecting Charbagh railway terminal to Vasant Kunj across Old Lucknow in Uttar Pradesh. The subway corridor threads safely beneath ancient Nawabi monuments and bustling historic bazaars.",
-    "coordinates": "26.8467° N, 80.9462° E",
-    "challenges": [
-      "Boring large-diameter twin metro tunnels beneath 200-year-old unreinforced masonry heritage buildings with zero structural settlement.",
-      "Excavating deep underground stations in congested market streets like Aminabad without disrupting dense commercial life."
-    ],
-    "solutions": [
-      "Deployed EPB Tunnel Boring Machines with continuous real-time ground face-pressure control and compensation grouting.",
-      "Constructed continuous concrete diaphragm slurry walls and top-down station excavation to keep street surfaces functional."
-    ],
-    "timeline": [
-      {
-        "phase": "Detailed Design & Heritage Survey",
-        "date": "2024–2026",
-        "desc": "Heritage building 3D laser monitoring, geotechnical boreholes, and station box design."
-      },
-      {
-        "phase": "Diaphragm Walls & TBM Shaft Excavation",
-        "date": "2026–2029",
-        "desc": "Constructing 800mm diaphragm walls, launching shaft excavation, and utility relocation."
-      },
-      {
-        "phase": "EPB Tunnel Boring & Elevated Viaducts",
-        "date": "2029–2032",
-        "desc": "Boring 6.88 km of twin tunnels with precast concrete rings and erecting elevated U-girders."
-      },
-      {
-        "phase": "Track, CBTC Signaling & Commercial Launch",
-        "date": "2033–2035",
-        "desc": "Laying ballastless tracks, CBTC signaling, train trials, and public passenger opening."
-      }
-    ],
-    "specs": {
-      "Structure": "Underground EPB Twin Tunnels & Elevated Concrete U-Girder Viaducts",
-      "Foundation": "Diaphragm Retaining Walls (30m depth) & Bored Piles for Elevated Sections",
-      "Route Length": "11.16 km (6.88 km Underground Tunnels + 4.28 km Elevated Viaduct)",
-      "Stations": "12 Stations Total (7 Underground Stations + 5 Elevated Stations)",
-      "Tunnel Diameter": "5.8m Internal Diameter Bored with Earth Pressure Balance (EPB) TBMs",
-      "Signaling System": "Communication-Based Train Control (CBTC) for 90-Second Train Headways",
-      "Rolling Stock": "Stainless Steel Ultra-Light Metro Coaches with Regenerative Braking",
-      "Safety Features": "Full-Height Platform Screen Doors (PSD) at all Underground Stations",
-      "Executing Agency": "Uttar Pradesh Metro Rail Corporation (UPMRC)",
-      "Construction Method": "EPB Shield Tunnel Boring & Top-Down Station Cut-and-Cover Excavation"
-    },
-    "culturalInsight": {
-      "title": "雅",
-      "meaning": "Reflecting 'Miyabi' (grace, elegance, and refinement), the Lucknow Metro honors the cultured Nawabi heritage while propelling modern urban transit forward.",
-      "quote": "「温故知新」",
-      "quoteTranslation": "Honoring the past while creating enlightened innovations for the future."
-    }
-  },
   "work_india_026": {
     "kanjiName": "コルカタ東西メトロ回廊建設事業",
     "romajiName": "Korukata Tōzai Metoro Kairō Kensetsu Jigyō",

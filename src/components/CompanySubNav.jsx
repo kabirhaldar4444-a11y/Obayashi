@@ -7,7 +7,7 @@ export default function CompanySubNav({ activeTab = 'overview' }) {
 
   const tabs = [
     { key: 'overview', label: 'OVERVIEW', path: '/company' },
-    { key: 'management', label: 'MANAGEMENT STRUCTURE', path: '/company#message' },
+    { key: 'leadership', label: 'EXECUTIVE LEADERSHIP', path: '/company/leadership' },
     { key: 'business_performance', label: 'BUSINESS PERFORMANCE', path: '/company/business-performance' },
     { key: 'certificates', label: 'CERTIFICATES', path: '/company/certificates' },
   ];
@@ -21,6 +21,7 @@ export default function CompanySubNav({ activeTab = 'overview' }) {
           if (!activeTab) {
             if (tab.key === 'business_performance' && currentPath.includes('business-performance')) isActive = true;
             else if (tab.key === 'certificates' && currentPath.includes('certificates')) isActive = true;
+            else if (tab.key === 'leadership' && currentPath.includes('leadership')) isActive = true;
             else if (tab.key === 'overview' && (currentPath === '/company' || currentPath === '/about-us')) isActive = true;
           }
 
